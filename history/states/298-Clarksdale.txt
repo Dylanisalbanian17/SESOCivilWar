@@ -1,0 +1,18 @@
+state={
+	id=298
+	name="STATE_298"
+	provinces={
+		328 820 1633 1723 1724 2215 2689 3251 3380 3604 3691 4816 5595 5670 5681 6334 6456 6496 6751 9243 9270 9276 9302 9319 9324 9332 9339 9346 9360 9364 9367 9378 9382 9392 9411 9420 9440 9477 
+	}
+	history={
+		owner = MSS
+		add_core_of = MSS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+	manpower=335000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

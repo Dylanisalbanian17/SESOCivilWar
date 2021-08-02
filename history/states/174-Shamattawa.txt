@@ -1,0 +1,21 @@
+state={
+	id=174
+	name="STATE_174"
+
+	history={
+		owner = ONT
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		115 162 346 419 464 616 618 866 949 1076 1288 1394 1397 1489 1674 1933 1941 2039 2068 2585 2782 2941 3011 3145 3253 3459 3475 3817 4418 4515 4535 4608 4926 5104 5316 5417 5471 5476 5569 5977 6230 6552 7007 7026 7029 7046 7058 7063 7083 7094 7098 7140 
+	}
+	manpower=22436
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

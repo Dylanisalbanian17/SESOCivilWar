@@ -1,0 +1,19 @@
+state={
+	id=41
+	name="STATE_41"
+	provinces={
+		3244 5994 8824 
+	}
+	history={
+		owner = NEV
+		add_core_of = NEV
+		victory_points = { 3244 5 }
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	manpower= 500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
+

@@ -1,0 +1,23 @@
+state={
+	id=183
+	name="STATE_183"
+	history={
+		owner = MIN
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = MIN
+
+	}
+
+	resources = {
+		steel = 88
+	}
+	provinces={
+		470 586 1071 1185 1259 1590 2323 2678 2889 3375 3652 3959 4152 4776 5440 5775 6069 6081 6406 6509 6733 7400 
+	}
+	manpower=95643
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

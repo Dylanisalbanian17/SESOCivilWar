@@ -1,0 +1,23 @@
+
+state={
+	id=238
+	name="STATE_238"
+	provinces={
+		654 819 1400 1404 1808 4904 5150 5711 5924 6229 6606 6732 6825 8038 8071 8079 8093 8101 8105 8114 8124 8129 8139 8144 8152 8166 8167 8175 8181 8183 8194 8217 8229 8248 8260 8270 8287 8296 
+	}
+	history={
+		owner = PEN
+		add_core_of = PEN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	resources = {
+		steel = 48
+	}
+	manpower=487500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

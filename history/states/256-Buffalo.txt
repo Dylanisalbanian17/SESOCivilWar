@@ -1,0 +1,20 @@
+state={
+	id=256
+	name="STATE_256"
+	provinces={
+		748 1277 1300 2329 2500 2765 3478 3927 4124 4190 4445 4642 4780 5280 5301 5593 6104 6302 6815 7670 7706 7722 7782 7794 7798 7804 7822 7833 7861 
+	}
+	history={
+		owner = NYO
+		add_core_of = NYO
+		victory_points = {1277 10}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 1
+			arms_factory = 2
+			}
+		}
+	manpower=245919
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

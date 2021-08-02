@@ -1,0 +1,20 @@
+state={
+	id=12
+	name="STATE_12"
+	provinces={
+		786 4944 6156 6177 7383 7409 
+	}
+	history={
+		owner = ORE
+		add_core_of = ORE
+		victory_points = {6156 25}
+		victory_points = {6177 5}
+		buildings = {
+			infrastructure = 6
+			dockyard = 2
+		}
+	}
+	manpower= 422780
+	buildings_max_level_factor=1.000
+	state_category = town
+}

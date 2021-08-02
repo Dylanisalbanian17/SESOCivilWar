@@ -1,0 +1,27 @@
+state={
+	id=32
+	name="STATE_32"
+	provinces={
+		655 1542 2269 3289 4021 4242 5611 5897 8596 8609 8616 8635 8654 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = { 8635 5 }
+		victory_points = { 8596 5 }
+		victory_points = { 8609 5 }
+		victory_points = { 8616 5 }
+		victory_points = { 5897 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	resources = {
+		oil = 53
+	}
+	manpower=317500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

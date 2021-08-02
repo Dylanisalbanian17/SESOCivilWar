@@ -1,0 +1,22 @@
+state={
+	id=120
+	name="STATE_120"
+	provinces={
+		53 241 385 402 716 726 1104 1768 2015 2195 2285 3144 3688 3767 4096 4983 5886 5942 6442 8800 8830 8831 
+	}
+	history={
+		owner = KAN
+		add_core_of = KAN
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 2
+		}
+	}
+	resources = {
+		oil = 42
+	}
+	manpower=45000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

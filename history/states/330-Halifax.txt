@@ -1,0 +1,27 @@
+state={
+	id=330
+	name="STATE_330"
+
+	history={
+		owner = NSC
+		add_core_of = NSC
+		victory_points = {
+			4355 10 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		41 2129 3389 3538 3908 4355 4457 4902 5224 5281 5486 6068 6200 7230 7236 7251 7274 7277 7280 7290 7292 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

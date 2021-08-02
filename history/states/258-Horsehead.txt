@@ -1,0 +1,19 @@
+state={
+	id=258
+	name="STATE_258"
+	provinces={
+		112 2297 3637 3656 4090 4092 5604 5804 7736 7788 7816 7820 
+	}
+	history={
+		owner = NYO
+		add_core_of = NYO
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+		}
+	}
+	manpower=123580
+	buildings_max_level_factor=1.000
+	state_category=town
+}

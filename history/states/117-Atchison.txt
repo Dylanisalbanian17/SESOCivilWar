@@ -1,0 +1,24 @@
+
+state={
+	id=117
+	name="STATE_117"
+
+	history={
+		owner = KAN
+		add_core_of = KAN
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 2
+
+		}
+
+	}
+
+	provinces={
+		11 124 559 774 891 1129 1484 1613 1740 1757 2126 2912 4039 4524 4531 5325 5729 6600 8466 8473 8498 8527 8537 8611 8636 8642 
+	}
+	manpower=45000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

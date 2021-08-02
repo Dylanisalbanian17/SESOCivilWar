@@ -1,0 +1,21 @@
+state={
+	id=277
+	name="STATE_277"
+
+	history={
+		owner = MAI
+		add_core_of = MAI
+		buildings = {
+			infrastructure = 5
+
+		}
+
+	}
+
+	provinces={
+		132 153 189 340 782 1146 2312 2315 2513 3788 3945 4806 5330 5668 5885 6373 7355 7362 7366 7376 7392 7395 7404 7407 7411 7418 7433 
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,19 @@
+state={
+	id=64
+	name="STATE_64"
+	provinces={
+		313 1191 1245 1432 3064 3307 3520 3985 4641 4773 4781 5032 7932 7960 7979 8024 8042 12671 
+	}
+	history={
+		owner = UTA
+		add_core_of = UTA
+		victory_points = {8024 20}
+		victory_points = {5032 15}
+		buildings = {
+			infrastructure = 5
+			}
+		}
+	manpower=36288
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

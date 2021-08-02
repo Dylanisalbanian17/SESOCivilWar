@@ -1,0 +1,24 @@
+state={
+	id=252
+	name="STATE_252"
+
+	history={
+		owner = NJE
+		add_core_of = NJE
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 2
+
+		}
+
+	}
+
+	provinces={
+		378 1196 1834 1993 4326 5597 5645 7872 7892 7895 7914 7921 
+	}
+	manpower=40840
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

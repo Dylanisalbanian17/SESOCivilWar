@@ -1,0 +1,19 @@
+state={
+	id=177
+	name="STATE_177"
+	history={
+	owner = ONT
+	buildings = {
+		infrastructure = 4
+
+	}
+	add_core_of = ONT
+
+	}
+	provinces={
+		1012 1329 1974 2163 2178 2317 3054 4022 4247 4401 4738 5270 6862 7439 7461 7488 7516 
+	}
+	manpower=129350
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

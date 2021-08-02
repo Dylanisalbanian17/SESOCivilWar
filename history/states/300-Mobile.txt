@@ -1,0 +1,19 @@
+state={
+	id=300
+	name="STATE_300"
+	provinces={
+		3579 3697 5253 5447 5915 6211 6539 9697 9700 9706 9720 9727 9743 9754 9763 9794 9798 
+	}
+	history={
+		owner = ALA
+		add_core_of = ALA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			dockyard = 3
+		}
+	}
+	manpower=675000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

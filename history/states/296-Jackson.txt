@@ -1,0 +1,21 @@
+state={
+	id=296
+	name="STATE_296"
+	provinces={
+		3063 3272 3776 4278 4881 4987 5069 5828 6129 6355 6745 9508 9522 9545 9575 9589 9616 
+	}
+	history={
+		owner = MSS
+		add_core_of = MSS
+		victory_points = {3776 10}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+		}
+	}
+	manpower=335000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

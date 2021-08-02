@@ -1,0 +1,15 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_VIA_GW11"
+		texturefile = "gfx/interface/goals/German_Soldier_WW1.dds"
+    }
+}
+
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_VIA_SPEE"
+		texturefile = "gfx/interface/goals/speech.dds"
+    }
+}

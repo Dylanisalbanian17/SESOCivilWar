@@ -1,0 +1,22 @@
+state={
+	id=170
+	name="STATE_170"
+	provinces={
+		126 1239 6127 7231 7258 
+	}
+	history={
+		owner = ONT
+		add_core_of = MAN
+		victory_points = {1239 10}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+	}
+	manpower=749534
+	buildings_max_level_factor=1.000
+	state_category=city
+}
+

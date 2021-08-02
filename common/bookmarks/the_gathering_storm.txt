@@ -1,0 +1,137 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 2.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "CAL"
+		default = yes
+		
+		"CAL" = {
+			history = "CAL_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				democracy_of_the_west
+				super_depression
+				gamer_terrorism
+			}
+			focuses = {
+				CAL_time_for_vacation
+				CAL_pacific_states_theory
+				CAL_supreme_gamer_mace
+			}
+		}
+		
+		"VIA" = {
+			history = "VIA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				wehrmacht_model
+				via_insurrection
+				otto_army_chief
+			}
+			focuses = {
+				via_a_repeat_of_our_ancestors
+				via_the_speech
+			}
+		}
+		
+		"COT" = {
+			history = "COT_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				sgnrecruitment
+				blackmiscegenation
+				martha_advisor
+			}
+			focuses = {
+				cot_focus_establishsgn
+				cot_focus_repeal_articles
+				cot_focus_getajob
+			}
+		}
+		
+		"ART" = {
+			history = "ART_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		
+		"WYO" = {
+			history = "WYO_GATHERING_STORM_DESC"
+			ideology = fascism
+		}
+		
+		"WIS" = {
+			history = "WIS_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		
+		"NJE" = {
+			history = "NJE_GATHERING_STORM_DESC"
+			ideology = communism
+		}
+		
+		"---" = {
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		"ILL" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		
+		"MAS" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		
+		"TEX" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+
+		"NMX" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+
+		"MIC" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+
+		"KEN" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		
+		"NYO" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		
+		"QUB" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		
+		"ONT" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = democratic
+		}	
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

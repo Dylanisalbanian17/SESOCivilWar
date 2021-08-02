@@ -1,0 +1,23 @@
+state={
+	id=180
+	name="STATE_180"
+	history={
+	owner = ONT
+	add_core_of = ONT
+	victory_points = {3923 15}
+	buildings = {
+		infrastructure = 7
+		industrial_complex = 1
+		dockyard = 1
+
+	}
+
+
+}
+	provinces={
+		66 489 568 1739 3543 3574 3923 4722 6476 6502 6752 7662 7696 7713 7720 7808 7815
+	}
+	manpower=189350
+	buildings_max_level_factor=1.000
+	state_category=city
+}

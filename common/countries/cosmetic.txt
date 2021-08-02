@@ -1,0 +1,100 @@
+COT_CHI = {
+	color = rgb { 255 255 0 }
+	color_ui = rgb { 255 255 0 }
+}
+COT_BLM = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+COT_AZE = {
+	color = rgb { 81 193 25 }
+	color_ui = rgb { 81 193 25 }
+}
+PSA = {
+	color = rgb { 242  205  94 }
+	color_ui = { 242  205  94 }
+}
+CAL_PSC = {
+	color = rgb { 242  205  94 }
+	color_ui = { 242  205  94 }
+}
+COL_CAL = {
+	color = rgb { 245  205  94 }
+	color_ui = { 245  205  94 }
+}
+NEV_CAL = {
+	color = rgb { 245  205  94 }
+	color_ui = { 245  205  94 }
+}
+RYM_CAL = {
+	color = rgb { 245  205  94 }
+	color_ui = { 245  205  94 }
+}
+ORE_CAL = {
+	color = rgb { 245  205  94 }
+	color_ui = { 245  205  94 }
+}
+CAS_CAL = {
+	color = rgb { 245  205  94 }
+	color_ui = { 245  205  94 }
+}
+WAS_CAL = {
+	color = rgb { 245  205  94 }
+	color_ui = { 245  205  94 }
+}
+IDA_CAL = {
+	color = rgb { 245  205  94 }
+	color_ui = { 245  205  94 }
+}
+UTA_CAL = {
+	color = rgb { 245  205  94 }
+	color_ui = { 245  205  94 }
+}
+NIL = {
+	color = rgb { 19 27 99 }
+	color_ui = { 19 27 99 }
+}
+PVU = {
+	color = rgb { 255 0 0 }
+	color_ui = { 255 0 0 }
+}
+FZN = {
+	color = rgb { 66 113 69 }
+	color_ui = { 66 113 69 }
+}
+WAS_NEV = {
+	color = rgb { 27 39 150 }
+	color_ui = { 27 39 150 }
+}
+WYO_NEV = {
+	color = rgb { 27 39 150 }
+	color_ui = { 27 39 150 }
+}
+ART_NEV = {
+	color = rgb { 27 39 150 }
+	color_ui = { 27 39 150 }
+}
+SON_NEV = {
+	color = rgb { 27 39 150 }
+	color_ui = { 27 39 150 }
+}
+GLF = {
+	color = rgb { 26  155  230 }
+	color_ui = { 26  155  230 }
+}
+ARZ = {
+	color = rgb { 199  27  27 }
+	color_ui = { 199  27  27 }
+}
+GVA = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}
+VIA_NAZ = {
+	color = rgb { 125 13 24 }
+    color_ui = rgb { 163 17 31 }
+}
+VIA_REI = {
+	color = rgb { 59 79 110 }
+	color_ui = rgb { 59 79 110 }
+}

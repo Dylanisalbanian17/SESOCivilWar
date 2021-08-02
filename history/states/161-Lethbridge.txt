@@ -1,0 +1,18 @@
+state={
+	id=161
+	name="STATE_161"
+	provinces={
+		86 259 498 663 783 1112 1233 1577 2118 2338 2854 2859 2921 2983 3870 3898 4129 4640 6097 6269 7170 7173 7191 7196 7198 7215 
+	}
+	history={
+		owner = ONT
+		add_core_of = ALB
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,20 @@
+
+state={
+	id=2
+	name="STATE_2"
+	manpower= 2681000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	history={
+		owner = BCO
+		add_core_of = BCO
+		victory_points = { 7153 25 }
+		buildings = {
+			infrastructure = 4
+			air_base = 4
+		}
+	}
+	provinces={
+		14 160 285 343 364 432 510 515 525 922 950 993 999 1003 1080 1181 1205 1584 1882 1957 2127 2198 2372 2539 2612 2811 2883 2986 3036 3103 3157 3250 3306 3404 3439 3531 3778 3830 4688 4728 4844 4915 5020 5308 5868 6282 6319 6391 7033 7034 7044 7053 7091 7106 7113 7147 7153 7156 7159 7162 
+	}
+}

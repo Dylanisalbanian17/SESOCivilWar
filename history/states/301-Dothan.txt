@@ -1,0 +1,19 @@
+state={
+	id=301
+	name="STATE_301"
+	provinces={
+		750 938 943 1282 2660 3324 3327 4081 4245 4736 5283 5287 6309 6449 6604 6645 6793 9599 9626 9656 9668 9673 9679 9685 9688 9695 
+	}
+	history={
+		owner = ALA
+		add_core_of = ALA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+		}
+	}
+	manpower=675000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

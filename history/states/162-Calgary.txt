@@ -1,0 +1,22 @@
+
+state={
+	id=162
+	name="STATE_162"
+	provinces={
+		427 519 547 564 579 868 914 1010 1120 1314 1568 1609 1700 1721 1836 1931 2017 2110 2159 2371 2638 2668 2803 2932 3012 3434 3575 3805 4381 4522 4796 4953 5249 5351 5773 6300 6439 6516 7050 7060 7074 7090 7119 7124 7143 
+	}
+	history={
+		owner = BCO
+		add_core_of = ALB
+		victory_points = {3012 20}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 4
+		}
+	}
+	manpower=756169
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

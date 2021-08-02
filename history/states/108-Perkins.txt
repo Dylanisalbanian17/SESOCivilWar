@@ -1,0 +1,19 @@
+
+state={
+	id=108
+	name="STATE_108"
+	provinces={
+		4 46 318 365 818 1006 1085 1153 1310 1742 1854 3463 5156 5379 7577 
+	}
+	history={
+		owner = SDA
+		add_core_of = SDA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	manpower=59000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

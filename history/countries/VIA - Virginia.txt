@@ -1,0 +1,205 @@
+﻿capital = 282
+
+oob = "VIA_2"
+
+set_convoys = 30
+
+add_ideas = { 
+	wehrmacht_model
+	workers_strikes
+	via_insurrection
+	otto_army_chief
+	Ein_Volk_Ein_Reich
+	Mistribution_of_funds
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2.1.1"
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 1
+	fascism = 67
+	communism = 23
+	neutrality = 9
+}
+create_country_leader = {
+	
+	name = "Ryder"
+	picture = "ryder.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = { nationalist_symbol }
+	
+	}
+
+create_corps_commander = { 
+	name = "Heinz Guderian"
+	portrait_path = "gfx//leaders//GER//Portrait_Germany_Heinz_Guderian.dds"
+	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
+	skill = 4
+	id = 6
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4	
+	logistics_skill = 3
+
+}
+
+create_corps_commander = {
+	name = "Erich von Manstein"
+	portrait_path = "gfx//leaders//GER//Portrait_Germany_Erich_von_Manstein.dds"
+	traits = { trickster armor_officer brilliant_strategist trait_engineer }
+	skill = 4
+	id = 5
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Paul Hausser"
+	portrait_path = "gfx//leaders//GER//Portrait_Germany_Paul_Hausser.dds"
+	traits = {  armor_officer politically_connected }
+	skill = 4
+	id = 20
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ewald von Kleist"
+	desc = ""
+	portrait_path = "gfx//leaders//GER//Portrait_Germany_Ewald_von_Kleist.dds"
+	traits = { armor_officer trait_cautious }
+	skill = 2
+	id = 8
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Maximilian von Weichs"
+	portrait_path = "gfx//leaders//GER//Portrait_Germany_Maximilian_von_Weichs.dds"
+	traits = { cavalry_officer }
+	skill = 4
+	id = 11
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Karl Dönitz"
+	portrait_path = "gfx//leaders//GER//Portrait_Germany_Karl_Donitz.dds"
+	traits = { navy_career_officer seawolf }
+	skill = 5
+	id = 26
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Erich Raeder"
+		portrait_path = "gfx//leaders//GER//Portrait_Germany_Erich_Raeder.dds"
+	traits = { naval_lineage battleship_adherent }
+	skill = 4
+	id = 27
+	attack_skill = 3
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_field_marshal = {
+	name = "Gerd von Rundstedt"
+	portrait_path = "gfx//leaders//GER//Portrait_Germany_Gerd_von_Rundstedt.dds"
+	traits = { defensive_doctrine urban_assault_specialist old_guard }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 1
+}
+
+set_research_slots = 3
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+ create_country_leader = {
+	
+	name = "Misato"
+	picture = "misato.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = { }
+	
+	}
+
+create_country_leader = {
+
+	name = "Corporal Fuse"
+	picture = "jinroh.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = { }
+	
+	}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	fuel_refining = 1
+
+		}
+
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 7500 }
+
+		add_equipment_to_stockpile = { type = artillery_equipment amount = 325 }
+
+		add_equipment_to_stockpile = { type = support_equipment amount = 750 }
+
+		add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 85 }
+
+		

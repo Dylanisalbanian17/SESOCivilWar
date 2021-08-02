@@ -1,0 +1,17 @@
+state={
+	id=212
+	name="STATE_212"
+	provinces={
+		39 315 1094 1152 1627 1681 1719 2069 2598 2794 2855 3786 3820 3996 4287 4336 4443 4528 4719 4989 5324 5465 5730 5871 5946 6486 6635 7465 7469 7496 7503 7507 7514 7522 7534 7540 7543 7556 7557 7564 7570 7584 
+	}
+	history={
+		owner = WIS
+		add_core_of = WIS
+		buildings = {
+			infrastructure = 5
+		}
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

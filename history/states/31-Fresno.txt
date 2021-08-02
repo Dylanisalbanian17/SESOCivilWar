@@ -1,0 +1,25 @@
+state={
+	id=31
+	name="STATE_31"
+	provinces={
+		941 1371 1929 3844 4048 4668 5251 5286 5381 5536 6178 8484 8531 8560 8566 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = { 3844 10 }
+		victory_points = { 5381 5 }
+		victory_points = { 1929 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	resources = {
+		oil = 53
+	}
+	manpower= 999101
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

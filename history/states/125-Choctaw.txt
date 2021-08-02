@@ -1,0 +1,22 @@
+state={
+	id=125
+	name="STATE_125"
+	provinces={
+		176 278 372 1137 1363 1396 1628 1699 1715 1760 1961 1986 2175 2649 3470 3601 4068 5530 5601 5709 6614 9151 9196 9262 9265 9268 9275 9290 9301 9313 9327 9331 9336 9356 9373 9381 9396 
+	}
+	history={
+		owner = OKL
+		add_core_of = OKL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	resources = {
+		aluminium = 25
+	}
+	manpower=330000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

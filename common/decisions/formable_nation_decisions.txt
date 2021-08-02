@@ -1,0 +1,585 @@
+form_pacific_states_category = {
+
+	form_centralized_pacific_states = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = CAL
+			}
+		}
+
+		available = {
+			is_subject = no
+			has_completed_focus= CAL_theory_no_more
+			custom_trigger_tooltip = {
+				tooltip = form_country_pacific_required_states_tt
+				controls_state = 40 #California
+				controls_state = 39
+				controls_state = 38
+				controls_state = 37
+				controls_state = 36
+				controls_state = 35
+				controls_state = 34
+				controls_state = 33
+				controls_state = 32
+				controls_state = 31
+				controls_state = 30
+				controls_state = 29
+				controls_state = 28
+				controls_state = 27
+				controls_state = 26
+				controls_state = 25
+				controls_state = 24
+				controls_state = 23
+				controls_state = 22
+                controls_state = 21
+				controls_state = 20
+				controls_state = 19
+				controls_state = 18
+				OR = {
+				controls_state = 17 #Oregon
+				controls_state = 16
+				controls_state = 15
+				controls_state = 14
+				controls_state = 13
+				controls_state = 12
+				controls_state = 11
+
+				controls_state = 46 # Nevada 
+				controls_state = 45
+				controls_state = 44
+				controls_state = 43
+				controls_state = 42
+				controls_state = 41
+				}
+			}
+	}
+		visible = {
+			has_government= democratic
+			OR = {
+				original_tag = CAL
+			}
+			NOT = { has_global_flag = PSA.tga }
+		}
+
+		complete_effect = {
+			load_focus_tree = psa_focus
+			set_cosmetic_tag = PSA
+			# Nevada
+			custom_effect_tooltip = form_country_nevada_coring_states_tt
+			if = {
+				limit = { 
+				controls_state = 46 # Nevada 
+				controls_state = 45
+				controls_state = 44
+				controls_state = 43
+				controls_state = 42
+				controls_state = 41 }
+				hidden_effect = {
+					46 = { add_core_of = ROOT }
+					45 = { add_core_of = ROOT }
+					44 = { add_core_of = ROOT }
+					43 = { add_core_of = ROOT }
+					42 = { add_core_of = ROOT }
+					41 = { add_core_of = ROOT }
+				}
+			}
+			
+			# Oregon
+			custom_effect_tooltip = form_country_oregon_coring_states_tt
+			if = {
+				limit = {
+				controls_state = 17 #Oregon
+				controls_state = 16
+				controls_state = 15
+				controls_state = 14
+				controls_state = 13
+				controls_state = 12
+				controls_state = 11 }
+			
+			hidden_effect = {
+			17 = { add_core_of = ROOT }
+			16 = { add_core_of = ROOT }
+			15 = { add_core_of = ROOT }
+			14 = { add_core_of = ROOT }
+			13 = { add_core_of = ROOT }
+			12 = { add_core_of = ROOT }
+			11 = { add_core_of = ROOT }
+			}
+		}
+			hidden_effect = {
+				set_global_flag = PSA.tga
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	form_decentralized_pacific_states = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = CAL
+			}
+		}
+
+		available = {
+			is_subject = no
+			has_completed_focus= CAL_theory_no_more
+			NEV = { is_puppet_of = CAL }
+			ORE = { is_puppet_of = CAL }
+			custom_trigger_tooltip = {
+				tooltip = form_country_pacific_required_states_tt
+				controls_state = 40 #California
+				controls_state = 39
+				controls_state = 38
+				controls_state = 37
+				controls_state = 36
+				controls_state = 35
+				controls_state = 34
+				controls_state = 33
+				controls_state = 32
+				controls_state = 31
+				controls_state = 30
+				controls_state = 29
+				controls_state = 28
+				controls_state = 27
+				controls_state = 26
+				controls_state = 25
+				controls_state = 24
+				controls_state = 23
+				controls_state = 22
+                controls_state = 21
+				controls_state = 20
+				controls_state = 19
+				controls_state = 18
+			}
+	}
+		visible = {
+			has_government= democratic
+			OR = {
+				original_tag = CAL
+			}
+			NOT = { has_global_flag = PSA.tga }
+		}
+
+		complete_effect = {
+			load_focus_tree = psc_focus
+			hidden_effect = {
+				set_global_flag = PSA.tga
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+
+form_pacific_cascadia = {
+
+	icon = generic_form_nation
+
+	allowed = {
+		OR = {
+			original_tag = ORE
+		}
+	}
+
+	available = {
+		is_subject = yes
+		custom_trigger_tooltip = {
+			tooltip = form_pacific_cascadia_required_states_tt
+			controls_state = 4
+			controls_state = 5
+			controls_state = 6
+			controls_state = 8
+			controls_state = 9
+			controls_state = 10
+			}
+		}
+	visible = {
+		is_subject = yes
+		has_government= democratic
+		OR = {
+			original_tag = ORE
+		}
+		NOT = { has_global_flag = CAS_PSA }
+	}
+
+	complete_effect = {
+		set_cosmetic_tag = CAS_CAL
+		custom_effect_tooltip = pacific_expansion_coring_states_tt
+			hidden_effect = {
+				4 = { add_core_of = ROOT }
+				5 = { add_core_of = ROOT }
+				6 = { add_core_of = ROOT }
+				8 = { add_core_of = ROOT }
+				9 = { add_core_of = ROOT }
+				10 = { add_core_of = ROOT }
+				set_global_flag = CAS_PSA
+			}
+		}
+	ai_will_do = {
+		factor = 200
+	}
+}
+
+form_pacific_rocky_mountains = {
+
+	icon = generic_form_nation
+
+	allowed = {
+		OR = {
+			original_tag = NEV
+		}
+		NOT = { has_global_flag = RYM_PSA }
+	}
+
+	available = {
+		is_subject = yes
+		custom_trigger_tooltip = {
+			tooltip = form_pacific_rocky_mountains_required_states_tt
+			controls_state = 47
+			controls_state = 48
+			controls_state = 49
+			controls_state = 50
+			controls_state = 64
+			controls_state = 65
+			controls_state = 66
+			controls_state = 67
+			controls_state = 68
+			}
+		}
+	visible = {
+		is_subject = yes
+		has_government= democratic
+		OR = {
+			original_tag = NEV
+		}
+	}
+
+	complete_effect = {
+		set_cosmetic_tag = RYM_CAL
+		custom_effect_tooltip = pacific_expansion_coring_states_tt
+			hidden_effect = {
+				47 = { add_core_of = ROOT }
+				48 = { add_core_of = ROOT }
+				49 = { add_core_of = ROOT }
+				50 = { add_core_of = ROOT }
+				64 = { add_core_of = ROOT }
+				65 = { add_core_of = ROOT }
+				66 = { add_core_of = ROOT }
+				67 = { add_core_of = ROOT }
+				68 = { add_core_of = ROOT }
+				set_global_flag = RYM_PSA
+			}
+		}
+	ai_will_do = {
+		factor = 200
+	}
+}
+}
+
+
+form_great_lakes_category = {
+
+	form_great_lakes = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = WIS
+				original_tag = ILL
+				original_tag = MIC
+			}
+		}
+
+		available = {
+			is_subject = no
+			# Wisconsin
+			custom_trigger_tooltip = {
+				tooltip = form_country_wisconsin_required_states_tt
+				controls_state = 209
+				controls_state = 210
+				controls_state = 211
+				controls_state = 212
+				controls_state = 213
+			}
+			# Illinois
+			custom_trigger_tooltip = {
+				tooltip = form_country_illinois_required_states_tt
+				controls_state = 220
+				controls_state = 221
+				controls_state = 222
+				controls_state = 223
+				controls_state = 224
+				controls_state = 225
+				controls_state = 226
+				controls_state = 227
+			}
+			# Michigan
+			custom_trigger_tooltip = {
+				tooltip = form_country_michigan_required_states_tt
+				controls_state = 214
+				controls_state = 215
+				controls_state = 216
+				controls_state = 217
+				controls_state = 218
+				controls_state = 219
+			}
+			# Indiana
+			custom_trigger_tooltip = {
+				tooltip = form_country_indiana_required_states_tt
+				controls_state = 228
+				controls_state = 229
+				controls_state = 230
+				controls_state = 231
+			}
+			# Ohio
+			custom_trigger_tooltip = {
+				tooltip = form_country_ohio_required_states_tt
+				controls_state = 232
+				controls_state = 233
+				controls_state = 234
+				controls_state = 235
+				controls_state = 236
+			}
+			# Minnesota
+			custom_trigger_tooltip = {
+				tooltip = form_country_minnesota_required_states_tt
+				controls_state = 181
+				controls_state = 186
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = WIS
+				original_tag = ILL
+				original_tag = MIC
+			}
+			NOT = { has_global_flag = GLF.tga }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GLF
+			# Wisconsin
+			custom_effect_tooltip = form_country_wisconsin_coring_states_tt
+			hidden_effect = {
+				209 = { add_core_of = ROOT }
+				210 = { add_core_of = ROOT }
+				211 = { add_core_of = ROOT }
+				212 = { add_core_of = ROOT }
+				213 = { add_core_of = ROOT }
+			}
+			# Illinois
+			custom_effect_tooltip = form_country_illinois_coring_states_tt
+			hidden_effect = {
+				220 = { add_core_of = ROOT }
+				221 = { add_core_of = ROOT }
+				222 = { add_core_of = ROOT }
+				223 = { add_core_of = ROOT }
+				224 = { add_core_of = ROOT }
+				225 = { add_core_of = ROOT }
+				226 = { add_core_of = ROOT }
+				227 = { add_core_of = ROOT }
+			}
+			# Michigan
+			custom_effect_tooltip = form_country_michigan_coring_states_tt
+			hidden_effect = {
+				214 = { add_core_of = ROOT }
+				215 = { add_core_of = ROOT }
+				216 = { add_core_of = ROOT }
+				217 = { add_core_of = ROOT }
+				218 = { add_core_of = ROOT }
+				219 = { add_core_of = ROOT }
+			}
+			# Indiana
+			custom_effect_tooltip = form_country_indiana_coring_states_tt
+			hidden_effect = {
+				228 = { add_core_of = ROOT }
+				229 = { add_core_of = ROOT }
+				230 = { add_core_of = ROOT }
+				231 = { add_core_of = ROOT }
+			}
+			# Ohio
+			custom_effect_tooltip = form_country_ohio_coring_states_tt
+			hidden_effect = {
+				232 = { add_core_of = ROOT }
+				233 = { add_core_of = ROOT }
+				234 = { add_core_of = ROOT }
+				235 = { add_core_of = ROOT }
+				236 = { add_core_of = ROOT }
+			}
+			# Minnesota
+			custom_effect_tooltip = form_country_minnesota_coring_states_tt
+			hidden_effect = {
+				181 = { add_core_of = ROOT }
+				186 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				set_global_flag = GLF.tga
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+form_arizona_category = {
+
+	form_arizona = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = ARS
+				original_tag = ARB
+				original_tag = ART
+			}
+		}
+
+		available = {
+			is_subject = no
+			# Space
+			custom_trigger_tooltip = {
+				tooltip = form_country_space_canyon_required_states_tt
+				controls_state = 69
+				controls_state = 70
+				controls_state = 71
+				controls_state = 72
+				controls_state = 73
+				controls_state = 74
+				controls_state = 75
+			}
+			# Box
+			custom_trigger_tooltip = {
+				tooltip = form_country_box_reservation_required_states_tt
+				controls_state = 76
+				controls_state = 77
+				controls_state = 78
+				controls_state = 79
+				controls_state = 80
+			}
+			# Target
+			custom_trigger_tooltip = {
+				tooltip = form_country_scottsdale_church_required_states_tt
+				controls_state = 81
+				controls_state = 82
+				controls_state = 83
+				controls_state = 84
+				controls_state = 85
+				controls_state = 86
+				controls_state = 87
+				controls_state = 88
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = ARS
+				original_tag = ARB
+				original_tag = ART
+			}
+			NOT = { has_global_flag = ARZ.tga }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = ARZ
+			# Space
+			custom_effect_tooltip = form_country_space_canyon_coring_states_tt
+			hidden_effect = {
+				69 = { add_core_of = ROOT }
+				70 = { add_core_of = ROOT }
+				71 = { add_core_of = ROOT }
+				72 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				74 = { add_core_of = ROOT }
+				75 = { add_core_of = ROOT }
+			}
+			# Box
+			custom_effect_tooltip = form_country_box_reservation_coring_states_tt
+			hidden_effect = {
+				76 = { add_core_of = ROOT }
+				77 = { add_core_of = ROOT }
+				78 = { add_core_of = ROOT }
+				79 = { add_core_of = ROOT }
+				80 = { add_core_of = ROOT }
+			}
+			# Target
+			custom_effect_tooltip = form_country_scottsdale_church_coring_states_tt
+			hidden_effect = {
+				81 = { add_core_of = ROOT }
+				82 = { add_core_of = ROOT }
+				83 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				85 = { add_core_of = ROOT }
+				86 = { add_core_of = ROOT }
+				87 = { add_core_of = ROOT }
+				88 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				set_global_flag = ARZ.tga
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+form_greater_virgin_reich_category = {
+
+	form_greater_virgin_reich = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = VIA
+		}
+
+		available = {
+			is_subject = no
+			has_full_control_of_state = 243
+			has_full_control_of_state = 278
+			has_full_control_of_state = 288
+			has_full_control_of_state = 234
+			has_full_control_of_state = 229
+			has_full_control_of_state = 219
+			has_full_control_of_state = 224
+			has_full_control_of_state = 209
+			has_full_control_of_state = 186
+			has_full_control_of_state = 191
+			has_full_control_of_state = 195
+			all_owned_state = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		visible = {
+			AND = {
+				original_tag = VIA
+				has_government = fascism
+				has_country_leader = { ruling_only = yes name = "Ryder" }
+			}
+			NOT = { has_global_flag = GVA.tga }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GVA
+			hidden_effect = {
+				set_global_flag = GVA.tga
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}

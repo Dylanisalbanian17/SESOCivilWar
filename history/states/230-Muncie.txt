@@ -1,0 +1,23 @@
+state={
+	id=230
+	name="STATE_230"
+	provinces={
+		296 2793 3126 3147 4257 4582 4671 4853 4890 5031 5231 5278 5432 5613 6017 6513 6641 6649 8264 8291 8292 8372 8376 8447 8467 8481 8495 8503 
+	}
+	history={
+		owner = IND
+		add_core_of = IND
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 2
+			air_base = 5
+		}
+	}
+	resources = {
+		aluminium = 16
+	}
+	manpower=1150000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

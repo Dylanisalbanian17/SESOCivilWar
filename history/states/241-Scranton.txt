@@ -1,0 +1,19 @@
+state={
+	id=241
+	name="STATE_241"
+	provinces={
+		822 1118 1683 1710 1980 2731 2862 2904 3689 4027 5586 5647 5860 6038 6331 6477 6648 6739 6766 7821 7834 7835 7856 7863 7889 7903 7925 7931 7952 7988 
+	}
+	history={
+		owner = PEN
+		add_core_of = PEN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+	manpower=487500
+	buildings_max_level_factor=1.000
+	state_category=city
+}

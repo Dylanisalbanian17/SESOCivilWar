@@ -1,0 +1,115 @@
+﻿capital = 265
+
+set_research_slots = 3
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
+
+set_convoys = 30
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2.11.6"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 29
+	fascism = 0
+	communism = 1
+	neutrality = 70
+}
+
+create_country_leader = {
+	
+	name = "Sag?"
+	desc = "SAG_0_DESC"
+	picture = "sag_0.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	
+	name = "Dildo Sagbag"
+	desc = "SAG_1_DESC"
+	picture = "sag_1.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		popular_figurehead2 dislikes_germany 
+	}
+}
+
+
+create_corps_commander = { 
+	name = "Yaojing"
+	portrait_path = "gfx//leaders//GER//Portrait_Germany_Heinz_Guderian.dds"
+	traits = { organizer brilliant_strategist skilled_staffer politically_connected }
+	skill = 4
+	id = 20
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2	
+	logistics_skill = 4
+
+}
+
+create_corps_commander = { 
+	name = "Webb"
+	portrait_path = "gfx//leaders//GER//Portrait_Germany_Heinz_Guderian.dds"
+	traits = { trait_engineer infantry_leader media_personality }
+	skill = 2
+	id = 21
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4	
+	logistics_skill = 3
+
+}
+
+create_corps_commander = { 
+	name = "Heroin"
+	portrait_path = "gfx//leaders//GER//Portrait_Germany_Heinz_Guderian.dds"
+	traits = { trait_reckless }
+	skill = 1
+	id = 22
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2	
+	logistics_skill = 1
+
+}

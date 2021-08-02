@@ -1,0 +1,19 @@
+state={
+	id=255
+	name="STATE_255"
+	provinces={
+		2491 2826 2908 3687 4329 5305 5433 5836 5954 6226 6833 8077 8118 8160 8161 8174 8191 8192 8209 
+	}
+	history={
+		owner = NJE
+		add_core_of = NJE
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=97608
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,19 @@
+state={
+	id=231
+	name="STATE_231"
+	provinces={
+		173 742 1047 1267 1552 1601 1907 2107 2166 2506 2911 3158 4214 4319 4387 4444 4621 4655 5012 5082 5105 5635 5650 5963 6216 6268 6393 6602 8462 8485 8514 8544 8569 8606 8625 8638 8640 8643 8644 8646 8659 8662 8670 8685 
+	}
+	history={
+		owner = IND
+		add_core_of = IND
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+		}
+	}
+	manpower=400000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

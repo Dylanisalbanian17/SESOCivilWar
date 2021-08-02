@@ -1,0 +1,23 @@
+
+state={
+	id=123
+	name="STATE_123"
+
+	history={
+		owner = OKL
+		add_core_of = OKL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		536 976 1238 1446 1516 1704 2117 2385 2575 3114 3176 3296 3766 4266 4391 4660 4892 4916 4958 5856 5879 6550 8959 9097 
+	}
+	manpower=330000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

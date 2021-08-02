@@ -1,0 +1,21 @@
+
+state={
+	id=147
+	name="STATE_147"
+	provinces={
+		1217 1418 1593 1714 2464 2820 3016 3121 3185 3386 3433 3843 4197 4835 5087 5342 6085 6347 6646 6677 6928 9622 9644 9645 9650 9666 9684 9696 9704 9724 9745 9747 
+	}
+	history={
+		owner = TEX
+		add_core_of = TEX
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=367500
+	buildings_max_level_factor=1.000
+	state_category=town
+}
+

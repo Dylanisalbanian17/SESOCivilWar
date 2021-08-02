@@ -1,0 +1,22 @@
+state={
+	id=145
+	name="STATE_145"
+	resources={
+		oil=80.000
+	}
+	provinces={
+		80 416 546 1631 1801 2060 2128 2209 3460 3650 3797 3866 4625 5364 5484 5513 5854 6061 6179 6195 6237 6433 6498 9554 9565 9577 9587 9604 9608 9618 9620 9655 9667 9681 9708 
+	}
+	history={
+		owner = TEX
+		add_core_of = TEX
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=367500
+	buildings_max_level_factor=1.000
+	state_category=town
+}

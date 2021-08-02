@@ -1,0 +1,20 @@
+state={
+	id=329
+	name="STATE_329"
+	provinces={
+		756 1294 2264 2484 3590 3670 3770 3848 5185 5785 6287 6524 7305 7319 7335 7340 7373 7405 
+	}
+	history={
+		owner = NSC
+		add_core_of = NSC
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+		}
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

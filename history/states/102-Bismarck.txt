@@ -1,0 +1,21 @@
+state={
+	id=102
+	name="STATE_102"
+	provinces={
+		1893 5042 7441 7468 
+	}
+	history={
+		owner = NDA
+		add_core_of = NDA
+		victory_points = {7468 10}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=73000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
+

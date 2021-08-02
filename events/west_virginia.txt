@@ -1,0 +1,43 @@
+add_namespace = wvi_virginia
+
+country_event = {
+	id = wvi_virginia.1 
+	title = wvi_virginia.1.t
+	desc = wvi_virginia.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {    
+        name = wvi_virginia.1.a
+        ai_chance = { factor = 1}
+        hidden_effect = {
+            every_country = {
+                limit = { has_cosmetic_tag = VIA_REI }
+                WVI = {
+                    declare_war_on = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            }
+        }
+    }
+}
+country_event = {
+	id = wvi_virginia.2 
+	title = wvi_virginia.2.t
+	desc = wvi_virginia.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {	
+		name = wvi_virginia.2.a
+		ai_chance = { factor = 1}
+		add_opinion_modifier = {
+			target = VIA_NAZ
+			modifier = small_decrease
+		}
+	}
+}
+
+

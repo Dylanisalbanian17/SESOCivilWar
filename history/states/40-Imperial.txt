@@ -1,0 +1,20 @@
+state={
+	id=40
+	name="STATE_40"
+	provinces={
+		210 360 745 1031 1375 1454 2043 2359 3488 3710 6356 9145 9176 9233 9253 9257 9259 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = { 2043 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+			}
+		}
+	manpower= 381215
+	buildings_max_level_factor=1.000
+	state_category=city
+}

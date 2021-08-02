@@ -1,0 +1,19 @@
+state={
+	id=181
+	name="STATE_181"
+	history={
+		owner = MIN
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = MIN
+
+	}
+	provinces={
+		138 793 2027 2590 3315 3451 3647 4148 5218 5702 7371 7380 7416 7421 7423 7447 7457 
+	}
+	manpower=95643
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,19 @@
+state={
+	id=54
+	name="STATE_54"
+	provinces={
+		566 2278 2719 3436 4162 4388 5390 7270 7286 7310 7322 
+	}
+	history={
+		owner = MON
+		add_core_of = MON
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}	
+	}
+	manpower=50250
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

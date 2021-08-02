@@ -1,0 +1,46 @@
+
+state={
+	id=282
+	name="STATE_282"
+	provinces={
+		1021 1634 1958 2058 2088 2630 3385 3727 3879 3962 4239 4282 4633 4874 5934 5944 6121 6265 8407 8419 8426 8429 8439 8448 8468 
+	}
+	history={
+		owner = VIA
+		add_core_of = VIA
+		victory_points = {4239 35}
+		victory_points = {3385 5}
+		victory_points = {8429 5}
+		victory_points = {6265 5}
+		victory_points = {3879 5}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 4
+			arms_factory = 6
+			dockyard = 3
+			air_base = 9
+			8589 = {
+				naval_base     = 3
+				coastal_bunker = 1 
+			}
+			4239 = {
+				bunker = 2
+			}
+			8407 = {
+				bunker = 1
+			}
+			3962 = {
+				bunker = 4
+			}
+		}
+	}
+	manpower=2616500
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	resources = {
+		steel = 23
+		aluminium = 5
+
+	}
+}

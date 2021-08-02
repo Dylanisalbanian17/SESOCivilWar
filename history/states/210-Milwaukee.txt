@@ -1,0 +1,21 @@
+
+state={
+	id=210
+	name="STATE_210"
+	provinces={
+		639 2087 2354 2556 2780 2816 2868 4044 4500 5072 5693 5844 6317 6418 6558 7806 7828 7847 7868 7871 7881 7891 7901 7911 
+	}
+	history={
+		owner = WIS
+		add_core_of = WIS
+		victory_points = {2087 15}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 2
+		}
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

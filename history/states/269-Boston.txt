@@ -1,0 +1,28 @@
+state={
+	id=269
+	name="STATE_269"
+
+	history={
+		owner = MAS
+		add_core_of = MAS
+		victory_points = {
+			6863 25 
+		}
+		buildings = {
+			infrastructure = 10
+			arms_factory = 1
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 6
+
+		}
+
+	}
+
+	provinces={
+		1479 5501 5833 6423 6863 7588 
+	}
+	manpower=650250
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

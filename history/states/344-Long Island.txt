@@ -1,0 +1,31 @@
+state={
+	id=344
+	name="STATE_344"
+	provinces={
+		47 1399 2675 2845 7885 
+	}
+	history={
+		owner = NYO
+		add_core_of = NYO
+		victory_points = {7885 35}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 2
+			dockyard = 2
+			arms_factory = 2
+			air_base = 6
+			3433 = {
+				naval_base = 3
+
+			}
+			3428 = {
+				naval_base = 4
+
+			}
+
+		}
+	}
+	manpower=197355
+	buildings_max_level_factor=1.000
+	state_category=city
+}

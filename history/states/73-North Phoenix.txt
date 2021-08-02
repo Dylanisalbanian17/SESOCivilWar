@@ -1,0 +1,24 @@
+state={
+	id=73
+	name="STATE_73"
+	provinces={
+		3369 5398 9192 9213 9224 
+	}
+	history={
+		owner = ARB
+		add_core_of = ARB
+		add_claim_by = ARS
+		add_claim_by = ART
+		victory_points = {9224 15}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	resources = {
+		steel = 28
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

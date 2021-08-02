@@ -1,0 +1,24 @@
+state={
+	id=265
+	name="STATE_265"
+
+	history={
+		owner = COT
+		add_core_of = COT
+		victory_points = {4578 10}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		2930 4035 4578 4910 5637 6157 7735 7755 7805 
+	}
+	manpower=270000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

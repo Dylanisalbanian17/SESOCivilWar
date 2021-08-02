@@ -1,0 +1,23 @@
+state={
+	id=104
+	name="STATE_104"
+	provinces={
+		309 354 1878 2304 2389 2847 4721 4815 6682 
+	}
+	history={
+		owner = NDA
+		add_core_of = NDA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	resources = {
+		steel = 10
+		oil = 24
+	}
+	manpower=42000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

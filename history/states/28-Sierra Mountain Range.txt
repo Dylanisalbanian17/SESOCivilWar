@@ -1,0 +1,22 @@
+
+state={
+	id=28
+	name="STATE_28"
+	provinces={
+		494 504 698 706 1174 1249 1331 1473 1656 1775 2490 2602 3075 3641 3644 3694 3983 4428 4789 4793 5243 5479 5524 6067 6095 6416 8200 8201 8213 8320 8370 8440 8536 8592 8715 
+	}
+		history={
+		owner = CAL
+		add_core_of = CAL
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+	}
+	resources = {
+		tungsten = 20
+	}
+	manpower= 42287
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

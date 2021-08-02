@@ -1,0 +1,22 @@
+state={
+	id=179
+	name="STATE_179"
+	history={
+	owner = ONT
+	add_core_of = ONT
+	victory_points = {7450 15}
+	buildings = {
+		infrastructure = 6
+		arms_factory = 1
+
+	}
+
+
+}
+	provinces={
+		10 1228 1498 1938 2449 2463 3627 4126 4544 5100 5843 7417 7434 7438 7443 7446 7450 7463 
+	}
+	manpower=189350
+	buildings_max_level_factor=1.000
+	state_category=city
+}

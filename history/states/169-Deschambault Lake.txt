@@ -1,0 +1,21 @@
+state={
+	id=169
+	name="STATE_169"
+
+	history={
+		owner = ONT
+		add_core_of = SAS
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		43 56 111 167 227 437 488 711 725 767 788 1049 1138 1166 1409 1540 1624 1765 1955 2165 2328 2387 2394 2975 4311 4408 4453 5205 5985 6834 7023 7047 7065 7111 12742 
+	}
+	manpower=17996
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

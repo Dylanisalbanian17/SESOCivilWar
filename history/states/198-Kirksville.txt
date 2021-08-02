@@ -1,0 +1,20 @@
+state={
+	id=198
+	name="STATE_198"
+	provinces={
+		221 299 882 1108 1149 1651 1657 1831 2839 2900 3302 3418 4011 4195 4804 5400 5452 5455 5545 5598 6060 8358 8359 8394 8397 8408 8420 8433 8442 8456 8487 8499 8506 8509 8516 8520 8529 8540 8541 
+	}
+	history={
+		owner = MIS
+		add_core_of = MIS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	manpower=955000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

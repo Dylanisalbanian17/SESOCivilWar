@@ -1,0 +1,19 @@
+state={
+	id=148
+	name="STATE_148"
+	provinces={
+		219 1054 1428 2441 2888 2947 3357 5007 5040 5410 5416 5787 5801 6325 6492 9572 9583 9594 9615 9619 9637 9659 9671 9680 
+	}
+	history={
+		owner = TEX
+		add_core_of = TEX
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=367500
+	buildings_max_level_factor=1.000
+	state_category=town
+}

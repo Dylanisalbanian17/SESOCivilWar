@@ -1,0 +1,19 @@
+state={
+	id=63
+	name="STATE_63"
+	provinces={
+		22 374 409 1521 2709 4255 4486 4507 7551 
+	}
+	history={
+		owner = WYO
+		add_core_of = WYO
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

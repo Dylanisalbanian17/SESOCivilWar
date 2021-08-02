@@ -1,0 +1,62 @@
+state={
+	id=284
+	name="STATE_284"
+	resources={
+		rubber=5.000
+		oil=3.000
+		steel=2.000
+	}
+
+	history={
+		owner = VIA
+		add_core_of = VIA
+		victory_points = {
+			8650 25 
+		}
+		victory_points = {
+			8651 5 
+		}
+		victory_points = {
+			218 5
+		}
+		victory_points = {
+			8671 15 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 6
+			arms_factory = 4
+			dockyard = 7
+			8650 = {
+				naval_base = 3
+				coastal_bunker = 2
+				bunker = 1
+
+			}
+			8570 = {
+				naval_base = 2
+				coastal_bunker = 1
+
+			}
+			8671 = {
+				bunker = 2
+				coastal_bunker = 1
+
+			}
+			218 = {
+				bunker = 2
+				coastal_bunker = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		218 1641 1691 2493 2647 2937 3099 3112 3127 3288 3917 4240 4350 4417 5261 5572 6224 6381 6451 6907 8634 8649 8650 8651 8664 8668 8671 8684 8694 8704 8723 
+	}
+	manpower=2114225
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

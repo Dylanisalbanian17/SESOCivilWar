@@ -1,0 +1,26 @@
+state={
+	id=259
+	name="STATE_259"
+
+	history={
+		owner = NYO
+		add_core_of = NYO
+		victory_points = {
+			7870 15 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		617 761 2728 2815 3340 3583 4456 4526 4683 5373 5490 6027 6119 6132 6257 6533 6549 6622 7697 7738 7742 7765 7767 7786 7787 7789 7795 7800 7812 7814 7817 7819 7831 7836 7862 7870 
+	}
+	manpower=927701
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

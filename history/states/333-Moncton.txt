@@ -1,0 +1,21 @@
+state={
+	id=333
+	name="STATE_333"
+	provinces={
+		671 813 1930 2282 2992 4089 5101 5192 5877 6183 6228 6244 6316 7176 7208 7228 7238 7241 
+	}
+	history={
+		owner = NBR
+		add_core_of = NBR
+		victory_points = {7228 10}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

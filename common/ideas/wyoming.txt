@@ -1,0 +1,23 @@
+ideas = {
+
+	country = {
+		nazi = {
+			
+			allowed = {
+				tag = WYO
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.5
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+	}}

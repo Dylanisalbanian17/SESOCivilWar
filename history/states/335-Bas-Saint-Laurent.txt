@@ -1,0 +1,21 @@
+
+state={
+	id=335
+	name="STATE_335"
+	provinces={
+		158 279 391 629 1626 1862 1995 2181 2715 2985 3256 3453 3713 3745 3990 4008 4527 4948 5009 5312 5904 5926 5959 6684 7150 7158 7194 
+	}
+	history={
+		owner = QUB
+		add_core_of = QUB
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			air_base = 4
+			dockyard = 1
+		}
+	}
+	manpower=80000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

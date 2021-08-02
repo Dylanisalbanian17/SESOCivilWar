@@ -1,0 +1,21 @@
+state={
+	id=34
+	name="STATE_34"
+	provinces={
+		543 582 2012 2498 3245 4415 4487 8653 8669 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = { 4487 5 }
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 2
+		}
+	}
+	manpower= 283111
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

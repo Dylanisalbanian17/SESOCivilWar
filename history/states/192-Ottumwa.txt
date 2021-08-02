@@ -1,0 +1,18 @@
+state={
+	id=192
+	name="STATE_192"
+	provinces={
+		1306 1722 1895 2046 2085 2092 2134 2136 2256 2266 2640 2751 3068 3651 4142 4196 4421 4669 4777 5583 6274 6432 6790 8210 8214 8220 8253 8254 8257 8262 8285 8303 8315 8346 8347 
+	}
+	history={
+		owner = IOA
+		add_core_of = IOA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1 
+		}
+	}
+	manpower=9450
+	buildings_max_level_factor=1.000
+	state_category=city
+}

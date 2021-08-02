@@ -1,0 +1,321 @@
+ideas = {
+	country = {
+		wehrmacht_model = {
+			
+			allowed = {
+				tag = VIA
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			available = {
+				if = {
+					has_government = fascism
+				}
+	
+			}
+			
+			removal_cost = -1
+
+			picture = german_advisors.dds
+			
+			modifier = {
+				
+				army_attack_factor = 0.1
+
+				minimum_training_level = 0.25
+					
+                training_time_factor = 0.3
+				
+				army_org_factor = 0.05
+
+				army_core_defence_factor = 0.10
+			}
+		}
+
+		Ein_Volk_Ein_Reich = {
+			
+			allowed = {
+				tag = VIA
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			available = {
+				if = {
+					has_government = fascism
+				}
+	
+			}
+			
+			removal_cost = -1
+
+			picture = soviet_german_friendship
+			
+			modifier = {
+
+				army_core_defence_factor = 0.10
+				war_support_factor = 0.1
+				surrender_limit = 0.40
+			}
+		}
+		
+		via_bulwark_against_bolshevism = {
+
+			allowed = {
+				tag = VIA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				if = {
+					has_government = fascism
+				}
+	
+			}
+
+			removal_cost = -1
+
+			picture = spr_torchbearers_of_tomorrow.dds
+
+			modifier = {
+				communism_drift = -0.1
+				drift_defence_factor = 0.25
+
+			}
+		}
+			
+		workers_strikes = {
+				
+				allowed = {
+					tag = VIA
+				}
+	
+				allowed_civil_war = { 
+					always = yes
+				}
+
+				available = {
+					if = {
+						has_government= fascism
+					}
+		
+				}
+				
+				removal_cost = -1
+	
+				picture = FRA_factory_strikes.dds
+				
+				modifier = {
+	
+					consumer_goods_factor = 0.25
+					industrial_capacity_factory = -0.4
+				industrial_capacity_dockyard = -0.25
+				stability_factor = -0.1
+				}
+			}
+
+			via_insurrection = {
+				
+				allowed = {
+					tag = VIA
+				}
+	
+				allowed_civil_war = { 
+					always = yes
+				}
+
+				available = {
+					if = {
+						has_government= fascism
+					}
+		
+				}
+				
+				removal_cost = -1
+	
+				picture = idea_chi_war_of_resistance.dds
+				
+				modifier = {
+	
+					war_support_factor = -0.1
+					recruitable_population = -0.05
+					stability_factor = -0.1
+				}
+			}
+			via_nazpeoplesarmy = {	
+	
+				picture = idea_generic_communist_army.dds
+	
+				allowed = {
+					original_tag =  VIA
+					NOT = { has_government = fascism }
+				}
+	
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					war_support_weekly = 0.05
+					recruitable_population = 0.05
+					land_reinforce_rate = 0.03
+					surrender_limit = 0.5
+				}
+			}
+
+			via_inexperiencedofficercorps = {	
+	
+				picture = idea_chi_incompetent_officers.dds
+	
+				allowed = {
+					original_tag =  VIA
+					NOT = { has_government = fascism }
+				}
+	
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+				army_org_factor = -0.1
+				army_attack_factor = -0.05
+				army_defence_factor =  -0.05
+				}
+			}
+
+			via_lacking_the_means_of_pro = {	
+	
+				picture = eng_spirit_of_the_industrial_revolution
+	
+				allowed = {
+					original_tag =  VIA
+					NOT = { has_government = fascism }
+				}
+	
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+				production_speed_arms_factory_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.05
+				consumer_goods_factor = 0.05
+				}
+			}
+
+			Mistribution_of_funds = {
+			
+				picture = tur_balkan_central_bank_wealthy_greece
+
+				allowed = {
+					tag = VIA
+				}
+	
+				allowed_civil_war = { 
+					always = yes
+				}
+	
+				available = {
+					if = {
+						has_government = fascism
+					}
+		
+				}
+				
+				removal_cost = -1
+				
+				modifier = {
+	
+					political_power_factor = -0.05
+					consumer_goods_factor = 0.05
+					production_speed_buildings_factor = -0.10
+					research_speed_factor = -0.10
+	
+				}
+			}
+		}
+
+	army_chief = {
+		otto_army_chief = {
+			picture = otto
+			allowed = {
+				original_tag = VIA
+				}
+
+				available = {
+					if = {
+						has_government= fascism
+					}
+		
+				}
+			
+			traits = { army_chief_organizational_2 }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+	}
+
+political_advisor = {
+	ulrich_advisor = {
+		picture = ulrich
+		allowed = {
+			original_tag = VIA
+			}
+		
+		traits = { popular_figurehead }
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ada_advisor = {
+		picture = ada
+		allowed = {
+			original_tag = VIA
+			}
+
+			available = {
+				if = {
+					has_government= fascism
+				}
+	
+			}
+		
+		traits = { princess_of_terror }
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+obrecht_advisor = {
+	picture = obrecht
+	allowed = {
+		original_tag = VIA
+		}
+
+		available = {
+			if = {
+				has_government= communism
+			}
+
+		}
+
+	
+	traits = { marxist_philosopher }
+
+}
+
+}
+
+}

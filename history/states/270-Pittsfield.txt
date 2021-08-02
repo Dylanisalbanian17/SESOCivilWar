@@ -1,0 +1,21 @@
+state={
+	id=270
+	name="STATE_270"
+	provinces={
+		830 1924 2188 2276 2362 2610 4165 4342 4708 4984 5134 5706 6348 6503 6743 6778 7593 7612 7647 7651 7667 7672 7678 7685 7709 7727 
+	}
+	history={
+		owner = MAS
+		add_core_of = MAS
+		victory_points = {2362 10}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+	}
+	manpower=216750
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

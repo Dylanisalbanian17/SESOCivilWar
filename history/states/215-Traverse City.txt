@@ -1,0 +1,27 @@
+state={
+	id=215
+	name="STATE_215"
+
+	history={
+		owner = MIC
+		add_core_of = MIC
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+
+	}
+
+	resources = {
+		steel = 96
+		oil = 10
+	}
+
+	provinces={
+		120 253 643 826 879 913 1133 1720 1963 2150 2333 2356 2633 2873 3105 3146 3219 3831 4310 5011 5226 5758 5955 6018 6035 6087 6123 6719 7515 7524 7535 7545 7554 7559 7566 7573 7587 7594 7596 7618 7620 7629 7645 7681 7694 7695 7699 7712 7718 
+	}
+	manpower=410000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

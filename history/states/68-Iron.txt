@@ -1,0 +1,19 @@
+state={
+	id=68
+	name="STATE_68"
+	provinces={
+		511 864 1426 1573 1890 2352 2428 3894 5680 6548 8500 8599 8632 8648 
+	}
+	history={
+		owner = UTA
+		add_core_of = UTA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 5
+			}
+		}
+	manpower=274890
+	buildings_max_level_factor=1.000
+	state_category=town
+}

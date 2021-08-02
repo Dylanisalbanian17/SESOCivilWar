@@ -1,0 +1,25 @@
+
+state={
+	id=234
+	name="STATE_234"
+	provinces={
+		873 1562 1622 2257 2293 2314 3031 3194 3379 3872 3989 5294 5334 5757 5922 5993 6256 6697 6896 8211 8252 8266 8268 8293 8295 8300 8312 8318 8321 8323 8328 8332 8353 8361 8373 8388 
+	}
+	history={
+		owner = OHO
+		add_core_of = OHO
+		victory_points = {8283 15}
+		buildings = {
+			infrastructure = 7
+			air_base = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	resources = {
+		steel = 48
+	}
+	manpower=306087	
+	buildings_max_level_factor=1.000
+	state_category = large_city
+}

@@ -1,0 +1,20 @@
+
+state={
+	id=216
+	name="STATE_216"
+	provinces={
+		754 1728 2505 3120 3955 3965 4015 4422 4876 5277 5393 6488 6608 6686 6710 7654 7692 7719 7748 7769 7796 7803 7807 
+	}
+	history={
+		owner = MIC
+		add_core_of = MIC
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=410000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

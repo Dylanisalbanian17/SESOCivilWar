@@ -1,0 +1,12 @@
+spriteTypes = {
+
+
+	frameAnimatedSpriteType = {
+		name = "GFX_dylan_always_wins"
+		texturefile = "gfx/leaders/NEV/dylan_always_winsanimated.dds"
+		noOfFrames = 65
+		animation_rate_fps = 13
+		looping = yes
+		play_on_show = yes
+	}
+}

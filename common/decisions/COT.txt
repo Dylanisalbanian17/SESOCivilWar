@@ -1,0 +1,29 @@
+propaganda_efforts = {
+	COT_changeprofilepicture = {
+		icon = generic_political_actions
+
+		cost = 35
+
+		allowed = {
+			tag = COT
+		}
+
+		available = {
+			has_war = no
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		visible = {
+			has_completed_focus = cot_focus_hegemony
+		}
+
+		complete_effect = {
+			country_event = connecticut.2
+		}
+
+		days_re_enable = 240
+	}
+}

@@ -1,0 +1,19 @@
+
+state={
+	id=268
+	name="STATE_268"
+	provinces={
+		889 1966 2918 4863 6117 6773 7686 7724 
+	}
+	history={
+		owner = MAS
+		add_core_of = MAS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			}
+	}
+	manpower=325125
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

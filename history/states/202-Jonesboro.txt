@@ -1,0 +1,20 @@
+
+state={
+	id=202
+	name="STATE_202"
+	provinces={
+		382 1001 1192 1242 1632 1828 2823 2939 3177 3483 3593 3974 4086 4160 4366 4856 5474 5538 5780 6198 6337 6340 6541 6551 6703 6717 8970 8993 9008 9040 9063 9065 9069 9079 9126 9131 9162 9205 
+	}
+	history={
+		owner = ARK
+		add_core_of = ARK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+		}
+	} 
+	manpower=125000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

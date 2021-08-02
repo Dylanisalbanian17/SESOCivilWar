@@ -1,0 +1,58 @@
+division_template = {
+	name = "Storm Surgeons"
+
+	division_names_group = USA_INF_01
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 0 y = 5 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }  
+	}
+
+}
+
+units = {
+	division = {			
+		name = "Storm Surgeons 1"
+		location = 4578
+		division_template = "Storm Surgeons"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+
+	}
+	division = {			
+		name = "Storm Surgeons 2"
+		location = 4578
+		division_template = "Storm Surgeons"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+
+	}
+	division = {			
+		name = "Storm Surgeons 3"
+		location = 4578
+		division_template = "Storm Surgeons"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+
+	}
+	division = {			
+		name = "Storm Surgeons 4"
+		location = 4578
+		division_template = "Storm Surgeons"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+
+	}
+}

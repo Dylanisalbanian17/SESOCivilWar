@@ -1,0 +1,25 @@
+
+state={
+	id=75
+	name="STATE_75"
+
+	history={
+		owner = ARB
+		add_core_of = ARB
+		add_claim_by = ARS
+		add_claim_by = ART
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		1038 1257 4184 4964 9113 
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

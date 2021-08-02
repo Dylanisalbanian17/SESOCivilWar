@@ -1,0 +1,22 @@
+
+state={
+	id=220
+	name="STATE_220"
+	provinces={
+		757 1953 2707 2917 3378 4685 4763 4878 4956 5019 5673 6093 6428 6500 6720 7937 7950 7957 8021 8022 8048 8095 8136 8148 8153 
+	}
+	history={
+		owner = ILL
+		add_core_of = ILL
+		victory_points = {6500 50}
+		buildings = {
+			industrial_complex = 3
+			arms_factory = 2
+			infrastructure = 7
+			air_base = 2
+		}
+	}
+	manpower=720000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

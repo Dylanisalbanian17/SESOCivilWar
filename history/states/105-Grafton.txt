@@ -1,0 +1,19 @@
+state={
+	id=105
+	name="STATE_105"
+	provinces={
+		485 918 972 1262 1410 1499 2036 2072 2246 2252 2914 2981 3225 4220 4244 6142 7314 7338 7353 7382 7396 7412 
+	}
+	history={
+		owner = NDA
+		add_core_of = NDA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=42000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,1052 @@
+focus_tree = {
+	id = cot_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = COT
+		}
+	}
+####Tier 1
+	focus = {
+		id = cot_focus_elect_leader
+		icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 15
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.20
+			}
+		 }
+	}
+
+	focus = {
+		id = cot_focus_elect_sag
+		icon = GFX_goal_tripartite_pact
+		cost = 5
+		x = 17
+		y = 2
+		mutually_exclusive = {
+			focus = cot_focus_elect_generico
+		}
+		prerequisite = {
+			focus = cot_focus_elect_leader 
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = cot_focus_elect_generico
+		icon = GFX_focus_spr_unify_the_london_bureau
+		cost = 5
+		x = 13
+		y = 2
+		mutually_exclusive = {
+			focus = cot_focus_elect_sag
+		}
+		prerequisite = {
+			focus = cot_focus_elect_leader 
+		}
+		completion_reward = { 
+			add_political_power = 20
+		 }
+	}
+
+####Convince Focuses 0-6
+
+	focus = {
+		id = cot_focus_convince_0
+		icon = GFX_focus_usa_focus_on_asia
+		cost = 1
+		x = 16
+		y = 3
+		mutually_exclusive = {
+			focus = cot_focus_convince_1
+		}
+		prerequisite = {
+			focus = cot_focus_elect_sag
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_mass_assault
+				
+			}
+			random_list = {
+				83.9 = {
+					set_country_flag = cot_convince_flag
+				}
+				16.1 = {
+				}
+			}
+		 }
+	}
+
+	focus = {
+		id = cot_focus_convince_1
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		cost = 1
+		x = 18
+		y = 3
+		mutually_exclusive = {
+			focus = cot_focus_convince_0
+		}
+		prerequisite = {
+			focus = cot_focus_elect_sag
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_superior_firepower
+				
+			}
+			random_list = {
+				83.9 = {
+					set_country_flag = cot_convince_flag
+				}
+				16.1 = {
+				}
+			}
+		 }
+	}
+
+	focus = {
+		id = cot_focus_convince_2
+		icon = GFX_goal_generic_major_war
+		cost = 1
+		x = 16
+		y = 4
+		mutually_exclusive = {
+			focus = cot_focus_convince_3
+		}
+		prerequisite = {
+			focus = cot_focus_convince_0 OR = cot_focus_convince_1 }
+			
+		completion_reward = {
+			add_war_support = 0.1
+			random_list = {
+				83.9 = {
+					set_country_flag = cot_convince_flag
+				}
+				16.1 = {
+				}
+			}
+		 }
+	}
+
+	focus = {
+		id = cot_focus_convince_3
+		icon = GFX_goal_generic_military_deal
+		cost = 1
+		x = 18
+		y = 4
+		mutually_exclusive = {
+			focus = cot_focus_convince_2
+		}
+		prerequisite = {
+			focus = cot_focus_convince_0 OR = cot_focus_convince_1 }
+		completion_reward = {
+			add_stability = 0.1
+			random_list = {
+				83.9 = {
+					set_country_flag = cot_convince_flag
+				}
+				16.1 = {
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_convince_4
+		icon = GFX_focus_generic_home_defense
+		cost = 1
+		x = 16
+		y = 5
+		mutually_exclusive = {
+			focus = cot_focus_convince_5
+		}
+		prerequisite = {
+			focus = cot_focus_convince_2 OR = cot_focus_convince_3 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = concentrated_industry_category
+			}
+			random_list = {
+				83.9 = {
+					set_country_flag = cot_convince_flag
+				}
+				16.1 = {
+				}
+			}
+		 }
+	}
+
+	focus = {
+		id = cot_focus_convince_5
+		icon = GFX_focus_generic_monarchy_2
+		cost = 1
+		x = 18
+		y = 5
+		mutually_exclusive = {
+			focus = cot_focus_convince_4
+		}
+		prerequisite = {
+			focus = cot_focus_convince_2 OR = cot_focus_convince_3 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = dispersed_industry_category
+			}
+			random_list = {
+				83.9 = {
+					set_country_flag = cot_convince_flag
+				}
+				16.1 = {
+				}
+			}
+		 }
+	}
+####Convince Focus end
+
+	focus = {
+		id = cot_focus_ijoin
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 5
+		x = 17
+		y = 7
+		mutually_exclusive = {
+		focus = cot_focus_nojoin	
+		}
+		prerequisite = {
+			focus = cot_focus_convince_4 OR = cot_focus_convince_5
+		}
+		available = {
+			has_country_flag = cot_convince_flag
+		}
+		completion_reward = {
+			retire_country_leader = yes
+			add_stability = 0.3
+			set_politics = { ruling_party = democratic }
+			clr_country_flag = cot_convince_flag
+			hidden_effect = {
+				news_event = { id = news.2 }
+			}
+		 }
+	}
+
+	focus = {
+		id = cot_focus_nojoin
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		cost = 5
+		x = 13
+		y = 7
+		mutually_exclusive = {
+			focus = cot_focus_ijoin	
+		}
+		prerequisite = {
+			focus = cot_focus_convince_4 OR = cot_focus_convince_5 OR = cot_focus_elect_generico
+		}
+		completion_reward = {
+			add_stability = -0.3
+		 }
+	}
+####Tier 2
+####SGN Branch
+	focus = {
+		id = cot_focus_establishsgn
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 5
+		x = 9
+		y = 9
+		prerequisite = {
+			focus = cot_focus_ijoin
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.4
+				uses = 1
+				category = computing_tech
+			}
+			add_opinion_modifier = {
+				target = CAL
+				modifier = established_sgn
+			}
+			add_opinion_modifier = {
+				target = NYO
+				modifier = established_sgn
+			}
+			add_opinion_modifier = {
+				target = NJE
+				modifier = established_sgn
+			}
+			add_opinion_modifier = {
+				target = MAS
+				modifier = established_sgn
+			}
+			add_opinion_modifier = {
+				target = VIA
+				modifier = established_sgn
+			}
+			add_opinion_modifier = {
+				target = WYO
+				modifier = established_sgn
+			}
+			add_opinion_modifier = {
+				target = WIS
+				modifier = established_sgn
+			}
+			add_opinion_modifier = {
+				target = ONT
+				modifier = established_sgn
+			}
+			add_opinion_modifier = {
+				target = QUB
+				modifier = established_sgn
+			}
+			add_opinion_modifier = {
+				target = TEX
+				modifier = established_sgn
+			}
+			add_opinion_modifier = {
+				target = ARB
+				modifier = established_sgn
+			}
+			add_opinion_modifier = {
+				target = ARS
+				modifier = established_sgn
+			}
+			set_global_flag = established_sgn_flag
+		}
+	}
+
+	focus = {
+		id = cot_focus_claimmedbay
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 5
+		x = 7
+		y = 10
+		prerequisite = {
+			focus = cot_focus_establishsgn
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = cot_focus_sgnrecruitment
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 5
+		x = 7
+		y = 12
+		prerequisite = {
+			focus = cot_focus_claimmedbay
+		}
+		completion_reward = {
+			load_oob = COT_2
+			add_ideas = sgnrecruitment
+		}
+	}
+
+	focus = {
+		id = cot_focus_writehandbook
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 5
+		x = 9
+		y = 11
+		prerequisite = {
+			focus = cot_focus_establishsgn
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.4
+				uses = 1
+				category = land_doctrine
+				category = naval_doctrine
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_banerp
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 5
+		x = 11
+		y = 10
+		prerequisite = {
+			focus = cot_focus_establishsgn
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = hospital_tech
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_medicalrp
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 5
+		x = 11
+		y = 12
+		prerequisite = {
+			focus = cot_focus_banerp
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.4
+				uses = 1
+				category = infantry_tech
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_xoposition
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 5
+		x = 9
+		y = 13
+		prerequisite = {
+			focus = cot_focus_medicalrp
+		}
+		prerequisite = {
+			focus = cot_focus_writehandbook
+		}
+		prerequisite = {
+			focus = cot_focus_sgnrecruitment
+		}
+		completion_reward = {
+			# Fire EVENT:
+			# Choose XO:
+			# Yaojing, Webb, or Heroin
+			country_event = connecticut.1
+		}
+	}
+
+
+####Racial Inequality Branch
+	focus = {
+		id = cot_focus_race
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 5
+		x = 17
+		y = 9
+		prerequisite = {
+			focus = cot_focus_ijoin
+		}
+		completion_reward = {
+			add_stability = -0.1
+			random_owned_state = { add_resistance = 30 }
+
+		}
+	}
+
+	focus = {
+		id = cot_focus_repeal_articles
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 5
+		x = 15
+		y = 10
+		mutually_exclusive = {
+			focus = cot_focus_getajob
+		}
+		prerequisite = {
+			focus = cot_focus_race
+		}
+		completion_reward = {
+			add_stability = -0.2
+		}
+	}
+
+	focus = {
+		id = cot_focus_blackuni
+		icon = GFX_goal_continuous_research
+		cost = 5
+		x = 15
+		y = 11
+		prerequisite = {
+			focus = cot_focus_repeal_articles
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_ideas = blackuni
+		}
+	}
+
+	focus = {
+		id = cot_focus_blackbiz
+		icon = GFX_focus_generic_treaty
+		cost = 5
+		x = 13
+		y = 11
+		prerequisite = {
+			focus = cot_focus_repeal_articles
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_ideas = blackbiz
+		}
+	}
+
+	focus = {
+		id = cot_focus_blackmiscegenation
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 5
+		x = 17
+		y = 11
+		prerequisite = {
+			focus = cot_focus_repeal_articles
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_ideas = blackmiscegenation
+		}
+	}
+
+	focus = {
+		id = cot_focus_whiteemigration
+		icon = GFX_focus_CZE_german_puppet
+		cost = 5
+		x = 15
+		y = 12
+		prerequisite = {
+			focus = cot_focus_blackbiz
+		}
+		prerequisite = {
+			focus = cot_focus_blackmiscegenation
+		}
+		prerequisite = {
+			focus = cot_focus_blackuni
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Nearby countries will receive white refugees over 3 months. Connecticut will suffer large drawbacks that take years to recover."
+			add_stability = 0.8
+			hidden_effect = {
+				every_neighbor_country = {
+					# Also, reduce opinion modifier for all countries for racism against white people
+					limit = {
+						always = yes
+					}
+					add_timed_idea = {
+						idea = cot_emigration # Amounts to 2.3 million white people after 12 weeks split to 3 countries
+						days = 84
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_getajob
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		x = 20
+		y = 10
+		mutually_exclusive = {
+			focus = cot_focus_repeal_articles
+		}
+		prerequisite = {
+			focus = cot_focus_race
+		}
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
+
+
+####Sex LOA Focuses
+	focus = {
+		id = cot_focus_sex1
+		icon = GFX_goal_generic_position_armies
+		cost = 8
+		x = 24
+		y = 9
+		prerequisite = {
+			focus = cot_focus_ijoin
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_sex2
+		icon = GFX_goal_generic_position_armies
+		cost = 8
+		x = 24
+		y = 10
+		prerequisite = {
+			focus = cot_focus_sex1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_sex3
+		icon = GFX_goal_generic_position_armies
+		cost = 8
+		x = 24
+		y = 11
+		prerequisite = {
+			focus = cot_focus_sex2
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_sex4
+		icon = GFX_goal_generic_position_armies
+		cost = 8
+		x = 24
+		y = 12
+		prerequisite = {
+			focus = cot_focus_sex3
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_sex5
+		icon = GFX_goal_generic_position_armies
+		cost = 8
+		x = 24
+		y = 13
+		prerequisite = {
+			focus = cot_focus_sex4
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+####Tier 3
+####Cultural Hegemony
+	focus = {
+		id = cot_focus_hegemony
+		icon = GFX_focus_GRE_metaxism
+		cost = 5
+		x = 20
+		y = 15
+		prerequisite = {
+			focus = cot_focus_xoposition
+		}
+		prerequisite = {
+			focus = cot_focus_whiteemigration OR = cot_focus_getajob
+		}
+		prerequisite = {
+			focus = cot_focus_sex5
+		}
+		
+		completion_reward = {
+			add_stability = 0.2
+			activate_decision = COT_changeprofilepicture
+		}
+	}
+
+
+### Sagcraft Tree
+	focus = {
+		id = cot_focus_joinboxcraft
+		icon = GFX_focus_por_the_pink_map
+		cost = 5
+		x = 8
+		y = 18
+		prerequisite = {
+			focus = cot_focus_hegemony
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_gambagaming
+		icon = GFX_focus_smiling_buddha
+		cost = 5
+		x = 8
+		y = 20
+		prerequisite = {
+			focus = cot_focus_joinboxcraft
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_createsagcraft
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5
+		x = 6
+		y = 22
+		prerequisite = {
+			focus = cot_focus_gambagaming
+		}
+		mutually_exclusive = {
+			focus = cot_focus_enhanceboxcraft
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_enhanceboxcraft
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 10
+		y = 22
+		prerequisite = {
+			focus = cot_focus_gambagaming
+		}
+		mutually_exclusive = {
+			focus = cot_focus_createsagcraft
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_sailvenice
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5
+		x = 8
+		y = 24
+		prerequisite = {
+			focus = cot_focus_createsagcraft
+			focus = cot_focus_enhanceboxcraft
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_guangxi
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		cost = 5
+		x = 6
+		y = 26
+		prerequisite = {
+			focus = cot_focus_sailvenice
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_clanpalace
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 5
+		x = 4
+		y = 28
+		prerequisite = {
+			focus = cot_focus_guangxi
+		}
+		
+		completion_reward = {}
+	}
+
+
+	focus = {
+		id = cot_focus_liangguang
+		icon = GFX_focus_chi_proclaim_rival_government
+		cost = 5
+		x = 6
+		y = 28
+		prerequisite = {
+			focus = cot_focus_guangxi
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_guangdong
+		icon = GFX_focus_chi_one_china_policy
+		cost = 5
+		x = 6
+		y = 30
+		prerequisite = {
+			focus = cot_focus_liangguang
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_blackpig
+		icon = GFX_focus_AST_squander_bug
+		cost = 5
+		x = 10
+		y = 26
+		prerequisite = {
+			focus = cot_focus_sailvenice
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_blackgod
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		cost = 5
+		x = 10
+		y = 28
+		prerequisite = {
+			focus = cot_focus_blackpig
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_blackpope
+		icon = GFX_focus_por_concordat
+		cost = 5
+		x = 10
+		y = 30
+		prerequisite = {
+			focus = cot_focus_blackgod
+		}
+		
+		completion_reward = {}
+	}
+
+### GGN Developer
+	focus = {
+		id = cot_focus_developerpromo
+		icon = GFX_focus_up_joan_of_arc
+		cost = 5
+		x = 20
+		y = 18
+		prerequisite = {
+			focus = cot_focus_hegemony
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_sevens
+		icon = GFX_focus_generic_military_academy
+		cost = 5
+		x = 18
+		y = 20
+		prerequisite = {
+			focus = cot_focus_developerpromo
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_sauce
+		icon = GFX_focus_generic_military_academy
+		cost = 5
+		x = 18
+		y = 22
+		prerequisite = {
+			focus = cot_focus_sevens
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_icdupdate
+		icon = GFX_focus_generic_industry_1
+		cost = 5
+		x = 20
+		y = 19
+		prerequisite = {
+			focus = cot_focus_developerpromo
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_sevensupdate
+		icon = GFX_focus_generic_industry_2
+		cost = 5
+		x = 20
+		y = 21
+		prerequisite = {
+			focus = cot_focus_icdupdate
+		}
+		prerequisite = {
+			focus = cot_focus_sevens
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_siegupdate
+		icon = GFX_focus_generic_industry_3
+		cost = 5
+		x = 20
+		y = 23
+		prerequisite = {
+			focus = cot_focus_sevensupdate
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_dylansegupdate
+		icon = GFX_goal_generic_attack_allies
+		cost = 5
+		x = 20
+		y = 25
+		prerequisite = {
+			focus = cot_focus_siegupdate
+		}
+		prerequisite = {
+			focus = cot_focus_sauce
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_dylandesegupdate
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 20
+		y = 27
+		prerequisite = {
+			focus = cot_focus_dylansegupdate
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_gump
+		icon = GFX_focus_generic_military_mission
+		cost = 5
+		x = 22
+		y = 22
+		prerequisite = {
+			focus = cot_focus_developerpromo
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_buildeventserver
+		icon = GFX_focus_generic_africa_production
+		cost = 5
+		x = 22
+		y = 26
+		prerequisite = {
+			focus = cot_focus_gump
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_openeventserver
+		icon = GFX_goal_tfv_saf_secure_interests_in_africa
+		cost = 5
+		x = 22
+		y = 29
+		prerequisite = {
+			focus = cot_focus_buildeventserver
+		}
+		prerequisite = {
+			focus = cot_focus_dylandesegupdate
+		}
+		
+		completion_reward = {}
+	}
+### SESO
+	focus = {
+		id = cot_focus_seso
+		icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 5
+		x = 26
+		y = 18
+		prerequisite = {
+			focus = cot_focus_hegemony
+		}
+		completion_reward = {}
+	}
+	
+}

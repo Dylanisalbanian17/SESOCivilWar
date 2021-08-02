@@ -1,0 +1,24 @@
+
+state={
+	id=237
+	name="STATE_237"
+	provinces={
+		962 1009 1467 2712 2727 3047 3132 4298 4389 4449 4898 5619 5756 6160 6218 6298 6376 6438 6636 7884 7908 7944 7949 7971 7997 8006 8007 8008 8060 
+	}
+	history={
+		owner = PEN
+		add_core_of = PEN
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+			arms_factory = 2
+			}
+		}
+	resources = {
+		steel = 26
+	}
+	manpower=487500
+	buildings_max_level_factor=1.000
+	state_category=town
+}
+

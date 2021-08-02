@@ -1,0 +1,66 @@
+﻿capital = 44
+
+oob = NEV_2
+set_research_slots = 3
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "4.11.6"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 61
+	fascism = 1
+	communism = 15
+	neutrality = 23
+}
+create_country_leader = {
+	
+	name = "Alf Landon"
+	picture = "alf_landon.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = { figurehead_president
+	}
+}	
+create_country_leader = {
+	
+	name = "placeholder"
+	picture = "placeholder.dds"
+	expire = "1965.1.1"
+	ideology = anti_revisionism
+	traits = { generallissimo  
+	}
+}		
+create_country_leader = {
+	
+	name = "Mr. House"
+	picture = "mr_house.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = { humble 
+	}
+}	
+
+create_country_leader = {	
+	
+	name = "placeholder"
+	picture = "placeholder.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { anti_democrat 
+	}
+}	

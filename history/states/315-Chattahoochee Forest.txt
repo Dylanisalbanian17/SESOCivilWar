@@ -1,0 +1,19 @@
+state={
+	id=315
+	name="STATE_315"
+	provinces={
+		24 3009 3237 3331 3398 3581 3722 3761 3966 4320 4566 5385 5935 6341 6345 9103 9132 9149 9153 9156 9185 9186 9187 9207 9209 9236 
+	}
+	history={
+		owner = GEO
+		add_core_of = GEO
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	manpower=335000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
+

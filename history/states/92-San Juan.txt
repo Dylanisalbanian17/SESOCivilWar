@@ -1,0 +1,20 @@
+state={
+	id=92
+	name="STATE_92"
+	provinces={
+		3 368 397 430 521 700 1444 1449 1645 1795 1815 1897 2775 3010 3170 3826 3839 4202 4936 5141 5997 6091 8803 8826 8839 8854 8929 8984 9025 9036 9062 9121 9171 9229 
+	}
+	history={
+		owner = NMX
+		add_core_of = NMX
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+	}
+	manpower=125000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

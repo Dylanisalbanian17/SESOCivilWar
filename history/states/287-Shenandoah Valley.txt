@@ -1,0 +1,31 @@
+
+state={
+	id=287
+	name="STATE_287"
+	provinces={
+		1084 3153 4440 4469 4706 5509 6843 8465 8482 8515 8518 8550 8573 8591 
+	}
+	history={
+		owner = VIA
+		add_core_of = VIA
+		victory_points = {4469 5}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 2
+			4469 = {
+				bunker = 1
+			}
+			
+		}	
+	}
+	manpower=949840
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	resources = {
+		steel = 18
+		tungsten = 8
+
+	}
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=116
+	name="STATE_116"
+
+	history={
+		owner = KAN
+		add_core_of = KAN
+		victory_points = {8597 10}
+		victory_points = {4405 10}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 3
+
+		}
+
+	}
+
+	provinces={
+		2300 4405 4545 4699 6165 6444 8538 8549 8553 8554 8597 8612 8623 
+	}
+	manpower=125000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

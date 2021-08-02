@@ -1,0 +1,27 @@
+state={
+	id=9
+	name="STATE_9"
+	resources={
+		tungsten=4.000
+	}
+	history={
+		owner = WAS
+		add_core_of = WAS
+		victory_points = { 4611 5}
+		victory_points = { 995 5}
+		victory_points = { 3934 5}
+		victory_points = { 381 5}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 1
+
+		}
+	}
+	provinces={
+		228 231 381 507 983 995 1518 1602 1973 2864 3199 3333 3365 3402 3558 3622 3934 4611 4970 5193 5469 5987 6235 6565 6775 6869 6880 7227 7242 7248 7271 7278 7316 7321 7349 
+	}
+	manpower= 280873
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

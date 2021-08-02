@@ -1,0 +1,19 @@
+state={
+	id=314
+	name="STATE_314"
+	provinces={
+		64 1281 1289 2190 2355 3005 3214 3757 3913 4110 4312 4325 4499 4700 4830 4883 5548 5564 5726 5916 5937 6262 6291 6421 6504 6639 6741 6788 6813 9200 9210 9223 9230 9231 9232 9245 9248 9252 9273 9274 9278 9291 9295 9296 9304 9312 9316 9320 9341 9350 9357 9369 9380 9385 
+	}
+	history={
+		owner = GEO
+		add_core_of = GEO
+		victory_points = {3214 25}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+	manpower=335000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

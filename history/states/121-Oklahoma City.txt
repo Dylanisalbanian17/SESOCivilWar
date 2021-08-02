@@ -1,0 +1,20 @@
+state={
+	id=121
+	name="STATE_121"
+	provinces={
+		386 1389 2122 3793 4054 5188 5663 6153 9117 9119 9165 9168 9183 9198 
+	}
+	history={
+		owner = OKL
+		add_core_of = OKL
+		victory_points = {9165 10}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=330000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

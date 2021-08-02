@@ -1,0 +1,20 @@
+
+state={
+	id=142
+	name="STATE_142"
+	provinces={
+		250 924 969 1604 1756 2028 2054 2334 2606 3273 3724 3753 3781 4567 4694 4802 5008 5238 5389 5862 5891 5896 6003 6101 6315 9297 9318 9391 9398 9519 9524 9533 9560 9584 9612 
+	}
+	history={
+		owner = TEX
+		add_core_of = TEX
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=367500
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

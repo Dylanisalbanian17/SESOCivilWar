@@ -1,0 +1,19 @@
+
+state={
+	id=95
+	name="STATE_95"
+	provinces={
+		51 99 131 223 405 434 474 596 1203 1952 2002 2199 2382 2644 2810 2998 3159 3358 3367 3635 3659 3725 3775 4294 4337 5203 5797 6045 6072 6333 6909 8851 8935 8950 9173 9292 
+	}
+	
+	history={
+		owner = NMX
+		add_core_of = NMX
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

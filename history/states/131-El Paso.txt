@@ -1,0 +1,25 @@
+state={
+	id=131
+	name="STATE_131"
+	resources={
+		oil=450
+		aluminium = 80
+	}
+	provinces={
+		1379 1787 2348 3032 3591 4799 5658 9746 
+	}
+	history={
+		owner = TEX
+		add_core_of = TEX
+		victory_points = {5658 10}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 5
+		}
+	}
+	manpower=367500
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

@@ -1,0 +1,19 @@
+state={
+	id=163
+	name="STATE_163"
+	provinces={
+		251 273 283 451 467 493 697 732 1356 1625 2084 2113 2341 2363 3087 3124 3560 4691 4973 5041 5155 5413 5737 7078 7084 7096 7120 7125 7130 7137 
+	}
+		history={
+		owner = ONT
+		add_core_of = ALB
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

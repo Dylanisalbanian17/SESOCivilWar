@@ -1,0 +1,22 @@
+state={
+	id=186
+	name="STATE_186"
+	history={
+		owner = MIN
+		add_core_of = MIN
+		victory_points = {2270 20}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 2
+
+		}
+		add_core_of = MIN
+	}
+	provinces={
+		589 1455 2029 2073 2270 3513 3518 3533 4767 4927 5162 5615 5881 6084 6139 6233 6469 6819 7491 7509 7517 7523 7529 7552 7581 7583 7585 7634
+	}
+	manpower=115500
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

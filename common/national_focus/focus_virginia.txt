@@ -1,0 +1,259 @@
+focus_tree = {
+	id = 4511
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = via
+		}
+	}
+	#Focus for a repeat of our ancestors///Gives debufs and explanation blah blah
+	focus = {
+		id = via_a_repeat_of_our_ancestors
+		icon = GFX_focus_ger_oppose_hitler
+		x = 9
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = virginia.1
+}
+		}
+	}
+	#Defense of the Reichstag ([SS]Send in the Heer/[Nazbol-Jinroh]Appease the rioters/Resign as Chancellor[Anm/Empty Leader Spot thingy])
+	focus = {
+		id = via_national_insurrection
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 1
+		x = 9
+		y = 2
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		prerequisite = {
+			focus = via_a_repeat_of_our_ancestors
+		}
+		completion_reward = {
+			country_event= {
+				days = 1
+				id = virginia.2
+			}
+		}
+	}
+
+#([SS] Track and hunt insurrectionists/[Anm] Pardon the insurrectionists/
+focus = {
+	id = via_dealings_with_the_reactionaries
+	icon = GFX_focus_spr_masters_of_our_own_fate
+	cost = 1
+	x = 9
+	y = 3
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	prerequisite = {
+		focus = via_national_insurrection
+	}
+	completion_reward = {
+		country_event= {
+			days = 1
+			id = virginia.3
+	}
+}
+
+}
+
+focus = {
+	id = via_sway_the_panzerarmee
+	icon = GFX_goal_generic_army_tanks
+	cost = 2
+	x = 10
+	y = 4
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	mutually_exclusive = {
+		focus = via_party_militias
+	}
+	prerequisite = {
+		focus = via_dealings_with_the_reactionaries
+	}
+	completion_reward = {
+		country_event= {
+			days = 1
+			id = virginia.4
+	}
+}
+
+}
+
+focus = {
+	id = via_party_militias
+	icon = GFX_focus_generic_manpower
+	cost = 2
+	x = 8
+	y = 4
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	mutually_exclusive = {
+		focus = via_sway_the_panzerarmee
+	}
+	prerequisite = {
+		focus = via_dealings_with_the_reactionaries
+	}
+	completion_reward = {
+		country_event= {
+			days = 1
+			id = virginia.5
+	}
+}
+
+}
+
+focus = {
+	id = via_choosing_a_side
+	icon = GFX_goal_generic_small_arms
+	cost = 3
+	x = 9
+	y = 5
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	prerequisite = {
+		focus = via_party_militias OR = via_sway_the_panzerarmee
+	}
+	completion_reward = {
+		country_event= {
+			days = 1
+			id = virginia.8
+	}
+}
+
+}
+
+focus = {
+	id = via_the_speech
+	icon = GFX_goal_generic_demand_territory
+	cost = 3
+	x = 9
+	y = 6
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	prerequisite = {
+		focus = via_choosing_a_side
+	}
+	completion_reward = {
+		country_event= {
+			days = 1
+			id = virginia.6
+		}
+		hidden_effect = {
+		news_event = { id = news.3 days = 13 }
+		}
+}   
+}
+
+#End of focuses 
+}
+
+focus_tree = {
+	id = 4512
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = via
+		}
+	}
+	#Recovery after Civil War (Pre req of civil war being over)
+	focus = {
+		id = funny
+		icon = GFX_VIA_GW11
+		x = 9
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+			days = 1 
+			id = 
+
+			}
+
+		}
+
+	}
+
+	####
+	#Reich Defiant
+	focus = {
+		id = funny2
+		icon = GFX_VIA_GW11
+		x = 9
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+				days = 1 
+				id = virginia.7
+
+			}
+		}
+	}
+
+	#Reconstruction - Industry Path
+	focus = {
+		id = funny4
+		icon = GFX_VIA_GW11
+		x = 9
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+	days = 1 
+	id = virginia.7
+
+			}
+
+		}
+
+	}
+
+	#Reconstruction - Political Path
+	focus = {
+		id = funny3
+		icon = GFX_VIA_GW11
+		x = 9
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+	days = 1 
+	id = virginia.7
+
+			}
+
+		}
+	}
+}

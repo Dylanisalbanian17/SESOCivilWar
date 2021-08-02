@@ -1,0 +1,20 @@
+state={
+	id=228
+	name="STATE_228"
+	provinces={
+		155 159 1334 2124 2274 2445 3222 3537 3614 3865 3946 4249 4410 4662 5228 5338 5386 5770 5894 5914 5965 6110 6252 6253 6464 6572 6786 8016 8029 8046 8049 8053 8059 8061 8073 8078 8087 8090 8091 8096 8116 8137 8177 8202 8221 8255 8275 8363 
+	}
+	history={
+		owner = IND
+		add_core_of = IND
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 4
+		}
+	}
+	manpower=750000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

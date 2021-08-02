@@ -1,0 +1,181 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_gavin_newsom"
+		texturefile = "gfx/interface/advisors/advisor_gavin_newsom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_clarence_a_smith"
+		texturefile = "gfx/interface/advisors/advisor_clarence_a_smith.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_gaming_girl"
+		texturefile = "gfx/interface/advisors/advisor_gaming_girl.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_henry_m_jackson"
+		texturefile = "gfx/interface/advisors/advisor_the_scoop.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_alf_landon"
+		texturefile = "gfx/interface/advisors/advisor_alf_landon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_reginald"
+		texturefile = "gfx/interface/advisors/theorist_reginald.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_avgn"
+		texturefile = "gfx/interface/advisors/advisor_avgn.dds"	
+	}
+	
+	spriteType = {
+		name = "GFX_idea_martha"
+		texturefile = "gfx/interface/advisors/advisor_martha.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_democracy_of_the_west"
+		texturefile = "gfx/interface/ideas/generic_pp_unity_bonus.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_pacific_dream"
+		texturefile = "gfx/interface/ideas/air_support_focus.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_super_depression"
+		texturefile = "gfx/interface/ideas/great_depression.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_super_depression2"
+		texturefile = "gfx/interface/ideas/idea_usa_great_depression_2.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_super_depression3"
+		texturefile = "gfx/interface/ideas/idea_usa_great_depression_3.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_sw_economy"
+		texturefile = "gfx/interface/ideas/generic_economic_increase.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_gamer_roads"
+		texturefile = "gfx/interface/ideas/idea_generic_build_infrastructure.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_disorganized_army"
+		texturefile = "gfx/interface/ideas/idea_bul_zveno.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_disorganized_army2"
+		texturefile = "gfx/interface/ideas/idea_bul_zveno.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_sarmy_sland"
+		texturefile = "gfx/interface/ideas/idea_generic_reserve_divisions.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_sarmy_sland2"
+		texturefile = "gfx/interface/ideas/idea_hol_expand_the_colonial_army.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_spainish_advisors"
+		texturefile = "gfx/interface/ideas/spa_maquis.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_gamer_terrorism"
+		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_homeless_crisis"
+		texturefile = "gfx/interface/ideas/idea_prc_low_popular_support3.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_homeless_crisis2"
+		texturefile = "gfx/interface/ideas/idea_prc_low_popular_support2.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_police_corruption"
+		texturefile = "gfx/interface/ideas/idea_tfv_can_conscription_crisis.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_police_reform"
+		texturefile = "gfx/interface/ideas/generic_manpower_bonus.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_severe_police_corruption"
+		texturefile = "gfx/interface/ideas/generic_disjointed_gov.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_wehrmacht_model"
+		texturefile = "gfx/interface/ideas/german_advisors.dds"	
+	}
+	
+	spriteType = {
+		name = "GFX_idea_workers_strikes"
+		texturefile = "gfx/interface/ideas/FRA_factory_strikes.dds"	
+	}
+	
+	spriteType = {
+		name = "GFX_idea_via_insurrection"
+		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance.dds"	
+	}
+	spriteType = {
+		name = "GFX_idea_otto"
+		texturefile = "gfx/interface/advisors/army_chief_otto.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_ulrich"
+		texturefile = "gfx/interface/advisors/advisor_ulrich.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_ada"
+		texturefile = "gfx/interface/advisors/advisor_ada.dds"	
+	}
+	
+	spriteType = {
+		name = "GFX_idea_obrecht"
+		texturefile = "gfx/interface/advisors/advisor_obrecht.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_via_inexperiencedofficercorps"
+		texturefile = "gfx/interface/ideas/idea_chi_incompetent_officers.dds"	
+	}
+	spriteType = {
+		name = "GFX_idea_via_nazpeoplesarmy"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_army.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_via_isolationist_foreign_policy"
+		texturefile = "gfx/interface/ideas/generic_morale_bonus.dds"	
+	}
+}
+

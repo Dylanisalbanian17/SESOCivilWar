@@ -1,0 +1,25 @@
+state={
+	id=45
+	name="STATE_45"
+	provinces={
+		60 3984 4468 6472 8098 
+	}
+	history={
+		owner = NEV
+		add_core_of = NEV
+		victory_points = {3984 25}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	resources = {
+		aluminium = 35
+		tungsten = 45
+		steel = 98
+	}
+	manpower= 246500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

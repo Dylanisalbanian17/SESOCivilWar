@@ -1,0 +1,364 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "National Guard Division"  	
+
+	division_names_group = USA_INF_01
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {
+	name = "Cavalry Division"  		
+
+	division_names_group = USA_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+division_template = {
+	name = "Marine Brigade" 		
+
+	division_names_group = USA_MAR_01
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+	priority = 2
+}
+
+###### OOB ######
+units = {
+	division = {			
+		name = "California Dreamers"
+		location = 5925
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+
+	}			
+	division = {			
+		name = "Beach Boys"		
+		location = 8294
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+
+	}
+
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 3844
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 8616
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8749
+		division_template = "National Guard Division"
+		start_experience_factor = 0.3
+	}			
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 472
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 8926
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 3111
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 2404
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 9144
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 5208
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 5982
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 2043
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 991
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 5376
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7942
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 1317
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 45
+		}
+		location = 2020
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8286
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.3
+	}	
+
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 8213
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 8798
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 5826
+		division_template = "National Guard Division"
+		start_experience_factor = 0.3
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location = 8294
+		division_template = "Marine Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location = 9010
+		division_template = "Marine Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}							
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CAL"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CAL" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "CAL" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+}
+#####################

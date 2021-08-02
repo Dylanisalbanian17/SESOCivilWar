@@ -1,0 +1,19 @@
+state={
+	id=280
+	name="STATE_280"
+	provinces={
+		433 1087 1847 2044 2957 3326 3902 4232 4243 4587 5459 6518 6748 8198 8329 8389 8393 8406 8444 
+	}
+	history={
+		owner = WVI
+		add_core_of = WVI
+		victory_points = {8329 10}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

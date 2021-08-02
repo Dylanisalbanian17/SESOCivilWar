@@ -1,0 +1,19 @@
+state={
+	id=13
+	name="STATE_13"
+	provinces={
+		421 1243 2267 2632 2717 3631 4155 4218 4353 4555 4771 6629 7357 7361 7365 7368 7370 7390 7419 
+	}
+	history={
+		owner = ORE
+		add_core_of = ORE
+		victory_points = {7361 10}
+		victory_points = {3631 5}
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	manpower= 257779
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

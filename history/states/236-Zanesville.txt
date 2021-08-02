@@ -1,0 +1,23 @@
+state={
+	id=236
+	name="STATE_236"
+
+	history={
+		owner = OHO
+		add_core_of = OHO
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		448 738 863 1295 1315 1319 1393 2347 2529 2740 2834 3366 3467 3707 3832 3887 4205 4455 4602 4967 5636 5639 5907 6073 6349 6399 6461 6525 6685 8165 8169 8180 8189 8207 8212 8227 8236 8245 8247 8269 8277 8284 8308 8333 8338 8364 8392 8452 8496 8522 8524 
+	}
+	manpower=940000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

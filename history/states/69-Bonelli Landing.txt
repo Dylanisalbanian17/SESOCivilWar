@@ -1,0 +1,24 @@
+
+state={
+	id=69
+	name="STATE_69"
+	provinces={
+		713 838 908 929 937 1855 2289 5016 8927 8980 
+	}
+	history={
+		owner = ARB
+		add_core_of = ARB
+		add_claim_by = ARS
+		add_claim_by = ART
+		victory_points = { 8927 5 }
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+
+	manpower=210000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

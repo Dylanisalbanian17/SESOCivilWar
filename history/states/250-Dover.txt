@@ -1,0 +1,18 @@
+state={
+	id=250
+	name="STATE_250"
+	provinces={
+		5850 6106 8272 
+	}
+	history={
+		owner = DEL
+		add_core_of = DEL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

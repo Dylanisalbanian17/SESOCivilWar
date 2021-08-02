@@ -1,0 +1,23 @@
+
+state={
+	id=66
+	name="STATE_66"
+	provinces={
+		137 540 1026 1372 1709 2144 2890 3028 3161 3223 3515 4016 4141 4194 4502 5210 5847 6377 8163 8164 8219 8240 8314 8379 8409 
+	}
+	history={
+		owner = UTA
+		add_core_of = UTA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 5
+			}
+		}
+	resources = {
+		tungsten = 106
+	}
+	manpower=274890
+	buildings_max_level_factor=1.000
+	state_category=town
+}

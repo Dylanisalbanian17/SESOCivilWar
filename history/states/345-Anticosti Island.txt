@@ -1,0 +1,19 @@
+state={
+	id=345
+	name="STATE_345"
+	provinces={
+		1887 2022 3109 3840 7110 
+	}
+	history={
+		owner = QUB
+		add_core_of = QUB
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			air_base = 2 
+		}
+	}
+	manpower=95200
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,20 @@
+state={
+	id=317
+	name="STATE_317"
+	provinces={
+		685 735 1044 1229 1555 1779 2346 2364 2576 3291 4005 4151 4286 4550 5368 5547 6727 9074 9091 9104 9124 9133 9134 9154 9160 9175 9181 9191 9212 9226 9237 9264 
+	}
+	history={
+		owner = SCA
+		add_core_of = SCA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=456250
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}
+

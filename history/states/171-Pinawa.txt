@@ -1,0 +1,22 @@
+state={
+	id=171
+	name="STATE_171"
+
+	history={
+		owner = ONT
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		329 620 1207 1366 1971 2210 2425 2512 2553 2824 3509 3510 3719 3931 4125 4858 5227 5566 12678 12721 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

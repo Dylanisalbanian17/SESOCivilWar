@@ -1,0 +1,21 @@
+state={
+	id=151
+	name="STATE_151"
+
+	history={
+		owner = MXC
+		add_core_of = MXC
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		77 588 637 650 657 667 678 841 928 1178 1717 1790 1939 2169 2225 2306 2548 2710 2880 3021 3181 3264 3847 4001 4012 4228 4233 4601 4635 5182 5184 5304 5618 5630 5660 5782 5906 6105 6795 9960 9970 10065 10080 10103 10111 10114 10116 10129 
+	}
+	manpower=32000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

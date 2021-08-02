@@ -1,0 +1,20 @@
+
+state={
+	id=166
+	name="STATE_166"
+	provinces={
+		143 304 341 516 550 647 666 977 1123 1232 1713 1912 2345 2863 3784 3846 4140 4177 4327 4800 5140 5696 6182 6386 6873 7164 7180 
+	}
+	history={
+		owner = ONT
+		add_core_of = SAS
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=400000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

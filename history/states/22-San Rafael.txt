@@ -1,0 +1,21 @@
+state={
+	id=22
+	name="STATE_22"
+	provinces={
+		1317 2318 5841 6044 8155 8273 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = { 1317 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			}
+		}
+	manpower= 158775
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

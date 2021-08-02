@@ -1,0 +1,36 @@
+capital = 4
+
+oob = WAS_2
+set_research_slots = 3
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2.1.1"
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 50
+	fascism = 0
+	communism = 25
+	neutrality = 25
+}
+create_country_leader = {
+	
+	name = "Henry Jackson"
+	picture = "the_scoop.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = { warmonger hawk }
+}

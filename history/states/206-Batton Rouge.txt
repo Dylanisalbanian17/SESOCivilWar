@@ -1,0 +1,20 @@
+state={
+	id=206
+	name="STATE_206"
+	provinces={
+		785 1332 3345 3551 3924 3960 4483 4847 5578 5699 5865 6455 6523 9758 9761 9771 9778 9786 9792 9799 9807 9811 9824 9828 9834 9853 
+	}
+	history={
+		owner = LOU
+		add_core_of = LOU
+		victory_points = {785 15}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+			}
+	}
+	manpower=445000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

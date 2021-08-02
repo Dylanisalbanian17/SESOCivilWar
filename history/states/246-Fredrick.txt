@@ -1,0 +1,24 @@
+state={
+	id=246
+	name="STATE_246"
+
+	history={
+		owner = MAR
+		add_core_of = MAR
+		victory_points = {3532 25}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		787 3495 3532 5482 5972 6809 6865 8271 8278 8301 8306 8334 
+	}
+	manpower=145000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

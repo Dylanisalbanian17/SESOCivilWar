@@ -1,0 +1,22 @@
+
+state={
+	id=197
+	name="STATE_197"
+	provinces={
+		252 1825 2680 3334 4474 4533 4790 4981 5107 6222 6577 8555 8576 8590 8601 8681 8683 
+	}
+	history={
+		owner = MIS
+		add_core_of = MIS
+		victory_points = {4533 20}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 5
+			arms_factory = 4
+			air_base = 4
+			}
+		}
+	manpower=955000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

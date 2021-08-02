@@ -1,0 +1,22 @@
+
+state={
+	id=217
+	name="STATE_217"
+	provinces={
+		36 861 1976 2716 3055 3178 3895 4095 4470 4960 5282 5426 5703 6189 6271 6327 7830 7842 7854 7883 7887 7902 7916 7938 7951 7965 7973 
+	}
+	history={
+		owner = MIC
+		add_core_of = MIC
+		victory_points = {3178 50}
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 4
+			arms_factory = 1
+			air_base = 6
+			}
+		}
+	manpower=410000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

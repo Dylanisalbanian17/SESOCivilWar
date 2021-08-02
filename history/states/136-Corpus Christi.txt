@@ -1,0 +1,22 @@
+state={
+	id=136
+	name="STATE_136"
+	provinces={
+		752 1301 2679 2786 4543 5457 6929 10018 10028 
+	}
+	
+	history={
+		owner = TEX
+		add_core_of = TEX
+		victory_points = {10028 10}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 3
+		}
+	}
+	manpower=367500
+	buildings_max_level_factor=1.000
+	state_category=city
+}

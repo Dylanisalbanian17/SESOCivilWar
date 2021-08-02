@@ -1,0 +1,19 @@
+
+state={
+	id=260
+	name="STATE_260"
+	provinces={
+		1899 2530 3435 3471 4488 4657 4752 4756 4854 5030 5776 5818 7616 7617 7621 7641 7679 7688 
+	}
+	history={
+		owner = NYO
+		add_core_of = NYO
+		victory_points = {3471 10}
+		buildings = {
+			infrastructure = 7
+		}
+	}
+	manpower=293948
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

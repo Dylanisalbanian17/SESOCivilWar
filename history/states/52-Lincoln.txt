@@ -1,0 +1,24 @@
+state={
+	id=52
+	name="STATE_52"
+	provinces={
+		69 254 959 1179 2162 2351 2432 3102 3496 3541 4254 4330 5113 5355 6261 6385 6553 6926 7296 7329 7354 7358 
+	}
+	history={
+		owner = MON
+		add_core_of = MON
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+	}
+
+	resources = {
+		tungsten = 15
+	}
+
+	manpower=50250
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

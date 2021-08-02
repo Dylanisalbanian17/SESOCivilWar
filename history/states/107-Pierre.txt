@@ -1,0 +1,25 @@
+
+state={
+	id=107
+	name="STATE_107"
+
+	history={
+		owner = SDA
+		add_core_of = SDA
+		victory_points = {327 10}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 2
+
+		}
+
+	}
+
+	provinces={
+		265 327 2284 6059 
+	}
+	manpower=14000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

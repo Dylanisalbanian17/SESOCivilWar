@@ -1,0 +1,19 @@
+state={
+	id=312
+	name="STATE_312"
+	provinces={
+		1072 1333 1405 1433 2034 2080 3093 3096 3271 3396 3474 4157 4229 4439 4961 5247 5347 5392 5574 5646 6194 6217 6283 6299 6321 6424 6576 6655 6861 9362 9476 9488 9489 9499 9504 9511 9512 9515 9529 9547 9551 9559 9602 9605 9607 9617 9628 9630 9636 9641 9642 9674 9677 9691 9702 
+	}
+	history={
+		owner = GEO
+		add_core_of = GEO
+		buildings = {
+			infrastructure = 4
+			dockyard = 3
+			air_base = 1
+			}
+		}
+	manpower=335000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

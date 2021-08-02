@@ -1,0 +1,18 @@
+state={
+	id=189
+	name="STATE_189"
+	history={
+	owner = ONT
+	buildings = {
+		infrastructure = 2
+
+	}
+	add_core_of = ONT
+	}
+	provinces={
+		1892 2048 2761 5119 6388 7526 7549 7575 7598 7603 7627 7636 
+	}
+	manpower=3850
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

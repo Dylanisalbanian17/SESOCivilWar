@@ -1,0 +1,24 @@
+state={
+	id=124
+	name="STATE_124"
+	provinces={
+		661 1506 1998 2135 2440 3335 3916 3997 4185 4872 5060 5164 5234 5404 5817 6209 6312 6903 9174 9195 9201 9242 9267 9305 9309 9321 9330 9365 9377 
+	}
+	history={
+		owner = OKL
+		add_core_of = OKL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+		}
+	}
+	resources = {
+		oil = 84
+		aluminium = 24
+	}
+	manpower=330000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

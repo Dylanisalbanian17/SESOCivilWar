@@ -1,0 +1,22 @@
+state={
+	id=257
+	name="STATE_257"
+	provinces={
+		344 692 2219 3873 4464 5374 5493 6285 6835 7631 7646 7656 7663 7677 7682 7707 7734 7744 
+	}
+	history={
+		owner = NYO
+		add_core_of = NYO
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			air_base = 1
+			}
+		}
+	resources = {
+		steel = 13
+	}
+	manpower=91098
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

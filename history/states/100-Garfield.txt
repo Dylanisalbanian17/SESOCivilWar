@@ -1,0 +1,22 @@
+
+state={
+	id=100
+	name="STATE_100"
+	provinces={
+		622 727 1417 1652 1789 1985 2349 2377 2646 2648 2791 2867 2935 2959 3522 3838 4221 4801 4871 5149 5295 5360 5698 5724 6566 6805 8298 8336 8385 8410 8445 8461 8469 8493 
+	}
+	history={
+		owner = COL
+		add_core_of = COL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	resources = {
+		oil = 20
+	}
+	manpower=225000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=19
+	name="STATE_19"
+	provinces={
+		709 2008 2365 2395 2627 3027 3502 3519 3563 3886 4168 4206 4356 4514 4698 4712 4990 5033 5054 5813 6799 7927 7964 8027 8058 8064 8108 8127 8133 8141 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = { 3027 5}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower= 86749
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

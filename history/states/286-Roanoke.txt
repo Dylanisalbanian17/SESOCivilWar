@@ -1,0 +1,36 @@
+
+state={
+	id=286
+	name="STATE_286"
+	provinces={
+		423 1173 1209 1457 1534 2684 2804 2969 3280 3693 3975 4604 4724 4875 4921 4988 5017 5358 5772 5815 6122 6408 6522 6545 6611 6615 6624 6627 6679 6680 6758 6892 8615 8639 8657 8680 8686 8690 8693 8696 8721 8740 8742 8745 8752 8758 8764 8765 8767 8777 8778 8784 8806 8807 
+	}
+	history={
+		owner = VIA
+		add_core_of = VIA
+		victory_points = {1534 10}
+		victory_points = {8615 10}
+		victory_points = {3693 10}
+		victory_points = {6624 30}
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			industrial_complex = 1
+			arms_factory = 4
+			air_base = 3
+			8615 = {
+				bunker = 2
+			}
+			6624 = {
+				bunker = 1
+			}
+		}	
+	}
+	manpower=1116056
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	
+}
+
+

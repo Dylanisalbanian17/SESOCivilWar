@@ -1,0 +1,18 @@
+state={
+	id=47
+	name="STATE_47"
+	provinces={
+		1109 3108 6320 7572 7628 
+	}
+	history={
+		owner = IDA
+		add_core_of = IDA
+		victory_points = {3108 10}
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

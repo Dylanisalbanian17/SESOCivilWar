@@ -1,0 +1,146 @@
+focus_tree = {
+	id = nev_vacation
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NEV
+		}
+	}
+	#Focus for An Extended Vacation
+	focus = {
+		id = NEV_an_extended_vacation
+		icon = GFX_focus_mex_support_general_cedillo
+		x = 9
+		y = 0
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= -50  
+add_stability= -0.05
+		}
+	}
+	#Focus for Achieving full Dylanism
+	focus = {
+		id = NEV_achieving_full_dylanism
+		icon = GFX_focus_prc_maoism
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NEV_an_extended_vacation }
+		mutually_exclusive = { 
+			focus = NEV_answering_the_jewish_question 
+		}
+		mutually_exclusive = { 
+			focus = NEV_playing_new_vegas_in_vegas 
+		}
+		mutually_exclusive = { 
+			focus = NEV_ 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = communism 
+popularity = 0.05 
+}
+		}
+	}
+	#Focus for Answering the Jewish Question
+	focus = {
+		id = NEV_answering_the_jewish_question
+		icon = GFX_focus_ger_reichskommisariats
+		x = 9
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = NEV_an_extended_vacation }
+		mutually_exclusive = { 
+			focus = NEV_achieving_full_dylanism 
+		}
+		mutually_exclusive = { 
+			focus = NEV_playing_new_vegas_in_vegas 
+		}
+		mutually_exclusive = { 
+			focus = NEV_ 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = fascism 
+elections_allowed = no 
+}
+  add_popularity= { 
+ideology = fascism 
+popularity = 0.1 
+}
+  create_country_leader= {
+ name = "Dylan" 
+picture = "dylan_jewish_gaming.dds" 
+expire = "1965.1.1" 
+ideology = fascism_ideology 
+traits = { exiled cornered_fox anti_democrat railroad_enthusiast
+}
+
+
+ }
+
+    set_party_name= { 
+ideology = fascism 
+long_name = "The National Zionist Party of Nevada" 
+name = "NZPN" 
+}
+set_cosmetic_tag = NIL
+		}
+	}
+	#Focus for Playing New Vegas in Vegas
+	focus = {
+		id = NEV_playing_new_vegas_in_vegas
+		icon = GFX_focus_wonderweapons
+		x = 15
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = NEV_an_extended_vacation }
+		mutually_exclusive = { 
+			focus = NEV_achieving_full_dylanism 
+		}
+		mutually_exclusive = { 
+			focus = NEV_answering_the_jewish_question 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = neutrality 
+elections_allowed = no 
+}
+  add_popularity= { 
+ideology = neutrality 
+popularity = 0.1 
+}
+  create_country_leader= {
+ name = "Mr. Dylan"  
+picture = "GFX_dylan_always_wins" 
+expire = "1965.1.1" 
+ideology = centrism 
+traits = { humble railroad_enthusiast
+}
+
+ }
+ set_cosmetic_tag = FZN
+		}
+	}
+#End of focuses 
+}

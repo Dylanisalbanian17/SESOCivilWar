@@ -1,0 +1,935 @@
+focus_tree = {
+	id = 1143256531
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CAL
+		}
+	}
+	#Focus for Police Funds
+	focus = {
+		id = CAL_police_funds
+		icon = GFX_goal_generic_military_sphere
+		x = 14
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_california_standing_strong }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = california.3 
+}
+		}
+	}
+	#Focus for No
+	focus = {
+		id = CAL_no
+		icon = GFX_goal_generic_propaganda
+		x = 6
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_time_for_vacation }
+		mutually_exclusive = { focus = CAL_yes }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always= no
+		}
+	}
+	#Focus for Yes
+	focus = {
+		id = CAL_yes
+		icon = GFX_goal_rhineland
+		x = 14
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_time_for_vacation }
+		mutually_exclusive = { focus = CAL_no }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always= no
+		}
+	}
+	#Focus for infinite welfare checks
+	focus = {
+		id = CAL_infinite_welfare_checks
+		icon = GFX_focus_rom_parties_end
+		x = 6
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_california_standing_strong }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { ideology = communism popularity = 0.05
+}
+		}
+	}
+	#Focus for Dealing with the Homeless
+	focus = {
+		id = CAL_dealing_with_the_homeless
+		icon = GFX_focus_smiling_buddha
+		x = 10
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_california_standing_strong }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = california.2 
+}
+		}
+	}
+	#Focus for California Standing Strong
+	focus = {
+		id = CAL_california_standing_strong
+		icon = GFX_goal_generic_war_with_comintern
+		x = 10
+		y = 0
+		cost = 4
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+	#Focus for Putting the Gamers on Trial
+	focus = {
+		id = CAL_putting_the_gamers_on_trial
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 6
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_back_to_work }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { ideology = fascism popularity = -0.10
+}
+country_event= {
+days = 1 
+id = california.4 
+}
+		}
+	}
+	#Focus for An Opportunity
+	focus = {
+		id = CAL_an_opportunity
+		icon = GFX_focus_spa_caudillo_of_spain
+		x = 14
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_a_trip_to_nevada }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = neutrality 
+elections_allowed = no 
+}
+add_stability = -0.05
+remove_ideas = democracy_of_the_west
+		}
+	}
+	#Focus for Back to work
+	focus = {
+		id = CAL_back_to_work
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 6
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_no }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}
+	#Focus for A trip to Nevada
+	focus = {
+		id = CAL_a_trip_to_nevada
+		icon = GFX_goal_generic_alliance
+		x = 14
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_yes }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.1  
+add_political_power = -25
+		}
+	}
+	#Focus for Time for Vacation?
+	focus = {
+		id = CAL_time_for_vacation
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 10
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CAL_police_funds 
+		}
+		prerequisite = { 
+			focus = CAL_infinite_welfare_checks 
+		}
+		prerequisite = { 
+			focus = CAL_dealing_with_the_homeless 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = california.1
+}
+		}
+	}
+	#Focus for A Pacific Dream
+	focus = {
+		id = CAL_a_pacific_dream
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 6
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_putting_the_gamers_on_trial }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= pacific_dream
+		}
+	}
+	#Focus for Hand over the keys
+	focus = {
+		id = CAL_hand_over_the_keys
+		icon = GFX_goal_generic_major_alliance
+		x = 14
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_an_opportunity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+				days = 1 
+				id = california.5 
+			}
+		}
+	}
+	#Focus for Ready for the Future
+	focus = {
+		id = CAL_ready_for_the_future
+		icon = GFX_goal_generic_territory_or_war
+		x = 10
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CAL_hand_over_the_keys 
+			focus = CAL_a_pacific_dream 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 20
+		}
+	}
+	#Focus for Supreme Gamer Mace
+	focus = {
+		id = CAL_supreme_gamer_mace
+		icon = GFX_focus_rom_coup
+		x = 44
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus= CAL_ready_for_the_future  has_government= fascism
+			has_war= no
+		}
+		completion_reward = {
+			add_political_power= 50  
+			set_party_name= { 
+				ideology = communism 
+				long_name = "The Big Wavy Insurrection" 
+				name = "Big Wavy Insurrection" 
+			}
+			create_country_leader= {
+				name = "Big Wavy"  
+				picture = "big_wavy.dds" 
+				expire = "1965.1.1" 
+				ideology = anti_revisionism 
+				traits = { }
+			}
+		}
+	}
+	#Focus for President Dylan
+	focus = {
+		id = CAL_president_dylan
+		icon = GFX_focus_prc_remove_chiang_kai_shek
+		x = 26
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus= CAL_ready_for_the_future
+has_government= democratic
+		}
+	}
+	#Focus for Dealing with the Economy
+	focus = {
+		id = CAL_dealing_with_the_economy
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 19
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_president_dylan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = super_depression 
+add_idea = super_depression2 
+}
+		}
+	}
+	#Focus for Pacific States Theory
+	focus = {
+		id = CAL_pacific_states_theory
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 26
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_president_dylan }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus= CAL_a_somewhat_functioning_economy  has_completed_focus= CAL_it_just_works
+		}
+		completion_reward = {
+			set_cosmetic_tag = CAL_PSC
+					}
+	}
+	#Focus for Military Reform
+	focus = {
+		id = CAL_military_reform
+		icon = GFX_focus_chi_whampoa_military_academy
+		x = 33
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_president_dylan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 10  swap_ideas= {
+ remove_idea = disorganized_army 
+add_idea = disorganized_army2
+}
+		}
+	}
+	#Focus for Dealing with Big Wavy
+	focus = {
+		id = CAL_dealing_with_big_wavy
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		x = 44
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_supreme_gamer_mace }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			start_civil_war= {
+ ideology = communism 
+size = 0.3 
+}
+		}
+	}
+	#Focus for Industrialize a Hellhole
+	focus = {
+		id = CAL_industrialize_a_hellhole
+		icon = GFX_goal_generic_production2
+		x = 18
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_give_gamers_freedom_for_roads }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+ add_extra_state_shared_building_slots = 2 
+add_building_construction = {type = infrastructure
+level = 2
+instant_build = yes}
+
+}
+		}
+	}
+	#Focus for A New Job for Alf
+	focus = {
+		id = CAL_a_new_job_for_alf
+		icon = GFX_goal_generic_major_alliance
+		x = 25
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_pacific_states_theory }
+		mutually_exclusive = { focus = CAL_autonomy_for_alf }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NEV = {
+			is_ai= yes
+			}
+		}
+		completion_reward = {
+			annex_country= {
+ target = NEV 
+}
+		}
+	}
+	#Focus for Acquiring Gamer Girl
+	focus = {
+		id = CAL_acquiring_gamer_girl
+		icon = GFX_focus_generic_treaty
+		x = 27
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_pacific_states_theory }
+		mutually_exclusive = { focus = CAL_autonomy_for_gamer_girl }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			ORE = {
+			is_ai= yes
+			}
+		}
+		completion_reward = {
+			annex_country= {
+ target = ORE 
+}
+		}
+	}
+	#Focus for Theory No More
+	focus = {
+		id = CAL_theory_no_more
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 26
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CAL_autonomy_for_alf 
+			focus = CAL_a_new_job_for_alf 
+			focus = CAL_acquiring_gamer_girl 
+			focus = CAL_autonomy_for_gamer_girl 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {	
+	OR = {has_completed_focus = CAL_a_new_job_for_alf
+	     has_completed_focus = CAL_autonomy_for_alf }
+
+    OR = { has_completed_focus = CAL_acquiring_gamer_girl
+	  has_completed_focus = CAL_autonomy_for_gamer_girl }
+	
+		}
+		completion_reward = {
+			add_stability= 0.05  add_political_power= 50
+		}
+	}
+	#Focus for Give Gamers Freedom for Roads
+	focus = {
+		id = CAL_give_gamers_freedom_for_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 19
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CAL_the_epic_act 
+		}
+		prerequisite = { 
+			focus = CAL_giving_the_workers_rights 
+		}
+		prerequisite = { 
+			focus = CAL_deradicalize_the_unions 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = super_depression2 
+add_idea = super_depression3 
+}
+  add_ideas= gamer_roads
+		}
+	}
+	#Focus for The EPIC Act
+	focus = {
+		id = CAL_the_epic_act
+		icon = GFX_goal_generic_soviet_construction
+		x = 17
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_dealing_with_the_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.10  add_political_power= 100  remove_ideas= homeless_crisis2
+		}
+	}
+	#Focus for Deradicalize the Unions
+	focus = {
+		id = CAL_deradicalize_the_unions
+		icon = GFX_goal_anti_comintern_pact
+		x = 21
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_dealing_with_the_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { ideology = communism popularity = -0.15
+}
+		}
+	}
+	#Focus for Put Criminals in Factories
+	focus = {
+		id = CAL_put_criminals_in_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 20
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_give_gamers_freedom_for_roads }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {				
+				add_extra_state_shared_building_slots = 1				
+				add_building_construction = {
+				type = arms_factory
+				level = 1					
+				instant_build = yes				 
+   }
+}
+
+			random_owned_controlled_state = {				
+				add_extra_state_shared_building_slots = 1				
+				add_building_construction = {
+				type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		}
+		}
+	}
+	#Focus for Add Economics to the List of Degrees
+	focus = {
+		id = CAL_add_economics_to_the_list_of_degrees
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 19
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CAL_put_criminals_in_factories 
+		}
+		prerequisite = { 
+			focus = CAL_industrialize_a_hellhole 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_country_leader_trait= economic_reformer  remove_ideas= super_depression3
+		}
+	}
+	#Focus for A Somewhat Functioning Economy
+	focus = {
+		id = CAL_a_somewhat_functioning_economy
+		icon = GFX_goal_generic_neutrality_focus
+		x = 19
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_add_economics_to_the_list_of_degrees }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= sw_economy
+		}
+	}
+	#Focus for Inviting Li Zongren
+	focus = {
+		id = CAL_inviting_li_zongren
+		icon = GFX_focus_usa_honor_the_confederacy
+		x = 33
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_military_reform }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_field_marshal = {
+					name = "Li Zongren"
+					gfx = GFX_portrait_li_zongren
+					traits = { infantry_officer } # Many warlord battles as a junior commander
+					skill = 3
+					attack_skill = 2
+					defense_skill = 4
+					planning_skill = 2
+					logistics_skill = 2					
+				}
+		}
+	}
+	#Focus for Spanish Advisors
+	focus = {
+		id = CAL_spanish_advisors
+		icon = GFX_focus_spr_war_of_independence
+		x = 31
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_military_reform }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= spainish_advisors
+		}
+	}
+	#Focus for American Weaponry
+	focus = {
+		id = CAL_american_weaponry
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 35
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_military_reform }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 0.5 
+uses = 2 
+category = infantry_tech 
+}
+		}
+	}
+	#Focus for Free Language Lessons
+	focus = {
+		id = CAL_free_language_lessons
+		icon = GFX_goal_continuous_def_against_influence
+		x = 33
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CAL_israeli_airforce 
+		}
+		prerequisite = { 
+			focus = CAL_mexican_navy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = sarmy_sland 
+add_idea = sarmy_sland2 
+}
+		}
+	}
+	#Focus for Mexican Navy
+	focus = {
+		id = CAL_mexican_navy
+		icon = GFX_goal_generic_navy_carrier
+		x = 34
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_a_strange_army_for_a_strange_land }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 0.5 
+uses = 2 
+category = cv_tech 
+}
+		}
+	}
+	#Focus for It Just Works
+	focus = {
+		id = CAL_it_just_works
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 33
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_free_language_lessons }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 10  air_experience= 10  navy_experience= 10
+		}
+	}
+	#Focus for Giving the Workers Rights
+	focus = {
+		id = CAL_giving_the_workers_rights
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 19
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_dealing_with_the_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+	}
+	#Focus for A Strange Army for a Strange Land
+	focus = {
+		id = CAL_a_strange_army_for_a_strange_land
+		icon = GFX_focus_generic_little_entente
+		x = 33
+		y = 3
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CAL_spanish_advisors 
+		}
+		prerequisite = { 
+			focus = CAL_inviting_li_zongren 
+		}
+		prerequisite = { 
+			focus = CAL_american_weaponry 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = disorganized_army2 
+add_idea = sarmy_sland 
+}
+		}
+	}
+	#Focus for Israeli Airforce
+	focus = {
+		id = CAL_israeli_airforce
+		icon = GFX_goal_generic_air_fighter2
+		x = 32
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_a_strange_army_for_a_strange_land }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 0.5 
+uses = 2 
+category = light_fighter 
+}
+		}
+	}
+	#Focus for Messing with Jolly
+	focus = {
+		id = CAL_messing_with_jolly
+		icon = GFX_focus_attack_canada
+		x = 44
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_join_the_gamers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			declare_war_on= { 
+target = ONT 
+type = annex_everything 
+}
+		}
+	}
+	#Focus for Join the Gamers?
+	focus = {
+		id = CAL_join_the_gamers
+		icon = GFX_goal_tfv_can_compromise_with_quebec
+		x = 44
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CAL_unbanned_from_501st 
+			focus = CAL_quote_posh 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_civil_war= no
+		}
+		completion_reward = {
+			WYO = { add_to_faction = CAL }
+		}
+	}
+	#Focus for Unbanned from 501st
+	focus = {
+		id = CAL_unbanned_from_501st
+		icon = GFX_focus_RAJ_indianisation_of_army
+		x = 43
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_dealing_with_big_wavy }
+		mutually_exclusive = { focus = CAL_quote_posh }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+	}
+	#Focus for Quote Posh
+	focus = {
+		id = CAL_quote_posh
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 45
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_dealing_with_big_wavy }
+		mutually_exclusive = { focus = CAL_unbanned_from_501st }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.05
+		}
+	}
+
+	focus = {
+		id = CAL_playde_nuke
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 40
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_supreme_gamer_mace }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = california.6
+		}
+	}
+	#Focus for Autonomy for Alf
+	focus = {
+		id = CAL_autonomy_for_alf
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 23
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_pacific_states_theory }
+		mutually_exclusive = { focus = CAL_a_new_job_for_alf }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			puppet= NEV
+			NEV = {set_cosmetic_tag = NEV_CAL }
+		}
+	}
+	#Focus for Autonomy for Gamer Girl
+	focus = {
+		id = CAL_autonomy_for_gamer_girl
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 29
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_pacific_states_theory }
+		mutually_exclusive = { focus = CAL_acquiring_gamer_girl }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			puppet= ORE
+			ORE = {set_cosmetic_tag = ORE_CAL }
+		}
+	}
+#End of focuses 
+ }

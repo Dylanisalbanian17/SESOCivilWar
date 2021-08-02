@@ -1,0 +1,30 @@
+state={
+	id=264
+	name="STATE_264"
+
+	history={
+		owner = COT
+		add_core_of = COT
+		victory_points = {
+			7849 10 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 3
+
+		}
+
+	}
+
+	provinces={
+		625 1161 3883 5664 6875 7799 7849 
+	}
+	manpower=270000
+	buildings_max_level_factor=1.000
+	state_category=city
+	resources = {
+		rubber = 80
+	}
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=273
+	name="STATE_273"
+	provinces={
+		1303 1539 1692 3067 4029 4315 4945 5139 5863 6008 6223 6612 6776 6867 7528 7531 7533 7537 7567 7569 7571 7578 7597 
+	}
+	history={
+		owner = NHA
+		add_core_of = NHA
+		victory_points = {7571 10}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			air_base = 1
+		}
+	}
+	manpower=116000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

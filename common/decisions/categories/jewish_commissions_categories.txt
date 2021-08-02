@@ -1,0 +1,4 @@
+NEV_jewishcommissions_west = {
+	icon = ger_reichskommissariats
+
+}

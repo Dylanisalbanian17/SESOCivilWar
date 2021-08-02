@@ -1,0 +1,21 @@
+state={
+	id=229
+	name="STATE_229"
+	provinces={
+		506 1898 2040 2381 2802 2821 2943 4064 4880 5117 5217 5241 5438 5492 6042 6276 6580 6812 8288 8307 8326 8356 8368 8387 8400 8416 8417 8434 8435 8463 8464 
+	}
+	history={
+		owner = IND
+		add_core_of = IND
+		victory_points = {5117 25}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			}
+		}
+	manpower=864447
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

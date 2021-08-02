@@ -1,0 +1,152 @@
+focus_tree = {
+	id = nev_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NEV
+		}
+	}
+	#Focus for The Nightmare Is Over
+	focus = {
+		id = NEV_the_nightmare_is_over
+		icon = GFX_goal_generic_defence
+		x = 6
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = NEV_californian_nightmare }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			CAL = { has_completed_focus = CAL_putting_the_gamers_on_trial }
+		}
+		completion_reward = {
+			load_focus_tree = nev_psa
+		}
+	}
+	#Focus for Dylan's Arrival
+	focus = {
+		id = NEV_dylans_arrival
+		icon = GFX_focus_prc_infiltration
+		x = 10
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = NEV_californian_nightmare }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			CAL = { has_completed_focus = CAL_an_opportunity }
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = nevada.1
+		}
+	}
+} 
+	#Focus for Californian Nightmare?
+	focus = {
+		id = NEV_californian_nightmare
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		x = 8
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = NEV_helping_the_communities }
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+	#Focus for Helping The Communities
+	focus = {
+		id = NEV_helping_the_communities
+		icon = GFX_focus_generic_military_academy
+		x = 8
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = NEV_implementing_the_gold_standard 
+		}
+		prerequisite = { 
+			focus = NEV_closer_ties_with_california 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+ add_extra_state_shared_building_slots = 2 
+add_building_construction = {type = infrastructure
+level = 2
+instant_build = yes}
+
+}
+		}
+	}
+	#Focus for Closer Ties With California
+	focus = {
+		id = NEV_closer_ties_with_california
+		icon = GFX_goal_generic_dangerous_deal
+		x = 9
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = NEV_a_stranger_in_a_strange_land }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_opinion_modifier = { 
+target = CAL
+modifier = closer_ties_cal_nev
+}
+		}
+	}
+	#Focus for A Stranger In A Strange Land
+	focus = {
+		id = NEV_a_stranger_in_a_strange_land
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 8
+		y = 0
+		cost = 4
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	#Focus for Implementing the Gold Standard
+	focus = {
+		id = NEV_implementing_the_gold_standard
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 7
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = NEV_a_stranger_in_a_strange_land }
+		search_filters = { FOCUS_FILTER_CHI_INFLATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = gold_standard
+		}
+	}
+#End of focuses 
+ }

@@ -1,0 +1,22 @@
+
+state={
+	id=112
+	name="STATE_112"
+	provinces={
+		1583 2226 3524 4121 4484 5888 6079 6616 8299 8349 8354 8383 8423 
+	}
+	history={
+		owner = NEB
+		add_core_of = NEB
+		victory_points = {3524 10}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	manpower=184500
+	buildings_max_level_factor=1.000
+	state_category=town
+}

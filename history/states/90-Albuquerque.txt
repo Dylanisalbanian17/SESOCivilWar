@@ -1,0 +1,19 @@
+state={
+	id=90
+	name="STATE_90"
+	provinces={
+		690 1666 3079 3301 4628 5931 9110 9164 
+	}
+	history={
+		owner = NMX
+		add_core_of = NMX
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			air_base = 3
+		} 
+	}
+	manpower=135000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

@@ -1,0 +1,22 @@
+state={
+	id=190
+	name="STATE_190"
+	history={
+	owner = ONT
+	add_core_of = ONT
+	victory_points = {2133 15}
+	buildings = {
+		infrastructure = 7
+		industrial_complex = 1
+		dockyard = 1
+
+	}
+	add_core_of = ONT
+	}
+	provinces={
+		971 2133 2663 3445 4571 4748 5370 5717 6789 7840 7867 7905 
+	}
+	manpower=132727
+	buildings_max_level_factor=1.000
+	state_category=city
+}

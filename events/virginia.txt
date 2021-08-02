@@ -1,0 +1,396 @@
+add_namespace = virginia
+
+country_event = {
+	id = virginia.1
+	title = virginia.1.t
+	desc = virginia.1.d
+	picture = GFX_news_event_german_reichstag_graffiti_ruins
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VIA
+		AND = {
+has_completed_focus = via_a_repeat_of_our_ancestors }
+	}
+	option = {
+		name = virginia.1.a
+		ai_chance = { factor = 1}
+	
+		
+	}
+}
+
+country_event = {
+	id = virginia.2
+	title = virginia.2.t
+	desc = virginia.2.d
+	picture = GFX_report_event_german_reichstag_gathering
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VIA
+		AND = {
+has_completed_focus = via_national_insurrection }
+	}
+	option = {
+		name = virginia.2.a
+		ai_chance = { factor = 0 }
+		add_popularity = { 
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_stability = -0.1
+	
+	}
+	option = {
+		name = virginia.2.b
+		ai_chance = { factor = 0 }
+		add_popularity = { 
+			ideology = communism
+			popularity = 0.05
+		}
+		add_war_support = -0.05
+	}
+	option = {
+		name = virginia.2.c
+		ai_chance = { factor = 0 }
+	add_stability = -0.1
+	retire_country_leader = yes
+		create_country_leader= {
+			name = "Perliminary Bundesregierung"  
+		   picture = "GFX_portrait_eng_fallen_government" 
+		   expire = "1965.1.1" 
+		   ideology = nazism
+		   traits = { }
+		}
+		hidden_effect = {
+			set_country_flag = via_old_ryder
+		}
+}
+
+}
+
+
+country_event = {
+	id = virginia.3
+	title = virginia.3.t
+	desc = virginia.3.d
+	picture = GFX_report_event_generic_riot
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VIA
+		AND = {
+has_completed_focus = via_dealings_with_the_reactionaries }
+	}
+	option = {
+		name = virginia.3.a
+		ai_chance = { factor = 1}
+		add_popularity = { 
+			ideology = fascism
+			popularity = 0.05
+		}
+	}
+		option = {
+			name = virginia.3.b
+			ai_chance = { factor = 1}
+			add_popularity = { 
+				ideology = communism
+				popularity = 0.05
+			}
+	}
+
+
+}
+
+country_event = {
+	id = virginia.4
+	title = virginia.4.t
+	desc = virginia.4.d
+	picture = GFX_report_event_bul_ff_troops_panzer
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VIA
+		AND = {
+has_completed_focus = via_sway_the_panzerarmee }
+}
+option = {
+	name = virginia.4.a
+	ai_chance = { factor = 1}
+	set_country_flag = via_panzerarmee
+
+	}
+
+}
+
+country_event = {
+	id = virginia.5
+	title = virginia.5.t
+	desc = virginia.5.d
+	picture = GFX_report_event_canada_army
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VIA
+		AND = {
+has_completed_focus = via_party_militias }
+}
+option = {
+	name = virginia.5.a
+	ai_chance = { factor = 1}
+	set_country_flag = via_party_militias
+
+	}
+
+}
+
+country_event = {
+	id = virginia.6
+	title = virginia.6.t
+	desc = virginia.6.d
+	picture = GFX_news_event_german_speech
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VIA
+		AND = {
+has_completed_focus = via_the_speech }
+}
+option = {
+	name = virginia.6.a
+	ai_chance = { factor = 1}
+
+	}
+
+}
+
+country_event = {
+	id = virginia.8
+	title = virginia.8.t
+	desc = virginia.8.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VIA
+		AND = {
+has_completed_focus = via_choosing_a_side }
+	}
+	option = {
+		name = virginia.8.a
+		ai_chance = { factor = 1}
+		set_country_flag = via_reich_side
+	
+		
+	}
+	option = {
+		name = virginia.8.b
+		ai_chance = { factor = 1}
+		set_country_flag = via_naz_side
+	
+		
+	}
+}
+
+country_event = {
+	id = virginia.9
+	title = virginia.9.t
+	desc = virginia.9.d
+	picture = GFX_report_event_germany_politician_handshake
+	fire_only_once = yes
+
+	trigger = {
+		has_completed_focus = via_the_speech
+		AND = { has_country_flag = via_reich_side }
+		
+}
+
+option = { 
+	name = virginia.9.a
+	load_focus_tree = 4512
+
+	start_civil_war = {
+		ideology = communism
+		size = 0.5
+		capital = 286
+		states = { 
+	 287 286 284
+		}
+		keep_unit_leaders_trigger = {
+			always = yes
+		}
+	}
+	news_event = { hours = 6 id = news.11 }
+	set_cosmetic_tag = VIA_REI
+	set_global_flag = VIA_NAZ_civil_war
+
+	random_other_country = {
+		limit = {
+			original_tag = VIA
+			has_government = communism
+		}
+		set_cosmetic_tag = VIA_NAZ
+		add_ideas = { 
+			via_nazpeoplesarmy
+			via_inexperiencedofficercorps
+			via_lacking_the_means_of_pro
+		}
+		remove_ideas = {
+			wehrmacht_model
+			workers_strikes
+			via_insurrection
+			Ein_Volk_Ein_Reich
+			Mistribution_of_funds
+		}
+	}			
+	}
+
+}
+
+
+
+
+country_event = {
+    id = virginia.10
+    title = virginia.10.t
+    desc = virginia.10.d
+    picture = GFX_report_event_soviet_purge_speech
+    fire_only_once = yes
+
+    trigger = {
+        has_completed_focus = via_the_speech
+        AND ={ has_country_flag = via_naz_side }
+}
+
+option = { 
+    name = virginia.10.a
+    load_focus_tree = 4512
+    remove_ideas = {
+    wehrmacht_model
+    workers_strikes
+    via_insurrection
+	Ein_Volk_Ein_Reich
+	Mistribution_of_funds
+}
+add_ideas = { 
+	via_nazpeoplesarmy
+	via_inexperiencedofficercorps
+	via_lacking_the_means_of_pro
+}
+set_politics = {
+    ruling_party = communism
+    elections_allowed = no
+}
+
+set_capital = 286
+set_cosmetic_tag = VIA_NAZ
+
+set_global_flag = VIA_NAZ_civil_war
+
+    start_civil_war = {
+        ideology = fascism 
+        size = 0.5
+        capital = 282
+        states = { 
+     282 283
+        }
+    }
+
+    random_other_country = {
+        limit = {
+            original_tag = VIA
+            has_government = fascism
+        }
+        set_cosmetic_tag = VIA_REI
+        add_ideas = { 
+            wehrmacht_model
+            workers_strikes
+            via_insurrection
+			Ein_Volk_Ein_Reich
+			Mistribution_of_funds
+        }
+	    remove_ideas = { 
+			via_nazpeoplesarmy
+			via_inexperiencedofficercorps
+			via_lacking_the_means_of_pro
+		}
+    }
+
+	news_event = { hours = 6 id = news.11 }
+}
+
+}
+
+country_event = {
+	id = virginia.24
+	title = virginia.24.t
+	desc = virginia.24.d
+	picture = GFX_report_event_generic_lend_lease
+	is_triggered_only = yes
+	option = {
+		name = virginia.24.a
+		effect_tooltip = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = FROM
+			}
+		}
+	}
+}
+
+country_event = {
+    id = virginia.16
+    title = virginia.16.t
+    desc = virginia.16.d
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {    
+        name = virginia.16.a
+        ai_chance = { factor = 0.9}
+        hidden_effect = { 
+            create_faction = "National Union of America"
+            add_to_faction = WVI
+            WVI = 
+                {
+                    country_event = {
+                        days = 1
+                        id = wvi_virginia.1  }
+                }
+    } 
+}
+    option = {
+        name = virginia.16.b
+        ai_chance = { factor = 0.1}
+
+        hidden_effect = {
+        add_opinion_modifier = {
+            target = WVI
+            modifier = small_decrease
+        }
+        WVI = 
+            {
+                country_event= {
+                days = 1
+                id = wvi_virginia.2 }
+            }
+    }
+    }
+}

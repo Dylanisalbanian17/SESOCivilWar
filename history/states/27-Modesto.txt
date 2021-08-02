@@ -1,0 +1,26 @@
+
+state={
+	id=27
+	name="STATE_27"
+	provinces={
+		1204 1465 3377 3915 5408 6172 6447 6749 6765 8267 8286 8311 8339 8342 8351 8352 8360 8377 8382 8384 8399 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = { 8286 5 }
+		victory_points = { 1204 5 }
+		victory_points = { 8399 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	resources = {
+		rubber = 3
+	}
+	manpower= 564794
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

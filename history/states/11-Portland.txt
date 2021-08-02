@@ -1,0 +1,25 @@
+state={
+	id=11
+	name="STATE_11"
+	provinces={
+		1675 1960 2507 2899 3260 3899 4884 5309 6845 7320 7324 7337 7341 7347 7363 
+	}
+	history={
+		owner = ORE
+		add_core_of = ORE
+		victory_points = { 7341 25 }
+		victory_points = { 2899 10 }
+		victory_points = { 1960 5 }
+		victory_points = { 7347 5 }
+		victory_points = { 6845 5 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 3
+		}
+	}
+	manpower= 1051834
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=4
+	name="STATE_4"
+
+	history={
+		owner = WAS
+		add_core_of = WAS
+		victory_points = { 656 25 }
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 7
+
+		}
+
+	}
+
+	provinces={
+		198 232 656 1425 3014 3492 3521 4561 4757 4764 4785 4848 4885 5288 5903 5912 6098 6342 6507 6676 7178 7184 7193 7200 7210 7216 7217 7218 7223 7224 7239 7247 7252 7254 
+	}
+	manpower=143807
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

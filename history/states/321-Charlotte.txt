@@ -1,0 +1,20 @@
+state={
+	id=321
+	name="STATE_321"
+	provinces={
+		447 979 1292 1469 2078 2393 2625 3140 3501 4113 4307 5043 5085 5093 5151 5518 5743 5858 5909 6225 6284 6475 6560 6821 8881 8891 8905 8906 8910 8918 8925 8934 8956 8957 8961 8973 8982 8987 8997 8998 9013 9020 9024 9031 9035 
+	}
+	history={
+		owner = NCA
+		add_core_of = NCA
+		victory_points = {5151 25}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+		}
+	}
+	manpower=831250
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

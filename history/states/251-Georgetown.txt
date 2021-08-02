@@ -1,0 +1,19 @@
+state={
+	id=251
+	name="STATE_251"
+	provinces={
+		3732 5420 5976 8313 8344 8366 8369 8381 
+	}
+	history={
+		owner = DEL
+		add_core_of = DEL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+		}
+	}
+	manpower=63250
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

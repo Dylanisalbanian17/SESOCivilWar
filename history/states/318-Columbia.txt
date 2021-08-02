@@ -1,0 +1,23 @@
+state={
+	id=318
+	name="STATE_318"
+
+	history={
+		owner = SCA
+		add_core_of = SCA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		796 1480 1557 2212 2272 2591 3052 3229 3350 3756 3920 4380 4563 4788 5626 5739 6289 6453 6467 6481 6618 6620 9049 9059 9123 9143 9163 9206 9246 9260 9282 
+	}
+	manpower=456250
+	buildings_max_level_factor=1.000
+	state_category=city
+}

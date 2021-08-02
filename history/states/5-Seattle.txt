@@ -1,0 +1,25 @@
+
+state={
+	id=5
+	name="STATE_5"
+
+	history={
+		owner = WAS
+		add_core_of = WAS
+		victory_points = { 3636 25 }
+		victory_points = { 7240 10 }
+		victory_points = { 7201 10 }
+		buildings = {
+			infrastructure = 7
+
+		}
+
+	}
+
+	provinces={
+		3636 4452 4572 4733 6005 7201 7209 7233 7240 
+	}
+	manpower= 769700
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

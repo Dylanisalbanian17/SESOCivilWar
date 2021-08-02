@@ -1,0 +1,24 @@
+
+state={
+	id=248
+	name="STATE_248"
+
+	history={
+		owner = MAR
+		add_core_of = MAR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		1923 3117 4200 5049 6294 6877 8199 8233 8261 8398 8401 8411 8413 8436 8437 8454 
+	}
+	manpower=150000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

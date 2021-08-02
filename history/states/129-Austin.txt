@@ -1,0 +1,19 @@
+
+state={
+	id=129
+	name="STATE_129"
+	provinces={
+		284 608 3948 4120 4158 5256 5363 6378 6457 9795 9808 9809 9821 9825 9832 9840 9855 
+	}
+	history={
+		owner = TEX
+		add_core_of = TEX
+		victory_points = {3948 25}
+		buildings = {
+			infrastructure = 10
+		}
+	}
+	manpower=964254
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

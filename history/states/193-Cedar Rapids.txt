@@ -1,0 +1,20 @@
+state={
+	id=193
+	name="STATE_193"
+	provinces={
+		621 800 1464 2240 2468 2661 3542 3787 4043 4199 4426 4481 4491 4899 5081 5179 5272 5504 5704 5722 6021 6479 7940 7968 7994 8003 8017 8025 8028 8035 8051 8065 8109 8110 8119 8120 8195 8222 8223 
+	}
+	history={
+		owner = IOA
+		add_core_of = IOA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 2
+		}
+	}
+	manpower=1250000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

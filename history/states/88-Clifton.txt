@@ -1,0 +1,20 @@
+state={
+	id=88
+	name="STATE_88"
+	provinces={
+		1302 4462 6332 9388 
+	}
+	history={
+		owner = ARS
+		add_core_of = ARS
+		add_claim_by = ART
+		add_claim_by = ARB
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

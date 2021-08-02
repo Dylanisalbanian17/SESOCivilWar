@@ -1,0 +1,19 @@
+state={
+	id=227
+	name="STATE_227"
+	provinces={
+		224 2420 2875 2907 3048 3061 3130 3290 3391 3526 3852 4019 4303 4321 4420 5285 5689 6371 6715 6785 6881 8450 8494 8521 8525 8556 8563 8583 8614 8624 8673 8688 8707 
+	}
+	history={
+		owner = ILL
+		add_core_of = ILL
+		buildings = {
+			industrial_complex = 3
+			arms_factory = 3
+			infrastructure = 4
+		}
+	}
+	manpower=1120000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

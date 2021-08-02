@@ -1,0 +1,20 @@
+state={
+	id=208
+	name="STATE_208"
+	provinces={
+		627 640 1066 1160 1244 1318 1342 1422 1749 1773 1904 2082 2291 2838 3141 3407 3811 3824 4144 4333 4585 4739 4795 5600 5970 6016 6030 6401 6857 6870 9690 9710 9714 9741 9742 9757 9760 9768 9779 9783 9785 9806 9815 9818 9819 9833 9838 9848 9852 9854 9876 9892 
+	}
+	history={
+		owner = LOU
+		add_core_of = LOU
+		victory_points = {4333 15}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+	manpower=645000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

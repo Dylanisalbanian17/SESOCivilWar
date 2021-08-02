@@ -1,0 +1,21 @@
+
+state={
+	id=195
+	name="STATE_195"
+	provinces={
+		291 335 1874 2621 3097 3556 3559 3814 4496 4643 5605 6258 6530 6623 8562 8572 8582 8600 8626 8633 8661 8687 
+	}
+	history={
+		owner = MIS
+		add_core_of = MIS
+		victory_points = {8582 10}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 2
+		}
+	}
+	manpower=955000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

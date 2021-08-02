@@ -1,0 +1,19 @@
+
+state={
+	id=306
+	name="STATE_306"
+	provinces={
+		306 449 580 1050 1139 1322 2050 2955 3023 3893 4390 5488 5549 5984 6501 9715 9716 9729 9730 9732 9735 9744 9814 
+	}
+	history={
+		owner = FLO
+		add_core_of = FLO
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+	}
+	manpower=204000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

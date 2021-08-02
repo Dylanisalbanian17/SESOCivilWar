@@ -1,0 +1,222 @@
+ideas = {
+	country = {
+		sgnrecruitment = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				conscription_factor  = 0.035
+			}
+		}
+
+		blackbiz = {
+			
+			allowed = {
+				tag = COT
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+	
+		blackuni = {
+			
+			allowed = {
+				tag = COT
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+
+		blackmiscegenation = {
+			
+			allowed = {
+				tag = COT
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+
+			}
+		}
+
+		cot_emigration = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+	
+			modifier = {
+				weekly_manpower  = 63666 # Amounts to 2.3 million white people after 12 weeks split to 3 countries
+			}
+		}
+		## Profile Pictures
+		profile_mcgonagall = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+	
+			modifier = {
+				surrender_limit = 0.20
+				research_speed_factor = 0.20
+			}
+		}
+
+		profile_plath = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+	
+			modifier = {
+				occupation_cost = -0.50
+				generate_wargoal_tension = 0.20
+			}
+		}
+
+		profile_behbudov = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+	
+			modifier = {
+				stability_weekly = 0.05
+				trade_opinion_factor = 0.80
+			}
+		}
+
+		profile_jeshari = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+	
+			modifier = {
+				offence = 0.30
+			}
+		}
+
+		profile_matsoua = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+	
+			modifier = {
+				weekly_manpower = 100
+				conscription_factor = 0.10
+			}
+		}
+
+		profile_shikai = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+	
+			modifier = {
+				defence = 0.30
+			}
+		}
+	}
+
+	political_advisor = {
+		avgn_advisor = {
+			picture = avgn
+			allowed = { original_tag = COT }
+			
+			traits = { prince_of_terror }
+
+			ai_will_do = { factor = 0 }
+		}
+
+		martha_advisor = {
+			picture = martha
+			allowed = { original_tag = COT }
+			available = { has_government = democratic }
+			
+			traits = { first_lady }
+
+			ai_will_do = { factor = 0 }
+		}
+	}
+}

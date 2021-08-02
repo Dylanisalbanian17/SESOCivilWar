@@ -1,0 +1,22 @@
+state={
+	id=188
+	name="STATE_188"
+
+	history={
+		owner = ONT
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+
+		}
+		add_core_of = ONT
+
+	}
+
+	provinces={
+		429 3195 3440 3621 4079 4211 4597 4654 5187 5473 5957 6396 6864 7497 7498 7518 
+	}
+	manpower=47662
+	buildings_max_level_factor=1.000
+	state_category=city
+}

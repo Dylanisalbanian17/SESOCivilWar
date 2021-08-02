@@ -1,0 +1,72 @@
+﻿add_namespace = news
+##Event: The Gamer take over California
+news_event = {
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_report_event_usa_macarthur_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1.a 
+		ai_chance = { factor = 1}
+	}
+}
+
+##Event: Sag is Elected
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_news_event_king_speech
+
+	major = yes
+	is_triggered_only = yes
+	fire_for_sender = no
+
+	option = {
+		name = news.2.a
+		trigger = {
+			NOT = { 
+				tag = CAL
+				has_country_leader = { ruling_only = yes name = "Dylan"}
+			}
+		}
+	}
+
+	option = {
+		name = news.2.b
+		trigger = {
+			tag = CAL
+			has_country_leader = { ruling_only = yes name = "Dylan"}
+		}
+
+	}
+}
+
+# The Virginian Civil War Start
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news_event_german_reichstag_ruins_02
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news.3.a
+		trigger = {
+			NOT = { tag = VIA }
+		}
+	
+	}
+	option = {
+		name = news.3.b
+		trigger = { 
+			original_tag = VIA
+		}
+	}
+}

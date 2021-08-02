@@ -1,0 +1,18 @@
+state={
+	id=16
+	name="STATE_16"
+	provinces={
+		522 633 753 764 1079 1102 1750 1759 2100 2721 2746 2814 3352 3382 3970 4461 4702 4809 5136 5206 5678 6769 7490 7510 7550 7555 7568 7579 7614 7660 
+	}
+	history={
+		owner = ORE
+		add_core_of = ORE
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+	}
+	manpower= 57267
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

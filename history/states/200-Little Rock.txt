@@ -1,0 +1,20 @@
+state={
+	id=200
+	name="STATE_200"
+	provinces={
+		4091 4560 6700 9197 9215 9235 9250 9261 9263 9280 
+	}
+	history={
+		owner = ARK
+		add_core_of = ARK
+		victory_points = {6700 15}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 2
+		}
+	}
+	manpower=950000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

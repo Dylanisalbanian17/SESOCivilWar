@@ -1,0 +1,44 @@
+add_namespace = nevada
+
+##Event: Dylan's arrival
+country_event = {
+	id = nevada.1
+	title = vacation.1.t 
+	desc = vacation.1.d 
+	picture = GFX_report_event_hitler_handshake
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = NEV
+		AND = { 
+has_completed_focus = NEV_dylans_arrival }
+	}
+	option = {
+		name = vacation.1.a
+		ai_chance = { factor = 1}
+		set_politics= {
+ ruling_party = communism 
+elections_allowed = no 
+}
+add_popularity= { ideology = communism popularity = 0.25 }
+create_country_leader = {
+	
+	name = "Dylan"
+	picture = "dylan_vacation_gaming.dds"
+	expire = "1965.1.1"
+	ideology = anti_revisionism
+	traits = { exiled  generallissimo exiled_revolutionary railroad_enthusiast
+	}
+}
+set_party_name= { 
+	ideology = communism 
+	long_name = "The Vacation Party of Nevada" 
+	name = "Vacation Party" 
+	}
+set_cosmetic_tag = PVU		
+load_focus_tree = nev_vacation
+	}
+}
+

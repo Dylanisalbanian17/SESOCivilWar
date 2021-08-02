@@ -1,0 +1,27 @@
+state={
+	id=267
+	name="STATE_267"
+
+	history={
+		owner = RIS
+		add_core_of = RIS
+		victory_points = {
+			3802 10 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		585 3802 4341 5529 7745 7783 
+	}
+	manpower=270000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,19 @@
+state={
+	id=97
+	name="STATE_97"
+	provinces={
+		1636 3711 4167 4644 6260 8497 8559 8579 
+	}
+	history={
+		owner = COL
+		add_core_of = COL
+		victory_points = {6260 15}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	manpower=225000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

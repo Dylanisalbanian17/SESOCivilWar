@@ -1,0 +1,22 @@
+state={
+	id=266
+	name="STATE_266"
+
+	history={
+		owner = COT
+		add_core_of = COT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		2652 4900 5323 6006 6931 7716 7729 7730 7749 7771 7772 
+	}
+	manpower=270000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

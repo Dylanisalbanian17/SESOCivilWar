@@ -1,0 +1,18 @@
+state={
+	id=101
+	name="STATE_101"
+	provinces={
+		635 721 931 1068 1403 1450 2519 2737 2744 3076 3139 4979 5094 5621 5851 6879 8281 8302 8327 8331 8345 8357 8380 
+	}
+	history={
+		owner = COL
+		add_core_of = COL
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+		}
+	}
+	manpower=225000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

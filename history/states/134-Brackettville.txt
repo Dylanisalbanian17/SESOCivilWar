@@ -1,0 +1,19 @@
+state={
+	id=134
+	name="STATE_134"
+	provinces={
+		325 548 681 730 906 2769 3856 3861 4109 4267 4552 5628 5940 9850 9874 9901 9941 9945 
+	}
+	history={
+		owner = TEX
+		add_core_of = TEX
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=367500
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,23 @@
+state={
+	id=160
+	name="STATE_160"
+	resources={
+		oil=50
+	}
+	provinces={
+		1020 1264 1529 2281 2554 2999 3625 3823 7073 
+	}
+	history={
+		owner = BCO
+		add_core_of = ALB
+		victory_points = {2554 10}
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+		}
+	}
+	manpower=40000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
+

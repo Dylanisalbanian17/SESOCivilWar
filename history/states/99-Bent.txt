@@ -1,0 +1,19 @@
+
+state={
+	id=99
+	name="STATE_99"
+	provinces={
+		95 545 768 845 871 1387 1430 1782 1996 2026 2090 2508 3143 3149 3212 3859 4477 4819 5953 5956 8571 8587 8602 8608 8610 8629 8655 8672 8682 8699 8731 8757 8780 8823 
+	}
+	history={
+		owner = COL
+		add_core_of = COL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	manpower=225000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,19 @@
+state={
+	id=324
+	name="STATE_324"
+	provinces={
+		121 490 2884 3013 3122 3320 3669 4384 4637 4749 4857 4877 5146 5229 5659 5798 5846 5936 6115 6143 8939 8942 8953 8985 8990 8994 9028 9043 9052 9058 9061 9072 9089 9092 9093 9094 9112 9114 9139 9140 9146 9188 
+	}
+	history={
+		owner = TEN
+		add_core_of = TEN
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=1400000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

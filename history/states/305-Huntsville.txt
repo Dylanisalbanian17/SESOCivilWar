@@ -1,0 +1,20 @@
+state={
+	id=305
+	name="STATE_305"
+	provinces={
+		1063 1208 1766 2061 2857 2974 3062 3171 3332 3578 3592 3609 3794 3951 4632 4866 4911 5276 5716 6050 6273 6716 9152 9179 9180 9182 9184 9189 9203 9204 9218 9225 9227 9228 9247 9255 9258 9266 9271 9272 9283 9287 9293 9294 9303 9322 
+	}
+	history={
+		owner = ALA
+		add_core_of = ALA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 1
+		}
+	}
+	manpower=675000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

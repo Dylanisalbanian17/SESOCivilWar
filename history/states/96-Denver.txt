@@ -1,0 +1,20 @@
+
+state={
+	id=96
+	name="STATE_96"
+	provinces={
+		1439 2860 3941 4183 5112 6910 8438 8459 8470 8480 8505 
+	}
+	history={
+		owner = COL
+		add_core_of = COL
+		victory_points = {8459 25}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	manpower=225000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

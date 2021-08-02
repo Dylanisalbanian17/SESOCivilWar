@@ -1,0 +1,28 @@
+state={
+	id=24
+	name="STATE_24"
+	provinces={
+		3349 8294 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = {8294 25}
+		victory_points = { 3349 10 }
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			arms_factory = 1
+			air_base = 7
+			8294 = {
+				naval_base = 4
+			}
+
+			}
+		}
+	manpower= 1131651
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

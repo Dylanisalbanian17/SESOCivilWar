@@ -1,0 +1,20 @@
+state={
+	id=157
+	name="STATE_157"
+	provinces={
+		67 181 203 652 1271 1355 1574 1932 1981 2104 2427 2580 2901 3507 3536 3623 3783 3888 3981 4101 4123 4928 4985 5086 5147 5207 5267 5468 5533 5653 5705 5708 5723 5893 5938 5939 6056 6075 6145 6150 6482 6595 6672 6888 10072 10085 10089 10092 10102 10128 10144 10164 10169 10171 10173 10179 10182 10183 10192 10194 10196 10209 
+	}
+	history={
+		owner = MXC
+		add_core_of = MXC
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 1
+		}
+	}
+	manpower=174356
+	buildings_max_level_factor=1.000
+	state_category = city
+}

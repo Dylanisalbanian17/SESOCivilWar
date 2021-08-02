@@ -1,0 +1,23 @@
+state={
+	id=17
+	name="STATE_17"
+	provinces={
+		438 483 812 1155 1227 1309 1395 1441 1490 1685 1859 2147 2201 2415 2636 2745 2819 3092 3166 3168 3184 3455 4349 4518 4541 4645 4754 6107 6197 6238 7352 7385 7394 7399 7449 7454 7455 7462 7466 7494 
+	}
+	history={
+		owner = ORE
+		add_core_of = ORE
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+	}
+	resources = {
+		tungsten = 25
+		steel = 25
+		chromium = 1
+	}
+	manpower= 57267
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

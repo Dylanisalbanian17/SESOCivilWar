@@ -1,0 +1,21 @@
+state={
+	id=130
+	name="STATE_130"
+	provinces={
+		466 1905 3517 4423 5262 5832 6242 6288 6454 9883 9905 9925 9933 9943 
+	}
+	history={
+		owner = TEX
+		add_core_of = TEX
+		victory_points = {6242 20}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 5
+		}
+	}
+	manpower=1487000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

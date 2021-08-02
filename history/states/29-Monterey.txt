@@ -1,0 +1,23 @@
+
+state={
+	id=29
+	name="STATE_29"
+	provinces={
+		2237 2742 2881 3154 3608 4580 4971 5144 6335 6731 8502 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = { 5144 5 }
+		victory_points = { 3154 5 }
+		buildings = {
+			infrastructure = 3
+			arms_factory = 0
+			industrial_complex = 2
+			air_base = 6
+		}
+	}
+	manpower= 434061
+	buildings_max_level_factor=1.000
+	state_category = large_town
+}

@@ -1,0 +1,20 @@
+
+state={
+	id=49
+	name="STATE_49"
+	provinces={
+		320 600 760 1028 1070 1081 1358 1376 2223 2527 2784 3182 3269 4714 4745 4797 5061 5521 5882 7437 7473 7481 7486 
+	}
+	history={
+		owner = IDA
+		add_core_of = IDA
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
+

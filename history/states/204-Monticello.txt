@@ -1,0 +1,19 @@
+state={
+	id=204
+	name="STATE_204"
+	provinces={
+		202 904 1223 1629 2842 4024 4810 5532 5892 6125 6883 9251 9277 9400 9467 9470 
+	}
+	
+	history={
+		owner = ARK
+		add_core_of = ARK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+	manpower=95200
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

@@ -1,0 +1,29 @@
+state={
+	id=3
+	name="STATE_3"
+
+	manpower=386000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	history={
+		owner = BCO
+		add_core_of = BCO
+		victory_points = { 4352 25 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			2938 = {
+				naval_base = 5
+
+			}
+
+		}
+	}
+	resources = {
+		aluminium = 12
+	}
+	provinces={
+		97 393 701 915 1180 1755 1949 2324 2407 3285 3577 3987 4352 4361 4963 7072 7087 7116 7131 7142 7146 7151 7167 7169 
+	}
+
+}

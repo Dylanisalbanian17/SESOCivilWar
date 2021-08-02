@@ -1,0 +1,19 @@
+state={
+	id=207
+	name="STATE_207"
+	provinces={
+		28 163 560 1171 1297 1707 2003 2151 2211 2738 3074 3211 3482 3500 3643 3910 4033 4292 4362 4653 4751 5062 5167 5202 5204 5502 5834 5986 6033 9498 9514 9521 9534 9549 9555 9561 9574 9578 9588 9595 9598 9606 9635 9651 9654 9694 
+	}
+	history={
+		owner = LOU
+		add_core_of = LOU
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 1
+			}
+		}
+	manpower=495000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

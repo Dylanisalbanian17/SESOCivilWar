@@ -1,0 +1,22 @@
+state={
+	id=289
+	name="STATE_289"
+	provinces={
+		492 707 809 1865 2139 3197 3311 4042 4471 5259 5746 6573 6709 8584 8627 8665 8674 8678 8689 8692 8700 8701 8703 8710 8716 8737 
+	}
+	history={
+		owner = KEN
+		add_core_of = KEN
+		victory_points = {492 15}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 3
+			air_base = 3
+		}
+	}
+	manpower=1400000
+	buildings_max_level_factor=1.000
+	state_category=city
+}
+

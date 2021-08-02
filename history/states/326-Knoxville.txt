@@ -1,0 +1,24 @@
+state={
+	id=326
+	name="STATE_326"
+
+	history={
+		owner = TEN
+		add_core_of = TEN
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 3
+
+		}
+
+	}
+
+	provinces={
+		156 292 925 1253 1362 1402 1528 1806 2174 2232 2596 3042 3397 3493 3680 3758 3993 4050 4094 4128 4332 4592 4675 4747 4794 4845 4868 4998 5068 5075 5129 5397 5494 6066 6318 6366 6512 6668 6687 8820 8835 8866 8877 8890 8904 8917 8931 8946 8948 8971 8974 8978 9066 9073 9075 9095 9098 
+	}
+	manpower=400000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

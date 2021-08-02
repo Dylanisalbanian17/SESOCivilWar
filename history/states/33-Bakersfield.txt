@@ -1,0 +1,24 @@
+
+state={
+	id=33
+	name="STATE_33"
+	provinces={
+		609 3033 3133 3506 4208 4265 4520 4867 6148 6702 8749 8779 8783 8796 8828 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = {8749 15}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	resources = {
+		oil = 58
+	}
+	manpower= 900202
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

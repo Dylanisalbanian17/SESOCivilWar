@@ -1,0 +1,24 @@
+
+state={
+	id=83
+	name="STATE_83"
+	provinces={
+		578 653 799 2004 2825 2870 2980 3918 4399 4860 5290 5356 6425 9220 9238 9348 
+	}
+	history={
+		owner = ARS
+		add_core_of = ARS
+		add_claim_by = ART
+		add_claim_by = ARB
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+
+	manpower=210000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
+

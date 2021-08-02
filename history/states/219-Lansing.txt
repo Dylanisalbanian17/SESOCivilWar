@@ -1,0 +1,22 @@
+
+state={
+	id=219
+	name="STATE_219"
+	provinces={
+		31 428 597 1041 1241 2154 2607 2691 3752 5089 5114 5387 5463 5557 5816 6212 6802 6917 7737 7743 7756 7762 7785 7790 7832 7839 7853 7858 7860 7869 7879 7894 7915 7924 7933 
+	}
+	history={
+		owner = MIC
+		add_core_of = MIC
+		victory_points = {2607 15}
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+		}
+	}
+	manpower=410000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

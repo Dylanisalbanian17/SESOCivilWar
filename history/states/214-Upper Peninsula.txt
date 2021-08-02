@@ -1,0 +1,24 @@
+state={
+	id=214
+	name="STATE_214"
+
+	history={
+		owner = MIC
+		add_core_of = MIC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		59 206 288 415 614 755 1117 1377 1517 2180 2840 2968 3317 3423 4073 4264 4403 4779 4822 5357 5516 6022 6181 6801 6913 7442 7467 7474 7484 7511 
+	}
+	manpower=410000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

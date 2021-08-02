@@ -1,0 +1,22 @@
+
+state={
+	id=84
+	name="STATE_84"
+	provinces={
+		1258 1280 1860 2158 2332 3106 4133 4159 4272 5371 9394 9424 9439 
+	}
+	history={
+		owner = ARS
+		add_core_of = ARS
+		add_claim_by = ART
+		add_claim_by = ARB
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
+

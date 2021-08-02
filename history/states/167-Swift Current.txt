@@ -1,0 +1,20 @@
+state={
+	id=167
+	name="STATE_167"
+	provinces={
+		136 193 301 369 440 662 877 996 1004 1037 1055 1124 1148 1210 1261 1805 1861 2009 2207 2295 2367 2375 2702 2788 2882 3172 3226 3420 3576 3649 4407 4512 4782 5099 5714 5880 5923 6063 6369 6794 7134 7141 7160 7189 7213 7226 7253 7268 
+	}
+	history={
+		owner = ONT
+		add_core_of = SAS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 4
+		}
+	}
+	manpower=447996
+	buildings_max_level_factor=1.000
+	state_category=city
+}

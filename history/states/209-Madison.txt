@@ -1,0 +1,20 @@
+
+state={
+	id=209
+	name="STATE_209"
+	provinces={
+		565 1653 1970 3198 3801 3906 4897 5527 5700 5725 6054 6538 6705 6818 7845 7878 7897 7899 7900 
+	}
+	history={
+		owner = WIS
+		add_core_of = WIS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 2
+		}
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

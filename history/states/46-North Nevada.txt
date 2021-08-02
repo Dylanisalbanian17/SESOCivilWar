@@ -1,0 +1,19 @@
+state={
+	id=46
+	name="STATE_46"
+	provinces={
+		42 123 125 260 424 634 645 714 816 1163 1183 1272 1290 1340 1369 1738 1839 1856 2052 2112 2313 2597 2643 2997 3164 3353 3600 3837 3925 4046 4143 4215 4378 4598 4968 5160 5378 5450 5454 5607 5760 5788 5791 6354 7792 7864 7877 7928 7989 7993 8009 8131 8146 8179 8237 8274 
+	}
+	history={
+		owner = NEV
+		add_core_of = NEV
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 3
+		}
+	}
+	manpower=30000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

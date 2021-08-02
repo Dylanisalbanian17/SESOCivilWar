@@ -1,0 +1,21 @@
+state={
+	id=304
+	name="STATE_304"
+	provinces={
+		576 1940 2055 2271 3681 3717 4805 5053 5477 5624 5633 6305 6610 6652 6662 9256 9307 9311 9317 9328 9334 9335 9337 9340 9347 9353 9370 9371 9376 9383 9397 9403 9416 9425 9428 9434 9443 9480 
+	}
+	history={
+		owner = ALA
+		add_core_of = ALA
+		victory_points = {9370 15}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 1
+		}
+	}
+	manpower=675000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

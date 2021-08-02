@@ -1,0 +1,21 @@
+state={
+	id=82
+	name="STATE_82"
+	provinces={
+		2056 2187 4737 6754 6760 9469 
+	}
+	history={
+		owner = ARS
+		add_core_of = ARS
+		add_claim_by = ART
+		add_claim_by = ARB
+		victory_points = {9469 25}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

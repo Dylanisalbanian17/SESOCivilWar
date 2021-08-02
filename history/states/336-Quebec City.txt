@@ -1,0 +1,29 @@
+state={
+	id=336
+	name="STATE_336"
+
+	history={
+		owner = QUB
+		add_core_of = QUB
+		victory_points = {
+			7293 15 
+		}
+		buildings = {
+			infrastructure = 7
+			dockyard = 2
+
+		}
+
+	}
+
+	resources = {
+		aluminium = 5
+	}
+
+	provinces={
+		704 1214 2184 2708 3573 3986 4463 5932 6296 7269 7289 7293 7295 7304 7309 7318 
+	}
+	manpower=95200
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

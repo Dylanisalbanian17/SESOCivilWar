@@ -1,0 +1,23 @@
+state={
+	id=285
+	name="STATE_285"
+	provinces={
+		2699 5027 5128 8479 8589 
+	}
+	history = {
+		owner = VIA
+		add_core_of = VIA
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 6
+			air_base = 2
+			8589 = {
+				naval_base     = 3
+				coastal_bunker = 1 
+			}
+		}
+	}
+	manpower=416500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

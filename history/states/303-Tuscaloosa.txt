@@ -1,0 +1,19 @@
+
+state={
+	id=303
+	name="STATE_303"
+	provinces={
+		6 317 1202 1761 1888 2495 2518 2772 3414 3791 4188 4241 4727 4743 4846 5115 5320 5372 5443 5682 5685 5695 6293 6494 9344 9401 9413 9430 9437 9448 9453 9458 9473 9474 9475 9502 9509 9510 9558 9591 9611 9631 9638 9660 9675 
+	}
+	history={
+		owner = ALA
+		add_core_of = ALA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+	manpower=675000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

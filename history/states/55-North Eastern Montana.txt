@@ -1,0 +1,20 @@
+state={
+	id=55
+	name="STATE_55"
+	provinces={
+		113 139 141 242 243 310 326 334 383 558 626 658 1051 1128 1193 1307 1311 1382 1421 1664 1688 1788 2462 2579 2790 2822 3298 3346 3432 3458 3642 3940 4053 4358 4697 4969 5383 5644 6651 6902 7306 7317 7332 7342 7344 7359 7369 7377 7387 7431 7451 7476 7480 
+	}
+	history={
+		owner = MON
+		add_core_of = MON
+		victory_points = {7480 15}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+	}
+	manpower=100500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,25 @@
+state={
+	id=18
+	name="STATE_18"
+	provinces={
+		83 705 893 899 1119 1169 1791 2587 2886 2996 3089 3403 3448 3545 3564 4030 4231 4713 5102 5103 5376 5382 6251 6884 7589 7659 7665 7683 7710 7731 7773 7774 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = { 5376 15 }
+		victory_points = { 4030 5 }
+		victory_points = { 7589 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			4030 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower= 141580
+	buildings_max_level_factor=1.000
+	state_category=town
+}

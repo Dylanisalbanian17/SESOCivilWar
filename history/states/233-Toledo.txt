@@ -1,0 +1,18 @@
+state={
+	id=233
+	name="STATE_233"
+	provinces={
+		314 744 874 1150 1504 1858 2310 3193 3481 4309 4709 4758 5010 5076 6026 6187 6460 7983 8032 8036 8041 8043 8056 8062 8066 8069 8074 8092 8103 8117 8123 8149 8150 8151 8158 8186 8197 8203 8216 8232 8235 8251 8265 
+	}
+	history={
+		owner = OHO
+		add_core_of = OHO
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+		}
+	}
+	manpower=520000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

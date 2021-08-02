@@ -1,0 +1,19 @@
+state={
+	id=6
+	name="STATE_6"
+	history={
+		owner = WAS
+		add_core_of = WAS
+		victory_points = { 815 10 }
+		buildings = {
+			infrastructure = 4
+
+		}
+	}
+	provinces={
+		2 216 290 380 815 957 1327 1591 1818 1943 2141 2549 3136 3180 5014 5223 5313 5767 5867 5927 6837 7172 7181 7183 7188 7211 
+	}
+	manpower= 229247
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=37
+	name="STATE_37"
+	provinces={
+		32 277 376 517 806 954 991 1336 1537 1579 1610 1620 1672 1708 2042 2067 2735 2787 3295 3304 3595 4258 4740 4787 4946 4955 5000 5026 5214 5412 5826 6100 6322 6483 6911 8746 8798 8808 8821 8884 8899 8901 8912 8960 8962 8966 8983 8991 9001 9014 9016 9017 9022 9026 9044 9050 9055 9071 9081 9082 9087 9100 9107 9108 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = { 806 15 }
+		victory_points = { 5412 5 }
+		victory_points = { 3295 15 }
+		victory_points = { 991 5 }
+		victory_points = {1672 5 }
+		victory_points = { 277 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	resources = {
+		steel = 10
+	}
+	manpower= 4651000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

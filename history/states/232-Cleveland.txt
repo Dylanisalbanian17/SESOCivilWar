@@ -1,0 +1,21 @@
+
+state={
+	id=232
+	name="STATE_232"
+	provinces={
+		119 388 1190 1384 1649 1901 2164 2294 2654 2733 3163 4107 4817 5456 5519 5849 5989 6118 7919 7934 7956 7958 7981 7987 7990 8020 8054 8070 8088 8104 8138 
+	}
+	history={
+		owner = OHO
+		add_core_of = OHO
+		victory_points = {7987 20}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+	manpower=290000
+	buildings_max_level_factor=1.000
+	state_category = city
+}

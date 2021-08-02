@@ -1,0 +1,140 @@
+add_namespace = connecticut
+
+country_event = {
+	id = connecticut.1
+	title = connecticut.1.t
+	desc = connecticut.1.d
+	picture = GFX_report_event_bul_prince_simeon
+	
+	is_triggered_only = yes
+
+	option = {
+		name = connecticut.1.a
+		ai_chance = { factor = 1 }
+		random_unit_leader = {
+			limit = {
+				has_id = 20
+			}
+			promote_leader = yes
+			add_skill_level = 1
+		}
+	}
+
+	option = {
+		name = connecticut.1.b
+		ai_chance = { factor = 1 }
+		random_unit_leader = {
+			limit = {
+				has_id = 21
+			}
+			promote_leader = yes
+			add_skill_level = 1
+		}
+	}
+
+	option = {
+		name = connecticut.1.c
+		ai_chance = { factor = 1 }
+		random_unit_leader = {
+			limit = {
+				has_id = 22
+			}
+			promote_leader = yes
+			add_skill_level = 1
+		}
+	}
+
+}
+
+country_event = {
+	id = connecticut.2
+	title = connecticut.2.t
+	desc = connecticut.2.d
+	picture = GFX_report_event_usa_election_landon_roosevelt
+	
+	is_triggered_only = yes
+
+	option = {
+		# McGonagall
+		name = connecticut.2.a
+		ai_chance = { factor = 1 }
+		add_timed_idea = {
+			idea = profile_mcgonagall
+			days = 120
+		}
+	}
+
+	option = {
+		# Plath
+		name = connecticut.2.b
+		ai_chance = { factor = 1 }
+		add_timed_idea = {
+			idea = profile_plath
+			days = 120
+		}
+	}
+
+	option = {
+		# Behbudov
+		name = connecticut.2.c
+		ai_chance = { factor = 1 }
+		add_timed_idea = {
+			idea = profile_behbudov
+			days = 120
+		}
+	}
+
+	option = {
+		# More
+		name = connecticut.2.e
+		ai_chance = { factor = 1 }
+		country_event = connecticut.3
+	}
+
+}
+
+country_event = {
+	id = connecticut.3
+	title = connecticut.2.t
+	desc = connecticut.2.d
+	picture = GFX_report_event_usa_election_landon_roosevelt
+	
+	is_triggered_only = yes
+
+	option = {
+		# Jeshari
+		name = connecticut.3.a
+		ai_chance = { factor = 1 }
+		add_timed_idea = {
+			idea = profile_jeshari
+			days = 120
+		}
+	}
+
+	option = {
+		# Matsoua
+		name = connecticut.3.b
+		ai_chance = { factor = 1 }
+		add_timed_idea = {
+			idea = profile_matsoua
+			days = 120
+		}
+	}
+
+	option = {
+		# Shikai
+		name = connecticut.3.c
+		ai_chance = { factor = 1 }
+		add_timed_idea = {
+			idea = profile_shikai
+			days = 120
+		}
+	}
+
+	option = {
+		name = connecticut.3.e
+		ai_chance = { factor = 1 }
+		country_event = connecticut.2
+	}
+
+}

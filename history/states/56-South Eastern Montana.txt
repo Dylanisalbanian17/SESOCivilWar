@@ -1,0 +1,20 @@
+state={
+	id=56
+	name="STATE_56"
+	provinces={
+		91 330 897 1445 1703 2047 2189 2478 2517 2995 3328 3499 3607 4344 4912 5951 5992 7500 7519 7520 7527 
+	}
+	history = {
+		owner = MON
+		add_core_of = MON
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			industrial_complex = 2
+			air_base = 1
+			}
+		}
+	manpower=122174
+	buildings_max_level_factor=1.000
+	state_category=town
+}

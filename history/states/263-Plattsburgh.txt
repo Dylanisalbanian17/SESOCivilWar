@@ -1,0 +1,24 @@
+state={
+	id=263
+	name="STATE_263"
+	resources={
+		steel=10.000
+	}
+
+	history={
+		owner = NYO
+		add_core_of = NYO
+		buildings = {
+			infrastructure = 6
+
+		}
+
+	}
+
+	provinces={
+		307 398 1532 1566 2014 2320 2806 3235 3729 3921 4117 4338 4402 4627 4766 4954 5329 5610 5857 6301 6529 6597 6617 6757 7448 7456 7459 7470 7475 7477 7487 7502 7505 7506 7525 7536 7544 7548 7562 7574 
+	}
+	manpower=121834
+	buildings_max_level_factor=1.000
+	state_category=town
+}

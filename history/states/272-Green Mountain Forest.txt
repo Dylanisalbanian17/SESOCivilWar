@@ -1,0 +1,19 @@
+state={
+	id=272
+	name="STATE_272"
+	provinces={
+		1042 2565 2991 4494 4774 5470 5736 5979 6581 7541 7565 7600 7606 
+	}
+	history={
+		owner = VER
+		add_core_of = VER
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+	}
+	manpower=119000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
+

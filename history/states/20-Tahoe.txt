@@ -1,0 +1,21 @@
+state={
+	id=20
+	name="STATE_20"
+	provinces={
+		1064 1732 2077 2283 2466 2641 2835 4131 4170 4192 4616 4663 4673 5594 6144 7874 7909 7942 7978 8045 8122 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		victory_points = { 4663 5 }
+		victory_points = { 4131 5 }
+		victory_points = { 7942 5 }
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+	}
+	manpower= 171045
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
