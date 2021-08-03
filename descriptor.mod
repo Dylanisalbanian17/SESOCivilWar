@@ -42,6 +42,6 @@ tags={
 	"Gameplay"
 	"National Focuses"
 }
-name="SESO Civil War"
+name="[S.E.S.O.] American Civil War (Beta)"
 supported_version="1.10.7"
 remote_file_id="2564430328"
