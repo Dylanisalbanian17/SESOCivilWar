@@ -235,7 +235,6 @@ option = {
 			always = yes
 		}
 	}
-	news_event = { hours = 6 id = news.11 }
 	set_cosmetic_tag = VIA_REI
 	set_global_flag = VIA_NAZ_civil_war
 
@@ -330,8 +329,6 @@ set_global_flag = VIA_NAZ_civil_war
 			via_lacking_the_means_of_pro
 		}
     }
-
-	news_event = { hours = 6 id = news.11 }
 }
 
 }
@@ -393,4 +390,25 @@ country_event = {
             }
     }
     }
+}
+
+country_event = {
+    id = virginia.25
+    title = virginia.25.t
+    desc = virginia.25.d
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {    
+        name = virginia.25.a
+        ai_chance = { factor = 0.9}
+        hidden_effect = { 
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+				producer = FROM
+			}
+    } 
+}
 }

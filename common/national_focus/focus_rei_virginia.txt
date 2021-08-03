@@ -1,0 +1,154 @@
+focus_tree = {
+	id = 4512
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = via
+		}
+	}
+	#Reich Defiant 
+	focus = {
+		id = via_reich_defiant 
+		icon = GFX_focus_ger_reichskommisariats
+		x = 15
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+
+	}
+	#Fund Reconstruction - Industry - Give buffs for reconstruction and repair but give debt Wiemar modifier
+	focus = {
+		id = via_reconstruction_fund
+		icon = GFX_goal_generic_construction2
+		x = 20
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = via_reich_defiant }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	#Reconstruction - Political Path - Quell the Chaos
+	focus = {
+		id = via_quell_chaos
+		icon = GFX_focus_generic_self_management
+		x = 17
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = via_reich_defiant }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	}
+}
+
+focus = {
+	id = via_lynchburg_trials
+	icon = GFX_goal_anti_comintern_pact
+	x = 18
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_quell_chaos }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+	#Reconstruction - Budget Management
+	focus = {
+		id = via_fund_management
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 11	
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = via_reich_defiant }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = via_cut_policing_budget
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 10	
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = via_fund_management }
+		mutually_exclusive = {
+			focus = via_extend_policing_budget
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = via_extend_policing_budget
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 12
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = via_fund_management }
+		mutually_exclusive = {
+			focus = via_cut_policing_budget
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = via_extend_policing_budget
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 11	
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = via_fund_management }
+		mutually_exclusive = {
+			focus = via_cut_policing_budget
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	
+
+}
