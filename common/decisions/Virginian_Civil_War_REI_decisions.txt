@@ -1,0 +1,32 @@
+Virginia_REI_CivilWar_Support = {
+	Crack_Open_Old_Armories = {
+			icon = generic_industry
+			allowed = {
+						has_government = fascism
+						original_tag = VIA }
+			visible = {
+				NOT = { has_government = communism }
+				has_global_flag = VIA_NAZ_civil_war
+				original_tag = VIA
+			}
+			fire_only_once = no
+			custom_cost_trigger = {
+				has_political_power = 25
+			}
+			custom_cost_text = 25_political_power
+			ai_will_do = {
+				factor = 0.80 }
+			days_re_enable = 75
+			complete_effect = {
+				every_country = {
+                    limit = { 
+						has_cosmetic_tag = VIA_NAZ
+					}
+					country_event= {
+                        days = 1
+                        id = virginia.25
+                    }
+			}
+		}
+	}
+}
