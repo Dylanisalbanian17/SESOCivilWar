@@ -1,4 +1,4 @@
-version="1.9.*"
+version="1.0"
 replace_path="common/achievements.txt"
 replace_path="common/autonomous_states"
 replace_path="common/ai_equipment"
@@ -36,6 +36,7 @@ replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 replace_path="music"
 replace_path="events"
+picture="thumbnail.png"
 tags={
 	"Map"
 	"Gameplay"
