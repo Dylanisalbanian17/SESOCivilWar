@@ -243,6 +243,7 @@ option = {
 			original_tag = VIA
 			has_government = communism
 		}
+		load_focus_tree = naz_virginia
 		set_cosmetic_tag = VIA_NAZ
 		add_ideas = { 
 			via_nazpeoplesarmy
@@ -278,7 +279,7 @@ country_event = {
 
 option = { 
     name = virginia.10.a
-    load_focus_tree = 4512
+    load_focus_tree = naz_virginia
     remove_ideas = {
     wehrmacht_model
     workers_strikes
@@ -316,6 +317,7 @@ set_global_flag = VIA_NAZ_civil_war
             has_government = fascism
         }
         set_cosmetic_tag = VIA_REI
+		load_focus_tree = 4512
         add_ideas = { 
             wehrmacht_model
             workers_strikes
