@@ -131,15 +131,21 @@ focus = {
 	}
 
 	focus = {
-		id = via_extend_policing_budget
+		id = via_cut_tax_tariffs
 		icon = GFX_focus_hol_abandon_the_gold_standard
 		x = 11	
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = via_fund_management }
-		mutually_exclusive = {
+		prerequisite = {
 			focus = via_cut_policing_budget
+			focus = via_extend_policing_budget
+		}
+		available = {
+			OR = {
+			has_completed_focus = via_cut_policing_budget
+			has_completed_focus = via_extend_policing_budget
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
