@@ -1,0 +1,79 @@
+characters={
+
+	CAL_dylan={
+		name="Dylanisaboxofrocks1017"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/CAL/dylan_gaming.dds"
+			}
+		}
+
+		country_leader={
+			ideology=socialism
+			traits = { the_gentleman_president tenacious_negotiator railroad_enthusiast }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=anti_revisionism
+			traits = { union_man railroad_enthusiast }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	CAL_mace={
+		name="Macehunter"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/CAL/macehunter.dds"
+			}
+		}
+
+		country_leader={
+			ideology=fascism_ideology
+			traits = { dictator }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	CAL_daniel_hahn={
+		name="Daniel Hahn"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/CAL/daniel_hahn.dds"
+			}
+		}
+
+		country_leader={
+			ideology=centrism
+			traits = { emergency_powers }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	CAL_dwight_d_eisenhower={
+		name="Dwight D. Eisenhower"
+		portraits={
+			army={
+				large=GFX_portrait_USA_dwight_d_eisenhower
+			}
+			army={
+				small="GFX_idea_dwight_eisenhower"
+			}
+		}
+		corps_commander={
+			traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+			legacy_id=602
+		}
+	}
+
+}

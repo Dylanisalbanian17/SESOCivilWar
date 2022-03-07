@@ -39,7 +39,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "placeholder"
-	picture = "placeholder.dds"
+	picture = ""
 	expire = "1965.1.1"
 	ideology = anti_revisionism
 	traits = { generallissimo  
@@ -48,7 +48,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Mr. House"
-	picture = "mr_house.dds"
+	picture = ""
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = { humble 
@@ -58,7 +58,7 @@ create_country_leader = {
 create_country_leader = {	
 	
 	name = "placeholder"
-	picture = "placeholder.dds"
+	picture = ""
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = { anti_democrat 

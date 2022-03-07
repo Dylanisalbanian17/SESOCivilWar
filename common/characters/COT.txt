@@ -1,0 +1,92 @@
+﻿characters={
+
+	COT_sag={
+		name="Sag?"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/COT/sag_0.dds"
+			}
+		}
+
+		country_leader={
+			ideology=centrism
+			traits = {}
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	COT_dildo_sagbag={
+		name="Dildo Sagbag"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/COT/sag_1.dds"
+			}
+		}
+
+		country_leader={
+			ideology=conservatism
+			traits = { popular_figurehead2 dislikes_germany  }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	COT_yaojing={
+		name="Yaojing"
+		portraits={
+			army={
+				large=GFX_portrait_GER_friedrich_paulus
+				small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ organizer brilliant_strategist skilled_staffer politically_connected }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2	
+			logistics_skill = 4
+			legacy_id=20
+		}
+	}
+
+	COT_webb={
+		name="Webb"
+		portraits={
+			army={
+				large=GFX_portrait_GER_friedrich_paulus
+				small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer infantry_leader media_personality }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 4	
+			logistics_skill = 3
+			legacy_id= 21
+		}
+	}
+
+	COT_heroin={
+		name="Heroin"
+		portraits={
+			army={
+				large=GFX_portrait_GER_friedrich_paulus
+				small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless }
+			skill = 1
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2	
+			logistics_skill = 1
+			legacy_id= 22
+		}
+	}
+
+}

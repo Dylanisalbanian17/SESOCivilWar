@@ -137,33 +137,6 @@ on_actions = {
 			100 = nuke_dropped.0
 		}
 	}
-	
-#	on_leave_faction = {
-#		effect = {
-#			if = {
-#				limit = { 
-#					AND = {
-#						tag = CAN 	
-#						NOT = { has_dlc = "Together for Victory" }
-#					}
-#				}
-#				abandon_colony_tag = yes
-#			}
-#			FROM = {
-#				add_opinion_modifier = {
-#					modifier = faction_traitor
-#					target = ROOT
-#					days = 365
-#				}
-#			
-#				add_opinion_modifier = {
-#					modifier = faction_traitor_trade
-#					target = ROOT
-#					days = 365
-#				}
-#			}
-#		}
-#	}
 
 
 	#FROM is war target
@@ -212,6 +185,18 @@ on_actions = {
 	on_faction_formed = {
 		effect = {
 			news_event = { id = news.159 }
+		}
+	}
+	
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+		}
+	}
+
+	# ROOT is previously capitulated country
+	on_uncapitulation = {
+		effect = {
 		}
 	}
 
@@ -326,69 +311,6 @@ on_actions = {
 					elections_allowed = yes
 				}
 			}
-			if = {
-				limit = {
-					AND = {
-					original_tag = COL
-					is_subject_of = CAL
-					}
-				}
-				set_cosmetic_tag = COL_CAL
-				set_party_name = { ideology = democratic long_name = "Social Democrat Party of the Midwest" name = "Occupation Government" }
-				create_country_leader = {
-					name = "Earl Browder"
-					picture = "portrait_USA_earl_browder.dds"
-					expire = "1965.1.1"
-					ideology = socialism
-					traits = {
-					}
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-					original_tag = NEV
-					is_subject_of = CAL
-					}
-				}
-				set_cosmetic_tag = NEV_CAL
-		}
-		if = {
-			limit = {
-				AND = {
-				original_tag = ORE
-				is_subject_of = CAL
-				}
-			}
-			set_cosmetic_tag = ORE_CAL
-	}
-	if = {
-		limit = {
-			AND = {
-			original_tag = WAS
-			is_subject_of = CAL
-			}
-		}
-		set_cosmetic_tag = WAS_CAL
-}
-if = {
-	limit = {
-		AND = {
-		original_tag = IDA
-		is_subject_of = CAL
-		}
-	}
-	set_cosmetic_tag = IDA_CAL
-}
-if = {
-	limit = {
-		AND = {
-		original_tag = UTA
-		is_subject_of = CAL
-		}
-	}
-	set_cosmetic_tag = UTA_CAL
-}
 		}
 	}
 	
@@ -407,81 +329,7 @@ if = {
 					elections_allowed = yes
 				}
 			}
-			if = {
-				limit = {
-					AND = {
-					original_tag = COL
-					is_subject_of = CAL
-					}
-				}
-				set_cosmetic_tag = COL_CAL
-				set_party_name = { ideology = democratic long_name = "Social Democrat Party of the Midwest" name = "Occupation Government" }
-				create_country_leader = {
-					name = "Earl Browder"
-					picture = "portrait_USA_earl_browder.dds"
-					expire = "1965.1.1"
-					ideology = socialism
-					traits = {
-					}
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-					original_tag = NEV
-					is_subject_of = CAL
-					}
-				}
-				set_cosmetic_tag = NEV_CAL
-		}
-		if = {
-			limit = {
-				AND = {
-				original_tag = ORE
-				is_subject_of = CAL
-				}
-			}
-			set_cosmetic_tag = ORE_CAL
-	}
-	if = {
-		limit = {
-			AND = {
-			original_tag = WAS
-			is_subject_of = CAL
-			}
-		}
-		set_cosmetic_tag = WAS_CAL
 }
-if = {
-	limit = {
-		AND = {
-		original_tag = IDA
-		is_subject_of = CAL
-		}
-	}
-	set_cosmetic_tag = IDA_CAL
-}
-if = {
-	limit = {
-		AND = {
-		original_tag = UTA
-		is_subject_of = CAL
-		}
-	}
-	set_cosmetic_tag = UTA_CAL
-}
-}
-	}
-	
-	on_unit_leader_created = {
-		effect = {
-		}
-	}
-	
-	on_unit_leader_level_up = {
-		effect = {
-			
-		}
 	}
 	
 	# From is owner country
@@ -586,83 +434,4 @@ if = {
 			}
 		}
 	}
-
-	on_civil_war_end = {
-        effect = {
-if = {
-    limit = {
-        FROM = {
-            original_tag = VIA
-
-        }
-        original_tag = VIA
-    }
-    clr_global_flag = VIA_NAZ_civil_war
 }
-}
-}
-
-	on_civil_war_start = {
-		effect = {
-			if = {
-			limit = {
-				original_tag = VIA
-				has_global_flag = VIA_NAZ_civil_war
-				has_country_flag = via_panzerarmee
-				}
-			}
-			
-			
-				create_unit = {
-					division = "division_template = \"Panzer-Division\" start_experience_factor = 1" 
-					owner = ROOT
-					allow_spawning_on_enemy_provs = no
-					count = 1
-				}
-			}
-		}
-			on_civil_war_start = {
-				effect = {	
-					if = {
-					limit = {
-						original_tag = VIA
-						has_global_flag = VIA_NAZ_civil_war
-						has_country_flag = via_party_militias 
-						}
-					}
-
-				
-					division_template = {
-						name = "Party Militia Division"
-						is_locked = yes
-						template_counter = 6
-						division_names_group = SPR_INF_02
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-						}
-					}
-						create_unit = {
-							division = "division_template = \"Party Militia Division\" start_experience_factor = 0.1" 
-							owner = ROOT
-							allow_spawning_on_enemy_provs = no
-							count = 6
-						}
-					}
-				}
-on_civil_war_start = {
-	if = {
-		limit = {
-			original_tag = VIA
-			AND = {
-				has_government = communism
-			}
-		}
-		news_event = { id = news.11 days = 2 }
-	}
-}
-
-}
-	
-

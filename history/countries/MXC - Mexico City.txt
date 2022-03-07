@@ -25,10 +25,3 @@ set_popularities = {
 	fascism = 0
 	democratic = 90
 }
-create_country_leader = {
-	
-	name = "Avalon"
-	picture = "avalon.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-}

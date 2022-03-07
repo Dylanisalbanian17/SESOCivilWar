@@ -15,4 +15,10 @@ opinion_modifiers = {
 		min_trust = -10
 		years = 2
 	}
+
+	closer_ties_cal_nev = {
+		value = 50
+		min_trust = -10
+		years = 6
+	}
 }

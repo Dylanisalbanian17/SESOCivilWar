@@ -1,0 +1,19 @@
+characters={
+
+	ARB_box={
+		name="The_BoxCat"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/ARB/box.dds"
+			}
+		}
+
+		country_leader={
+			ideology=liberalism
+			traits = { }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

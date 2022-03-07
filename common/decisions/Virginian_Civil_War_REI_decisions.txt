@@ -2,8 +2,13 @@ Virginia_REI_CivilWar_Support = {
 	Crack_Open_Old_Armories = {
 			icon = generic_industry
 			allowed = {
-						has_government = fascism
-						original_tag = VIA }
+				original_tag = VIA 
+			}
+
+			available = {
+				has_government = fascism
+			}
+
 			visible = {
 				NOT = { has_government = communism }
 				has_global_flag = VIA_NAZ_civil_war

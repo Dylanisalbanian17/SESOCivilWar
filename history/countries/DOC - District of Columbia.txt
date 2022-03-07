@@ -28,50 +28,7 @@ set_popularities = {
 	neutrality = 25
 }
 
-create_country_leader = {
-	
-	name = "Joe Rogan"
-	desc = "DC_0_DESC"
-	picture = "joerog.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	
-	name = "Mark Ruffalo"
-	desc = "DC_1_DESC"
-	picture = "ruffalo.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	
-	name = "Joe Mama"
-	desc = "DC_2_DESC"
-	picture = "sag_0.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	
-	name = "Di Kook"
-	desc = "DC_3_DESC"
-	picture = "kook.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
+recruit_character = DOC_joe_mama
+recruit_character = DOC_joe_rogan
+recruit_character = DOC_di_kook
+recruit_character = DOC_mark_ruffalo

@@ -33,6 +33,7 @@ technologies = {
 		
 		categories = {
 			industry
+			cat_production
 		}
 	}
 
@@ -70,6 +71,7 @@ technologies = {
 		
 		categories = {
 			industry
+			cat_production
 		}
 	}
 	
@@ -101,6 +103,7 @@ technologies = {
 		
 		categories = {
 			industry
+			cat_production
 		}
 	}
 	
@@ -143,6 +146,7 @@ technologies = {
 		
 		categories = {
 			industry
+			cat_production
 		}
 	}
 	
@@ -174,6 +178,7 @@ technologies = {
 		
 		categories = {
 			industry
+			cat_production
 		}
 	}
 	
@@ -206,6 +211,7 @@ technologies = {
 		
 		categories = {
 			industry
+			cat_production
 		}
 	}
 
@@ -223,7 +229,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 3
 		
 		folder = {
@@ -247,6 +253,7 @@ technologies = {
 		
 		categories = {
 			industry
+			cat_production
 		}
 	}
 	
@@ -254,7 +261,7 @@ technologies = {
 		
 		equipment_conversion_speed = 0.40
 
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 5
 		
 		folder = {
@@ -278,6 +285,7 @@ technologies = {
 		
 		categories = {
 			industry
+			cat_production
 		}
 	}
 
@@ -1062,6 +1070,7 @@ technologies = {
 		categories = {
 			industry
 			synth_resources
+			cat_synth_oil
 		}
 		
 		ai_will_do = {
@@ -1106,6 +1115,7 @@ technologies = {
 		categories = {
 			industry
 			synth_resources
+			cat_synth_oil
 		}
 		
 		ai_will_do = {
@@ -1151,6 +1161,7 @@ technologies = {
 		categories = {
 			industry
 			synth_resources
+			cat_synth_oil
 		}
 		
 		ai_will_do = {
@@ -1196,6 +1207,7 @@ technologies = {
 		categories = {
 			industry
 			synth_resources
+			cat_synth_oil
 		}
 		
 		ai_will_do = {
@@ -1236,6 +1248,7 @@ technologies = {
 		categories = {
 			industry
 			synth_resources
+			cat_synth_oil
 		}
 		
 		ai_will_do = {
@@ -1288,6 +1301,7 @@ technologies = {
 		categories = {
 			industry
 			synth_resources
+			cat_synth_rubber
 		}
 		
 		ai_will_do = {
@@ -1339,6 +1353,7 @@ technologies = {
 		categories = {
 			industry
 			synth_resources
+			cat_synth_rubber
 		}
 		
 		ai_will_do = {
@@ -1390,6 +1405,7 @@ technologies = {
 		categories = {
 			industry
 			synth_resources
+			cat_synth_rubber
 		}
 		
 		ai_will_do = {
@@ -1436,6 +1452,7 @@ technologies = {
 		categories = {
 			industry
 			synth_resources
+			cat_synth_rubber
 		}
 		
 		ai_will_do = {

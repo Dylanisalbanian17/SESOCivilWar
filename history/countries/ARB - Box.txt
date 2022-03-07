@@ -27,10 +27,5 @@ set_popularities = {
 	communism = 1
 	neutrality = 23
 }
-create_country_leader = {
-	
-	name = "Box"
-	picture = "box.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-}
+
+recruit_character = ARB_box

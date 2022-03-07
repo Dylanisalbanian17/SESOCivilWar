@@ -91,6 +91,10 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.10
 				}
+				scout_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.10	
+				}
 			}		
 		}
 	}
@@ -115,27 +119,6 @@ ideas = {
 			
 			modifier = {
 				fascism_drift = 0.1
-			}
-		}
-		workers_union = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-
-
-			modifier = {
-				industrial_capacity_factory = 0.05
-				local_resources_factor = 0.05
-				production_speed_buildings_factor = 0.1
 			}
 		}
 		MTG_TEST_NAVAL_IDEA = { #MTG_TODO_GABRIEL: remove before shipping
@@ -254,21 +237,89 @@ ideas = {
 				neutrality_acceptance = 85
 			}
 		}
-		
-		soviet_german_friendship = {
+
+		#Weaker version
+		fascist_influence_weak = {
+			name = fascist_influence
+
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-			
+				has_government = fascism
 			}
 
 			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
 			
 			modifier = {
-				communism_acceptance = 100
-				fascism_acceptance = 100
+				fascism_drift = 0.1
+				fascism_acceptance = 35
+			}
+		}
+		
+		communist_influence_weak = {
+			name = communist_influence
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.1
+				communism_acceptance = 35
+			}
+		}
+
+		democratic_influence_weak = {
+			name = democratic_influence
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				democratic_drift = 0.1
+				democratic_acceptance = 35
+			}
+		}
+
+		neutrality_influence_weak = {
+			name = neutrality_influence
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				neutrality_drift = 0.1
+				neutrality_acceptance = 35
 			}
 		}
 		
@@ -449,7 +500,7 @@ ideas = {
 	
 			modifier = {
 				conscription = 0.05
-				resistance_damage_to_garrison = -0.1
+				resistance_damage_to_garrison = -0.1 
 			}
 		}
 	
@@ -999,7 +1050,6 @@ ideas = {
 			}
 		}	
 
-		# FIXED FOR 1.9 
 		idea_weapons_for_the_resistance = {
 
 			allowed = {
@@ -1019,7 +1069,6 @@ ideas = {
 				resistance_damage_to_garrison_on_our_occupied_states = 0.25 
 			}
 		}	
-		
 		MTG_naval_treaty_adherent = {
 
 			allowed = {
@@ -1098,106 +1147,6 @@ ideas = {
 				production_cost_max_ship_hull_cruiser = 6500
 				production_cost_max_ship_hull_heavy = 14000
 				production_cost_max_ship_hull_carrier = 10750
-			}
-		}
-	}
-	
-	political_advisor = {
-		# POLITICAL	
-		generic_communist_revolutionary = {
-			
-			allowed = {
-				NOT = {
-					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
-				}
-			}
-
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				#country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-	
-			ai_will_do = {
-				factor = 0
-			}
-		}
-			
-		generic_democratic_reformer = {
-			
-			allowed = {
-				NOT = {
-					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
-				}
-			}
-			
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-			
-			traits = { democratic_reformer }
-	
-			on_add = {
-				#country_event = political.13
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-	
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		
-		generic_fascist_demagogue = {
-			
-			allowed = {
-				NOT = {
-					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
-				}
-			}
-			
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}				
-			}
-			
-			traits = { fascist_demagogue }
-	
-			on_add = {
-				#country_event = political.7
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-	
-			ai_will_do = {
-				factor = 0
 			}
 		}
 	}
@@ -1446,177 +1395,4 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
-
-		generic_captain_of_industry = {
-
-			allowed = {
-			
-			}
-			
-			traits = { captain_of_industry }
-		}
-		
-		generic_fortification_engineer = {
-
-			allowed = {
-			
-			}
-			
-			traits = { fortification_engineer }
-		}
-
-		generic_war_industrialist = {
-
-			allowed = {
-			
-			}
-			
-			traits = { war_industrialist }
-		}
-	}
-
-	army_chief = {
-		
-		generic_army_chief_off = {
-			
-			allowed = {
-			
-			}
-			
-			traits = { army_chief_offensive_1 }
-		}
-
-		generic_army_chief_def = {
-			
-			allowed = {
-			
-			}
-			
-			traits = { army_chief_defensive_1 }
-		}
-	}
-
-	navy_chief = {		
-
-		generic_navy_chief_decisive_bat = {
-			
-			allowed = {
-			
-			}
-			
-			traits = { navy_chief_decisive_battle_2 }
-		}
-
-		generic_navy_anti_submarine = {
-			
-			allowed = {
-			
-			}
-			
-			traits = { navy_anti_submarine_2 }
-		}
-	}
-
-	air_chief = {
-
-		generic_air_close_air_sup = {
-			
-			allowed = {
-			
-			}
-			
-			traits = { air_close_air_support_2 }
-		}
-	
-		generic_air_chief_all_weather = {
-			
-			allowed = {
-				
-			}
-			
-			traits = { air_chief_all_weather_2 }			
-		}
-	}
-
-	high_command = {
-
-		generic_army_art = {
-			
-			allowed = {
-				
-			}
-			
-			traits = { army_artillery_1 }			
-		}
-		
-		generic_army_log = {
-
-			allowed = {
-				
-			}
-			
-			traits = { army_logistics_2 }			
-		}
-
-		generic_navy_fleet_log = {
-
-			allowed = {
-				
-			}
-			
-			traits = { navy_fleet_logistics_1 }			
-		}
-
-		generic_air_air_combat_trainer = {
-
-			allowed = {
-				
-			}
-			
-			traits = { air_air_combat_training_2 }			
-		}
-	}
-
-	theorist = {
-
-		generic_military_theorist = {
-			
-			allowed = {
-				
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.10
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		generic_naval_theorist = {
-			
-			allowed = {
-				
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
-			
-			traits = { naval_theorist }
-		}
-
-		generic_air_warfare_theorist = {
-			
-			allowed = {
-				
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-	}
 }

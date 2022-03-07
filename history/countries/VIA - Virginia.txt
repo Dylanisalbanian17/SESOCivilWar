@@ -8,7 +8,6 @@ add_ideas = {
 	wehrmacht_model
 	workers_strikes
 	via_insurrection
-	otto_army_chief
 	Ein_Volk_Ein_Reich
 	Mistribution_of_funds
 }
@@ -36,7 +35,7 @@ create_country_leader = {
 
 create_corps_commander = { 
 	name = "Heinz Guderian"
-	portrait_path = "gfx//leaders//GER//Portrait_Germany_Heinz_Guderian.dds"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Heinz_Guderian.dds"
 	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
 	skill = 4
 	id = 6
@@ -49,7 +48,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Erich von Manstein"
-	portrait_path = "gfx//leaders//GER//Portrait_Germany_Erich_von_Manstein.dds"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Erich_von_Manstein.dds"
 	traits = { trickster armor_officer brilliant_strategist trait_engineer }
 	skill = 4
 	id = 5
@@ -61,7 +60,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Paul Hausser"
-	portrait_path = "gfx//leaders//GER//Portrait_Germany_Paul_Hausser.dds"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Paul_Hausser.dds"
 	traits = {  armor_officer politically_connected }
 	skill = 4
 	id = 20
@@ -74,7 +73,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ewald von Kleist"
 	desc = ""
-	portrait_path = "gfx//leaders//GER//Portrait_Germany_Ewald_von_Kleist.dds"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Ewald_von_Kleist.dds"
 	traits = { armor_officer trait_cautious }
 	skill = 2
 	id = 8
@@ -86,7 +85,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Maximilian von Weichs"
-	portrait_path = "gfx//leaders//GER//Portrait_Germany_Maximilian_von_Weichs.dds"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Maximilian_von_Weichs.dds"
 	traits = { cavalry_officer }
 	skill = 4
 	id = 11
@@ -98,7 +97,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Karl Dönitz"
-	portrait_path = "gfx//leaders//GER//Portrait_Germany_Karl_Donitz.dds"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Karl_Donitz.dds"
 	traits = { navy_career_officer seawolf }
 	skill = 5
 	id = 26
@@ -110,7 +109,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Erich Raeder"
-		portrait_path = "gfx//leaders//GER//Portrait_Germany_Erich_Raeder.dds"
+		portrait_path = "gfx/leaders/GER/Portrait_Germany_Erich_Raeder.dds"
 	traits = { naval_lineage battleship_adherent }
 	skill = 4
 	id = 27
@@ -122,7 +121,7 @@ create_navy_leader = {
 
 create_field_marshal = {
 	name = "Gerd von Rundstedt"
-	portrait_path = "gfx//leaders//GER//Portrait_Germany_Gerd_von_Rundstedt.dds"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Gerd_von_Rundstedt.dds"
 	traits = { defensive_doctrine urban_assault_specialist old_guard }
 	skill = 3
 	attack_skill = 3

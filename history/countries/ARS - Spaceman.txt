@@ -26,11 +26,4 @@ set_popularities = {
 	communism = 23
 	neutrality = 1
 }
-create_country_leader = {
-	
-	name = "Spaceman"
-	picture = "space.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-}
-
+recruit_character = ARS_space

@@ -161,9 +161,7 @@ form_pacific_states_category = {
 	}
 		visible = {
 			has_government= democratic
-			OR = {
-				original_tag = CAL
-			}
+			original_tag = CAL
 			NOT = { has_global_flag = PSA.tga }
 		}
 
@@ -184,9 +182,7 @@ form_pacific_cascadia = {
 	icon = generic_form_nation
 
 	allowed = {
-		OR = {
-			original_tag = ORE
-		}
+		original_tag = ORE
 	}
 
 	available = {
@@ -233,13 +229,11 @@ form_pacific_rocky_mountains = {
 	icon = generic_form_nation
 
 	allowed = {
-		OR = {
-			original_tag = NEV
-		}
-		NOT = { has_global_flag = RYM_PSA }
+		original_tag = NEV
 	}
 
 	available = {
+		NOT = { has_global_flag = RYM_PSA }
 		is_subject = yes
 		custom_trigger_tooltip = {
 			tooltip = form_pacific_rocky_mountains_required_states_tt
@@ -257,9 +251,7 @@ form_pacific_rocky_mountains = {
 	visible = {
 		is_subject = yes
 		has_government= democratic
-		OR = {
-			original_tag = NEV
-		}
+		original_tag = NEV
 	}
 
 	complete_effect = {

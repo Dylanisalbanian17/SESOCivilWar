@@ -11,8 +11,7 @@ country_event = {
 
 	trigger = {
 		tag = VIA
-		AND = {
-has_completed_focus = via_a_repeat_of_our_ancestors }
+		has_completed_focus = via_a_repeat_of_our_ancestors
 	}
 	option = {
 		name = virginia.1.a
@@ -34,7 +33,7 @@ country_event = {
 	trigger = {
 		tag = VIA
 		AND = {
-has_completed_focus = via_national_insurrection }
+		has_completed_focus = via_national_insurrection }
 	}
 	option = {
 		name = virginia.2.a
@@ -218,7 +217,7 @@ country_event = {
 		has_completed_focus = via_the_speech
 		AND = { has_country_flag = via_reich_side }
 		
-}
+	}
 
 option = { 
 	name = virginia.9.a
@@ -275,63 +274,62 @@ country_event = {
     trigger = {
         has_completed_focus = via_the_speech
         AND ={ has_country_flag = via_naz_side }
-}
+	}
 
-option = { 
-    name = virginia.10.a
-    load_focus_tree = naz_virginia
-    remove_ideas = {
-    wehrmacht_model
-    workers_strikes
-    via_insurrection
-	Ein_Volk_Ein_Reich
-	Mistribution_of_funds
-}
-add_ideas = { 
-	via_nazpeoplesarmy
-	via_inexperiencedofficercorps
-	via_lacking_the_means_of_pro
-}
-set_politics = {
-    ruling_party = communism
-    elections_allowed = no
-}
-
-set_capital = 286
-set_cosmetic_tag = VIA_NAZ
-
-set_global_flag = VIA_NAZ_civil_war
-
-    start_civil_war = {
-        ideology = fascism 
-        size = 0.5
-        capital = 282
-        states = { 
-     282 283
-        }
-    }
-
-    random_other_country = {
-        limit = {
-            original_tag = VIA
-            has_government = fascism
-        }
-        set_cosmetic_tag = VIA_REI
-		load_focus_tree = 4512
-        add_ideas = { 
-            wehrmacht_model
-            workers_strikes
-            via_insurrection
+	option = {
+		name = virginia.10.a
+		load_focus_tree = naz_virginia
+		remove_ideas = {
+			wehrmacht_model
+			workers_strikes
+			via_insurrection
 			Ein_Volk_Ein_Reich
 			Mistribution_of_funds
-        }
-	    remove_ideas = { 
+		}
+		add_ideas = { 
 			via_nazpeoplesarmy
 			via_inexperiencedofficercorps
 			via_lacking_the_means_of_pro
 		}
-    }
-}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+
+		set_capital = { state = 286 }
+		set_cosmetic_tag = VIA_NAZ
+		set_global_flag = VIA_NAZ_civil_war
+
+			start_civil_war = {
+				ideology = fascism 
+				size = 0.5
+				capital = 282
+				states = { 
+				282 283
+				}
+			}
+
+			random_other_country = {
+				limit = {
+					original_tag = VIA
+					has_government = fascism
+				}
+				set_cosmetic_tag = VIA_REI
+				load_focus_tree = 4512
+				add_ideas = { 
+					wehrmacht_model
+					workers_strikes
+					via_insurrection
+					Ein_Volk_Ein_Reich
+					Mistribution_of_funds
+				}
+				remove_ideas = { 
+					via_nazpeoplesarmy
+					via_inexperiencedofficercorps
+					via_lacking_the_means_of_pro
+				}
+			}
+	}
 
 }
 
@@ -367,14 +365,15 @@ country_event = {
         hidden_effect = { 
             create_faction = "National Union of America"
             add_to_faction = WVI
-            WVI = 
-                {
-                    country_event = {
-                        days = 1
-                        id = wvi_virginia.1  }
-                }
-    } 
-}
+            WVI = {
+				country_event = {
+					days = 1
+					id = wvi_virginia.1  
+				}
+			}
+    	} 
+	}
+
     option = {
         name = virginia.16.b
         ai_chance = { factor = 0.1}
@@ -384,33 +383,33 @@ country_event = {
             target = WVI
             modifier = small_decrease
         }
-        WVI = 
-            {
+        WVI = {
                 country_event= {
                 days = 1
-                id = wvi_virginia.2 }
+                id = wvi_virginia.2 
+				}
             }
-    }
+    	}
     }
 }
 
 country_event = {
-    id = virginia.25
-    title = virginia.25.t
-    desc = virginia.25.d
-    fire_only_once = yes
+	id = virginia.25
+	title = virginia.25.t
+	desc = virginia.25.d
+	fire_only_once = yes
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {    
-        name = virginia.25.a
-        ai_chance = { factor = 0.9}
-        hidden_effect = { 
+	option = {    
+		name = virginia.25.a
+		ai_chance = { factor = 0.9}
+		hidden_effect = { 
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 2500
 				producer = FROM
 			}
-    } 
-}
+		} 
+	}
 }

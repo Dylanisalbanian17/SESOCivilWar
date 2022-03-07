@@ -243,29 +243,6 @@ ideas = {
 			}
 		}
 
-	army_chief = {
-		otto_army_chief = {
-			picture = otto
-			allowed = {
-				original_tag = VIA
-				}
-
-				available = {
-					if = {
-						has_government= fascism
-					}
-		
-				}
-			
-			traits = { army_chief_organizational_2 }
-	
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-	}
-
 political_advisor = {
 	ulrich_advisor = {
 		picture = ulrich

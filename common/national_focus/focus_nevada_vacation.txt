@@ -20,7 +20,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power= -50  
-add_stability= -0.05
+			add_stability= -0.05
 		}
 	}
 	#Focus for Achieving full Dylanism
@@ -38,18 +38,18 @@ add_stability= -0.05
 		mutually_exclusive = { 
 			focus = NEV_playing_new_vegas_in_vegas 
 		}
-		mutually_exclusive = { 
-			focus = NEV_ 
-		}
+		#mutually_exclusive = { 
+		#	focus = NEV_ 
+		#}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			add_popularity= { 
-ideology = communism 
-popularity = 0.05 
-}
+			ideology = communism 
+			popularity = 0.05 
+			}
 		}
 	}
 	#Focus for Answering the Jewish Question
@@ -67,39 +67,36 @@ popularity = 0.05
 		mutually_exclusive = { 
 			focus = NEV_playing_new_vegas_in_vegas 
 		}
-		mutually_exclusive = { 
-			focus = NEV_ 
-		}
+		#mutually_exclusive = { 
+		#	focus = NEV_ 
+		#}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			set_politics= {
- ruling_party = fascism 
-elections_allowed = no 
-}
-  add_popularity= { 
-ideology = fascism 
-popularity = 0.1 
-}
-  create_country_leader= {
- name = "Dylan" 
-picture = "dylan_jewish_gaming.dds" 
-expire = "1965.1.1" 
-ideology = fascism_ideology 
-traits = { exiled cornered_fox anti_democrat railroad_enthusiast
-}
+				ruling_party = fascism 
+				elections_allowed = no 
+			}
+			add_popularity= { 
+				ideology = fascism 
+				popularity = 0.1 
+			}
+			create_country_leader= {
+				name = "Dylan" 
+				picture = "dylan_jewish_gaming.dds" 
+				expire = "1965.1.1" 
+				ideology = fascism_ideology 
+				traits = { exiled cornered_fox anti_democrat railroad_enthusiast }
+			}
 
-
- }
-
-    set_party_name= { 
-ideology = fascism 
-long_name = "The National Zionist Party of Nevada" 
-name = "NZPN" 
-}
-set_cosmetic_tag = NIL
+			set_party_name= { 
+				ideology = fascism 
+				long_name = "The National Zionist Party of Nevada" 
+				name = "NZPN" 
+			}
+			set_cosmetic_tag = NIL
 		}
 	}
 	#Focus for Playing New Vegas in Vegas
@@ -123,23 +120,21 @@ set_cosmetic_tag = NIL
 		}
 		completion_reward = {
 			set_politics= {
- ruling_party = neutrality 
-elections_allowed = no 
-}
-  add_popularity= { 
-ideology = neutrality 
-popularity = 0.1 
-}
-  create_country_leader= {
- name = "Mr. Dylan"  
-picture = "GFX_dylan_always_wins" 
-expire = "1965.1.1" 
-ideology = centrism 
-traits = { humble railroad_enthusiast
-}
-
- }
- set_cosmetic_tag = FZN
+				ruling_party = neutrality 
+				elections_allowed = no 
+			}
+			add_popularity= { 
+				ideology = neutrality 
+				popularity = 0.1 
+			}
+			create_country_leader= {
+				name = "Mr. Dylan"  
+				picture = "GFX_dylan_always_wins" 
+				expire = "1965.1.1" 
+				ideology = centrism 
+				traits = { humble railroad_enthusiast}
+			}
+			set_cosmetic_tag = FZN
 		}
 	}
 #End of focuses 

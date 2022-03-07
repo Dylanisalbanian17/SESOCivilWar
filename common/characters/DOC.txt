@@ -1,0 +1,67 @@
+characters={
+
+	DOC_joe_rogan={
+		name="Joe Rogan"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/DOC/joerog.dds"
+			}
+		}
+
+		country_leader={
+			ideology=nazism
+			traits = { }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	DOC_mark_ruffalo={
+		name="Mark Ruffalo"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/DOC/ruffalo.dds"
+			}
+		}
+
+		country_leader={
+			ideology=liberalism
+			traits = { }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	DOC_joe_mama={
+		name="Joe Mama"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/COT/sag_0.dds"
+			}
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	DOC_di_kook={
+		name="Joe Mama"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/DOC/kook.dds"
+			}
+		}
+
+		country_leader={
+			ideology=marxism
+			traits = { }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

@@ -28,7 +28,6 @@ bookmarks = {
 			ideas = {
 				wehrmacht_model
 				via_insurrection
-				otto_army_chief
 			}
 			focuses = {
 				via_a_repeat_of_our_ancestors

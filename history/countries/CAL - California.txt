@@ -40,65 +40,10 @@ set_popularities = {
 	communism = 35
 	neutrality = 0
 }
-create_country_leader = {
-	
-	name = "Dylan"
-	picture = "dylan_gaming.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = { the_gentleman_president tenacious_negotiator railroad_enthusiast   
-	}
-}	
-create_country_leader = {
-	
-	name = "Dylan"
-	picture = "dylan_gaming.dds"
-	expire = "1965.1.1"
-	ideology = anti_revisionism
-	traits = { union_man railroad_enthusiast
-	}
-}	
-
-create_country_leader = {	
-	
-	name = "Macehunter"
-	picture = "macehunter.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = { dictator
-	}
-}
-create_country_leader = {	
-	
-	name = "Daniel Hahn"
-	picture = "daniel_hahn.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = { emergency_powers
-	}
-}
-create_corps_commander = {
-	name = "George S. Patton"
-	portrait_path = "gfx//leaders//USA//Portrait_USA_George_S_Patton.dds"
-	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
-	skill = 5
-
-	attack_skill = 7 
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 4
-}
-create_field_marshal = {
-	name = "Dwight D. Eisenhower"
-	portrait_path = "gfx//leaders//USA//Portrait_USA_Dwight_D_Eisenhower.dds"
-	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
-	skill = 5
-	id = 602
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 5
-}
+recruit_character = CAL_dylan
+recruit_character = CAL_mace
+recruit_character = CAL_daniel_hahn
+recruit_character = CAL_dwight_d_eisenhower
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

@@ -26,10 +26,4 @@ set_popularities = {
 	communism = 1
 	neutrality = 75
 }
-create_country_leader = {
-	
-	name = "Target"
-	picture = "target.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-}
+recruit_character = ART_target

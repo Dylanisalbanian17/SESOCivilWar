@@ -275,7 +275,7 @@ fascist_peace = {
 		}
 
 	}
-
+	
 	# ROOT = Taker, FROM = State
 	take_states = {
 		factor = 600 #Up from 500 #200 - vanilla		

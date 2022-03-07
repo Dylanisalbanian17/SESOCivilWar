@@ -28,10 +28,5 @@ set_popularities = {
 	neutrality = 97
 }
 
-create_country_leader = {
-	
-	name = "Fletch"
-	picture = "fletch.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-}
+recruit_character = MAS_fletch
+recruit_character = MAS_nitch

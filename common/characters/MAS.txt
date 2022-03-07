@@ -1,0 +1,36 @@
+characters={
+
+	MAS_fletch={
+		name="Fletch"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/MAS/fletch.dds"
+			}
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	MAS_nitch={
+		name="Nitch"
+		portraits = {
+			civilian = {
+				large=GFX_portrait_GER_friedrich_paulus
+				small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+
+		country_leader={
+			ideology=nazism
+			traits = { }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

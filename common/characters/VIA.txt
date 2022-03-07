@@ -1,0 +1,30 @@
+characters={
+
+	VIA_otto_jung = {
+		name="Otto Jung"
+		portraits={
+			army={
+				small= "GFX_idea_ludwig_beck"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = otto
+			allowed = {
+				original_tag = VIA
+			}
+			available = {
+				has_government= fascism
+			}
+
+			traits = { army_chief_organizational_2 }
+
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+	}
+
+}

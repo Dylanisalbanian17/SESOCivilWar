@@ -3,11 +3,15 @@ autonomy_state = {
 	
 	min_freedom_level = 0.80
 	
-	manpower_influence = 0.4
+	manpower_influence = 0.5
 	
 	rule = {
+		desc = "RULE_DESC_IS_A_SUBJECT"
+		
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
+		can_be_spymaster = no
+		can_create_collaboration_government = no
 	}
 	
 	modifier = {

@@ -1,0 +1,19 @@
+characters={
+
+	ARS_space={
+		name="THE_SPACEMAN"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/ARS/space.dds"
+			}
+		}
+
+		country_leader={
+			ideology=fascism_ideology
+			traits = { hawk conservative_nationalist dislikes_canada indomitable_perseverance disdain_for_politicians_1}
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

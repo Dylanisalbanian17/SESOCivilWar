@@ -33,10 +33,10 @@ country_event = {
 	option = {	
 		name = wvi_virginia.2.a
 		ai_chance = { factor = 1}
-		add_opinion_modifier = {
-			target = VIA_NAZ
-			modifier = small_decrease
-		}
+		#add_opinion_modifier = {
+		#	target = VIA_NAZ
+		#	modifier = small_decrease
+		#} ####[01:34:55][effect.cpp:297]: Error: "Malformed token: VIA_NAZ, near line: 37" in file: "events/west_virginia.txt" near line: 39
 	}
 }
 
