@@ -33,6 +33,7 @@ Robert Dotson
 #CONTENT DESIGN
 Busby Cavanagh
 Gabriel Blum
+Drikus Kuiper
 Manuel Molina Grande
 James Beaumont
 
@@ -446,7 +447,7 @@ Gabriel Blum
 #ADDITIONAL CONTENT DESIGN
 Jakob Have
 Tristan Edge
-William Bois d'Enghien 
+William Bois d'Enghien
 
 #PROGRAMMING
 Andy Gainey
@@ -620,7 +621,7 @@ Filippa Gannholm
 Felix Gladitz
 
 #EMBEDDED QA
-Katya Magnusson
+Katya Boestad
 Niall Bird
 
 #QA PRIMARY PROJECT COORDINATOR
@@ -736,7 +737,7 @@ Filippa Gannholm
 Felix Gladitz
 
 #EMBEDDED QA
-Katya Magnusson
+Katya Boestad
 Niall Bird
 
 #QA
@@ -847,7 +848,7 @@ Felix Gladitz
 
 #EMBEDDED QA
 Filippa Gannholm
-Katya Magnusson
+Katya Boestad
 Markus Veit
 
 
@@ -1003,7 +1004,7 @@ Daniel Olsson
 Aziz Faghihinejad
 Carsten 't Mannetje
 Malin Jakobsson
-Rufus Magnusson
+Katya Boestad
 
 #PDS MANAGEMENT
 Mattias Lilja
@@ -1155,9 +1156,9 @@ Niklas Tammpere
 Helena Kasper
 Carlos Lundhall
 Staffan Norling
-Patrik Kling 
+Patrik Kling
 Jonas Jakobsson
-Mats Virtanen 
+Mats Virtanen
 Aline Gladh
 Timor Khanagov
 Simon Gunnarsson
@@ -1259,36 +1260,36 @@ Felix März
 
 ----------------
 
-#Additional Content was Created by 
+#Additional Content was Created by
 #Paradox South
 
-#Studio manager	
+#Studio manager
 Lars Håhus
 
-#Team Manager	
+#Team Manager
 Markus Krantz
-	
-#3D Artists	
+
+#3D Artists
 Linda Andersson
 Markus Krans
-Viktor Nyström 
+Viktor Nyström
 Magnus Nyström
 Marie Kauffeldt
 Joacim Carlberg
 Robin Skog
 Maxemilian Roberts
 Mikael Kihlstrand
-	
-#2D artists	
+
+#2D artists
 Charlotta Bävholm
 Christoffer Fransson
 Simon Gunnarsson
 Erik Nilsson
 
-#Animation	
+#Animation
 Nancy Lai
 
-#Art Interns	
+#Art Interns
 Marcus Persson
 
 ----------------
@@ -1323,7 +1324,7 @@ pfried
 
 ----------------
 
-#The game was published by 
+#The game was published by
 #Paradox Interactive
 
 #PDX Interactive HoI4 Team
@@ -1343,8 +1344,8 @@ Niklas Ivarsson
 Erik Elgerot
 
 #Paradox Interactive
-#Management 
- 
+#Management
+
 #CEO
 Fredrik Wester
 
@@ -1357,11 +1358,11 @@ Susana Meza Graham
 #CPO
 Johan Sjöberg
 
-#CIO 
+#CIO
 John Hargelid
 
 #Manager of Paradox Studio Group
-Mattias Lilja 
+Mattias Lilja
 
 #VP Products
 Shams Jorjani
@@ -1387,7 +1388,7 @@ Robin Cederholm
 
 #Associate Producers
 Angelica Uhlan
-Peter Cornelius 
+Peter Cornelius
 Niklas Lundström
 
 #Games User Research Team
@@ -1403,7 +1404,7 @@ Henrik Edlund
 #Associate User Researcher
 Anna Ström
 
-#QA Team 
+#QA Team
 
 #Senior QA Manager
 Artur Foxander
@@ -1414,8 +1415,8 @@ Loke Norman
 #QA Specialists
 Felix Gladitz
 Niklas Ivarsson
-Andrei Zainea 
- 
+Andrei Zainea
+
 #QA Testers
 Pontus Anehäll
 Emil Andersson
