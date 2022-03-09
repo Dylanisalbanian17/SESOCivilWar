@@ -16,7 +16,7 @@ Virginia_REI_CivilWar_Support = {
 			}
 			fire_only_once = no
 			custom_cost_trigger = {
-				has_political_power = 25
+				has_political_power > 25
 			}
 			custom_cost_text = 25_political_power
 			ai_will_do = {
