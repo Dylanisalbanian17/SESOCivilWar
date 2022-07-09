@@ -14,5 +14,5 @@ tags={
 	"National Focuses"
 }
 name="[S.E.S.O.] American Civil War (Beta)"
-supported_version="1.11.8"
+supported_version="1.11.*"
 remote_file_id="2564430328"
