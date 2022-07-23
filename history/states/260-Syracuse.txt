@@ -10,7 +10,7 @@ state={
 		add_core_of = NYO
 		victory_points = {3471 10}
 		buildings = {
-			infrastructure = 7
+			infrastructure = 2
 		}
 	}
 	manpower=293948

@@ -9,7 +9,7 @@ state={
 		owner = COL
 		add_core_of = COL
 		buildings = {
-			infrastructure = 4
+			infrastructure = 0
 			industrial_complex = 1
 			arms_factory = 1
 		}

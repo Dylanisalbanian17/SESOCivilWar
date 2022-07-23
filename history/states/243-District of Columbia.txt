@@ -7,7 +7,7 @@ state={
 		add_core_of = DOC
 		victory_points = {6540 50}
 		buildings = {
-			infrastructure = 10
+			infrastructure = 00
 			industrial_complex = 3
 			arms_factory = 2
 

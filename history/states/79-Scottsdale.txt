@@ -11,7 +11,7 @@ state={
 		add_claim_by = ARS
 		victory_points = {3094 15}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 1
 		}
 	}

@@ -10,7 +10,7 @@ state={
 		buildings = {
 			industrial_complex = 3
 			arms_factory = 2
-			infrastructure = 7
+			infrastructure = 3
 		}
 	}
 	manpower=720000

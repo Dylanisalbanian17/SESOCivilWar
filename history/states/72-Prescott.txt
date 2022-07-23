@@ -12,7 +12,7 @@ state={
 		add_claim_by = ART
 		victory_points = {916 10}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 1
 		}
 	}

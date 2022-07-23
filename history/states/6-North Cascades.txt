@@ -6,7 +6,7 @@ state={
 		add_core_of = WAS
 		victory_points = { 815 10 }
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 
 		}
 	}

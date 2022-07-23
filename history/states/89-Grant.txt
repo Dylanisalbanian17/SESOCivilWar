@@ -9,7 +9,7 @@ state={
 		owner = NMX
 		add_core_of = NMX
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 		}
 	}
 	manpower=10000

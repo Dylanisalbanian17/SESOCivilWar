@@ -8,7 +8,7 @@ state={
 		owner = WIS
 		add_core_of = WIS
 		buildings = {
-			infrastructure = 5
+			infrastructure = 0
 		}
 	}
 	manpower=20000

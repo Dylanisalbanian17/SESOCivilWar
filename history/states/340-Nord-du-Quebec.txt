@@ -6,7 +6,7 @@ state={
 		owner = QUB
 		add_core_of = QUB
 		buildings = {
-			infrastructure = 4
+			infrastructure = 0
 
 		}
 

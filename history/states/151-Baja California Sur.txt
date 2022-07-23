@@ -6,7 +6,7 @@ state={
 		owner = MXC
 		add_core_of = MXC
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 
 		}
 

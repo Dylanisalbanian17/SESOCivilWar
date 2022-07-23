@@ -9,7 +9,7 @@ state={
 		owner = MSS
 		add_core_of = MSS
 		buildings = {
-			infrastructure = 7
+			infrastructure = 1
 			air_base = 5
 		}
 	}

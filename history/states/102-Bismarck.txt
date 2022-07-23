@@ -9,7 +9,7 @@ state={
 		add_core_of = NDA
 		victory_points = {7468 10}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 			industrial_complex = 1
 			arms_factory = 1
 		}

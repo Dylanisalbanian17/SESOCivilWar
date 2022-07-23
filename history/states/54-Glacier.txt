@@ -8,7 +8,7 @@ state={
 		owner = MON
 		add_core_of = MON
 		buildings = {
-			infrastructure = 4
+			infrastructure = 0
 			industrial_complex = 1
 
 		}	

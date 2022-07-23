@@ -8,7 +8,7 @@ state={
 		owner = MAR
 		add_core_of = MAR
 		buildings = {
-			infrastructure = 4
+			infrastructure = 0
 		}
 	}
 	manpower=55000

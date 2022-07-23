@@ -8,7 +8,7 @@ state={
 		owner = NYO
 		add_core_of = NYO
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			arms_factory = 1
 			air_base = 1
 			}

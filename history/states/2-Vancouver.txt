@@ -10,7 +10,7 @@ state={
 		add_core_of = BCO
 		victory_points = { 7153 25 }
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			air_base = 4
 		}
 	}

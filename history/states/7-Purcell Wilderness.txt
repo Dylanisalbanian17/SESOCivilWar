@@ -9,7 +9,7 @@ state={
 		owner = BCO
 		add_core_of = BCO
 		buildings = {
-			infrastructure = 4
+			infrastructure = 0
 			air_base = 1
 		}
 	}

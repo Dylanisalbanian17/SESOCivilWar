@@ -9,7 +9,7 @@ state={
 		add_core_of = MON
 		victory_points = {52 10}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			industrial_complex = 1
 			air_base = 2
 

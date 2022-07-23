@@ -9,7 +9,7 @@ state={
 		add_core_of = CAL
 		victory_points = {5208 20}
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
 			industrial_complex = 1
 			dockyard = 2
 			}

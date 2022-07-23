@@ -8,7 +8,7 @@ state={
 		owner = IOA
 		add_core_of = IOA
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			industrial_complex = 1 
 		}
 	}

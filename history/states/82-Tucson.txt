@@ -11,7 +11,7 @@ state={
 		add_claim_by = ARB
 		victory_points = {9469 25}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 1
 		}
 	}

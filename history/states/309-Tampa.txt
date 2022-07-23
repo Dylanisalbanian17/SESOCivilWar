@@ -9,7 +9,7 @@ state={
 		owner = FLO
 		add_core_of = FLO
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 1
 		}
 	}

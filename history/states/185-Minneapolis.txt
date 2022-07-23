@@ -6,7 +6,7 @@ state={
 		add_core_of = MIN
 		victory_points = {7632 25}
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4
 			industrial_complex = 2
 			arms_factory = 1
 

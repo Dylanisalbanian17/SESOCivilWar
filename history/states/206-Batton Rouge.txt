@@ -9,7 +9,7 @@ state={
 		add_core_of = LOU
 		victory_points = {785 15}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 2
 			}

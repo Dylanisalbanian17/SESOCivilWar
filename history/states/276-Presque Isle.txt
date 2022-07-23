@@ -7,7 +7,7 @@ state={
 		owner = MAI
 		add_core_of = MAI
 		buildings = {
-			infrastructure = 5
+			infrastructure = 0
 
 		}
 

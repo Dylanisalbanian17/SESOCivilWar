@@ -9,7 +9,7 @@ state={
 		add_core_of = SAS
 		victory_points = {5336 15}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 1
 			air_base = 2
 		}
 	}

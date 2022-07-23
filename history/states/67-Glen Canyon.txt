@@ -9,7 +9,7 @@ state={
 		owner = UTA
 		add_core_of = UTA
 		buildings = {
-			infrastructure = 7
+			infrastructure = 1
 			industrial_complex = 3
 			arms_factory = 2
 			}

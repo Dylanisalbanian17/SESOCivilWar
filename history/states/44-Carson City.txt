@@ -10,7 +10,7 @@ state={
 		add_core_of = NEV
 		victory_points = {2871 20}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 1
 			air_base = 3
 		}

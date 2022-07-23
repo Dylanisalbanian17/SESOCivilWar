@@ -8,7 +8,7 @@ state={
 		owner = ALA
 		add_core_of = ALA
 		buildings = {
-			infrastructure = 4
+			infrastructure = 0
 			industrial_complex = 2
 			arms_factory = 2
 		}

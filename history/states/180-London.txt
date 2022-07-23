@@ -6,7 +6,7 @@ state={
 	add_core_of = ONT
 	victory_points = {3923 15}
 	buildings = {
-		infrastructure = 7
+		infrastructure = 1
 		industrial_complex = 1
 		dockyard = 1
 

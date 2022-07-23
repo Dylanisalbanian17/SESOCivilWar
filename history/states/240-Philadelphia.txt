@@ -9,7 +9,7 @@ state={
 		add_core_of = PEN
 		buildings = {
 			dockyard = 4
-			infrastructure = 10
+			infrastructure = 4
 			industrial_complex = 1
 			air_base = 1
 		}

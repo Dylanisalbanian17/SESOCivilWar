@@ -8,7 +8,7 @@ state={
 		owner = VER
 		add_core_of = VER
 		buildings = {
-			infrastructure = 4
+			infrastructure = 0
 			arms_factory = 1
 		}
 	}

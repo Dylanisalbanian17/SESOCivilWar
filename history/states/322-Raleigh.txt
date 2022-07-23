@@ -9,7 +9,7 @@ state={
 		add_core_of = NCA
 		victory_points = {6853 25}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 2
 			arms_factory = 1
 			}

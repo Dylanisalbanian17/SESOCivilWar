@@ -10,7 +10,7 @@ state={
 		add_core_of = TEX
 		victory_points = {9387 50}
 		buildings = {
-			infrastructure = 10
+			infrastructure = 4
 		}
 	}
 	manpower=1345000

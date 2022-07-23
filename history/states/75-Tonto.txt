@@ -9,7 +9,7 @@ state={
 		add_claim_by = ARS
 		add_claim_by = ART
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			industrial_complex = 1
 
 		}

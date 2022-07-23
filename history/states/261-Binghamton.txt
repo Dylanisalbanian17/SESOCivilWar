@@ -6,7 +6,7 @@ state={
 		owner = NYO
 		add_core_of = NYO
 		buildings = {
-			infrastructure = 7
+			infrastructure = 1
 
 		}
 

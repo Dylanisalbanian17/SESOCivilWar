@@ -9,7 +9,7 @@ state={
 		add_core_of = ARK
 		victory_points = {6700 15}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			industrial_complex = 1
 			arms_factory = 2
 		}

@@ -9,7 +9,7 @@ state={
 		add_core_of = NYO
 		victory_points = {1277 10}
 		buildings = {
-			infrastructure = 8
+			infrastructure = 3
 			industrial_complex = 1
 			arms_factory = 2
 			}

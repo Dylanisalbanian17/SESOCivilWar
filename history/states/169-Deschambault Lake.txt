@@ -6,7 +6,7 @@ state={
 		owner = ONT
 		add_core_of = SAS
 		buildings = {
-			infrastructure = 3
+			infrastructure = 0
 
 		}
 

@@ -9,7 +9,7 @@ state={
 		add_core_of = NEV
 		victory_points = { 3244 5 }
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 		}
 	}
 	manpower= 500

@@ -8,7 +8,7 @@ state={
 		owner = DEL
 		add_core_of = DEL
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			industrial_complex = 1
 			dockyard = 1
 		}

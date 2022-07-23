@@ -10,7 +10,7 @@ state={
 		add_core_of = MIS
 		victory_points = {8582 10}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 4
 			arms_factory = 2
 		}

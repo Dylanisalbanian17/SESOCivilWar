@@ -9,7 +9,7 @@ state={
 		owner = IDA
 		add_core_of = IDA
 		buildings = {
-			infrastructure = 4
+			infrastructure = 0
 		}
 	}
 	manpower=10000
