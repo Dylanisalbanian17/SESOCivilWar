@@ -1,0 +1,50 @@
+add_namespace = new_jersey
+
+country_event = {
+	id = new_jersey.1
+	title = new_jersey.1.t
+	desc = new_jersey.1.d
+	#picture = GFX_report_event_bul_prince_simeon
+	
+	is_triggered_only = yes
+
+	option = {
+		name = new_jersey.1.a
+		ai_chance = { factor = 80 }
+		set_faction_name = "S.E.S.O."
+	}
+
+	option = {
+		name = new_jersey.1.b
+		ai_chance = { factor = 10 }
+		set_faction_name = "Clan Kyram"
+	}
+
+	option = {
+		name = new_jersey.1.c
+		ai_chance = { factor = 10 }
+		set_faction_name = "Altis Police Force"
+	}
+
+}
+
+country_event = {
+	id = new_jersey.2
+	title = new_jersey.2.t
+	desc = new_jersey.2.d
+	#picture = GFX_report_event_bul_prince_simeon
+	
+	is_triggered_only = yes
+
+	option = {
+		name = new_jersey.1.a
+		ai_chance = { factor = 90 }
+		NJE = { add_to_faction = ROOT }
+	}
+
+	option = {
+		name = new_jersey.2.b
+		ai_chance = { factor = 10 }
+	}
+
+}

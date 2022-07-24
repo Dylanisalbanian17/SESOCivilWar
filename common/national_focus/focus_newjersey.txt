@@ -1,0 +1,265 @@
+focus_tree = {
+	id = nje_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NJE
+		}
+	}
+####Industrial
+	focus = {
+		id = nje_focus_investigate_lag
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 10
+		y = 1
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = nje_manufacture_tron_cycles
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 8
+		y = 2
+		prerequisite = {
+			focus = nje_focus_investigate_lag
+		}
+		completion_reward = {
+			add_ideas = idea_tron_cycles
+		}
+	}
+
+	focus = {
+		id = nje_fix_lag
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 7
+		y = 3
+		prerequisite = {
+			focus = nje_manufacture_tron_cycles
+		}
+		completion_reward = {
+			remove_ideas = idea_game_lag
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = nje_build_castles
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 11
+		y = 2
+		prerequisite = {
+			focus = nje_focus_investigate_lag
+		}
+		completion_reward = {
+			every_state = {
+				limit = { is_core_of = NJE }
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						level < 3
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = nje_manufacture_trasformers
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 11
+		y = 3
+		prerequisite = {
+			focus = nje_build_castles
+		}
+		completion_reward = {
+			add_ideas = idea_transformers
+		}
+	}
+
+####Political
+	focus = {
+		id = nje_focus_play_unturned
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 18
+		x = 15
+		y = 1
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = nje_focus_play_garrys_mod
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 15
+		y = 2
+		prerequisite = {
+			focus = nje_focus_play_unturned
+		}
+		completion_reward = {
+			add_stability = -0.35
+			add_ideas = idea_years_of_soy
+		}
+	}
+
+	focus = {
+		id = nje_focus_found_arma_unit
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 15
+		y = 3
+		prerequisite = {
+			focus = nje_focus_play_garrys_mod
+		}
+		completion_reward = {
+			create_faction = "Clan Kyram"
+			set_global_flag = flag_seso_created
+			VIA = { country_event = new_jersey.2 }
+			COT = { country_event = new_jersey.2 }
+			ARB = { country_event = new_jersey.2 }
+		}
+	}
+
+	focus = {
+		id = nje_focus_dallgaming
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 13
+		y = 4
+		prerequisite = {
+			focus = nje_focus_found_arma_unit
+		}
+		mutually_exclusive = {
+			focus = nje_focus_dallwhoring
+		}
+		completion_reward = {
+			add_stability = 0.10
+			add_political_power = -25
+		}
+	}
+	
+	focus = {
+		id = nje_focus_dallwhoring
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 17
+		y = 4
+		prerequisite = {
+			focus = nje_focus_found_arma_unit
+		}
+		mutually_exclusive = {
+			focus = nje_focus_dallgaming
+		}
+		completion_reward = {
+			add_stability = -0.10
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = nje_focus_babygaming
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 15
+		y = 5
+		prerequisite = {
+			focus = nje_focus_dallgaming OR focus = nje_focus_dallwhoring
+		}
+		completion_reward = {
+			add_political_power = 75
+			set_party_name = {
+				ideology = neutrality
+				long_name = "Baby Gamingism"
+				name = "Baby"
+			}
+		}
+	}
+##### SESO Path
+	focus = {
+		id = nje_focus_leave_seso
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 10
+		y = 4
+		prerequisite = {
+			focus = nje_focus_found_arma_unit
+		}
+		completion_reward = {
+			leave_faction = yes
+		}
+	}
+
+	focus = {
+		id = nje_focus_deny_owning_arma
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 10
+		y = 5
+		prerequisite = {
+			focus = nje_focus_leave_seso
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					is_in_faction = VIA
+				}
+				add_opinion_modifier = {
+					target = VIA
+					modifier = faction_traitor
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction = ARB
+				}
+				add_opinion_modifier = {
+					target = ARB
+					modifier = faction_traitor
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction = COT
+				}
+				add_opinion_modifier = {
+					target = ARB
+					modifier = faction_traitor
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = nje_focus_join_operation
+		#icon = GFX_focus_eng_the_kings_party
+		cost = 5
+		x = 12
+		y = 5
+		mutually_exclusive = {
+			focus = nje_focus_deny_owning_arma
+		}
+		prerequisite = {
+			focus = nje_focus_dallgaming
+		}
+		prerequisite = {
+			focus = nje_focus_found_arma_unit
+		}
+		completion_reward = {
+			leave_faction = yes
+		}
+	}
+
+
+}

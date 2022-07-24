@@ -1045,6 +1045,8 @@ focus_tree = {
 		y = 18
 		prerequisite = {
 			focus = cot_focus_hegemony
+			is_in_faction = yes
+			has_global_flag = flag_seso_created
 		}
 		completion_reward = {}
 	}
