@@ -13,6 +13,7 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
+		victory_points = { 6229 50 }
 	}
 	resources = {
 		steel = 48
