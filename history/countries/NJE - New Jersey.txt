@@ -69,50 +69,54 @@ if = {
 	}
 
 }
+add_ideas = {
+	idea_game_lag
+}
+recruit_character= NJE_korgi
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = neutrality
 	last_election = "2.1.1"
 	elections_allowed = no
 	
 }
 
 set_popularities = {
-	democratic = 15
-	fascism = 7
-	communism = 55
-	neutrality = 23
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
 }
 	
-
-create_country_leader = {
-	
-	name = "Korgi"
-	picture = "korgi_n.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-}
-
-create_country_leader = {
-	
-	name = "Generalissimo Korgi"
-	picture = "korgi_c.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-}
-
-create_country_leader = {
-	
-	name = "Governor Korgi"
-	picture = "korgi_d.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-}
-
-create_country_leader = {
-	
-	name = "Duce Korgi"
-	picture = "korgi_f.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-}
+#
+#create_country_leader = {
+#	
+#	name = "Korgi"
+#	picture = "korgi_n.dds"
+#	expire = "1965.1.1"
+#	ideology = despotism
+#}#
+#
+#create_country_leader = {
+#	
+#	name = "Premier Gelato"
+#	picture = "korgi_c.dds"
+#	expire = "1965.1.1"
+#	ideology = marxism
+#}
+#
+#create_country_leader = {
+#	
+#	name = "Governor Korgi"
+#	picture = "korgi_d.dds"
+#	expire = "1965.1.1"
+#	ideology = conservatism
+#}
+#
+#create_country_leader = {
+#	
+#	name = "Duce Korgi"
+#	picture = "korgi_f.dds"
+#	expire = "1965.1.1"
+#	ideology = fascism_ideology
+#}

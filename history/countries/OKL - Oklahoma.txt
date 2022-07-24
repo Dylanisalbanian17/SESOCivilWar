@@ -14,11 +14,12 @@ set_technology = {
 
 set_convoys = 30
 
+recruit_character = OKL_alloy
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "2.1.1"
-	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {

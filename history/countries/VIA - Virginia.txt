@@ -12,6 +12,9 @@ add_ideas = {
 	Mistribution_of_funds
 }
 
+
+recruit_character= VIA_ryder
+
 set_politics = {
 	ruling_party = fascism
 	last_election = "2.1.1"
@@ -23,15 +26,7 @@ set_popularities = {
 	communism = 23
 	neutrality = 9
 }
-create_country_leader = {
-	
-	name = "Ryder"
-	picture = "ryder.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = { nationalist_symbol }
-	
-	}
+
 
 create_corps_commander = { 
 	name = "Heinz Guderian"
@@ -72,7 +67,6 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Ewald von Kleist"
-	desc = ""
 	portrait_path = "gfx/leaders/GER/Portrait_Germany_Ewald_von_Kleist.dds"
 	traits = { armor_officer trait_cautious }
 	skill = 2
@@ -131,7 +125,7 @@ create_field_marshal = {
 	id = 1
 }
 
-set_research_slots = 3
+set_research_slots = 4
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1		
