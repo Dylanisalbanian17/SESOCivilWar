@@ -10,7 +10,7 @@ characters={
 
 		country_leader={
 			ideology=despotism
-			traits = { }
+			traits = { silent_workhorse snuggler }
 			expire = "1965.1.1.1"
 			id=-1
 		}
@@ -27,7 +27,7 @@ characters={
 
 		country_leader={
 			ideology=nazism
-			traits = { }
+			traits = { smooth_talking_con_man war_profiteer }
 			expire = "1965.1.1.1"
 			id=-1
 		}

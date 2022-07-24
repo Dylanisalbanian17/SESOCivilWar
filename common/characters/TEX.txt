@@ -1,0 +1,35 @@
+characters={
+
+	TEX_trevor={
+		name="Trevor"
+		portraits = {
+			civilian = {
+				#large="gfx/leaders/COT/sag_0.dds"
+			}
+		}
+
+		country_leader={
+			ideology=conservatism
+			traits = { smooth_talking_charmer }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	TEX_hunter={
+		name="Hunter"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/TEX/hunter.dds"
+			}
+		}
+
+		country_leader={
+			ideology=gen_nazism
+			traits = { autocratic_imperialist }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

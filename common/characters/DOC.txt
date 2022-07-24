@@ -9,8 +9,8 @@ characters={
 		}
 
 		country_leader={
-			ideology=nazism
-			traits = { }
+			ideology=gen_nazism
+			traits = { american_caesar }
 			expire = "1965.1.1.1"
 			id=-1
 		}
@@ -26,7 +26,7 @@ characters={
 
 		country_leader={
 			ideology=liberalism
-			traits = { }
+			traits = { popular_figurehead }
 			expire = "1965.1.1.1"
 			id=-1
 		}
@@ -42,14 +42,14 @@ characters={
 
 		country_leader={
 			ideology=despotism
-			traits = { }
+			traits = { old_figurehead }
 			expire = "1965.1.1.1"
 			id=-1
 		}
 	}
 
 	DOC_di_kook={
-		name="Joe Mama"
+		name="Di Kook"
 		portraits = {
 			civilian = {
 				large="gfx/leaders/DOC/kook.dds"
@@ -58,7 +58,7 @@ characters={
 
 		country_leader={
 			ideology=marxism
-			traits = { }
+			traits = { permanent_revolutionary }
 			expire = "1965.1.1.1"
 			id=-1
 		}

@@ -10,7 +10,7 @@ characters={
 
 		country_leader={
 			ideology=despotism
-			traits = { }
+			traits = { champion_of_peace_1 compassionate_gentleman dealbroker }
 			expire = "1965.1.1.1"
 			id=-1
 		}

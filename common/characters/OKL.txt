@@ -1,0 +1,19 @@
+characters={
+
+	OKL_alloy={
+		name="WarningAlloy71"
+		portraits = {
+			civilian = {
+				#large=GFX_portrait_GER_friedrich_paulus
+			}
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { stout_defender }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+characters={
+
+	GEO_finch={
+		name="Finch"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/GEO/finch.dds"
+			}
+		}
+
+		country_leader={
+			ideology=anarchism
+			traits = { exiled hedonist eager_collaborator }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

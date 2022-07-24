@@ -1,0 +1,19 @@
+characters={
+
+	MAR_kujo={
+		name="Kujo"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/MAR/kujo.dds"
+			}
+		}
+
+		country_leader={
+			ideology=fascism_ideology
+			traits = {}
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

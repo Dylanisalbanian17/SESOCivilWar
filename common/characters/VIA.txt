@@ -1,4 +1,19 @@
 characters={
+	VIA_ryder = {
+	
+		name = "Ryder"
+		portraits ={
+			civilian={
+				large= "gfx/leaders/VIA/ryder.dds"
+			}
+		}
+		country_leader={
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = { nationalist_symbol }
+			id=-1
+		}
+	}
 
 	VIA_otto_jung = {
 		name="Otto Jung"

@@ -1,0 +1,33 @@
+characters={
+
+	PEN_pickle={
+		name="Pickle423"
+		portraits = {
+			civilian = {
+				#large="gfx/leaders/GEO/finch.dds"
+			}
+		}
+
+		country_leader={
+			ideology=liberalism
+			traits = { british_bulldog fascist_sympathies }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=fascism_ideology
+			traits = { british_bulldog }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader = {
+			ideology=centrism
+			traits = { british_bulldog fascist_sympathies }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}
