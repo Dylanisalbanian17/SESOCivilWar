@@ -1,0 +1,28 @@
+characters={
+
+	MIN_brine={
+		name="Brine"
+		portraits = {
+			civilian = {
+				#large="gfx/leaders/ART/target.dds"
+			}
+		}
+
+		country_leader={
+			ideology=conservatism
+			traits = { employed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=fascism
+			traits = { employed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	# Add Eros, Triad, and Salsa as advisors and generals
+
+}

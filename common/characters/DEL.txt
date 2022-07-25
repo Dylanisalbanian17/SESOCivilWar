@@ -1,0 +1,40 @@
+characters={
+
+	DEL_posh={
+		name="Posh"
+		portraits = {
+			civilian = {
+				#large="gfx/leaders/ART/target.dds"
+			}
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { unemployed dislikes_nyo }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=gen_nazism
+			traits = { unemployed dislikes_nyo }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=stalinism
+			traits = { unemployed dislikes_nyo }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=liberalism
+			traits = { unemployed dislikes_nyo }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

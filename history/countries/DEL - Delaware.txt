@@ -14,6 +14,8 @@ set_technology = {
 
 set_convoys = 30
 
+recruit_character = DEL_posh
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "2.1.1"
@@ -22,8 +24,8 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
+	democratic = 100
+	fascism = 0
+	communism = 0
+	neutrality = 0
 }

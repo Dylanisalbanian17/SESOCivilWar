@@ -1,0 +1,28 @@
+characters={
+
+	RIS_nitch={
+		name="Nitch"
+		portraits = {
+			civilian = {
+				#large="gfx/leaders/GEO/finch.dds"
+			}
+		}
+
+		country_leader={
+			ideology=liberalism
+			traits = { employed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=nazism
+			traits = { employed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	# Add Gamba, Foil, Gump, and Gecko as advisors and generals
+
+}
