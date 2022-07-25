@@ -1,0 +1,11 @@
+NJE_border_clashes = {
+	priority = 90
+	picture = generic_border_conflicts
+	icon = border_conflicts
+	allowed = {
+		has_country_leader = {
+			character = NJE_korgi
+			ruling_only = yes
+		}
+	}
+}

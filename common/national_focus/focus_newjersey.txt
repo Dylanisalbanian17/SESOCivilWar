@@ -19,7 +19,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = nje_manufacture_tron_cycles
+		id = nje_focus_manufacture_tron_cycles
 		#icon = GFX_focus_eng_the_kings_party
 		cost = 5
 		x = 8
@@ -33,13 +33,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = nje_fix_lag
+		id = nje_focus_fix_lag
 		#icon = GFX_focus_eng_the_kings_party
 		cost = 5
 		x = 7
 		y = 3
 		prerequisite = {
-			focus = nje_manufacture_tron_cycles
+			focus = nje_focus_manufacture_tron_cycles
 		}
 		completion_reward = {
 			remove_ideas = idea_game_lag
@@ -48,7 +48,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = nje_build_castles
+		id = nje_focus_build_castles
 		#icon = GFX_focus_eng_the_kings_party
 		cost = 5
 		x = 11
@@ -74,13 +74,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = nje_manufacture_trasformers
+		id = nje_focus_manufacture_transformers
 		#icon = GFX_focus_eng_the_kings_party
 		cost = 5
 		x = 11
 		y = 3
 		prerequisite = {
-			focus = nje_build_castles
+			focus = nje_focus_build_castles
 		}
 		completion_reward = {
 			add_ideas = idea_transformers
@@ -126,9 +126,41 @@ focus_tree = {
 		completion_reward = {
 			create_faction = "Clan Kyram"
 			set_global_flag = flag_seso_created
-			VIA = { country_event = new_jersey.2 }
-			COT = { country_event = new_jersey.2 }
-			ARB = { country_event = new_jersey.2 }
+			if = {
+				limit = {
+					VIA = {
+						has_country_leader = {
+							character = VIA_ryder
+							ruling_only = yes
+						}
+					}
+				}
+				VIA = { country_event = new_jersey.2 }
+			}
+
+			if = {
+				limit = {
+					VIA = {
+						has_country_leader = {
+							character = COT_dildo_sagbag
+							ruling_only = yes
+						}
+					}
+				}
+				COT = { country_event = new_jersey.2 }
+			}
+
+			if = {
+				limit = {
+					VIA = {
+						has_country_leader = {
+							character = ARB_box
+							ruling_only = yes
+						}
+					}
+				}
+				ARB = { country_event = new_jersey.2 }
+			}
 		}
 	}
 
@@ -165,6 +197,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.10
 			add_political_power = 25
+			set_faction_leader = no
 		}
 	}
 
@@ -184,19 +217,61 @@ focus_tree = {
 				long_name = "Baby Gamingism"
 				name = "Baby"
 			}
+			custom_effect_tooltip = CHI_institute_cross_border_raids_effect_tooltip
+			set_country_flag = NJE_flag_baby_gaming
 		}
 	}
 ##### SESO Path
 	focus = {
-		id = nje_focus_leave_seso
+		id = nje_focus_leave_arma_unit
 		#icon = GFX_focus_eng_the_kings_party
 		cost = 5
 		x = 10
 		y = 4
 		prerequisite = {
 			focus = nje_focus_found_arma_unit
+			is_faction_leader = no
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					NJE = {
+						is_in_faction_with = VIA
+					}
+				}
+				VIA = {
+					add_opinion_modifier = {
+						target = NJE
+						modifier = faction_traitor
+					}
+				}
+			}
+			if = {
+				limit = {
+					NJE = {
+						is_in_faction_with = ARB
+					}
+				}
+				ARB = {
+					add_opinion_modifier = {
+						target = NJE
+						modifier = faction_traitor
+					}
+				}
+			}
+			if = {
+				limit = {
+					NJE = {
+						is_in_faction_with = COT
+					}
+				}
+				COT = {
+					add_opinion_modifier = {
+						target = NJE
+						modifier = faction_traitor
+					}
+				}
+			}
 			leave_faction = yes
 		}
 	}
@@ -208,36 +283,9 @@ focus_tree = {
 		x = 10
 		y = 5
 		prerequisite = {
-			focus = nje_focus_leave_seso
+			focus = nje_focus_leave_arma_unit
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					is_in_faction = VIA
-				}
-				add_opinion_modifier = {
-					target = VIA
-					modifier = faction_traitor
-				}
-			}
-			if = {
-				limit = {
-					is_in_faction = ARB
-				}
-				add_opinion_modifier = {
-					target = ARB
-					modifier = faction_traitor
-				}
-			}
-			if = {
-				limit = {
-					is_in_faction = COT
-				}
-				add_opinion_modifier = {
-					target = ARB
-					modifier = faction_traitor
-				}
-			}
 		}
 	}
 
@@ -256,8 +304,13 @@ focus_tree = {
 		prerequisite = {
 			focus = nje_focus_found_arma_unit
 		}
+		prerequisite = {
+			VIA = { 
+				has_country_leader = VIA_ryder
+			}
+			is_in_faction_with = VIA
+		}
 		completion_reward = {
-			leave_faction = yes
 		}
 	}
 

@@ -12,6 +12,10 @@ set_technology = {
 	fuel_refining = 1
 }
 
+
+add_ideas = {
+	idea_awful_drivers
+}
 set_convoys = 30
 
 recruit_character= PEN_pickle

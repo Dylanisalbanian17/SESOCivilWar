@@ -8,17 +8,17 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			
+
 			picture = generic_production_bonus
 
 			modifier = {
-				surrender_limit = 0.5
+				surrender_limit = -0.5
 				political_power_cost = 0.2
-				production_speed_buildings_factor = -0.5
+				production_speed_buildings_factor = -0.35
 				production_factory_start_efficiency_factor = -0.2
-				production_lack_of_resource_penalty_factor = -0.6
-				refit_ic_cost = -0.6
-				refit_speed = -0.6
+				production_lack_of_resource_penalty_factor = -0.35
+				refit_ic_cost = -0.5
+				refit_speed = -0.5
 				supply_consumption_factor = -0.5
 				ai_badass_factor = -1
 			}
@@ -36,12 +36,11 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				army_org_factor = -0.5
-				army_org_regain = -0.6
-				navy_org_factor = -0.5
-				navy_org_regain = -0.6
-				air_accidents_factor = 0.8
-				breakthrough_factor = 0.4
+				army_org_factor = -0.35
+				army_org_regain = -0.35
+				navy_org_factor = -0.35
+				air_accidents_factor = 0.5
+				breakthrough_factor = 0.25
 			}
 		}
 
@@ -58,7 +57,7 @@ ideas = {
 
 			modifier = {
 				army_speed_factor = 0.2
-				motorised_attack_factor = 0.3
+				motorized_attack_factor = 0.3
 				cas_damage_reduction = 0.2
 				initiative_factor = 0.3
 			}
@@ -79,10 +78,13 @@ ideas = {
 				army_armor_defence_factor = 0.1
 				army_armor_attack_factor = 0.1
 				army_armor_speed_factor = 0.05
+				mechanized_defence_factor = 0.1
+				mechanized_attack_factor = 0.1
+				#mechanized_speed_factor = 0.05
 			}
 		}
 
-		idea_anime_obsession = {
+		idea_mocreatures_spam = {
 			allowed = {
 				always = no
 			}
@@ -94,6 +96,24 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_dockyard = -0.15
+			}
+		}
+
+		idea_awful_drivers = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				truck_attrition_factor = 0.15
 			}
 		}
 	}

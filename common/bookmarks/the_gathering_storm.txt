@@ -67,7 +67,16 @@ bookmarks = {
 		
 		"NJE" = {
 			history = "NJE_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = neutrality
+			ideas = {
+				idea_transformers
+				idea_tron_cycles
+				idea_awful_drivers
+			}
+			focuses = {
+				nje_focus_found_arma_unit
+				nje_focus_babygaming
+			}
 		}
 		
 		"---" = {

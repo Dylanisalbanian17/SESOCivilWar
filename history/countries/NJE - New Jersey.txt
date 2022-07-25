@@ -71,6 +71,7 @@ if = {
 }
 add_ideas = {
 	idea_game_lag
+	idea_awful_drivers
 }
 recruit_character= NJE_korgi
 
