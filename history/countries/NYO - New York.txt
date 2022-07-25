@@ -63,7 +63,14 @@ if = {
 	}
 }
 
+add_ideas = {
+	idea_awful_drivers
+}
+
 set_convoys = 30
+
+recruit_character = NYO_crimson
+recruit_character = NYO_ojax
 
 set_politics = {
 	ruling_party = neutrality
@@ -75,19 +82,4 @@ set_popularities = {
 	fascism = 1
 	communism = 23
 	neutrality = 75
-}
-create_country_leader = {
-	
-	name = "Crimson"
-	picture = "crimson.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-}
-
-create_country_leader = {
-	
-	name = "Ojax"
-	picture = "ojax.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
 }

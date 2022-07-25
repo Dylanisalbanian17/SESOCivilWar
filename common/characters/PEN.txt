@@ -10,21 +10,21 @@ characters={
 
 		country_leader={
 			ideology=liberalism
-			traits = { british_bulldog fascist_sympathies }
+			traits = { unemployed british_bulldog dislikes_nje }
 			expire = "1965.1.1.1"
 			id=-1
 		}
 
 		country_leader={
 			ideology=fascism_ideology
-			traits = { british_bulldog }
+			traits = { unemployed british_bulldog dislikes_nje }
 			expire = "1965.1.1.1"
 			id=-1
 		}
 
 		country_leader = {
 			ideology=centrism
-			traits = { british_bulldog fascist_sympathies }
+			traits = { unemployed british_bulldog dislikes_nje }
 			expire = "1965.1.1.1"
 			id=-1
 		}

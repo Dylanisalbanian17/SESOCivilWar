@@ -1,0 +1,45 @@
+characters={
+
+	NYO_crimson={
+		name="Crimson"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/NYO/crimson.dds"
+			}
+		}
+
+		country_leader={
+			ideology=centrism
+			traits = { unemployed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=fascism
+			traits = { unemployed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+	}
+
+	NYO_crimson={
+		name="Ojax"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/NYO/ojax.dds"
+			}
+		}
+
+		country_leader={
+			ideology=stalinism
+			traits = { unemployed dislikes_nje }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+	}
+
+	# Add Concord as advisor for fascist sympathies
+}

@@ -1,0 +1,13 @@
+SESO_gettajob = {
+	priority = 120
+	#picture = generic_border_conflicts
+	#icon = border_conflicts
+	allowed = {
+		FROM = {
+			OR = {
+				has_country_leader_with_trait = unemployed
+				has_country_leader_with_trait = employed
+			}
+		}
+	}
+}

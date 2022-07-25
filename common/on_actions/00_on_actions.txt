@@ -432,6 +432,17 @@ on_actions = {
 				multiply_temp_variable = { new_compliance = 0.5 }
 				set_compliance = new_compliance
 			}
+
+			# Work-around for persisting employed to every character
+			if = {
+				limit = {
+					any_character = {
+						has_trait = unemployed
+						has_character_flag = SESO_employed
+					}
+				}
+				swap_ruler_traits = {remove = unemployed add = employed}
+			}
 		}
 	}
 }

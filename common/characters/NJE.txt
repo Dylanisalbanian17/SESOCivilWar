@@ -10,21 +10,21 @@ characters={
 
 		country_leader={
 			ideology=centrism
-			traits = { underage_monarch }
+			traits = { unemployed dislikes_pen dislikes_nyo underage_monarch }
 			expire = "1965.1.1.1"
 			id=-1
 		}
 
 		country_leader={
 			ideology=leninism
-			traits = { underage_monarch }
+			traits = { unemployed dislikes_pen dislikes_nyo underage_monarch }
 			expire = "1965.1.1.1"
 			id=-1
 		}
 
 		country_leader={
 			ideology=nazism
-			traits = { generallissimo underage_monarch }
+			traits = { unemployed dislikes_pen dislikes_nyo underage_monarch generallissimo }
 			expire = "1965.1.1.1"
 			id=-1
 		}

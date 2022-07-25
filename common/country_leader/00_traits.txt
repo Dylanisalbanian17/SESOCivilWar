@@ -367,19 +367,6 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
-	dislikes_canada = {
-		random = no
-		ai_strategy = {
-			type = antagonize
-			id = "ONT"			
-			value = 200
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	
 	tenacious_defender = {
 		random = no

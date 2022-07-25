@@ -1,0 +1,118 @@
+@resume_chance = 0.10
+@cover_chance = 0.10
+@job_base_chance = 0.01
+
+SESO_gettajob = {
+	SESO_design_resume = {
+		#icon = border_war
+
+		available = {
+			FROM = {
+				has_country_leader_with_trait = unemployed
+			}
+		}
+
+		visible = {
+			FROM = {
+				OR = {
+					has_country_leader_with_trait = unemployed
+					has_country_leader_with_trait = employed
+				}
+			}
+		}
+
+		cost = 25
+
+		days_re_enable = 30
+
+		complete_effect = {
+			hidden_effect = {
+				random_list = {
+					50 = {
+
+					}
+
+					25 = {
+
+					}
+
+					15 = {
+
+					}
+
+					15 = {
+
+					}
+
+
+
+
+				}
+			}
+		}
+
+	}
+
+	SESO_write_cover_letter = {
+		#icon = border_war
+
+		available = {
+			FROM = {
+				has_country_leader_with_trait = unemployed
+			}
+		}
+
+		visible = {
+			FROM = {
+				OR = {
+					has_country_leader_with_trait = unemployed
+					has_country_leader_with_trait = employed
+				}
+			}
+		}
+
+		cost = 25
+
+		days_re_enable = 30
+
+		complete_effect = {
+			hidden_effect = {
+				
+			}
+		}
+
+	}
+
+	SESO_send_job_application = {
+		#icon = border_war
+
+		available = {
+			FROM = {
+				has_country_leader_with_trait = unemployed
+			}
+		}
+
+		visible = {
+			FROM = {
+				OR = {
+					has_country_leader_with_trait = unemployed
+					has_country_leader_with_trait = employed
+				}
+			}
+		}
+
+		cost = 50
+
+		days_re_enable = 60
+
+		complete_effect = {
+			#hidden_effect = {
+				swap_ruler_traits = {remove = unemployed add = employed}
+				set_character_flag = SESO_employed
+			#}
+		}
+
+	}
+
+
+}

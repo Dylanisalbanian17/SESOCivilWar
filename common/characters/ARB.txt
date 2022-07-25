@@ -10,28 +10,28 @@ characters={
 
 		country_leader={
 			ideology=liberalism
-			traits = { hedonist reluctant_interventionist }
+			traits = { employed dislikes_cal reluctant_interventionist }
 			expire = "1965.1.1.1"
 			id=-1
 		}
 
 		country_leader={
 			ideology=falangism
-			traits = { hedonist technocrat reluctant_interventionist }
+			traits = { employed dislikes_cal hreluctant_interventionist }
 			expire = "1965.1.1.1"
 			id=-1
 		}
 
 		country_leader={
 			ideology=anarchism
-			traits = { hedonist technocrat reluctant_interventionist}
+			traits = { employed dislikes_cal reluctant_interventionist}
 			expire = "1965.1.1.1"
 			id=-1
 		}
 
 		country_leader={
 			ideology=anarchist_communism
-			traits = { hedonist technocrat prince_of_terror reluctant_interventionist }
+			traits = { employed dislikes_cal reluctant_interventionist prince_of_terror}
 			expire = "1965.1.1.1"
 			id=-1
 		}
