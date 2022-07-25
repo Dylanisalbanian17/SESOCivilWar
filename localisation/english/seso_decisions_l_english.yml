@@ -1,2 +1,8 @@
 ﻿l_english:
+ VirginiaCivilWar_Support:0 "The Virginian Civil War"
+ VCW_REI_Foreign_Support:0 "Support The Reich" 
  COT_changeprofilepicture:0 "Change Discord Profile Picture"
+ SESO_gettajob:0 "Get a Job"
+ SESO_design_resume:0 "Design Résumé"
+ SESO_write_cover_letter:0 "Write Cover Letter"
+ SESO_send_job_application:0 "Send Job Applications"
