@@ -23,8 +23,8 @@ characters={
 		}
 
 		country_leader={
-			ideology=anarchism
-			traits = { employed dislikes_cal reluctant_interventionist}
+			ideology=despotism
+			traits = { employed dislikes_cal reluctant_interventionist technocrat}
 			expire = "1965.1.1.1"
 			id=-1
 		}

@@ -16,7 +16,7 @@ characters={
 		}
 
 		country_leader={
-			ideology=fascism
+			ideology=gen_fascism
 			traits = { unemployed }
 			expire = "1965.1.1.1"
 			id=-1
@@ -24,7 +24,7 @@ characters={
 
 	}
 
-	NYO_crimson={
+	NYO_ojax={
 		name="Ojax"
 		portraits = {
 			civilian = {
@@ -34,7 +34,7 @@ characters={
 
 		country_leader={
 			ideology=stalinism
-			traits = { unemployed dislikes_nje }
+			traits = { unemployed dislikes_pen }
 			expire = "1965.1.1.1"
 			id=-1
 		}
