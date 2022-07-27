@@ -140,7 +140,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					VIA = {
+					COT = {
 						has_country_leader = {
 							character = COT_dildo_sagbag
 							ruling_only = yes
@@ -152,7 +152,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					VIA = {
+					ARB = {
 						has_country_leader = {
 							character = ARB_box
 							ruling_only = yes
@@ -208,7 +208,7 @@ focus_tree = {
 		x = 15
 		y = 5
 		prerequisite = {
-			focus = nje_focus_dallgaming OR focus = nje_focus_dallwhoring
+			focus = nje_focus_dallwhoring
 		}
 		completion_reward = {
 			add_political_power = 75
@@ -306,7 +306,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			VIA = { 
-				has_country_leader = VIA_ryder
+				has_country_leader = {
+					character = VIA_ryder
+					ruling_only = yes
+				}
 			}
 			is_in_faction_with = VIA
 		}

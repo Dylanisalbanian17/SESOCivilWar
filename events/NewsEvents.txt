@@ -73,27 +73,25 @@ news_event = {
 
 # Baby declared slur
 news_event = {
-	news_event = {
-		id = news.4
-		title = news.4.t
-		desc = news.4.d
-		#picture = GFX_news_event_german_reichstag_ruins_02
-		major = yes
-		is_triggered_only = yes
-	
-		option = {
-			name = news.4.a
-			trigger = {
-				NOT = { tag = NJE }
-			}
-		
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	#picture = GFX_news_event_german_reichstag_ruins_02
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news.4.a
+		trigger = {
+			NOT = { tag = NJE }
 		}
-		option = {
-			name = news.4.b
-			trigger = { 
-				original_tag = NJE
-				has_country_leader = NJE_korgi
-			}
+	
+	}
+	option = {
+		name = news.4.b
+		trigger = { 
+			original_tag = NJE
+			has_country_leader = { name = NJE_korgi ruling_only = yes }
 		}
 	}
 }

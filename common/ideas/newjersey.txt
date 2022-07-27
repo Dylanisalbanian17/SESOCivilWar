@@ -113,7 +113,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				truck_attrition_factor = 0.15
+				truck_attrition_factor = 0.05
 			}
 		}
 	}

@@ -37,10 +37,58 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = new_jersey.1.a
+		# Ryder invites Mace, Boombler, and Crimson/Ojax
+		name = new_jersey.2.a
 		ai_chance = { factor = 90 }
 		NJE = { add_to_faction = ROOT }
+		CAL = { country_event = { id = new.jersey.2 } }
+		WYO = { country_event = { id = new.jersey.2 } }
+		NYO = { country_event = { id = new.jersey.2 } }
+		trigger = {
+			has_country_leader = { character = VIA_ryder ruling_only = yes }
+		}
 	}
+
+	option = {
+		# Box invites Target, Spaceman
+		name = new_jersey.2.a
+		ai_chance = { factor = 90 }
+		NJE = { add_to_faction = ROOT }
+		ART = { country_event = { id = new.jersey.2 } }
+		ARS = { country_event = { id = new.jersey.2 } }
+		trigger = {
+			has_country_leader = { character = ARB_box ruling_only = yes }
+		}
+	}
+
+	option = {
+		# Sag invites Zog, Lanix, Jolly
+		name = new_jersey.2.a
+		ai_chance = { factor = 90 }
+		NJE = { add_to_faction = ROOT }
+		WIS = { country_event = new.jersey.2 }
+		QUB = { country_event = new.jersey.2 }
+		ONT = { country_event = new.jersey.2 }
+		trigger = {
+			has_country_leader = { character = COT_dildo_sagbag ruling_only = yes }
+		}
+	}
+
+	option = {
+		# Generic accept invite
+		name = new_jersey.2.a
+		ai_chance = { factor = 90 }
+		NJE = { add_to_faction = ROOT }
+		trigger = {
+			NOT = {
+				OR = {
+						has_country_leader = { character = VIA_ryder ruling_only = yes }
+						has_country_leader = { character = ARB_box ruling_only = yes }
+						has_country_leader = { character = COT_dildo_sagbag ruling_only = yes }
+					}
+				}
+			}
+		}
 
 	option = {
 		name = new_jersey.2.b
