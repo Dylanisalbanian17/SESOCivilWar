@@ -1,4 +1,4 @@
-capital = 252
+capital = 253
 
 set_research_slots = 4
 set_technology = {
@@ -88,36 +88,3 @@ set_popularities = {
 	communism = 25
 	neutrality = 25
 }
-	
-#
-#create_country_leader = {
-#	
-#	name = "Korgi"
-#	picture = "korgi_n.dds"
-#	expire = "1965.1.1"
-#	ideology = despotism
-#}#
-#
-#create_country_leader = {
-#	
-#	name = "Premier Gelato"
-#	picture = "korgi_c.dds"
-#	expire = "1965.1.1"
-#	ideology = marxism
-#}
-#
-#create_country_leader = {
-#	
-#	name = "Governor Korgi"
-#	picture = "korgi_d.dds"
-#	expire = "1965.1.1"
-#	ideology = conservatism
-#}
-#
-#create_country_leader = {
-#	
-#	name = "Duce Korgi"
-#	picture = "korgi_f.dds"
-#	expire = "1965.1.1"
-#	ideology = fascism_ideology
-#}

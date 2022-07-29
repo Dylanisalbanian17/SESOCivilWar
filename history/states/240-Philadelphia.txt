@@ -13,7 +13,7 @@ state={
 			industrial_complex = 1
 			air_base = 1
 		}
-		victory_points = { 8057 25 }
+		victory_points = { 8057 35 }
 	}
 	manpower=1200000
 	buildings_max_level_factor=1.000
