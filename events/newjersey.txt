@@ -41,9 +41,9 @@ country_event = {
 		name = new_jersey.2.a
 		ai_chance = { factor = 90 }
 		NJE = { add_to_faction = ROOT }
-		CAL = { country_event = { id = new.jersey.2 } }
-		WYO = { country_event = { id = new.jersey.2 } }
-		NYO = { country_event = { id = new.jersey.2 } }
+		CAL = { country_event = new.jersey.2 }
+		WYO = { country_event = new.jersey.2 }
+		NYO = { country_event = new.jersey.2 }
 		trigger = {
 			has_country_leader = { character = VIA_ryder ruling_only = yes }
 		}
@@ -54,8 +54,8 @@ country_event = {
 		name = new_jersey.2.a
 		ai_chance = { factor = 90 }
 		NJE = { add_to_faction = ROOT }
-		ART = { country_event = { id = new.jersey.2 } }
-		ARS = { country_event = { id = new.jersey.2 } }
+		ART = { country_event = new.jersey.2 }
+		ARS = { country_event = new.jersey.2 }
 		trigger = {
 			has_country_leader = { character = ARB_box ruling_only = yes }
 		}

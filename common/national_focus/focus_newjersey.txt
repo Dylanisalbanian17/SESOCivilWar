@@ -226,10 +226,13 @@ focus_tree = {
 		id = nje_focus_leave_arma_unit
 		#icon = GFX_focus_eng_the_kings_party
 		cost = 5
-		x = 10
-		y = 4
+		x = 2
+		y = 1
+		relative_position_id = nje_focus_dallwhoring
 		prerequisite = {
-			focus = nje_focus_found_arma_unit
+			focus = nje_focus_dallwhoring
+		}
+		available = {
 			is_faction_leader = no
 		}
 		completion_reward = {
@@ -280,8 +283,12 @@ focus_tree = {
 		id = nje_focus_deny_owning_arma
 		#icon = GFX_focus_eng_the_kings_party
 		cost = 5
-		x = 10
-		y = 5
+		x = 0
+		y = 1
+		relative_position_id = nje_focus_leave_arma_unit
+		mutually_exclusive = {
+			focus = nje_focus_join_operation
+		}
 		prerequisite = {
 			focus = nje_focus_leave_arma_unit
 		}
@@ -311,6 +318,9 @@ focus_tree = {
 					ruling_only = yes
 				}
 			}
+			
+		}
+		available = {
 			is_in_faction_with = VIA
 		}
 		completion_reward = {
