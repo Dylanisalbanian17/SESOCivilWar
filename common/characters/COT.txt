@@ -1,6 +1,6 @@
 ﻿characters={
 
-	COT_sag={
+	COT_dildo_sagbag={
 		name="Sag?"
 		portraits = {
 			civilian = {
@@ -9,24 +9,16 @@
 		}
 
 		country_leader={
-			ideology=centrism
-			traits = {}
+			ideology=conservatism
+			traits = { employed dislikes_germany dislikes_nyo dislikes_nje popular_figurehead2 }
 			expire = "1965.1.1.1"
 			id=-1
 		}
-	}
-
-	COT_dildo_sagbag={
-		name="Dildo Sagbag"
-		portraits = {
-			civilian = {
-				large="gfx/leaders/COT/sag_1.dds"
-			}
-		}
 
 		country_leader={
-			ideology=conservatism
-			traits = { employed dislikes_germany dislikes_nyo dislikes_nje popular_figurehead2 }
+			ideology=centrism
+			traits = { }
+			desc=SAG_0_DESC
 			expire = "1965.1.1.1"
 			id=-1
 		}
@@ -86,6 +78,98 @@
 			planning_skill = 2	
 			logistics_skill = 1
 			legacy_id= 22
+		}
+	}
+
+	COT_avgn = {
+		name = "Angry Video Game Nerd"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/advisors/advisor_avgn.dds"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = avgn
+			traits = { prince_of_terror }
+			allowed = {
+				original_tag = COT
+			}
+		}
+	}
+
+	COT_martha = {
+		name = "Martha"
+		portraits = {
+			civilian = {
+				small = gfx/interface/advisors/advisor_martha.dds
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = martha
+			traits = { first_lady }
+			allowed = {
+				original_tag = COT
+			}
+			available  = {
+				COT = { has_country_leader = { name = "Dildo Sagbag" ruling_only = yes} }
+			}
+		}
+	}
+
+	COT_black_pig = {
+		name = "Black Pig"
+		portraits = {
+			navy = {
+				# large
+				# small
+			}
+		}
+		navy_leader = {
+			traits = {}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill= 3
+			coordination_skill= 3
+			legacy_id=0
+		}
+	}
+
+	COT_frodo_sagbag = {
+		name = "Frodo Sagbag"
+		portraits = {
+			navy = {
+				# large
+				# small
+			}
+		}
+		field_marshal= {
+			traits = { media_personality }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill= 2
+			logistics_skill= 2
+			legacy_id=0
+		}
+	}
+
+	COT_durasteel_ape = {
+		name = "Durasteel Ape"
+		portraits = {
+			civilian = {
+				#small
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = durasteel_ape
+			#ledger
+			traits = { vapsid_economist }
 		}
 	}
 

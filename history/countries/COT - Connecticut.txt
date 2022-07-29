@@ -38,6 +38,17 @@ if = {
 
 set_convoys = 30
 
+
+recruit_character = COT_dildo_sagbag
+recruit_character = COT_yaojing
+recruit_character = COT_webb
+recruit_character = COT_heroin
+recruit_character = COT_avgn
+recruit_character = COT_martha
+recruit_character = COT_black_pig
+recruit_character = COT_frodo_sagbag
+recruit_character = COT_durasteel_ape
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "2.11.6"
@@ -51,8 +62,3 @@ set_popularities = {
 	neutrality = 70
 }
 
-recruit_character = COT_sag
-recruit_character = COT_dildo_sagbag
-recruit_character = COT_yaojing
-recruit_character = COT_webb
-recruit_character = COT_heroin

@@ -75,7 +75,7 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				category = cat_mass_assault
-				
+
 			}
 			random_list = {
 				83.9 = {
@@ -200,7 +200,8 @@ focus_tree = {
 			focus = cot_focus_convince_4
 		}
 		prerequisite = {
-			focus = cot_focus_convince_2 OR = cot_focus_convince_3 }
+			focus = cot_focus_convince_2 OR = cot_focus_convince_3
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -225,7 +226,7 @@ focus_tree = {
 		x = 17
 		y = 7
 		mutually_exclusive = {
-		focus = cot_focus_nojoin	
+		focus = cot_focus_nojoin
 		}
 		prerequisite = {
 			focus = cot_focus_convince_4 OR = cot_focus_convince_5
@@ -234,13 +235,17 @@ focus_tree = {
 			has_country_flag = cot_convince_flag
 		}
 		completion_reward = {
-			retire_country_leader = yes
+			set_country_leader_name = { name = "Dildo Sagbag" }
+			set_country_leader_description = { desc = SAG_1_DESC }
+			set_country_leader_portrait = { portrait = GFX_portrait_dildo_sagbag }
 			add_stability = 0.3
-			set_politics = { ruling_party = democratic }
-			clr_country_flag = cot_convince_flag
-			hidden_effect = {
-				news_event = { id = news.2 }
+			set_politics = {
+				ruling_party = democratic 
+				elections_allowed = yes
+				election_frequency = 126
 			}
+			clr_country_flag = cot_convince_flag
+			news_event = { id = news.2 }
 		 }
 	}
 
@@ -257,7 +262,10 @@ focus_tree = {
 			focus = cot_focus_convince_4 OR = cot_focus_convince_5 OR = cot_focus_elect_generico
 		}
 		completion_reward = {
-			add_stability = -0.3
+			every_state = {
+				remove_core_of = COT
+				remove_claim_by = COT
+			}
 		 }
 	}
 ####Tier 2
@@ -1045,6 +1053,8 @@ focus_tree = {
 		y = 18
 		prerequisite = {
 			focus = cot_focus_hegemony
+		}
+		available = {
 			is_in_faction = yes
 			has_global_flag = flag_seso_created
 		}
