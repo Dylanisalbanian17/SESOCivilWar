@@ -22,8 +22,6 @@ add_ideas = {
 	homeless_crisis
 	police_corruption
 	free_trade
-	gavin_newsom_advisor
-	clarence_a_smith_advisor
 }
 
 set_convoys = 10
@@ -44,6 +42,14 @@ recruit_character = CAL_dylan
 recruit_character = CAL_mace
 recruit_character = CAL_daniel_hahn
 recruit_character = CAL_dwight_d_eisenhower
+recruit_character = CAL_gavin_newsom
+activate_advisor = gavin_newsom
+recruit_character = CAL_clarence_a_smith
+activate_advisor = clarence_a_smith
+recruit_character = CAL_gaming_girl
+recruit_character = CAL_alf_landon
+recruit_character = CAL_reginald
+activate_advisor = reginald
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

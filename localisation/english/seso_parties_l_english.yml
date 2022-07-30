@@ -1,14 +1,14 @@
 ﻿l_english:
 #State Parties
 
- CAL_democratic_party:0 "SDPC"
- CAL_democratic_party_long:0 "The Social Democratic Party of California"
+ CAL_democratic_party:0 "UPF(L)"
+ CAL_democratic_party_long:0 "The United Peoples Front(Liberal Faction)"
  CAL_neutrality_party:0 "SPD"
  CAL_neutrality_party_long:0 "Sacramento Police Department"
  CAL_fascism_party:0 "The Gamers"
  CAL_fascism_party_long:0 "Joe Rogan Gaming"
- CAL_communism_party:0 "CPC"
- CAL_communism_party_long:0 "The Communist Party of California"
+ CAL_communism_party:0 "UPF(D)"
+ CAL_communism_party_long:0 "The United Peoples Front(Dylanist Faction)"
 
  NEV_democratic_party:0 "Republican Party"
  NEV_democratic_party_long:0 "The Republican Party of Nevada"
@@ -19,10 +19,10 @@
  NEV_communism_party:0 "Union Party"
  NEV_communism_party_long:0 "The Union Party of Nevada"
 
- ORE_democratic_party:0 "SDPO"
- ORE_democratic_party_long:0 "The Social Democratic Party of Oregon"
- ORE_neutrality_party:0 "Independent Party"
- ORE_neutrality_party_long:0 "The Independent Party of Oregon"
+ ORE_democratic_party:0 "UPFO(S)"
+ ORE_democratic_party_long:0 "The United Peoples Front of Oregon("Socalist" Faction)"
+ ORE_neutrality_party:0 "Hubologists"
+ ORE_neutrality_party_long:0 "The Hubologists of Oregon"
  ORE_fascism_party:0 "American Patriot Party"
  ORE_fascism_party_long:0 "The American Patriot Party"
  ORE_communism_party:0 "Socialist Alternative"

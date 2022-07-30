@@ -7,7 +7,7 @@ focus_tree = {
 			tag = CAL
 		}
 	}
-	#Focus for Police Funds
+	#Focus for Feminist Protest
 	focus = {
 		id = CAL_police_funds
 		icon = GFX_goal_generic_military_sphere

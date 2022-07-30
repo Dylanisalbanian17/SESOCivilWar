@@ -54,6 +54,113 @@ characters={
 			id=-1
 		}
 	}
+	CAL_gavin_newsom = {
+		name = "Gavin Newsom"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/advisors/advisor_gavin_newsom.dds"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = gavin_newsom
+			traits = { popular_figurehead2 }
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+					has_government= democratic
+				}
+	
+			}
+		}
+		CAL_clarence_a_smith = {
+			name = "Clarence A Smith"
+			portraits = {
+				civilian = {
+					small = "gfx/interface/advisors/advisor_clarence_a_smith.dds"
+				}
+			}
+	
+			advisor = {
+				slot = political_advisor
+				idea_token = clarence_a_smith
+				traits = { silent_workhorse }
+				allowed = {
+					original_tag = CAL
+				}
+				available = {
+						has_government= democratic
+					}
+		
+				}
+			}
+			CAL_gaming_girl = {
+				name = "Pokimane"
+				portraits = {
+					civilian = {
+						small = "gfx/interface/advisors/advisor_gaming_girl.dds"
+					}
+				}
+		
+				advisor = {
+					slot = political_advisor
+					idea_token = gaming_girl
+					traits = { queen_of_the_people }
+					allowed = {
+						original_tag = CAL
+					}
+					available = {
+							has_government= democratic
+							ORE = { exists = no }
+						}
+			
+					}
+				}
+				CAL_alf_landon = {
+					name = "Alf Landon"
+					portraits = {
+						civilian = {
+							small = "gfx/interface/advisors/advisor_alf_landon.dds"
+						}
+					}
+			
+					advisor = {
+						slot = political_advisor
+						idea_token = alf_landon
+						traits = { economist }
+						allowed = {
+							original_tag = CAL
+						}
+						available = {
+								has_government= democratic
+								NEV = { exists = no }
+							}
+				
+						}
+					}
+					CAL_reginald = {
+						name = "Reginald"
+						portraits = {
+							civilian = {
+								small = "gfx/interface/advisors/theorist_reginald.dds"
+							}
+						}
+				
+						advisor = {
+							slot = theorist
+							idea_token = reginald
+							traits = { mass_assault_expert }
+							allowed = {
+								original_tag = CAL
+							}
+							available = {
+									has_government= democratic
+								}
+					
+							}
+						}
 
 	CAL_dwight_d_eisenhower={
 		name="Dwight D. Eisenhower"
