@@ -114,5 +114,40 @@ ideas = {
 				truck_attrition_factor = 0.05
 			}
 		}
+
+		idea_stasi = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				civilian_intel_to_others = -0.5
+				decryption_factor = 0.1
+				foreign_subversive_activites = -0.25
+				intelligence_agency_defense = 0.2
+			}
+		}
+
+		idea_urn = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+		}
 	}
 }
