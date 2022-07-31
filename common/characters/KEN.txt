@@ -1,0 +1,19 @@
+characters={
+
+	KEN_miller={
+		name="Miller"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/KEN/miller.dds"
+			}
+		}
+
+		country_leader={
+			ideology=centrism
+			traits = { unemployed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

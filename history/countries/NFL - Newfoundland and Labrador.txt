@@ -14,6 +14,8 @@ set_technology = {
 
 set_convoys = 30
 
+recruit_character = NFL_winter
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "2.1.1"
@@ -25,14 +27,4 @@ set_popularities = {
 	fascism = 1
 	communism = 1
 	neutrality = 75
-}
-create_country_leader = {
-	
-	name = "Winter"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
 }

@@ -1,0 +1,33 @@
+characters={
+
+	WYO_boombler={
+		name="BoomBler"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/WYO/boombler.dds"
+			}
+		}
+
+		country_leader={
+			ideology=nazism
+			traits = { unemployed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=stalinism
+			traits = { unemployed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { unemployed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}
