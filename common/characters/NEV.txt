@@ -1,0 +1,17 @@
+characters = {
+	NEV_alf_landon={
+		name="Alf Landon"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/NEV/alf_landon.dds"
+			}
+		}
+
+		country_leader={
+			ideology=liberalism
+			traits = { figurehead_president }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+}
+}

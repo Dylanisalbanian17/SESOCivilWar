@@ -14,7 +14,7 @@ set_technology = {
 }
 
 set_convoys = 10
-
+recruit_character = NEV_alf_landon
 set_politics = {
 	ruling_party = democratic
 	last_election = "4.11.6"
@@ -27,15 +27,6 @@ set_popularities = {
 	communism = 15
 	neutrality = 23
 }
-create_country_leader = {
-	
-	name = "Alf Landon"
-	picture = "alf_landon.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = { figurehead_president
-	}
-}	
 create_country_leader = {
 	
 	name = "placeholder"

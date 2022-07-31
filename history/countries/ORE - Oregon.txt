@@ -14,7 +14,7 @@ set_technology = {
 }
 
 set_convoys = 10
-
+recruit_character = ORE_gaming_girl
 set_politics = {
 	ruling_party = democratic
 	last_election = "2.1.1"
@@ -26,12 +26,4 @@ set_popularities = {
 	communism = 25
 	neutrality = 20
 }
-create_country_leader = {
-	
-	name = "Pokimane"
-	picture = "gaming_girl.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = { queen_of_the_people popular_queen
-	}
-}
+

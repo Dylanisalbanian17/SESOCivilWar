@@ -101,9 +101,9 @@ characters={
 				portraits = {
 					civilian = {
 						small = "gfx/interface/advisors/advisor_gaming_girl.dds"
+						large = "gfx/leaders/CAL/gaming_girl.dds"
 					}
 				}
-		
 				advisor = {
 					slot = political_advisor
 					idea_token = gaming_girl
@@ -125,7 +125,6 @@ characters={
 							small = "gfx/interface/advisors/advisor_alf_landon.dds"
 						}
 					}
-			
 					advisor = {
 						slot = political_advisor
 						idea_token = alf_landon
@@ -158,9 +157,90 @@ characters={
 							available = {
 									has_government= democratic
 								}
-					
 							}
 						}
+						CAL_jack_boid = {
+							name = "Jack Boid"
+							portraits = {
+								civilian = {
+									small = "gfx/interface/advisors/advisor_jack_boid.dds"
+								}
+							}
+					
+							advisor = {
+								slot = political_advisor
+								idea_token = jack_boid
+								traits = { prince_of_terror }
+								allowed = {
+									original_tag = CAL
+								}
+								available = {
+										has_idea = police_reform
+									}
+								}
+							}
+							CAL_union_agent = {
+								name = "Union Agent"
+								portraits = {
+									civilian = {
+										small = "gfx/interface/advisors/advisor_union_agent.dds"
+									}
+								}
+						
+								advisor = {
+									slot = political_advisor
+									idea_token = union_agent
+									traits = { right_trade_unionist }
+									allowed = {
+										original_tag = CAL
+									}
+									available = {
+											has_idea = police_reform
+										}
+									}
+								}
+							CAL_christopher_sands = {
+								name = "Christopher Sands"
+								portraits = {
+									civilian = {
+										small = "gfx/interface/advisors/advisor_christopher_sands.dds"
+									}
+								}
+						
+								advisor = {
+									slot = political_advisor
+									idea_token = christopher_sands
+									traits = { compassionate_gentleman }
+									allowed = {
+										original_tag = CAL
+									}
+									available = {
+											has_idea = severe_police_corruption
+										}
+									}
+								}
+								CAL_vicus_vargas = {
+									name = "Vicus Vargas"
+									portraits = {
+										civilian = {
+											small = "gfx/interface/advisors/advisor_vicus_vargas.dds"
+										}
+									}
+							
+									advisor = {
+										slot = political_advisor
+										idea_token = vicus_vargas
+										traits = { backroom_backstabber }
+										allowed = {
+											original_tag = CAL
+										}
+										available = {
+												has_idea = severe_police_corruption
+											}
+										}
+									}
+									
+
 
 	CAL_dwight_d_eisenhower={
 		name="Dwight D. Eisenhower"

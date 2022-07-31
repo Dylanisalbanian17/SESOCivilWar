@@ -1,0 +1,17 @@
+characters = {
+	ORE_gaming_girl={
+		name="Pokimane"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/ORE/gaming_girl.dds"
+			}
+		}
+
+		country_leader={
+			ideology=socialism
+			traits = { popular_queen queen_of_the_people }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+}
+}
