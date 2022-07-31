@@ -26,6 +26,3 @@ set_popularities = {
 	fascism = 90
 	democratic = 0
 }
-
-create_faction = Axis
-add_to_faction = WYO
