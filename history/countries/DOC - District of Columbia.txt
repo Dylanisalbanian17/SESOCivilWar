@@ -14,6 +14,12 @@ set_technology = {
 
 set_convoys = 30
 
+
+recruit_character = DOC_joe_mama
+recruit_character = DOC_joe_rogan
+recruit_character = DOC_di_kook
+recruit_character = DOC_mark_ruffalo
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "2.1.1"
@@ -27,8 +33,3 @@ set_popularities = {
 	communism = 25
 	neutrality = 25
 }
-
-recruit_character = DOC_joe_mama
-recruit_character = DOC_joe_rogan
-recruit_character = DOC_di_kook
-recruit_character = DOC_mark_ruffalo

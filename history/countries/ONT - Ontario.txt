@@ -31,6 +31,8 @@ if = {
 	}
 }
 
+recruit_character = ONT_jolly
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "2.1.1"
@@ -42,11 +44,4 @@ set_popularities = {
 	fascism = 10
 	democratic = 50
 	neutrality = 30
-}
-create_country_leader = {
-	
-	name = "Jolly"
-	picture = "jolly.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
 }

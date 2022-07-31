@@ -1,0 +1,19 @@
+characters={
+
+	NFL_winter={
+		name="Winter"
+		portraits = {
+			civilian = {
+				large="gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+			}
+		}
+
+		country_leader={
+			ideology=centrism
+			traits = { employed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

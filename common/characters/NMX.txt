@@ -1,0 +1,19 @@
+characters={
+
+	NMX_mute={
+		name="Mute"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/NMX/mute.dds"
+			}
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { employed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

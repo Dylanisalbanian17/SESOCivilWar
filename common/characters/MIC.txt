@@ -1,0 +1,40 @@
+characters={
+
+	MIC_jacks={
+		name="Jacks"
+		portraits = {
+			civilian = {
+				#large="gfx//leaders//ALB//Portrait_Albania_King_Zog.dds"
+			}
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { employed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=nazism
+			traits = { employed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=stalinism
+			traits = { employed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=socialism
+			traits = { employed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

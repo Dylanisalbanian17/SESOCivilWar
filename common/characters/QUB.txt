@@ -1,0 +1,19 @@
+characters={
+
+	QUB_lanix={
+		name="Lanix"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/QUB/lanix.dds"
+			}
+		}
+
+		country_leader={
+			ideology=centrism
+			traits = { unemployed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+}
