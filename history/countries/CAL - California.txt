@@ -38,10 +38,11 @@ set_popularities = {
 	communism = 35
 	neutrality = 0
 }
+# LEADERS
 recruit_character = CAL_dylan
 recruit_character = CAL_mace
 recruit_character = CAL_daniel_hahn
-recruit_character = CAL_dwight_d_eisenhower
+# ADVISORS
 recruit_character = CAL_gavin_newsom
 activate_advisor = gavin_newsom
 recruit_character = CAL_clarence_a_smith
@@ -54,6 +55,11 @@ recruit_character = CAL_jack_boid
 recruit_character = CAL_union_agent
 recruit_character = CAL_christopher_sands
 recruit_character = CAL_vicus_vargas
+# GENERALS
+recruit_character = CAL_mark_fischbach
+recruit_character = CAL_nanami_kochi
+recruit_character = CAL_jonathan_gillette
+recruit_character = CAL_crystal_mccoy
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

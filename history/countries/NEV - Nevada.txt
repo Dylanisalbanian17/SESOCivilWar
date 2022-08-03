@@ -14,7 +14,16 @@ set_technology = {
 }
 
 set_convoys = 10
+
+#LEADERS
 recruit_character = NEV_alf_landon
+#ADVISORS
+
+#GENERALS
+recruit_character = NEV_james_allardice
+recruit_character = NEV_henrietta_bulka
+recruit_character = NEV_lionel_boone
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "4.11.6"

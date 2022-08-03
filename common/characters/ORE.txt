@@ -14,4 +14,102 @@ characters = {
 			id=-1
 		}
 }
+
+
+ORE_pierce_rosencrantz ={
+	name="Pierce Rosencrantz"
+	portraits={
+		army={
+			large=GFX_portrait_ger_hans_von_luck
+		}
+		army={
+			small="GFX_idea_GER_hans_von_luck"
+		}
+	}
+	advisor={
+		slot = high_command
+		idea_token = pierce_rosencrantz
+		allowed = {
+				original_tag = ORE
+			}
+			traits = {
+				army_infantry_2
+			}
+	}
+	corps_commander={
+		traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+		skill = 5
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+ORE_heath_guildenstern ={
+	name="Heath Guildenstern"
+	portraits={
+		army={
+			large=GFX_portrait_ger_hans_von_luck
+		}
+		army={
+			small="GFX_idea_GER_hans_von_luck"
+		}
+	}
+	advisor={
+		slot = high_command
+		idea_token = heath_guildenstern
+		allowed = {
+				original_tag = ORE
+			}
+			traits = {
+				army_infantry_2
+			}
+	}
+	corps_commander={
+		traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+		skill = 5
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+ORE_hodges ={
+	name="Hodges"
+	portraits={
+		army={
+			large=GFX_portrait_usa_alexander_vandegrift
+		}
+		army={
+			small="GFX_idea_USA_alexander_vandegrift"
+		}
+	}
+	corps_commander={
+		traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+		skill = 5
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+ORE_sandra_spurlock ={
+	name="Sandra Spurlock"
+	portraits={
+		army={
+			large=GFX_portrait_SOV_aleksandra_kollontay
+		}
+		army={
+			small="GFX_idea_SOV_aleksandra_kollontay"
+		}
+	}
+	corps_commander={
+		traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+		skill = 5
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
 }

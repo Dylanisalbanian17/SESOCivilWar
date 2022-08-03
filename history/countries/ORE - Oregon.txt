@@ -14,7 +14,17 @@ set_technology = {
 }
 
 set_convoys = 10
+
+#LEADERS
 recruit_character = ORE_gaming_girl
+#ADVISORS
+
+#GENERALS
+recruit_character = ORE_pierce_rosencrantz
+recruit_character = ORE_heath_guildenstern
+recruit_character = ORE_hodges
+recruit_character = ORE_sandra_spurlock
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "2.1.1"

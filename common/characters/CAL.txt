@@ -242,14 +242,72 @@ characters={
 									
 
 
-	CAL_dwight_d_eisenhower={
-		name="Dwight D. Eisenhower"
+	CAL_mark_fischbach ={
+		name="Mark Fischbach"
 		portraits={
 			army={
-				large=GFX_portrait_USA_dwight_d_eisenhower
+				large=GFX_portrait_ger_hans_von_luck
 			}
 			army={
-				small="GFX_idea_dwight_eisenhower"
+				small="GFX_idea_GER_hans_von_luck"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = mark_fischbach
+			allowed = {
+					original_tag = CAL
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+		}
+		corps_commander={
+			traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	CAL_nanami_kochi ={
+		name="Nanami Kochi"
+		portraits={
+			army={
+				large=GFX_portrait_man_yoshiko_kawashima
+			}
+			army={
+				small="GFX_idea_MAN_yoshiko_kawashima"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = nanami_kochi
+			allowed = {
+					original_tag = CAL
+				}
+				traits = {
+					army_infantry_2
+				}
+		}
+		corps_commander={
+			traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	CAL_jonathan_gillette ={
+		name="Jonathan Gillette"
+		portraits={
+			army={
+				large=GFX_portrait_usa_alexander_vandegrift
+			}
+			army={
+				small="GFX_idea_USA_alexander_vandegrift"
 			}
 		}
 		corps_commander={
@@ -259,8 +317,25 @@ characters={
 			defense_skill = 3
 			planning_skill = 5
 			logistics_skill = 5
-			legacy_id=602
 		}
 	}
-
+	CAL_crystal_mccoy ={
+		name="Crystal Mccoy"
+		portraits={
+			army={
+				large=GFX_portrait_SOV_aleksandra_kollontay
+			}
+			army={
+				small="GFX_idea_SOV_aleksandra_kollontay"
+			}
+		}
+		corps_commander={
+			traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
 }

@@ -19,7 +19,7 @@ set_politics = {
 	last_election = "2.1.1"
 	election_frequency = 48
 	elections_allowed = yes
-}n
+}
 
 set_popularities = {
 	democratic = 25
