@@ -20,6 +20,25 @@ ideas = {
 
 			traits = { tank_manufacturer }
 		}
+
+		seso_arma3_manufacturer = {
+				#picture
+
+				allowed = {
+					NOT = {
+						has_available_idea_with_traits = { idea = infantry_tank_manufacturer limit = 1 }
+					}
+				}
+	
+				cost = 150
+				removal_cost = 10
+	
+				research_bonus = {
+					armor = 0.15
+				}
+	
+				traits = { infantry_tank_manufacturer }
+		}
 	}
 
 	aircraft_manufacturer = { 
@@ -137,7 +156,7 @@ ideas = {
 
 			allowed = {
 				NOT = {
-					has_available_idea_with_traits = { idea = naval_manufacturer limit = 1 }
+					has_available_idea_with_traits = { idea = raiding_fleet_naval_manufacturer limit = 1 }
 				}
 			}
 			
@@ -148,7 +167,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { naval_manufacturer }
+			traits = { raiding_fleet_naval_manufacturer }
 		}
 	}
 
@@ -162,7 +181,7 @@ ideas = {
 			
 			allowed = {
 				NOT = {
-					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
+					has_available_idea_with_traits = { idea = construction_company limit = 1 }
 				}
 			}
 			
@@ -170,11 +189,32 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				industry = 0.15
+				construction_tech = 0.15
 			}
 			
-			traits = { industrial_concern }
+			traits = { construction_company }
 		}
+
+		seso_railwayempire_manufacturer = {
+
+			#picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = railway_company limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				train_tech = 0.15
+			}
+			
+			traits = { railway_company }
+		}
+
 
 		seso_spaceengineers_concern = {
 			
@@ -194,6 +234,26 @@ ideas = {
 			}
 			
 			traits = { electronics_concern }
+		}
+
+		seso_garrysmod_concern = {
+			
+			#picture = generic_electronics_concern_1
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
 		}
 	}
 
@@ -221,7 +281,47 @@ ideas = {
 			traits = { motorized_equipment_manufacturer }
 		}
 
-		seso_guiltygear_manufacturer = {
+		seso_blackops1_manufacturer = {
+			
+			#picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+
+		seso_blackops2_manufacturer = {
+			
+			#picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+
+		seso_blackops3_manufacturer = {
 			
 			#picture = generic_infantry_equipment_manufacturer_2
 

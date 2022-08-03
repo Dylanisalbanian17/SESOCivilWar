@@ -129,7 +129,7 @@ focus_tree = {
 			focus = cot_focus_convince_0 OR = cot_focus_convince_1 }
 			
 		completion_reward = {
-			add_war_support = 0.1
+			add_war_support = 0.2
 			random_list = {
 				83.9 = {
 					set_country_flag = cot_convince_flag
@@ -152,7 +152,7 @@ focus_tree = {
 		prerequisite = {
 			focus = cot_focus_convince_0 OR = cot_focus_convince_1 }
 		completion_reward = {
-			add_stability = 0.1
+			add_stability = 0.2
 			random_list = {
 				83.9 = {
 					set_country_flag = cot_convince_flag
@@ -262,6 +262,7 @@ focus_tree = {
 			focus = cot_focus_convince_4 OR = cot_focus_convince_5 OR = cot_focus_elect_generico
 		}
 		completion_reward = {
+			set_country_leader_name = { name = "Definitely Not Sag" }
 			every_state = {
 				remove_core_of = COT
 				remove_claim_by = COT
@@ -353,7 +354,7 @@ focus_tree = {
 
 	focus = {
 		id = cot_focus_sgnrecruitment
-		icon = GFX_focus_spa_save_the_alcazar
+		icon = GFX_focus_chi_army_reform
 		cost = 5
 		x = 7
 		y = 12
@@ -368,7 +369,7 @@ focus_tree = {
 
 	focus = {
 		id = cot_focus_writehandbook
-		icon = GFX_focus_spa_save_the_alcazar
+		icon = GFX_focus_TUR_ratify_the_six_arrows
 		cost = 5
 		x = 9
 		y = 11
@@ -388,7 +389,7 @@ focus_tree = {
 
 	focus = {
 		id = cot_focus_banerp
-		icon = GFX_focus_spa_save_the_alcazar
+		icon = GFX_goal_anti_comintern_pact
 		cost = 5
 		x = 11
 		y = 10
@@ -406,7 +407,7 @@ focus_tree = {
 
 	focus = {
 		id = cot_focus_medicalrp
-		icon = GFX_focus_spa_save_the_alcazar
+		icon = GFX_focus_POL_beck_ribbentrop
 		cost = 5
 		x = 11
 		y = 12
@@ -415,7 +416,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.4
+				bonus = 0.5
 				uses = 1
 				category = infantry_tech
 			}
@@ -424,7 +425,7 @@ focus_tree = {
 
 	focus = {
 		id = cot_focus_xoposition
-		icon = GFX_focus_spa_save_the_alcazar
+		icon = GFX_focus_BUL_form_a_regency_council
 		cost = 5
 		x = 9
 		y = 13
@@ -446,7 +447,7 @@ focus_tree = {
 	}
 
 
-####Racial Inequality Branch
+####Economic Branch
 	focus = {
 		id = cot_focus_race
 		icon = GFX_focus_por_workers_of_iberia
@@ -458,7 +459,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = -0.1
-			random_owned_state = { add_resistance = 30 }
 
 		}
 	}
@@ -571,31 +571,67 @@ focus_tree = {
 			focus = cot_focus_race
 		}
 		completion_reward = {
-			add_stability = -0.1
 		}
 	}
 
 
-####Sex LOA Focuses
+####Industrial Minecraft Focuses
 	focus = {
-		id = cot_focus_sex1
-		icon = GFX_goal_generic_position_armies
-		cost = 8
-		x = 24
-		y = 9
+		id = cot_focus_join_boxcraft
+		icon = GFX_focus_smiling_buddha
+		cost = 5
+		x = 10
+		y = 2
+		relative_position_id = cot_focus_ijoin
 		prerequisite = {
 			focus = cot_focus_ijoin
 		}
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
 		completion_reward = {
+			add_political_power = 75
+			every_owned_state = {
+				damage_building = { type = infrastructure damage = 1 }
+				damage_building = { type = arms_factory damage = 1 }
+				damage_building = { type = industrial_complex damage = 1 }
+			}
+			add_timed_idea = {
+				idea = idea_gamba_gaming
+				days = 180
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_build_kythira_piracy
+		icon = GFX_focus_GRE_a_land_of_mountains
+		cost = 5
+		x = -4
+		y = 2
+		relative_position_id = cot_focus_join_boxcraft
+		prerequisite = {
+			focus = cot_focus_join_boxcraft
+		}
+		completion_reward = {
+			add_ideas = idea_greek_piracy_1
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 3
+				category = naval_doctrine
+			}
 			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+				
+
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
+					type = dockyard
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = arms_factory
-					level = 1
+					type = naval_base
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -603,24 +639,98 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cot_focus_sex2
-		icon = GFX_goal_generic_position_armies
-		cost = 8
-		x = 24
-		y = 10
+		id = cot_focus_build_trireme
+		icon = GFX_focus_GRE_a_long_and_proud_tradition
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = cot_focus_build_kythira_piracy
 		prerequisite = {
-			focus = cot_focus_sex1
+			focus = cot_focus_build_kythira_piracy
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 3
+				category = bb_tech
+			}
+			create_ship = {
+				type = ship_hull_heavy
+				equipment_variant = "Kythira Class"
+				name = "Pirate Trireme"
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_sail_to_venice
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = cot_focus_build_trireme
+		prerequisite = {
+			focus = cot_focus_build_trireme
+		}
+		available = {
+			NJE = {
+				has_completed_focus = nje_focus_build_venice
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = idea_greek_piracy_1
+				add_idea = idea_greek_piracy_2
+			}
+			navy_experience = 150
+			NJE = {
+				navy_experience = 150
+				add_timed_idea = {
+					idea = idea_greek_piracy_2
+					days = 360
+				}
+				remove_ideas = idea_mocreatures_spam
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_build_guangdong
+		icon = GFX_focus_chi_united_front
+		cost = 5
+		x = -2
+		y = 2
+		relative_position_id = cot_focus_join_boxcraft
+		prerequisite = {
+			focus = cot_focus_join_boxcraft
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_build_clan_palace
+		icon = GFX_focus_SOV_rebuild_the_savior_cathedral
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = cot_focus_build_guangdong
+		prerequisite = {
+			focus = cot_focus_build_guangdong
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -628,80 +738,110 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cot_focus_sex3
-		icon = GFX_goal_generic_position_armies
-		cost = 8
-		x = 24
-		y = 11
+		id = cot_focus_sow_terrace_farms
+		icon = GFX_focus_SOV_bukharan_republic
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = cot_focus_build_clan_palace
 		prerequisite = {
-			focus = cot_focus_sex2
+			focus = cot_focus_build_clan_palace
 		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
 			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+			add_ideas = idea_terrace_farms
 		}
 	}
 
 	focus = {
-		id = cot_focus_sex4
-		icon = GFX_goal_generic_position_armies
-		cost = 8
-		x = 24
-		y = 12
+		id = cot_focus_build_black_god_theocracy
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
-			focus = cot_focus_sex3
+			focus = cot_focus_join_boxcraft
 		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
+			add_stability = 0.25
+			add_war_support = 0.15
 		}
 	}
 
 	focus = {
-		id = cot_focus_sex5
-		icon = GFX_goal_generic_position_armies
-		cost = 8
-		x = 24
-		y = 13
+		id = cot_focus_assign_black_pope
+		icon = GFX_focus_por_concordat
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = cot_focus_build_black_god_theocracy
 		prerequisite = {
-			focus = cot_focus_sex4
+			focus = cot_focus_build_black_god_theocracy
 		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
+			add_ideas = idea_black_religion
 		}
 	}
 
+	focus = {
+		id = cot_focus_build_bear_clan
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		cost = 5
+		x = 2
+		y = 2
+		relative_position_id = cot_focus_join_boxcraft
+		prerequisite = {
+			focus = cot_focus_join_boxcraft
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = cot_focus_connect_roads
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = cot_focus_build_bear_clan
+		prerequisite = {
+			focus = cot_focus_build_bear_clan
+		}
+		completion_reward = {
+			every_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = idea_iroquois_roads
+		}
+	}
+
+	focus = {
+		id = cot_focus_build_vladivostok
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 5
+		x = 4
+		y = 2
+		relative_position_id = cot_focus_join_boxcraft
+		prerequisite = {
+			focus = cot_focus_join_boxcraft
+		}
+		completion_reward = {
+		}
+	}
 ####Tier 3
 ####Cultural Hegemony
 	focus = {
@@ -716,180 +856,11 @@ focus_tree = {
 		prerequisite = {
 			focus = cot_focus_whiteemigration OR = cot_focus_getajob
 		}
-		prerequisite = {
-			focus = cot_focus_sex5
-		}
 		
 		completion_reward = {
 			add_stability = 0.2
 			activate_decision = COT_changeprofilepicture
 		}
-	}
-
-
-### Sagcraft Tree
-	focus = {
-		id = cot_focus_joinboxcraft
-		icon = GFX_focus_por_the_pink_map
-		cost = 5
-		x = 8
-		y = 18
-		prerequisite = {
-			focus = cot_focus_hegemony
-		}
-		
-		completion_reward = {}
-	}
-
-	focus = {
-		id = cot_focus_gambagaming
-		icon = GFX_focus_smiling_buddha
-		cost = 5
-		x = 8
-		y = 20
-		prerequisite = {
-			focus = cot_focus_joinboxcraft
-		}
-		
-		completion_reward = {}
-	}
-
-	focus = {
-		id = cot_focus_createsagcraft
-		icon = GFX_focus_generic_support_the_left_right
-		cost = 5
-		x = 6
-		y = 22
-		prerequisite = {
-			focus = cot_focus_gambagaming
-		}
-		mutually_exclusive = {
-			focus = cot_focus_enhanceboxcraft
-		}
-		
-		completion_reward = {}
-	}
-
-	focus = {
-		id = cot_focus_enhanceboxcraft
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 10
-		y = 22
-		prerequisite = {
-			focus = cot_focus_gambagaming
-		}
-		mutually_exclusive = {
-			focus = cot_focus_createsagcraft
-		}
-		
-		completion_reward = {}
-	}
-
-	focus = {
-		id = cot_focus_sailvenice
-		icon = GFX_goal_generic_navy_battleship
-		cost = 5
-		x = 8
-		y = 24
-		prerequisite = {
-			focus = cot_focus_createsagcraft
-			focus = cot_focus_enhanceboxcraft
-		}
-		
-		completion_reward = {}
-	}
-
-	focus = {
-		id = cot_focus_guangxi
-		icon = GFX_focus_chi_cooperation_with_the_nationalists
-		cost = 5
-		x = 6
-		y = 26
-		prerequisite = {
-			focus = cot_focus_sailvenice
-		}
-		
-		completion_reward = {}
-	}
-
-	focus = {
-		id = cot_focus_clanpalace
-		icon = GFX_focus_spa_save_the_alcazar
-		cost = 5
-		x = 4
-		y = 28
-		prerequisite = {
-			focus = cot_focus_guangxi
-		}
-		
-		completion_reward = {}
-	}
-
-
-	focus = {
-		id = cot_focus_liangguang
-		icon = GFX_focus_chi_proclaim_rival_government
-		cost = 5
-		x = 6
-		y = 28
-		prerequisite = {
-			focus = cot_focus_guangxi
-		}
-		
-		completion_reward = {}
-	}
-
-	focus = {
-		id = cot_focus_guangdong
-		icon = GFX_focus_chi_one_china_policy
-		cost = 5
-		x = 6
-		y = 30
-		prerequisite = {
-			focus = cot_focus_liangguang
-		}
-		
-		completion_reward = {}
-	}
-
-	focus = {
-		id = cot_focus_blackpig
-		icon = GFX_focus_AST_squander_bug
-		cost = 5
-		x = 10
-		y = 26
-		prerequisite = {
-			focus = cot_focus_sailvenice
-		}
-		
-		completion_reward = {}
-	}
-
-	focus = {
-		id = cot_focus_blackgod
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-		cost = 5
-		x = 10
-		y = 28
-		prerequisite = {
-			focus = cot_focus_blackpig
-		}
-		
-		completion_reward = {}
-	}
-
-	focus = {
-		id = cot_focus_blackpope
-		icon = GFX_focus_por_concordat
-		cost = 5
-		x = 10
-		y = 30
-		prerequisite = {
-			focus = cot_focus_blackgod
-		}
-		
-		completion_reward = {}
 	}
 
 ### GGN Developer
@@ -916,7 +887,26 @@ focus_tree = {
 			focus = cot_focus_developerpromo
 		}
 		
-		completion_reward = {}
+		completion_reward = {
+			COT_sevens = {
+				add_corps_commander_role = {
+					traits={}
+					skill = 2
+					attack_skill = 2
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				}
+
+				add_advisor_role = {
+					advisor = {
+						slot = political_advisor
+						idea_token = sevens
+						traits = {  }
+					}
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -929,7 +919,26 @@ focus_tree = {
 			focus = cot_focus_sevens
 		}
 		
-		completion_reward = {}
+		completion_reward = {
+			COT_sauce = {
+				add_corps_commander_role = {
+					traits={}
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				}
+
+				add_advisor_role = {
+					advisor = {
+						slot = political_advisor
+						idea_token = sauce
+						traits = {  }
+					}
+				}
+			}
+		}
 	}
 
 	focus = {

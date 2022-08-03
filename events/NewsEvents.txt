@@ -31,8 +31,7 @@ news_event = {
 		name = news.2.a
 		trigger = {
 			NOT = { 
-				tag = CAL
-				has_country_leader = { ruling_only = yes name = "Dylan"}
+				has_country_leader = { character = CAL_dylan ruling_only = yes }
 			}
 		}
 	}
@@ -40,8 +39,7 @@ news_event = {
 	option = {
 		name = news.2.b
 		trigger = {
-			tag = CAL
-			has_country_leader = { ruling_only = yes name = "Dylan"}
+			has_country_leader = { character = CAL_dylan ruling_only = yes }
 		}
 
 	}
@@ -59,7 +57,7 @@ news_event = {
 	option = {
 		name = news.3.a
 		trigger = {
-			NOT = { tag = VIA }
+			NOT = { original_tag = VIA }
 		}
 	
 	}
@@ -76,14 +74,14 @@ news_event = {
 	id = news.4
 	title = news.4.t
 	desc = news.4.d
-	#picture = GFX_news_event_german_reichstag_ruins_02
+	picture = GFX_news_event_prc_declared
 	major = yes
 	is_triggered_only = yes
 
 	option = {
 		name = news.4.a
 		trigger = {
-			NOT = { tag = NJE }
+			NOT = { original_tag = NJE }
 		}
 	
 	}

@@ -9,7 +9,7 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_chi_incompetent_officers
 
 			modifier = {
 				political_power_cost = 0.2
@@ -31,7 +31,7 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_chi_forced_conscription
 
 			modifier = {
 				army_org_factor = -0.25
@@ -51,7 +51,7 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_gre_phaliron_aircraft
 
 			modifier = {
 				army_speed_factor = 0.10
@@ -70,7 +70,7 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_generic_goods_red_bonus
 
 			modifier = {
 				army_armor_defence_factor = 0.1
@@ -91,7 +91,7 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_tur_sectarian_woes
 
 			modifier = {
 				consumer_goods_factor = 0.05
@@ -108,7 +108,7 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_FRA_motorized_focus
 
 			modifier = {
 				truck_attrition_factor = 0.05
@@ -124,7 +124,7 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_generic_oppression
 
 			modifier = {
 				civilian_intel_to_others = -0.5
@@ -143,7 +143,7 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_vittoria_mutilata
 
 			modifier = {
 				consumer_goods_factor = -0.2

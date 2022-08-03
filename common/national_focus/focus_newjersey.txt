@@ -11,7 +11,7 @@ focus_tree = {
 ####Industrial
 	focus = {
 		id = nje_focus_urn
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_POL_support_global_falangism
 		cost = 5
 		x = 5
 		y = 0
@@ -25,7 +25,7 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_manufacture_tron_cycles
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_goal_generic_army_motorized
 		cost = 5
 		x = 4
 		y = 1
@@ -39,7 +39,7 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_fix_lag
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 5
 		x = 4
 		y = 2
@@ -54,7 +54,7 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_build_castles
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_goal_generic_fortify_city
 		cost = 5
 		x = 6
 		y = 1
@@ -80,7 +80,7 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_manufacture_transformers
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_generic_rubber
 		cost = 5
 		x = 6
 		y = 2
@@ -95,7 +95,7 @@ focus_tree = {
 ####Political
 	focus = {
 		id = nje_focus_play_unturned
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_LAT_suspend_constitution_of_latvia
 		cost = 18
 		x = 15
 		y = 0
@@ -106,7 +106,7 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_play_garrys_mod
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_spa_the_war_of_vengeance
 		cost = 5
 		x = 15
 		y = 1
@@ -121,7 +121,7 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_found_arma_unit
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_goal_generic_national_unity
 		cost = 5
 		x = 15
 		y = 2
@@ -130,19 +130,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_faction = "Clan Kyram"
+			country_event = new_jersey.1
 			set_global_flag = flag_seso_created
-			if = {
-				limit = {
-					VIA = {
-						has_country_leader = {
-							character = VIA_ryder
-							ruling_only = yes
-						}
-					}
-				}
-				VIA = { country_event = new_jersey.2 }
-			}
-
 			if = {
 				limit = {
 					COT = {
@@ -153,6 +142,18 @@ focus_tree = {
 					}
 				}
 				COT = { country_event = new_jersey.2 }
+			}
+
+			if = {
+				limit = {
+					VIA = {
+						has_country_leader = {
+							character = VIA_ryder
+							ruling_only = yes
+						}
+					}
+				}
+				VIA = { country_event = new_jersey.2 }
 			}
 
 			if = {
@@ -171,7 +172,7 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_dallgaming
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_goal_generic_major_alliance
 		cost = 5
 		x = 13
 		y = 3
@@ -189,7 +190,7 @@ focus_tree = {
 	
 	focus = {
 		id = nje_focus_dallwhoring
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_goal_generic_major_war
 		cost = 5
 		x = 17
 		y = 3
@@ -208,9 +209,9 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_babygaming
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_smiling_buddha
 		cost = 5
-		x = 17
+		x = 15
 		y = 4
 		prerequisite = {
 			focus = nje_focus_dallgaming OR = nje_focus_dallwhoring
@@ -229,7 +230,7 @@ focus_tree = {
 ##### SESO Path
 	focus = {
 		id = nje_focus_leave_arma_unit
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_prc_infiltration
 		cost = 5
 		x = 2
 		y = 1
@@ -238,19 +239,17 @@ focus_tree = {
 			focus = nje_focus_dallwhoring
 		}
 		available = {
-			is_faction_leader = no
+			is_faction_leader = yes
 		}
 		completion_reward = {
-			all_allied_country = {
-				if = {
-					limit = {
-						is_free_or_subject_of_root = yes
-						is_in_faction_with = NJE
-					}
-					add_opinion_modifier = {
-						target = NJE
-						modifier = faction_traitor
-					}
+			every_other_country = {
+				limit = {
+					is_free_or_subject_of_root = yes
+					is_in_faction_with = NJE
+				}
+				add_opinion_modifier = {
+					target = NJE
+					modifier = faction_traitor
 				}
 			}
 			leave_faction = yes
@@ -259,7 +258,7 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_deny_owning_arma
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_EST_era_of_silence
 		cost = 5
 		x = 0
 		y = 1
@@ -268,14 +267,15 @@ focus_tree = {
 			focus = nje_focus_leave_arma_unit
 		}
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 
 	focus = {
 		id = nje_focus_join_operation
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 5
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = nje_focus_dallgaming
 		prerequisite = {
@@ -298,13 +298,13 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_keep_username
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_rom_royal_dictatorship
 		cost = 5
 		x = 0
-		y = 2
-		relative_position_id = nje_focus_join_operation
+		y = 3
+		relative_position_id = nje_focus_dallgaming
 		prerequisite = {
-			focus = nje_focus_join_operation
+			focus = nje_focus_dallgaming
 		}
 		completion_reward = {
 			
@@ -313,7 +313,7 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_establish_jerseybourg
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_POL_end_the_regency
 		cost = 5
 		x = 0
 		y = 2
@@ -339,40 +339,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = nje_focus_build_venice
-		#icon = GFX_focus_eng_the_kings_party
-		cost = 10
-		x = 2
-		y = 2
-		relative_position_id = nje_focus_establish_italy
-		prerequisite = {
-			focus = nje_focus_establish_italy
-		}
-		completion_reward = {
-			set_country_leader_name = { name "Doge Korgi" }
-			random_owned_controlled_state = {
-				is_coastal = yes
-
-				set_state_name = "Venice"
-				add_building_construction = {
-					type = dockyard
-					level = 8
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 8
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = nje_focus_establish_italy
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_generic_italy_first
 		cost = 5
-		x = -3
+		x = -4
 		y = 2
 		relative_position_id = nje_focus_keep_username
 		mutually_exclusive = {
@@ -392,8 +362,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = nje_focus_build_venice
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10
+		x = 2
+		y = 2
+		relative_position_id = nje_focus_establish_italy
+		prerequisite = {
+			focus = nje_focus_establish_italy OR = nje_focus_establish_jerseybourg
+		}
+		completion_reward = {
+			set_country_leader_name = { name = "Doge Korgi" }
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+
+				set_state_name = "Venice"
+				add_building_construction = {
+					type = dockyard
+					level = 8
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 8
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = nje_focus_idealize_mussolini
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_ger_assassinate_mussolini
 		cost = 5
 		x = 0
 		y = 2
@@ -404,7 +404,31 @@ focus_tree = {
 		completion_reward = {
 			set_country_leader_name = { name = "Duce Korgi" }
 			set_country_leader_portrait = { portrait = "gfx/leaders/NJE/korgi_f.dds" }
-			recruit_character = NJE_benito_mussolini
+			NJE_benito_mussolini = {
+
+				add_advisor_role = {
+					advisor = {
+						slot = army_chief
+						idea_token = benito_mussolini
+						traits = {
+							fascist_orchestrator
+						}
+						ai_will_do = {
+							factor = 1
+						}
+					}
+				}
+
+				add_field_marshal_role={
+					traits={ old_guard politically_connected }
+					skill=4
+					attack_skill=3
+					defense_skill=2
+					planning_skill=3
+					logistics_skill=2
+				}
+			}
+
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.35
@@ -414,22 +438,22 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_change_username
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_rom_abdicate
 		cost = 5
 		x = 0
-		y = 2
-		relative_position_id = nje_focus_babygaming
+		y = 3
+		relative_position_id = nje_focus_dallwhoring
 		prerequisite = {
-			focus = nje_focus_babygaming
+			focus = nje_focus_dallwhoring
 		}
 		completion_reward = {
-			set_country_leader_name = "Ice Cream"
+			set_country_leader_name = { name = "Ice Cream" }
 		}
 	}
 
 	focus = {
 		id = nje_focus_establish_union
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_generic_join_comintern
 		cost = 10
 		x = 0
 		y = 2
@@ -449,7 +473,7 @@ focus_tree = {
 
 	focus = {
 		id = nje_focus_declare_baby_slur
-		#icon = GFX_focus_eng_the_kings_party
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
 		cost = 5
 		x = 0
 		y = 1
@@ -459,12 +483,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			news_event = news.4
+			add_stability = 0.15
 		}
 	}
 
 	focus = {
-		id = nje_create_stasi
-		#icon = GFX_focus_eng_the_kings_party
+		id = nje_focus_create_stasi
+		icon = GFX_focus_SOV_penal_battalions
 		cost = 5
 		x = -2
 		y = 1
@@ -481,14 +506,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = nje_perform_psych_warfare
-		#icon = GFX_focus_eng_the_kings_party
+		id = nje_focus_perform_psych_warfare
+		icon = GFX_focus_spr_crush_the_revolution
 		cost = 5
 		x = 0
 		y = 1
-		relative_position_id = nje_create_stasi
+		relative_position_id = nje_focus_create_stasi
 		prerequisite = {
-			focus = nje_create_stasi
+			focus = nje_focus_create_stasi
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -502,17 +527,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = nje_crackdown_babysayers
-		#icon = GFX_focus_eng_the_kings_party
+		id = nje_focus_crackdown_babysayers
+		icon = GFX_focus_SOV_the_last_purge
 		cost = 5
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = nje_focus_declare_baby_slur
 		prerequisite = {
 			focus = nje_focus_declare_baby_slur
 		}
 		prerequisite = {
-			focus = nje_focus_stasi
+			focus = nje_focus_perform_psych_warfare
 		}
 		completion_reward = {
 			add_stability = 0.35
@@ -524,8 +549,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = nje_lockdown_cape_may
-		#icon = GFX_focus_eng_the_kings_party
+		id = nje_focus_lockdown_cape_may
+		icon = GFX_focus_por_the_pink_map
 		cost = 5
 		x = 2
 		y = 1

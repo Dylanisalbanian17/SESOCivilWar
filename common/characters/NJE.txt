@@ -36,33 +36,33 @@ characters={
 		portraits = {
 			civilian = {
 				large=GFX_portrait_ITA_benito_mussolini
-				#small=GFX_portrait_ITA_benito_mussolini
+				small=GFX_idea_ITA_benito_mussolini
 			}
 			army = {
 				large=GFX_portrait_ITA_benito_mussolini
-				#small=GFX_portrait_ITA_benito_mussolini
+				small=GFX_portrait_ITA_benito_mussolini
 			}
 		}
-		advisor = {
-			slot = army_chief
-			idea_token = benito_mussolini
-			traits = {
-				fascist_orchestrator
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		field_marshal={
-			traits={ old_guard politically_connected }
-			skill=4
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=0
-		}
+		#advisor = {
+		#	slot = army_chief
+		#	idea_token = benito_mussolini
+		#	traits = {
+		#		fascist_orchestrator
+		#	}
+		#	ai_will_do = {
+		#		factor = 1
+		#	}
+		#}
+#
+		#field_marshal={
+		#	traits={ old_guard politically_connected }
+		#	skill=4
+		#	attack_skill=3
+		#	defense_skill=2
+		#	planning_skill=3
+		#	logistics_skill=2
+		#	legacy_id=0
+		#}
 	}
 
 }
