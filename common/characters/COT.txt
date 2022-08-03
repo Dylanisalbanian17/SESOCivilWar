@@ -81,6 +81,66 @@
 		}
 	}
 
+	COT_sevens={
+		name="Sevens"
+		portraits={
+			civilian = {
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+			army={
+				#large=GFX_portrait_GER_friedrich_paulus
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		#corps_commander={
+		#	traits={}
+		#	skill = 1
+		#	attack_skill = 1
+		#	defense_skill = 1
+		#	planning_skill = 1
+		#	logistics_skill = 1
+		#}
+
+		#advisor = {
+		#	slot = political_advisor
+		#	idea_token = sevens
+		#	traits = {  }
+		#	allowed = {
+		#		original_tag = COT
+		#	}
+		#}
+	}
+
+	COT_sauce={
+		name="Sauce"
+		portraits={
+			civilian = {
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+			army={
+				#large=GFX_portrait_GER_friedrich_paulus
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		#corps_commander={
+		#	traits={}
+		#	skill = 1
+		#	attack_skill = 1
+		#	defense_skill = 1
+		#	planning_skill = 1
+		#	logistics_skill = 1
+		#}
+#
+		#advisor = {
+		#	slot = political_advisor
+		#	idea_token = sauce
+		#	traits = {  }
+		#	allowed = {
+		#		original_tag = COT
+		#	}
+		#}
+	}
+
 	COT_avgn = {
 		name = "Angry Video Game Nerd"
 		portraits = {

@@ -4,7 +4,7 @@ country_event = {
 	id = new_jersey.1
 	title = new_jersey.1.t
 	desc = new_jersey.1.d
-	#picture = GFX_report_event_bul_prince_simeon
+	picture = GFX_report_event_imperial_conference
 	
 	is_triggered_only = yes
 
@@ -32,7 +32,7 @@ country_event = {
 	id = new_jersey.2
 	title = new_jersey.2.t
 	desc = new_jersey.2.d
-	#picture = GFX_report_event_bul_prince_simeon
+	picture = GFX_report_event_molotov_ribentrop_handshake
 	
 	is_triggered_only = yes
 
@@ -41,9 +41,9 @@ country_event = {
 		name = new_jersey.2.a
 		ai_chance = { factor = 90 }
 		NJE = { add_to_faction = ROOT }
-		CAL = { country_event = new.jersey.2 }
-		WYO = { country_event = new.jersey.2 }
-		NYO = { country_event = new.jersey.2 }
+		CAL = { country_event = new_jersey.2 }
+		WYO = { country_event = new_jersey.2 }
+		NYO = { country_event = new_jersey.2 }
 		trigger = {
 			has_country_leader = { character = VIA_ryder ruling_only = yes }
 		}
@@ -54,8 +54,8 @@ country_event = {
 		name = new_jersey.2.a
 		ai_chance = { factor = 90 }
 		NJE = { add_to_faction = ROOT }
-		ART = { country_event = new.jersey.2 }
-		ARS = { country_event = new.jersey.2 }
+		ART = { country_event = new_jersey.2 }
+		ARS = { country_event = new_jersey.2 }
 		trigger = {
 			has_country_leader = { character = ARB_box ruling_only = yes }
 		}
@@ -66,9 +66,9 @@ country_event = {
 		name = new_jersey.2.a
 		ai_chance = { factor = 90 }
 		NJE = { add_to_faction = ROOT }
-		WIS = { country_event = new.jersey.2 }
-		QUB = { country_event = new.jersey.2 }
-		ONT = { country_event = new.jersey.2 }
+		WIS = { country_event = new_jersey.2 }
+		QUB = { country_event = new_jersey.2 }
+		ONT = { country_event = new_jersey.2 }
 		trigger = {
 			has_country_leader = { character = COT_dildo_sagbag ruling_only = yes }
 		}
