@@ -1,0 +1,273 @@
+focus_tree = {
+	id = geo_focus
+	#continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GEO
+		}
+	}
+
+	#Arrival in Georgia
+	focus = {
+		id = GEO_arrival_in_georgia
+		icon = GFX_focus_spa_the_war_of_vengeance
+		x = 6
+		y = 0
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			#
+		}
+	}
+
+	
+	#Further train the men
+	focus = {
+		id = GEO_further_train_the_men
+		icon = GFX_GEO_further_train_the_men-274131
+		x = 17
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GEO_train_the_new_recruits  }
+		select_effect = {
+			#Increase reliability and defense by small amounts.
+		}
+	}
+
+	#Georgia sucks right now
+	focus = {
+		id = GEO_georgia_sucks_right_now
+		icon = GFX_focus_generic_africa_infrastructure
+		x = 6
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GEO_arrival_in_georgia  }
+		completion_reward = {
+			#add 1 infrastructure to every province and 1 build slot
+		}
+	}
+
+	#Militarize
+	focus = {
+		id = GEO_militarize
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GEO_georgia_sucks_right_now  }
+		completion_reward = {
+			#Add 1 military factory to every state and 1 build slot
+		}
+	}
+
+	#Civilianize
+	focus = {
+		id = GEO_civilianize
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 7
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GEO_georgia_sucks_right_now  }
+		completion_reward = {
+			#Add 1 build slot and civilian factory to every province
+		}
+	}
+
+	#The Gamers
+	focus = {
+		id = GEO_the_gamers
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 11
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GEO_arrival_in_georgia  }
+		completion_reward = {
+			#Add +10 relations with every ggn gamer and seso gamer country
+		}
+	}
+
+	#SESO Gamers
+	focus = {
+		id = GEO_seso_gamers
+		icon = GFX_focus_secret_rearmament
+		x = 10
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GEO_the_gamers  }
+		mutually_exclusive = {
+			focus = GEO_ggn_gamers
+		}
+		completion_reward = {
+			#+20 relations with sesoers
+		}
+	}
+
+	#GGN gamers
+	focus = {
+		id = GEO_ggn_gamers
+		icon = GFX_focus_AST_squander_bug
+		x = 12
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GEO_the_gamers  }
+		mutually_exclusive = {
+			focus = GEO_seso_gamers
+		}
+		completion_reward = {
+			#+20 relations with ggners
+		}
+	}
+
+	#Start playing Arma 3 more
+	focus = {
+		id = GEO_play_arma_more
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
+		x = 10
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GEO_seso_gamers  }
+		completion_reward = {
+			#+20 relations with SESO gamers, -20 with ggn gamers
+		}
+	}
+
+	#Relapse into garry mod
+	focus = {
+		id = GEO_relapse_into_garry_mod
+		icon = GFX_focus_AST_squander_bug
+		x = 12
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GEO_ggn_gamers  }
+		completion_reward = {
+			#+20 relations with GGN gamers, -20 with seso gamers
+		}
+	}
+
+	#Troll the GGN'ers
+	focus = {
+		id = GEO_trolltheggners
+		icon = GFX_focus_EST_era_of_silence
+		x = 10
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GEO_play_arma_more  }
+		completion_reward = {
+			#Allow Georgia to join an alliance with SESO or join their alliance if it's been made, create claims on all GGN gamers, and let them create claims on me while tanking our relations
+		}
+	}
+
+	#Become supreme commander of geetsly
+	focus = {
+		id = GEO_become_supreme_commander_of_geetsly
+		icon = GFX_focus_ger_reichskommisariats
+		x = 12
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GEO_relapse_into_garry_mod  }
+		completion_reward = {
+			#Inverse of the SESO counterpart to this
+		}
+	}
+
+	#Re-establish the Shadow Troopers
+	focus = {
+		id = GEO_reestablish_the_shadow_troopers
+		icon = GFX_GEO_reestablish_the_shadow_troopers-54433
+		x = 16
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		completion_reward = {
+			#
+		}
+	}
+
+	#Begin reforming the unit
+	focus = {
+		id = GEO_begin_reforming_the_unit
+		icon = GFX_GEO_begin_reforming_the_unit-54018
+		x = 15
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GEO_reestablish_the_shadow_troopers  }
+		completion_reward = {
+			#Fire event "Finch reconstructs the STs"
+		}
+	}
+
+	#Train the new recruits
+	focus = {
+		id = GEO_train_the_new_recruits
+		icon = GFX_GEO_train_the_new_recruits-54440
+		x = 17
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GEO_reestablish_the_shadow_troopers  }
+		completion_reward = {
+			#Slight increase to max speed for all infantry, suppression, soft attack, and organization. I don't know hoi4 numbers, so I'll trust your gut with the numbers here.
+		}
+	}
+
+	#Begin their deployment
+	focus = {
+		id = GEO_begin_their_deployment
+		icon = GFX_GEO_begin_their_deployment-274133
+		x = 17
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GEO_further_train_the_men  }
+		completion_reward = {
+			load_oob = GEO_st
+			load_oob = GEO_40k
+		}
+	}
+
+}
