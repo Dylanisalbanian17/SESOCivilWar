@@ -4,7 +4,7 @@
 # Political advisors
 every_possible_country = {
 	limit = {
-		NOT = { OR = { tag = VIA tag = CAL tag = NJE  } }
+		NOT = { OR = { tag = VIA tag = CAL tag = NJE tag = COT tag = ART tag = WYO tag = WIS tag = NYO } }
 		# avoid generic advisors in temporary countries
 		is_dynamic_country = no
 		NOT = {
@@ -34,7 +34,7 @@ every_possible_country = {
 
 every_possible_country = {
 	limit = {
-		NOT = { OR = { tag = VIA tag = CAL tag = NJE } }
+		NOT = { OR = { tag = VIA tag = CAL tag = NJE tag = COT tag = ART tag = WYO tag = WIS tag = NYO } }
 		is_dynamic_country = no
 		NOT = {
 			has_allowed_idea_with_traits = { idea = democratic_reformer characters = yes }
@@ -63,7 +63,7 @@ every_possible_country = {
 
 every_possible_country = {
 	limit = {
-		NOT = { OR = { tag = VIA tag = CAL tag = NJE } }
+		NOT = { OR = { tag = VIA tag = CAL tag = NJE tag = COT tag = ART tag = WYO tag = WIS tag = NYO } }
 		is_dynamic_country = no
 		NOT = {
 			has_allowed_idea_with_traits = { idea = fascist_demagogue characters = yes }
@@ -96,6 +96,7 @@ every_possible_country = {
 		NOT = {
 			has_allowed_idea_with_traits = { idea = head_of_intelligence characters = yes }
 		}
+		NOT = { OR = { tag = VIA tag = CAL tag = NJE tag = COT tag = ART tag = WYO tag = WIS tag = NYO } }
 		is_dynamic_country = no
 	}
 	generate_character = {
