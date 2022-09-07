@@ -13,7 +13,8 @@ ideas = {
 			picture = GFX_idea_eng_imperial_conscription
 
 			modifier = {
-				conscription_factor  = 0.035
+				recruitable_population_factor  = 0.03
+				experience_loss_factor = -0.15
 			}
 		}
 
