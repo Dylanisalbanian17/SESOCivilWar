@@ -41,7 +41,6 @@ bookmarks = {
 			ideas = {
 				sgnrecruitment
 				blackmiscegenation
-				martha_advisor
 			}
 			focuses = {
 				cot_focus_establishsgn
@@ -73,10 +72,10 @@ bookmarks = {
 				idea_tron_cycles
 				idea_awful_drivers
 			}
-			focuses = {
-				nje_focus_found_arma_unit
-				nje_focus_babygaming
-			}
+			#focuses = {
+			#	nje_focus_found_arma_unit
+			#	nje_focus_babygaming
+			#}
 		}
 		
 		"---" = {
@@ -101,7 +100,7 @@ bookmarks = {
 			ideology = neutrality
 		}
 
-		"NMX" = {
+		"GEO" = {
 			minor = yes
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = neutrality
