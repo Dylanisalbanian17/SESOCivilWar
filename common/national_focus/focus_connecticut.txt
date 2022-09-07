@@ -362,7 +362,7 @@ focus_tree = {
 			focus = cot_focus_claimmedbay
 		}
 		completion_reward = {
-			load_oob = COT_2
+			load_oob = COT_surgeons
 			add_ideas = sgnrecruitment
 		}
 	}
@@ -571,6 +571,7 @@ focus_tree = {
 			focus = cot_focus_race
 		}
 		completion_reward = {
+			set_global_flag = SESO_getajob
 		}
 	}
 
@@ -773,8 +774,8 @@ focus_tree = {
 			focus = cot_focus_join_boxcraft
 		}
 		completion_reward = {
-			add_stability = 0.25
-			add_war_support = 0.15
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
 
