@@ -180,6 +180,7 @@ country_event = {
 		
 		hidden_effect = {
 			#good option
+			add_stability = 100
 		}
 	}
 	option = {

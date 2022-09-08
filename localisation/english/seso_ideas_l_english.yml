@@ -103,7 +103,18 @@ idea_terrace_farms:0 "Chinese Terrace Farms"
 idea_iroquois_roads:0 "Haudenosaunee Roads"
 idea_black_religion:0 "Black God Worship"
 idea_gamba_gaming:0 "Gamba Gaming"
-# Generic Manufacturers
+# GEO ideas
+idea_strecruitment: "Shadow Trooper Recruitment"
+idea_troller: "Twitter"
+idea_troller: "Troller"
+opinion_egirl: "In Twitter E-Relationship"
+# PEN ideas
+idea_pickle_moment: "Pickle Moment"
+idea_linux_moment: "Linux Moment"
+idea_linux_arch: "Arch Server"
+idea_linux_ubuntu: "Ubuntu Server"
+idea_linux_debian: "Debian Server"
+## Generic Manufacturers
 # Tank
 seso_warthunder_manufacturer:0 "Warthunder"
 seso_arma3_manufacturer:0 "Arma 3"
