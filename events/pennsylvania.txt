@@ -1,0 +1,30 @@
+add_namespace = pennsylvania
+
+# Pickle deploys linux server
+country_event = {
+	id = pennsylvania.1
+	title = pennsylvania.1.t
+	desc = pennsylvania.1.d
+
+	#picture = GEO_finch_reconstructs_the_sts-274112
+	fire_only_once = yes
+
+	option = {
+		name = pennsylvania.1.a
+		ai_chance = { factor = 1 }
+
+		add_ideas = idea_linux_ubuntu
+	}
+	option = {
+		name = pennsylvania.1.b
+		ai_chance = { factor = 0 }
+
+		add_ideas = idea_linux_arch
+	}
+	option = {
+		name = pennsylvania.1.c
+		ai_chance = { factor = 0 }
+
+		add_ideas = idea_linux_debian
+	}
+}
