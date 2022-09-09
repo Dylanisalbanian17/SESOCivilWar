@@ -2,31 +2,31 @@ spriteTypes = {
 	##Icon For: Finch reconstructs the STs
 	SpriteType = { 
 		name = "GEO_finch_reconstructs_the_sts-274112"
-		texturefile = "gfx/interface/events/finch-events-event/GEO_finch_reconstructs_the_sts-274112.dds"
+		texturefile = "gfx/interface/events/georgia-event/GEO_finch_reconstructs_the_sts-274112.dds"
 	}
 
 	##Icon For: Shadow Trooper Discipline
 	SpriteType = { 
 		name = "GEO_shadow_trooper_discipline-274141"
-		texturefile = "gfx/interface/events/finch-events-event/GEO_shadow_trooper_discipline-274141.dds"
+		texturefile = "gfx/interface/events/georgia-event/GEO_shadow_trooper_discipline-274141.dds"
 	}
 
 	##Icon For: Shadow Trooper Loadouts
 	SpriteType = { 
 		name = "GEO_shadow_trooper_loadouts-274148"
-		texturefile = "gfx/interface/events/finch-events-event/GEO_shadow_trooper_loadouts-274148.dds"
+		texturefile = "gfx/interface/events/georgia-event/GEO_shadow_trooper_loadouts-274148.dds"
 	}
 
 	##Icon For: Shadow Trooper Loadouts, cont
 	SpriteType = { 
 		name = "GEO_shadow_trooper_loadouts_cont-274152"
-		texturefile = "gfx/interface/events/finch-events-event/GEO_shadow_trooper_loadouts_cont-274152.dds"
+		texturefile = "gfx/interface/events/georgia-event/GEO_shadow_trooper_loadouts_cont-274152.dds"
 	}
 
 	##Icon For: look at this cat
 	SpriteType = { 
 		name = "GEO_look_at_this_cat-32744"
-		texturefile = "gfx/interface/events/finch-events-event/GEO_look_at_this_cat-32744.dds"
+		texturefile = "gfx/interface/events/georgia-event/GEO_look_at_this_cat-32744.dds"
 	}
 
  
