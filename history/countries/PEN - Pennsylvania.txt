@@ -32,3 +32,5 @@ set_popularities = {
 	democratic = 90
 	neutrality = 10
 }
+set_stability = 0.45
+set_war_support = 0.15

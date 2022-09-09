@@ -23,8 +23,13 @@ opinion_modifiers = {
 	}
 
 	opinion_egirl = {
-		value = 10
+		value = 50
 		min_trust = -10
-		years 2
+		years = 2
+	}
+
+	opinion_marine_puns = {
+		value = 25
+		years = 6
 	}
 }

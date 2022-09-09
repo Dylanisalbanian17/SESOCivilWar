@@ -10,33 +10,32 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PEN_discover_arma
-		icon = GFX_focus_spa_the_war_of_vengeance
+		id = PEN_focus_discover_arma
+		icon = GFX_goal_generic_axis_build_infantry
 		x = 6
 		y = 0
 		cost = 2
 		completion_reward = {
-			all_core_states = {
+			army_experience = 50
+			every_core_state = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
-					province = {
-						limit_to_victory_point = yes
-					}
 				}
 			}
 		}
 	}
 
 	focus = {
-		id = PEN_join_seso
-		icon = GFX_focus_spa_the_war_of_vengeance
-		relative_position_id = PEN_discover_arma
+		id = PEN_focus_join_seso
+		icon = GFX_focus_generic_military_academy
+		relative_position_id = PEN_focus_discover_arma
 		x = 0
 		y = 1
 		cost = 5
-		prerequisite = { focus = PEN_discover_arma }
+		prerequisite = { focus = PEN_focus_discover_arma }
 		available = {
 			NOT = { is_in_faction = yes }
 			has_global_flag = flag_seso_created
@@ -49,13 +48,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PEN_pickle_moment
-		icon = GFX_focus_spa_the_war_of_vengeance
-		relative_position_id = PEN_join_seso
+		id = PEN_focus_pickle_moment
+		icon = GFX_focus_SOV_flying_clubs
+		relative_position_id = PEN_focus_join_seso
 		x = 0
 		y = 1
 		cost = 5
-		prerequisite = { focus = PEN_join_seso }
+		prerequisite = { focus = PEN_focus_join_seso }
 		completion_reward = {
 			air_experience = 150
 			add_ideas = idea_pickle_moment
@@ -63,27 +62,63 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PEN_develop_kakapo
-		icon = GFX_focus_spa_the_war_of_vengeance
-		relative_position_id = PEN_join_seso
-		x = 2
-		y = 1
+		id = PEN_focus_shrimpson
+		icon = GFX_focus_jap_strike_south
+		relative_position_id = PEN_focus_pickle_moment
+		x = 0
+		y = 2
 		cost = 5
-		prerequisite = { focus = PEN_join_seso OR = PEN_develop_discord_bot}
+		prerequisite = { focus = PEN_focus_pickle_moment  }
+		prerequisite = {
+			focus = PEN_focus_adopt_marine_puns
+		}
+		available = {
+			NYO = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
 		completion_reward = {
-			#
+			add_war_support = 0.15
+			create_wargoal = {
+				target = NYO
+				type = annex_everything
+			}
+			NYO = {
+				create_wargoal = {
+					target = FROM
+					type = annex_everything
+				}
+			}
 		}
 	}
 
 	focus = {
-		id = PEN_embrace_british
-		icon = GFX_focus_spa_the_war_of_vengeance
-		#relative_position_id = PEN_discover_arma
+		id = PEN_focus_develop_kakapo
+		icon = GFX_focus_research
+		relative_position_id = PEN_focus_join_seso
 		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = PEN_focus_join_seso }
+		prerequisite = {
+			focus = PEN_focus_develop_discord_bot
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = PEN_focus_embrace_british
+		icon = GFX_focus_eng_motion_of_no_confidence
+		#relative_position_id = PEN_focus_discover_arma
+		x = 1
 		y = 0
 		cost = 5
-		mutually_exclusive = { focus = PEN_reject_british }
-		cancel_if_invalid = yes
+		mutually_exclusive = { focus = PEN_focus_reject_british }
 		available = {
 			PEN = {
 				has_country_leader = {
@@ -93,6 +128,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_country_leader_trait = british_bulldog
+
 			237 = {
 				add_building_construction = {
 					type = dockyard
@@ -112,14 +148,29 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PEN_reject_british
-		icon = GFX_focus_spa_the_war_of_vengeance
-		relative_position_id = PEN_embrace_british
+		id = PEN_focus_long_live_the_queen
+		icon = GFX_focus_eng_the_sun_never_sets
+		relative_position_id = PEN_focus_embrace_british
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = PEN_focus_embrace_british
+		}
+		completion_reward = {
+			add_ideas = idea_long_live_the_queen
+		}
+	}
+
+
+	focus = {
+		id = PEN_focus_reject_british
+		icon = GFX_focus_eng_decolonization
+		relative_position_id = PEN_focus_embrace_british
 		x = 2
 		y = 0
 		cost = 5
-		mutually_exclusive = { focus = PEN_embrace_british }
-		cancel_if_invalid = yes
+		mutually_exclusive = { focus = PEN_focus_embrace_british }
 		available = {
 			PEN = {
 				has_country_leader = {
@@ -128,7 +179,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			remove_country_leader_trait = british_bulldog
+			add_country_leader_trait = little_churchill
 
 			random_core_state = {
 				add_building_construction = {
@@ -142,13 +193,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PEN_visit_abandoned_buildings
-		icon = GFX_focus_spa_the_war_of_vengeance
-		relative_position_id = PEN_embrace_british
+		id = PEN_focus_visit_abandoned_buildings
+		icon = GFX_focus_POL_warsaw_main_station
+		relative_position_id = PEN_focus_embrace_british
 		x = 1
 		y = 1
 		cost = 5
-		prerequisite = { focus = PEN_embrace_british OR = PEN_reject_british }
+		prerequisite = { focus = PEN_focus_embrace_british OR = PEN_focus_reject_british }
 		completion_reward = {
 			random_core_state = {
 				add_resource = {
@@ -178,9 +229,99 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PEN_install_linux_server
-		icon = GFX_focus_spa_the_war_of_vengeance
-		#relative_position_id = PEN_discover_arma
+		id = PEN_focus_rag_on_philadelphia
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		relative_position_id = PEN_focus_visit_abandoned_buildings
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = PEN_focus_visit_abandoned_buildings
+		}
+		completion_reward = {
+			240 = {
+				remove_building = {
+					type = arms_factory
+					level = 5
+				}
+				remove_building = {
+					type = dockyard
+					level = 2
+				}
+				add_state_modifier = {
+					modifier = {
+						local_supplies = -0.30
+						resistance_growth = 0.15
+						army_speed_factor_for_controller = -0.10
+					}
+				}
+				add_victory_points = {
+					province = 8057
+					value = -25
+				}
+			}
+			238 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			237 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PEN_focus_adopt_marine_puns
+		icon = GFX_goal_generic_occupy_states_coastal
+		relative_position_id = PEN_focus_rag_on_philadelphia
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = PEN_focus_rag_on_philadelphia
+		}
+		completion_reward = {
+			navy_experience = 150
+			if = {
+				limit = {
+					COT = {
+						has_country_leader = {
+							character = COT_dildo_sagbag
+							ruling_only = yes
+						}
+					}
+				}
+				add_opinion_modifier = {
+					target = COT
+					modifier = opinion_marine_puns
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 3
+				category = naval_equipment
+			}
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = PEN_focus_install_linux_server
+		icon = GFX_goal_generic_production2
+		#relative_position_id = PEN_focus_discover_arma
 		x = 11
 		y = 0
 		cost = 5
@@ -191,44 +332,65 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PEN_develop_discord_bot
-		icon = GFX_focus_spa_the_war_of_vengeance
-		relative_position_id = PEN_install_linux_server
+		id = PEN_focus_develop_discord_bot
+		icon = GFX_focus_SOV_organize_wreckers
+		relative_position_id = PEN_focus_install_linux_server
 		x = -1
 		y = 1
 		cost = 5
-		prerequisite = { focus = PEN_install_linux_server }
+		prerequisite = { focus = PEN_focus_install_linux_server }
 		completion_reward = {
-			#
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = electronics
+			}
+			
 		}
 	}
 
 	focus = {
-		id = PEN_launch_minecraft_server
-		icon = GFX_focus_spa_the_war_of_vengeance
-		relative_position_id = PEN_install_linux_server
+		id = PEN_focus_launch_minecraft_server
+		icon = GFX_goal_generic_construction
+		relative_position_id = PEN_focus_install_linux_server
 		x = 1
 		y = 1
 		cost = 5
-		prerequisite = { focus = PEN_install_linux_server }
+		prerequisite = { focus = PEN_focus_install_linux_server }
 		completion_reward = {
-			#
+			add_ideas = idea_minecraft_server_owner
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 3
+				category = industry
+			}
 		}
 	}
 
 	focus = {
-		id = PEN_join_boxcraft
-		icon = GFX_focus_spa_the_war_of_vengeance
-		relative_position_id = PEN_launch_minecraft_server
-		x = 1
+		id = PEN_focus_establish_palestine
+		icon = GFX_focus_TUR_treaty_of_saadabad
+		relative_position_id = PEN_focus_launch_minecraft_server
+		x = 0
 		y = 1
 		cost = 5
-		prerequisite = { focus = PEN_launch_minecraft_server }
+		prerequisite = { focus = PEN_focus_launch_minecraft_server }
 		available = {
 			#has_global_flag = seso_boxcraft_flag
 		}
 		completion_reward = {
-			#
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+			add_offsite_building = {
+				type = synthetic_refinery
+				level = 2
+			}
 		}
 	}
 }
