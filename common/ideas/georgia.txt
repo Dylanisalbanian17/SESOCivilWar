@@ -49,8 +49,27 @@ ideas = {
 			picture = GFX_idea_eng_imperial_conscription
 
 			modifier = {
-				political_power_factor = 0.15
+				political_power_gain = 1
 				stability_weekly = 0.05
+			}
+		}
+
+		idea_trolled = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				political_power_cost = 1
+				stability_weekly = -0.05
+				war_stability_factor = 0.25
 			}
 		}
 	}

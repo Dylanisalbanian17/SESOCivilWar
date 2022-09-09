@@ -1,0 +1,41 @@
+GEO_trolling_category = {
+	GEO_troll = {
+
+		icon = generic_political_actions
+
+		cost = 80
+
+		target_array = THIS.neighbors
+
+		available = {
+			#has_completed_focus = GEO_trolltheggners
+			NOT = { has_country_flag = flag_trolling }
+		}
+
+		on_map_mode = map_and_decisions_view
+
+		war_with_target_on_complete = yes
+		fire_only_once = no
+		
+		complete_effect = {
+			FROM = {
+				country_event = georgia.6
+			}
+			set_country_flag = flag_trolling
+			create_wargoal = {
+				target = FROM
+				type = annex_everything
+			}
+
+		}
+
+		remove_effect = {
+			clr_country_flag = flag_trolling
+		}
+
+		
+
+		days_re_enable = 360
+
+	}
+}

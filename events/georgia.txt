@@ -198,3 +198,26 @@ country_event = {
 		}
 	}
 }
+
+#trolling
+country_event = {
+	id = georgia.6
+	title = georgia.6.t
+	desc = georgia.6.d
+
+	picture = GEO_look_at_this_cat-32744
+	is_triggered_only = yes
+	trigger = {
+		#random
+	}
+
+	mean_time_to_happen = { days = 15 }
+	major = yes
+	option = {
+		name = georgia.6.a
+		add_timed_idea = {
+			idea = idea_trolled
+			days = 30
+		}
+	}
+}

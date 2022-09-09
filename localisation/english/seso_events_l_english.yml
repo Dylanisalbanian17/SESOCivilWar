@@ -206,6 +206,11 @@ georgia.5.t: "look at this cat"
 georgia.5.d: "isnt it cut4e"
 georgia.5.a: "yes"
 georgia.5.b: "no"
+georgia.6.t: "TROLLED!"
+georgia.6.d: "u mad?"
+georgia.6.a: ";("
+
+
 # Pennsylvania
 pennsylvania.1.t: "Deploy Linux Server"
 pennsylvania.1.d: "After rummaging around the house, [From.GetLeader] got ahold of an old computer to deploy as a Linux server. Which distribution should be run on it?"
