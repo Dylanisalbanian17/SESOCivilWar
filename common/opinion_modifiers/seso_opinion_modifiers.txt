@@ -32,4 +32,9 @@ opinion_modifiers = {
 		value = 25
 		years = 6
 	}
+
+	opinion_fix_hoi4_mod = {
+		value = 50
+		years = 6
+	}
 }
