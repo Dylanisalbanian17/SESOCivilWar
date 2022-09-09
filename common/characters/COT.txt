@@ -161,6 +161,7 @@
 
 	COT_martha = {
 		name = "Martha"
+		gender = female
 		portraits = {
 			civilian = {
 				small = gfx/interface/advisors/advisor_martha.dds

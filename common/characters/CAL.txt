@@ -98,6 +98,7 @@ characters={
 			}
 			CAL_gaming_girl = {
 				name = "Pokimane"
+				gender = female
 				portraits = {
 					civilian = {
 						small = "gfx/interface/advisors/advisor_gaming_girl.dds"
@@ -273,6 +274,7 @@ characters={
 	}
 	CAL_nanami_kochi ={
 		name="Nanami Kochi"
+		gender = female
 		portraits={
 			army={
 				large=GFX_portrait_man_yoshiko_kawashima
@@ -321,6 +323,7 @@ characters={
 	}
 	CAL_crystal_mccoy ={
 		name="Crystal Mccoy"
+		gender = female
 		portraits={
 			army={
 				large=GFX_portrait_SOV_aleksandra_kollontay
