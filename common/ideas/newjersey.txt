@@ -35,10 +35,8 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.25
-				army_org_regain = -0.25
 				navy_org_factor = -0.25
-				air_accidents_factor = 0.5
-				breakthrough_factor = 0.15
+				air_superiority_bonus_in_combat = -0.25
 			}
 		}
 
