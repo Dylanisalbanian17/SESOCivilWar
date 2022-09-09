@@ -61,7 +61,7 @@ recruit_character = COT_durasteel_ape
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "2.11.6"
+	last_election = "2.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
