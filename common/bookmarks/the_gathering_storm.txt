@@ -93,6 +93,12 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = democratic
 		}
+
+		"PEN" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
 		
 		"TEX" = {
 			minor = yes
