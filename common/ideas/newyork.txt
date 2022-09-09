@@ -1,0 +1,46 @@
+ideas = {
+	country = {
+		idea_tk_focus = {
+			allowed = {
+				has_country_leader = NYO_crimson
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = GFX_generic_infantry_bonus
+
+			modifier = {
+				conscription_factor  = 0.05
+				command_power_gain_mult = 0.30
+				army_core_attack_factor  = 0.10
+				army_core_defence_factor = 0.10
+				naval_morale_factor = -0.15
+				naval_morale_factor = -0.15
+				air_mission_efficiency = -0.15
+				cat_mass_assault_cost_factor = -0.15
+				cat_grand_battle_plan_cost_factor = 2
+				cat_superior_firepower_cost_factor = 2
+				cat_mobile_warfare_cost_factor = 2
+			}
+		}
+
+		idea_battlefield_medics = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = GFX_generic_manpower_bonus
+
+			modifier = {
+				army_org_regain   = 0.10
+				experience_loss_factor = -0.10
+			}
+		}
+	}
+}

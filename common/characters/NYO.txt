@@ -6,6 +6,10 @@ characters={
 			civilian = {
 				large="gfx/leaders/NYO/crimson.dds"
 			}
+			army = {
+				large="gfx/leaders/NYO/crimson.dds"
+				small="gfx/leaders/NYO/crimson.dds"
+			}
 		}
 
 		country_leader={
@@ -22,10 +26,19 @@ characters={
 			id=-1
 		}
 
+		field_marshal= {
+			traits = { harsh_leader }
+			skill = 6
+			attack_skill = 7
+			defense_skill = 1
+			planning_skill= 9
+			logistics_skill= 2
+		}
+
 	}
 
 	NYO_ojax={
-		name="Ojax"
+		name="ojax"
 		portraits = {
 			civilian = {
 				large="gfx/leaders/NYO/ojax.dds"
@@ -41,5 +54,72 @@ characters={
 
 	}
 
-	# Add Concord as advisor for fascist sympathies
+	NYO_concord = {
+		name = "Concord"
+		portraits = {
+			civilian = {
+				#small = "gfx/interface/advisors/advisor_clarence_a_smith.dds"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = concord
+			traits = { fascist_demagogue }
+			allowed = {
+				original_tag = NYO
+			}
+	
+		}
+	}
+
+	NYO_triad = {
+		name = "Triad"
+		portraits = {
+			army = {
+				#small
+				#large
+			}
+		}
+
+		corps_commander={
+			traits={ politically_connected }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		visible  = {
+			has_country_leader = {
+				character = NYO_crimson
+				ruling_only = yes
+			}
+		}
+	}
+
+	NYO_speedy = {
+		name = "Speedy"
+		portraits = {
+			army = {
+				#small
+				#large
+			}
+		}
+
+		corps_commander={
+			traits={  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		visible  = {
+			has_country_leader = {
+				character = NYO_crimson
+				ruling_only = yes
+			}
+		}
+	}
 }

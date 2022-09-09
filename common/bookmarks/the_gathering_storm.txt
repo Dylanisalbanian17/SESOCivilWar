@@ -72,10 +72,10 @@ bookmarks = {
 				idea_tron_cycles
 				idea_awful_drivers
 			}
-			#focuses = {
-			#	nje_focus_found_arma_unit
-			#	nje_focus_babygaming
-			#}
+			focuses = {
+				nje_focus_found_arma_unit
+				nje_focus_babygaming
+			}
 		}
 		
 		"---" = {
@@ -98,6 +98,16 @@ bookmarks = {
 			minor = yes
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = democratic
+			ideas = {
+				idea_long_live_the_queen
+				idea_pickle_moment
+				idea_awful_drivers
+			}
+			focuses = {
+				PEN_focus_embrace_british
+				PEN_focus_adopt_marine_puns
+				PEN_focus_establish_palestine
+			}
 		}
 		
 		"TEX" = {
@@ -110,6 +120,16 @@ bookmarks = {
 			minor = yes
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = neutrality
+			ideas = {
+				idea_troller
+				idea_twitter_user
+				idea_strecruitment
+			}
+			focuses = {
+				GEO_reestablish_the_shadow_troopers
+				GEO_become_supreme_commander_of_geetsly
+				GEO_egirl_dylan
+			}
 		}
 
 		"MIC" = {
@@ -128,6 +148,14 @@ bookmarks = {
 			minor = yes
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = neutrality
+			ideas = {
+				idea_tk_focus
+				idea_battlefield_medics
+				idea_awful_drivers
+			}
+			focuses = {
+				NYO_focus_general_secretary_ojax
+			}
 		}
 		
 		"QUB" = {
