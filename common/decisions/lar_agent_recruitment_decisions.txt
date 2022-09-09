@@ -674,14 +674,6 @@ lar_local_recruitment = {
 		target_trigger = {
 			FROM = {
 				is_on_continent = asia
-				NOT = {
-					is_core_of = RAJ
-					is_core_of = PAK
-					is_core_of = BAN
-					is_core_of = NEP
-					is_core_of = BHU
-					is_core_of = SRL
-				}
 				OR = {
 					AND = {
 						has_variable = historical_capital_for_country
@@ -710,14 +702,6 @@ lar_local_recruitment = {
 				capital_scope = { 
 					is_on_continent = asia 
 				}
-			}
-			NOT = {
-				tag = RAJ
-				tag = PAK
-				tag = BAN
-				tag = NEP
-				tag = BHU
-				tag = SRL
 			}
 			NOT = { has_country_flag = asia_recruitment_in_process }
 		}
@@ -852,158 +836,6 @@ lar_local_recruitment = {
 		on_map_mode = map_only
 		complete_effect = {
 			set_country_flag = { flag = australia_recruitment_in_process days = 180 value = 1 }
-			if = {
-				limit = {
-					num_of_operatives < num_operative_slots
-				}
-				custom_effect_tooltip = recruit_in_state_tt
-			}
-			else = {
-				custom_effect_tooltip = recruit_in_state_to_pool_tt
-			}
-			hidden_effect = {
-				create_operative_leader = {
-					bypass_recruitment = yes
-					nationalities = { FROM.OWNER }
-					portrait_tag_override = FROM.OWNER
-				}
-			}
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	#unlocks decisions to recruit in india
-	recruit_in_india = {
-
-		#icon = generic_research
-
-		available = {
-			
-		}
-
-		visible = {
-			NOT = {
-				tag = RAJ
-				tag = PAK
-				tag = BAN
-				tag = NEP
-				tag = BHU
-			}
-			OR = {
-				any_owned_state = {
-					OR = {
-						is_core_of = RAJ
-						is_core_of = PAK
-						is_core_of = BAN
-						is_core_of = NEP
-						is_core_of = BHU
-						is_core_of = SRL
-					}
-				}
-				is_in_faction_with = RAJ
-				is_in_faction_with = PAK
-				is_in_faction_with = BAN
-				is_in_faction_with = NEP
-				is_in_faction_with = BHU
-				is_in_faction_with = SRL
-				any_of_scopes = {
-					array = subjects
-					any_owned_state = {
-						OR = {
-							is_core_of = RAJ
-							is_core_of = PAK
-							is_core_of = BAN
-							is_core_of = NEP
-							is_core_of = BHU
-							is_core_of = SRL
-						}
-					}
-				}
-			}
-		}
-
-		fire_only_once = yes
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		days_remove = 90
-
-		remove_effect = {
-			set_country_flag = india_recruitment_unlocked
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	recruit_in_india_state = {
-
-		icon = onmap_recruit_operative
-		name = recruit_in_europe_state
-		available = {
-			
-		}
-
-		state_target = yes
-		target_trigger = {
-			FROM = {
-				OR = {
-					is_core_of = RAJ
-					is_core_of = PAK
-					is_core_of = BAN
-					is_core_of = NEP
-					is_core_of = BHU
-					is_core_of = SRL
-				}
-				OR = {
-					AND = {
-						has_variable = historical_capital_for_country
-						var:historical_capital_for_country = {
-							OR = {
-								has_capitulated = yes
-								exists = no
-							}
-							NOT = { tag = ROOT }
-						}
-					}
-					AND = {
-						is_capital = yes
-						CONTROLLER = {
-							NOT = {
-								tag = ROOT
-							}
-						}
-					}
-				}
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = india_recruitment_unlocked
-				tag = RAJ
-				tag = PAK
-				tag = BAN
-				tag = NEP
-				tag = BHU
-				tag = SRL
-			}
-			NOT = { has_country_flag = india_recruitment_in_process }
-		}
-
-		fire_only_once = no
-		cost = 0
-
-		days_re_enable = 180
-		on_map_mode = map_only
-		complete_effect = {
-			set_country_flag = { flag = india_recruitment_in_process days = 180 value = 1 }
 			if = {
 				limit = {
 					num_of_operatives < num_operative_slots
