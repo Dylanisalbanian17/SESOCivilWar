@@ -10,6 +10,7 @@ set_technology = {
 	tech_field_hospital = 1
 	tech_engineers = 1
 	motorised_infantry = 1
+	basic_train = 1
 	# Aircraft
 	naval_bomber1 = 1
 	# Industry
