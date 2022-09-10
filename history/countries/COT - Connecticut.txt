@@ -47,6 +47,9 @@ if = {
 }
 
 set_convoys = 2
+add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }
+add_equipment_to_stockpile = { type = support_equipment amount = 500 }
+add_equipment_to_stockpile = { type = train_equipment amount = 100 }
 
 recruit_character = COT_dildo_sagbag
 recruit_character = COT_yaojing

@@ -14,7 +14,10 @@ set_technology = {
 	basic_train = 1
 }
 
-set_convoys = 10
+set_convoys = 1
+add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }
+add_equipment_to_stockpile = { type = support_equipment amount = 500 }
+add_equipment_to_stockpile = { type = train_equipment amount = 100 }
 
 #LEADERS
 recruit_character = ORE_gaming_girl
