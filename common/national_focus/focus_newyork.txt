@@ -228,57 +228,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for The Spice Mines
-	focus = {
-		id = NYO_focus_the_spice_mines
-		icon = GFX_goal_unknown
-		x = 28
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_the_disloayal_gamers }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#add_2_civs_to_montauk
-		}
-	}
-
-	#Focus for Standardize the E-11
-	focus = {
-		id = NYO_focus_standardize_the_e11
-		icon = GFX_NYO_focus_standardize_the_e11-79988
-		x = 31
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_industrial_recovery }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#infantry_eq_prod_cost_-5
-		}
-	}
-
-	#Focus for Create Blastech
-	focus = {
-		id = NYO_focus_create_blastech
-		icon = GFX_goal_unknown
-		x = 31
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_divert_resources_to_military_industry }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#infantry_eq_rsrc_speed_+10
-		}
-	}
-
 	focus = {
 		id = NYO_focus_ggn_1
 		icon = GFX_goal_anti_comintern_pact
@@ -304,6 +253,105 @@ focus_tree = {
 			add_political_power= 50
 
 			random_core_state = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_death_trooper_event
+		icon = GFX_goal_unknown
+		relative_position_id = NYO_focus_ggn_1
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYO_focus_ggn_1 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.10
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = NYO_focus_wulf_inspiration
+		icon = GFX_goal_unknown
+		relative_position_id = NYO_focus_ggn_1
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYO_focus_ggn_1 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			NYO_wulf = {
+				add_advisor_role = {
+					activate = no
+					advisor = {
+						slot = theorist
+						idea_token = wulf
+						traits = {
+							mass_assault_expert
+						}
+					}
+				}
+				add_corps_commander_role ={
+					traits={ strict_leader }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_ggn_2
+		icon = GFX_goal_anti_comintern_pact
+		relative_position_id = NYO_focus_death_trooper_event
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = no
+		available = {
+			has_country_leader = {
+				character = NYO_crimson
+				ruling_only = yes
+			}
+			OR = {
+				has_global_flag = flag_ggn_2
+				date > 3.01.01
+			}
+		}
+		prerequisite = { focus = NYO_focus_wulf_inspiration }
+		completion_reward = {
+			add_political_power= 50
+
+			random_core_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
@@ -323,68 +371,53 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NYO_focus_teach_faces
+		id = NYO_focus_gunner_character
 		icon = GFX_goal_unknown
-		relative_position_id = NYO_focus_ggn_1
-		x = -1
+		relative_position_id = NYO_focus_ggn_2
+		x = -4
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_ggn_1 }
+		prerequisite = { focus = NYO_focus_ggn_2 }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_war_support = 0.10
-			army_experience = 50
-		}
-	}
-
-	focus = {
-		id = NYO_focus_operation_moon
-		icon = GFX_goal_unknown
-		relative_position_id = NYO_focus_ggn_1
-		x = 1
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_ggn_1 }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 5
+			navy_experience = 25
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = naval_equipment
+			}
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = artillery
 			}
 		}
 	}
 
 	focus = {
-		id = NYO_focus_ggn_2
-		icon = GFX_goal_anti_comintern_pact
-		relative_position_id = NYO_focus_teach_faces
-		x = 1
+		id = NYO_focus_merge_with_engineers
+		icon = GFX_goal_unknown
+		relative_position_id = NYO_focus_gunner_character
+		x = 0
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = NYO_focus_gunner_character }
 		ai_will_do = {
 			factor = 1
 		}
-		cancel_if_invalid = no
-		available = {
-			has_country_leader = {
-				character = NYO_crimson
-				ruling_only = yes
-			}
-			OR = {
-				has_global_flag = flag_ggn_2
-				date > 2.01.01
-			}
-		}
-		prerequisite = { focus = NYO_focus_teach_faces OR = NYO_focus_operation_moon }
 		completion_reward = {
-			add_political_power= 50
+			NYO_crimson = {
+				add_unit_leader_trait = engineer_officer
+			}
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 2
+				category = industry
+			}
 		}
 	}
 
@@ -402,16 +435,21 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 25
+			add_tech_bonus = {
+				uses = 1
+				bonus = 0.50
+				category = support_tech
+			}
 			add_ideas = idea_battlefield_medics
 		}
 	}
 
 	#Focus for Give Triad and Speedy Cadet Training Perms
 	focus = {
-		id = NYO_focus_give_triad_and_speedy_cadet_training_perms
+		id = NYO_focus_give_triad_speedy_training_perms
 		icon = GFX_goal_rhineland
 		relative_position_id = NYO_focus_ggn_2
-		x = 0
+		x = 2
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -430,6 +468,112 @@ focus_tree = {
 				add_planning = 1
 				add_unit_leader_trait = infantry_officer
 			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_eros_inspiration
+		icon = GFX_goal_unknown
+		relative_position_id = NYO_focus_ggn_2
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYO_focus_ggn_2 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			NYO_eros = {
+				add_advisor_role = {
+					activate = no
+					advisor = {
+						slot = army_chief
+						idea_token = eros
+						traits = {
+							army_chief_offensive_1
+						}
+					}
+				}
+				add_corps_commander_role ={
+					traits={ aggressive_assaulter }
+					skill = 5
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_ggn_3
+		icon = GFX_goal_anti_comintern_pact
+		relative_position_id = NYO_focus_merge_with_engineers
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = no
+		available = {
+			has_country_leader = {
+				character = NYO_crimson
+				ruling_only = yes
+			}
+			OR = {
+				has_global_flag = flag_ggn_2
+				date > 4.01.01
+			}
+		}
+		prerequisite = { focus = NYO_focus_eros_inspiration }
+		completion_reward = {
+			add_political_power= 50
+
+			random_core_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_icd_character
+		icon = GFX_goal_unknown
+		relative_position_id = NYO_focus_ggn_3
+		x = -2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYO_focus_ggn_3 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			NYO_crimson = {
+				add_unit_leader_trait = armor_officer
+			}
+			add_tech_bonus = {
+				uses = 1
+				bonus = 0.50
+				category = armor
+			}
+			add_ideas = idea_icd_support
 		}
 	}
 
@@ -846,21 +990,21 @@ focus_tree = {
 				25 = {
 					NYO_crimson = {
 						set_nationality = {
-							target_country = VIA
+							target_country = CAL
 						}
 					}
 				}
 				20 = {
 					NYO_crimson = {
 						set_nationality = {
-							target_country = VIA
+							target_country = COT
 						}
 					}
 				}
 				10 = {
 					NYO_crimson = {
 						set_nationality = {
-							target_country = VIA
+							target_country = WIS
 						}
 					}
 				}
@@ -883,41 +1027,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			#change_consription_law_to_extensive_consription
-		}
-	}
-
-	#Focus for Spice Processing Plants
-	focus = {
-		id = NYO_focus_spice_processing_plants
-		icon = GFX_goal_unknown
-		x = 28
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_the_spice_mines }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#add_2_civs_to_rochester
-		}
-	}
-
-	#Focus for Stop Illegal Immigration from Connecticut
-	focus = {
-		id = NYO_focus_stop_illegal_immigration_from_connecticut
-		icon = GFX_goal_unknown
-		x = 35
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_pressure_new_jersey_for_staten_island }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_stability= -0.05  
-#remove_national_spirit_ct_immigrant_crisis
 		}
 	}
 

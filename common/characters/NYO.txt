@@ -122,4 +122,81 @@ characters={
 			}
 		}
 	}
+
+	NYO_mikmaq = {
+		name = "Mikmaq"
+		portraits = {
+			civilian = {
+				#small = "gfx/interface/advisors/advisor_clarence_a_smith.dds"
+			}
+			army = {
+				#small
+				#large
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = mikmaq
+			ledger = civilian
+			traits = { silent_workhorse }
+		}
+
+		corps_commander={
+			traits={ infantry_officer career_officer  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		visible  = {
+			has_country_leader = {
+				character = NYO_crimson
+				ruling_only = yes
+			}
+		}
+	}
+
+	NYO_wulf = {
+		name = "Wulf"
+		portraits = {
+			civilian = {
+				#small
+				#large
+			}
+			army = {
+				#small
+				#large
+			}
+		}
+		visible  = {
+			has_country_leader = {
+				character = NYO_crimson
+				ruling_only = yes
+			}
+			has_completed_focus = NYO_focus_wulf_inspiration
+		}
+	}
+
+	NYO_eros = {
+		name = "Eros"
+		portraits = {
+			civilian = {
+				#small
+				#large
+			}
+			army = {
+				#small
+				#large
+			}
+		}
+		visible  = {
+			has_country_leader = {
+				character = NYO_crimson
+				ruling_only = yes
+			}
+			has_completed_focus = NYO_focus_eros_inspiration
+		}
+	}
 }

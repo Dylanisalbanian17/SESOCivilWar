@@ -13,6 +13,7 @@ set_technology = {
 	fuel_refining = 1
 	# Doctrines
 	mass_assault_doctrine = 1
+	basic_train = 1
 }
 
 
@@ -48,6 +49,9 @@ recruit_character = NYO_ojax
 recruit_character = NYO_concord
 recruit_character = NYO_triad
 recruit_character = NYO_speedy
+recruit_character = NYO_wulf
+recruit_character = NYO_eros
+recruit_character = NYO_mikmaq
 
 set_politics = {
 	ruling_party = neutrality
