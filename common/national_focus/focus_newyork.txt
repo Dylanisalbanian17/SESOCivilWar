@@ -1,6 +1,6 @@
 focus_tree = {
 	id = new_york
-	continuous_focus_position = { x = 0 y = 1300 } 
+	continuous_focus_position = { x = 1600 y = 1300 } 
 	country = {
 		factor = 0
 		modifier = {
@@ -8,207 +8,14 @@ focus_tree = {
 			tag = NYO
 		}
 	}
-	#Focus for Create /pol/ Copaganda Department
-	focus = {
-		id = NYO_focus_create_pol_copaganda_department
-		icon = GFX_goal_unknown
-		x = 45
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_systemic_removal_of_antigaming_laws }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power= 50  add_war_support= 20
-		}
-	}
-
-	#Focus for Implement Rehabilitated ISB agents
-	focus = {
-		id = NYO_focus_implement_rehabilitated_isb_agents
-		icon = GFX_focus_fra_loyalty_stalin
-		x = 46
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_reeducate_the_tk_cult }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#create_agency_revolutionary_security_bureau
-		}
-	}
-
-	#Focus for Re-Educate the TK Cult
-	focus = {
-		id = NYO_focus_reeducate_the_tk_cult
-		icon = GFX_focus_por_workers_of_iberia
-		x = 48
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_the_revolution_triumphant }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#support_for_nonaligned_-50_andpp+50
-		}
-	}
-
-	#Focus for The Revolution Triumphant
-	focus = {
-		id = NYO_focus_the_revolution_triumphant
-		icon = GFX_goal_support_communism
-		x = 52
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#gets_event_war_won
-		}
-	}
-
-	#Focus for Training the laborers
-	focus = {
-		id = NYO_focus_training_the_laborers
-		icon = GFX_goal_unknown
-		x = 35
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_the_old_guard }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#arty_production_cost_-5
-		}
-	}
-
-	#Focus for The Old Guard
-	focus = {
-		id = NYO_focus_the_old_guard
-		icon = GFX_goal_unknown
-		x = 35
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_modernization_of_our_military }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#infantry_and_line_arty_hard_att_+10
-		}
-	}
-
-	#Focus for Modernization of our military
-	focus = {
-		id = NYO_focus_modernization_of_our_military
-		icon = GFX_goal_unknown
-		x = 37
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			air_experience= 35  army_experience= 35  navy_experience= 35
-		}
-	}
-
-	#Focus for Safe, for now...
-	focus = {
-		id = NYO_focus_safe_for_now
-		icon = GFX_goal_unknown
-		x = 37
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = NYO_focus_rydercrimson_pact 
-		}
-		prerequisite = { 
-			focus = NYO_focus_stop_illegal_immigration_from_connecticut 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#all_divisions_defense_+10%
-		}
-	}
-
-	#Focus for Ryder-Crimson Pact
-	focus = {
-		id = NYO_focus_rydercrimson_pact
-		icon = GFX_goal_unknown
-		x = 39
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_prepare_to_handle_kujo }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#virginia_gets_event_ryder_crimson_pact
-		}
-	}
-
-	#Focus for Pressure New Jersey for Staten Island
-	focus = {
-		id = NYO_focus_pressure_new_jersey_for_staten_island
-		icon = GFX_goal_unknown
-		x = 35
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_influence_smaller_battalions }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#new_jersey_gets_event_cede_staten_island
-		}
-	}
-
-	#Focus for Influence Smaller Battalions
-	focus = {
-		id = NYO_focus_influence_smaller_battalions
-		icon = GFX_goal_unknown
-		x = 37
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power= 10
-		}
-	}
-
 	#Focus for Commander Crimson
 	focus = {
 		id = NYO_focus_commander_crimson
 		icon = GFX_focus_usa_honor_the_confederacy
-		x = 4
-		y = 1
-		cost = 2
-		available_if_capitulated = yes
-		mutually_exclusive = { focus = NYO_focus_general_secretary_ojax }
-		ai_will_do = {
-			factor = 1
-		}
+		x = 8
+		y = 0
+		cost = 10
+
 		completion_reward = {
 			add_popularity = {
 				ideology = neutrality
@@ -227,18 +34,460 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = NYO_focus_protect_tks
+		icon = GFX_focus_generic_little_entente
+		relative_position_id = NYO_focus_commander_crimson
+		x = 0
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = NYO_focus_commander_crimson
+		}
+
+		available = {
+			MAR = {
+				exists = yes
+				has_country_leader = {
+					character = MAR_kujo
+					ruling_only = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			MAR = {
+				add_ideas = idea_loved_by_crimson
+			}
+			diplomatic_relation = {
+				country = MAR
+				relation = guarantee
+				active = yes
+			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_stormtrooper_rp
+		icon = GFX_focus_rom_royal_dictatorship
+		relative_position_id = NYO_focus_protect_tks
+		x = -2
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = NYO_focus_protect_tks
+		}
+
+		available = {
+			fascism > 0.4
+			is_in_faction = no
+		}
+		mutually_exclusive = {
+			focus = NYO_focus_ggn_faction
+			focus = NYO_focus_stop_playing_gmod
+		}
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+			set_major = yes
+			create_faction = "Trooper Korps"
+		}
+	}
+
+	focus = {
+		id = NYO_focus_demand_uncle
+		icon = GFX_goal_generic_major_war
+		relative_position_id = NYO_focus_stormtrooper_rp
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = NYO_focus_stormtrooper_rp
+		}
+
+		available = {
+			COT = {
+				has_country_leader = {
+					character = COT_dildo_sagbag
+					ruling_only = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			COT = {
+				country_event = new_york.1
+			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_demand_havoc
+		icon = GFX_goal_generic_major_war
+		relative_position_id = NYO_focus_stormtrooper_rp
+		x = -2
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = NYO_focus_stormtrooper_rp
+		}
+
+		available = {
+			VIA = {
+				has_country_leader = {
+					character = VIA_ryder
+					ruling_only = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			VIA = {
+				country_event = new_york.1
+			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_demand_decker
+		icon = GFX_goal_generic_major_war
+		relative_position_id = NYO_focus_stormtrooper_rp
+		x = -4
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = NYO_focus_stormtrooper_rp
+		}
+
+		available = {
+			DEL = {
+				has_country_leader = {
+					character = DEL_posh
+					ruling_only = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			DEL = {
+				country_event = new_york.1
+			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_demand_kujo
+		icon = GFX_goal_generic_major_war
+		relative_position_id = NYO_focus_stormtrooper_rp
+		x = -6
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = NYO_focus_stormtrooper_rp
+		}
+
+		available = {
+			MAR = {
+				has_country_leader = {
+					character = MAR_kujo
+					ruling_only = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			MAR = {
+				country_event = new_york.1
+			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_ggn_faction
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = NYO_focus_protect_tks
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = NYO_focus_protect_tks
+		}
+
+		available = {
+			is_in_faction = no
+			has_global_flag = flag_ggn_created
+		}
+		mutually_exclusive = {
+			focus = NYO_focus_stormtrooper_rp
+			focus = NYO_focus_stop_playing_gmod
+		}
+
+		completion_reward = {
+			RIS = {
+				add_to_faction = ROOT
+			}
+			add_stability = -0.10
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = NYO_focus_stop_playing_gmod
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = NYO_focus_protect_tks
+		x = 2
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = NYO_focus_protect_tks
+		}
+
+		available = {
+			fascism < 0.4
+			is_in_faction = no
+		}
+		mutually_exclusive = {
+			focus = NYO_focus_stormtrooper_rp
+			focus = NYO_focus_ggn_faction
+		}
+
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = -0.10
+			diplomatic_relation = {
+				country = MAR
+				relation = guarantee
+				active = no
+			}
+			MAR = {
+				remove_ideas = idea_loved_by_crimson
+			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_leave_gaming
+		icon = GFX_focus_rom_abdicate
+		relative_position_id = NYO_focus_stop_playing_gmod
+		x = 2
+		y = 1
+		cost = 10
+		available = {
+			is_in_faction = no
+		}
+		prerequisite = {
+			focus = NYO_focus_stop_playing_gmod
+		}
+		mutually_exclusive = {
+			focus = NYO_focus_seso_faction
+		}
+
+		completion_reward = {
+			add_stability = -0.30
+			retire_character = NYO_crimson
+		}
+	}
+
+	focus = {
+		id = NYO_focus_scramble_for_new_commander
+		icon = GFX_goal_unknown
+		relative_position_id = NYO_focus_leave_gaming
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = NYO_focus_leave_gaming
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = NYO_focus_seso_faction
+		icon = GFX_goal_generic_major_alliance
+		relative_position_id = NYO_focus_stop_playing_gmod
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+			is_in_faction = no
+			has_global_flag = flag_seso_created
+		}
+		prerequisite = {
+			focus = NYO_focus_stop_playing_gmod
+		}
+		mutually_exclusive = {
+			focus = NYO_focus_leave_gaming
+		}
+
+		completion_reward = {
+			NJE = {
+				add_to_faction = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_annoyed_by_jolly
+		icon = GFX_goal_unknown
+		relative_position_id = NYO_focus_commander_crimson
+		x = 2
+		y = 1
+		cost = 2
+		prerequisite = {
+			focus = NYO_focus_commander_crimson
+		}
+		available = {
+			any_neighbor_country = {
+				original_tag = ONT
+			}
+		}
+
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_controlled_by = ROOT
+					any_neighbor_state = {
+						controller = {
+							original_tag = ONT
+						}
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						level < 5
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NYO_focus_annoyed_by_pickle
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		relative_position_id = NYO_focus_commander_crimson
+		x = 4
+		y = 1
+		cost = 2
+		prerequisite = {
+			focus = NYO_focus_commander_crimson
+		}
+		available = {
+			any_neighbor_country = {
+				original_tag = PEN
+			}
+		}
+
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_controlled_by = ROOT
+					any_neighbor_state = {
+						controller = {
+							original_tag = PEN
+						}
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						level < 5
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Safe, for now...
+	focus = {
+		id = NYO_focus_safe_for_now
+		icon = GFX_goal_unknown
+		x = 37
+		y = 4
+		cost = 10
+		
+		prerequisite = { 
+			focus = NYO_focus_rydercrimson_pact 
+		}
+		prerequisite = { 
+			focus = NYO_focus_stop_illegal_immigration_from_connecticut 
+		}
+		
+		completion_reward = {
+			#all_divisions_defense_+10%
+		}
+	}
+
+	#Focus for Ryder-Crimson Pact
+	focus = {
+		id = NYO_focus_rydercrimson_pact
+		icon = GFX_goal_unknown
+		x = 39
+		y = 3
+		cost = 10
+		
+		prerequisite = { focus = NYO_focus_prepare_to_handle_kujo }
+		
+		completion_reward = {
+			#virginia_gets_event_ryder_crimson_pact
+		}
+	}
+
+	#Focus for Pressure New Jersey for Staten Island
+	focus = {
+		id = NYO_focus_pressure_new_jersey_for_staten_island
+		icon = GFX_goal_unknown
+		x = 35
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = NYO_focus_influence_smaller_battalions }
+		
+		completion_reward = {
+			#new_jersey_gets_event_cede_staten_island
+		}
+	}
+
+	#Focus for Influence Smaller Battalions
+	focus = {
+		id = NYO_focus_influence_smaller_battalions
+		icon = GFX_goal_unknown
+		x = 37
+		y = 1
+		cost = 10
+		
+		
+		completion_reward = {
+			add_political_power= 10
+		}
+	}
 
 	focus = {
 		id = NYO_focus_ggn_1
-		icon = GFX_goal_anti_comintern_pact
-		x = 26
-		y = 1
+		icon = GFX_goal_generic_military_sphere
+		#relative_position_id = NYO_focus_commander_crimson
+		x = 25
+		y = 0
 		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
+		
+		
 		cancel_if_invalid = no
+		#prerequisite = {
+		#	focus = NYO_focus_commander_crimson
+		#}
 		available = {
 			has_country_leader = {
 				character = NYO_crimson
@@ -251,6 +500,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power= 50
+			NYO_crimson = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_planning = 1
+				add_logistics = 1
+			}
 
 			random_core_state = {
 				add_extra_state_shared_building_slots = 5
@@ -273,16 +529,14 @@ focus_tree = {
 
 	focus = {
 		id = NYO_focus_death_trooper_event
-		icon = GFX_goal_unknown
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
 		relative_position_id = NYO_focus_ggn_1
 		x = -1
 		y = 1
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_ggn_1 }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			add_war_support = 0.10
 			army_experience = 50
@@ -291,17 +545,16 @@ focus_tree = {
 
 	focus = {
 		id = NYO_focus_wulf_inspiration
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_army_reform
 		relative_position_id = NYO_focus_ggn_1
 		x = 1
 		y = 1
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_ggn_1 }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
+			add_political_power = 100
 			NYO_wulf = {
 				add_advisor_role = {
 					activate = no
@@ -314,7 +567,7 @@ focus_tree = {
 					}
 				}
 				add_corps_commander_role ={
-					traits={ strict_leader }
+					traits={ harsh_leader }
 					skill = 3
 					attack_skill = 3
 					defense_skill = 2
@@ -327,15 +580,13 @@ focus_tree = {
 
 	focus = {
 		id = NYO_focus_ggn_2
-		icon = GFX_goal_anti_comintern_pact
+		icon = GFX_goal_generic_military_sphere
 		relative_position_id = NYO_focus_death_trooper_event
 		x = 1
 		y = 1
 		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
+		
+		
 		cancel_if_invalid = no
 		available = {
 			has_country_leader = {
@@ -350,6 +601,16 @@ focus_tree = {
 		prerequisite = { focus = NYO_focus_wulf_inspiration }
 		completion_reward = {
 			add_political_power= 50
+			NYO_crimson = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_planning = 1
+				add_logistics = 1
+				add_country_leader_trait = army_infantry_3
+				add_unit_leader_trait = infantry_expert
+				add_unit_leader_trait = infantry_leader
+			}
 
 			random_core_state = {
 				add_extra_state_shared_building_slots = 3
@@ -372,16 +633,14 @@ focus_tree = {
 
 	focus = {
 		id = NYO_focus_gunner_character
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery
 		relative_position_id = NYO_focus_ggn_2
 		x = -4
 		y = 1
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_ggn_2 }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -399,16 +658,14 @@ focus_tree = {
 
 	focus = {
 		id = NYO_focus_merge_with_engineers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_tank
 		relative_position_id = NYO_focus_gunner_character
 		x = 0
 		y = 1
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_gunner_character }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			NYO_crimson = {
 				add_unit_leader_trait = engineer_officer
@@ -423,15 +680,22 @@ focus_tree = {
 
 	focus = {
 		id = NYO_focus_medic_tks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_scientific_exchange
 		relative_position_id = NYO_focus_ggn_2
 		x = -2
 		y = 1
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_ggn_2 }
-		ai_will_do = {
-			factor = 1
+		
+		available = {
+			COT = {
+				has_country_leader = {
+					name = "Dildo Sagbag"
+					ruling_only = yes
+				}
+				has_completed_focus = cot_focus_establishsgn
+			}
 		}
 		completion_reward = {
 			army_experience = 25
@@ -452,19 +716,17 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_ggn_2 }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			NYO_triad = {
-				add_skill_level = 3
+				add_skill_level = 1
 				add_planning = 1
 				add_unit_leader_trait = infantry_officer
 			}
 			NYO_speedy = {
-				add_skill_level = 3
+				add_skill_level = 1
 				add_planning = 1
 				add_unit_leader_trait = infantry_officer
 			}
@@ -472,17 +734,35 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NYO_focus_hyper_space_monsters
+		icon = GFX_goal_generic_navy_anti_submarine
+		relative_position_id = NYO_focus_ggn_2
+		x = 4
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = NYO_focus_ggn_2 }
+		
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = naval_equipment
+			}
+		}
+	}
+
+	focus = {
 		id = NYO_focus_eros_inspiration
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_army_reform
 		relative_position_id = NYO_focus_ggn_2
 		x = 0
 		y = 1
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_ggn_2 }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			NYO_eros = {
 				add_advisor_role = {
@@ -509,15 +789,13 @@ focus_tree = {
 
 	focus = {
 		id = NYO_focus_ggn_3
-		icon = GFX_goal_anti_comintern_pact
+		icon = GFX_goal_generic_military_sphere
 		relative_position_id = NYO_focus_merge_with_engineers
 		x = 4
 		y = 1
 		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
+		
+		
 		cancel_if_invalid = no
 		available = {
 			has_country_leader = {
@@ -532,20 +810,27 @@ focus_tree = {
 		prerequisite = { focus = NYO_focus_eros_inspiration }
 		completion_reward = {
 			add_political_power= 50
+			NYO_crimson = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_planning = 1
+				add_logistics = 1
+			}
 
 			random_core_state = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
 			random_core_state = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -554,16 +839,14 @@ focus_tree = {
 
 	focus = {
 		id = NYO_focus_icd_character
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		relative_position_id = NYO_focus_ggn_3
 		x = -2
 		y = 1
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_ggn_3 }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			NYO_crimson = {
 				add_unit_leader_trait = armor_officer
@@ -578,394 +861,39 @@ focus_tree = {
 	}
 
 	#Focus for Watch HOI4 Tutorials
-	focus = {
-		id = NYO_focus_watch_hoi4_tutorials
-		icon = GFX_focus_generic_socialist_science
-		x = 16
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = NYO_focus_secure_long_island 
-			focus = NYO_focus_secure_new_york_state 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			army_experience= 20
-		}
-	}
-
-	#Focus for Divided We Rise
-	focus = {
-		id = NYO_focus_divided_we_rise
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		x = 14
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = NYO_focus_convince_vladdy_daddy_to_let_zhukov_back_into_service 
-		}
-		prerequisite = { 
-			focus = NYO_focus_blessed_wholesome_sablin_100 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#declare_war_on_ny
-		}
-	}
-
-	#Focus for Secure New York State
-	focus = {
-		id = NYO_focus_secure_new_york_state
-		icon = GFX_goal_generic_fortify_city
-		x = 16
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_march_on_new_york_city }
-		mutually_exclusive = { focus = NYO_focus_secure_long_island }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#communists_will_control_most_of_nys
-		}
-	}
-
-	#Focus for Arm the Partisans
-	focus = {
-		id = NYO_focus_arm_the_partisans
-		icon = GFX_focus_YUG_pan_slavic_congress
-		x = 12
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = NYO_focus_secure_new_york_state 
-			focus = NYO_focus_secure_long_island 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#add_10_24width_militia_divisions_at_start_of_war
-		}
-	}
-
-	#Focus for Present Crimson's Unepic Evidence
-	focus = {
-		id = NYO_focus_present_crimsons_unepic_evidence
-		icon = GFX_focus_hol_the_foundations_of_defense
-		x = 12
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_gaming_rigs_to_all_who_join }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#event_crimson_bribed
-		}
-	}
-
-	#Focus for All Gamers Have Equal Opportunity to Apply for Staff
-	focus = {
-		id = NYO_focus_all_gamers_have_equal_opportunity_to_apply_for_staff
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-		x = 16
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_gaming_rigs_to_all_who_join }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#Communism_support_+5%_2x20_width_infantry_at_start_of_war
-		}
-	}
-
-	#Focus for March On New York City
-	focus = {
-		id = NYO_focus_march_on_new_york_city
-		icon = GFX_goal_tfv_saf_support_german_coup
-		x = 14
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = NYO_focus_all_gamers_have_equal_opportunity_to_apply_for_staff 
-		}
-		prerequisite = { 
-			focus = NYO_focus_present_crimsons_unepic_evidence 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#communist_support_+5%
-#additional_divs_at_war_start
-		}
-	}
-
-	#Focus for Secure Long Island
-	focus = {
-		id = NYO_focus_secure_long_island
-		icon = GFX_focus_generic_coastal_fort
-		x = 12
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_march_on_new_york_city }
-		mutually_exclusive = { focus = NYO_focus_secure_new_york_state }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#communists_control_long_island_and_small_portion_of_nys
-		}
-	}
-
-	#Focus for Prepare for inevitable Democrat Uprising
-	focus = {
-		id = NYO_focus_prepare_for_inevitable_democrat_uprising
-		icon = GFX_focus_spr_crush_the_revolution
-		x = 7
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = NYO_focus_promote_mikmaq 
-		}
-		prerequisite = { 
-			focus = NYO_focus_training_on_sundays 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#remove_national_spirit_kujo_insurrection
-		}
-	}
-
-	#Focus for Divided We Fall
-	focus = {
-		id = NYO_focus_divided_we_fall
-		icon = GFX_goal_anti_comintern_pact
-		x = 4
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = NYO_focus_prepare_for_inevitable_democrat_uprising 
-		}
-		prerequisite = { 
-			focus = NYO_focus_militarize_the_cops 
-		}
-		prerequisite = { 
-			focus = NYO_focus_fortify_long_island 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			set_war_support= 90 
-#declare_war_on_srny
-		}
-	}
-
-	#Focus for Gaming Rigs to all who Join
-	focus = {
-		id = NYO_focus_gaming_rigs_to_all_who_join
-		icon = GFX_focus_spr_class_war
-		x = 14
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_general_secretary_ojax }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#polandball_and_beef_become_generals
-		}
-	}
-
-	#Focus for Promote Mikmaq
-	focus = {
-		id = NYO_focus_promote_mikmaq
-		icon = GFX_focus_spa_caudillo_of_spain
-		x = 2
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		#prerequisite = { focus = NYO_focus_give_triad_and_speedy_cadet_training_perms }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#Mikmaq becomes a field marshal
-		}
-	}
-
-	#Focus for Training on Sundays
-	focus = {
-		id = NYO_focus_training_on_sundays
-		icon = GFX_focus_generic_military_mission
-		x = 6
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_mandatory_trooperkorps_service }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			army_experience= 20
-		}
-	}
-
-	#Focus for Fortify Long Island
-	focus = {
-		id = NYO_focus_fortify_long_island
-		icon = GFX_goal_generic_fortify_city
-		x = 1
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = NYO_focus_training_on_sundays 
-		}
-		prerequisite = { 
-			focus = NYO_focus_promote_mikmaq 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#add_lv2_fort_nyc
-		}
-	}
-
-	#Focus for Militarize the Cops
-	focus = {
-		id = NYO_focus_militarize_the_cops
-		icon = GFX_goal_unknown
-		x = 4
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = NYO_focus_promote_mikmaq 
-		}
-		prerequisite = { 
-			focus = NYO_focus_training_on_sundays 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#add_5_20width_inf_at_start_of_civwar
-		}
-	}
-
-	#Focus for Order Mik to Tail Him
-	focus = {
-		id = NYO_focus_order_mik_to_tail_him
-		icon = GFX_focus_mex_support_general_cedillo
-		relative_position_id = NYO_focus_investigate_msgt_ojax
-		x = 2
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_investigate_msgt_ojax }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#gets event evidence of ojax at communist meeting
-		}
-	}
-
-	#Focus for Present Evidence and arrest the lib
-	focus = {
-		id = NYO_focus_present_evidence_and_arrest_the_lib
-		icon = GFX_focus_mex_arrest_general_cedillo
-		relative_position_id = NYO_focus_dig_up_ggn_records
-		x = 2
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = NYO_focus_dig_up_ggn_records 
-		}
-		prerequisite = { 
-			focus = NYO_focus_order_mik_to_tail_him 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_stability= -0.15  
-#ojax_stops_being_general
-#communism_pop_20%
-		}
-	}
-
-	#Focus for Dig up GGN Records
-	focus = {
-		id = NYO_focus_dig_up_ggn_records
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = NYO_focus_investigate_msgt_ojax
-		x = -2
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_investigate_msgt_ojax }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#Gets event: Old Communist Ties
-		}
-	}
-
-	#Focus for Investigate MSGT Ojax
-	focus = {
-		id = NYO_focus_investigate_msgt_ojax
-		icon = GFX_focus_attack_soviet
-		relative_position_id = NYO_focus_commander_crimson
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_commander_crimson }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power= 100
-		}
-	}
+	#focus = {
+	#	id = NYO_focus_watch_hoi4_tutorials
+	#	icon = GFX_focus_generic_socialist_science
+	#	x = 16
+	#	y = 6
+	#	cost = 10
+	#	
+	#	prerequisite = { 
+	#		focus = NYO_focus_secure_long_island 
+	#		focus = NYO_focus_secure_new_york_state 
+	#	}
+	#	
+	#	completion_reward = {
+	#		army_experience= 20
+	#	}
+	#}
 
 	#Focus for General Secretary Ojax
 	focus = {
 		id = NYO_focus_general_secretary_ojax
 		icon = GFX_goal_generic_war_with_comintern
 		x = 14
-		y = 1
+		y = 0
 		cost = 2
-		available_if_capitulated = yes
-		mutually_exclusive = { focus = NYO_focus_commander_crimson }
-		ai_will_do = {
-			factor = 1
+		
+		#mutually_exclusive = { focus = NYO_focus_commander_crimson }
+		available = {
+			has_country_leader = {
+				character = NYO_ojax
+				ruling_only = yes
+			}
 		}
+		
 		completion_reward = {
 			set_politics = {
 				ruling_party = communism
@@ -1012,24 +940,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Mandatory TrooperKorps Service
-	focus = {
-		id = NYO_focus_mandatory_trooperkorps_service
-		icon = GFX_focus_generic_manpower
-		relative_position_id = NYO_focus_present_evidence_and_arrest_the_lib
-		x = 2
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_present_evidence_and_arrest_the_lib }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			#change_consription_law_to_extensive_consription
-		}
-	}
-
 	#Focus for Prepare to Handle Kujo
 	focus = {
 		id = NYO_focus_prepare_to_handle_kujo
@@ -1037,11 +947,9 @@ focus_tree = {
 		x = 39
 		y = 2
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_influence_smaller_battalions }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			add_manpower= 100000  add_war_support= 5
 		}
@@ -1054,11 +962,9 @@ focus_tree = {
 		x = 39
 		y = 6
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_modernization_of_our_military }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#50%bonus_on_heavy_ship_hull_and_fighter
 		}
@@ -1071,11 +977,9 @@ focus_tree = {
 		x = 39
 		y = 7
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_air_force_and_navy }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#fighter_production_cost_-10%
 		}
@@ -1088,43 +992,37 @@ focus_tree = {
 		x = 45
 		y = 4
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_implement_rehabilitated_isb_agents }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			add_stability= 0.25
 		}
 	}
 
 	#Focus for Convince Vladdy Daddy to let Zhukov back into service
-	focus = {
-		id = NYO_focus_convince_vladdy_daddy_to_let_zhukov_back_into_service
-		icon = GFX_goal_unknown
-		x = 12
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_arm_the_partisans }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	#focus = {
+	#	id = NYO_focus_convince_vladdy_daddy_to_let_zhukov_back_into_service
+	#	icon = GFX_goal_unknown
+	#	x = 12
+	#	y = 7
+	#	cost = 10
+	#	
+	#	prerequisite = { focus = NYO_focus_arm_the_partisans }
+	#	
+	#}
 
 	#Focus for Blessed Wholesome Sablin 100
-	focus = {
-		id = NYO_focus_blessed_wholesome_sablin_100
-		icon = GFX_goal_unknown
-		x = 16
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYO_focus_watch_hoi4_tutorials }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	#focus = {
+	#	id = NYO_focus_blessed_wholesome_sablin_100
+	#	icon = GFX_goal_unknown
+	#	x = 16
+	#	y = 7
+	#	cost = 10
+	#	
+	#	prerequisite = { focus = NYO_focus_watch_hoi4_tutorials }
+	#	
+	#}
 
 	#Focus for Dissidents and Women to the Spice Mines
 	focus = {
@@ -1133,11 +1031,9 @@ focus_tree = {
 		x = 50
 		y = 3
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_reeducate_the_tk_cult }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			add_stability= -0.05  add_war_support= 5 
 #add_2_civs_to_a_province_in_the_west
@@ -1151,11 +1047,9 @@ focus_tree = {
 		x = 47
 		y = 4
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_implement_rehabilitated_isb_agents }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			add_political_power= 200
 		}
@@ -1168,11 +1062,9 @@ focus_tree = {
 		x = 47
 		y = 6
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_the_gamers_constitution }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			add_stability= 0.1  
 #production_efficieny_cap_+10%
@@ -1186,11 +1078,9 @@ focus_tree = {
 		x = 57
 		y = 2
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_the_revolution_triumphant }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#resource_gain_efficiency_+10
 		}
@@ -1203,12 +1093,10 @@ focus_tree = {
 		x = 55
 		y = 3
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_rebuilding_the_pc_factories }
 		mutually_exclusive = { focus = NYO_focus_rapid_recovery }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#add_4_civs_and_2_mils_to_nyc
 		}
@@ -1221,11 +1109,9 @@ focus_tree = {
 		x = 55
 		y = 4
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_take_our_time }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#2x_50percent_research_bonus_for_armor
 #add_2_mils_in_albany
@@ -1239,11 +1125,9 @@ focus_tree = {
 		x = 55
 		y = 5
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_albany_armor_design_bureau }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#add_2_mils_in_long_island
 		}
@@ -1256,11 +1140,9 @@ focus_tree = {
 		x = 55
 		y = 6
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_reopening_te_tk_armor_factories }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#remove_national_spirit_inflation
 		}
@@ -1273,11 +1155,9 @@ focus_tree = {
 		x = 55
 		y = 7
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_state_controlled_currency }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#remove_national_spirit_recovering_from_civil_war
 		}
@@ -1290,11 +1170,9 @@ focus_tree = {
 		x = 50
 		y = 4
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_dissidents_and_women_to_the_spice_mines }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			add_stability= 0.2
 		}
@@ -1307,11 +1185,9 @@ focus_tree = {
 		x = 58
 		y = 4
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_rapid_recovery }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#add_2_civs_to_an_upstate_ny_province
 		}
@@ -1324,12 +1200,10 @@ focus_tree = {
 		x = 58
 		y = 3
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_rebuilding_the_pc_factories }
 		mutually_exclusive = { focus = NYO_focus_take_our_time }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#add_1_civ_and_1_mil_to_nyc
 		}
@@ -1342,11 +1216,9 @@ focus_tree = {
 		x = 58
 		y = 5
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_gulags }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#remove_national_spirit_recovering_from_civil_war
 		}
@@ -1359,11 +1231,9 @@ focus_tree = {
 		x = 50
 		y = 5
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_social_credit_system }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#stability_penalty_from_war_is_lessened
 		}
@@ -1376,10 +1246,8 @@ focus_tree = {
 		x = 65
 		y = 1
 		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
+		
+		
 		completion_reward = {
 			add_war_support= 15
 		}
@@ -1392,12 +1260,10 @@ focus_tree = {
 		x = 61
 		y = 2
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_eastern_gamer_liberation_front }
 		mutually_exclusive = { focus = NYO_focus_balanced_expansion }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#unlocks_decisions_to_declare_war_on_new_england_states_and_new_brunswick_and_nova_scotia
 		}
@@ -1410,14 +1276,12 @@ focus_tree = {
 		x = 65
 		y = 2
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_eastern_gamer_liberation_front }
 		mutually_exclusive = { 
 			focus = NYO_focus_reckless_expansion 
 		}
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#unlocks_decisions_to_declare_war_on_all_states_in_new_england
 		}
@@ -1430,11 +1294,9 @@ focus_tree = {
 		x = 69
 		y = 2
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_eastern_gamer_liberation_front }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#virginia_gets_event_ryderojax_pact
 		}
@@ -1447,10 +1309,8 @@ focus_tree = {
 		x = 65
 		y = 4
 		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
+		
+		
 	}
 
 	#Focus for Build A Wall
@@ -1460,12 +1320,10 @@ focus_tree = {
 		x = 62
 		y = 5
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_the_connecticut_immigration_issue }
 		mutually_exclusive = { focus = NYO_focus_welcome_the_gamers }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			add_stability= 0.1  
 #add_forts_on_ct_border
@@ -1479,12 +1337,10 @@ focus_tree = {
 		x = 68
 		y = 5
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_the_connecticut_immigration_issue }
 		mutually_exclusive = { focus = NYO_focus_build_a_wall }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			add_stability= -0.1  add_manpower= 100000
 		}
@@ -1497,11 +1353,9 @@ focus_tree = {
 		x = 68
 		y = 6
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_welcome_the_gamers }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#add_1_civ_to_a_province_in_upstate_ny
 		}
@@ -1514,11 +1368,9 @@ focus_tree = {
 		x = 62
 		y = 6
 		cost = 10
-		available_if_capitulated = yes
+		
 		prerequisite = { focus = NYO_focus_build_a_wall }
-		ai_will_do = {
-			factor = 1
-		}
+		
 		completion_reward = {
 			#division_defense_+10%
 		}

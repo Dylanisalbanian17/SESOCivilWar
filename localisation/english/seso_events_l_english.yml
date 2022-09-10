@@ -217,3 +217,10 @@ pennsylvania.1.d: "After rummaging around the house, [From.GetLeader] got ahold 
 pennsylvania.1.a: "Ubuntu"
 pennsylvania.1.b: "Arch"
 pennsylvania.1.c: "Debian"
+
+# New York
+new_york.1.t: "Crimson Demands You"
+new_york.1.d: "Crimson demands you to come back for TK training."
+new_york.1.a: "Okay"
+new_york.1.b: "Uhh no."
+new_york.1.c: "ANYTHING FOR COMMANDER CRIMSON"

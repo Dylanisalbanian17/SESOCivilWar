@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		idea_loved_by_crimson = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+			}
+		}
+	}
+}

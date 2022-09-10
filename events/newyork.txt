@@ -1,0 +1,117 @@
+add_namespace = new_york
+
+# Crimson demands country to join stormtrooper rp
+country_event = {
+	id = new_york.1
+	title = new_york.1.t
+	desc = new_york.1.d
+	picture = GFX_report_event_imperial_conference
+	
+	is_triggered_only = yes
+	#Yes
+	option = {
+		name = new_york.1.a
+		ai_chance = { base = 1 }
+		trigger = {
+			NOT = {
+				ROOT = {
+					has_country_leader = {
+						character = MAR_kujo
+						ruling_only = yes
+					}
+				}
+			}
+		}
+
+		FROM = {
+			diplomatic_relation = {
+				country = ROOT
+				relation = puppet
+				active = yes
+			}
+		}
+		add_ideas = idea_tk_focus
+
+
+		if  = {
+			limit = {
+				ROOT = {
+					has_country_leader = {
+						character = COT_dildo_sagbag
+						ruling_only = yes
+					}
+				}
+			}
+			COT_dildo_sagbag = {
+				set_leader_name = "Uncle"
+			}
+		}
+
+		if  = {
+			limit = {
+				ROOT = {
+					has_country_leader = {
+						character = VIA_ryder
+						ruling_only = yes
+					}
+				}
+			}
+			VIA_ryder = {
+				set_leader_name = "Havoc"
+			}
+		}
+
+		if  = {
+			limit = {
+				ROOT = {
+					has_country_leader = {
+						character = DEL_posh
+						ruling_only = yes
+					}
+				}
+			}
+			DEL_posh = {
+				set_leader_name = "Decker"
+			}
+		}
+	}
+	#Yes from Kujo
+	option = {
+		name = new_york.1.c
+		ai_chance = { base = 500 }
+		trigger = {
+			ROOT = {
+				has_country_leader = {
+					character = MAR_kujo
+					ruling_only = yes
+				}
+			}
+		}
+
+		set_nationality = {
+			target_country = FROM
+			character = MAR_kujo
+		}
+		FROM = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+			add_stability = 0.15
+			add_war_support = 0.15
+		}
+	}
+
+	#No
+	option = {
+		name = new_york.1.b
+		ai_chance = { base = 5 }
+		FROM = {
+			create_wargoal = {
+				target = ROOT
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+
+}

@@ -52,7 +52,7 @@
 #}
 leader_traits = {
 
-	
+
 ##################################
 # Common Traits
 ##################################
@@ -923,8 +923,8 @@ leader_traits = {
 				attack = 0.05
 			}
 			fort = {
-                attack = 0.1
-            }
+				attack = 0.1
+			}
 		}
 		
 		slot = high_command
@@ -941,7 +941,7 @@ leader_traits = {
 
 
 	panzer_leader = {
- 		type = corps_commander
+		type = corps_commander
 		gain_xp = {
 			set_temp_variable = { temp = num_units }
 			multiply_temp_variable = { temp = 0.4 }
@@ -968,7 +968,7 @@ leader_traits = {
 	}
 
 	commando = { 
- 		type = corps_commander
+		type = corps_commander
 		gain_xp = {
 			OR = {
 				temperature < -15
@@ -994,7 +994,7 @@ leader_traits = {
 	}
 
 	desert_fox = { 
- 		type = corps_commander
+		type = corps_commander
 		gain_xp = {
 			is_fighting_in_terrain = desert
 		}
@@ -1877,7 +1877,7 @@ leader_traits = {
 	search_pattern_expert = {
 		type = navy
 		modifier = {
-			 spotting_chance = 0.2
+			spotting_chance = 0.2
 		}
 				
 		ai_will_do = {
@@ -2071,7 +2071,7 @@ leader_traits = {
 	crisis_magician = { 
 		type = navy
 		modifier = {
-			 naval_critical_effect_factor = -0.5
+			naval_critical_effect_factor = -0.5
 		}
 				
 		ai_will_do = {
@@ -2088,7 +2088,7 @@ leader_traits = {
 	flight_deck_manager = { 
 		type = navy
 		modifier = {
-			 sortie_efficiency = 0.1
+			sortie_efficiency = 0.1
 		}
 		
 		slot = high_command

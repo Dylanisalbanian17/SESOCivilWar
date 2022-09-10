@@ -12,7 +12,7 @@ set_technology = {
 	tech_engineers = 1
 	fuel_refining = 1
 	# Doctrines
-	mass_assault_doctrine = 1
+	mass_assault = 1
 	basic_train = 1
 }
 
@@ -42,7 +42,7 @@ add_ideas = {
 	idea_awful_drivers
 }
 
-set_convoys = 30
+set_convoys = 1
 
 recruit_character = NYO_crimson
 recruit_character = NYO_ojax
@@ -52,6 +52,14 @@ recruit_character = NYO_speedy
 recruit_character = NYO_wulf
 recruit_character = NYO_eros
 recruit_character = NYO_mikmaq
+recruit_character = NYO_decker
+recruit_character = NYO_jimbo
+recruit_character = NYO_chip_chip
+recruit_character = NYO_balthier
+recruit_character = NYO_soggy_waffles
+recruit_character = NYO_grape
+recruit_character = NYO_derek
+recruit_character = NYO_kelp
 
 set_politics = {
 	ruling_party = neutrality
@@ -64,3 +72,7 @@ set_popularities = {
 	communism = 23
 	neutrality = 75
 }
+
+add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }
+add_equipment_to_stockpile = { type = support_equipment amount = 500 }
+add_equipment_to_stockpile = { type = train_equipment amount = 100 }
