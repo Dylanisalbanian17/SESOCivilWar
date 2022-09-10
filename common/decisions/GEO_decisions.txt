@@ -8,7 +8,6 @@ GEO_trolling_category = {
 		target_array = THIS.neighbors
 
 		available = {
-			#has_completed_focus = GEO_trolltheggners
 			NOT = { has_country_flag = flag_trolling }
 		}
 
