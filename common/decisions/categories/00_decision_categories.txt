@@ -53,14 +53,6 @@ foreign_politics = {
 	icon = generic_political_actions
 }
 
-political_actions = {
-	icon = generic_political_actions
-
-	allowed = {
-		always = yes
-	}
-}
-
 foreign_influence = {
 	icon = generic_political_actions
 }
