@@ -1,16 +1,21 @@
 characters={
 
 	MAR_kujo={
-		name="Kujo"
+		name="kujo5656"
 		portraits = {
+			army = {
+				large="gfx/leaders/MAR/kujo.dds"
+				small="gfx/leaders/MAR/kujo.dds"
+			}
 			civilian = {
 				large="gfx/leaders/MAR/kujo.dds"
+				#small="gfx/leaders/MAR/kujo.dds"
 			}
 		}
 
 		country_leader={
 			ideology=fascism_ideology
-			traits = { employed }
+			traits = { employed hedonist retarded }
 			expire = "1965.1.1.1"
 			id=-1
 		}

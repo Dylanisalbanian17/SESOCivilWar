@@ -80,4 +80,15 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	retarded = {
+		random = no
+		stability_factor = -0.30
+		war_support_factor = 0.15
+		offence = -0.10
+		defence = -0.10
+		research_speed_factor = -0.10
+		production_factory_efficiency_gain_factor = -0.25
+		production_factory_max_efficiency_factor = -0.25
+	}
 }
