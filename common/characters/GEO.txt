@@ -16,4 +16,64 @@ characters={
 		}
 	}
 
+	GEO_covfefe = {
+		name = "Covfefe"
+		corps_commander={
+			traits={ inflexible_strategist }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+
+		visible  = {
+			has_country_leader = {
+				character = GEO_finch
+				ruling_only = yes
+			}
+			has_completed_focus = GEO_reestablish_the_shadow_troopers
+		}
+	}
+
+	GEO_devo = {
+		name = "Devo"
+		corps_commander={
+			traits={ politically_connected old_guard }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		visible  = {
+			has_country_leader = {
+				character = GEO_finch
+				ruling_only = yes
+			}
+			has_completed_focus = GEO_reestablish_the_shadow_troopers
+		}
+	}
+
+	GEO_firestorm = {
+		name = "Firestorm"
+		corps_commander={
+			traits={ brilliant_strategist  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+
+		visible  = {
+			has_country_leader = {
+				character = GEO_finch
+				ruling_only = yes
+			}
+			has_completed_focus = GEO_reestablish_the_shadow_troopers
+		}
+	}
+
 }

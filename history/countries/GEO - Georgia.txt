@@ -36,8 +36,14 @@ if = {
 }
 
 set_convoys = 30
+add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }
+add_equipment_to_stockpile = { type = support_equipment amount = 500 }
+add_equipment_to_stockpile = { type = train_equipment amount = 100 }
 
 recruit_character = GEO_finch
+recruit_character = GEO_covfefe
+recruit_character = GEO_firestorm
+recruit_character = GEO_devo
 
 set_politics = {
 	ruling_party = neutrality
