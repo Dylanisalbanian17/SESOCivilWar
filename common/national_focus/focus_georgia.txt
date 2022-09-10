@@ -212,6 +212,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.15
+			NJE = {
+				add_to_faction = FROM
+			}
 		}
 	}
 
@@ -338,7 +341,7 @@ focus_tree = {
 	focus = {
 		id = GEO_further_train_the_men
 		icon = GFX_GEO_further_train_the_men-274131
-		relative_position_id = GEO_reestablish_the_shadow_troopers
+		relative_position_id = GEO_train_the_new_recruits
 		x = 0
 		y = 1
 		cost = 5
@@ -355,7 +358,7 @@ focus_tree = {
 	focus = {
 		id = GEO_train_the_new_recruits
 		icon = GFX_GEO_train_the_new_recruits-54440
-		relative_position_id = GEO_further_train_the_men
+		relative_position_id = GEO_reestablish_the_shadow_troopers
 		x = 0
 		y = 1
 		search_filters = {
@@ -371,7 +374,7 @@ focus_tree = {
 	focus = {
 		id = GEO_begin_their_deployment
 		icon = GFX_GEO_begin_their_deployment-274133
-		relative_position_id = GEO_train_the_new_recruits
+		relative_position_id = GEO_further_train_the_men
 		x = 0
 		y = 1
 		cost = 5
@@ -391,7 +394,7 @@ focus_tree = {
 		icon = GFX_focus_ger_reichskommisariats
 		relative_position_id = GEO_train_the_new_recruits
 		x = -3
-		y = 2
+		y = 3
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
