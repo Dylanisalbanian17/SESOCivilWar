@@ -18,81 +18,6 @@ ideas = {
 			}
 		}
 
-		blackbiz = {
-			
-			allowed = {
-				tag = COT
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-	
-			picture = generic_production_bonus
-			
-			modifier = {
-				consumer_goods_factor = -0.15
-			}
-		}
-	
-		blackuni = {
-			
-			allowed = {
-				tag = COT
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-	
-			picture = generic_production_bonus
-			
-			modifier = {
-				research_speed_factor = 0.1
-			}
-		}
-
-		blackmiscegenation = {
-			
-			allowed = {
-				tag = COT
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-	
-			picture = generic_production_bonus
-			
-			modifier = {
-				conscription_factor = 0.05
-
-			}
-		}
-
-		cot_emigration = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-	
-			removal_cost = -1
-	
-			picture = generic_production_bonus
-	
-			modifier = {
-				weekly_manpower  = 63666 # Amounts to 2.3 million white people after 12 weeks split to 3 countries
-			}
-		}
-
 		idea_greek_piracy_1 = {
 			allowed = {
 				always = no
@@ -203,6 +128,24 @@ ideas = {
 				consumer_goods_factor = 0.15
 				production_factory_efficiency_gain_factor = -0.35
 				industrial_capacity_factory = -0.20
+			}
+		}
+
+		idea_azerbaijani_moment = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				army_morale_factor = -0.10
+				stability_factor = -0.05
 			}
 		}
 		## Profile Pictures
