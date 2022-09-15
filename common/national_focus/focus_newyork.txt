@@ -92,8 +92,7 @@ focus_tree = {
 			set_politics = {
 				ruling_party = fascism
 			}
-			set_major = yes
-			create_faction = "Trooper Korps"
+			create_faction = "TK Networks"
 		}
 	}
 

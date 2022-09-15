@@ -58,7 +58,7 @@ characters={
 		name = "Concord"
 		portraits = {
 			civilian = {
-				#small = "gfx/interface/advisors/advisor_clarence_a_smith.dds"
+				small = "gfx/interface/advisors/advisor_concord.dds"
 			}
 		}
 
@@ -75,11 +75,15 @@ characters={
 	}
 
 	NYO_triad = {
-		name = "Triad"
+		name = "Vulcan"
 		portraits = {
+			civilian = {
+				small = "gfx/interface/advisors/advisor_vulcan.dds"
+				large = "gfx/leaders/NYO/vulcan.dds"
+			}
 			army = {
-				#small
-				#large
+				small = "gfx/interface/advisors/advisor_vulcan.dds"
+				large = "gfx/leaders/NYO/vulcan.dds"
 			}
 		}
 
@@ -90,17 +94,17 @@ characters={
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 2
-		}
-		visible  = {
-			has_country_leader = {
-				character = NYO_crimson
-				ruling_only = yes
+			visible  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
 			}
 		}
 	}
 
 	NYO_speedy = {
-		name = "Speedy"
+		name = "Slow"
 		portraits = {
 			army = {
 				#small
@@ -128,11 +132,12 @@ characters={
 		name = "Mikmaq"
 		portraits = {
 			civilian = {
-				#small = "gfx/interface/advisors/advisor_clarence_a_smith.dds"
+				small = "gfx/interface/advisors/advisor_mikmaq.dds"
+				large = "gfx/leaders/NYO/mikmaq.dds"
 			}
 			army = {
-				#small
-				#large
+				small = "gfx/interface/advisors/advisor_mikmaq.dds"
+				large = "gfx/leaders/NYO/mikmaq.dds"
 			}
 		}
 
