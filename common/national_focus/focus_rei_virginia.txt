@@ -3,15 +3,18 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 11
 			tag = via
 		}
 	}
-	#Reich Defiant 
+
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	#Reich Defiant ### Requires National Focus to be gone
 	focus = {
 		id = via_reich_defiant 
 		icon = GFX_focus_ger_reichskommisariats
-		x = 15
+		x = 10
 		y = 1
 		cost = 1
 		available_if_capitulated = yes
@@ -26,9 +29,9 @@ focus_tree = {
 	}
 	#Fund Reconstruction - Industry - Give buffs for reconstruction and repair but give debt Wiemar modifier
 	focus = {
-		id = via_reconstruction_fund
-		icon = GFX_goal_generic_construction2
-		x = 20
+		id = via_look_back_or_forward
+		icon = GFX_goal_generic_neutrality_focus
+		x = 10
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
@@ -44,13 +47,16 @@ focus_tree = {
 
 	#Reconstruction - Political Path - Quell the Chaos
 	focus = {
-		id = via_quell_chaos
-		icon = GFX_focus_generic_self_management
-		x = 17
-		y = 2
+		id = via_choose_seso
+		icon = GFX_goal_generic_national_unity
+		x = 8
+		y = 3
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = via_reich_defiant }
+		prerequisite = { focus = via_look_back_or_forward }
+		mutually_exclusive = {
+			focus = via_gmod_ggn
+		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -60,13 +66,16 @@ focus_tree = {
 }
 
 focus = {
-	id = via_lynchburg_trials
-	icon = GFX_goal_anti_comintern_pact
-	x = 18
+	id = via_gmod_ggn
+	icon = GFX_goal_generic_dangerous_deal
+	x = 12
 	y = 3
 	cost = 5
 	available_if_capitulated = yes
-	prerequisite = { focus = via_quell_chaos }
+	prerequisite = { focus = via_look_back_or_forward }
+	mutually_exclusive = {
+		focus = via_choose_seso
+	}
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -75,86 +84,1126 @@ focus = {
 }
 }
 
-	#Reconstruction - Budget Management
+	#####Reconstruction / Civil War#####
+	#Reich Defiant 
 	focus = {
-		id = via_fund_management
-		icon = GFX_focus_hol_abandon_the_gold_standard
-		x = 11	
+		id = via_consolidate_the_north 
+		icon = GFX_goal_generic_military_sphere
+		x = 20
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+
+	}
+	#
+	focus = {
+		id = via_new_jersey_aid
+		icon = GFX_focus_befriend_italy
+		x = 20
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = via_consolidate_the_north }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = via_boombler_aid
+		icon = GFX_focus_generic_polish_deal
+		x = 18
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = via_reich_defiant }
+		prerequisite = { focus = via_consolidate_the_north }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		}
 	}
+}
 
-	focus = {
-		id = via_cut_policing_budget
-		icon = GFX_focus_hol_abandon_the_gold_standard
-		x = 10	
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = via_fund_management }
-		mutually_exclusive = {
-			focus = via_extend_policing_budget
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		}
+focus = {
+	id = via_polish_legion
+	icon = GFX_focus_POL_prepare_for_the_inevitable
+	x = 18
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_boombler_aid }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
 	}
+	completion_reward = {
+}
+}
 
-	focus = {
-		id = via_extend_policing_budget
-		icon = GFX_focus_hol_abandon_the_gold_standard
-		x = 12
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = via_fund_management }
-		mutually_exclusive = {
-			focus = via_cut_policing_budget
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		}
+focus = {
+	id = via_equipment_shipments
+	icon = GFX_goal_generic_small_arms
+	x = 19
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = via_polish_legion OR = via_new_jersey_aid
 	}
-
-	focus = {
-		id = via_cut_tax_tariffs
-		icon = GFX_focus_hol_abandon_the_gold_standard
-		x = 11	
-		y = 4
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = {
-			focus = via_cut_policing_budget
-			focus = via_extend_policing_budget
-		}
-		available = {
-			OR = {
-			has_completed_focus = via_cut_policing_budget
-			has_completed_focus = via_extend_policing_budget
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		}
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
 	}
+	completion_reward = {
+}
+}
 
+focus = {
+	id = via_cool_tensions
+	icon = GFX_goal_continuous_def_against_influence
+	x = 22
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_consolidate_the_north }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_begin_reconstruction_efforts
+	icon = GFX_goal_generic_production2
+	x = 22
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_cool_tensions }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+### 
+
+focus = {
+	id = via_fund_management
+	icon = GFX_goal_generic_consumer_goods
+	x = 10
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_gmod_ggn OR = via_choose_seso }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_military_focus
+	icon = GFX_focus_ger_oppose_hitler
+	x = 10
+	y = 6
+	cost = 5
+	prerequisite = { focus = via_fund_management }
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+###navy focus
+###admiralty calls gives traits about being admiral to ryder leader
+focus = {
+	id = via_admiralty_calls
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	x = 3
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_military_focus }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		navy_experience	= 25
+}
+}
+
+focus = {
+	id = via_expand_production
+	icon = GFX_goal_generic_construct_naval_dockyard
+	x = 5
+	y = 8
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_admiralty_calls }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_refit_designs
+	icon = GFX_focus_generic_destroyer
+	x = 5
+	y = 9
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_expand_production }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_a_thrust
+	icon = GFX_focus_generic_navy_battleship2
+	x = 1
+	y = 8
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_admiralty_calls }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	mutually_exclusive = {
+		focus = via_a_chokehold
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_a_chokehold
+	icon = GFX_goal_generic_navy_anti_submarine
+	x = 3
+	y = 8
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_admiralty_calls }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	mutually_exclusive = {
+		focus = via_a_thrust
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_sub_standardization
+	icon = GFX_focus_POL_develop_polish_shipbuilding
+	x = 3
+	y = 9
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_a_chokehold }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	mutually_exclusive = {
+		focus = via_a_thrust
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_the_prevention_class
+	icon = GFX_goal_generic_navy_carrier
+	x = 1
+	y = 9
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_a_thrust }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_reshuffle_naval_command
+	icon = GFX_goal_generic_neutrality_focus
+	x = 2
+	y = 10
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_the_prevention_class OR = via_sub_standardization  }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+### Men of War
+
+focus = {
+	id = via_lessons_from_romania
+	icon = GFX_focus_generic_attack_romania
+	x = 10
+	y = 7
+	cost = 5
+	prerequisite = { focus = via_military_focus }
+	mutually_exclusive = {
+		focus = via_a_thrust
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	army_experience = 25
+### reduces national spirit debuff
+}
+}
+###loc should say mow infantry micro
+focus = {
+	id = via_mow_infantry_micro
+	icon = GFX_focus_prc_infiltration
+	x = 10
+	y = 8
+	cost = 5
+	prerequisite = { focus = via_lessons_from_romania }
+	mutually_exclusive = {
+		focus = via_consider_superior_designs
+	}
+	mutually_exclusive = {
+		focus = via_observe_romanian_paratroopers
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_shock_and_awe
+	icon = GFX_focus_prc_infiltration
+	x = 10
+	y = 9
+	cost = 5
+	prerequisite = { focus = via_mow_infantry_micro }
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_observe_romanian_paratroopers
+	icon = GFX_focus_generic_paratrooper
+	x = 12
+	y = 8
+	cost = 5
+	prerequisite = { focus = via_lessons_from_romania }
+	mutually_exclusive = {
+		focus = via_mow_infantry_micro
+	}
+	mutually_exclusive = {
+		focus = via_consider_superior_designs
+	}
 	
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		completion_reward = {
+			add_tech_bonus = {
+				category = para_tech
+				uses = 1
+				bonus = 1
+			}
+	}
+}
+}
 
+focus = {
+	id = via_soviet_marines
+	icon = GFX_goal_generic_special_forces
+	x = 12
+	y = 9
+	cost = 5
+	prerequisite = { focus = via_observe_romanian_paratroopers }
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_consider_superior_designs
+	icon = GFX_focus_generic_license_production
+	x = 8
+	y = 8
+	cost = 5
+	prerequisite = { focus = via_lessons_from_romania }
+	mutually_exclusive = {
+		focus = via_mow_infantry_micro
+	}
+	mutually_exclusive = {
+		focus = via_observe_romanian_paratroopers
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			category = cat_medium_armor
+			uses = 1
+			bonus = 1
+		}
+}
+}
+
+focus = {
+	id = via_recover_swiss
+	icon = GFX_focus_generic_attack_romania
+	x = 8
+	y = 9
+	cost = 5
+	prerequisite = { focus = via_consider_superior_designs }
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+### seso mill focus
+
+focus = {
+	id = via_private_contracts
+	icon = GFX_goal_anti_comintern_pact
+	x = 14
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_military_focus }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+### air focus
+
+focus = {
+	id = via_concede_to_fletch
+	icon = GFX_goal_generic_air_doctrine
+	x = 18
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_military_focus }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_purchase_hotas
+	icon = GFX_goal_generic_build_airforce 
+	x = 18
+	y = 8
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_concede_to_fletch }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_the_a-ten
+	icon = GFX_goal_generic_air_bomber
+	x = 20
+	y = 9
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_purchase_hotas }
+	mutually_exclusive = {
+		focus = via_the_f_fourteen
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_the_f_fourteen
+	icon = GFX_goal_generic_air_fighter2
+	x = 16
+	y = 9
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_purchase_hotas }
+	mutually_exclusive = {
+		focus = via_the_a-ten
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_dcs_server
+	icon = GFX_focus_SOV_flying_clubs
+	x = 18
+	y = 10
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_the_f_fourteen OR = via_the_a-ten }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+### Political Tree
+
+focus = {
+	id = via_political_tree_ryder
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 35
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_larp_political_theory
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 35
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_political_tree_ryder }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_repealing_larp
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 35
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_larp_political_theory }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+### tree for national insurrection spirit
+focus = {
+	id = via_stamp_out_innies
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 39
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_repealing_larp }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_learn_from_trebuchet
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 39
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_stamp_out_innies }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_lynchberg_trials
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 39
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_learn_from_trebuchet }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+### path that works on NOVA debuffs vvv
+focus = {
+	id = via_nova
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 37
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_repealing_larp }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_educate_those_damn_trailer_park_people
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 37
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_nova }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+### railroads and lessens debuff
+focus = {
+	id = via_an_interconnected_reich
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 37
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_nova }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_two_language_problem
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 32
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_repealing_larp }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+###longer path vvv that buffs the larp state national spirit but takes longer and maintains some debuff???
+focus = {
+	id = via_teaching_centers
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 33
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_two_language_problem }
+	mutually_exclusive = {
+		focus = via_remove_compulsory_german_teaching
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_german_advice
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 33
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_teaching_centers }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_mud_pits_for_all
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 33
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_german_advice }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+
+
+###insantly removes debuff vvv
+focus = {
+	id = via_remove_compulsory_german_teaching
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 31
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_two_language_problem }
+	mutually_exclusive = {
+		focus = via_teaching_centers
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_our_branch_unifies_us
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 31
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_political_tree_ryder }
+	mutually_exclusive = {
+		focus = via_seso_one
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_invite_old_naval_staff_back
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 31
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_our_branch_unifies_us }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_seso_one
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 33
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_political_tree_ryder }
+	mutually_exclusive = {
+		focus = via_our_branch_unifies_us
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_seso_two
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 33
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_seso_one }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_gamemaster
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 37
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_political_tree_ryder }
+	mutually_exclusive = {
+		focus = via_operations_host
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_head_gamemaster
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 37
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_gamemaster }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_operations_host
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 39
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_political_tree_ryder }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_operations_command
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 39
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_operations_host }
+	mutually_exclusive = {
+		focus = via_gamemaster
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+### Industry Tree
+
+focus = {
+	id = via_reconstruction_efforts
+	icon = GFX_focus_SOV_organize_wreckers
+	x = 25
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_consult_foreign_mace_contractors_mc
+	icon = GFX_goal_continuous_non_factory_construct
+	x = 25
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_reconstruction_efforts }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+###gives war support or something
+focus = {
+	id = via_the_eye
+	icon = GFX_goal_continuous_non_factory_construct
+	x = 25
+	y = 8
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_consult_foreign_mace_contractors_mc }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_civ_industry_one
+	icon = GFX_goal_continuous_non_factory_construct
+	x = 27
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_reconstruction_efforts }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_civ_industry_two
+	icon = GFX_goal_continuous_non_factory_construct
+	x = 27
+	y = 8
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_civ_industry_one }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_gambit_motor_werke
+	icon = GFX_goal_generic_army_motorized
+	x = 23
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_reconstruction_efforts }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+### requires DC to be conquered 
+focus = {
+	id = via_aquire_dc_companies
+	icon = GFX_goal_generic_army_motorized
+	x = 23
+	y = 8
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_gambit_motor_werke }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+### Expansion
+
+focus = {
+	id = via_open_foreign_policy
+	icon = GFX_focus_SOV_organize_wreckers
+	x = 35
+	y = 14
+	cost = 5
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_pressure_dc
+	icon = GFX_focus_SOV_organize_wreckers
+	x = 35
+	y = 15
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_open_foreign_policy }
+
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+###have an optional move capital event | requires certain number of manpower like German focus tree
+focus = {
+	id = via_our_rheinland
+	icon = GFX_focus_SOV_organize_wreckers
+	x = 35
+	y = 16
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_pressure_dc }
+
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_there_can_be_only_one_virgin
+	icon = GFX_focus_GRE_a_land_of_mountains
+	x = 33
+	y = 18
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_our_rheinland }
+
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_the_south
+	icon = GFX_focus_SOV_organize_wreckers
+	x = 37
+	y = 18
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_our_rheinland }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+### END OF FOCUS TREE
 }
