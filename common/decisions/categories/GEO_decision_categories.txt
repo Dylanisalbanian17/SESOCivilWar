@@ -1,0 +1,14 @@
+GEO_trolling_category = {
+	priority = 100
+	picture = generic_border_conflicts
+	icon = generic_propaganda
+	allowed = {
+		has_country_leader = {
+			character = GEO_finch
+			ruling_only = yes
+		}
+		FROM = {
+			has_completed_focus = GEO_trolltheggners
+		}
+	}
+}

@@ -6,26 +6,41 @@ characters={
 			civilian = {
 				large="gfx/leaders/NYO/crimson.dds"
 			}
+			army = {
+				large="gfx/leaders/NYO/crimson.dds"
+				small="gfx/leaders/NYO/crimson.dds"
+			}
 		}
 
 		country_leader={
 			ideology=centrism
 			traits = { unemployed }
-			expire = "1965.1.1.1"
-			id=-1
 		}
 
 		country_leader={
 			ideology=fascism_ideology
 			traits = { unemployed }
-			expire = "1965.1.1.1"
-			id=-1
+		}
+
+		field_marshal= {
+			traits = { harsh_leader }
+			skill = 4
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill= 3
+			logistics_skill= 3
+			#Eventually reach these numbers
+			#skill = 8
+			#attack_skill = 6
+			#defense_skill = 6
+			#planning_skill= 8
+			#logistics_skill= 8
 		}
 
 	}
 
 	NYO_ojax={
-		name="Ojax"
+		name="ojax"
 		portraits = {
 			civilian = {
 				large="gfx/leaders/NYO/ojax.dds"
@@ -35,11 +50,448 @@ characters={
 		country_leader={
 			ideology=stalinism
 			traits = { unemployed dislikes_pen }
-			expire = "1965.1.1.1"
-			id=-1
-		}
 
+		}
 	}
 
-	# Add Concord as advisor for fascist sympathies
+	NYO_concord = {
+		name = "Concord"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/advisors/advisor_concord.dds"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = concord
+			ledger = civilian
+			traits = { fascist_demagogue }
+			allowed = {
+				original_tag = NYO
+			}
+	
+		}
+	}
+
+	NYO_triad = {
+		name = "Vulcan"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/advisors/advisor_vulcan.dds"
+				large = "gfx/leaders/NYO/vulcan.dds"
+			}
+			army = {
+				small = "gfx/interface/advisors/advisor_vulcan.dds"
+				large = "gfx/leaders/NYO/vulcan.dds"
+			}
+		}
+
+		corps_commander={
+			traits={ politically_connected }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			visible  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	NYO_speedy = {
+		name = "Slow"
+		portraits = {
+			army = {
+				#small
+				#large
+			}
+		}
+
+		corps_commander={
+			traits={  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			visible  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	NYO_mikmaq = {
+		name = "Mikmaq"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/advisors/advisor_mikmaq.dds"
+				large = "gfx/leaders/NYO/mikmaq.dds"
+			}
+			army = {
+				small = "gfx/interface/advisors/advisor_mikmaq.dds"
+				large = "gfx/leaders/NYO/mikmaq.dds"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = mikmaq
+			ledger = civilian
+			traits = { silent_workhorse }
+			available  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
+
+		corps_commander={
+			traits={ career_officer  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			visible  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	NYO_wulf = {
+		name = "Wulf"
+		portraits = {
+			civilian = {
+				#small
+				#large
+			}
+			army = {
+				#small
+				#large
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = wulf
+			traits = {
+				mass_assault_expert
+			}
+			available  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+				has_completed_focus = NYO_focus_wulf_inspiration
+			}
+		}
+		corps_commander ={
+			traits={ harsh_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			visible  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+				has_completed_focus = NYO_focus_wulf_inspiration
+			}
+		}
+	}
+
+	NYO_eros = {
+		name = "Eros"
+		portraits = {
+			civilian = {
+				#small
+				#large
+			}
+			army = {
+				#small
+				#large
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = eros
+			traits = {
+				army_chief_offensive_1
+			}
+			available = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+				has_completed_focus = NYO_focus_eros_inspiration
+			}
+		}
+	}
+
+	NYO_decker = {
+		name = "Dacker"
+		portraits = {
+			civilian = {
+				#small
+				#large
+			}
+			army = {
+				#small
+				#large
+			}
+		}
+
+		corps_commander={
+			traits={  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+			visible  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	NYO_jimbo = {
+		name = "Jimbo"
+		portraits = {
+			civilian = {
+				#small
+				#large
+			}
+			army = {
+				#small
+				#large
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_officer  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+			visible  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	NYO_chip_chip = {
+		name = "Chip Chip"
+		portraits = {
+			civilian = {
+				#small
+				#large
+			}
+			army = {
+				#small
+				#large
+			}
+		}
+
+		corps_commander={
+			traits={  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+
+	NYO_balthier = {
+		name = "Balthier"
+		portraits = {
+			civilian = {
+				#small
+				#large
+			}
+			army = {
+				#small
+				#large
+			}
+		}
+
+		corps_commander={
+			traits={ panzer_leader  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			visible  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	NYO_soggy_waffles = {
+		name = "Soggy Waffles"
+		portraits = {
+			civilian = {
+				#small
+				#large
+			}
+			army = {
+				#small
+				#large
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = soggy_waffles
+			traits = { army_chief_planning_1 }
+		}
+
+		corps_commander={
+			traits={ engineer_officer  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	NYO_grape = {
+		name = "Grape"
+		portraits = {
+			civilian = {
+				#small
+				#large
+			}
+			army = {
+				#small
+				#large
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = grape
+			traits = { army_chief_organizational_1 }
+		}
+
+		corps_commander={
+			traits={ engineer_officer  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	NYO_derek = {
+		name = "Derek"
+		portraits = {
+			civilian = {
+				#small
+				#large
+			}
+			navy = {
+				#small
+				#large
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			ledger = navy
+			idea_token = navy_derek
+			traits = { navy_chief_decisive_battle_1 }
+		}
+
+		advisor = {
+			slot = political_advisor
+			ledger = civilian
+			idea_token = pol_derek
+			traits = { social_revolutionary }
+		}
+
+		navy_leader = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 3
+		}
+	}
+
+	NYO_kelp = {
+		name = "Kelp"
+		portraits = {
+			civilian = {
+				#small
+				#large
+			}
+			navy = {
+				#small
+				#large
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			ledger = navy
+			idea_token = kelp
+			traits = { navy_fleet_logistics_1 }
+		}
+
+		navy_leader = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 3
+			coordination_skill = 4
+		}
+	}
 }

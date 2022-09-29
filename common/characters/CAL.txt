@@ -98,12 +98,13 @@ characters={
 			}
 			CAL_gaming_girl = {
 				name = "Pokimane"
+				gender = female
 				portraits = {
 					civilian = {
 						small = "gfx/interface/advisors/advisor_gaming_girl.dds"
+						large = "gfx/leaders/CAL/gaming_girl.dds"
 					}
 				}
-		
 				advisor = {
 					slot = political_advisor
 					idea_token = gaming_girl
@@ -125,7 +126,6 @@ characters={
 							small = "gfx/interface/advisors/advisor_alf_landon.dds"
 						}
 					}
-			
 					advisor = {
 						slot = political_advisor
 						idea_token = alf_landon
@@ -158,18 +158,158 @@ characters={
 							available = {
 									has_government= democratic
 								}
-					
 							}
 						}
+						CAL_jack_boid = {
+							name = "Jack Boid"
+							portraits = {
+								civilian = {
+									small = "gfx/interface/advisors/advisor_jack_boid.dds"
+								}
+							}
+					
+							advisor = {
+								slot = political_advisor
+								idea_token = jack_boid
+								traits = { prince_of_terror }
+								allowed = {
+									original_tag = CAL
+								}
+								available = {
+										has_idea = police_reform
+									}
+								}
+							}
+							CAL_union_agent = {
+								name = "Union Agent"
+								portraits = {
+									civilian = {
+										small = "gfx/interface/advisors/advisor_union_agent.dds"
+									}
+								}
+						
+								advisor = {
+									slot = political_advisor
+									idea_token = union_agent
+									traits = { right_trade_unionist }
+									allowed = {
+										original_tag = CAL
+									}
+									available = {
+											has_idea = police_reform
+										}
+									}
+								}
+							CAL_christopher_sands = {
+								name = "Christopher Sands"
+								portraits = {
+									civilian = {
+										small = "gfx/interface/advisors/advisor_christopher_sands.dds"
+									}
+								}
+						
+								advisor = {
+									slot = political_advisor
+									idea_token = christopher_sands
+									traits = { compassionate_gentleman }
+									allowed = {
+										original_tag = CAL
+									}
+									available = {
+											has_idea = severe_police_corruption
+										}
+									}
+								}
+								CAL_vicus_vargas = {
+									name = "Vicus Vargas"
+									portraits = {
+										civilian = {
+											small = "gfx/interface/advisors/advisor_vicus_vargas.dds"
+										}
+									}
+							
+									advisor = {
+										slot = political_advisor
+										idea_token = vicus_vargas
+										traits = { backroom_backstabber }
+										allowed = {
+											original_tag = CAL
+										}
+										available = {
+												has_idea = severe_police_corruption
+											}
+										}
+									}
+									
 
-	CAL_dwight_d_eisenhower={
-		name="Dwight D. Eisenhower"
+
+	CAL_mark_fischbach ={
+		name="Mark Fischbach"
 		portraits={
 			army={
-				large=GFX_portrait_USA_dwight_d_eisenhower
+				large=GFX_portrait_ger_hans_von_luck
 			}
 			army={
-				small="GFX_idea_dwight_eisenhower"
+				small="GFX_idea_GER_hans_von_luck"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = mark_fischbach
+			allowed = {
+					original_tag = CAL
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+		}
+		corps_commander={
+			traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	CAL_nanami_kochi ={
+		name="Nanami Kochi"
+		gender = female
+		portraits={
+			army={
+				large=GFX_portrait_man_yoshiko_kawashima
+			}
+			army={
+				small="GFX_idea_MAN_yoshiko_kawashima"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = nanami_kochi
+			allowed = {
+					original_tag = CAL
+				}
+				traits = {
+					army_infantry_2
+				}
+		}
+		corps_commander={
+			traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	CAL_jonathan_gillette ={
+		name="Jonathan Gillette"
+		portraits={
+			army={
+				large=GFX_portrait_usa_alexander_vandegrift
+			}
+			army={
+				small="GFX_idea_USA_alexander_vandegrift"
 			}
 		}
 		corps_commander={
@@ -179,8 +319,26 @@ characters={
 			defense_skill = 3
 			planning_skill = 5
 			logistics_skill = 5
-			legacy_id=602
 		}
 	}
-
+	CAL_crystal_mccoy ={
+		name="Crystal Mccoy"
+		gender = female
+		portraits={
+			army={
+				large=GFX_portrait_SOV_aleksandra_kollontay
+			}
+			army={
+				small="GFX_idea_SOV_aleksandra_kollontay"
+			}
+		}
+		corps_commander={
+			traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
 }

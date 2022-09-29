@@ -81,6 +81,66 @@
 		}
 	}
 
+	COT_sevens={
+		name="Sevens"
+		portraits={
+			civilian = {
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+			army={
+				#large=GFX_portrait_GER_friedrich_paulus
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		#corps_commander={
+		#	traits={}
+		#	skill = 1
+		#	attack_skill = 1
+		#	defense_skill = 1
+		#	planning_skill = 1
+		#	logistics_skill = 1
+		#}
+
+		#advisor = {
+		#	slot = political_advisor
+		#	idea_token = sevens
+		#	traits = {  }
+		#	allowed = {
+		#		original_tag = COT
+		#	}
+		#}
+	}
+
+	COT_sauce={
+		name="Sauce"
+		portraits={
+			civilian = {
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+			army={
+				#large=GFX_portrait_GER_friedrich_paulus
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		#corps_commander={
+		#	traits={}
+		#	skill = 1
+		#	attack_skill = 1
+		#	defense_skill = 1
+		#	planning_skill = 1
+		#	logistics_skill = 1
+		#}
+#
+		#advisor = {
+		#	slot = political_advisor
+		#	idea_token = sauce
+		#	traits = {  }
+		#	allowed = {
+		#		original_tag = COT
+		#	}
+		#}
+	}
+
 	COT_avgn = {
 		name = "Angry Video Game Nerd"
 		portraits = {
@@ -101,6 +161,7 @@
 
 	COT_martha = {
 		name = "Martha"
+		gender = female
 		portraits = {
 			civilian = {
 				small = gfx/interface/advisors/advisor_martha.dds
@@ -142,7 +203,7 @@
 	COT_frodo_sagbag = {
 		name = "Frodo Sagbag"
 		portraits = {
-			navy = {
+			army = {
 				# large
 				# small
 			}
@@ -166,10 +227,15 @@
 			}
 		}
 		advisor = {
-			slot = theorist
+			slot = political_advisor
 			idea_token = durasteel_ape
-			#ledger
-			traits = { vapsid_economist }
+			traits = { silent_workhorse }
+			allowed = {
+				original_tag = COT
+			}
+			available  = {
+				COT = { has_country_leader = { name = "Dildo Sagbag" ruling_only = yes} }
+			}
 		}
 	}
 

@@ -1,33 +1,30 @@
 ﻿capital = 262
 
+load_oob = NYO_2
 set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
-	tech_support = 1		
+	support_weapons = 1
+	tech_military_police = 1
+	gw_artillery = 1
+	tech_support = 1
 	tech_recon = 1
 	tech_engineers = 1
-	motorised_infantry = 1
-	early_fighter = 1
-	fuel_silos = 1
 	fuel_refining = 1
+	# Doctrines
+	mass_assault = 1
+	basic_train = 1
 }
+
+
+set_stability = 0.30
+set_war_support = 0.05
 
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
 	}
 	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		basic_battleship = 1
-		early_battlecruiser = 1
 		transport = 1
 	}
 }
@@ -36,41 +33,33 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		early_ship_hull_carrier = 1
-		basic_ship_hull_carrier = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_medium_battery = 1
-		basic_heavy_battery = 1
-		basic_torpedo = 1
-		sonar = 1
-		basic_depth_charges = 1
-		basic_secondary_battery = 1
-		improved_secondary_battery = 1
-		basic_cruiser_armor_scheme = 1
-		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_airplane_launcher = 1
 	}
 }
 
 add_ideas = {
+	idea_tk_focus
 	idea_awful_drivers
 }
 
-set_convoys = 30
+set_convoys = 1
 
 recruit_character = NYO_crimson
 recruit_character = NYO_ojax
+recruit_character = NYO_concord
+recruit_character = NYO_triad
+recruit_character = NYO_speedy
+recruit_character = NYO_wulf
+recruit_character = NYO_eros
+recruit_character = NYO_mikmaq
+recruit_character = NYO_decker
+recruit_character = NYO_jimbo
+recruit_character = NYO_chip_chip
+recruit_character = NYO_balthier
+recruit_character = NYO_soggy_waffles
+recruit_character = NYO_grape
+recruit_character = NYO_derek
+recruit_character = NYO_kelp
 
 set_politics = {
 	ruling_party = neutrality
@@ -83,3 +72,7 @@ set_popularities = {
 	communism = 23
 	neutrality = 75
 }
+
+add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }
+add_equipment_to_stockpile = { type = support_equipment amount = 500 }
+add_equipment_to_stockpile = { type = train_equipment amount = 100 }

@@ -58,6 +58,7 @@ technologies = {
 			extra_ammo_storage
 			wet_ammo_storage
 			smoke_launchers
+			expanded_fuel_tank
 		}
 		enable_subunits = {
 			light_armor
@@ -396,11 +397,6 @@ technologies = {
 			light_tank_destroyer_chassis_3
 			light_tank_artillery_chassis_3
 			light_tank_aa_chassis_3
-		}
-
-		path = {
-			leads_to_tech = main_battle_tank_chassis
-			research_cost_coeff = 1
 		}
 
 		research_cost = 2

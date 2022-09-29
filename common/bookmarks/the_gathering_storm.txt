@@ -41,7 +41,6 @@ bookmarks = {
 			ideas = {
 				sgnrecruitment
 				blackmiscegenation
-				martha_advisor
 			}
 			focuses = {
 				cot_focus_establishsgn
@@ -94,6 +93,22 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = democratic
 		}
+
+		"PEN" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				idea_long_live_the_queen
+				idea_pickle_moment
+				idea_awful_drivers
+			}
+			focuses = {
+				PEN_focus_embrace_british
+				PEN_focus_adopt_marine_puns
+				PEN_focus_establish_palestine
+			}
+		}
 		
 		"TEX" = {
 			minor = yes
@@ -101,10 +116,20 @@ bookmarks = {
 			ideology = neutrality
 		}
 
-		"NMX" = {
+		"GEO" = {
 			minor = yes
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = neutrality
+			ideas = {
+				idea_troller
+				idea_twitter_user
+				idea_strecruitment
+			}
+			focuses = {
+				GEO_reestablish_the_shadow_troopers
+				GEO_become_supreme_commander_of_geetsly
+				GEO_egirl_dylan
+			}
 		}
 
 		"MIC" = {
@@ -123,6 +148,14 @@ bookmarks = {
 			minor = yes
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = neutrality
+			ideas = {
+				idea_tk_focus
+				idea_battlefield_medics
+				idea_awful_drivers
+			}
+			focuses = {
+				NYO_focus_general_secretary_ojax
+			}
 		}
 		
 		"QUB" = {

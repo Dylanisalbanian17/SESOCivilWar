@@ -9,7 +9,7 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_chi_incompetent_officers
 
 			modifier = {
 				political_power_cost = 0.2
@@ -31,14 +31,12 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_chi_forced_conscription
 
 			modifier = {
 				army_org_factor = -0.25
-				army_org_regain = -0.25
 				navy_org_factor = -0.25
-				air_accidents_factor = 0.5
-				breakthrough_factor = 0.15
+				air_superiority_bonus_in_combat = -0.25
 			}
 		}
 
@@ -51,7 +49,7 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_gre_phaliron_aircraft
 
 			modifier = {
 				army_speed_factor = 0.10
@@ -70,7 +68,7 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_generic_goods_red_bonus
 
 			modifier = {
 				army_armor_defence_factor = 0.1
@@ -91,7 +89,7 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_tur_sectarian_woes
 
 			modifier = {
 				consumer_goods_factor = 0.05
@@ -108,10 +106,45 @@ ideas = {
 			}
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_idea_FRA_motorized_focus
 
 			modifier = {
 				truck_attrition_factor = 0.05
+			}
+		}
+
+		idea_stasi = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = GFX_idea_generic_oppression
+
+			modifier = {
+				civilian_intel_to_others = -0.5
+				decryption_factor = 0.1
+				foreign_subversive_activites = -0.25
+				intelligence_agency_defense = 0.2
+			}
+		}
+
+		idea_urn = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = GFX_idea_vittoria_mutilata
+
+			modifier = {
+				consumer_goods_factor = -0.2
 			}
 		}
 	}

@@ -84,6 +84,7 @@ technologies = {
 
 		enable_equipments = {
 			fighter_equipment_1
+			
 		}
 	
 		path = {
@@ -178,6 +179,7 @@ technologies = {
 
 		enable_equipments = {
 			fighter_equipment_2
+			
 		}
 	
 		path = {
@@ -279,6 +281,7 @@ technologies = {
 
 		enable_equipments = {
 			fighter_equipment_3
+			
 		}
 		
 		path = {
@@ -474,6 +477,7 @@ technologies = {
 		categories = {
 			naval_air
 			air_equipment
+			cas_bomber
 		}
 		
 		ai_will_do = {
@@ -1066,6 +1070,7 @@ technologies = {
 
 		enable_equipments = {
 			tac_bomber_equipment_1
+			
 		}
 	
 		path = {
@@ -1119,7 +1124,7 @@ technologies = {
 	tactical_bomber2 = {
 
 		enable_equipments = {
-			tac_bomber_equipment_2
+			tac_bomber_equipment_2	
 		}
 	
 		path = {
@@ -1283,6 +1288,7 @@ technologies = {
 
 		enable_equipments = {
 			strat_bomber_equipment_1
+			
 		}
 	
 		path = {
@@ -1314,6 +1320,7 @@ technologies = {
 
 		enable_equipments = {
 			strat_bomber_equipment_2
+			
 		}
 	
 		path = {
@@ -1345,6 +1352,7 @@ technologies = {
 
 		enable_equipments = {
 			strat_bomber_equipment_3
+			
 		}
 		
 		path = {

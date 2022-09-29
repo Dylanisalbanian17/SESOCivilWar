@@ -455,6 +455,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_rocket_launcher
+			rocket_rails
 		}
 
 		path = {
@@ -978,8 +979,8 @@ technologies = {
 	antitank2 = {
 
 		mot_anti_tank_brigade = {
-			hard_attack = 0.2
-			ap_attack = 0.2
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 
 		enable_equipments = {
@@ -987,6 +988,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_heavy_cannon_2
+			tank_buster_2
 		}
 		path = {
 			leads_to_tech = antitank3
@@ -1054,23 +1056,23 @@ technologies = {
 		}
 		light_tank_destroyer_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.1
+			ap_attack = 0.05
 		}
 		medium_tank_destroyer_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.1
+			ap_attack = 0.05
 		}
 		heavy_tank_destroyer_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.1
+			ap_attack = 0.05
 		}
 		super_heavy_tank_destroyer_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.1
+			ap_attack = 0.05
 		}
 		modern_tank_destroyer_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.1
+			ap_attack = 0.05
 		}
 
 		path = {
@@ -1140,23 +1142,23 @@ technologies = {
 		}
 		light_tank_destroyer_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.1
+			ap_attack = 0.05
 		}
 		medium_tank_destroyer_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.1
+			ap_attack = 0.05
 		}
 		heavy_tank_destroyer_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.1
+			ap_attack = 0.05
 		}
 		super_heavy_tank_destroyer_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.1
+			ap_attack = 0.05
 		}
 		modern_tank_destroyer_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.1
+			ap_attack = 0.05
 		}
 
 		path = {
@@ -1167,7 +1169,6 @@ technologies = {
 		research_cost = 1
 
 		start_year = 8
-		
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 10 }

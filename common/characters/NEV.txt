@@ -1,0 +1,95 @@
+characters = {
+	NEV_alf_landon={
+		name="Alf Landon"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/NEV/alf_landon.dds"
+			}
+		}
+
+		country_leader={
+			ideology=liberalism
+			traits = { figurehead_president }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+}
+
+NEV_james_allardice ={
+	name="James Allardice"
+	portraits={
+		army={
+			large=GFX_Portrait_USA_Clarence_Huebner
+		}
+		army={
+			small="GFX_idea_USA_clarence_huebner"
+		}
+	}
+	advisor={
+		slot = army_chief
+		idea_token = james_allardice
+		allowed = {
+				original_tag = NEV
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+	}
+	corps_commander={
+		traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+		skill = 5
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+NEV_henrietta_bulka ={
+	name="Henrietta Bulka"
+	portraits={
+		army={
+			large=GFX_portrait_SOV_aleksandra_kollontay
+		}
+		army={
+			small="GFX_idea_SOV_aleksandra_kollontay"
+		}
+	}
+	advisor={
+		slot = army_chief
+		idea_token = henrietta_bulka
+		allowed = {
+				original_tag = NEV
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+	}
+	corps_commander={
+		traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+		skill = 5
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+NEV_lionel_boone ={
+	name="Lionel Boone"
+	portraits={
+		army={
+			large=GFX_Portrait_LIB_edwin_barclay
+		}
+		army={
+			small="GFX_idea_LIB_edwin_barclay"
+		}
+	}
+	corps_commander={
+		traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+		skill = 5
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+}

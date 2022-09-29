@@ -1,0 +1,162 @@
+ideas = {
+	country = {
+		idea_pickle_moment = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				stability_factor = -0.05
+				static_anti_air_hit_chance_factor = 0.15
+				air_accidents_factor = 0.5
+				air_agility_factor = 0.15
+			}
+
+			#hidden_modifier = {
+			#	ai_focus_aviation_factor = 0.5
+			#}
+		}
+
+		idea_linux_moment = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				political_power_gain = -0.10
+				coordination_bonus = -0.15
+				naval_coordination = -0.15
+				global_building_slots_factor = 0.10
+			}
+		}
+
+		idea_linux_arch = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				army_speed_factor = 0.05
+				breakthrough_factor = 0.05
+				supply_consumption_factor = -0.10
+				army_fuel_consumption_factor = -0.10
+				air_fuel_consumption_factor = -0.10
+				navy_fuel_consumption_factor = -0.10
+			}
+		}
+
+		idea_linux_ubuntu = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				political_power_gain = 0.15
+				production_speed_buildings_factor = 0.15
+				supply_node_range = 0.10
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		idea_linux_debian = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				global_building_slots_factor = 0.30
+				production_speed_buildings_factor = 0.30
+			}
+		}
+
+		idea_long_live_the_queen = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				stability_factor = 0.15
+				naval_morale_factor = 0.1
+				army_core_defence_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		idea_minecraft_server_owner = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		idea_kakapo_bot = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				research_speed_factor = 0.07
+			}
+		}
+
+	}
+}

@@ -33,6 +33,7 @@ war_measures = {
 
 	visible = {
 		has_war = yes
+		has_war_with_non_exiled_country = yes  
 	}
 }
 operations = {
@@ -49,6 +50,11 @@ prestigious_projects = {
 	
 }
 
+CHI_occupation_actions = {
+	icon = generic_crisis
+	priority = 2
+}
+
 foreign_politics = {
 	icon = generic_political_actions
 }
@@ -58,6 +64,14 @@ political_actions = {
 
 	allowed = {
 		always = yes
+	}
+
+	visible = {
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+		}
 	}
 }
 
@@ -108,6 +122,7 @@ communism_on_the_rise = {
 	#	NOT = { has_government = communism }
 	#	has_idea_with_trait = communist_revolutionary
 	#}
+}
 
 crisis = {
 	icon = generic_crisis
@@ -157,8 +172,12 @@ governments_in_exile = {
 	icon = generic_formable_nations
 	picture = GFX_decision_cat_picture_government_in_exile
 	allowed = {
-		has_dlc = "Man the Guns"
+		OR = {
+			has_dlc = "Man the Guns"
+			has_dlc = "By Blood Alone"
+		}
 	}
+	priority = 7
 }
 
 category_exile_forces = {
@@ -166,12 +185,113 @@ category_exile_forces = {
 	icon = infiltration
 	picture = GFX_decision_cat_picture_government_in_exile
 	allowed = {
-		has_dlc = "Man the Guns"
+		OR = {
+			has_dlc = "Man the Guns"
+			has_dlc = "By Blood Alone"
+		}
 	}
+	priority = 6
 }
 category_test_decisions = {
 	priority = 110
 	visible = {
 		is_debug = yes
 	}
+}
+
+lar_local_recruitment = {
+	allowed = { has_dlc = "La Resistance" }
+
+	visible = { has_done_agency_upgrade = upgrade_training_centers }
+
+	visibility_type = map_and_decisions_view
+	
+	on_map_area = {
+		state = 348
+		name = LAR_recruitment_europe
+		zoom = 650
+		
+		target_root_trigger = {
+			OR = {
+				has_country_flag = europe_recruitment_unlocked
+				capital_scope = { is_on_continent = europe }
+			}
+		}
+	}
+
+	on_map_area = {
+		state = 344
+		name = LAR_recruitment_north_america
+		zoom = 850
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = north_america_recruitment_unlocked
+				capital_scope = { is_on_continent = north_america }
+			}
+		}
+	}
+
+	on_map_area = {
+		state = 296
+		name = LAR_recruitment_south_america
+		zoom = 850
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = south_america_recruitment_unlocked
+				capital_scope = { is_on_continent = south_america }
+			}
+		}
+	}
+
+	on_map_area = {
+		state = 191
+		name = LAR_recruitment_africa
+		zoom = 850
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = africa_recruitment_unlocked
+				capital_scope = { is_on_continent = africa }
+			}
+		}
+	}
+
+	on_map_area = {
+		state = 158
+		name = LAR_recruitment_asia
+		zoom = 850
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = asia_recruitment_unlocked
+				capital_scope = { is_on_continent = asia }
+			}
+		}
+	}
+
+	on_map_area = {
+		state = 64
+		name = LAR_recruitment_middle_east
+		zoom = 850
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = middle_east_recruitment_unlocked
+				capital_scope = { is_on_continent = middle_east }
+			}
+		}
+	}
+}
+
+nato_decisions = {
+	picture = generic_democracy
+	allowed = {
+		always = yes
+	}
+	visible = {
+		date > 10.1.1
+	}
+	priority = 100
 }

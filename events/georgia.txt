@@ -1,0 +1,223 @@
+add_namespace = georgia
+
+#Finch reconstructs the STs
+country_event = {
+	id = georgia.1
+	title = georgia.1.t
+	desc = georgia.1.d
+
+	picture = GEO_finch_reconstructs_the_sts-274112
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		#Completion of the reconstruct STs focus
+	}
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = georgia.1.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		#Increase morale of all infantry divisions. Then the fire "ST Discipline" event.
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = georgia.1.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		#Increase soft attack, hard attack, and penetration by a sizable amount. He's a cracked gamer, so that should rub off on the divisions. Then the fire "ST Discipline" event.
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = georgia.1.c
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		#Increase infantry speed and organization/recovery by sizable amounts. Then the fire "ST Discipline" event.
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Shadow Trooper Discipline
+country_event = {
+	id = georgia.2
+	title = georgia.2.t
+	desc = georgia.2.d
+
+	picture = GEO_shadow_trooper_discipline-274141
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		#Finishing the XO event
+	}
+	mean_time_to_happen = { days = 2 }
+	option = {
+		name = georgia.2.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		#Increase infantry division morale by a decent amount. Then fire "Shadow Trooper Loadouts" event.
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = georgia.2.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		#Increase org/recovery by a decent amount. Then fire "Shadow Trooper Loadouts" event.
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Shadow Trooper Loadouts
+country_event = {
+	id = georgia.3
+	title = georgia.3.t
+	desc = georgia.3.d
+
+	picture = GEO_shadow_trooper_loadouts-274148
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		#Shadow Trooper Discipline is completed.
+	}
+	mean_time_to_happen = { days = 3 }
+	option = {
+		name = georgia.3.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		#Increase hard attack and penetration by a decent amount. Then fire Loadouts cont.
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = georgia.3.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		#Increase soft attack by a lot. Then fire Loadouts cont.
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Shadow Trooper Loadouts, cont
+country_event = {
+	id = georgia.4
+	title = georgia.4.t
+	desc = georgia.4.d
+
+	picture = GEO_shadow_trooper_loadouts_cont-274152
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		#Shadow Trooper Loadouts complete
+	}
+	option = {
+		name = georgia.4.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		#Increase breakthrough by a small amount.
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = georgia.4.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		#Increase soft attack further.
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#look at this cat
+country_event = {
+	id = georgia.5
+	title = georgia.5.t
+	desc = georgia.5.d
+
+	picture = GEO_look_at_this_cat-32744
+	is_triggered_only = yes
+	trigger = {
+		#random
+	}
+	mean_time_to_happen = { days = 5 }
+	major = yes
+	option = {
+		name = georgia.5.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			#good option
+			add_stability = 100
+		}
+	}
+	option = {
+		name = georgia.5.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			#lose all stability
+			add_stability = -100
+
+
+		}
+	}
+}
+
+#trolling
+country_event = {
+	id = georgia.6
+	title = georgia.6.t
+	desc = georgia.6.d
+
+	picture = GEO_look_at_this_cat-32744
+	is_triggered_only = yes
+	trigger = {
+		#random
+	}
+
+	mean_time_to_happen = { days = 15 }
+	major = yes
+	option = {
+		name = georgia.6.a
+		add_timed_idea = {
+			idea = idea_trolled
+			days = 30
+		}
+	}
+}
