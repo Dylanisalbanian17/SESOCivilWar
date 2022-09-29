@@ -80,6 +80,7 @@ leader_traits = {
 				factor = 0
 			}
 		}
+		
 	}
 	
 	
@@ -105,6 +106,7 @@ leader_traits = {
 				factor = 0
 			}
 		}
+		
 	}
 	
 	
@@ -168,12 +170,12 @@ leader_traits = {
 		planning_skill_factor = 1
 		logistics_skill_factor = 1
 	}
-
+	
 	war_hero = { 
 		type = { land navy }
 		trait_type = personality_trait
 		
-		non_shared_modifier = {
+		non_shared_modifier = { # WARNING! Changing the value of these modifiers requires changing them also in the tooltip ITA_heroes_of_the_nation_general_traits_tt
 			promote_cost_factor = -0.5
 			reassignment_duration_factor = 0.5   # +50% cost to replace leader
 		}
@@ -341,7 +343,30 @@ leader_traits = {
 	
 	infantry_officer = { 
 		type = land
-		trait_type = personality_trait
+		trait_type = personality_trait 
+		
+		unit_trigger = {
+			OR = {
+				division_has_majority_template = infantry
+				division_has_majority_template = bicycle_battalion
+				division_has_majority_template = marine
+				division_has_majority_template = mountaineers
+				division_has_majority_template = paratrooper
+				division_has_majority_template = penal_battalion
+				
+				owner = {
+					has_idea = mass_assault_academy_spirit
+				}
+			}
+			owner = {
+				NOT = {
+					OR = {
+						has_idea = best_of_the_best_spirit
+						has_idea = academy_scholarships_spirit
+					}
+				}
+			}
+		}
 		
 		trait_xp_factor = {
 			infantry_leader = 1     #+100%
@@ -351,8 +376,10 @@ leader_traits = {
 			factor = 1
 			
 			modifier = {
-				FROM = { has_idea = mass_assault_academy_spirit }
-				factor = 1.5
+				FROM = { 
+					has_idea = mass_assault_academy_spirit
+				}
+				factor = 2
 			}
 			
 			modifier = {
@@ -363,6 +390,14 @@ leader_traits = {
 				FROM = { has_idea = academy_scholarships_spirit }
 				factor = 0
 			}
+			
+			modifier = {
+				FROM = { 
+					has_dlc = "By Blood Alone"
+				}
+				factor = 0
+			}
+			
 		}
 		defense_skill_factor = 1
 		planning_skill_factor = 1
@@ -371,6 +406,29 @@ leader_traits = {
 	cavalry_officer = { 
 		type = land
 		trait_type = personality_trait
+		unit_type = {
+			type = cavalry
+			type = camelry
+			type = motorized
+			type = mechanized
+		}
+		
+		unit_trigger = {
+			OR = {
+				division_has_majority_template = cavalry
+				division_has_majority_template = camelry
+				division_has_majority_template = motorized
+				division_has_majority_template = mechanized
+			}
+			owner = {
+				NOT = {
+					OR = {
+						has_idea = best_of_the_best_spirit
+						has_idea = academy_scholarships_spirit
+					}
+				}
+			}
+		}
 		
 		trait_xp_factor = {
 			cavalry_leader = 1     #+100%
@@ -378,7 +436,7 @@ leader_traits = {
 
 		new_commander_weight = {
 			factor = 1
-
+			
 			modifier = {
 				FROM = { has_idea = best_of_the_best_spirit }
 				factor = 0
@@ -387,6 +445,14 @@ leader_traits = {
 				FROM = { has_idea = academy_scholarships_spirit }
 				factor = 0
 			}
+			
+			modifier = {
+				FROM = { 
+					has_dlc = "By Blood Alone"
+				}
+				factor = 0
+			}
+			
 		}
 		
 		attack_skill_factor = 1
@@ -400,14 +466,39 @@ leader_traits = {
 		trait_xp_factor = {
 			panzer_leader = 1     #+100%
 		}
+		
+		unit_trigger = {
+			OR = {
+				division_has_majority_template = light_armor
+				division_has_majority_template = medium_armor
+				division_has_majority_template = heavy_armor
+				division_has_majority_template = super_heavy_armor
+				
+				owner = {
+					has_idea = mobile_warfare_academy_spirit
+				}
+				
+			}
+			owner = {
+				NOT = {
+					OR = {
+						has_idea = best_of_the_best_spirit
+						has_idea = academy_scholarships_spirit
+					}
+				}
+			}
+		}
+		
 		new_commander_weight = {
 			factor = 1
 			
 			modifier = {
-				FROM = { has_idea = mobile_warfare_academy_spirit }
-				factor = 1.5 
+				FROM = { 
+					has_idea = mobile_warfare_academy_spirit
+				}
+				factor = 2
 			}
-
+			
 			modifier = {
 				FROM = { has_idea = best_of_the_best_spirit }
 				factor = 0
@@ -416,6 +507,14 @@ leader_traits = {
 				FROM = { has_idea = academy_scholarships_spirit }
 				factor = 0
 			}
+			
+			modifier = {
+				FROM = { 
+					has_dlc = "By Blood Alone"
+				}
+				factor = 0
+			}
+			
 		}
 		attack_skill_factor = 1
 		planning_skill_factor = 1
@@ -428,6 +527,27 @@ leader_traits = {
 		trait_xp_factor = {
 			trait_engineer = 1     #+100%
 		}
+		
+		unit_trigger = {
+			OR = {
+				division_has_battalion_in_template = engineer
+				division_has_battalion_in_template = light_flame_tank
+				division_has_battalion_in_template = medium_flame_tank
+				division_has_battalion_in_template = heavy_flame_tank
+				owner = {
+					has_idea = superior_firepower_academy_spirit
+				}
+			}
+			owner = {
+				NOT = {
+					OR = {
+						has_idea = best_of_the_best_spirit
+						has_idea = academy_scholarships_spirit
+					}
+				}
+			}
+		}
+		
 		new_commander_weight = {
 			factor = 1
 			
@@ -444,6 +564,12 @@ leader_traits = {
 				FROM = { has_idea = academy_scholarships_spirit }
 				factor = 0
 			}
+			
+			modifier = {
+				FROM = { has_dlc = "By Blood Alone" }
+				factor = 0
+			}
+			
 		}
 		attack_skill_factor = 1
 		planning_skill_factor = 1
@@ -923,8 +1049,8 @@ leader_traits = {
 				attack = 0.05
 			}
 			fort = {
-				attack = 0.1
-			}
+                attack = 0.1
+            }
 		}
 		
 		slot = high_command
@@ -941,7 +1067,7 @@ leader_traits = {
 
 
 	panzer_leader = {
-		type = corps_commander
+ 		type = corps_commander
 		gain_xp = {
 			set_temp_variable = { temp = num_units }
 			multiply_temp_variable = { temp = 0.4 }
@@ -968,7 +1094,7 @@ leader_traits = {
 	}
 
 	commando = { 
-		type = corps_commander
+ 		type = corps_commander
 		gain_xp = {
 			OR = {
 				temperature < -15
@@ -994,7 +1120,7 @@ leader_traits = {
 	}
 
 	desert_fox = { 
-		type = corps_commander
+ 		type = corps_commander
 		gain_xp = {
 			is_fighting_in_terrain = desert
 		}
@@ -1877,7 +2003,7 @@ leader_traits = {
 	search_pattern_expert = {
 		type = navy
 		modifier = {
-			spotting_chance = 0.2
+			 spotting_chance = 0.2
 		}
 				
 		ai_will_do = {
@@ -2071,7 +2197,7 @@ leader_traits = {
 	crisis_magician = { 
 		type = navy
 		modifier = {
-			naval_critical_effect_factor = -0.5
+			 naval_critical_effect_factor = -0.5
 		}
 				
 		ai_will_do = {
@@ -2088,7 +2214,7 @@ leader_traits = {
 	flight_deck_manager = { 
 		type = navy
 		modifier = {
-			sortie_efficiency = 0.1
+			 sortie_efficiency = 0.1
 		}
 		
 		slot = high_command
@@ -2423,7 +2549,7 @@ leader_traits = {
 		type = navy
 		trait_type = personality_trait
 	
-		modifier = {
+		modifier = { # WARNING! Changing the value of these modifiers requires changing them also in the tooltip ITA_flotta_d_evasione_admiral_traits_tt
 			naval_damage_factor = 0.05
 			naval_speed_factor = 0.1
 		}
@@ -2999,6 +3125,21 @@ leader_traits = {
 			target_sabotage_factor = 0.25
 			target_sabotage_cost = -0.25
 			boost_resistance_factor = 0.25
+		}
+	}
+	
+	promoted_from_the_ranks = {  
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			promote_cost_factor = 0.5
+			planning_speed = 0.1
+			recon_factor = 0.05
+		}
+
+		new_commander_weight = {
+			factor = 0
 		}
 	}
 
