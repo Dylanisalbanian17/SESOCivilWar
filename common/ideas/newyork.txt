@@ -2,7 +2,10 @@ ideas = {
 	country = {
 		idea_tk_focus = {
 			allowed = {
-				has_country_leader = NYO_crimson
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
 			}
 			allowed_civil_war = {
 				always = yes
