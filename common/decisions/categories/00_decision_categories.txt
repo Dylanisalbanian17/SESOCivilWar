@@ -122,7 +122,7 @@ communism_on_the_rise = {
 	#	NOT = { has_government = communism }
 	#	has_idea_with_trait = communist_revolutionary
 	#}
-}
+#}
 
 crisis = {
 	icon = generic_crisis
