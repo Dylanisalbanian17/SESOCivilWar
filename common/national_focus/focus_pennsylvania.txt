@@ -118,14 +118,14 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					CAL = {
+					MAS = {
 						has_country_leader = {
-							character = CAL_dylan
+							character = MAS_fletch
 							ruling_only = yes
 						}
 					}
 				}
-				CAL = { add_ideas = idea_kakapo_bot }
+				MAS = { add_ideas = idea_kakapo_bot }
 			}
 			if = {
 				limit = {
@@ -137,18 +137,6 @@ focus_tree = {
 					}
 				}
 				COT = { add_ideas = idea_kakapo_bot }
-			}
-			if = {
-				limit = {
-					VIA = {
-						NOT = { has_wargoal_against = PEN }
-						has_country_leader = {
-							character = VIA_ryder
-							ruling_only = yes
-						}
-					}
-				}
-				VIA = { add_ideas = idea_kakapo_bot }
 			}
 			add_ideas = idea_kakapo_bot
 		}
