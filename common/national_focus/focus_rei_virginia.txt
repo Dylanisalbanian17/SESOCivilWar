@@ -18,6 +18,9 @@ focus_tree = {
 		y = 1
 		cost = 1
 		available_if_capitulated = yes
+		available = { 
+		has_civil_war = no 
+		has_completed_focus = via_begin_reconstruction_efforts }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -33,7 +36,7 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 10
 		y = 2
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = via_reich_defiant }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -62,6 +65,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			set_country_flag = via_choose_seso_flag
 	}
 }
 
@@ -81,6 +85,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		set_country_flag = via_choose_gmod_flag
 }
 }
 
@@ -116,7 +121,9 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			NJE = {
+				country_event = virginia.30
+			}
 		}
 	}
 
@@ -134,6 +141,9 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
+			WYO = {
+				country_event = virginia.27
+			}
 	}
 }
 
@@ -150,6 +160,132 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		completion_reward = {
+			custom_effect_tooltip = ROM_the_armored_division_tt
+			#Give template depending on recon tech and medium
+			hidden_effect = {
+				if = {
+					division_template = {
+						name = "Armored Division"
+						priority = 2
+						division_names_group = ROM_ARM_01
+						regiments = {
+							medium_armor = { x = 0 y = 0 }
+							medium_armor = { x = 0 y = 1 }
+				
+		    	   		 	medium_armor = { x = 1 y = 0 }
+							medium_armor = { x = 1 y = 1 }
+				
+		    	   		 	motorized = { x = 2 y = 0 }
+							motorized = { x = 2 y = 1 }
+
+		    	   		 	motorized = { x = 3 y = 0 }
+							motorized = { x = 3 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+							artillery = { x = 0 y = 1 }
+							recon = { x = 0 y = 2 }
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								OR = {
+									has_tech = basic_medium_tank
+									has_tech = basic_medium_tank_chassis
+								}
+							}
+							division_template = {
+								name = "Armored Division"
+								priority = 2
+								division_names_group = ROM_ARM_01
+								regiments = {
+									medium_armor = { x = 0 y = 0 }
+									medium_armor = { x = 0 y = 1 }
+						
+				    	   		 	medium_armor = { x = 1 y = 0 }
+									medium_armor = { x = 1 y = 1 }
+						
+				    	   		 	motorized = { x = 2 y = 0 }
+									motorized = { x = 2 y = 1 }
+
+				    	   		 	motorized = { x = 3 y = 0 }
+									motorized = { x = 3 y = 1 }
+								}
+								support = {
+									engineer = { x = 0 y = 0 }
+									artillery = { x = 0 y = 1 }
+									recon = { x = 0 y = 2 }
+								}
+							}
+							else = {
+								if = {
+									limit = {
+										has_tech = tech_recon
+									}
+									division_template = {
+										name = "Armored Division"
+										priority = 2
+										division_names_group = GER_Inf_01
+										regiments = {
+											light_armor = { x = 0 y = 0 }
+											light_armor = { x = 0 y = 1 }
+								
+						    	   		 	light_armor = { x = 1 y = 0 }
+											light_armor = { x = 1 y = 1 }
+								
+						    	   		 	motorized = { x = 2 y = 0 }
+											motorized = { x = 2 y = 1 }
+
+						    	   		 	motorized = { x = 3 y = 0 }
+											motorized = { x = 3 y = 1 }
+										}
+										support = {
+											engineer = { x = 0 y = 0 }
+											artillery = { x = 0 y = 1 }
+											recon = { x = 0 y = 2 }
+										}
+									}
+									else = {
+										division_template = {
+											name = "Armored Division"
+											priority = 2
+											division_names_group = GER_Inf_01
+											regiments = {
+												light_armor = { x = 0 y = 0 }
+												light_armor = { x = 0 y = 1 }
+									
+							    	   		 	light_armor = { x = 1 y = 0 }
+												light_armor = { x = 1 y = 1 }
+									
+							    	   		 	motorized = { x = 2 y = 0 }
+												motorized = { x = 2 y = 1 }
+
+							    	   		 	motorized = { x = 3 y = 0 }
+												motorized = { x = 3 y = 1 }
+											}
+											support = {
+												engineer = { x = 0 y = 0 }
+												artillery = { x = 0 y = 1 }
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 46 }
+					create_unit = {
+						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7" 
+						owner = VIA
+					}
+				}
+			}			
+		}
 }
 }
 
@@ -168,6 +304,15 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		WYO = {
+			add_timed_idea = { idea = VIA_equipment_shipments days = 360 }
+			add_ai_strategy = { type = send_lend_lease_desire id = VIA value = 200 }
+		}
+		NJE = {
+			add_timed_idea = { idea = VIA_equipment_shipments days = 360 }
+			add_ai_strategy = { type = send_lend_lease_desire id = VIA value = 200 }
+		}
+		add_timed_idea = { idea = VIA_equipment_shipments_virginia days = 360 }
 }
 }
 
@@ -176,7 +321,7 @@ focus = {
 	icon = GFX_goal_continuous_def_against_influence
 	x = 22
 	y = 2
-	cost = 5
+	cost = 10
 	available_if_capitulated = yes
 	prerequisite = { focus = via_consolidate_the_north }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -184,6 +329,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		remove_ideas= workers_strikes
 }
 }
 
@@ -192,7 +338,7 @@ focus = {
 	icon = GFX_goal_generic_production2
 	x = 22
 	y = 3
-	cost = 5
+	cost = 10
 	available_if_capitulated = yes
 	prerequisite = { focus = via_cool_tensions }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -200,6 +346,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_timed_idea = { idea = via_12_gb_reconstruction days = 180 }
 }
 }
 ### 
@@ -268,6 +415,14 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		285 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
 }
 }
 
@@ -284,6 +439,13 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		completion_reward = {
+			add_tech_bonus = {
+				category = dd_tech
+				uses = 1
+				bonus = 1
+	}
+}
 }
 }
 
@@ -322,6 +484,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+			add_tech_bonus = {
+				category = ss_tech
+				uses = 1
+				bonus = 1
+	}
 }
 }
 
@@ -419,11 +586,16 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			category = infantry_tech
+			uses = 1
+			bonus = 1
+}
 }
 }
 
 focus = {
-	id = via_shock_and_awe
+	id = via_apply_tk_tryouts
 	icon = GFX_focus_prc_infiltration
 	x = 10
 	y = 9
@@ -560,6 +732,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		air_experience = 25
+		add_stability = -0.05
+
 }
 }
 
@@ -576,6 +751,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_timed_idea = { idea = via_purchase_hotas days = 365 }
 }
 }
 
@@ -595,6 +771,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			category = cas_bomber
+			uses = 1
+			bonus = 1
+}
 }
 }
 
@@ -614,6 +795,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			category = light_fighter
+			uses = 1
+			bonus = 1
+}
 }
 }
 
@@ -630,6 +816,14 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		random_core_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
 }
 }
 
@@ -641,6 +835,10 @@ focus = {
 	x = 35
 	y = 1
 	cost = 5
+	available = {
+		has_civil_war = no
+		has_completed_focus = via_begin_reconstruction_efforts
+	}
 	available_if_capitulated = yes
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
@@ -1017,11 +1215,15 @@ focus = {
 	y = 6
 	cost = 5
 	available_if_capitulated = yes
+	available = {
+		has_completed_focus = via_fund_management
+	}
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
+		add_timed_idea = { idea = via_rebuild_the_nation days = 365 }
 }
 }
 

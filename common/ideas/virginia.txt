@@ -115,10 +115,36 @@ ideas = {
 				
 				modifier = {
 	
-					consumer_goods_factor = 0.25
-					industrial_capacity_factory = -0.4
-				industrial_capacity_dockyard = -0.25
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
 				stability_factor = -0.1
+				}
+			}
+
+			via_12_gb_reconstruction = {
+				
+				allowed = {
+					tag = VIA
+				}
+	
+				allowed_civil_war = { 
+					always = yes
+				}
+
+				available = {
+					if = {
+						has_government= fascism
+					}
+		
+				}
+				
+				removal_cost = -1
+	
+				picture = idea_chi_war_of_resistance.dds
+				
+				modifier = {
+					consumer_goods_factor = 0.05
+
 				}
 			}
 
@@ -241,7 +267,87 @@ ideas = {
 	
 				}
 			}
-		}
+
+			via_rebuild_the_nation = {
+				allowed = {
+					always = no
+				}
+	
+				allowed_civil_war = {
+					 has_government = fascism
+				}
+	
+				removal_cost = -1
+	
+				picture = ger_rebuild_the_nation
+	
+				modifier = {
+					consumer_goods_factor = -0.20
+					industry_repair_factor = 0.20
+					production_speed_industrial_complex_factor = 0.1
+					production_speed_infrastructure_factor = 0.1
+				}
+			}
+			via_purchase_hotas = {
+				allowed = {
+					always = no
+				}
+	
+				allowed_civil_war = {
+					 has_government = fascism
+				}
+	
+				removal_cost = -1
+	
+				picture = ger_rebuild_the_nation
+	
+				modifier = {
+					consumer_goods_factor = 0.05
+				}
+			}
+
+			VIA_equipment_shipments = {
+
+				picture = generic_artillery_regiments
+	
+				allowed = {
+					OR = {
+						original_tag = ITA
+						original_tag = GER
+						original_tag = SOV
+						original_tag = FRA
+					}
+				}
+	
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					lend_lease_tension = -0.5
+					request_lease_tension = -0.5
+				}
+			}
+
+			VIA_equipment_shipments_virginia = {
+
+				name = VIA_equipment_shipments
+	
+				picture = generic_artillery_regiments
+	
+				allowed = {
+					original_tag = VIA
+				}
+	
+				allowed_civil_war = {
+					always = yes
+				}
+	
+				modifier = {
+					lend_lease_tension = -0.5
+				}
+			}
+
 
 political_advisor = {
 	ulrich_advisor = {
@@ -290,6 +396,32 @@ obrecht_advisor = {
 
 	
 	traits = { marxist_philosopher }
+
+}
+
+}
+
+materiel_manufacturer = {
+
+	designer = yes
+
+	via_gambit_motor_werke = {
+		
+		#picture = generic_motorized_equipment_manufacturer_3
+
+		allowed = {
+			has_completed_focus = via_gambit_motor_werke
+		}
+		
+		cost = 150
+		removal_cost = 10
+		
+		research_bonus = {
+			motorized_equipment = 0.15
+		}
+		
+		traits = { motorized_equipment_manufacturer }
+	}
 
 }
 
