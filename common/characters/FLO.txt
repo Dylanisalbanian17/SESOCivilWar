@@ -4,13 +4,13 @@ characters={
 		name="Sharps"
 		portraits = {
 			civilian = {
-				#large=GFX_portrait_GER_friedrich_paulus
+				large="gfx/leaders/FLO/sharps.dds"
 			}
 		}
 
 		country_leader={
 			ideology=fascism_ideology
-			traits = { unemployed economist}
+			traits = { unemployed economist }
 			expire = "1965.1.1.1"
 			id=-1
 		}

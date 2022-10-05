@@ -4,7 +4,7 @@ characters={
 		name="Pickle423"
 		portraits = {
 			civilian = {
-				#large="gfx/leaders/GEO/finch.dds"
+				large = "gfx/leaders/PEN/pickle.dds"
 			}
 		}
 

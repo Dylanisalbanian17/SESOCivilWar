@@ -4,7 +4,7 @@ characters={
 		name="WarningAlloy71"
 		portraits = {
 			civilian = {
-				#large=GFX_portrait_GER_friedrich_paulus
+				large="gfx/leaders/OKL/alloy.dds"
 			}
 		}
 

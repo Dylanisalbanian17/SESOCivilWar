@@ -4,7 +4,7 @@ characters={
 		name="Cedric"
 		portraits = {
 			civilian = {
-				#large="gfx/leaders/ARB/box.dds"
+				large=GFX_portrait_unknown
 			}
 		}
 
