@@ -1,0 +1,30 @@
+foreign_politics = {
+	VIA_kill_mayhew = {
+		icon = generic_political_actions
+
+		cost = 50
+
+		allowed = {
+			tag = VIA
+		}
+
+		available = {
+			has_war = no
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		visible = {
+			#has_completed_focus = cot_focus_hegemony
+		}
+
+		complete_effect = {
+			news_event = {
+				id = news.5
+				days = 30
+			}
+		}
+	}
+}
