@@ -1,0 +1,14 @@
+spriteTypes = { 
+	##Icon For: Ach leaves v1
+	SpriteType = { 
+		name = "GFX_ach_leaves_news.6"
+		texturefile = "gfx/interface/events/newyork-event/ach_leaves_news.6.dds"
+	}
+
+	##Icon For: Ach leaves v2
+	SpriteType = { 
+		name = "GFX_ach_leaves_news.7"
+		texturefile = "gfx/interface/events/newyork-event/ach_leaves_news.7.dds"
+	}
+
+ }

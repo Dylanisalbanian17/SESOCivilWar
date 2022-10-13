@@ -108,3 +108,60 @@ news_event = {
 	
 	}
 }
+
+###Ach leaves TK
+news_event = {
+	id = news.6
+	title = news.6.t
+	desc = news.6.d
+	picture = GFX_ach_leaves_news.6
+	major = yes
+
+	trigger = {
+		date > 2.4.9
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = news.6.a
+		trigger = {
+			NOT = { original_tag = NYO }
+		}
+	
+	}
+	option = {
+		name = news.6.b
+		trigger = { 
+			original_tag = NYO
+		}
+		news_event = { id = news.7 hours = 20 }
+	}
+}
+
+###Ach leaves TK 2
+
+news_event = {
+	id = news.7
+	title = news.7.t
+	desc = news.7.d
+	picture = GFX_ach_leaves_news.7
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news.7.a
+		trigger = {
+			NOT = { original_tag = NYO }
+		}
+	
+	}
+	option = {
+		name = news.7.b
+		trigger = { 
+			original_tag = NYO
+		}
+		
+	}
+}
