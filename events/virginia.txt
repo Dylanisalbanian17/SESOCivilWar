@@ -586,3 +586,126 @@ country_event = {
 	}
 
 }
+
+###Only be one Virgin
+
+country_event = {
+	id = virginia.33
+	title = virginia.33.t
+	desc = virginia.33.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+ 	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 12 name = virginia.33.t }
+ 		}
+ 	}
+
+	option = {
+		name = virginia.33.a
+		280 = {
+			if = {
+				limit = { is_owned_by = WVI }
+				add_core_of = VIA
+			}
+		}
+		281 = {
+			if = {
+				limit = { is_owned_by = WVI }
+				add_core_of = VIA
+			}
+		}
+		279 = {
+			if = {
+				limit = { is_owned_by = WVI }
+				add_core_of = VIA
+			}
+		}
+		278 = {
+			if = {
+				limit = { is_owned_by = WVI }
+				add_core_of = VIA
+			}
+		}
+		WVI = {
+			every_unit_leader = {
+				set_nationality = VIA
+			}
+		}
+		annex_country = { target = WVI transfer_troops = yes }
+		add_political_power = 75
+		set_country_flag = WVI_annexed
+		add_war_support = 0.1
+		add_stability = 0.05
+		hidden_effect = {
+			news_event = { hours = 6 id = news.36 }
+		}
+	}
+}
+
+country_event = {
+	id = virginia.34
+	title = virginia.34.t
+	desc = virginia.34.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = {
+		name = virginia.34.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+		}
+		random_other_country = {
+			limit = {
+				original_tag = WVI
+				NOT = { tag = ROOT }
+			}
+			FROM = {
+				add_to_war = {
+					targeted_alliance = ROOT
+					enemy = PREV
+					hostility_reason = war
+				}
+				annex_country = { target = ROOT transfer_troops = yes }
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = {
+		name = virginia.34.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					has_government = communism
+					has_government = democratic
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = WVI
+					original_tag = WVI
+				}
+			}
+			FROM = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+	}
+}

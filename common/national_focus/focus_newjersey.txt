@@ -92,6 +92,24 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = nje_focus_artillery_controller
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5
+		x = 6
+		y = 3
+		prerequisite = {
+			focus = nje_focus_manufacture_transformers
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = artillery
+				uses = 1
+				bonus = 1
+	}
+		}
+	}
+
 ####Political
 	focus = {
 		id = nje_focus_play_unturned
