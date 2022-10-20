@@ -1,3 +1,4 @@
+
 state={
 	id=252
 	name="STATE_252"
@@ -12,17 +13,23 @@ state={
 			air_base = 2
 
 		}
-
-		victory_points = { 5645 30 }
-		victory_points = { 1834 25 }
-		victory_points = { 378 5 }
+		victory_points = {
+			5645 30 
+		}
+		victory_points = {
+			1834 25 
+		}
+		victory_points = {
+			378 5 
+		}
 
 	}
 
 	provinces={
-		378 1196 1834 1993 4326 5597 5645 7872 7892 7895 7914 7921 
+		3372 4326 5597 7872 7892 7895 7914 7921 7939 7963 
 	}
 	manpower=40840
 	buildings_max_level_factor=1.000
 	state_category=rural
+	local_supplies=0.000
 }

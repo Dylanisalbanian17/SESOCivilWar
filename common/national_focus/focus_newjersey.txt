@@ -577,7 +577,7 @@ focus_tree = {
 			focus = nje_focus_establish_union
 		}
 		completion_reward = {
-			255 = {
+			350 = {
 				set_demilitarized_zone = yes
 			}
 		}

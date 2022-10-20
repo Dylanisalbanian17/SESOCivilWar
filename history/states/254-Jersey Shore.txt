@@ -1,21 +1,31 @@
+
 state={
 	id=254
 	name="STATE_254"
-	provinces={
-		195 4252 6090 7984 8002 8068 8076 8085 8107 
-	}
+
 	history={
 		owner = NJE
 		add_core_of = NJE
-		victory_points = {8068 1}
-		victory_points = {8076 15}
+		victory_points = {
+			8068 1 
+		}
+		victory_points = {
+			8076 15 
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			arms_factory = 1
+
 		}
+
+	}
+
+	provinces={
+		4252 6090 7984 8002 8076 8085 8107 
 	}
 	manpower=560325
 	buildings_max_level_factor=1.000
 	state_category=large_town
+	local_supplies=0.000
 }
