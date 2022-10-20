@@ -282,6 +282,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = NYO_focus_seso_faction
+			focus = NYO_focus_never_another_garry's_mod_server
 		}
 
 		completion_reward = {
@@ -306,6 +307,113 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NYO_focus_never_another_garry's_mod_server
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		relative_position_id = NYO_focus_leave_gaming
+		x = 4
+		y = 0
+		cost = 10
+		available = {
+			is_in_faction = no
+		}
+		prerequisite = {
+			focus = NYO_focus_stop_playing_gmod
+		}
+		mutually_exclusive = {
+			focus = NYO_focus_seso_faction
+			focus = NYO_focus_leave_gaming
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NYO_focus_sabotage_donator_roles
+		icon = GFX_focus_mex_privatisation
+		relative_position_id = NYO_focus_never_another_garry's_mod_server
+		x = 0
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = NYO_focus_never_another_garry's_mod_server
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NYO_focus_leak_posh's_discord_logs
+		icon = GFX_focus_generic_national_security
+		relative_position_id = NYO_focus_never_another_garry's_mod_server
+		x = 2
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = NYO_focus_never_another_garry's_mod_server
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NYO_focus_enlist_sag's_help
+		icon = GFX_focus_SOV_approach_semyonov
+		relative_position_id = NYO_focus_never_another_garry's_mod_server
+		x =-2
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = NYO_focus_never_another_garry's_mod_server
+		}
+		completion_reward = {
+			### ask sag's help to DDOS cold soda
+		
+		}
+	}
+
+	focus = {
+		id = NYO_focus_spilling_the_soda
+		icon = GFX_focus_rom_parties_end
+		relative_position_id = NYO_focus_sabotage_donator_roles
+		x = 0
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = NYO_focus_sabotage_donator_roles
+			focus = NYO_focus_enlist_sag's_help
+			focus = NYO_focus_leak_posh's_discord_logs 
+		}
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = DEL }
+		}
+	}
+
+	focus = {
+		id = NYO_focus_put_the_gmodders_on_trial
+		icon = GFX_focus_mex_arrest_general_cedillo
+		relative_position_id = NYO_focus_spilling_the_soda
+		x = 0
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = NYO_focus_spilling_the_soda
+
+		}
+		completion_reward = {
+			### event about deciding what to do with all the Gmodders (Nubs, THE, etc ) 
+		}
+	}
+
+	focus = {
 		id = NYO_focus_seso_faction
 		icon = GFX_goal_generic_major_alliance
 		relative_position_id = NYO_focus_stop_playing_gmod
@@ -321,12 +429,33 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = NYO_focus_leave_gaming
+			focus = NYO_focus_never_another_garry's_mod_server
 		}
 
 		completion_reward = {
 			NJE = {
 				add_to_faction = ROOT
 			}
+		}
+	}
+	
+	focus = {
+		id = NYO_focus_black_horse
+		icon = GFX_focus_generic_horse_studs
+		relative_position_id = NYO_focus_commander_crimson
+		x = -2
+		y = 1
+		cost = 2
+		prerequisite = {
+			focus = NYO_focus_commander_crimson
+		}
+		available = {
+			any_neighbor_country = {
+				original_tag = ONT
+			}
+		}
+
+		completion_reward = {
 		}
 	}
 
