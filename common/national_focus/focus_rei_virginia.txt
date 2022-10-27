@@ -567,6 +567,23 @@ focus = {
 }
 }
 
+focus = {
+	id = via_invite_old_naval_staff_back
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = via_reshuffle_naval_command
+	available_if_capitulated = yes
+	prerequisite = { focus = via_reshuffle_naval_command }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
 ### Men of War
 
 focus = {
@@ -745,6 +762,27 @@ focus = {
 }
 
 focus = {
+	id = via_ttt
+	icon = GFX_focus_ITA_mare_nostrum
+	x = 0
+	y = 1
+	cost = 5
+	prerequisite = { focus = via_mordhau_duels }
+	prerequisite = { focus = via_ready_or_not_fletch }
+	prerequisite = { focus = via_total_war_rome }
+	
+	relative_position_id = via_mordhau_duels
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+}
+}
+
+focus = {
 	id = via_observe_romanian_paratroopers
 	icon = GFX_focus_generic_paratrooper
 	x = 14
@@ -796,6 +834,24 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+}
+}
+
+focus = {
+	id = via_the_oogas
+	icon = GFX_focus_AST_squander_bug
+	relative_position_id = via_soviet_marines
+	x = 1
+	y = 1
+	cost = 5
+	prerequisite = { focus = via_soviet_marines }
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
 }
 }
 
@@ -854,7 +910,7 @@ focus = {
 
 focus = {
 	id = via_consult_ojax_wt
-	icon = GFX_focus_generic_attack_romania
+	icon = GFX_focus_SOV_approach_tukahchevsky
 	x = 7
 	y = 10
 	cost = 5
@@ -866,19 +922,124 @@ focus = {
 	}
 	completion_reward = {
 		### get event about ojax suggesting three different country branches. (Germany, Soviets, etc)
+		country_event = virginia.35
 }
 }
 
 ### seso mill focus
 
 focus = {
-	id = via_private_contracts
-	icon = GFX_goal_anti_comintern_pact
+	id = via_joined_seso
+	icon = GFX_goal_generic_secret_weapon
 	x = 22
 	y = 7
 	cost = 5
 	available_if_capitulated = yes
 	prerequisite = { focus = via_military_focus }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_record_csgo_moments
+	icon = GFX_goal_generic_propaganda
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = via_joined_seso
+	available_if_capitulated = yes
+	prerequisite = { focus = via_joined_seso }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_start_recording_ops
+	icon = GFX_focus_generic_fascist_propaganda
+	x = 0
+	y = 2
+	cost = 5
+	relative_position_id = via_joined_seso
+	available_if_capitulated = yes
+	prerequisite = { focus = via_record_csgo_moments }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_analyze_algorithm
+	icon = GFX_focus_research
+	x = 1
+	y = 3
+	cost = 5
+	relative_position_id = via_joined_seso
+	available_if_capitulated = yes
+	prerequisite = { focus = via_start_recording_ops }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_clip_sharing
+	icon = GFX_focus_generic_concessions
+	x = -1
+	y = 3
+	cost = 5
+	relative_position_id = via_joined_seso
+	available_if_capitulated = yes
+	prerequisite = { focus = via_start_recording_ops }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_incite_youtube_drama
+	icon = GFX_focus_generic_conspiracy
+	x = 0
+	y = 4
+	cost = 5
+	relative_position_id = via_joined_seso
+	available_if_capitulated = yes
+	prerequisite = { focus = via_clip_sharing }
+	prerequisite = { focus = via_analyze_algorithm }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_niche_internet_micro_celebrity
+	icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+	x = 3
+	y = 5
+	cost = 5
+	relative_position_id = via_joined_seso
+	available_if_capitulated = yes
+	prerequisite = { focus = via_incite_youtube_drama }
+	prerequisite = { focus = via_monetize_youtube_channel }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -1021,10 +1182,11 @@ focus = {
 focus = {
 	id = via_larp_political_theory
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 35
-	y = 2
+	x = 1
+	y = 1
 	cost = 5
 	available_if_capitulated = yes
+	relative_position_id = via_political_tree_ryder
 	prerequisite = { focus = via_political_tree_ryder }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
@@ -1037,11 +1199,12 @@ focus = {
 focus = {
 	id = via_repealing_larp
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 35
-	y = 3
+	relative_position_id = via_political_tree_ryder
+	x = 0
+	y = 2
 	cost = 5
 	available_if_capitulated = yes
-	prerequisite = { focus = via_larp_political_theory }
+	prerequisite = { focus = via_larp_political_theory OR = via_shiba_gaming }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -1050,8 +1213,9 @@ focus = {
 }
 }
 ### tree for national insurrection spirit
+
 focus = {
-	id = via_stamp_out_innies
+	id = via_learn_from_trebuchet
 	icon = GFX_focus_ger_return_of_the_kaiser
 	x = 39
 	y = 4
@@ -1067,13 +1231,14 @@ focus = {
 }
 
 focus = {
-	id = via_learn_from_trebuchet
+	id = via_odst
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 39
-	y = 5
+	x = 1
+	y = 1
 	cost = 5
 	available_if_capitulated = yes
-	prerequisite = { focus = via_stamp_out_innies }
+	relative_position_id = via_learn_from_trebuchet
+	prerequisite = { focus = via_learn_from_trebuchet }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -1083,12 +1248,13 @@ focus = {
 }
 
 focus = {
-	id = via_lynchberg_trials
+	id = via_odst2
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 39
-	y = 6
+	x = -1
+	y = 1
 	cost = 5
 	available_if_capitulated = yes
+	relative_position_id = via_learn_from_trebuchet
 	prerequisite = { focus = via_learn_from_trebuchet }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
@@ -1102,11 +1268,12 @@ focus = {
 focus = {
 	id = via_nova
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 37
-	y = 4
+	x = 0
+	y = 2
 	cost = 5
 	available_if_capitulated = yes
-	prerequisite = { focus = via_repealing_larp }
+	relative_position_id = via_repealing_larp
+	prerequisite = { focus = via_operations_host OR = via_gamemaster }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -1118,9 +1285,10 @@ focus = {
 focus = {
 	id = via_educate_those_damn_trailer_park_people
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 37
-	y = 5
+	x = 0
+	y = 3
 	cost = 5
+	relative_position_id = via_repealing_larp
 	available_if_capitulated = yes
 	prerequisite = { focus = via_nova }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -1130,15 +1298,36 @@ focus = {
 	completion_reward = {
 }
 }
-### railroads and lessens debuff
+
 focus = {
-	id = via_an_interconnected_reich
+	id = via_create_youtube_channel
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 37
-	y = 6
+	x = 2
+	y = 4
 	cost = 5
+	has_completed_focus = via_record_csgo_moments
+	relative_position_id = via_repealing_larp
 	available_if_capitulated = yes
-	prerequisite = { focus = via_nova }
+	prerequisite = { focus = via_educate_those_damn_trailer_park_people }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	### allows creation of funny moments, can make better ones if I start recording ops | decision like copy franzJ (basically lets you customize each video)
+}
+}
+
+focus = {
+	id = via_remember_navy_discord?
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = -2
+	y = 4
+	cost = 5
+	relative_position_id = via_repealing_larp
+	available_if_capitulated = yes
+	prerequisite = { focus = via_educate_those_damn_trailer_park_people }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -1150,7 +1339,7 @@ focus = {
 focus = {
 	id = via_two_language_problem
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 32
+	x = 31
 	y = 4
 	cost = 5
 	available_if_capitulated = yes
@@ -1160,57 +1349,29 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		### requires 
 }
 }
 ###longer path vvv that buffs the larp state national spirit but takes longer and maintains some debuff???
-focus = {
-	id = via_teaching_centers
-	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 33
-	y = 5
-	cost = 5
-	available_if_capitulated = yes
-	prerequisite = { focus = via_two_language_problem }
-	mutually_exclusive = {
-		focus = via_remove_compulsory_german_teaching
-	}
-	search_filters = { FOCUS_FILTER_POLITICAL } 
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-}
-}
-
-focus = {
-	id = via_german_advice
-	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 33
-	y = 6
-	cost = 5
-	available_if_capitulated = yes
-	prerequisite = { focus = via_teaching_centers }
-	search_filters = { FOCUS_FILTER_POLITICAL } 
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-}
-}
 
 focus = {
 	id = via_mud_pits_for_all
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 33
-	y = 7
+	relative_position_id = via_two_language_problem
+	x = 1
+	y = 1
 	cost = 5
 	available_if_capitulated = yes
-	prerequisite = { focus = via_german_advice }
+	mutually_exclusive = {
+		focus = via_remove_compulsory_german_teaching
+	}
+	prerequisite = { focus = via_two_language_problem }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
+		### requires something that makes it harder to get
 }
 }
 
@@ -1220,84 +1381,14 @@ focus = {
 focus = {
 	id = via_remove_compulsory_german_teaching
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 31
+	x = 30
 	y = 5
 	cost = 5
 	available_if_capitulated = yes
 	prerequisite = { focus = via_two_language_problem }
 	mutually_exclusive = {
-		focus = via_teaching_centers
+		focus = via_mud_pits_for_all
 	}
-	search_filters = { FOCUS_FILTER_POLITICAL } 
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-}
-}
-
-focus = {
-	id = via_our_branch_unifies_us
-	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 31
-	y = 2
-	cost = 5
-	available_if_capitulated = yes
-	prerequisite = { focus = via_political_tree_ryder }
-	mutually_exclusive = {
-		focus = via_seso_one
-	}
-	search_filters = { FOCUS_FILTER_POLITICAL } 
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-}
-}
-
-focus = {
-	id = via_invite_old_naval_staff_back
-	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 31
-	y = 3
-	cost = 5
-	available_if_capitulated = yes
-	prerequisite = { focus = via_our_branch_unifies_us }
-	search_filters = { FOCUS_FILTER_POLITICAL } 
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-}
-}
-
-focus = {
-	id = via_seso_one
-	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 33
-	y = 2
-	cost = 5
-	available_if_capitulated = yes
-	prerequisite = { focus = via_political_tree_ryder }
-	mutually_exclusive = {
-		focus = via_our_branch_unifies_us
-	}
-	search_filters = { FOCUS_FILTER_POLITICAL } 
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-}
-}
-
-focus = {
-	id = via_seso_two
-	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 33
-	y = 3
-	cost = 5
-	available_if_capitulated = yes
-	prerequisite = { focus = via_seso_one }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -1309,11 +1400,12 @@ focus = {
 focus = {
 	id = via_gamemaster
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 37
-	y = 2
+	x = 1
+	y = 3
 	cost = 5
 	available_if_capitulated = yes
-	prerequisite = { focus = via_political_tree_ryder }
+	prerequisite = { focus = via_repealing_larp }
+	relative_position_id = via_political_tree_ryder
 	mutually_exclusive = {
 		focus = via_operations_host
 	}
@@ -1326,13 +1418,17 @@ focus = {
 }
 
 focus = {
-	id = via_head_gamemaster
+	id = via_operations_host
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 37
+	x = -1
 	y = 3
 	cost = 5
+	relative_position_id = via_political_tree_ryder
+	mutually_exclusive = {
+		focus = via_gamemaster
+	}
 	available_if_capitulated = yes
-	prerequisite = { focus = via_gamemaster }
+	prerequisite = { focus = via_repealing_larp }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -1342,10 +1438,11 @@ focus = {
 }
 
 focus = {
-	id = via_operations_host
+	id = via_shiba_gaming
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 39
-	y = 2
+	relative_position_id = via_political_tree_ryder
+	x = -1
+	y = 1
 	cost = 5
 	available_if_capitulated = yes
 	prerequisite = { focus = via_political_tree_ryder }
@@ -1357,26 +1454,7 @@ focus = {
 }
 }
 
-focus = {
-	id = via_operations_command
-	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 39
-	y = 3
-	cost = 5
-	available_if_capitulated = yes
-	prerequisite = { focus = via_operations_host }
-	mutually_exclusive = {
-		focus = via_gamemaster
-	}
-	search_filters = { FOCUS_FILTER_POLITICAL } 
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-}
-}
-
-### Industry Tree
+### Industry Tree ### 
 
 focus = {
 	id = via_reconstruction_efforts
@@ -1399,7 +1477,7 @@ focus = {
 
 focus = {
 	id = via_consult_foreign_mace_contractors_mc
-	icon = GFX_goal_continuous_non_factory_construct
+	icon = GFX_goal_tripartite_pact
 	x = 27
 	y = 7
 	cost = 5
@@ -1416,7 +1494,7 @@ focus = {
 ###gives war support or something
 focus = {
 	id = via_tarkov_grub_knowledge
-	icon = GFX_goal_continuous_non_factory_construct
+	icon = GFX_focus_generic_annex_country_2
 	x = 27
 	y = 8
 	cost = 5
@@ -1432,12 +1510,13 @@ focus = {
 
 focus = {
 	id = via_factorio_box
-	icon = GFX_goal_generic_production2
-	x = 29
-	y = 7
+	icon = GFX_focus_generic_improve_roads
+	x = 0
+	y = 1
 	cost = 5
 	available_if_capitulated = yes
-	prerequisite = { focus = via_reconstruction_efforts }
+	prerequisite = { focus = via_tarkov_grub_knowledge }
+	relative_position_id = via_tarkov_grub_knowledge
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -1447,12 +1526,83 @@ focus = {
 }
 
 focus = {
-	id = via_space_engineers
+	id = via_download_space_engineers_exploration_mod
+	icon = GFX_focus_rocketry
+	x = 2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = via_reconstruction_efforts
+	prerequisite = { focus = via_reconstruction_efforts }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		### gives event or something where i random event or decisions to find that russian ship i found in SE or something else etc (maybe damage ships in an encounter with fleet???)
+}
+}
+
+focus = {
+	id = via_mike_the_miner
 	icon = GFX_goal_continuous_non_factory_construct
 	x = 29
 	y = 8
 	cost = 5
 	available_if_capitulated = yes
+	prerequisite = { focus = via_download_space_engineers_exploration_mod }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_scavenge_the_crash_on_helghan
+	icon = GFX_focus_generic_land_reclamation
+	x = 0
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = via_mike_the_miner
+	prerequisite = { focus = via_mike_the_miner }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_other_job_prospects
+	icon = GFX_focus_usa_reestablish_the_gold_standard
+	x = -1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = via_mike_the_miner
+	prerequisite = { focus = via_scavenge_the_crash_on_helghan }
+	prerequisite = { focus = via_factorio_box }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_another_summer_job
+	icon = GFX_focus_SWI_issue_war_bonds
+	x = -3
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = via_mike_the_miner
+	prerequisite = { focus = via_expand_mc_mining_operations }
 	prerequisite = { focus = via_factorio_box }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
@@ -1480,7 +1630,7 @@ focus = {
 ### requires DC to be conquered 
 focus = {
 	id = via_aquire_dc_companies
-	icon = GFX_goal_generic_army_motorized
+	icon = GFX_goal_continuous_air_production
 	x = 25
 	y = 8
 	cost = 5
@@ -1494,7 +1644,41 @@ focus = {
 }
 }
 
-### Expansion
+focus = {
+	id = via_expand_mc_mining_operations
+	icon = GFX_focus_generic_tungsten
+	x = 0
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = via_aquire_dc_companies
+	prerequisite = { focus = via_aquire_dc_companies }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_monetize_youtube_channel
+	icon = GFX_focus_mex_privatisation
+	x = 1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_other_job_prospects }
+	relative_position_id = via_factorio_box
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+### Expansion ### 
 
 focus = {
 	id = via_open_foreign_policy
@@ -1622,7 +1806,7 @@ focus = {
 
 focus = {
 	id = via_kujo_maryland_attack
-	icon = GFX_goal_demand_sudetenland
+	icon = GFX_focus_RAJ_seek_help_from_germany
 	x = 32
 	y = 11
 	cost = 5
@@ -1636,12 +1820,13 @@ focus = {
 	}
 	completion_reward = {
 		###give decisions about pressuring kujo and attacking
+		create_wargoal = { type = annex_everything target = MAR }
 }
 }
 
 focus = {
 	id = via_its_basically_dc
-	icon = GFX_goal_demand_sudetenland
+	icon = GFX_focus_generic_spread_fascism
 	x = 32
 	y = 12
 	cost = 5
@@ -1654,6 +1839,26 @@ focus = {
 	}
 	completion_reward = {
 		###italianization lol
+		247 = {
+			add_core_of = VIA
+			
+		}
+		246 = {
+			add_core_of = VIA
+			
+		}
+		244 = {
+			add_core_of = VIA
+			
+		}
+		245 = {
+			add_core_of = VIA
+			
+		}
+		248 = {
+			add_core_of = VIA
+			
+		}
 }
 }
 
@@ -1673,6 +1878,7 @@ focus = {
 	}
 	completion_reward = {
 		###give decisions about pressuring kujo and attacking w crimson
+		create_wargoal = { type = puppet_wargoal_focus target = MAR }
 }
 }
 
@@ -1709,6 +1915,7 @@ focus = {
 	}
 	completion_reward = {
 		###give decisions about pressuring kujo and attacking w crimson
+		create_wargoal = { type = annex_everything target = PEN }
 }
 }
 
