@@ -929,13 +929,117 @@ focus = {
 ### seso mill focus
 
 focus = {
-	id = via_private_contracts
-	icon = GFX_goal_anti_comintern_pact
+	id = via_joined_seso
+	icon = GFX_goal_generic_secret_weapon
 	x = 22
 	y = 7
 	cost = 5
 	available_if_capitulated = yes
 	prerequisite = { focus = via_military_focus }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_record_csgo_moments
+	icon = GFX_goal_generic_propaganda
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = via_joined_seso
+	available_if_capitulated = yes
+	prerequisite = { focus = via_joined_seso }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_start_recording_ops
+	icon = GFX_focus_generic_fascist_propaganda
+	x = 0
+	y = 2
+	cost = 5
+	relative_position_id = via_joined_seso
+	available_if_capitulated = yes
+	prerequisite = { focus = via_record_csgo_moments }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_analyze_algorithm
+	icon = GFX_focus_research
+	x = 1
+	y = 3
+	cost = 5
+	relative_position_id = via_joined_seso
+	available_if_capitulated = yes
+	prerequisite = { focus = via_start_recording_ops }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_clip_sharing
+	icon = GFX_focus_generic_concessions
+	x = -1
+	y = 3
+	cost = 5
+	relative_position_id = via_joined_seso
+	available_if_capitulated = yes
+	prerequisite = { focus = via_start_recording_ops }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_incite_youtube_drama
+	icon = GFX_focus_generic_conspiracy
+	x = 0
+	y = 4
+	cost = 5
+	relative_position_id = via_joined_seso
+	available_if_capitulated = yes
+	prerequisite = { focus = via_clip_sharing }
+	prerequisite = { focus = via_analyze_algorithm }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_niche_internet_micro_celebrity
+	icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+	x = 3
+	y = 5
+	cost = 5
+	relative_position_id = via_joined_seso
+	available_if_capitulated = yes
+	prerequisite = { focus = via_incite_youtube_drama }
+	prerequisite = { focus = via_monetize_youtube_channel }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -1113,7 +1217,7 @@ focus = {
 focus = {
 	id = via_learn_from_trebuchet
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 41
+	x = 39
 	y = 4
 	cost = 5
 	available_if_capitulated = yes
@@ -1164,11 +1268,12 @@ focus = {
 focus = {
 	id = via_nova
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 38
-	y = 4
+	x = 0
+	y = 2
 	cost = 5
 	available_if_capitulated = yes
-	prerequisite = { focus = via_repealing_larp }
+	relative_position_id = via_repealing_larp
+	prerequisite = { focus = via_operations_host OR = via_gamemaster }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -1180,11 +1285,49 @@ focus = {
 focus = {
 	id = via_educate_those_damn_trailer_park_people
 	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 38
-	y = 5
+	x = 0
+	y = 3
 	cost = 5
+	relative_position_id = via_repealing_larp
 	available_if_capitulated = yes
 	prerequisite = { focus = via_nova }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_create_youtube_channel
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = 2
+	y = 4
+	cost = 5
+	has_completed_focus = via_record_csgo_moments
+	relative_position_id = via_repealing_larp
+	available_if_capitulated = yes
+	prerequisite = { focus = via_educate_those_damn_trailer_park_people }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	### allows creation of funny moments, can make better ones if I start recording ops | decision like copy franzJ (basically lets you customize each video)
+}
+}
+
+focus = {
+	id = via_remember_navy_discord?
+	icon = GFX_focus_ger_return_of_the_kaiser
+	x = -2
+	y = 4
+	cost = 5
+	relative_position_id = via_repealing_larp
+	available_if_capitulated = yes
+	prerequisite = { focus = via_educate_those_damn_trailer_park_people }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -1334,7 +1477,7 @@ focus = {
 
 focus = {
 	id = via_consult_foreign_mace_contractors_mc
-	icon = GFX_goal_continuous_non_factory_construct
+	icon = GFX_goal_tripartite_pact
 	x = 27
 	y = 7
 	cost = 5
@@ -1351,7 +1494,7 @@ focus = {
 ###gives war support or something
 focus = {
 	id = via_tarkov_grub_knowledge
-	icon = GFX_goal_continuous_non_factory_construct
+	icon = GFX_focus_generic_annex_country_2
 	x = 27
 	y = 8
 	cost = 5
@@ -1367,12 +1510,13 @@ focus = {
 
 focus = {
 	id = via_factorio_box
-	icon = GFX_goal_generic_production2
-	x = 29
-	y = 7
+	icon = GFX_focus_generic_improve_roads
+	x = 0
+	y = 1
 	cost = 5
 	available_if_capitulated = yes
-	prerequisite = { focus = via_reconstruction_efforts }
+	prerequisite = { focus = via_tarkov_grub_knowledge }
+	relative_position_id = via_tarkov_grub_knowledge
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -1382,12 +1526,83 @@ focus = {
 }
 
 focus = {
-	id = via_space_engineers
+	id = via_download_space_engineers_exploration_mod
+	icon = GFX_focus_rocketry
+	x = 2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = via_reconstruction_efforts
+	prerequisite = { focus = via_reconstruction_efforts }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		### gives event or something where i random event or decisions to find that russian ship i found in SE or something else etc (maybe damage ships in an encounter with fleet???)
+}
+}
+
+focus = {
+	id = via_mike_the_miner
 	icon = GFX_goal_continuous_non_factory_construct
 	x = 29
 	y = 8
 	cost = 5
 	available_if_capitulated = yes
+	prerequisite = { focus = via_download_space_engineers_exploration_mod }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_scavenge_the_crash_on_helghan
+	icon = GFX_focus_generic_land_reclamation
+	x = 0
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = via_mike_the_miner
+	prerequisite = { focus = via_mike_the_miner }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_other_job_prospects
+	icon = GFX_focus_usa_reestablish_the_gold_standard
+	x = -1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = via_mike_the_miner
+	prerequisite = { focus = via_scavenge_the_crash_on_helghan }
+	prerequisite = { focus = via_factorio_box }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_another_summer_job
+	icon = GFX_focus_SWI_issue_war_bonds
+	x = -3
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = via_mike_the_miner
+	prerequisite = { focus = via_expand_mc_mining_operations }
 	prerequisite = { focus = via_factorio_box }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
@@ -1415,12 +1630,46 @@ focus = {
 ### requires DC to be conquered 
 focus = {
 	id = via_aquire_dc_companies
-	icon = GFX_goal_generic_army_motorized
+	icon = GFX_goal_continuous_air_production
 	x = 25
 	y = 8
 	cost = 5
 	available_if_capitulated = yes
 	prerequisite = { focus = via_gambit_motor_werke }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_expand_mc_mining_operations
+	icon = GFX_focus_generic_tungsten
+	x = 0
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = via_aquire_dc_companies
+	prerequisite = { focus = via_aquire_dc_companies }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_monetize_youtube_channel
+	icon = GFX_focus_mex_privatisation
+	x = 1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_other_job_prospects }
+	relative_position_id = via_factorio_box
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
