@@ -1,5 +1,6 @@
 focus_tree = {
 	id = cot_focus
+	continuous_focus_position = { x = 100 y = 150}
 	country = {
 		factor = 0
 		modifier = {
@@ -274,7 +275,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_establishsgn
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 5
+		cost = 10
 		x = 9
 		y = 9
 		prerequisite = {
@@ -341,7 +342,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_claimmedbay
 		icon = GFX_focus_spa_save_the_alcazar
-		cost = 5
+		cost = 10
 		x = 7
 		y = 10
 		prerequisite = {
@@ -355,7 +356,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_sgnrecruitment
 		icon = GFX_focus_chi_army_reform
-		cost = 5
+		cost = 10
 		x = 7
 		y = 12
 		prerequisite = {
@@ -370,7 +371,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_writehandbook
 		icon = GFX_focus_TUR_ratify_the_six_arrows
-		cost = 5
+		cost = 10
 		x = 9
 		y = 11
 		prerequisite = {
@@ -381,8 +382,6 @@ focus_tree = {
 				bonus = 0.4
 				uses = 1
 				category = land_doctrine
-				category = naval_doctrine
-				category = air_doctrine
 			}
 		}
 	}
@@ -390,7 +389,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_banerp
 		icon = GFX_goal_anti_comintern_pact
-		cost = 5
+		cost = 10
 		x = 11
 		y = 10
 		prerequisite = {
@@ -400,7 +399,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
-				category = hospital_tech
+				category = support_tech
 			}
 		}
 	}
@@ -408,7 +407,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_medicalrp
 		icon = GFX_focus_POL_beck_ribbentrop
-		cost = 5
+		cost = 10
 		x = 11
 		y = 12
 		prerequisite = {
@@ -426,7 +425,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_xoposition
 		icon = GFX_focus_BUL_form_a_regency_council
-		cost = 5
+		cost = 10
 		x = 9
 		y = 13
 		prerequisite = {
@@ -445,142 +444,56 @@ focus_tree = {
 			country_event = connecticut.1
 		}
 	}
-
-
-####Economic Branch
+#### Skirata Null Class Troopers
 	focus = {
-		id = cot_focus_race
-		icon = GFX_focus_por_workers_of_iberia
-		cost = 5
-		x = 17
-		y = 9
+		id = cot_focus_join_skirata
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_ijoin
+		x = -1
+		y = 2
 		prerequisite = {
 			focus = cot_focus_ijoin
 		}
 		completion_reward = {
-			add_stability = -0.1
-
+			add_timed_idea = {
+				idea = idea_skirata
+				days = 60
+			}
+			#add_opinion_modifier = {
+			#	target = MIN
+			#	modifier = opinion_joined_skirata
+			#}
 		}
 	}
 
 	focus = {
-		id = cot_focus_repeal_articles
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		cost = 5
-		x = 15
-		y = 10
-		mutually_exclusive = {
-			focus = cot_focus_getajob
-		}
+		id = cot_focus_join_galaax
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_ijoin
+		x = 1
+		y = 2
 		prerequisite = {
-			focus = cot_focus_race
+			focus = cot_focus_ijoin
 		}
 		completion_reward = {
-			add_stability = -0.2
-		}
-	}
-
-	focus = {
-		id = cot_focus_blackuni
-		icon = GFX_goal_continuous_research
-		cost = 5
-		x = 15
-		y = 11
-		prerequisite = {
-			focus = cot_focus_repeal_articles
-		}
-		completion_reward = {
-			add_stability = -0.1
-			add_ideas = blackuni
-		}
-	}
-
-	focus = {
-		id = cot_focus_blackbiz
-		icon = GFX_focus_generic_treaty
-		cost = 5
-		x = 13
-		y = 11
-		prerequisite = {
-			focus = cot_focus_repeal_articles
-		}
-		completion_reward = {
-			add_stability = -0.1
-			add_ideas = blackbiz
-		}
-	}
-
-	focus = {
-		id = cot_focus_blackmiscegenation
-		icon = GFX_focus_eng_move_to_secure_the_dominions
-		cost = 5
-		x = 17
-		y = 11
-		prerequisite = {
-			focus = cot_focus_repeal_articles
-		}
-		completion_reward = {
-			add_stability = -0.1
-			add_ideas = blackmiscegenation
-		}
-	}
-
-	focus = {
-		id = cot_focus_whiteemigration
-		icon = GFX_focus_CZE_german_puppet
-		cost = 5
-		x = 15
-		y = 12
-		prerequisite = {
-			focus = cot_focus_blackbiz
-		}
-		prerequisite = {
-			focus = cot_focus_blackmiscegenation
-		}
-		prerequisite = {
-			focus = cot_focus_blackuni
-		}
-		completion_reward = {
-			custom_effect_tooltip = "Nearby countries will receive white refugees over 3 months. Connecticut will suffer large drawbacks that take years to recover."
-			add_stability = 0.8
-			hidden_effect = {
-				every_neighbor_country = {
-					# Also, reduce opinion modifier for all countries for racism against white people
-					limit = {
-						always = yes
-					}
-					add_timed_idea = {
-						idea = cot_emigration # Amounts to 2.3 million white people after 12 weeks split to 3 countries
-						days = 84
-					}
-				}
+			add_timed_idea = {
+				idea = idea_galaax
+				days = 60
+			}
+			add_opinion_modifier = {
+				target = MIN
+				modifier = opinion_joined_galaax
 			}
 		}
 	}
-
-	focus = {
-		id = cot_focus_getajob
-		icon = GFX_goal_generic_soviet_construction
-		cost = 5
-		x = 20
-		y = 10
-		mutually_exclusive = {
-			focus = cot_focus_repeal_articles
-		}
-		prerequisite = {
-			focus = cot_focus_race
-		}
-		completion_reward = {
-			set_global_flag = SESO_getajob
-		}
-	}
-
 
 ####Industrial Minecraft Focuses
 	focus = {
 		id = cot_focus_join_boxcraft
 		icon = GFX_focus_smiling_buddha
-		cost = 5
+		cost = 10
 		x = 10
 		y = 2
 		relative_position_id = cot_focus_ijoin
@@ -607,7 +520,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_build_kythira_piracy
 		icon = GFX_focus_GRE_a_land_of_mountains
-		cost = 5
+		cost = 10
 		x = -4
 		y = 2
 		relative_position_id = cot_focus_join_boxcraft
@@ -623,7 +536,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { is_coastal = yes }
-				
+
 
 				add_building_construction = {
 					type = dockyard
@@ -642,7 +555,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_build_trireme
 		icon = GFX_focus_GRE_a_long_and_proud_tradition
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = cot_focus_build_kythira_piracy
@@ -666,7 +579,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_sail_to_venice
 		icon = GFX_goal_generic_navy_battleship
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = cot_focus_build_trireme
@@ -698,7 +611,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_build_guangdong
 		icon = GFX_focus_chi_united_front
-		cost = 5
+		cost = 10
 		x = -2
 		y = 2
 		relative_position_id = cot_focus_join_boxcraft
@@ -720,7 +633,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_build_clan_palace
 		icon = GFX_focus_SOV_rebuild_the_savior_cathedral
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = cot_focus_build_guangdong
@@ -741,7 +654,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_sow_terrace_farms
 		icon = GFX_focus_SOV_bukharan_republic
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = cot_focus_build_clan_palace
@@ -766,7 +679,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_build_black_god_theocracy
 		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-		cost = 5
+		cost = 10
 		x = 0
 		y = 2
 		relative_position_id = cot_focus_join_boxcraft
@@ -782,7 +695,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_assign_black_pope
 		icon = GFX_focus_por_concordat
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = cot_focus_build_black_god_theocracy
@@ -797,7 +710,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_build_bear_clan
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		cost = 5
+		cost = 10
 		x = 2
 		y = 2
 		relative_position_id = cot_focus_join_boxcraft
@@ -811,7 +724,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_connect_roads
 		icon = GFX_goal_generic_construction2
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = cot_focus_build_bear_clan
@@ -833,7 +746,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_build_vladivostok
 		icon = GFX_focus_spa_the_spanish_miracle
-		cost = 5
+		cost = 10
 		x = 4
 		y = 2
 		relative_position_id = cot_focus_join_boxcraft
@@ -844,18 +757,37 @@ focus_tree = {
 		}
 	}
 ####Tier 3
-####Cultural Hegemony
+#### Get a Job
 	focus = {
-		id = cot_focus_hegemony
-		icon = GFX_focus_GRE_metaxism
-		cost = 5
-		x = 20
-		y = 15
-		prerequisite = {
-			focus = cot_focus_xoposition
+		id = cot_focus_getajob
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		relative_position_id = cot_focus_ijoin
+		x = 0
+		y = 8
+		mutually_exclusive = {
+			focus = cot_focus_repeal_articles
 		}
 		prerequisite = {
-			focus = cot_focus_whiteemigration OR = cot_focus_getajob
+			focus = cot_focus_xoposition
+			focus = cot_focus_join_skirata OR = cot_focus_join_galaax
+		}
+		completion_reward = {
+			set_global_flag = SESO_getajob
+			country_event = connecticut.4
+		}
+	}
+
+### GGN Developer
+	focus = {
+		id = cot_focus_developerpromo
+		icon = GFX_focus_up_joan_of_arc
+		cost = 10
+		relative_position_id = cot_focus_getajob
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = cot_focus_getajob
 		}
 		
 		completion_reward = {
@@ -864,24 +796,10 @@ focus_tree = {
 		}
 	}
 
-### GGN Developer
-	focus = {
-		id = cot_focus_developerpromo
-		icon = GFX_focus_up_joan_of_arc
-		cost = 5
-		x = 20
-		y = 18
-		prerequisite = {
-			focus = cot_focus_hegemony
-		}
-		
-		completion_reward = {}
-	}
-
 	focus = {
 		id = cot_focus_sevens
 		icon = GFX_focus_generic_military_academy
-		cost = 5
+		cost = 10
 		x = 18
 		y = 20
 		prerequisite = {
@@ -913,7 +831,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_sauce
 		icon = GFX_focus_generic_military_academy
-		cost = 5
+		cost = 10
 		x = 18
 		y = 22
 		prerequisite = {
@@ -945,7 +863,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_icdupdate
 		icon = GFX_focus_generic_industry_1
-		cost = 5
+		cost = 10
 		x = 20
 		y = 19
 		prerequisite = {
@@ -958,7 +876,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_sevensupdate
 		icon = GFX_focus_generic_industry_2
-		cost = 5
+		cost = 10
 		x = 20
 		y = 21
 		prerequisite = {
@@ -974,7 +892,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_siegupdate
 		icon = GFX_focus_generic_industry_3
-		cost = 5
+		cost = 10
 		x = 20
 		y = 23
 		prerequisite = {
@@ -987,7 +905,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_dylansegupdate
 		icon = GFX_goal_generic_attack_allies
-		cost = 5
+		cost = 10
 		x = 20
 		y = 25
 		prerequisite = {
@@ -1003,7 +921,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_dylandesegupdate
 		icon = GFX_goal_generic_alliance
-		cost = 5
+		cost = 10
 		x = 20
 		y = 27
 		prerequisite = {
@@ -1016,7 +934,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_gump
 		icon = GFX_focus_generic_military_mission
-		cost = 5
+		cost = 10
 		x = 22
 		y = 22
 		prerequisite = {
@@ -1029,7 +947,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_buildeventserver
 		icon = GFX_focus_generic_africa_production
-		cost = 5
+		cost = 10
 		x = 22
 		y = 26
 		prerequisite = {
@@ -1042,7 +960,7 @@ focus_tree = {
 	focus = {
 		id = cot_focus_openeventserver
 		icon = GFX_goal_tfv_saf_secure_interests_in_africa
-		cost = 5
+		cost = 10
 		x = 22
 		y = 29
 		prerequisite = {
@@ -1058,11 +976,11 @@ focus_tree = {
 	focus = {
 		id = cot_focus_seso
 		icon = GFX_focus_usa_recruit_the_free_corps
-		cost = 5
+		cost = 10
 		x = 26
 		y = 18
 		prerequisite = {
-			focus = cot_focus_hegemony
+			focus = cot_focus_developerpromo
 		}
 		available = {
 			is_in_faction = yes

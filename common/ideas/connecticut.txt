@@ -93,25 +93,6 @@ ideas = {
 			}
 		}
 
-		idea_black_religion = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-	
-			removal_cost = -1
-	
-			picture = GFX_idea_POL_ideology_drift_defence
-	
-			modifier = {
-				stability_factor = 0.25
-				war_support_factor = 0.20
-				drift_defence_factor = 0.50
-			}
-		}
-
 		idea_gamba_gaming = {
 			allowed = {
 				always = no
@@ -148,6 +129,26 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+
+		idea_skirata = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				training_time_factor = 0.15
+				experience_gain_army_unit = 0.15
+				initiative_factor = 0.05
+			}
+		}
+
 		## Profile Pictures
 		profile_mcgonagall = {
 			allowed = {

@@ -138,3 +138,27 @@ country_event = {
 	}
 
 }
+
+country_event = {
+	id = connecticut.4
+	title = connecticut.4.t
+	desc = connecticut.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		# Get the job
+		name = connecticut.4.a
+		swap_ruler_traits = {
+			remove = unemployed
+			add = employed
+		}
+	}
+
+	option = {
+		# Avoid the Job
+		name = connecticut.4.b
+	}
+
+}
