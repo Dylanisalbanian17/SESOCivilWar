@@ -1320,7 +1320,7 @@ focus = {
 }
 
 focus = {
-	id = via_remember_navy_discord?
+	id = via_remember_navy_discord
 	icon = GFX_focus_ger_return_of_the_kaiser
 	x = -2
 	y = 4
