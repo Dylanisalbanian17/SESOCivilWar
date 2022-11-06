@@ -14,7 +14,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 6
 		y = 0
-		cost = 2
+		cost = 10
 		completion_reward = {
 			army_experience = 50
 			every_core_state = {
@@ -34,16 +34,13 @@ focus_tree = {
 		relative_position_id = PEN_focus_discover_arma
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = { focus = PEN_focus_discover_arma }
 		available = {
-			NOT = { is_in_faction = yes }
 			has_global_flag = flag_seso_created
 		}
 		completion_reward = {
-			NJE = {
-				add_to_faction = FROM
-			}
+			add_ideas = idea_seso_operative
 		}
 	}
 
@@ -53,7 +50,7 @@ focus_tree = {
 		relative_position_id = PEN_focus_join_seso
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = { focus = PEN_focus_join_seso }
 		completion_reward = {
 			hidden_effect = {
@@ -73,7 +70,7 @@ focus_tree = {
 		relative_position_id = PEN_focus_pickle_moment
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		prerequisite = { focus = PEN_focus_pickle_moment  }
 		prerequisite = {
 			focus = PEN_focus_adopt_marine_puns
@@ -105,9 +102,9 @@ focus_tree = {
 		id = PEN_focus_develop_kakapo
 		icon = GFX_focus_research
 		relative_position_id = PEN_focus_join_seso
-		x = 2
+		x = 4
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = { focus = PEN_focus_join_seso }
 		prerequisite = {
 			focus = PEN_focus_develop_discord_bot
@@ -146,12 +143,12 @@ focus_tree = {
 		id = PEN_focus_fix_hoi4_mod
 		icon = GFX_focus_research2
 		relative_position_id = PEN_focus_develop_kakapo
-		x = 0
-		y = 1
-		cost = 5
+		x = -1
+		y = 2
+		cost = 10
 		prerequisite = { focus = PEN_focus_develop_kakapo }
 		prerequisite = {
-			focus = PEN_focus_develop_discord_bot
+			focus = PEN_focus_harvest_ips
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -164,7 +161,7 @@ focus_tree = {
 		#relative_position_id = PEN_focus_discover_arma
 		x = 1
 		y = 0
-		cost = 5
+		cost = 10
 		mutually_exclusive = { focus = PEN_focus_reject_british }
 		available = {
 			PEN = {
@@ -200,7 +197,7 @@ focus_tree = {
 		relative_position_id = PEN_focus_embrace_british
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = PEN_focus_embrace_british
 		}
@@ -216,7 +213,7 @@ focus_tree = {
 		relative_position_id = PEN_focus_embrace_british
 		x = 2
 		y = 0
-		cost = 5
+		cost = 10
 		mutually_exclusive = { focus = PEN_focus_embrace_british }
 		available = {
 			PEN = {
@@ -245,7 +242,7 @@ focus_tree = {
 		relative_position_id = PEN_focus_embrace_british
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = { focus = PEN_focus_embrace_british OR = PEN_focus_reject_british }
 		completion_reward = {
 			random_core_state = {
@@ -281,12 +278,12 @@ focus_tree = {
 		relative_position_id = PEN_focus_visit_abandoned_buildings
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = PEN_focus_visit_abandoned_buildings
 		}
 		completion_reward = {
-			240 = {
+			352 = {
 				remove_building = {
 					type = arms_factory
 					level = 5
@@ -332,7 +329,7 @@ focus_tree = {
 		relative_position_id = PEN_focus_rag_on_philadelphia
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = PEN_focus_rag_on_philadelphia
 		}
@@ -371,7 +368,7 @@ focus_tree = {
 		#relative_position_id = PEN_focus_discover_arma
 		x = 11
 		y = 0
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_ideas = idea_linux_moment
 			country_event = pennsylvania.1
@@ -384,15 +381,30 @@ focus_tree = {
 		relative_position_id = PEN_focus_install_linux_server
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = { focus = PEN_focus_install_linux_server }
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.50
-				uses = 1
+				bonus = 0.25
+				uses = 3
 				category = electronics
 			}
-			
+		}
+	}
+
+	focus = {
+		id = PEN_focus_harvest_ips
+		#icon = GFX_focus_SOV_organize_wreckers
+		relative_position_id = PEN_focus_develop_discord_bot
+		x = -2
+		y = 1
+		cost = 10
+		prerequisite = { focus = PEN_focus_develop_discord_bot }
+		completion_reward = {
+			add_timed_idea = {
+				idea = idea_ip_harvester
+				days = 120
+			}
 		}
 	}
 
@@ -402,12 +414,12 @@ focus_tree = {
 		relative_position_id = PEN_focus_install_linux_server
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = { focus = PEN_focus_install_linux_server }
 		completion_reward = {
 			add_ideas = idea_minecraft_server_owner
 			add_tech_bonus = {
-				bonus = 0.50
+				bonus = 0.25
 				uses = 3
 				category = industry
 			}
@@ -420,7 +432,7 @@ focus_tree = {
 		relative_position_id = PEN_focus_launch_minecraft_server
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite = { focus = PEN_focus_launch_minecraft_server }
 		available = {
 			#has_global_flag = seso_boxcraft_flag

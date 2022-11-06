@@ -40,7 +40,7 @@ country_event = {
 		# Ryder invites Mace, Boombler, and Crimson/Ojax
 		name = new_jersey.2.a
 		ai_chance = { factor = 90 }
-		NJE = { add_to_faction = ROOT }
+		add_ideas = idea_seso_operative
 		CAL = { country_event = new_jersey.2 }
 		WYO = { country_event = new_jersey.2 }
 		NYO = { country_event = new_jersey.2 }
@@ -53,7 +53,7 @@ country_event = {
 		# Box invites Target, Spaceman
 		name = new_jersey.2.a
 		ai_chance = { factor = 90 }
-		NJE = { add_to_faction = ROOT }
+		add_ideas = idea_seso_operative
 		ART = { country_event = new_jersey.2 }
 		ARS = { country_event = new_jersey.2 }
 		trigger = {
@@ -65,7 +65,7 @@ country_event = {
 		# Sag invites Zog, Lanix, Jolly
 		name = new_jersey.2.a
 		ai_chance = { factor = 90 }
-		NJE = { add_to_faction = ROOT }
+		add_ideas = idea_seso_operative
 		WIS = { country_event = new_jersey.2 }
 		QUB = { country_event = new_jersey.2 }
 		ONT = { country_event = new_jersey.2 }
@@ -78,7 +78,7 @@ country_event = {
 		# Generic accept invite
 		name = new_jersey.2.a
 		ai_chance = { factor = 90 }
-		NJE = { add_to_faction = ROOT }
+		add_ideas = idea_seso_operative
 		trigger = {
 			NOT = {
 				OR = {

@@ -10,7 +10,7 @@
 
 		country_leader={
 			ideology=conservatism
-			traits = { employed dislikes_germany dislikes_nyo dislikes_nje popular_figurehead2 }
+			traits = { unemployed dislikes_germany dislikes_nyo dislikes_nje popular_figurehead2 }
 			expire = "1965.1.1.1"
 			id=-1
 		}

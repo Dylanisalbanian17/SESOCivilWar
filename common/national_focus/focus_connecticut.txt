@@ -276,10 +276,13 @@ focus_tree = {
 		id = cot_focus_establishsgn
 		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 10
-		x = 9
-		y = 9
+		relative_position_id = cot_focus_join_skirata
+		x = 1
+		y = 1
 		prerequisite = {
-			focus = cot_focus_ijoin
+			focus = cot_focus_join_skirata
+			focus = cot_focus_join_galaax
+			focus = cot_focus_join_tk
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -343,8 +346,9 @@ focus_tree = {
 		id = cot_focus_claimmedbay
 		icon = GFX_focus_spa_save_the_alcazar
 		cost = 10
-		x = 7
-		y = 10
+		relative_position_id = cot_focus_establishsgn
+		x = -2
+		y = 1
 		prerequisite = {
 			focus = cot_focus_establishsgn
 		}
@@ -390,8 +394,9 @@ focus_tree = {
 		id = cot_focus_banerp
 		icon = GFX_goal_anti_comintern_pact
 		cost = 10
-		x = 11
-		y = 10
+		relative_position_id = cot_focus_establishsgn
+		x = 2
+		y = 1
 		prerequisite = {
 			focus = cot_focus_establishsgn
 		}
@@ -444,14 +449,50 @@ focus_tree = {
 			country_event = connecticut.1
 		}
 	}
+
+	focus = {
+		id = cot_focus_join_tk
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_ijoin
+		x = -13
+		y = 1
+		mutually_exclusive = {
+			focus = cot_focus_join_galaax
+			focus = cot_focus_join_skirata
+		}
+		prerequisite = {
+			focus = cot_focus_ijoin
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = cot_focus_stay_heavy_tk
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_join_tk
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = cot_focus_join_tk
+		}
+		completion_reward = {
+		}
+	}
 #### Skirata Null Class Troopers
 	focus = {
 		id = cot_focus_join_skirata
 		#icon = GFX_focus_BUL_form_a_regency_council
 		cost = 10
 		relative_position_id = cot_focus_ijoin
-		x = -1
-		y = 2
+		x = -9
+		y = 1
+		mutually_exclusive = {
+			focus = cot_focus_join_tk
+			focus = cot_focus_join_galaax
+		}
 		prerequisite = {
 			focus = cot_focus_ijoin
 		}
@@ -471,9 +512,13 @@ focus_tree = {
 		id = cot_focus_join_galaax
 		#icon = GFX_focus_BUL_form_a_regency_council
 		cost = 10
-		relative_position_id = cot_focus_ijoin
-		x = 1
-		y = 2
+		relative_position_id = cot_focus_join_skirata
+		x = 2
+		y = 0
+		mutually_exclusive = {
+			focus = cot_focus_join_tk
+			focus = cot_focus_join_skirata
+		}
 		prerequisite = {
 			focus = cot_focus_ijoin
 		}
@@ -486,6 +531,66 @@ focus_tree = {
 				target = MIN
 				modifier = opinion_joined_galaax
 			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_empire_at_war
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_ijoin
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = cot_focus_ijoin
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = cot_focus_mow_jap_mortars
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_empire_at_war
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = cot_focus_empire_at_war
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = cot_focus_rainbow_six
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_empire_at_war
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = cot_focus_empire_at_war
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = cot_focus_l4d2
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_empire_at_war
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = cot_focus_empire_at_war
+		}
+		completion_reward = {
+			
 		}
 	}
 
@@ -518,14 +623,35 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cot_focus_build_kythira_piracy
-		icon = GFX_focus_GRE_a_land_of_mountains
+		id = cot_focus_establish_sagcraft
+		#icon = GFX_focus_smiling_buddha
 		cost = 10
-		x = -4
-		y = 2
+		x = 0
+		y = 1
 		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
 			focus = cot_focus_join_boxcraft
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = cot_focus_build_kythira_piracy
+		icon = GFX_focus_GRE_a_land_of_mountains
+		cost = 10
+		x = -3
+		y = 2
+		relative_position_id = cot_focus_establish_sagcraft
+		prerequisite = {
+			focus = cot_focus_establish_sagcraft
+		}
+		available = {
+			has_country_flag = sagcraft_0
 		}
 		completion_reward = {
 			add_ideas = idea_greek_piracy_1
@@ -612,11 +738,14 @@ focus_tree = {
 		id = cot_focus_build_guangdong
 		icon = GFX_focus_chi_united_front
 		cost = 10
-		x = -2
+		x = -1
 		y = 2
-		relative_position_id = cot_focus_join_boxcraft
+		relative_position_id = cot_focus_establish_sagcraft
 		prerequisite = {
-			focus = cot_focus_join_boxcraft
+			focus = cot_focus_establish_sagcraft
+		}
+		available = {
+			has_country_flag = sagcraft_1
 		}
 		completion_reward = {
 			add_offsite_building = {
@@ -677,14 +806,36 @@ focus_tree = {
 	}
 
 	focus = {
+		id = cot_focus_build_starting_town
+		#icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		cost = 10
+		x = 1
+		y = 2
+		relative_position_id = cot_focus_establish_sagcraft
+		prerequisite = {
+			focus = cot_focus_establish_sagcraft
+		}
+		available = {
+			has_country_flag = sagcraft_2
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
 		id = cot_focus_build_black_god_theocracy
 		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
 		cost = 10
 		x = 0
-		y = 2
-		relative_position_id = cot_focus_join_boxcraft
+		y = 1
+		relative_position_id = cot_focus_build_starting_town
 		prerequisite = {
-			focus = cot_focus_join_boxcraft
+			focus = cot_focus_build_starting_town
+		}
+		available = {
+			has_country_flag = sagcraft_2
 		}
 		completion_reward = {
 			add_stability = 0.05
@@ -704,6 +855,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = idea_black_religion
+			# Add idea to WIS when Romanian Man
 		}
 	}
 
@@ -711,11 +863,14 @@ focus_tree = {
 		id = cot_focus_build_bear_clan
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		cost = 10
-		x = 2
+		x = 3
 		y = 2
-		relative_position_id = cot_focus_join_boxcraft
+		relative_position_id = cot_focus_establish_sagcraft
 		prerequisite = {
-			focus = cot_focus_join_boxcraft
+			focus = cot_focus_establish_sagcraft
+		}
+		available = {
+			has_country_flag = sagcraft_3
 		}
 		completion_reward = {
 		}
@@ -744,6 +899,21 @@ focus_tree = {
 	}
 
 	focus = {
+		id = cot_focus_designate_clan_mother
+		#icon = GFX_goal_generic_construction2
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = cot_focus_connect_roads
+		prerequisite = {
+			focus = cot_focus_connect_roads
+		}
+		completion_reward = {
+			# Add idea of Clan Mother to COT and CAL
+		}
+	}
+
+	focus = {
 		id = cot_focus_build_vladivostok
 		icon = GFX_focus_spa_the_spanish_miracle
 		cost = 10
@@ -752,6 +922,9 @@ focus_tree = {
 		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
 			focus = cot_focus_join_boxcraft
+		}
+		available = {
+			has_country_flag = sagcraft_4
 		}
 		completion_reward = {
 		}
@@ -770,7 +943,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = cot_focus_xoposition
-			focus = cot_focus_join_skirata OR = cot_focus_join_galaax
 		}
 		completion_reward = {
 			set_global_flag = SESO_getajob

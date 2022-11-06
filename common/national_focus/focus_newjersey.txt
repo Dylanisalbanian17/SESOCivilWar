@@ -147,8 +147,8 @@ focus_tree = {
 			focus = nje_focus_play_garrys_mod
 		}
 		completion_reward = {
-			create_faction = "Clan Kyram"
-			country_event = new_jersey.1
+			add_ideas = idea_seso_opscom
+			#country_event = new_jersey.1
 			set_global_flag = flag_seso_created
 			if = {
 				limit = {
@@ -257,20 +257,19 @@ focus_tree = {
 			focus = nje_focus_dallwhoring
 		}
 		available = {
-			is_faction_leader = yes
+			has_idea = idea_seso_opscom
 		}
 		completion_reward = {
 			every_other_country = {
 				limit = {
 					is_free_or_subject_of_root = yes
-					is_in_faction_with = NJE
+					has_global_flag = flag_seso_created
 				}
 				add_opinion_modifier = {
 					target = NJE
 					modifier = faction_traitor
 				}
 			}
-			leave_faction = yes
 		}
 	}
 
@@ -306,9 +305,8 @@ focus_tree = {
 					character = VIA_ryder
 					ruling_only = yes
 				}
+				has_idea = idea_seso_operative
 			}
-
-			is_in_faction_with = VIA
 		}
 		completion_reward = {
 		}

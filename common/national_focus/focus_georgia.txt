@@ -212,9 +212,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.15
-			NJE = {
-				add_to_faction = FROM
-			}
+			add_ideas = idea_seso_operative
 		}
 	}
 

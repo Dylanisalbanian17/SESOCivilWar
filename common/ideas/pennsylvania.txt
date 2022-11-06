@@ -158,5 +158,23 @@ ideas = {
 			}
 		}
 
+		idea_ip_harvester = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture
+
+			modifier = {
+				decryption_power_factor = 0.10
+				intel_network_gain_factor = 0.10
+			}
+		}
+
 	}
 }

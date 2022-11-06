@@ -1,4 +1,145 @@
 ideas = {
+	country = {
+		idea_seso_css = {
+			allowed = {
+				NOT = {
+					has_idea = idea_seso_operative
+					has_idea = idea_seso_engagement
+					has_idea = idea_seso_operation
+					has_idea = idea_seso_consultant
+					has_idea = idea_seso_opscom
+				}
+				has_global_flag = flag_seso_created
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture
+
+			modifier = {
+
+			}
+		}
+
+		idea_seso_operative = {
+			allowed = {
+				NOT = {
+					has_idea = idea_seso_css
+					has_idea = idea_seso_engagement
+					has_idea = idea_seso_operation
+					has_idea = idea_seso_consultant
+					has_idea = idea_seso_opscom
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture
+
+			modifier = {
+
+			}
+		}
+
+		idea_seso_engagement = {
+			allowed = {
+				NOT = {
+					has_idea = idea_seso_operative
+					has_idea = idea_seso_css
+					has_idea = idea_seso_operation
+					has_idea = idea_seso_consultant
+					has_idea = idea_seso_opscom
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture
+
+			modifier = {
+
+			}
+		}
+
+		idea_seso_operation = {
+			allowed = {
+				NOT = {
+					has_idea = idea_seso_operative
+					has_idea = idea_seso_engagement
+					has_idea = idea_seso_css
+					has_idea = idea_seso_consultant
+					has_idea = idea_seso_opscom
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture
+
+			modifier = {
+
+			}
+		}
+
+		idea_seso_consultant = {
+			allowed = {
+				NOT = {
+					has_idea = idea_seso_operative
+					has_idea = idea_seso_engagement
+					has_idea = idea_seso_css
+					has_idea = idea_seso_operation
+					has_idea = idea_seso_opscom
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture
+
+			modifier = {
+
+			}
+		}
+
+		idea_seso_opscom = {
+			allowed = {
+				NOT = {
+					has_idea = idea_seso_operative
+					has_idea = idea_seso_engagement
+					has_idea = idea_seso_css
+					has_idea = idea_seso_consultant
+					has_idea = idea_seso_operation
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture
+
+			modifier = {
+
+			}
+		}
+	}
+
 	tank_manufacturer = {
 		designer = yes
 
