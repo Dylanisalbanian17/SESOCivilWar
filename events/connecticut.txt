@@ -154,6 +154,10 @@ country_event = {
 			remove = unemployed
 			add = employed
 		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.20
+		}
 	}
 
 	option = {
@@ -201,4 +205,43 @@ country_event = {
 		set_country_flag = sagcraft_4
 	}
 
+}
+
+country_event = {
+	id = connecticut.6
+	title = connecticut.6.t
+	desc = connecticut.6.d
+	#picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		# Mira
+		name = connecticut.6.a
+	}
+
+	option = {
+		# Blitz
+		name = connecticut.6.b
+	}
+
+	option = {
+		# Pulse
+		name = connecticut.6.c
+	}
+
+}
+# Gamba Gaming
+country_event = {
+	id = connecticut.7
+	title = connecticut.7.t
+	desc = connecticut.7.d
+	#picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		# Mira
+		name = connecticut.7.a
+	}
 }

@@ -9,31 +9,30 @@ focus_tree = {
 		}
 	}
 ####Tier 1
+#### Get a Job
 	focus = {
-		id = cot_focus_elect_leader
-		icon = GFX_focus_eng_the_kings_party
+		id = cot_focus_getajob
+		icon = GFX_goal_generic_soviet_construction
 		cost = 5
 		x = 15
 		y = 1
 		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.20
-			}
+			set_global_flag = SESO_getajob
+			country_event = connecticut.4
 		 }
 	}
 
 	focus = {
-		id = cot_focus_elect_sag
+		id = cot_focus_jobful_sag
 		icon = GFX_goal_tripartite_pact
 		cost = 5
 		x = 17
 		y = 2
 		mutually_exclusive = {
-			focus = cot_focus_elect_generico
+			focus = cot_focus_jobless_sag
 		}
 		prerequisite = {
-			focus = cot_focus_elect_leader 
+			focus = cot_focus_getajob 
 		}
 		completion_reward = {
 			add_political_power = 50
@@ -41,16 +40,16 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cot_focus_elect_generico
+		id = cot_focus_jobless_sag
 		icon = GFX_focus_spr_unify_the_london_bureau
 		cost = 5
 		x = 13
 		y = 2
 		mutually_exclusive = {
-			focus = cot_focus_elect_sag
+			focus = cot_focus_jobful_sag
 		}
 		prerequisite = {
-			focus = cot_focus_elect_leader 
+			focus = cot_focus_getajob 
 		}
 		completion_reward = { 
 			add_political_power = 20
@@ -69,7 +68,7 @@ focus_tree = {
 			focus = cot_focus_convince_1
 		}
 		prerequisite = {
-			focus = cot_focus_elect_sag
+			focus = cot_focus_jobful_sag
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -78,11 +77,13 @@ focus_tree = {
 				category = cat_mass_assault
 
 			}
-			random_list = {
-				83.9 = {
-					set_country_flag = cot_convince_flag
-				}
-				16.1 = {
+			hidden_effect = {
+				random_list = {
+					83.9 = {
+						set_country_flag = cot_convince_flag
+					}
+					16.1 = {
+					}
 				}
 			}
 		 }
@@ -98,7 +99,7 @@ focus_tree = {
 			focus = cot_focus_convince_0
 		}
 		prerequisite = {
-			focus = cot_focus_elect_sag
+			focus = cot_focus_jobful_sag
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -107,11 +108,13 @@ focus_tree = {
 				category = cat_superior_firepower
 				
 			}
-			random_list = {
-				83.9 = {
-					set_country_flag = cot_convince_flag
-				}
-				16.1 = {
+			hidden_effect = {
+				random_list = {
+					83.9 = {
+						set_country_flag = cot_convince_flag
+					}
+					16.1 = {
+					}
 				}
 			}
 		 }
@@ -131,11 +134,13 @@ focus_tree = {
 			
 		completion_reward = {
 			add_war_support = 0.2
-			random_list = {
-				83.9 = {
-					set_country_flag = cot_convince_flag
-				}
-				16.1 = {
+			hidden_effect = {
+				random_list = {
+					83.9 = {
+						set_country_flag = cot_convince_flag
+					}
+					16.1 = {
+					}
 				}
 			}
 		 }
@@ -154,11 +159,13 @@ focus_tree = {
 			focus = cot_focus_convince_0 OR = cot_focus_convince_1 }
 		completion_reward = {
 			add_stability = 0.2
-			random_list = {
-				83.9 = {
-					set_country_flag = cot_convince_flag
-				}
-				16.1 = {
+			hidden_effect = {
+				random_list = {
+					83.9 = {
+						set_country_flag = cot_convince_flag
+					}
+					16.1 = {
+					}
 				}
 			}
 		}
@@ -181,11 +188,13 @@ focus_tree = {
 				uses = 1
 				category = concentrated_industry_category
 			}
-			random_list = {
-				83.9 = {
-					set_country_flag = cot_convince_flag
-				}
-				16.1 = {
+			hidden_effect = {
+				random_list = {
+					83.9 = {
+						set_country_flag = cot_convince_flag
+					}
+					16.1 = {
+					}
 				}
 			}
 		 }
@@ -209,11 +218,13 @@ focus_tree = {
 				uses = 1
 				category = dispersed_industry_category
 			}
-			random_list = {
-				83.9 = {
-					set_country_flag = cot_convince_flag
-				}
-				16.1 = {
+			hidden_effect = {
+				random_list = {
+					83.9 = {
+						set_country_flag = cot_convince_flag
+					}
+					16.1 = {
+					}
 				}
 			}
 		 }
@@ -260,7 +271,7 @@ focus_tree = {
 			focus = cot_focus_ijoin	
 		}
 		prerequisite = {
-			focus = cot_focus_convince_4 OR = cot_focus_convince_5 OR = cot_focus_elect_generico
+			focus = cot_focus_convince_4 OR = cot_focus_convince_5 OR = cot_focus_jobless_sag
 		}
 		completion_reward = {
 			set_country_leader_name = { name = "Definitely Not Sag" }
@@ -478,6 +489,9 @@ focus_tree = {
 		prerequisite = {
 			focus = cot_focus_join_tk
 		}
+		available = {
+			# When NYO makes TK faction
+		}
 		completion_reward = {
 		}
 	}
@@ -540,7 +554,7 @@ focus_tree = {
 		cost = 10
 		relative_position_id = cot_focus_ijoin
 		x = 0
-		y = 2
+		y = 1
 		prerequisite = {
 			focus = cot_focus_ijoin
 		}
@@ -575,7 +589,7 @@ focus_tree = {
 			focus = cot_focus_empire_at_war
 		}
 		completion_reward = {
-			
+			country_event = connecticut.6
 		}
 	}
 
@@ -596,12 +610,15 @@ focus_tree = {
 
 ####Industrial Minecraft Focuses
 	focus = {
-		id = cot_focus_join_boxcraft
+		id = cot_focus_host_boxcraft
 		icon = GFX_focus_smiling_buddha
 		cost = 10
-		x = 10
-		y = 2
+		x = 8
+		y = 1
 		relative_position_id = cot_focus_ijoin
+		mutually_exclusive = {
+			focus = cot_focus_host_sagcraft
+		}
 		prerequisite = {
 			focus = cot_focus_ijoin
 		}
@@ -623,14 +640,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cot_focus_establish_sagcraft
+		id = cot_focus_host_sagcraft
 		#icon = GFX_focus_smiling_buddha
 		cost = 10
-		x = 0
-		y = 1
-		relative_position_id = cot_focus_join_boxcraft
+		x = 2
+		y = 0
+		relative_position_id = cot_focus_host_boxcraft
+		mutually_exclusive = {
+			focus = cot_focus_host_boxcraft
+		}
 		prerequisite = {
-			focus = cot_focus_join_boxcraft
+			focus = cot_focus_ijoin
 		}
 		available = {
 			always = no
@@ -646,9 +666,10 @@ focus_tree = {
 		cost = 10
 		x = -3
 		y = 2
-		relative_position_id = cot_focus_establish_sagcraft
+		relative_position_id = cot_focus_host_boxcraft
 		prerequisite = {
-			focus = cot_focus_establish_sagcraft
+			focus = cot_focus_host_sagcraft
+			focus = cot_focus_host_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_0
@@ -740,9 +761,10 @@ focus_tree = {
 		cost = 10
 		x = -1
 		y = 2
-		relative_position_id = cot_focus_establish_sagcraft
+		relative_position_id = cot_focus_host_boxcraft
 		prerequisite = {
-			focus = cot_focus_establish_sagcraft
+			focus = cot_focus_host_sagcraft
+			focus = cot_focus_host_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_1
@@ -811,9 +833,10 @@ focus_tree = {
 		cost = 10
 		x = 1
 		y = 2
-		relative_position_id = cot_focus_establish_sagcraft
+		relative_position_id = cot_focus_host_boxcraft
 		prerequisite = {
-			focus = cot_focus_establish_sagcraft
+			focus = cot_focus_host_sagcraft
+			focus = cot_focus_host_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_2
@@ -865,9 +888,10 @@ focus_tree = {
 		cost = 10
 		x = 3
 		y = 2
-		relative_position_id = cot_focus_establish_sagcraft
+		relative_position_id = cot_focus_host_boxcraft
 		prerequisite = {
-			focus = cot_focus_establish_sagcraft
+			focus = cot_focus_host_sagcraft
+			focus = cot_focus_host_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_3
@@ -917,11 +941,12 @@ focus_tree = {
 		id = cot_focus_build_vladivostok
 		icon = GFX_focus_spa_the_spanish_miracle
 		cost = 10
-		x = 4
+		x = 5
 		y = 2
-		relative_position_id = cot_focus_join_boxcraft
+		relative_position_id = cot_focus_host_boxcraft
 		prerequisite = {
-			focus = cot_focus_join_boxcraft
+			focus = cot_focus_host_sagcraft
+			focus = cot_focus_host_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_4
@@ -930,36 +955,17 @@ focus_tree = {
 		}
 	}
 ####Tier 3
-#### Get a Job
-	focus = {
-		id = cot_focus_getajob
-		icon = GFX_goal_generic_soviet_construction
-		cost = 10
-		relative_position_id = cot_focus_ijoin
-		x = 0
-		y = 8
-		mutually_exclusive = {
-			focus = cot_focus_repeal_articles
-		}
-		prerequisite = {
-			focus = cot_focus_xoposition
-		}
-		completion_reward = {
-			set_global_flag = SESO_getajob
-			country_event = connecticut.4
-		}
-	}
 
 ### GGN Developer
 	focus = {
 		id = cot_focus_developerpromo
 		icon = GFX_focus_up_joan_of_arc
 		cost = 10
-		relative_position_id = cot_focus_getajob
+		relative_position_id = cot_focus_xoposition
 		x = 0
 		y = 2
 		prerequisite = {
-			focus = cot_focus_getajob
+			focus = cot_focus_xoposition
 		}
 		
 		completion_reward = {
@@ -972,12 +978,12 @@ focus_tree = {
 		id = cot_focus_sevens
 		icon = GFX_focus_generic_military_academy
 		cost = 10
-		x = 18
-		y = 20
+		relative_position_id = cot_focus_developerpromo
+		x = -2
+		y = 1
 		prerequisite = {
 			focus = cot_focus_developerpromo
 		}
-		
 		completion_reward = {
 			COT_sevens = {
 				add_corps_commander_role = {
@@ -1004,8 +1010,9 @@ focus_tree = {
 		id = cot_focus_sauce
 		icon = GFX_focus_generic_military_academy
 		cost = 10
-		x = 18
-		y = 22
+		relative_position_id = cot_focus_sevens
+		x = 0
+		y = 1
 		prerequisite = {
 			focus = cot_focus_sevens
 		}
@@ -1036,8 +1043,9 @@ focus_tree = {
 		id = cot_focus_icdupdate
 		icon = GFX_focus_generic_industry_1
 		cost = 10
-		x = 20
-		y = 19
+		relative_position_id = cot_focus_developerpromo
+		x = 0
+		y = 1
 		prerequisite = {
 			focus = cot_focus_developerpromo
 		}
@@ -1049,8 +1057,9 @@ focus_tree = {
 		id = cot_focus_sevensupdate
 		icon = GFX_focus_generic_industry_2
 		cost = 10
-		x = 20
-		y = 21
+		relative_position_id = cot_focus_icdupdate
+		x = 0
+		y = 1
 		prerequisite = {
 			focus = cot_focus_icdupdate
 		}
@@ -1065,8 +1074,9 @@ focus_tree = {
 		id = cot_focus_siegupdate
 		icon = GFX_focus_generic_industry_3
 		cost = 10
-		x = 20
-		y = 23
+		relative_position_id = cot_focus_sevensupdate
+		x = 0
+		y = 1
 		prerequisite = {
 			focus = cot_focus_sevensupdate
 		}
@@ -1078,8 +1088,9 @@ focus_tree = {
 		id = cot_focus_dylansegupdate
 		icon = GFX_goal_generic_attack_allies
 		cost = 10
-		x = 20
-		y = 25
+		relative_position_id = cot_focus_siegupdate
+		x = 0
+		y = 1
 		prerequisite = {
 			focus = cot_focus_siegupdate
 		}
@@ -1094,8 +1105,9 @@ focus_tree = {
 		id = cot_focus_dylandesegupdate
 		icon = GFX_goal_generic_alliance
 		cost = 10
-		x = 20
-		y = 27
+		relative_position_id = cot_focus_dylansegupdate
+		x = 0
+		y = 1
 		prerequisite = {
 			focus = cot_focus_dylansegupdate
 		}
@@ -1107,8 +1119,9 @@ focus_tree = {
 		id = cot_focus_gump
 		icon = GFX_focus_generic_military_mission
 		cost = 10
-		x = 22
-		y = 22
+		relative_position_id = cot_focus_developerpromo
+		x = 2
+		y = 1
 		prerequisite = {
 			focus = cot_focus_developerpromo
 		}
@@ -1120,8 +1133,9 @@ focus_tree = {
 		id = cot_focus_buildeventserver
 		icon = GFX_focus_generic_africa_production
 		cost = 10
-		x = 22
-		y = 26
+		relative_position_id = cot_focus_gump
+		x = 0
+		y = 2
 		prerequisite = {
 			focus = cot_focus_gump
 		}
@@ -1133,8 +1147,9 @@ focus_tree = {
 		id = cot_focus_openeventserver
 		icon = GFX_goal_tfv_saf_secure_interests_in_africa
 		cost = 10
-		x = 22
-		y = 29
+		relative_position_id = cot_focus_buildeventserver
+		x = 0
+		y = 3
 		prerequisite = {
 			focus = cot_focus_buildeventserver
 		}
@@ -1149,13 +1164,13 @@ focus_tree = {
 		id = cot_focus_seso
 		icon = GFX_focus_usa_recruit_the_free_corps
 		cost = 10
-		x = 26
-		y = 18
-		prerequisite = {
-			focus = cot_focus_developerpromo
-		}
+		x = 17
+		y = 13
 		available = {
-			is_in_faction = yes
+			OR = {
+				has_idea = idea_seso_operative
+				has_idea = idea_seso_opscom
+			}
 			has_global_flag = flag_seso_created
 		}
 		completion_reward = {}
