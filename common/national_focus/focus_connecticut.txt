@@ -1175,5 +1175,197 @@ focus_tree = {
 		}
 		completion_reward = {}
 	}
+
+	focus = {
+		id = cot_focus_create_kakapo
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_seso
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = cot_focus_seso
+		}
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_merge_unit
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_seso
+		x = -3
+		y = 1
+		mutually_exclusive = {
+			focus = cot_focus_post_to_findaunit
+		}
+		prerequisite = {
+			focus = cot_focus_seso
+		}
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_post_to_findaunit
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_seso
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = cot_focus_merge_unit
+		}
+		prerequisite = {
+			focus = cot_focus_seso
+		}
+		
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_autopost
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_post_to_findaunit
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = cot_focus_post_to_findaunit
+		}
+		prerequisite = {
+			focus = cot_focus_create_kakapo
+		}
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_rent_server
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_seso
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = cot_focus_seso
+		}
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_operation_isla_duala
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_rent_server
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = cot_focus_rent_server
+		}
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_czech_crisis
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_rent_server
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = cot_focus_rent_server
+		}
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_operation_black_bear
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_rent_server
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = cot_focus_rent_server
+		}
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_operation_openhouse
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_rent_server
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = cot_focus_rent_server
+		}
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_operation_burning_buddhist
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_rent_server
+		x = 8
+		y = 1
+		prerequisite = {
+			focus = cot_focus_rent_server
+		}
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_operation_burning_buddhist
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_rent_server
+		x = 8
+		y = 1
+		prerequisite = {
+			focus = cot_focus_rent_server
+		}
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_operation_green_diamond
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_rent_server
+		x = 10
+		y = 1
+		prerequisite = {
+			focus = cot_focus_rent_server
+		}
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_operation_angola
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_rent_server
+		x = 12
+		y = 1
+		prerequisite = {
+			focus = cot_focus_rent_server
+		}
+		completion_reward = {}
+	}
+
+	focus = {
+		id = cot_focus_operation_psychopomp
+		#icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		relative_position_id = cot_focus_rent_server
+		x = 14
+		y = 1
+		prerequisite = {
+			focus = cot_focus_rent_server
+		}
+		completion_reward = {}
+	}
 	
 }
