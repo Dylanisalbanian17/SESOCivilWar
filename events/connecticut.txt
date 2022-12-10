@@ -158,11 +158,13 @@ country_event = {
 			ideology = democratic
 			popularity = 0.20
 		}
+		complete_national_focus = cot_focus_jobful_sag
 	}
 
 	option = {
 		# Avoid the Job
 		name = connecticut.4.b
+		complete_national_focus = cot_focus_jobless_sag
 	}
 
 }

@@ -34,6 +34,9 @@ focus_tree = {
 		prerequisite = {
 			focus = cot_focus_getajob 
 		}
+		available = {
+			always = false
+		}
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -50,6 +53,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = cot_focus_getajob 
+		}
+		available = {
+			always = false
 		}
 		completion_reward = { 
 			add_political_power = 20
@@ -490,9 +496,101 @@ focus_tree = {
 			focus = cot_focus_join_tk
 		}
 		available = {
-			# When NYO makes TK faction
+			NYO = {
+				has_government = fascism
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
 		}
 		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.30
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_demand_hangar_bay
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_stay_heavy_tk
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = cot_focus_stay_heavy_tk
+		}
+		completion_reward = {
+			MAS = {
+				country_event = massachusets.1
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_establish_base_scarif
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_demand_hangar_bay
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = cot_focus_demand_hangar_bay
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = VER
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_establish_base_endor
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_demand_hangar_bay
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = cot_focus_demand_hangar_bay
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = NHA
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_tk_networks_domination
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_stay_heavy_tk
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = cot_focus_establish_base_scarif
+		}
+		prerequisite = {
+			focus = cot_focus_establish_base_endor
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.30
+			}
+			set_country_leader_name = { name = "LCPL Sagbag 9585" }
+			set_country_leader_ideology = gen_fascism
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				long_name = "Trooper Korps"
+				name = "TKs"
+			}
 		}
 	}
 #### Skirata Null Class Troopers
@@ -966,6 +1064,7 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = cot_focus_xoposition
+			focus = cot_focus_tk_networks_domination
 		}
 		
 		completion_reward = {
