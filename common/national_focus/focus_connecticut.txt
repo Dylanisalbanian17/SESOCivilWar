@@ -38,7 +38,6 @@ focus_tree = {
 			always = false
 		}
 		completion_reward = {
-			add_political_power = 50
 		}
 	}
 
@@ -57,9 +56,8 @@ focus_tree = {
 		available = {
 			always = false
 		}
-		completion_reward = { 
-			add_political_power = 20
-		 }
+		completion_reward = {
+		}
 	}
 
 ####Convince Focuses 0-6
@@ -647,7 +645,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cot_focus_empire_at_war
+		id = cot_focus_meta_eaw
 		#icon = GFX_focus_BUL_form_a_regency_council
 		cost = 10
 		relative_position_id = cot_focus_ijoin
@@ -657,7 +655,7 @@ focus_tree = {
 			focus = cot_focus_ijoin
 		}
 		completion_reward = {
-			
+			country_event = seso_generic.1
 		}
 	}
 
@@ -665,11 +663,11 @@ focus_tree = {
 		id = cot_focus_mow_jap_mortars
 		#icon = GFX_focus_BUL_form_a_regency_council
 		cost = 10
-		relative_position_id = cot_focus_empire_at_war
+		relative_position_id = cot_focus_meta_eaw
 		x = 2
 		y = 1
 		prerequisite = {
-			focus = cot_focus_empire_at_war
+			focus = cot_focus_meta_eaw
 		}
 		completion_reward = {
 			
@@ -680,11 +678,11 @@ focus_tree = {
 		id = cot_focus_rainbow_six
 		#icon = GFX_focus_BUL_form_a_regency_council
 		cost = 10
-		relative_position_id = cot_focus_empire_at_war
+		relative_position_id = cot_focus_meta_eaw
 		x = -2
 		y = 1
 		prerequisite = {
-			focus = cot_focus_empire_at_war
+			focus = cot_focus_meta_eaw
 		}
 		completion_reward = {
 			country_event = connecticut.6
@@ -695,11 +693,11 @@ focus_tree = {
 		id = cot_focus_l4d2
 		#icon = GFX_focus_BUL_form_a_regency_council
 		cost = 10
-		relative_position_id = cot_focus_empire_at_war
+		relative_position_id = cot_focus_meta_eaw
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = cot_focus_empire_at_war
+			focus = cot_focus_meta_eaw
 		}
 		completion_reward = {
 			
@@ -724,15 +722,9 @@ focus_tree = {
 			#has_global_flag = seso_boxcraft_flag
 		}
 		completion_reward = {
-			add_political_power = 75
-			every_owned_state = {
-				damage_building = { type = infrastructure damage = 1 }
-				damage_building = { type = arms_factory damage = 1 }
-				damage_building = { type = industrial_complex damage = 1 }
-			}
-			add_timed_idea = {
-				idea = idea_gamba_gaming
-				days = 180
+			country_event = {
+				id = connecticut.7
+				random_days = 14
 			}
 		}
 	}
@@ -750,11 +742,11 @@ focus_tree = {
 		prerequisite = {
 			focus = cot_focus_ijoin
 		}
-		available = {
-			always = no
-		}
 		completion_reward = {
-			
+			country_event = {
+				id = connecticut.7
+				random_days = 14
+			}
 		}
 	}
 

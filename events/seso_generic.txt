@@ -1,0 +1,25 @@
+add_namespace = seso_generic
+
+country_event = {
+	id = seso_generic.1
+	title = seso_generic.1.t
+	desc = seso_generic.1.d
+	#picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = seso_generic.1.a
+		add_ideas = idea_seso_eaw_spam_star_destroyers
+	}
+
+	option = {
+		name = seso_generic.1.b
+		add_ideas = idea_seso_eaw_snipe_middle
+	}
+
+	option = {
+		name = seso_generic.1.c
+		add_ideas = idea_seso_eaw_hyperspace_rushing
+	}
+}
