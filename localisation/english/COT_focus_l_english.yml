@@ -1,10 +1,8 @@
-﻿l_english: 
-cot_focus_elect_leader:0 "Elect a Leader"
-cot_focus_elect_leader_desc:0 ""
-cot_focus_elect_sag:0 "Convince Dildo Sagbag"
-cot_focus_elect_sag_desc:0 ""
-cot_focus_elect_generico:0 "Elect GENERICO"
-cot_focus_elect_generico_desc:0 ""
+﻿l_english:
+cot_focus_jobless_sag:0 "Employed Sag"
+cot_focus_jobless_sag_desc:0 "Sag has chosen to get a job!"
+cot_focus_jobless_sag:0 "Unemployed Sag"
+cot_focus_jobless_sag_desc:0 "Sag chose his weakest form, to be without a job!"
 cot_focus_convince_0:0 "You can play as a warlord!"
 cot_focus_convince_0_desc:0 ""
 cot_focus_convince_1:0 "We can play an overhaul mod!"

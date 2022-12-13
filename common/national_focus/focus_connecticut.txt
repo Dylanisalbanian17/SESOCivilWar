@@ -253,7 +253,7 @@ focus_tree = {
 		completion_reward = {
 			set_country_leader_name = { name = "Dildo Sagbag" }
 			set_country_leader_description = { desc = SAG_1_DESC }
-			set_country_leader_portrait = { portrait = GFX_portrait_dildo_sagbag }
+			set_country_leader_portrait = { portrait = "gfx/leaders/COT/sag_1.dds" }
 			add_stability = 0.3
 			set_politics = {
 				ruling_party = democratic 
@@ -576,6 +576,9 @@ focus_tree = {
 		prerequisite = {
 			focus = cot_focus_establish_base_endor
 		}
+		available = {
+			has_war = no
+		}
 		completion_reward = {
 			add_popularity = {
 				ideology = fascism
@@ -706,15 +709,12 @@ focus_tree = {
 
 ####Industrial Minecraft Focuses
 	focus = {
-		id = cot_focus_host_boxcraft
+		id = cot_focus_join_boxcraft
 		icon = GFX_focus_smiling_buddha
 		cost = 10
-		x = 8
+		x = 10
 		y = 1
 		relative_position_id = cot_focus_ijoin
-		mutually_exclusive = {
-			focus = cot_focus_host_sagcraft
-		}
 		prerequisite = {
 			focus = cot_focus_ijoin
 		}
@@ -730,36 +730,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cot_focus_host_sagcraft
-		#icon = GFX_focus_smiling_buddha
-		cost = 10
-		x = 2
-		y = 0
-		relative_position_id = cot_focus_host_boxcraft
-		mutually_exclusive = {
-			focus = cot_focus_host_boxcraft
-		}
-		prerequisite = {
-			focus = cot_focus_ijoin
-		}
-		completion_reward = {
-			country_event = {
-				id = connecticut.7
-				random_days = 14
-			}
-		}
-	}
-
-	focus = {
 		id = cot_focus_build_kythira_piracy
 		icon = GFX_focus_GRE_a_land_of_mountains
 		cost = 10
-		x = -3
+		x = -4
 		y = 2
-		relative_position_id = cot_focus_host_boxcraft
+		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
-			focus = cot_focus_host_sagcraft
-			focus = cot_focus_host_boxcraft
+			focus = cot_focus_join_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_0
@@ -849,12 +827,11 @@ focus_tree = {
 		id = cot_focus_build_guangdong
 		icon = GFX_focus_chi_united_front
 		cost = 10
-		x = -1
+		x = -2
 		y = 2
-		relative_position_id = cot_focus_host_boxcraft
+		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
-			focus = cot_focus_host_sagcraft
-			focus = cot_focus_host_boxcraft
+			focus = cot_focus_join_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_1
@@ -921,12 +898,11 @@ focus_tree = {
 		id = cot_focus_build_starting_town
 		#icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
 		cost = 10
-		x = 1
+		x = 0
 		y = 2
-		relative_position_id = cot_focus_host_boxcraft
+		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
-			focus = cot_focus_host_sagcraft
-			focus = cot_focus_host_boxcraft
+			focus = cot_focus_join_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_2
@@ -976,12 +952,11 @@ focus_tree = {
 		id = cot_focus_build_bear_clan
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		cost = 10
-		x = 3
+		x = 2
 		y = 2
-		relative_position_id = cot_focus_host_boxcraft
+		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
-			focus = cot_focus_host_sagcraft
-			focus = cot_focus_host_boxcraft
+			focus = cot_focus_join_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_3
@@ -1031,12 +1006,11 @@ focus_tree = {
 		id = cot_focus_build_vladivostok
 		icon = GFX_focus_spa_the_spanish_miracle
 		cost = 10
-		x = 5
+		x = 4
 		y = 2
-		relative_position_id = cot_focus_host_boxcraft
+		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
-			focus = cot_focus_host_sagcraft
-			focus = cot_focus_host_boxcraft
+			focus = cot_focus_join_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_4
