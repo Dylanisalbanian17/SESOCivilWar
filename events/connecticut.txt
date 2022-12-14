@@ -256,3 +256,73 @@ country_event = {
 		}
 	}
 }
+
+# Minecraft Gaming
+country_event = {
+	id = connecticut.8
+	title = connecticut.8.t
+	desc = connecticut.8.d
+	#picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	#Greece
+	option = {
+		name = connecticut.8.a
+		set_country_flag = sagcraft_0
+		trigger = {
+			NOT = {
+				has_country_flag = sagcraft_0
+				has_country_flag = sagcraft_1
+				has_country_flag = sagcraft_2
+				has_country_flag = sagcraft_3
+				has_country_flag = sagcraft_4
+			}
+		}
+	}
+
+	#China
+	option = {
+		name = connecticut.8.b
+		set_country_flag = sagcraft_1
+		trigger = {
+			NOT = {
+				has_country_flag = sagcraft_0
+				has_country_flag = sagcraft_1
+				has_country_flag = sagcraft_2
+				has_country_flag = sagcraft_3
+				has_country_flag = sagcraft_4
+			}
+		}
+	}
+
+	#Black
+	option = {
+		name = connecticut.8.c
+		set_country_flag = sagcraft_2
+		trigger = {
+			NOT = {
+				has_country_flag = sagcraft_0
+				has_country_flag = sagcraft_1
+				has_country_flag = sagcraft_2
+				has_country_flag = sagcraft_3
+				has_country_flag = sagcraft_4
+			}
+		}
+	}
+
+	#Native
+	option = {
+		name = connecticut.8.e
+		set_country_flag = sagcraft_3
+		trigger = {
+			NOT = {
+				has_country_flag = sagcraft_0
+				has_country_flag = sagcraft_1
+				has_country_flag = sagcraft_2
+				has_country_flag = sagcraft_3
+				has_country_flag = sagcraft_4
+			}
+		}
+	}
+}

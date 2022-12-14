@@ -733,7 +733,7 @@ focus_tree = {
 		id = cot_focus_build_kythira_piracy
 		icon = GFX_focus_GRE_a_land_of_mountains
 		cost = 10
-		x = -4
+		x = -3
 		y = 2
 		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
@@ -827,7 +827,7 @@ focus_tree = {
 		id = cot_focus_build_guangdong
 		icon = GFX_focus_chi_united_front
 		cost = 10
-		x = -2
+		x = -1
 		y = 2
 		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
@@ -898,7 +898,7 @@ focus_tree = {
 		id = cot_focus_build_starting_town
 		#icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
 		cost = 10
-		x = 0
+		x = 1
 		y = 2
 		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
@@ -952,7 +952,7 @@ focus_tree = {
 		id = cot_focus_build_bear_clan
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		cost = 10
-		x = 2
+		x = 3
 		y = 2
 		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
@@ -999,23 +999,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			# Add idea of Clan Mother to COT and CAL
-		}
-	}
-
-	focus = {
-		id = cot_focus_build_vladivostok
-		icon = GFX_focus_spa_the_spanish_miracle
-		cost = 10
-		x = 4
-		y = 2
-		relative_position_id = cot_focus_join_boxcraft
-		prerequisite = {
-			focus = cot_focus_join_boxcraft
-		}
-		available = {
-			has_country_flag = sagcraft_4
-		}
-		completion_reward = {
 		}
 	}
 ####Tier 3
