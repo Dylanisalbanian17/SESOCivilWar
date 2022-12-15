@@ -170,46 +170,6 @@ country_event = {
 }
 
 country_event = {
-	id = connecticut.5
-	title = connecticut.5.t
-	desc = connecticut.5.d
-	#picture = GFX_report_event_generic_read_write
-	is_triggered_only = yes
-
-	#Create Sagcraft with World Map + Mods
-	option = {
-		name = connecticut.5.a
-		complete_national_focus = cot_focus_establish_sagcraft
-		set_country_flag = sagcraft_0
-	}
-	# Create Sagcraft with custom map
-	option = {
-		name = connecticut.5.b
-		complete_national_focus = cot_focus_establish_sagcraft
-		set_country_flag = sagcraft_1
-	}
-	# Create Sagcraft with datapacks and creative mode admin
-	option = {
-		name = connecticut.5.c
-		complete_national_focus = cot_focus_establish_sagcraft
-		set_country_flag = sagcraft_2
-	}
-	# Create vanilla Sagcraft
-	option = {
-		name = connecticut.5.e
-		complete_national_focus = cot_focus_establish_sagcraft
-		set_country_flag = sagcraft_3
-	}
-	# Stay on Boxcraft
-	option = {
-		name = connecticut.5.f
-		complete_national_focus = cot_focus_establish_sagcraft
-		set_country_flag = sagcraft_4
-	}
-
-}
-
-country_event = {
 	id = connecticut.6
 	title = connecticut.6.t
 	desc = connecticut.6.d
