@@ -1,5 +1,7 @@
 capital = 267
 
+oob = "RIS_2"
+
 set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
