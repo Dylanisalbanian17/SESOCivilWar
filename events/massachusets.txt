@@ -1,0 +1,28 @@
+add_namespace = massachusets
+
+# Gamba Gaming
+country_event = {
+	id = massachusets.1
+	title = massachusets.1.t
+	desc = massachusets.1.d
+	#picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		# Give up Hangar Bay
+		name = massachusets.1.a
+		COT = { transfer_state = 270 }
+	}
+
+	option = {
+		# Hold Hangar bay
+		name = massachusets.1.b
+		COT = {
+			create_wargoal = {
+				type = take_state
+				target = MAS
+			}
+		}
+	}
+}

@@ -34,8 +34,10 @@ focus_tree = {
 		prerequisite = {
 			focus = cot_focus_getajob 
 		}
+		available = {
+			always = false
+		}
 		completion_reward = {
-			add_political_power = 50
 		}
 	}
 
@@ -51,9 +53,11 @@ focus_tree = {
 		prerequisite = {
 			focus = cot_focus_getajob 
 		}
-		completion_reward = { 
-			add_political_power = 20
-		 }
+		available = {
+			always = false
+		}
+		completion_reward = {
+		}
 	}
 
 ####Convince Focuses 0-6
@@ -249,8 +253,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_leader_name = { name = "Dildo Sagbag" }
 			set_country_leader_description = { desc = SAG_1_DESC }
-			set_country_leader_portrait = { portrait = GFX_portrait_dildo_sagbag }
+			set_country_leader_portrait = { portrait = "gfx/leaders/COT/sag_1.dds" }
 			add_stability = 0.3
+			add_ideas = idea_azerbaijani_moment
 			set_politics = {
 				ruling_party = democratic 
 				elections_allowed = yes
@@ -463,7 +468,7 @@ focus_tree = {
 
 	focus = {
 		id = cot_focus_join_tk
-		#icon = GFX_focus_BUL_form_a_regency_council
+		icon = GFX_focus_generic_manpower
 		cost = 10
 		relative_position_id = cot_focus_ijoin
 		x = -13
@@ -476,12 +481,16 @@ focus_tree = {
 			focus = cot_focus_ijoin
 		}
 		completion_reward = {
+			add_timed_idea = {
+				idea = idea_tk_focus
+				days = 365
+			}
 		}
 	}
 
 	focus = {
 		id = cot_focus_stay_heavy_tk
-		#icon = GFX_focus_BUL_form_a_regency_council
+		icon = GFX_focus_ITA_blackshirts
 		cost = 10
 		relative_position_id = cot_focus_join_tk
 		x = 0
@@ -490,15 +499,112 @@ focus_tree = {
 			focus = cot_focus_join_tk
 		}
 		available = {
-			# When NYO makes TK faction
+			NYO = {
+				has_government = fascism
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
 		}
 		completion_reward = {
+			add_war_support = 0.15
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.30
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_demand_hangar_bay
+		icon = GFX_focus_generic_black_sea_focus
+		cost = 10
+		relative_position_id = cot_focus_stay_heavy_tk
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = cot_focus_stay_heavy_tk
+		}
+		completion_reward = {
+			MAS = {
+				country_event = massachusets.1
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_establish_base_scarif
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_demand_hangar_bay
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = cot_focus_demand_hangar_bay
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = VER
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_establish_base_endor
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_demand_hangar_bay
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = cot_focus_demand_hangar_bay
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = NHA
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_tk_networks_domination
+		icon = GFX_focus_generic_military_dictatorship
+		cost = 10
+		relative_position_id = cot_focus_stay_heavy_tk
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = cot_focus_establish_base_scarif
+		}
+		prerequisite = {
+			focus = cot_focus_establish_base_endor
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			add_ideas = idea_tk_focus
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.30
+			}
+			set_country_leader_name = { name = "LCPL Sagbag 9585" }
+			set_country_leader_ideology = gen_fascism
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				long_name = "Trooper Korps"
+				name = "TKs"
+			}
 		}
 	}
 #### Skirata Null Class Troopers
 	focus = {
 		id = cot_focus_join_skirata
-		#icon = GFX_focus_BUL_form_a_regency_council
+		icon = GFX_focus_ITA_moschettieri_del_duce
 		cost = 10
 		relative_position_id = cot_focus_ijoin
 		x = -9
@@ -513,7 +619,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = idea_skirata
-				days = 60
+				days = 365
 			}
 			#add_opinion_modifier = {
 			#	target = MIN
@@ -524,7 +630,7 @@ focus_tree = {
 
 	focus = {
 		id = cot_focus_join_galaax
-		#icon = GFX_focus_BUL_form_a_regency_council
+		icon = GFX_focus_ITA_new_horizons
 		cost = 10
 		relative_position_id = cot_focus_join_skirata
 		x = 2
@@ -539,7 +645,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = idea_galaax
-				days = 60
+				days = 360
 			}
 			add_opinion_modifier = {
 				target = MIN
@@ -549,7 +655,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cot_focus_empire_at_war
+		id = cot_focus_meta_eaw
 		#icon = GFX_focus_BUL_form_a_regency_council
 		cost = 10
 		relative_position_id = cot_focus_ijoin
@@ -559,7 +665,7 @@ focus_tree = {
 			focus = cot_focus_ijoin
 		}
 		completion_reward = {
-			
+			country_event = seso_generic.1
 		}
 	}
 
@@ -567,14 +673,18 @@ focus_tree = {
 		id = cot_focus_mow_jap_mortars
 		#icon = GFX_focus_BUL_form_a_regency_council
 		cost = 10
-		relative_position_id = cot_focus_empire_at_war
+		relative_position_id = cot_focus_meta_eaw
 		x = 2
 		y = 1
 		prerequisite = {
-			focus = cot_focus_empire_at_war
+			focus = cot_focus_meta_eaw
 		}
 		completion_reward = {
-			
+			add_ideas = idea_jap_mortars
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1400
+			}
 		}
 	}
 
@@ -582,11 +692,11 @@ focus_tree = {
 		id = cot_focus_rainbow_six
 		#icon = GFX_focus_BUL_form_a_regency_council
 		cost = 10
-		relative_position_id = cot_focus_empire_at_war
+		relative_position_id = cot_focus_meta_eaw
 		x = -2
 		y = 1
 		prerequisite = {
-			focus = cot_focus_empire_at_war
+			focus = cot_focus_meta_eaw
 		}
 		completion_reward = {
 			country_event = connecticut.6
@@ -597,11 +707,11 @@ focus_tree = {
 		id = cot_focus_l4d2
 		#icon = GFX_focus_BUL_form_a_regency_council
 		cost = 10
-		relative_position_id = cot_focus_empire_at_war
+		relative_position_id = cot_focus_meta_eaw
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = cot_focus_empire_at_war
+			focus = cot_focus_meta_eaw
 		}
 		completion_reward = {
 			
@@ -610,15 +720,12 @@ focus_tree = {
 
 ####Industrial Minecraft Focuses
 	focus = {
-		id = cot_focus_host_boxcraft
+		id = cot_focus_join_boxcraft
 		icon = GFX_focus_smiling_buddha
 		cost = 10
-		x = 8
+		x = 10
 		y = 1
 		relative_position_id = cot_focus_ijoin
-		mutually_exclusive = {
-			focus = cot_focus_host_sagcraft
-		}
 		prerequisite = {
 			focus = cot_focus_ijoin
 		}
@@ -626,37 +733,10 @@ focus_tree = {
 			#has_global_flag = seso_boxcraft_flag
 		}
 		completion_reward = {
-			add_political_power = 75
-			every_owned_state = {
-				damage_building = { type = infrastructure damage = 1 }
-				damage_building = { type = arms_factory damage = 1 }
-				damage_building = { type = industrial_complex damage = 1 }
+			country_event = {
+				id = connecticut.7
+				random_days = 14
 			}
-			add_timed_idea = {
-				idea = idea_gamba_gaming
-				days = 180
-			}
-		}
-	}
-
-	focus = {
-		id = cot_focus_host_sagcraft
-		#icon = GFX_focus_smiling_buddha
-		cost = 10
-		x = 2
-		y = 0
-		relative_position_id = cot_focus_host_boxcraft
-		mutually_exclusive = {
-			focus = cot_focus_host_boxcraft
-		}
-		prerequisite = {
-			focus = cot_focus_ijoin
-		}
-		available = {
-			always = no
-		}
-		completion_reward = {
-			
 		}
 	}
 
@@ -666,16 +746,18 @@ focus_tree = {
 		cost = 10
 		x = -3
 		y = 2
-		relative_position_id = cot_focus_host_boxcraft
+		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
-			focus = cot_focus_host_sagcraft
-			focus = cot_focus_host_boxcraft
+			focus = cot_focus_join_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_0
 		}
 		completion_reward = {
-			add_ideas = idea_greek_piracy_1
+			add_timed_idea = {
+				idea = idea_greek_piracy_1
+				days = 360
+			}
 			add_tech_bonus = {
 				bonus = 0.35
 				uses = 3
@@ -683,6 +765,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 5
 
 
 				add_building_construction = {
@@ -761,10 +844,9 @@ focus_tree = {
 		cost = 10
 		x = -1
 		y = 2
-		relative_position_id = cot_focus_host_boxcraft
+		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
-			focus = cot_focus_host_sagcraft
-			focus = cot_focus_host_boxcraft
+			focus = cot_focus_join_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_1
@@ -793,6 +875,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
 					level = 5
@@ -823,27 +906,28 @@ focus_tree = {
 				uses = 1
 				category = excavation_tech
 			}
-			add_ideas = idea_terrace_farms
+			add_timed_idea = {
+				idea = idea_terrace_farms
+				days = 120
+			}
 		}
 	}
 
 	focus = {
 		id = cot_focus_build_starting_town
-		#icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		icon = GFX_focus_ETH_the_emperor_stays
 		cost = 10
 		x = 1
 		y = 2
-		relative_position_id = cot_focus_host_boxcraft
+		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
-			focus = cot_focus_host_sagcraft
-			focus = cot_focus_host_boxcraft
+			focus = cot_focus_join_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_2
 		}
 		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_stability = 0.15
 		}
 	}
 
@@ -861,8 +945,7 @@ focus_tree = {
 			has_country_flag = sagcraft_2
 		}
 		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_stability = 0.15
 		}
 	}
 
@@ -877,8 +960,10 @@ focus_tree = {
 			focus = cot_focus_build_black_god_theocracy
 		}
 		completion_reward = {
-			add_ideas = idea_black_religion
-			# Add idea to WIS when Romanian Man
+			add_timed_idea = {
+				idea = idea_black_pope
+				days = 120
+			}
 		}
 	}
 
@@ -888,10 +973,9 @@ focus_tree = {
 		cost = 10
 		x = 3
 		y = 2
-		relative_position_id = cot_focus_host_boxcraft
+		relative_position_id = cot_focus_join_boxcraft
 		prerequisite = {
-			focus = cot_focus_host_sagcraft
-			focus = cot_focus_host_boxcraft
+			focus = cot_focus_join_boxcraft
 		}
 		available = {
 			has_country_flag = sagcraft_3
@@ -924,7 +1008,7 @@ focus_tree = {
 
 	focus = {
 		id = cot_focus_designate_clan_mother
-		#icon = GFX_goal_generic_construction2
+		icon = GFX_focus_generic_population_growth
 		cost = 10
 		x = 0
 		y = 1
@@ -933,25 +1017,22 @@ focus_tree = {
 			focus = cot_focus_connect_roads
 		}
 		completion_reward = {
-			# Add idea of Clan Mother to COT and CAL
-		}
-	}
+			add_timed_idea = {
+				idea = idea_clan_mother
+				days = 120
+			}
+			if = {
+				limit = {
+					CAL = {
+						has_country_leader = CAL_dylan
+					}
+				}
+				add_timed_idea = {
+					idea = idea_clan_mother
+					days = 120
+				}
+			}
 
-	focus = {
-		id = cot_focus_build_vladivostok
-		icon = GFX_focus_spa_the_spanish_miracle
-		cost = 10
-		x = 5
-		y = 2
-		relative_position_id = cot_focus_host_boxcraft
-		prerequisite = {
-			focus = cot_focus_host_sagcraft
-			focus = cot_focus_host_boxcraft
-		}
-		available = {
-			has_country_flag = sagcraft_4
-		}
-		completion_reward = {
 		}
 	}
 ####Tier 3
@@ -966,6 +1047,7 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = cot_focus_xoposition
+			focus = cot_focus_tk_networks_domination
 		}
 		
 		completion_reward = {
@@ -1050,7 +1132,24 @@ focus_tree = {
 			focus = cot_focus_developerpromo
 		}
 		
-		completion_reward = {}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -1067,7 +1166,24 @@ focus_tree = {
 			focus = cot_focus_sevens
 		}
 		
-		completion_reward = {}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -1081,7 +1197,24 @@ focus_tree = {
 			focus = cot_focus_sevensupdate
 		}
 		
-		completion_reward = {}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {

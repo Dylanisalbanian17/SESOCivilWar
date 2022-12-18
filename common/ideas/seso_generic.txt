@@ -138,6 +138,51 @@ ideas = {
 
 			}
 		}
+
+		idea_seso_eaw_spam_star_destroyers = {
+			allowed = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+
+		idea_seso_eaw_snipe_middle = {
+			allowed = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+
+		idea_seso_eaw_hyperspace_rushing = {
+			allowed = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
 	}
 
 	tank_manufacturer = {

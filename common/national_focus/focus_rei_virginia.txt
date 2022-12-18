@@ -1333,7 +1333,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-}
+		country_event = seso_generic.1
+	}
 }
 
 focus = {

@@ -158,51 +158,13 @@ country_event = {
 			ideology = democratic
 			popularity = 0.20
 		}
+		complete_national_focus = cot_focus_jobful_sag
 	}
 
 	option = {
 		# Avoid the Job
 		name = connecticut.4.b
-	}
-
-}
-
-country_event = {
-	id = connecticut.5
-	title = connecticut.5.t
-	desc = connecticut.5.d
-	#picture = GFX_report_event_generic_read_write
-	is_triggered_only = yes
-
-	#Create Sagcraft with World Map + Mods
-	option = {
-		name = connecticut.5.a
-		complete_national_focus = cot_focus_establish_sagcraft
-		set_country_flag = sagcraft_0
-	}
-	# Create Sagcraft with custom map
-	option = {
-		name = connecticut.5.b
-		complete_national_focus = cot_focus_establish_sagcraft
-		set_country_flag = sagcraft_1
-	}
-	# Create Sagcraft with datapacks and creative mode admin
-	option = {
-		name = connecticut.5.c
-		complete_national_focus = cot_focus_establish_sagcraft
-		set_country_flag = sagcraft_2
-	}
-	# Create vanilla Sagcraft
-	option = {
-		name = connecticut.5.e
-		complete_national_focus = cot_focus_establish_sagcraft
-		set_country_flag = sagcraft_3
-	}
-	# Stay on Boxcraft
-	option = {
-		name = connecticut.5.f
-		complete_national_focus = cot_focus_establish_sagcraft
-		set_country_flag = sagcraft_4
+		complete_national_focus = cot_focus_jobless_sag
 	}
 
 }
@@ -241,7 +203,86 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		# Mira
 		name = connecticut.7.a
+		add_political_power = 75
+		every_owned_state = {
+			damage_building = { type = infrastructure damage = 1 }
+			damage_building = { type = arms_factory damage = 1 }
+			damage_building = { type = industrial_complex damage = 1 }
+		}
+		add_timed_idea = {
+			idea = idea_gamba_gaming
+			days = 180
+		}
+	}
+}
+
+# Minecraft Gaming
+country_event = {
+	id = connecticut.8
+	title = connecticut.8.t
+	desc = connecticut.8.d
+	#picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	#Greece
+	option = {
+		name = connecticut.8.a
+		set_country_flag = sagcraft_0
+		trigger = {
+			NOT = {
+				has_country_flag = sagcraft_0
+				has_country_flag = sagcraft_1
+				has_country_flag = sagcraft_2
+				has_country_flag = sagcraft_3
+				has_country_flag = sagcraft_4
+			}
+		}
+	}
+
+	#China
+	option = {
+		name = connecticut.8.b
+		set_country_flag = sagcraft_1
+		trigger = {
+			NOT = {
+				has_country_flag = sagcraft_0
+				has_country_flag = sagcraft_1
+				has_country_flag = sagcraft_2
+				has_country_flag = sagcraft_3
+				has_country_flag = sagcraft_4
+			}
+		}
+	}
+
+	#Black
+	option = {
+		name = connecticut.8.c
+		set_country_flag = sagcraft_2
+		trigger = {
+			NOT = {
+				has_country_flag = sagcraft_0
+				has_country_flag = sagcraft_1
+				has_country_flag = sagcraft_2
+				has_country_flag = sagcraft_3
+				has_country_flag = sagcraft_4
+			}
+		}
+	}
+
+	#Native
+	option = {
+		name = connecticut.8.e
+		set_country_flag = sagcraft_3
+		trigger = {
+			NOT = {
+				has_country_flag = sagcraft_0
+				has_country_flag = sagcraft_1
+				has_country_flag = sagcraft_2
+				has_country_flag = sagcraft_3
+				has_country_flag = sagcraft_4
+			}
+		}
 	}
 }
