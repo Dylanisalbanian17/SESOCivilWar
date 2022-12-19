@@ -24,7 +24,7 @@ focus_tree = {
 			CAL = { has_completed_focus = CAL_putting_the_gamers_on_trial }
 		}
 		completion_reward = {
-			#load_focus_tree = nev_psa
+			load_focus_tree = nev_psa
 		}
 	}
 	#Focus for Dylan's Arrival
