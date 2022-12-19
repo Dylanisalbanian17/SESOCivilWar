@@ -26,7 +26,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 50
+			add_stability = 0.05
 		}
 
 	}
@@ -44,7 +44,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			country_event = virginia.36
 		}
 	}
 
@@ -66,6 +66,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = via_choose_seso_flag
+			custom_effect_tooltip = 1_VIA_tt_seso
 	}
 }
 
@@ -86,6 +87,7 @@ focus = {
 	}
 	completion_reward = {
 		set_country_flag = via_choose_gmod_flag
+		custom_effect_tooltip = 1_VIA_tt_gmod
 }
 }
 
@@ -161,130 +163,10 @@ focus = {
 	}
 	completion_reward = {
 		completion_reward = {
-			custom_effect_tooltip = ROM_the_armored_division_tt
-			#Give template depending on recon tech and medium
+			custom_effect_tooltip = via_polish_legion_tt
 			hidden_effect = {
-				if = {
-					division_template = {
-						name = "Armored Division"
-						priority = 2
-						division_names_group = ROM_ARM_01
-						regiments = {
-							medium_armor = { x = 0 y = 0 }
-							medium_armor = { x = 0 y = 1 }
-				
-		    	   		 	medium_armor = { x = 1 y = 0 }
-							medium_armor = { x = 1 y = 1 }
-				
-		    	   		 	motorized = { x = 2 y = 0 }
-							motorized = { x = 2 y = 1 }
-
-		    	   		 	motorized = { x = 3 y = 0 }
-							motorized = { x = 3 y = 1 }
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							artillery = { x = 0 y = 1 }
-							recon = { x = 0 y = 2 }
-						}
-					}
-					else = {
-						if = {
-							limit = {
-								OR = {
-									has_tech = basic_medium_tank
-									has_tech = basic_medium_tank_chassis
-								}
-							}
-							division_template = {
-								name = "Armored Division"
-								priority = 2
-								division_names_group = ROM_ARM_01
-								regiments = {
-									medium_armor = { x = 0 y = 0 }
-									medium_armor = { x = 0 y = 1 }
-						
-				    	   		 	medium_armor = { x = 1 y = 0 }
-									medium_armor = { x = 1 y = 1 }
-						
-				    	   		 	motorized = { x = 2 y = 0 }
-									motorized = { x = 2 y = 1 }
-
-				    	   		 	motorized = { x = 3 y = 0 }
-									motorized = { x = 3 y = 1 }
-								}
-								support = {
-									engineer = { x = 0 y = 0 }
-									artillery = { x = 0 y = 1 }
-									recon = { x = 0 y = 2 }
-								}
-							}
-							else = {
-								if = {
-									limit = {
-										has_tech = tech_recon
-									}
-									division_template = {
-										name = "Armored Division"
-										priority = 2
-										division_names_group = GER_Inf_01
-										regiments = {
-											light_armor = { x = 0 y = 0 }
-											light_armor = { x = 0 y = 1 }
-								
-						    	   		 	light_armor = { x = 1 y = 0 }
-											light_armor = { x = 1 y = 1 }
-								
-						    	   		 	motorized = { x = 2 y = 0 }
-											motorized = { x = 2 y = 1 }
-
-						    	   		 	motorized = { x = 3 y = 0 }
-											motorized = { x = 3 y = 1 }
-										}
-										support = {
-											engineer = { x = 0 y = 0 }
-											artillery = { x = 0 y = 1 }
-											recon = { x = 0 y = 2 }
-										}
-									}
-									else = {
-										division_template = {
-											name = "Armored Division"
-											priority = 2
-											division_names_group = GER_Inf_01
-											regiments = {
-												light_armor = { x = 0 y = 0 }
-												light_armor = { x = 0 y = 1 }
-									
-							    	   		 	light_armor = { x = 1 y = 0 }
-												light_armor = { x = 1 y = 1 }
-									
-							    	   		 	motorized = { x = 2 y = 0 }
-												motorized = { x = 2 y = 1 }
-
-							    	   		 	motorized = { x = 3 y = 0 }
-												motorized = { x = 3 y = 1 }
-											}
-											support = {
-												engineer = { x = 0 y = 0 }
-												artillery = { x = 0 y = 1 }
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 46 }
-					create_unit = {
-						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7" 
-						owner = VIA
-					}
-				}
-			}			
+				load_oob = VIA_polish
+			}
 		}
 }
 }
@@ -380,6 +262,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_opinion_modifier = {
+			target = NJE
+			modifier = military_industrial_complex
+		}
 }
 }
 
@@ -740,7 +626,18 @@ focus = {
 	}
 	completion_reward = {
 		### requires opinion with fletch	
-
+		add_ideas = ready_or_not_larp
+		add_opinion_modifier = {
+			target = MAS
+			modifier = ready_or_not
+		}
+		hidden_effect = {
+			MAS = { add_ideas = ready_or_not_larp
+				add_opinion_modifier = {
+				target = VIA
+				modifier = ready_or_not
+				} }
+		}
 }
 }
 
@@ -800,8 +697,8 @@ focus = {
 				category = para_tech
 				uses = 1
 				bonus = 1
-			}
 	}
+	}	
 }
 }
 
@@ -905,6 +802,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		load_oob = VIA_swiss
 }
 }
 
@@ -1335,6 +1233,23 @@ focus = {
 	completion_reward = {
 		country_event = seso_generic.1
 	}
+}
+
+focus = {
+	id = via_ban_xd
+	icon = GFX_focus_SOV_military_purge
+	x = -3
+	y = 5
+	cost = 5
+	relative_position_id = via_repealing_larp
+	available_if_capitulated = yes
+	prerequisite = { focus = via_remember_navy_discord }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
 }
 
 focus = {
@@ -1984,6 +1899,247 @@ focus = {
 	cost = 5
 	available_if_capitulated = yes
 	prerequisite = { focus = via_our_rheinland }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+
+}
+
+focus = {
+	id = via_sgm_havoc
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = 12
+	y = 0
+	cost = 5
+	available_if_capitulated = yes
+	available = { is_puppet_of = NYO }
+	relative_position_id = via_political_tree_ryder
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_a_class_crisis
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = 0
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_sgm_havoc }
+	relative_position_id = via_sgm_havoc
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_minge_hour
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = 0
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_a_class_crisis }
+	relative_position_id = via_sgm_havoc
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_weapons_malfunction
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = -1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_minge_hour }
+	relative_position_id = via_sgm_havoc
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_shocktrooper_evasion_tactics
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = 1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_minge_hour }
+	relative_position_id = via_sgm_havoc
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_isb_investigation
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = 0
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_shocktrooper_evasion_tactics }
+	prerequisite = { focus = via_weapons_malfunction }
+	relative_position_id = via_sgm_havoc
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_void_pk
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = 0
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_isb_investigation }
+	relative_position_id = via_sgm_havoc
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_tk_bridge_takeover
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = -1
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_void_pk }
+	relative_position_id = via_sgm_havoc
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_leak_discord_message
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = 1
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_void_pk }
+	relative_position_id = via_sgm_havoc
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_demoted
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = 0
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_tk_bridge_takeover }
+	prerequisite = { focus = via_leak_discord_message }
+	relative_position_id = via_sgm_havoc
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_ground_event_dominance
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = -3
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_sgm_havoc }
+	relative_position_id = via_sgm_havoc
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_tk_squad_lead
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = -3
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_ground_event_dominance }
+	relative_position_id = via_sgm_havoc
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_build_tk_tryouts_in_mhb
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = 3
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_sgm_havoc }
+	relative_position_id = via_sgm_havoc
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_kujo_fighting_ring
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = 3
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = via_build_tk_tryouts_in_mhb }
+	relative_position_id = via_sgm_havoc
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1

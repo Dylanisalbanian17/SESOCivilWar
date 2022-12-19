@@ -745,3 +745,22 @@ country_event = {
 	}
 
 }
+
+country_event = {
+	id = virginia.36
+	title = virginia.36.t
+	desc = virginia.36.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {    
+		name = virginia.36.a
+		complete_national_focus = via_choose_seso
+	}
+
+	option = {    
+		name = virginia.36.b
+		complete_national_focus = via_gmod_ggn
+	}
+
+}

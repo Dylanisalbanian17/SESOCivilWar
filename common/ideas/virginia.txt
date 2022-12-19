@@ -70,6 +70,32 @@ ideas = {
 			}
 		}
 
+		ready_or_not_larp = {
+			
+			allowed = {
+				tag = VIA
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			available = {
+				if = {
+					has_government = fascism
+				}
+	
+			}
+			
+			removal_cost = -1
+
+			picture = idea_generic_war_preparation.dds
+			
+			modifier = {
+				army_org_factor = 0.05
+			}
+		}
+
 		Ein_Volk_Ein_Reich = {
 			
 			allowed = {

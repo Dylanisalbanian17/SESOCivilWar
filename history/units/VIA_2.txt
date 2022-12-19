@@ -138,7 +138,7 @@ units = {
 		#		small="GFX_idea_erwin_rommel"
 		#	}
 		#}
-		location = 6521
+		location = 4239
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_chassis_1 = { owner = "VIA" version_name = "Panzer I Ausf. A" } }

@@ -49,4 +49,14 @@ opinion_modifiers = {
 		value = 50
 		years = 6
 	}
+
+	ready_or_not = {
+		value = 10
+		years = 6
+	}
+
+	military_industrial_complex = {
+		value = -10
+		years = 6
+	}
 }
