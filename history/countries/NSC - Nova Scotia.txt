@@ -1,7 +1,10 @@
 capital = 330
 
+oob = "NSC_2"
+
 set_research_slots = 3
 set_technology = {
+	gw_artillery = 1
 	infantry_weapons = 1
 	tech_support = 1		
 	tech_recon = 1
@@ -12,6 +15,8 @@ set_technology = {
 	fuel_refining = 1
 	basic_train = 1
 }
+
+recruit_character = NSC_mikmaq
 
 set_convoys = 30
 add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }

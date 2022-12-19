@@ -1,0 +1,48 @@
+characters={
+	NSC_mikmaq = {
+		name = "Mikmaq"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/advisors/advisor_mikmaq.dds"
+				large = "gfx/leaders/NYO/mikmaq.dds"
+			}
+			army = {
+				small = "gfx/interface/advisors/advisor_mikmaq.dds"
+				large = "gfx/leaders/NYO/mikmaq.dds"
+			}
+		}
+
+		country_leader={
+			ideology=centrism
+			traits = { unemployed }
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = mikmaq
+			ledger = civilian
+			traits = { silent_workhorse }
+			available  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
+
+		corps_commander={
+			traits={ career_officer  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			visible  = {
+				has_country_leader = {
+					character = NYO_crimson
+					ruling_only = yes
+				}
+			}
+		}
+	}
+}

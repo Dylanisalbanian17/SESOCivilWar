@@ -49,7 +49,7 @@ via_cool_tensions:0 "Cool Worker Tensions"
 via_cool_tensions_desc:0 ""
 via_begin_reconstruction_efforts:0 "Begin Reconstruction of 12GB"
 via_begin_reconstruction_efforts_desc:0 ""
-via_military_focus:0 "Military Focus"
+via_military_focus:0 "Military Industrial Complex"
 via_military_focus_desc:0 ""
 via_lessons_from_romania:0 "Lesson from Romamia"
 via_lessons_from_romania_desc:0 ""
@@ -205,6 +205,11 @@ via_remember_navy_discord:0 "Remember Navy Discord?"
 via_remember_navy_discord_desc:0 ""
 via_create_youtube_channel:0 "Create YouTube Channel"
 via_create_youtube_channel_desc:0 ""
+
+### Virginia Tool tips
+1_VIA_tt_seso:0 "Gives access to S.E.S.O. related effects, decisions, and focuses.\n"
+1_VIA_tt_gmod:0 "Gives access to GGN/Gmod related effects, decisions, and focuses.\n"
+via_polish_legion_tt:0 "Creates with Boomblers blessing the Polish division, the Legion of Death."
 
 ### IDEAS
 via_rebuild_the_nation:0 "Rebuild the Nation"
