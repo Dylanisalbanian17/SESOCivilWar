@@ -181,7 +181,7 @@ equipments = {
 		naval_speed = 18
 		fuel_consumption = 67
 		reliability = 0.65
-		build_cost_ic = 3000
+		build_cost_ic = 2600
 		resources = {
 			steel = 1
 			chromium = 1
@@ -279,7 +279,7 @@ equipments = {
 		reliability = 0.80
 		fuel_consumption = 67
 		
-		build_cost_ic = 3300
+		build_cost_ic = 2800
 	}
 
 	ship_hull_heavy_2 = {
@@ -338,7 +338,7 @@ equipments = {
 		reliability = 0.85
 		fuel_consumption = 67
 		naval_speed = 30
-		build_cost_ic = 3400
+		build_cost_ic = 3000
 		resources = {
 			#oil = 1
 			steel = 1
@@ -404,7 +404,7 @@ equipments = {
 		reliability = 0.9
 		fuel_consumption = 67
 		
-		build_cost_ic = 3500
+		build_cost_ic = 3200
 		resources = {
 			#oil = 1
 			steel = 1
@@ -471,7 +471,7 @@ equipments = {
 		naval_speed = 30
 		fuel_consumption = 67
 		reliability = 0.95
-		build_cost_ic = 3600
+		build_cost_ic = 3400
 		resources = {
 			#oil = 1
 			steel = 1
