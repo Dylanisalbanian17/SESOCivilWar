@@ -334,8 +334,8 @@
 
  PSA_fascism:1 "Gamer Empire"
  PSA_fascism_DEF:1 "The Gamer Empire"
- PSA_neutrality:0 "West Coast"
- PSA_neutrality_DEF:0 "The West Coast"
+ PSA_neutrality:0 "Pacific State"
+ PSA_neutrality_DEF:0 "The Pacific State"
  PSA_communism:1 "Union of Pacific Socialist Republics"
  PSA_communism_DEF:1 "The Union of Pacific Socialist Republics"
  PSA_democratic:0 "Pacific States"
@@ -375,9 +375,9 @@
  ARZ_neutrality_ADJ:0 "Arizonian"
  ARZ_communism_ADJ:0 "Arizonian"
 
- SON:0 "Sonora"
- SON_DEF:0 "Sonora"
- SON_ADJ:0 "Sonora"
+ SON:0 "Hubologist Mexico"
+ SON_DEF:0 "Hubologist Mexico"
+ SON_ADJ:0 "Hubologists"
 
  GVA_fascism:1 "Greater Virginian Reich"
  GVA_fascism_DEF:1 "The Greater Virginian Reich"
