@@ -14,15 +14,15 @@ focus_tree = {
 		icon = GFX_focus_usa_honor_the_confederacy
 		x = 8
 		y = 0
-		cost = 10
+		cost = 2
 
 		completion_reward = {
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.30
+				popularity = 0.03
 			}
-			add_stability = 0.30
-			add_war_support = 0.15
+			add_stability = 0.03
+			add_war_support = 0.05
 			add_corps_commander_role = {
 				traits = { trait_cautious }
 				character = NYO_ojax
@@ -41,7 +41,7 @@ focus_tree = {
 		relative_position_id = NYO_focus_commander_crimson
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = NYO_focus_commander_crimson
 		}
@@ -445,7 +445,7 @@ focus_tree = {
 		relative_position_id = NYO_focus_commander_crimson
 		x = -2
 		y = 1
-		cost = 2
+		cost = 5
 		prerequisite = {
 			focus = NYO_focus_commander_crimson
 		}
@@ -465,7 +465,7 @@ focus_tree = {
 		relative_position_id = NYO_focus_commander_crimson
 		x = 2
 		y = 1
-		cost = 2
+		cost = 5
 		prerequisite = {
 			focus = NYO_focus_commander_crimson
 		}
@@ -505,7 +505,7 @@ focus_tree = {
 		relative_position_id = NYO_focus_commander_crimson
 		x = 4
 		y = 1
-		cost = 2
+		cost = 5
 		prerequisite = {
 			focus = NYO_focus_commander_crimson
 		}
@@ -536,70 +536,6 @@ focus_tree = {
 					}
 				}
 			}
-		}
-	}
-
-	#Focus for Safe, for now...
-	focus = {
-		id = NYO_focus_safe_for_now
-		icon = GFX_goal_unknown
-		x = 37
-		y = 4
-		cost = 10
-		
-		prerequisite = { 
-			focus = NYO_focus_rydercrimson_pact 
-		}
-		prerequisite = { 
-			focus = NYO_focus_stop_illegal_immigration_from_connecticut 
-		}
-		
-		completion_reward = {
-			#all_divisions_defense_+10%
-		}
-	}
-
-	#Focus for Ryder-Crimson Pact
-	focus = {
-		id = NYO_focus_rydercrimson_pact
-		icon = GFX_goal_unknown
-		x = 39
-		y = 3
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_prepare_to_handle_kujo }
-		
-		completion_reward = {
-			#virginia_gets_event_ryder_crimson_pact
-		}
-	}
-
-	#Focus for Pressure New Jersey for Staten Island
-	focus = {
-		id = NYO_focus_pressure_new_jersey_for_staten_island
-		icon = GFX_goal_unknown
-		x = 35
-		y = 2
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_influence_smaller_battalions }
-		
-		completion_reward = {
-			#new_jersey_gets_event_cede_staten_island
-		}
-	}
-
-	#Focus for Influence Smaller Battalions
-	focus = {
-		id = NYO_focus_influence_smaller_battalions
-		icon = GFX_goal_unknown
-		x = 37
-		y = 1
-		cost = 10
-		
-		
-		completion_reward = {
-			add_political_power= 10
 		}
 	}
 
@@ -637,18 +573,18 @@ focus_tree = {
 			}
 
 			random_core_state = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 			}
 			random_core_state = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -661,13 +597,13 @@ focus_tree = {
 		relative_position_id = NYO_focus_ggn_1
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		
 		prerequisite = { focus = NYO_focus_ggn_1 }
 		
 		completion_reward = {
-			add_war_support = 0.10
-			army_experience = 50
+			add_war_support = 0.05
+			army_experience = 25
 		}
 	}
 
@@ -741,18 +677,18 @@ focus_tree = {
 			}
 
 			random_core_state = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 			random_core_state = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -765,7 +701,7 @@ focus_tree = {
 		relative_position_id = NYO_focus_ggn_2
 		x = -4
 		y = 1
-		cost = 10
+		cost = 5
 		
 		prerequisite = { focus = NYO_focus_ggn_2 }
 		
@@ -790,7 +726,7 @@ focus_tree = {
 		relative_position_id = NYO_focus_gunner_character
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		
 		prerequisite = { focus = NYO_focus_gunner_character }
 		
@@ -812,7 +748,7 @@ focus_tree = {
 		relative_position_id = NYO_focus_ggn_2
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		
 		prerequisite = { focus = NYO_focus_ggn_2 }
 		
@@ -843,7 +779,7 @@ focus_tree = {
 		relative_position_id = NYO_focus_ggn_2
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		
 		prerequisite = { focus = NYO_focus_ggn_2 }
 		
@@ -867,12 +803,12 @@ focus_tree = {
 		relative_position_id = NYO_focus_ggn_2
 		x = 4
 		y = 1
-		cost = 10
+		cost = 5
 		
 		prerequisite = { focus = NYO_focus_ggn_2 }
 		
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 25
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
@@ -988,24 +924,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Watch HOI4 Tutorials
-	#focus = {
-	#	id = NYO_focus_watch_hoi4_tutorials
-	#	icon = GFX_focus_generic_socialist_science
-	#	x = 16
-	#	y = 6
-	#	cost = 10
-	#	
-	#	prerequisite = { 
-	#		focus = NYO_focus_secure_long_island 
-	#		focus = NYO_focus_secure_new_york_state 
-	#	}
-	#	
-	#	completion_reward = {
-	#		army_experience= 20
-	#	}
-	#}
-
 	#Focus for General Secretary Ojax
 	focus = {
 		id = NYO_focus_general_secretary_ojax
@@ -1065,442 +983,6 @@ focus_tree = {
 					}
 				}
 			}
-		}
-	}
-
-	#Focus for Prepare to Handle Kujo
-	focus = {
-		id = NYO_focus_prepare_to_handle_kujo
-		icon = GFX_goal_unknown
-		x = 39
-		y = 2
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_influence_smaller_battalions }
-		
-		completion_reward = {
-			add_manpower= 100000  add_war_support= 5
-		}
-	}
-
-	#Focus for Air Force and Navy
-	focus = {
-		id = NYO_focus_air_force_and_navy
-		icon = GFX_goal_unknown
-		x = 39
-		y = 6
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_modernization_of_our_military }
-		
-		completion_reward = {
-			#50%bonus_on_heavy_ship_hull_and_fighter
-		}
-	}
-
-	#Focus for TIE Fighter
-	focus = {
-		id = NYO_focus_tie_fighter
-		icon = GFX_goal_unknown
-		x = 39
-		y = 7
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_air_force_and_navy }
-		
-		completion_reward = {
-			#fighter_production_cost_-10%
-		}
-	}
-
-	#Focus for Systemic Removal of Anti-Gaming Laws
-	focus = {
-		id = NYO_focus_systemic_removal_of_antigaming_laws
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		x = 45
-		y = 4
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_implement_rehabilitated_isb_agents }
-		
-		completion_reward = {
-			add_stability= 0.25
-		}
-	}
-
-	#Focus for Convince Vladdy Daddy to let Zhukov back into service
-	#focus = {
-	#	id = NYO_focus_convince_vladdy_daddy_to_let_zhukov_back_into_service
-	#	icon = GFX_goal_unknown
-	#	x = 12
-	#	y = 7
-	#	cost = 10
-	#	
-	#	prerequisite = { focus = NYO_focus_arm_the_partisans }
-	#	
-	#}
-
-	#Focus for Blessed Wholesome Sablin 100
-	#focus = {
-	#	id = NYO_focus_blessed_wholesome_sablin_100
-	#	icon = GFX_goal_unknown
-	#	x = 16
-	#	y = 7
-	#	cost = 10
-	#	
-	#	prerequisite = { focus = NYO_focus_watch_hoi4_tutorials }
-	#	
-	#}
-
-	#Focus for Dissidents and Women to the Spice Mines
-	focus = {
-		id = NYO_focus_dissidents_and_women_to_the_spice_mines
-		icon = GFX_focus_smiling_buddha
-		x = 50
-		y = 3
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_reeducate_the_tk_cult }
-		
-		completion_reward = {
-			add_stability= -0.05  add_war_support= 5 
-#add_2_civs_to_a_province_in_the_west
-		}
-	}
-
-	#Focus for The Gamer's Constitution
-	focus = {
-		id = NYO_focus_the_gamers_constitution
-		icon = GFX_goal_generic_forceful_treaty
-		x = 47
-		y = 4
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_implement_rehabilitated_isb_agents }
-		
-		completion_reward = {
-			add_political_power= 200
-		}
-	}
-
-	#Focus for Gay Rights
-	focus = {
-		id = NYO_focus_gay_rights
-		icon = GFX_focus_generic_polish_deal
-		x = 47
-		y = 6
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_the_gamers_constitution }
-		
-		completion_reward = {
-			add_stability= 0.1  
-#production_efficieny_cap_+10%
-		}
-	}
-
-	#Focus for Rebuilding the PC Factories
-	focus = {
-		id = NYO_focus_rebuilding_the_pc_factories
-		icon = GFX_focus_generic_africa_factory
-		x = 57
-		y = 2
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_the_revolution_triumphant }
-		
-		completion_reward = {
-			#resource_gain_efficiency_+10
-		}
-	}
-
-	#Focus for Take Our Time
-	focus = {
-		id = NYO_focus_take_our_time
-		icon = GFX_goal_unknown
-		x = 55
-		y = 3
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_rebuilding_the_pc_factories }
-		mutually_exclusive = { focus = NYO_focus_rapid_recovery }
-		
-		completion_reward = {
-			#add_4_civs_and_2_mils_to_nyc
-		}
-	}
-
-	#Focus for Albany Armor Design Bureau
-	focus = {
-		id = NYO_focus_albany_armor_design_bureau
-		icon = GFX_goal_continuous_armor_production
-		x = 55
-		y = 4
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_take_our_time }
-		
-		completion_reward = {
-			#2x_50percent_research_bonus_for_armor
-#add_2_mils_in_albany
-		}
-	}
-
-	#Focus for Re-Opening te TK Armor Factories
-	focus = {
-		id = NYO_focus_reopening_te_tk_armor_factories
-		icon = GFX_goal_unknown
-		x = 55
-		y = 5
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_albany_armor_design_bureau }
-		
-		completion_reward = {
-			#add_2_mils_in_long_island
-		}
-	}
-
-	#Focus for State Controlled Currency
-	focus = {
-		id = NYO_focus_state_controlled_currency
-		icon = GFX_goal_unknown
-		x = 55
-		y = 6
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_reopening_te_tk_armor_factories }
-		
-		completion_reward = {
-			#remove_national_spirit_inflation
-		}
-	}
-
-	#Focus for Complete Recovery
-	focus = {
-		id = NYO_focus_complete_recovery
-		icon = GFX_goal_unknown
-		x = 55
-		y = 7
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_state_controlled_currency }
-		
-		completion_reward = {
-			#remove_national_spirit_recovering_from_civil_war
-		}
-	}
-
-	#Focus for Social Credit System
-	focus = {
-		id = NYO_focus_social_credit_system
-		icon = GFX_focus_prc_proclaim_the_peoples_republic
-		x = 50
-		y = 4
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_dissidents_and_women_to_the_spice_mines }
-		
-		completion_reward = {
-			add_stability= 0.2
-		}
-	}
-
-	#Focus for Gulags
-	focus = {
-		id = NYO_focus_gulags
-		icon = GFX_goal_unknown
-		x = 58
-		y = 4
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_rapid_recovery }
-		
-		completion_reward = {
-			#add_2_civs_to_an_upstate_ny_province
-		}
-	}
-
-	#Focus for Rapid Recovery
-	focus = {
-		id = NYO_focus_rapid_recovery
-		icon = GFX_goal_unknown
-		x = 58
-		y = 3
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_rebuilding_the_pc_factories }
-		mutually_exclusive = { focus = NYO_focus_take_our_time }
-		
-		completion_reward = {
-			#add_1_civ_and_1_mil_to_nyc
-		}
-	}
-
-	#Focus for "Complete" Recovery
-	focus = {
-		id = NYO_focus_kindacomplete_recovery
-		icon = GFX_goal_unknown
-		x = 58
-		y = 5
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_gulags }
-		
-		completion_reward = {
-			#remove_national_spirit_recovering_from_civil_war
-		}
-	}
-
-	#Focus for War is the Norm
-	focus = {
-		id = NYO_focus_war_is_the_norm
-		icon = GFX_goal_unknown
-		x = 50
-		y = 5
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_social_credit_system }
-		
-		completion_reward = {
-			#stability_penalty_from_war_is_lessened
-		}
-	}
-
-	#Focus for Eastern Gamer Liberation Front
-	focus = {
-		id = NYO_focus_eastern_gamer_liberation_front
-		icon = GFX_goal_unknown
-		x = 65
-		y = 1
-		cost = 10
-		
-		
-		completion_reward = {
-			add_war_support= 15
-		}
-	}
-
-	#Focus for Reckless Expansion
-	focus = {
-		id = NYO_focus_reckless_expansion
-		icon = GFX_goal_unknown
-		x = 61
-		y = 2
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_eastern_gamer_liberation_front }
-		mutually_exclusive = { focus = NYO_focus_balanced_expansion }
-		
-		completion_reward = {
-			#unlocks_decisions_to_declare_war_on_new_england_states_and_new_brunswick_and_nova_scotia
-		}
-	}
-
-	#Focus for Balanced Expansion
-	focus = {
-		id = NYO_focus_balanced_expansion
-		icon = GFX_goal_unknown
-		x = 65
-		y = 2
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_eastern_gamer_liberation_front }
-		mutually_exclusive = { 
-			focus = NYO_focus_reckless_expansion 
-		}
-		
-		completion_reward = {
-			#unlocks_decisions_to_declare_war_on_all_states_in_new_england
-		}
-	}
-
-	#Focus for Ryder-Ojax Pact
-	focus = {
-		id = NYO_focus_ryderojax_pact
-		icon = GFX_goal_unknown
-		x = 69
-		y = 2
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_eastern_gamer_liberation_front }
-		
-		completion_reward = {
-			#virginia_gets_event_ryderojax_pact
-		}
-	}
-
-	#Focus for The Connecticut Immigration Issue
-	focus = {
-		id = NYO_focus_the_connecticut_immigration_issue
-		icon = GFX_goal_unknown
-		x = 65
-		y = 4
-		cost = 10
-		
-		
-	}
-
-	#Focus for Build A Wall
-	focus = {
-		id = NYO_focus_build_a_wall
-		icon = GFX_goal_unknown
-		x = 62
-		y = 5
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_the_connecticut_immigration_issue }
-		mutually_exclusive = { focus = NYO_focus_welcome_the_gamers }
-		
-		completion_reward = {
-			add_stability= 0.1  
-#add_forts_on_ct_border
-		}
-	}
-
-	#Focus for Welcome The Gamers
-	focus = {
-		id = NYO_focus_welcome_the_gamers
-		icon = GFX_goal_unknown
-		x = 68
-		y = 5
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_the_connecticut_immigration_issue }
-		mutually_exclusive = { focus = NYO_focus_build_a_wall }
-		
-		completion_reward = {
-			add_stability= -0.1  add_manpower= 100000
-		}
-	}
-
-	#Focus for Using the Immigrants for Dogecoin Mining
-	focus = {
-		id = NYO_focus_using_the_immigrants_for_dogecoin_mining
-		icon = GFX_goal_unknown
-		x = 68
-		y = 6
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_welcome_the_gamers }
-		
-		completion_reward = {
-			#add_1_civ_to_a_province_in_upstate_ny
-		}
-	}
-
-	#Focus for Create ICE
-	focus = {
-		id = NYO_focus_create_ice
-		icon = GFX_goal_unknown
-		x = 62
-		y = 6
-		cost = 10
-		
-		prerequisite = { focus = NYO_focus_build_a_wall }
-		
-		completion_reward = {
-			#division_defense_+10%
 		}
 	}
 
