@@ -48,9 +48,6 @@ equipments = {
 		year = 2
 
 		archetype = convoy
-		type = { 
-			convoy
-		}
 		active = yes
 		priority = 10
 	}
