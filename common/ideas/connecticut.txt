@@ -219,6 +219,23 @@ ideas = {
 			}
 		}
 
+		idea_ao3_meta = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
 		## Profile Pictures
 		profile_mcgonagall = {
 			allowed = {

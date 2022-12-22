@@ -670,7 +670,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cot_focus_mow_jap_mortars
+		id = cot_focus_mow
 		#icon = GFX_focus_BUL_form_a_regency_council
 		cost = 10
 		relative_position_id = cot_focus_meta_eaw
@@ -678,6 +678,25 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = cot_focus_meta_eaw
+		}
+		completion_reward = {
+			add_ideas = idea_jap_mortars
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1400
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_hoi4
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_aoe3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = cot_focus_aoe3 OR = cot_focus_csgo
 		}
 		completion_reward = {
 			add_ideas = idea_jap_mortars
@@ -704,17 +723,90 @@ focus_tree = {
 	}
 
 	focus = {
+		id = cot_focus_csgo
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_rainbow_six
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = cot_focus_rainbow_six OR = cot_focus_mow
+		}
+		completion_reward = {
+			country_event = connecticut.6
+		}
+	}
+
+	focus = {
 		id = cot_focus_l4d2
 		#icon = GFX_focus_BUL_form_a_regency_council
 		cost = 10
 		relative_position_id = cot_focus_meta_eaw
 		x = 0
-		y = 1
+		y = 2
 		prerequisite = {
 			focus = cot_focus_meta_eaw
 		}
 		completion_reward = {
 			
+		}
+	}
+
+	focus = {
+		id = cot_focus_ggn
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_l4d2
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = cot_focus_l4d2
+		}
+		prerequisite = {
+			focus = cot_focus_payday
+		}
+		prerequisite = {
+			focus = cot_focus_hoi4
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = cot_focus_aoe3
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_mow
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = cot_focus_rainbow_six OR = cot_focus_mow
+		}
+		completion_reward = {
+			add_ideas = idea_ao3_meta
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = cot_focus_payday
+		#icon = GFX_focus_BUL_form_a_regency_council
+		cost = 10
+		relative_position_id = cot_focus_csgo
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = cot_focus_csgo OR = cot_focus_aoe3 OR = cot_focus_
+		}
+		completion_reward = {
 		}
 	}
 

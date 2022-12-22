@@ -12,12 +12,10 @@ propaganda_efforts = {
 			has_war = no
 		}
 
-		cost = 0
-
 		fire_only_once = no
 
 		visible = {
-			has_completed_focus = cot_focus_hegemony
+			has_completed_focus = cot_focus_developerpromo
 		}
 
 		complete_effect = {
@@ -25,5 +23,40 @@ propaganda_efforts = {
 		}
 
 		days_re_enable = 240
+	}
+}
+
+economy_decisions = {
+	COT_decision_play_minecraft = {
+		icon = generic_construction
+		cost = 50
+
+		allowed = {
+			tag = COT
+		}
+
+		available = {
+			has_war = no
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		visible = {
+			has_completed_focus = cot_focus_join_boxcraft
+		}
+
+		complete_effect = {
+			country_event = connecticut.8
+		}
+
+		remove_effect = {
+			clr_country_flag = sagcraft_0
+			clr_country_flag = sagcraft_1
+			clr_country_flag = sagcraft_2
+			clr_country_flag = sagcraft_3
+			clr_country_flag = sagcraft_4
+		}
 	}
 }
