@@ -1,0 +1,75 @@
+ideas = {
+	country = {
+		idea_army_star_fighters = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				army_bonus_air_superiority_factor = 0.05
+			}
+		}
+
+		idea_navy_star_fighters = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				air_nav_efficiency = 0.05
+				naval_strike_attack_factor = 0.10
+			}
+		}
+
+		idea_college_education = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				research_speed_factor = 0.02
+			}
+		}
+
+		idea_airsoft_junkie = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				army_morale_factor = 0.10
+				army_strength_factor = 0.05
+				land_doctrine_cost_factor = -0.15
+				consumer_goods_factor = 0.02
+			}
+		}
+	}
+}
