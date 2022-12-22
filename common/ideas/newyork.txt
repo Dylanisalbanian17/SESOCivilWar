@@ -86,5 +86,24 @@ ideas = {
 				army_fuel_consumption_factor = 0.10
 			}
 		}
+
+		idea_black_horse = {
+			allowed = {
+				has_country_leader = {
+					character = NYO_crimson
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = GFX_generic_manpower_bonus
+
+			modifier = {
+				land_night_attack = 0.02
+				cavalry_attack_factor = 0.15
+			}
+		}
 	}
 }
