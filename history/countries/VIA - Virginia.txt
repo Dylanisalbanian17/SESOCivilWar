@@ -17,6 +17,19 @@ add_ideas = {
 
 
 recruit_character= VIA_ryder
+recruit_character= VIA_ada
+recruit_character= VIA_ulrich
+recruit_character= VIA_otto
+recruit_character= VIA_silver
+recruit_character= VIA_derek
+recruit_character= VIA_brian
+recruit_character= VIA_agrippa
+recruit_character= VIA_hercules
+recruit_character= VIA_gambit
+recruit_character= VIA_holloway
+recruit_character= VIA_ridgeback
+recruit_character= VIA_clucky
+recruit_character= VIA_obrecht
 
 set_politics = {
 	ruling_party = fascism
