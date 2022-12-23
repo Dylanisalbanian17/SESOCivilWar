@@ -438,26 +438,6 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = NYO_focus_black_horse
-		icon = GFX_focus_generic_horse_studs
-		relative_position_id = NYO_focus_commander_crimson
-		x = -2
-		y = 1
-		cost = 5
-		prerequisite = {
-			focus = NYO_focus_commander_crimson
-		}
-		available = {
-			any_neighbor_country = {
-				original_tag = ONT
-			}
-		}
-
-		completion_reward = {
-		}
-	}
 
 	focus = {
 		id = NYO_focus_annoyed_by_jolly
@@ -595,7 +575,7 @@ focus_tree = {
 		id = NYO_focus_death_trooper_event
 		icon = GFX_focus_RAJ_indian_gentlemen_offcers
 		relative_position_id = NYO_focus_ggn_1
-		x = -1
+		x = -2
 		y = 1
 		cost = 5
 		
@@ -608,10 +588,28 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NYO_focus_black_horse
+		icon = GFX_focus_generic_horse_studs
+		relative_position_id = NYO_focus_ggn_1
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = NYO_focus_ggn_1
+		}
+		available = {
+		}
+
+		completion_reward = {
+			add_ideas = idea_black_horse
+		}
+	}
+
+	focus = {
 		id = NYO_focus_wulf_inspiration
 		icon = GFX_focus_chi_army_reform
 		relative_position_id = NYO_focus_ggn_1
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		
@@ -645,8 +643,8 @@ focus_tree = {
 	focus = {
 		id = NYO_focus_ggn_2
 		icon = GFX_goal_generic_military_sphere
-		relative_position_id = NYO_focus_death_trooper_event
-		x = 1
+		relative_position_id = NYO_focus_wulf_inspiration
+		x = 0
 		y = 1
 		cost = 10
 		

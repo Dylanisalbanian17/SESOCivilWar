@@ -28,6 +28,125 @@ characters={
 			expire = "1965.1.1.1"
 			id=-1
 		}
+
+		country_leader = {
+			ideology=communism
+			traits = { unemployed dislikes_nje }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		field_marshal={
+			traits={ offensive_doctrine fast_planner }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	PEN_gurekie={
+		name="Gurekie"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PEN/pickle.dds"
+			}
+		}
+
+		corps_commander={
+			traits={ defensive_doctrine armor_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=5
+			legacy_id=-1
+		}
+
+		advisor={
+			slot = navy_chief
+			idea_token = PEN_gurekie
+			allowed = {
+				original_tag = PEN
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	PEN_jakt={
+		name="Jakt"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PEN/pickle.dds"
+			}
+		}
+
+		corps_commander={
+			traits={ trait_reckless politically_connected }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+
+		advisor={
+			slot = army_chief
+			idea_token = PEN_jakt
+			allowed = {
+				original_tag = PEN
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	PEN_max={
+		name="Max"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PEN/pickle.dds"
+			}
+		}
+
+		corps_commander={
+			traits={ trait_reckless fast_planner cavalry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+
+		advisor={
+			slot = air_chief
+			idea_token = PEN_max
+			allowed = {
+				original_tag = PEN
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
 
 }

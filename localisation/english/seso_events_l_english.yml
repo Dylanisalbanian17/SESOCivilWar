@@ -301,3 +301,22 @@ new_york.1.c: "ANYTHING FOR COMMANDER CRIMSON"
 
 # Wyoming | Poland 
 wyoming.1.t: "Virginia asks for our help."
+
+# Massachusets
+massachusets.1.t: "Sagbag Demands the Hangar Bay"
+massachusets.1.d: "Sagbag, under support from Commander Crimson, dares ask for exclusive ownership of the hangar bay. First it was our transport spacecraft and now it is the whole hangar bay. This would lose us Wooster, where our main airport is.\n\nShould we let them gave the hangar bay or risk a war against the TKs?"
+massachusets.1.a: "Concede Hangar Bay"
+massachusets.1.b: "Deny Concession to Hangar Bay"
+massachusets.2.t: "Star Fighter Corps Fly Transports"
+massachusets.2.d: "The Star Fighter Corps has long flown starfighters alongside, but independently, other branches of the Empire. Now there is a chance to expand the Corps' extent and fly transport spacecraft.\n\nShould we fly for the Navy personnel or the Army infantry?"
+massachusets.2.a: "Support Army"
+massachusets.2.b: "Support Navy"
+massachusets.3.t: "Visit Albany, New York"
+massachusets.3.d: "Fletch wants to travel and splurge around in Albany, New York. Hopefully nothing awful will happen."
+massachusets.3.a: "Go to Albany, New York"
+massachusets.4.t: "Fletch mugged in Albany, New York!"
+massachusets.4.d: "During a dark night in the streets of Albany, Fletch was greeted by two ne'er-do-wells demanding his money. They took his wallet and phone. Yet, their hands slipped and the phone fell into the gutter. They ran with the wallet, ransacking it for cash but found none. Only his credit cards. They tried to access it in an ATM but found no success. They dropped it and ran, never to be found again."
+massachusets.4.a: "Awful"
+massachusets.5.t: "Fletch has fun in Albany, New York"
+massachusets.5.d: "Albany was not half bad"
+massachusets.5.a: "Good"

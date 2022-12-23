@@ -27,6 +27,11 @@ add_equipment_to_stockpile = { type = train_equipment amount = 100 }
 
 recruit_character= PEN_pickle
 
+recruit_character= PEN_gurekie
+
+recruit_character= PEN_jakt
+
+recruit_character= PEN_max
 set_politics = {
 	ruling_party = democratic
 	last_election = "2.1.1"

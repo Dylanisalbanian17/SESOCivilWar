@@ -25,7 +25,6 @@ news_event = {
 
 	major = yes
 	is_triggered_only = yes
-	fire_for_sender = no
 
 	option = {
 		name = news.2.a

@@ -157,6 +157,15 @@ idea_icd_character: "ICD Character Crim"
 idea_icd_character_desc: "Crimson owns a character in the ICD Battalion named Crim"
 # MAR Ideas
 idea_loved_by_crimson: "Loved by Crimson"
+# MAS Ideas
+idea_army_star_fighters: "Star Fighter Corps Supports Army"
+idea_army_star_fighters_desc: "The Star Fighter Corps have agreed to support the army. They fly their transport spacecraft and gunships."
+idea_navy_star_fighters: "Star Fighter Corps Supports Navy"
+idea_navy_star_fighters_desc: "The Star Fighter Corps have agreed to support the army. They fly their transport spacecraft and gunships."
+idea_college_education: "College Education"
+idea_college_education_desc: "The leader of this country has a college education."
+idea_airsoft_junkie: "Airsoft Junkie"
+idea_airsoft_junkie_desc: "The leader of this country is a airsoft junkie."
 ## Generic Manufacturers
 # Tank
 seso_warthunder_manufacturer: "Warthunder"
