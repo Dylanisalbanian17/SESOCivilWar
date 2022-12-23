@@ -90,4 +90,19 @@ leader_traits = {
 		production_factory_efficiency_gain_factor = -0.25
 		production_factory_max_efficiency_factor = -0.25
 	}
+
+	operations_host = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gamemaster = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

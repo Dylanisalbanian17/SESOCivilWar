@@ -124,7 +124,7 @@ focus = {
 		}
 		completion_reward = {
 			NJE = {
-				country_event = virginia.30
+				days = 1 country_event = virginia.30
 			}
 		}
 	}
@@ -144,7 +144,7 @@ focus = {
 		}
 		completion_reward = {
 			WYO = {
-				country_event = virginia.27
+				days = 1 country_event = virginia.27
 			}
 	}
 }
@@ -162,12 +162,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		completion_reward = {
 			custom_effect_tooltip = via_polish_legion_tt
 			hidden_effect = {
 				load_oob = VIA_polish
 			}
-		}
 }
 }
 
@@ -262,10 +260,20 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		add_opinion_modifier = {
-			target = NJE
+		random_core_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		NJE = { add_opinion_modifier = {
+			target = VIA
 			modifier = military_industrial_complex
 		}
+	}
+		
 }
 }
 
@@ -393,10 +401,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-			add_tech_bonus = {
-				category = ss_tech
-				uses = 1
-				bonus = 1
+	add_doctrine_cost_reduction = {
+		name = GER_trade_interdiction
+		cost_reduction = 0.5
+		uses = 2
+		category = trade_interdiction_tree
 	}
 }
 }
@@ -417,6 +426,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			category = ss_tech
+			uses = 1
+			bonus = 1
+}
 }
 }
 
@@ -485,6 +499,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
 
 	army_experience = 25
 ### reduces national spirit debuff
@@ -631,13 +651,14 @@ focus = {
 			target = MAS
 			modifier = ready_or_not
 		}
+
 		hidden_effect = {
 			MAS = { add_ideas = ready_or_not_larp
-				add_opinion_modifier = {
+			add_opinion_modifier = {
 				target = VIA
 				modifier = ready_or_not
-				} }
-		}
+			 } }
+						}
 }
 }
 
@@ -654,6 +675,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		### gives access to roman general >>> agrippa?
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
 
 }
 }
@@ -692,15 +719,13 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		completion_reward = {
-			add_tech_bonus = {
-				category = para_tech
-				uses = 1
-				bonus = 1
+		add_tech_bonus = {
+			category = para_tech
+			uses = 1
+			bonus = 1
+		}
 	}
-	}	
-}
-}
+	}
 
 focus = {
 	id = via_soviet_marines
@@ -715,6 +740,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			category = marine_tech
+			uses = 1
+			bonus = 1
+		}
 }
 }
 
@@ -741,6 +771,7 @@ focus = {
 	x = 1
 	y = 1
 	cost = 5
+	available = { has_country_flag = via_choose_gmod_flag }
 	prerequisite = { focus = via_soviet_marines }
 	available_if_capitulated = yes
 	search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -748,7 +779,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-
+		### event on what to do with the oogas
+		hours = 6 country_event = virginia.37
 }
 }
 
@@ -820,7 +852,7 @@ focus = {
 	}
 	completion_reward = {
 		### get event about ojax suggesting three different country branches. (Germany, Soviets, etc)
-		country_event = virginia.35
+		hours = 6 country_event = virginia.35
 }
 }
 
@@ -848,6 +880,7 @@ focus = {
 	x = 0
 	y = 1
 	cost = 5
+	available = { has_completed_focus = via_create_youtube_channel }
 	relative_position_id = via_joined_seso
 	available_if_capitulated = yes
 	prerequisite = { focus = via_joined_seso }
@@ -856,6 +889,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_ideas = ryd_youtube_channel
 }
 }
 
@@ -873,6 +907,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		swap_ideas= {
+			remove_idea = ryd_youtube_channel
+		   add_idea = ryd_youtube_channel2
+		   }
 }
 }
 
@@ -890,6 +928,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		swap_ideas= {
+			remove_idea = ryd_youtube_channel2
+		   add_idea = ryd_youtube_channel3
+		   }
 }
 }
 
@@ -907,6 +949,23 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		random_owned_state  = { 
+			add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+		} 
+		add_opinion_modifier = {
+			target = FLO
+			modifier = opinion_clip_sharing
+		}
+		add_opinion_modifier = {
+			target = ARS
+			modifier = opinion_clip_sharing
+		}
+		### improve relations with Space, Sharps, etc
 }
 }
 
@@ -925,6 +984,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_stability = -0.05
+		add_threat = 10
 }
 }
 
@@ -943,6 +1008,14 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		swap_ideas= {
+			remove_idea = ryd_youtube_channel3
+		   add_idea = ryd_youtube_channel4
+		   }
+
+		limit = { has_country_leader_with_trait = unemployed
+		 swap_ruler_traits = {remove = unemployed add = employed}
+		}
 }
 }
 
@@ -961,8 +1034,15 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = air_sup_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = air_doctrine
+		}	
 		air_experience = 25
 		add_stability = -0.05
+		
 
 }
 }
@@ -1052,6 +1132,14 @@ focus = {
 				level = 3
 				instant_build = yes
 			}
+		}
+		add_opinion_modifier = {
+			target = PEN
+			modifier = opinion_dcs_server
+		}
+		add_opinion_modifier = {
+			target = MAS
+			modifier = opinion_dcs_server
 		}
 }
 }
@@ -1231,7 +1319,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		country_event = seso_generic.1
+		hours = 6 country_event = seso_generic.1
 	}
 }
 
@@ -1319,6 +1407,7 @@ focus = {
 	x = 1
 	y = 3
 	cost = 5
+	available = { has_country_flag = via_choose_gmod_flag }
 	available_if_capitulated = yes
 	prerequisite = { focus = via_repealing_larp }
 	relative_position_id = via_political_tree_ryder
@@ -1330,6 +1419,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_trait = {
+			character = VIA_ryder
+			ideology = fascism
+			trait = gamemaster
+	   }
 }
 }
 
@@ -1339,6 +1433,7 @@ focus = {
 	x = -1
 	y = 3
 	cost = 5
+	available = { has_country_flag = via_choose_seso_flag }
 	relative_position_id = via_political_tree_ryder
 	mutually_exclusive = {
 		focus = via_gamemaster
@@ -1350,6 +1445,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_trait = {
+			character = VIA_ryder
+			ideology = fascism
+			trait = operations_host
+	   }
 }
 }
 
@@ -1404,7 +1504,21 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			category = electronics
+			uses = 2
+			bonus = 0.5
+}
 		###like the eye, other things i made with mace, etc
+		add_opinion_modifier = {
+			target = CAL
+			modifier = opinion_mace_ryder_mc
+		}
+
+		CAL = { add_opinion_modifier = {
+			target = VIA
+			modifier = opinion_mace_ryder_mc
+		} }
 }
 }
 ###gives war support or something
@@ -1421,6 +1535,16 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		custom_effect_tooltip = VIA_tarkov_grub_tt
+		hidden_effect = {
+		unlock_decision_tooltip = VIA_go_to_factory
+		unlock_decision_tooltip = VIA_go_to_reserve
+		unlock_decision_tooltip = VIA_go_to_customs
+		unlock_decision_tooltip = VIA_go_to_labs
+		unlock_decision_tooltip = VIA_go_to_interchange
+		unlock_decision_tooltip = VIA_go_to_shoreline
+		unlock_decision_tooltip = VIA_go_to_lighthouse
+		}
 }
 }
 
@@ -1455,7 +1579,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		### gives event or something where i random event or decisions to find that russian ship i found in SE or something else etc (maybe damage ships in an encounter with fleet???)
+		### electronics gives event or something where i random event or decisions to find that russian ship i found in SE or something else etc (maybe damage ships in an encounter with fleet???)
+		add_tech_bonus = {
+			category = electronics
+			uses = 1
+			bonus = 1
+}
 }
 }
 
@@ -1472,6 +1601,21 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			category = excavation_tech
+			uses = 1
+			bonus = 1
+		}
+		286 = {
+			add_resource = {
+			type = tungsten
+			amount = 12
+		} 
+		add_resource = {
+			type = steel
+			amount = 6
+		} 
+		}
 }
 }
 
@@ -1525,6 +1669,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		swap_ruler_traits = {remove = unemployed add = employed}
 }
 }
 
@@ -1638,6 +1783,7 @@ focus = {
 	y = 0
 	cost = 5
 	available_if_capitulated = yes
+	available = { has_trait = employed }
 	relative_position_id = via_pressure_dc
 	prerequisite = { focus = via_open_foreign_policy }
 
@@ -1652,12 +1798,12 @@ focus = {
 focus = {
 	id = via_cape_may_vacation
 	icon = GFX_focus_ITA_southern_industry
-	x = 2
+	x = -1
 	y = 1
 	cost = 5
 	available_if_capitulated = yes
-	relative_position_id = via_pressure_dc
-	prerequisite = { focus = via_euro_trip }
+	relative_position_id = via_the_snobbiest_brit_i_know
+	prerequisite = { focus = via_the_snobbiest_brit_i_know }
 	mutually_exclusive = { focus = via_liberate_the_cape }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
@@ -1670,19 +1816,21 @@ focus = {
 focus = {
 	id = via_liberate_the_cape
 	icon = GFX_focus_ITA_southern_industry
-	x = 4
+	x = 1
 	y = 1
 	cost = 5
 	available_if_capitulated = yes
+	available = { has_global_flag = cape_may_lockdown }
 	mutually_exclusive = { focus = via_cape_may_vacation }
-	relative_position_id = via_pressure_dc
-	prerequisite = { focus = via_euro_trip }
+	relative_position_id = via_the_snobbiest_brit_i_know
+	prerequisite = { focus = via_the_snobbiest_brit_i_know }
 
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
+		create_wargoal = { type = puppet_wargoal_focus target = NJE }
 }
 }
 ###have an optional move capital event | requires certain number of manpower like German focus tree
@@ -1718,7 +1866,7 @@ focus = {
 	}
 	completion_reward = {
 		army_experience = 10
-		country_event = virginia.33 
+		hours = 6 country_event = virginia.33 
 			if = {
 				limit = {
 					country_exists = WVI
@@ -1792,6 +1940,13 @@ focus = {
 	completion_reward = {
 		###give decisions about pressuring kujo and attacking
 		create_wargoal = { type = annex_everything target = MAR }
+		hidden_effect = {
+		247 = { add_claim_by = VIA }
+		246 = { add_claim_by = VIA }
+		244 = { add_claim_by = VIA }
+		245 = { add_claim_by = VIA }
+		248 = { add_claim_by = VIA }
+		}
 }
 }
 

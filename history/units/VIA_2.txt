@@ -119,6 +119,84 @@ division_template = {
 	}
 }
 
+create_equipment_variant = {
+	name = "Leichttraktor"
+	type = light_tank_chassis_0
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_small_cannon
+		turret_type_slot = tank_light_two_man_tank_turret
+		suspension_type_slot = tank_christie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 2
+		tank_nsb_armor_upgrade = 2
+	}
+	obsolete = yes
+	icon = "GFX_gwtank_medium"
+}
+create_equipment_variant = {
+	name = "Panzer I Ausf. A"
+	type = light_tank_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_heavy_machine_gun
+		turret_type_slot = tank_light_one_man_tank_turret
+		suspension_type_slot = tank_christie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 5
+		tank_nsb_armor_upgrade = 1
+	}
+	icon = "GFX_GER_basic_light_tank_medium"
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Panzer II Ausf. a"
+	type = light_tank_chassis_2
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_auto_cannon
+		turret_type_slot = tank_light_two_man_tank_turret
+		suspension_type_slot = tank_christie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 3
+		tank_nsb_armor_upgrade = 2
+	}
+	icon = "GFX_GER_improved_light_tank_medium"
+}
+create_equipment_variant = {
+	name = "Neubaufahrzeug"
+	type = heavy_tank_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_close_support_gun
+		turret_type_slot = tank_heavy_three_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = secondary_turret_hmg
+		special_type_slot_3 = secondary_turret_hmg
+		special_type_slot_4 = secondary_turret_hmg
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 6
+		tank_nsb_armor_upgrade = 2
+	}
+	icon = "GFX_GER_basic_heavy_tank_medium"
+}
+
 units = {
 
 ##### Oberkommando des Heeres #####
@@ -422,6 +500,47 @@ division= {
 	start_equipment_factor = 0.9
 }
 
+create_equipment_variant = {
+	name = "Prevention Class"
+	type = heavy_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 1
+		ship_gun_upgrade = 2
+	}
+}
+
+create_equipment_variant = {
+	name = "Terror Class"
+	type = light_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 2
+		ship_gun_upgrade = 2
+		ship_anti_air_upgrade = 2
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Richmond Class"
+	type = ship_hull_light_2
+	name_group = GER_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+}
+
 fleet = {
 	name = "Kriegsmarine"			
 	naval_base = 8650  # Wilhemshaven
@@ -429,7 +548,7 @@ fleet = {
 		name = "Hochseeflotte"
 		location = 8650  # Wilhemshaven
 		ship = { name = "Deutschland" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = VIA version_name = "Prevention Class" } } }			
-		ship = { name = "Leipzig" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = VIA version_name = "The Terror Class" } } }		
+		ship = { name = "Leipzig" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = VIA version_name = "Terror Class" } } }		
 		# 1. Torpedobootflottille
 		ship = { name = "Jaguar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VIA version_name = "Richmond Class" } } }
 		ship = { name = "Leopard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VIA version_name = "Richmond Class" } } }

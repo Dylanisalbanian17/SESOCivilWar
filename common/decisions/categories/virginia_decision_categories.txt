@@ -1,0 +1,10 @@
+VIA_tarkov_grub = {
+	priority = 5
+	icon = GFX_decision_category_military_operation
+	allowed = {
+		original_tag = VIA
+	}
+	visible = {
+		has_completed_focus = via_tarkov_grub_knowledge
+	}
+}

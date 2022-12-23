@@ -14,7 +14,7 @@ foreign_politics = {
 
 		cost = 0
 
-		fire_only_once = yes
+		fire_only_once = no
 
 		visible = {
 			#has_completed_focus = cot_focus_hegemony
@@ -24,6 +24,179 @@ foreign_politics = {
 			news_event = {
 				id = news.5
 				days = 30
+			}
+		}
+	}
+}
+
+VIA_tarkov_grub = {
+	VIA_go_to_factory = {
+		icon = decision_generic_factory
+
+		cost = 50
+		days_remove = 365
+		allowed = {
+			tag = VIA
+		}
+
+		available = {
+			has_completed_focus = via_tarkov_grub_knowledge
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_completed_focus = via_tarkov_grub_knowledge
+		}
+
+		complete_effect = {
+			random_list = {
+				65.9 = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 2500
+						producer = VIA
+					}
+				}
+				34.1 = {
+					add_manpower = -1
+				}
+			}
+		}
+	}
+	VIA_go_to_reserve = {
+		icon = decision_generic_merge_plant_tank
+
+		cost = 50
+		days_remove = 365
+		allowed = {
+			tag = VIA
+		}
+
+		available = {
+			has_completed_focus = via_tarkov_grub_knowledge
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_completed_focus = via_tarkov_grub_knowledge
+		}
+
+		complete_effect = {
+			random_list = {
+				65.9 = {
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 750
+						producer = VIA
+					}
+				}
+				34.1 = {
+					add_manpower = -1
+				}
+			}
+		}
+	}
+	VIA_go_to_customs = {
+		icon = decision_generic_merge_plant_ship
+
+		cost = 50
+		days_remove = 365
+		allowed = {
+			tag = VIA
+		}
+
+		available = {
+			has_completed_focus = via_tarkov_grub_knowledge
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_completed_focus = via_tarkov_grub_knowledge
+		}
+
+		complete_effect = {
+			random_list = {
+				65.9 = {
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 750
+						producer = VIA
+					}
+				}
+				34.1 = {
+					add_manpower = -1
+				}
+			}
+		}
+	}
+	VIA_go_to_labs = {
+		icon = decision_generic_research
+
+		cost = 50
+		days_remove = 365
+		allowed = {
+			tag = VIA
+		}
+
+		available = {
+			has_completed_focus = via_tarkov_grub_knowledge
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_completed_focus = via_tarkov_grub_knowledge
+		}
+
+		complete_effect = {
+			random_list = {
+				65.9 = {
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 250
+						producer = VIA
+					}
+				}
+				34.1 = {
+					add_manpower = -1
+				}
+			}
+		}
+	}
+	VIA_go_to_interchange = {
+		icon = decision_generic_wreckers
+
+		cost = 50
+		days_remove = 365
+		allowed = {
+			tag = VIA
+		}
+
+		available = {
+			has_completed_focus = via_tarkov_grub_knowledge
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_completed_focus = via_tarkov_grub_knowledge
+		}
+
+		complete_effect = {
+			random_list = {
+				65.9 = {
+					add_equipment_to_stockpile = {
+						type = motorized_equipment
+						amount = 750
+						producer = VIA
+					}
+				}
+				34.1 = {
+					add_manpower = -1
+				}
 			}
 		}
 	}

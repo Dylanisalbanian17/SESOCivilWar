@@ -59,4 +59,20 @@ opinion_modifiers = {
 		value = -10
 		years = 6
 	}
+
+	opinion_mace_ryder_mc = {
+		value = 10
+		years = 6
+	}
+
+	opinion_dcs_server = {
+		value = 10
+		years = 6
+	}
+
+	opinion_clip_sharing = {
+		value = 10
+		years = 6
+	}
+
 }
