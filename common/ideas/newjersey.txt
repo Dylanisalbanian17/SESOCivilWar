@@ -144,7 +144,7 @@ ideas = {
 			picture = GFX_idea_vittoria_mutilata
 
 			modifier = {
-				consumer_goods_factor = -0.2
+				consumer_goods_factor = -0.05
 			}
 		}
 	}

@@ -16,8 +16,8 @@ focus_tree = {
 		y = 0
 		cost = 10
 		completion_reward = {
-			army_experience = 50
-			every_core_state = {
+			army_experience = 50 
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -176,17 +176,17 @@ focus_tree = {
 			237 = {
 				add_building_construction = {
 					type = dockyard
-					level = 5
+					level = 4
 					instant_build = yes
 				}
 
 				add_building_construction = {
 					type = naval_base
-					level = 5
+					level = 3
 					instant_build = yes
 					province = 7884
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 			}
 		}
 	}
@@ -228,10 +228,10 @@ focus_tree = {
 			random_core_state = {
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 3
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 			}
 		}
 	}
@@ -248,25 +248,25 @@ focus_tree = {
 			random_core_state = {
 				add_resource = {
 					type = steel
-					amount = 30
+					amount = 25
 				}
 			}
 			random_core_state = {
 				add_resource = {
 					type = steel
-					amount = 30
+					amount = 15
 				}
 			}
 			random_core_state = {
 				add_resource = {
-					type = steel
-					amount = 30
+					type = tungsten
+					amount = 5
 				}
 			}
 			random_core_state = {
 				add_resource = {
-					type = steel
-					amount = 30
+					type = aluminum
+					amount = 5
 				}
 			}
 		}
