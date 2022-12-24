@@ -13,9 +13,8 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }  
@@ -32,9 +31,9 @@ division_template = {
 units = {
 	division= {	
 		name = "Legion of Death"
-		location = 9224
+		location = 4239
 		division_template = "Polish Legion"
-		start_experience_factor = 0.5
+		start_experience_factor = 1
 		start_equipment_factor = 1
 
 	}

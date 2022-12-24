@@ -210,6 +210,7 @@ via_create_youtube_channel_desc:0 ""
 1_VIA_tt_seso:0 "Gives access to S.E.S.O. related effects, decisions, and focuses.\n"
 1_VIA_tt_gmod:0 "Gives access to GGN/Gmod related effects, decisions, and focuses.\n"
 via_polish_legion_tt:0 "Creates with Boomblers blessing the Polish division, the Legion of Death."
+VIA_tarkov_grub_tt:0 "Creates Tarkov Grub decisions for scavenging equipment."
 
 ### IDEAS
 via_rebuild_the_nation:0 "Rebuild the Nation"

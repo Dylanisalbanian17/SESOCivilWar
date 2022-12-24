@@ -640,7 +640,7 @@ country_event = {
 		add_war_support = 0.1
 		add_stability = 0.05
 		hidden_effect = {
-			news_event = { hours = 6 id = news.36 }
+			news_event = { hours = 6 id = news.950 }
 		}
 	}
 }
@@ -761,6 +761,70 @@ country_event = {
 	option = {    
 		name = virginia.36.b
 		complete_national_focus = via_gmod_ggn
+	}
+
+}
+
+country_event = {
+	id = virginia.37
+	title = virginia.37.t
+	desc = virginia.37.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	### absorb the oogas >>> add national spirit
+	option = {    
+		name = virginia.37.a
+		add_stability = -0.10
+	
+	}
+	### abolish ooga >>> adds ooga strikes and instability or something
+	option = {    
+		name = virginia.37.b
+	
+	}
+
+	### send the oogas northwards
+	option = {    
+		name = virginia.37.c
+
+	}
+
+}
+
+country_event = {
+	id = virginia.38
+	title = virginia.38.t
+	desc = virginia.38.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	### fletch
+	option = {    
+		name = virginia.38.a
+	
+	}
+}
+
+country_event = {
+	id = virginia.39
+	title = virginia.39.t
+	desc = virginia.39.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	### evening star
+	option = {    
+		name = virginia.39.a
+	}
+	### messer
+	option = {    
+		name = virginia.39.b
+	}
+
+	### long sword
+	option = {    
+		name = virginia.39.c
 	}
 
 }

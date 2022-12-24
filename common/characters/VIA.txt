@@ -15,31 +15,403 @@ characters={
 		}
 	}
 
-	VIA_otto_jung = {
-		name="Otto Jung"
-		portraits={
-			army={
-				small= "GFX_idea_ludwig_beck"
+	VIA_ada = {
+		name = "Ada"
+		gender = female
+		portraits = {
+			civilian = {
+				small = gfx/interface/advisors/advisor_ada.dds
 			}
 		}
-		advisor={
-			slot = army_chief
-			idea_token = otto
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ada
+			traits = { princess_of_terror }
 			allowed = {
 				original_tag = VIA
 			}
-			available = {
-				has_government= fascism
+			available  = {
+				has_completed_focus = via_shiba_gaming
 			}
+		}
+	}
 
-			traits = { army_chief_organizational_2 }
+	VIA_ulrich = {
+		name = "Ulrich"
+		gender = male
+		portraits = {
+			civilian = {
+				small = gfx/interface/advisors/advisor_ulrich.dds
+			}
+		}
 
-			cost = 100
+		advisor = {
+			slot = political_advisor
+			idea_token = ulrich
+			traits = { popular_figurehead }
+			allowed = {
+				original_tag = VIA
+			}
+			available  = {
+				has_completed_focus = via_shiba_gaming
+			}
+		}
+	}
+
+	VIA_obrecht = {
+		name = "Obrecht"
+		gender = male
+		portraits = {
+			civilian = {
+				small = gfx/interface/advisors/advisor_obrecht.dds
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = obrecht
+			traits = { captain_of_industry }
+			allowed = {
+				original_tag = VIA
+			}
+			available  = {
+				has_completed_focus = via_shiba_gaming
+			}
+		}
+	}
+
+	VIA_otto = {
+		name = "Otto"
+		portraits = {
+			civilian = {
+				small = gfx/interface/advisors/army_chief_otto.dds
+				#large
+			}
+			army = {
+				#small
+				#large
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = otto
+			traits = {
+				army_chief_offensive_1
+			}
+			available = {
+				has_completed_focus = via_shiba_gaming
+			}
+		}
+	}
+
+	VIA_agrippa = {
+		name = "Agrippa"
+		portraits = {
+			army = {
+				#small
+				#large
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = agrippa
+			traits = {
+				army_chief_organizational_2
+			}
+			available = {
+				has_completed_focus = via_total_war_rome
+			}
+		}
+	}
+
+	VIA_ridgeback = {
+		name="Ridgeback"
+		portraits={
+			army={
+				# large
+				# small
+			}
+		}
+		advisor={
+			slot = high_command 
+			idea_token = ridgeback
+			allowed = {
+				original_tag = VIA
+			}
+			traits = {
+				army_concealment_1
+			}
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
-
+		corps_commander={
+			traits={ } ###brilliant_strategist infantry_officer
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4	
+			logistics_skill = 3
+			legacy_id= 22
+		}
+		available = {
+			original_tag = VIA
+		}
 	}
 
+	VIA_hercules = {
+		name="Hercules"
+		portraits={
+			army={
+				# large
+				# small
+			}
+		}
+		advisor={
+			slot = high_command 
+			idea_token = hercules
+			allowed = {
+				original_tag = VIA
+			}
+			traits = {
+				army_concealment_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ } ###brilliant_strategist infantry_officer
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4	
+			logistics_skill = 3
+			legacy_id= 22
+		}
+		available = {
+			original_tag = VIA
+		}
+	}
+
+	VIA_hercules = {
+		name="Hercules"
+		portraits={
+			army={
+				# large
+				# small
+			}
+		}
+		advisor={
+			slot = high_command 
+			idea_token = hercules
+			allowed = {
+				original_tag = VIA
+			}
+			traits = {
+				army_concealment_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ } ###brilliant_strategist infantry_officer
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4	
+			logistics_skill = 3
+			legacy_id= 22
+		}
+		available = {
+			original_tag = VIA
+		}
+	}
+
+	VIA_gambit = {
+		name="Gambit"
+		portraits={
+			civilian = {
+				small = gfx/interface/advisors/advisor_gambit.dds
+			}
+			army={
+				# large
+				# small
+			}
+		}
+		advisor={
+			slot = political_advisor 
+			idea_token = gambit
+			allowed = {
+				original_tag = VIA
+			}
+			traits = {
+				war_industrialist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		available = {
+			original_tag = VIA
+		}
+	}
+
+	VIA_holloway = {
+		name="Holloway"
+		portraits={
+			army={
+				# large
+				# small
+			}
+		}
+		advisor={
+			slot = high_command 
+			idea_token = holloway
+			allowed = {
+				original_tag = VIA
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		available = {
+			original_tag = VIA
+		}
+	}
+
+	### NAVY
+	VIA_silver = {
+		name = "Silver"
+		portraits = {
+			navy = {
+				# large
+				# small
+			}
+		}
+		navy_leader = {
+			traits = {}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill= 2
+			coordination_skill= 2
+			legacy_id=-1
+		}
+
+		advisor={
+			slot = navy_chief
+			idea_token = silver
+			allowed = {
+				original_tag = VIA
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+	}
+	
+	VIA_derek = {
+		name = "Derek"
+		portraits = {
+			navy = {
+				# large
+				# small
+			}
+		}
+		navy_leader = {
+			traits = {}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill= 2
+			coordination_skill= 2
+			legacy_id=-1
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = derek
+			allowed = {
+				original_tag = VIA
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+	}
+
+	VIA_brian = {
+		name = "Brian"
+		portraits = {
+			navy = {
+				# large
+				# small
+			}
+		}
+		navy_leader = {
+			traits = {}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill= 2
+			coordination_skill= 2
+			legacy_id=-1
+		}
+	}
+
+	VIA_sparks = {
+		name = "Sparks"
+		portraits = {
+			navy = {
+				# large
+				# small
+			}
+		}
+		navy_leader = {
+			traits = {}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill= 2
+			coordination_skill= 2
+			legacy_id=64
+		}
+	}
+
+	VIA_clucky = {
+		name = "Clucky"
+		portraits = {
+			navy = {
+				# large
+				# small
+			}
+		}
+		navy_leader = {
+			traits = {}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill= 2
+			coordination_skill= 2
+			legacy_id=-1
+		}
+	}
 }

@@ -1,6 +1,6 @@
 add_namespace = massachusets
 
-# Gamba Gaming
+# COT demands Hangar Bay / Wooster
 country_event = {
 	id = massachusets.1
 	title = massachusets.1.t
@@ -24,5 +24,82 @@ country_event = {
 				target = MAS
 			}
 		}
+	}
+}
+
+# Choose to focus on Navy Air Force or Army Air Force
+country_event = {
+	id = massachusets.2
+	title = massachusets.2.t
+	desc = massachusets.2.d
+	#picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		# Focus on Army Air Force
+		name = massachusets.2.a
+		add_ideas = idea_army_star_fighters
+	}
+
+	option = {
+		# Focus on Naval Air Force
+		name = massachusets.2.b
+		add_ideas = idea_navy_star_fighters
+	}
+}
+
+# Visit Albany, New York
+country_event = {
+	id = massachusets.3
+	title = massachusets.3.t
+	desc = massachusets.3.d
+	#picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = massachusets.3.a
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = massachusets.4
+				}
+				50 = {
+					country_event = massachusets.5
+				}
+			}
+		}
+		
+	}
+}
+
+# Mugged in New York
+country_event = {
+	id = massachusets.4
+	title = massachusets.4.t
+	desc = massachusets.4.d
+	#picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = massachusets.4.a
+		add_political_power = -50
+	}
+}
+
+# Had fun in New York
+country_event = {
+	id = massachusets.5
+	title = massachusets.5.t
+	desc = massachusets.5.d
+	#picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = massachusets.5.a
+		add_political_power = 50
 	}
 }

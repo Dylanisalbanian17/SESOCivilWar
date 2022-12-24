@@ -578,6 +578,7 @@ focus_tree = {
 			350 = {
 				set_demilitarized_zone = yes
 			}
+			set_global_flag = cape_may_lockdown
 		}
 	}
 

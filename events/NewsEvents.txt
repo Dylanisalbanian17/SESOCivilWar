@@ -173,3 +173,19 @@ news_event = {
 		
 	}
 }
+
+###Annexed West Virginia
+
+news_event = {
+	id = news.950
+	title = news.950.t
+	desc = news.950.d
+	picture = GFX_news_event_003
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news.950.a
+	
+	}
+}

@@ -523,6 +523,11 @@ spriteTypes = {
 		name = "GFX_idea_ada"
 		texturefile = "gfx/interface/advisors/advisor_ada.dds"	
 	}
+
+	spriteType = {
+		name = "GFX_idea_gambit"
+		texturefile = "gfx/interface/advisors/advisor_gambit.dds"	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_obrecht"

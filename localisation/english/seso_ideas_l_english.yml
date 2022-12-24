@@ -86,6 +86,7 @@ profile_matsoua:0 "Spirit of André Matsoua"
 profile_shikai:0 "Spirit of Yuan Shikai"
 ready_or_not_larp:0 "Ready or Not LARP"
 ready_or_not_larp_desc:0 "Ready Or Not is a game for only the biggest LARPers. So naturally Ryder and Fletch have found the least fun way to play it. The pure tacticoolness has improved their organization, agility, and something idk."
+gambit_motor_werke: "Gambit Motor Werke"
 #NJE ideas
 idea_years_of_soy: "Years of Soy"
 idea_game_lag: "Internet Issues"
@@ -156,6 +157,15 @@ idea_icd_character: "ICD Character Crim"
 idea_icd_character_desc: "Crimson owns a character in the ICD Battalion named Crim"
 # MAR Ideas
 idea_loved_by_crimson: "Loved by Crimson"
+# MAS Ideas
+idea_army_star_fighters: "Star Fighter Corps Supports Army"
+idea_army_star_fighters_desc: "The Star Fighter Corps have agreed to support the army. They fly their transport spacecraft and gunships."
+idea_navy_star_fighters: "Star Fighter Corps Supports Navy"
+idea_navy_star_fighters_desc: "The Star Fighter Corps have agreed to support the army. They fly their transport spacecraft and gunships."
+idea_college_education: "College Education"
+idea_college_education_desc: "The leader of this country has a college education."
+idea_airsoft_junkie: "Airsoft Junkie"
+idea_airsoft_junkie_desc: "The leader of this country is a airsoft junkie."
 ## Generic Manufacturers
 # Tank
 seso_warthunder_manufacturer: "Warthunder"
