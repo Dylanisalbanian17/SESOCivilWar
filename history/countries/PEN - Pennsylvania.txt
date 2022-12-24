@@ -32,6 +32,11 @@ recruit_character= PEN_gurekie
 recruit_character= PEN_jakt
 
 recruit_character= PEN_max
+
+recruit_character= PEN_farid
+
+recruit_character= PEN_kitten
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "2.1.1"
