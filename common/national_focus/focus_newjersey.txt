@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = nje_focus_urn
 		icon = GFX_focus_POL_support_global_falangism
-		cost = 5
+		cost = 10
 		x = 5
 		y = 0
 		completion_reward = {
@@ -140,7 +140,7 @@ focus_tree = {
 	focus = {
 		id = nje_focus_found_arma_unit
 		icon = GFX_goal_generic_national_unity
-		cost = 5
+		cost = 10
 		x = 15
 		y = 2
 		prerequisite = {
@@ -305,7 +305,7 @@ focus_tree = {
 					character = VIA_ryder
 					ruling_only = yes
 				}
-				has_idea = idea_seso_operative
+				has_trait = operations_host
 			}
 		}
 		completion_reward = {
@@ -395,12 +395,12 @@ focus_tree = {
 				set_state_name = "Venice"
 				add_building_construction = {
 					type = dockyard
-					level = 8
+					level = 4
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = naval_base
-					level = 8
+					level = 3
 					instant_build = yes
 				}
 			}

@@ -669,7 +669,6 @@ focus_tree = {
 				add_defense = 1
 				add_planning = 1
 				add_logistics = 1
-				add_country_leader_trait = army_infantry_3
 				add_unit_leader_trait = infantry_expert
 				add_unit_leader_trait = infantry_leader
 			}
@@ -711,7 +710,7 @@ focus_tree = {
 				category = naval_equipment
 			}
 			add_tech_bonus = {
-				bonus = 0.35
+				bonus = 0.50
 				uses = 1
 				category = artillery
 			}
@@ -878,6 +877,7 @@ focus_tree = {
 				add_defense = 1
 				add_planning = 1
 				add_logistics = 1
+				add_country_leader_trait = army_infantry_3
 			}
 
 			random_core_state = {
