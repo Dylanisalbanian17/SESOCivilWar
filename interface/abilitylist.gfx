@@ -515,6 +515,26 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_agrippa"
+		texturefile = "gfx/interface/advisors/advisor_agrippa.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_fordo"
+		texturefile = "gfx/interface/advisors/advisor_fordo.dds"	
+	}
+	
+	spriteType = {
+		name = "GFX_idea_grievous"
+		texturefile = "gfx/interface/advisors/advisor_grievous.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_jacko"
+		texturefile = "gfx/interface/advisors/advisor_jacko.dds"	
+	}
+
+	spriteType = {
 		name = "GFX_idea_ulrich"
 		texturefile = "gfx/interface/advisors/advisor_ulrich.dds"	
 	}

@@ -131,7 +131,7 @@ characters={
 		name = "Agrippa"
 		portraits = {
 			army = {
-				#small
+				small = gfx/interface/advisors/advisor_agrippa.dds
 				#large 
 			}
 		}
@@ -139,10 +139,92 @@ characters={
 			slot = army_chief
 			idea_token = agrippa
 			traits = {
-				army_chief_organizational_2
+				army_chief_organizational_3
 			}
 			available = {
 				has_completed_focus = via_total_war_rome
+			}
+		}
+	}
+
+	VIA_fordo = {
+		name = "Fordo"
+		portraits = {
+			army = {
+				small = gfx/interface/advisors/advisor_fordo.dds
+				#large 
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = fordo
+			traits = {
+				army_infantry_2
+			}
+			available = {
+				original_tag = VIA
+			}
+		}
+	}
+
+	VIA_jacko = {
+		name = "Jacko"
+		gender = female
+		portraits = {
+			army = {
+				small = gfx/interface/advisors/advisor_jacko.dds
+				#large 
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = jacko
+			traits = {
+				army_chief_entrenchment_2
+			}
+			available = {
+				original_tag = VIA
+			}
+		}
+	}
+
+	VIA_grevious = {
+		name = "Grievous"
+		gender = male
+		portraits = {
+			army = {
+				small = gfx/interface/advisors/advisor_grievous.dds
+				#large 
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = grievous
+			traits = {
+				army_chief_morale_2
+			}
+			available = {
+				original_tag = VIA
+			}
+		}
+	}
+
+	VIA_fuze = {
+		name = "Fuze"
+		portraits = {
+			army = {
+				#small
+				#large 
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = fuze
+			traits = {
+				mobile_warfare_expert
+			}
+			available = {
+				has_civil_war = NO
 			}
 		}
 	}
@@ -198,43 +280,7 @@ characters={
 				original_tag = VIA
 			}
 			traits = {
-				army_concealment_1
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		corps_commander={
-			traits={ } ###brilliant_strategist infantry_officer
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 4	
-			logistics_skill = 3
-			legacy_id= 22
-		}
-		available = {
-			original_tag = VIA
-		}
-	}
-
-	VIA_hercules = {
-		name="Hercules"
-		portraits={
-			army={
-				# large
-				# small
-			}
-		}
-		advisor={
-			slot = high_command 
-			idea_token = hercules
-			allowed = {
-				original_tag = VIA
-			}
-			traits = {
-				army_concealment_1
+				army_logistics_2
 			}
 			cost = 150
 			ai_will_do = {

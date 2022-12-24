@@ -35,7 +35,7 @@ ideas = {
 			}
 		}
 
-		wehrmacht_model2 = {
+		wehrmacht_model_2 = {
 			
 			allowed = {
 				tag = VIA

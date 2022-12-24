@@ -31,6 +31,10 @@ recruit_character= VIA_ridgeback
 recruit_character= VIA_clucky
 recruit_character= VIA_obrecht
 recruit_character= VIA_makima
+recruit_character= VIA_fordo
+recruit_character= VIA_jacko
+recruit_character= VIA_fuze
+recruit_character= VIA_grevious
 
 set_politics = {
 	ruling_party = fascism

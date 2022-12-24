@@ -337,11 +337,7 @@ focus = {
 	}
 	completion_reward = {
 		completion_reward = {
-			add_tech_bonus = {
-				category = dd_tech
-				uses = 1
-				bonus = 1
-	}
+			### should be abt national spirit or something that gives naval buffs
 }
 }
 }
@@ -584,7 +580,7 @@ focus = {
 	completion_reward = {
 		swap_ideas= {
 			remove_idea = wehrmacht_model
-		   add_idea = wehrmacht_model2
+		   add_idea = wehrmacht_model_2
 		   }
 		   add_manpower = 100000
 }
