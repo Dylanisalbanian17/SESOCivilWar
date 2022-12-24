@@ -27,6 +27,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.05
+			remove_idea = via_insurrection
 		}
 
 	}
@@ -236,7 +237,7 @@ focus = {
 	icon = GFX_goal_generic_consumer_goods
 	x = 10
 	y = 5
-	cost = 5
+	cost = 10
 	available_if_capitulated = yes
 	prerequisite = { focus = via_gmod_ggn OR = via_choose_seso }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -244,6 +245,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		remove_idea = Mistribution_of_funds
 }
 }
 
@@ -321,36 +323,14 @@ focus = {
 }
 
 focus = {
-	id = via_refit_designs
+	id = via_empire_at_war_something
 	icon = GFX_focus_generic_destroyer
 	x = -1
 	y = 9
 	cost = 5
+	available = { has_completed_focus = via_remember_navy_discord }
 	available_if_capitulated = yes
 	prerequisite = { focus = via_expand_production }
-	search_filters = { FOCUS_FILTER_POLITICAL } 
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		completion_reward = {
-			add_tech_bonus = {
-				category = dd_tech
-				uses = 1
-				bonus = 1
-	}
-}
-}
-}
-
-focus = {
-	id = via_empire_at_war_something
-	icon = GFX_focus_generic_destroyer
-	x = -1
-	y = 10
-	cost = 5
-	available_if_capitulated = yes
-	prerequisite = { focus = via_refit_designs }
 	search_filters = { FOCUS_FILTER_POLITICAL } 
 	ai_will_do = {
 		factor = 1
@@ -382,6 +362,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = GER_trade_interdiction
+			cost_reduction = 0.5
+			uses = 2
+			category = base_strike_main
+		}
 }
 }
 
@@ -447,6 +433,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			category = cv_tech
+			uses = 1
+			bonus = 1
+}
 }
 }
 
@@ -464,23 +455,6 @@ focus = {
 	}
 	completion_reward = {
 		###something about airlocks lol
-}
-}
-
-focus = {
-	id = via_invite_old_naval_staff_back
-	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 0
-	y = 1
-	cost = 5
-	relative_position_id = via_reshuffle_naval_command
-	available_if_capitulated = yes
-	prerequisite = { focus = via_reshuffle_naval_command }
-	search_filters = { FOCUS_FILTER_POLITICAL } 
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
 }
 }
 
@@ -612,6 +586,7 @@ focus = {
 			remove_idea = wehrmacht_model
 		   add_idea = wehrmacht_model2
 		   }
+		   add_manpower = 100000
 }
 }
 
