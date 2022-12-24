@@ -528,10 +528,20 @@ spriteTypes = {
 		name = "GFX_idea_gambit"
 		texturefile = "gfx/interface/advisors/advisor_gambit.dds"	
 	}
+
+	spriteType = {
+		name = "GFX_idea_ridgeback"
+		texturefile = "gfx/interface/advisors/advisor_ridgeback.dds"	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_obrecht"
 		texturefile = "gfx/interface/advisors/advisor_obrecht.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_makima"
+		texturefile = "gfx/interface/advisors/advisor_makima.dds"	
 	}
 
 	spriteType = {

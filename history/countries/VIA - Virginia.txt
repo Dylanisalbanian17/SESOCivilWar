@@ -30,6 +30,7 @@ recruit_character= VIA_holloway
 recruit_character= VIA_ridgeback
 recruit_character= VIA_clucky
 recruit_character= VIA_obrecht
+recruit_character= VIA_makima
 
 set_politics = {
 	ruling_party = fascism

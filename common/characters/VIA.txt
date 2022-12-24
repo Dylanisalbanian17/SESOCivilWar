@@ -27,12 +27,34 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = ada
-			traits = { princess_of_terror }
+			traits = { silent_workhorse }
 			allowed = {
 				original_tag = VIA
 			}
 			available  = {
 				has_completed_focus = via_shiba_gaming
+			}
+		}
+	}
+
+	VIA_makima = {
+		name = "Makima"
+		gender = female
+		portraits = {
+			civilian = {
+				small = gfx/interface/advisors/advisor_makima.dds
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = Makima
+			traits = { princess_of_terror }
+			allowed = {
+				original_tag = VIA
+			}
+			available  = {
+				original_tag = VIA
 			}
 		}
 	}
@@ -110,7 +132,7 @@ characters={
 		portraits = {
 			army = {
 				#small
-				#large
+				#large 
 			}
 		}
 		advisor = {
@@ -130,7 +152,7 @@ characters={
 		portraits={
 			army={
 				# large
-				# small
+				small = gfx/interface/advisors/advisor_ridgeback.dds
 			}
 		}
 		advisor={
