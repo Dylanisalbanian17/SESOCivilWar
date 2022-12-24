@@ -9,9 +9,11 @@ state={
 		owner = PEN
 		add_core_of = PEN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 2
+			dockyard = 1
+			7884 = { naval_base = 3 } #Erie
 			}
 		}
 	resources = {
