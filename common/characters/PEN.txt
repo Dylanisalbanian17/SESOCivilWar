@@ -52,6 +52,8 @@ characters={
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/PEN/gurekie.dds"
+
+				small = "gfx/leaders/PEN/gurekie_small.dds"
 			}
 		}
 
@@ -86,6 +88,8 @@ characters={
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/PEN/jakt.dds"
+
+				small = "gfx/leaders/PEN/jakt_small.dds"
 			}
 		}
 
@@ -120,6 +124,8 @@ characters={
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/PEN/max.dds"
+
+				small = "gfx/leaders/PEN/max_small.dds"
 			}
 		}
 
@@ -153,7 +159,7 @@ characters={
 		name="Kitten"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PEN/pickle.dds"
+				small = "gfx/leaders/PEN/kitten_small.dds"
 			}
 		}
 
@@ -177,7 +183,7 @@ characters={
 		name="Maj. Farid Mohammed"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PEN/pickle.dds"
+				small = "gfx/leaders/PEN/farid_small.dds"
 			}
 		}
 
