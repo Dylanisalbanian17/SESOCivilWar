@@ -30,7 +30,7 @@ characters={
 		}
 
 		country_leader = {
-			ideology=communism
+			ideology=marxism
 			traits = { unemployed dislikes_nje }
 			expire = "1965.1.1.1"
 			id=-1
@@ -51,7 +51,7 @@ characters={
 		name="Gurekie"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PEN/pickle.dds"
+				large = "gfx/leaders/PEN/gurekie.dds"
 			}
 		}
 
@@ -85,7 +85,7 @@ characters={
 		name="Jakt"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PEN/pickle.dds"
+				large = "gfx/leaders/PEN/jakt.dds"
 			}
 		}
 
@@ -119,7 +119,7 @@ characters={
 		name="Max"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PEN/pickle.dds"
+				large = "gfx/leaders/PEN/max.dds"
 			}
 		}
 
@@ -143,6 +143,102 @@ characters={
 				air_chief_ground_support_2
 			}
 			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	PEN_kitten={
+		name="Kitten"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PEN/pickle.dds"
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = PEN_kitten
+			allowed = {
+				original_tag = PEN
+			}
+			traits = {
+				national_integralist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	PEN_farid={
+		name="Maj. Farid Mohammed"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PEN/pickle.dds"
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = PEN_farid
+			allowed = {
+				original_tag = PEN
+			}
+			traits = {
+				army_concealment_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	PEN_fetterman={
+		name="John Fetterman"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PEN/pickle.dds"
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = PEN_fetterman
+			allowed = {
+				original_tag = PEN
+			}
+			traits = {
+				popular_figurehead
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	PEN_oz={
+		name="Dr. Oz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PEN/pickle.dds"
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = PEN_oz
+			allowed = {
+				original_tag = PEN
+			}
+			traits = {
+				fascist_demagogue
+			}
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
