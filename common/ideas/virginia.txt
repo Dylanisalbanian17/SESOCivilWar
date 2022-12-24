@@ -14,7 +14,7 @@ ideas = {
 				if = {
 					has_government = fascism
 				}
-	
+
 			}
 			
 			removal_cost = -1
@@ -27,7 +27,7 @@ ideas = {
 
 				minimum_training_level = 0.25
 					
-                training_time_factor = 0.3
+				training_time_factor = 0.3
 				
 				army_org_factor = 0.05
 
@@ -49,7 +49,7 @@ ideas = {
 				if = {
 					has_government = fascism
 				}
-	
+
 			}
 			
 			removal_cost = -1
@@ -62,7 +62,7 @@ ideas = {
 
 				minimum_training_level = 0.15
 					
-                training_time_factor = 0.5
+				training_time_factor = 0.5
 				
 				army_org_factor = 0.05
 
@@ -84,7 +84,7 @@ ideas = {
 				if = {
 					has_government = fascism
 				}
-	
+
 			}
 			
 			removal_cost = -1
@@ -110,7 +110,7 @@ ideas = {
 				if = {
 					has_government = fascism
 				}
-	
+
 			}
 			
 			removal_cost = -1
@@ -139,7 +139,7 @@ ideas = {
 				if = {
 					has_government = fascism
 				}
-	
+
 			}
 
 			removal_cost = -1
@@ -152,359 +152,15 @@ ideas = {
 
 			}
 		}
+		
+	workers_strikes = {
 			
-		workers_strikes = {
-				
-				allowed = {
-					tag = VIA
-				}
-	
-				allowed_civil_war = { 
-					always = yes
-				}
-
-				available = {
-					if = {
-						has_government= fascism
-					}
-		
-				}
-				
-				removal_cost = -1
-	
-				picture = FRA_factory_strikes.dds
-				
-				modifier = {
-	
-				consumer_goods_factor = 0.25
-				industrial_capacity_factory = -0.25
-				stability_factor = -0.1
-				}
+			allowed = {
+				tag = VIA
 			}
 
-			via_12_gb_reconstruction = {
-				
-				allowed = {
-					tag = VIA
-				}
-	
-				allowed_civil_war = { 
-					always = yes
-				}
-
-				available = {
-					if = {
-						has_government= fascism
-					}
-		
-				}
-				
-				removal_cost = -1
-	
-				picture = idea_chi_war_of_resistance.dds
-				
-				modifier = {
-					consumer_goods_factor = 0.05
-
-				}
-			}
-
-			via_insurrection = {
-				
-				allowed = {
-					tag = VIA
-				}
-	
-				allowed_civil_war = { 
-					always = yes
-				}
-
-				available = {
-					if = {
-						has_government= fascism
-					}
-		
-				}
-				
-				removal_cost = -1
-	
-				picture = idea_chi_war_of_resistance.dds
-				
-				modifier = {
-	
-					war_support_factor = -0.1
-					recruitable_population = -0.05
-					stability_factor = -0.1
-				}
-			}
-			via_nazpeoplesarmy = {	
-	
-				picture = idea_generic_communist_army.dds
-	
-				allowed = {
-					original_tag =  VIA
-					NOT = { has_government = fascism }
-				}
-	
-				allowed_civil_war = {
-					always = yes
-				}
-	
-				modifier = {
-					war_support_weekly = 0.05
-					recruitable_population = 0.05
-					land_reinforce_rate = 0.03
-					surrender_limit = 0.5
-				}
-			}
-
-			via_inexperiencedofficercorps = {	
-	
-				picture = idea_chi_incompetent_officers.dds
-	
-				allowed = {
-					original_tag =  VIA
-					NOT = { has_government = fascism }
-				}
-	
-				allowed_civil_war = {
-					always = yes
-				}
-	
-				modifier = {
-				army_org_factor = -0.1
-				army_attack_factor = -0.05
-				army_defence_factor =  -0.05
-				}
-			}
-
-			### youtube channel
-			ryd_youtube_channel = {	
-	
-				picture = idea_chi_incompetent_officers.dds
-	
-				allowed = {
-					original_tag =  VIA
-					NOT = { has_government = fascism }
-				}
-	
-				allowed_civil_war = {
-					always = yes
-				}
-	
-				modifier = {
-				war_support_factor = 0.05
-				}
-			}
-
-			ryd_youtube_channel2 = {	
-	
-				picture = idea_chi_incompetent_officers.dds
-	
-				allowed = {
-					original_tag =  VIA
-					NOT = { has_government = fascism }
-				}
-	
-				allowed_civil_war = {
-					always = yes
-				}
-	
-				modifier = {
-				war_support_factor = 0.05
-				consumer_goods_factor = -0.05
-				}
-			}
-
-			ryd_youtube_channel3 = {	
-	
-				picture = idea_chi_incompetent_officers.dds
-	
-				allowed = {
-					original_tag =  VIA
-					NOT = { has_government = fascism }
-				}
-	
-				allowed_civil_war = {
-					always = yes
-				}
-	
-				modifier = {
-				war_support_factor = 0.05
-				consumer_goods_factor = -0.05
-				research_speed_factor = 0.05
-				}
-			}
-
-			ryd_youtube_channel4 = {	
-	
-				picture = idea_chi_incompetent_officers.dds
-	
-				allowed = {
-					original_tag =  VIA
-					NOT = { has_government = fascism }
-				}
-	
-				allowed_civil_war = {
-					always = yes
-				}
-	
-				modifier = {
-				war_support_factor = 0.10
-				consumer_goods_factor = -0.10
-				research_speed_factor = 0.05
-				}
-			}
-
-			via_lacking_the_means_of_pro = {	
-	
-				picture = eng_spirit_of_the_industrial_revolution
-	
-				allowed = {
-					original_tag =  VIA
-					NOT = { has_government = fascism }
-				}
-	
-				allowed_civil_war = {
-					always = yes
-				}
-	
-				modifier = {
-				production_speed_arms_factory_factor = -0.10
-				production_factory_efficiency_gain_factor = -0.05
-				consumer_goods_factor = 0.05
-				}
-			}
-
-			Mistribution_of_funds = {
-			
-				picture = tur_balkan_central_bank_wealthy_greece
-
-				allowed = {
-					tag = VIA
-				}
-	
-				allowed_civil_war = { 
-					always = yes
-				}
-	
-				available = {
-					if = {
-						has_government = fascism
-					}
-		
-				}
-				
-				removal_cost = -1
-				
-				modifier = {
-	
-					political_power_factor = -0.05
-					consumer_goods_factor = 0.05
-					production_speed_buildings_factor = -0.10
-					research_speed_factor = -0.10
-	
-				}
-			}
-
-			via_rebuild_the_nation = {
-				allowed = {
-					always = no
-				}
-	
-				allowed_civil_war = {
-					 has_government = fascism
-				}
-	
-				removal_cost = -1
-	
-				picture = ger_rebuild_the_nation
-	
-				modifier = {
-					consumer_goods_factor = -0.20
-					industry_repair_factor = 0.20
-					production_speed_industrial_complex_factor = 0.1
-					production_speed_infrastructure_factor = 0.1
-				}
-			}
-			via_purchase_hotas = {
-				allowed = {
-					always = no
-				}
-	
-				allowed_civil_war = {
-					 has_government = fascism
-				}
-	
-				removal_cost = -1
-	
-				picture = ger_rebuild_the_nation
-	
-				modifier = {
-					consumer_goods_factor = 0.05
-				}
-			}
-
-			VIA_equipment_shipments = {
-
-				picture = generic_artillery_regiments
-	
-				allowed = {
-					OR = {
-						original_tag = ITA
-						original_tag = GER
-						original_tag = SOV
-						original_tag = FRA
-					}
-				}
-	
-				allowed_civil_war = {
-					always = yes
-				}
-	
-				modifier = {
-					lend_lease_tension = -0.5
-					request_lease_tension = -0.5
-				}
-			}
-
-			VIA_equipment_shipments_virginia = {
-
-				name = VIA_equipment_shipments
-	
-				picture = generic_artillery_regiments
-	
-				allowed = {
-					original_tag = VIA
-				}
-	
-				allowed_civil_war = {
-					always = yes
-				}
-	
-				modifier = {
-					lend_lease_tension = -0.5
-				}
-			}
-
-
-political_advisor = {
-	ulrich_advisor = {
-		picture = ulrich
-		allowed = {
-			original_tag = VIA
-			}
-		
-		traits = { popular_figurehead }
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	ada_advisor = {
-		picture = ada
-		allowed = {
-			original_tag = VIA
+			allowed_civil_war = { 
+				always = yes
 			}
 
 			available = {
@@ -513,64 +169,356 @@ political_advisor = {
 				}
 	
 			}
-		
-		traits = { princess_of_terror }
+			
+			removal_cost = -1
 
-		ai_will_do = {
-			factor = 0
-		}
-	}
-obrecht_advisor = {
-	picture = obrecht
-	allowed = {
-		original_tag = VIA
+			picture = FRA_factory_strikes.dds
+			
+			modifier = {
+
+			consumer_goods_factor = 0.25
+			industrial_capacity_factory = -0.25
+			stability_factor = -0.1
+			}
 		}
 
-		available = {
-			if = {
-				has_government= communism
+		via_12_gb_reconstruction = {
+			
+			allowed = {
+				tag = VIA
 			}
 
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			available = {
+				if = {
+					has_government= fascism
+				}
+	
+			}
+			
+			removal_cost = -1
+
+			picture = idea_chi_war_of_resistance.dds
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+
+			}
 		}
 
-	
-	traits = { marxist_philosopher }
+		via_insurrection = {
+			
+			allowed = {
+				tag = VIA
+			}
 
-}
-}
-}
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			available = {
+				if = {
+					has_government= fascism
+				}
+	
+			}
+			
+			removal_cost = -1
+
+			picture = idea_chi_war_of_resistance.dds
+			
+			modifier = {
+
+				war_support_factor = -0.1
+				recruitable_population = -0.05
+				stability_factor = -0.1
+			}
+		}
+		via_nazpeoplesarmy = {	
+
+			picture = idea_generic_communist_army.dds
+
+			allowed = {
+				original_tag =  VIA
+				NOT = { has_government = fascism }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				war_support_weekly = 0.05
+				recruitable_population = 0.05
+				land_reinforce_rate = 0.03
+				surrender_limit = 0.5
+			}
+		}
+
+		via_inexperiencedofficercorps = {	
+
+			picture = idea_chi_incompetent_officers.dds
+
+			allowed = {
+				original_tag =  VIA
+				NOT = { has_government = fascism }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			army_org_factor = -0.1
+			army_attack_factor = -0.05
+			army_defence_factor =  -0.05
+			}
+		}
+
+		### youtube channel
+		ryd_youtube_channel = {	
+
+			picture = idea_chi_incompetent_officers.dds
+
+			allowed = {
+				original_tag =  VIA
+				NOT = { has_government = fascism }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			war_support_factor = 0.05
+			}
+		}
+
+		ryd_youtube_channel2 = {	
+
+			picture = idea_chi_incompetent_officers.dds
+
+			allowed = {
+				original_tag =  VIA
+				NOT = { has_government = fascism }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			war_support_factor = 0.05
+			consumer_goods_factor = -0.05
+			}
+		}
+
+		ryd_youtube_channel3 = {	
+
+			picture = idea_chi_incompetent_officers.dds
+
+			allowed = {
+				original_tag =  VIA
+				NOT = { has_government = fascism }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			war_support_factor = 0.05
+			consumer_goods_factor = -0.05
+			research_speed_factor = 0.05
+			}
+		}
+
+		ryd_youtube_channel4 = {	
+
+			picture = idea_chi_incompetent_officers.dds
+
+			allowed = {
+				original_tag =  VIA
+				NOT = { has_government = fascism }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			war_support_factor = 0.10
+			consumer_goods_factor = -0.10
+			research_speed_factor = 0.05
+			}
+		}
+
+		via_lacking_the_means_of_pro = {	
+
+			picture = eng_spirit_of_the_industrial_revolution
+
+			allowed = {
+				original_tag =  VIA
+				NOT = { has_government = fascism }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			production_speed_arms_factory_factor = -0.10
+			production_factory_efficiency_gain_factor = -0.05
+			consumer_goods_factor = 0.05
+			}
+		}
+
+		Mistribution_of_funds = {
+		
+			picture = tur_balkan_central_bank_wealthy_greece
+
+			allowed = {
+				tag = VIA
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			available = {
+				if = {
+					has_government = fascism
+				}
+	
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+
+				political_power_factor = -0.05
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.10
+				research_speed_factor = -0.10
+
+			}
+		}
+
+		via_rebuild_the_nation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+					has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				industry_repair_factor = 0.20
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		via_purchase_hotas = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+					has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		VIA_equipment_shipments = {
+
+			picture = generic_artillery_regiments
+
+			allowed = {
+				OR = {
+					original_tag = ITA
+					original_tag = GER
+					original_tag = SOV
+					original_tag = FRA
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				lend_lease_tension = -0.5
+				request_lease_tension = -0.5
+			}
+		}
+
+		VIA_equipment_shipments_virginia = {
+
+			name = VIA_equipment_shipments
+
+			picture = generic_artillery_regiments
+
+			allowed = {
+				original_tag = VIA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				lend_lease_tension = -0.5
+			}
+		}
+	}
 }
 
 ideas = {
 
-materiel_manufacturer = {
+	materiel_manufacturer = {
 
-	designer = yes
+		designer = yes
 
-	gambit_motor_werke = {
-			
-		allowed = {
-			original_tag = VIA
-		}
-
-		available = {
-			has_completed_focus = via_gambit_motor_werke
-		}
-		
-		research_bonus = {
-			motorized_equipment = 0.10
-		}
-		equipment_bonus = {
-			motorized_equipment = {
-				build_cost_ic = -0.05 instant = yes
+		gambit_motor_werke = {
+				
+			allowed = {
+				original_tag = VIA
 			}
+
+			available = {
+				has_completed_focus = via_gambit_motor_werke
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+
+			traits = { motorized_equipment_manufacturer }
+
+			picture = generic_motorized_equipment_manufacturer_3
 		}
 
-		traits = { motorized_equipment_manufacturer }
-
-		picture = generic_motorized_equipment_manufacturer_3
 	}
-
-}
 
 }
