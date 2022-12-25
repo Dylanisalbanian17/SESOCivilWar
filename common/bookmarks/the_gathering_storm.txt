@@ -30,8 +30,9 @@ bookmarks = {
 				via_insurrection
 			}
 			focuses = {
-				via_a_repeat_of_our_ancestors
-				via_the_speech
+				via_tarkov_grub_knowledge
+				via_ban_xd
+				via_niche_internet_micro_celebrity
 			}
 		}
 		
@@ -43,9 +44,9 @@ bookmarks = {
 				blackmiscegenation
 			}
 			focuses = {
-				cot_focus_establishsgn
-				cot_focus_repeal_articles
 				cot_focus_getajob
+				cot_focus_join_boxcraft
+				cot_focus_seso
 			}
 		}
 		
@@ -154,7 +155,9 @@ bookmarks = {
 				idea_awful_drivers
 			}
 			focuses = {
-				NYO_focus_general_secretary_ojax
+				NYO_focus_black_horse
+				NYO_focus_never_another_garrys_mod_server
+				NYO_focus_stormtrooper_rp
 			}
 		}
 		
