@@ -108,7 +108,7 @@ characters={
 		portraits = {
 			army = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 		}
 
@@ -175,11 +175,11 @@ characters={
 		portraits = {
 			civilian = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 			army = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 		}
 		advisor = {
@@ -218,11 +218,11 @@ characters={
 		portraits = {
 			civilian = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 			army = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 		}
 		advisor = {
@@ -246,11 +246,11 @@ characters={
 		portraits = {
 			civilian = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 			army = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 		}
 
@@ -275,11 +275,11 @@ characters={
 		portraits = {
 			civilian = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 			army = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 		}
 
@@ -304,11 +304,11 @@ characters={
 		portraits = {
 			civilian = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 			army = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 		}
 
@@ -334,11 +334,11 @@ characters={
 		portraits = {
 			civilian = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 			army = {
 				#small
-				#large
+				large = "gfx/leaders/NYO/Stormtrooper.dds"
 			}
 		}
 
