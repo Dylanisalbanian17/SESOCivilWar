@@ -119,14 +119,14 @@ VIA_tarkov_grub = {
 
 		complete_effect = {
 			random_list = {
-				65.9 = {
+				50 = {
 					add_equipment_to_stockpile = {
 						type = support_equipment
 						amount = 750
 						producer = VIA
 					}
 				}
-				34.1 = {
+				50 = {
 					add_manpower = -1
 				}
 			}
@@ -153,14 +153,14 @@ VIA_tarkov_grub = {
 
 		complete_effect = {
 			random_list = {
-				65.9 = {
+				80 = {
 					add_equipment_to_stockpile = {
 						type = train_equipment
 						amount = 250
 						producer = VIA
 					}
 				}
-				34.1 = {
+				20 = {
 					add_manpower = -1
 				}
 			}
@@ -187,14 +187,14 @@ VIA_tarkov_grub = {
 
 		complete_effect = {
 			random_list = {
-				65.9 = {
+				60 = {
 					add_equipment_to_stockpile = {
 						type = motorized_equipment
 						amount = 750
 						producer = VIA
 					}
 				}
-				34.1 = {
+				40 = {
 					add_manpower = -1
 				}
 			}

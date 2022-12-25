@@ -10,6 +10,7 @@
  SESO_send_job_application:0 "Send Job Applications"
 
 ### VIA Tarkov Decisions
+VIA_tarkov_grub:0 "Tarkov Raids"
 VIA_go_to_factory:0 "Go to Factory"
 VIA_go_to_reserve:0 "Go to Reserve"
 VIA_go_to_customs:0 "Go to Customs"
