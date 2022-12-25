@@ -19,7 +19,7 @@ state={
 	resources = {
 		steel = 26
 	}
-	manpower=487500
+	manpower=465466
 	buildings_max_level_factor=1.000
 	state_category=town
 }

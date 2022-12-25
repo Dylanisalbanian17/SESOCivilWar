@@ -22,9 +22,9 @@ state={
 	provinces={
 		625 1161 3883 5664 6875 7799 7849 
 	}
-	manpower=270000
+	manpower=1822254
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	resources = {
 		rubber = 80
 	}

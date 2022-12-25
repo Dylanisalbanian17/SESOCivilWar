@@ -17,7 +17,7 @@ state={
 		steel = 25
 		chromium = 1
 	}
-	manpower= 57267
+	manpower= 106271
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

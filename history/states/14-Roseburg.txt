@@ -14,7 +14,7 @@ state={
 			dockyard = 2
 		}
 	}
-	manpower= 291385
+	manpower= 382971
 	buildings_max_level_factor=1.000
 	state_category = town
 }

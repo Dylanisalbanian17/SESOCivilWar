@@ -19,7 +19,7 @@ state={
 		steel = 90
 	}
 	
-	manpower=335000
+	manpower=228750
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 }

@@ -18,7 +18,7 @@ state={
 	resources = {
 		oil = 58
 	}
-	manpower= 900202
+	manpower= 909235
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=city
 }

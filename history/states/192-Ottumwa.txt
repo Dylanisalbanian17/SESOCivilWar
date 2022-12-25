@@ -12,7 +12,7 @@ state={
 			industrial_complex = 1 
 		}
 	}
-	manpower=9450
+	manpower=201569
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=rural
 }

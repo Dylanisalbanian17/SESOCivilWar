@@ -13,7 +13,7 @@ state={
 			air_base = 5
 		}
 	}
-	manpower=335000
+	manpower=234067
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=town
 }

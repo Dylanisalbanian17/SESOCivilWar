@@ -13,7 +13,7 @@ state={
 			infrastructure = 2
 		}
 	}
-	manpower=293948
+	manpower=826166
 	buildings_max_level_factor=1.000
 	state_category=large_town
 }

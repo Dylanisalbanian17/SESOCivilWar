@@ -14,7 +14,7 @@ state={
 			arms_factory = 1
 		}
 	}
-	manpower=367500
+	manpower=397565
 	buildings_max_level_factor=1.000
 	state_category=large_town
 }

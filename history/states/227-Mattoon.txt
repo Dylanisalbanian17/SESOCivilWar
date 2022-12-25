@@ -13,7 +13,7 @@ state={
 			infrastructure = 1
 		}
 	}
-	manpower=1120000
+	manpower=92892
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=rural
 }

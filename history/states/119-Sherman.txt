@@ -17,7 +17,7 @@ state={
 	provinces={
 		520 2402 2718 2926 3090 3907 4596 5431 6264 8455 8513 8532 8581 8617 
 	}
-	manpower=45000
+	manpower=19316
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category=rural
 }

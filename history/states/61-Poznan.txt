@@ -13,7 +13,7 @@ state={
 			arms_factory = 1
 		}
 	}
-	manpower=300000
+	manpower=47962
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

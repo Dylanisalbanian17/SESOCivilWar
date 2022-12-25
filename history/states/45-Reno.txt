@@ -19,7 +19,7 @@ state={
 		tungsten = 45
 		steel = 98
 	}
-	manpower= 246500
+	manpower= 486492
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=city
 }

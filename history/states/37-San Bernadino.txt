@@ -23,7 +23,7 @@ state={
 	resources = {
 		steel = 10
 	}
-	manpower= 4651000
+	manpower= 4599839
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=large_city
 }

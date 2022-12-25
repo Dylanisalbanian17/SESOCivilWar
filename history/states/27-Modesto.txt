@@ -20,7 +20,7 @@ state={
 	resources = {
 		rubber = 3
 	}
-	manpower= 564794
+	manpower= 1332111
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=large_city
 }

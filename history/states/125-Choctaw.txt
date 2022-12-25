@@ -16,7 +16,7 @@ state={
 	resources = {
 		aluminium = 25
 	}
-	manpower=330000
+	manpower=131466
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 }
