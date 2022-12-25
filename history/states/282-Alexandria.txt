@@ -34,7 +34,8 @@ state={
 			}
 		}
 	}
-	manpower=2053472
+	manpower=4053472
+	###2053472
 	buildings_max_level_factor=1.000
 	state_category=city
 

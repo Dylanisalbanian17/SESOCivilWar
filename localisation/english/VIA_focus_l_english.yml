@@ -203,12 +203,21 @@ via_remember_navy_discord:0 "Remember Navy Discord?"
 via_remember_navy_discord_desc:0 ""
 via_create_youtube_channel:0 "Create YouTube Channel"
 via_create_youtube_channel_desc:0 ""
+via_ttt: "TTT"
+via_ttt_desc: ""
+via_pressure_dc_open:0 "Special Military Operation in DC"
+via_pressure_dc_open_desc: ""
+via_dc_clamp_down_on_dc: "I live in DC guys."
+via_dc_clamp_down_on_dc_desc: ""
 
 ### Virginia Tool tips
 1_VIA_tt_seso:0 "Gives access to S.E.S.O. related effects, decisions, and focuses.\n"
 1_VIA_tt_gmod:0 "Gives access to GGN/Gmod related effects, decisions, and focuses.\n"
 via_polish_legion_tt:0 "Creates with Boomblers blessing the Polish division, the Legion of Death."
 VIA_tarkov_grub_tt:0 "Creates Tarkov Grub decisions for scavenging equipment."
+VIA_tt_gambit: "Gives access to Gambit Motor Werke as a Materiel Designer."
+VIA_tt_dc_companies: "Gives access to several DC companies."
+VIA_tt_kujo_militia: "Spawns Kujo Militia and associated bonuses."
 
 ### IDEAS
 via_rebuild_the_nation:0 "Rebuild the Nation"

@@ -822,9 +822,32 @@ country_event = {
 		name = virginia.39.b
 	}
 
-	### long sword
+	### maul
 	option = {    
 		name = virginia.39.c
+	}
+
+}
+
+country_event = {
+	id = virginia.40
+	title = virginia.40.t
+	desc = virginia.40.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	### evening star
+	option = {    
+		name = virginia.40.a
+	}
+	### messer
+	option = {    
+		name = virginia.40.b
+	}
+
+	### long sword
+	option = {    
+		name = virginia.40.c
 	}
 
 }
