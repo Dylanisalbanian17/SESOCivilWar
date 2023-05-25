@@ -78,6 +78,7 @@ add_ideas = {
 }
 recruit_character= NJE_korgi
 recruit_character= NJE_benito_mussolini
+recruit_character= NJE_blue_fumo
 
 set_politics = {
 	ruling_party = neutrality

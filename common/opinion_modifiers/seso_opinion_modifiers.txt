@@ -74,5 +74,10 @@ opinion_modifiers = {
 		value = 10
 		years = 6
 	}
+	
+	opinion_gates_hell = {
+		value = 10
+		years = 6
+	}
 
 }

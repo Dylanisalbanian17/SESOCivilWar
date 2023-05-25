@@ -1,4 +1,4 @@
-version="1.2"
+version="1.3"
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="history/general"
@@ -42,5 +42,5 @@ tags={
 	"National Focuses"
 }
 name="[S.E.S.O.] American Civil War (Beta)"
-supported_version="1.11.*"
+supported_version="1.12.7"
 remote_file_id="2564430328"
