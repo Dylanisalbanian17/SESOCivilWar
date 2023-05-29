@@ -7,6 +7,7 @@ state={
 	history={
 		owner = PEN
 		add_core_of = PEN
+		victory_points = { 2862 15 }
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
