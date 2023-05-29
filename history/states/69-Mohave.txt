@@ -6,9 +6,9 @@ state={
 		713 838 908 929 937 1855 2289 5016 8927 8980 
 	}
 	history={
-		owner = ARB
-		add_core_of = ARB
-		add_claim_by = ARS
+		owner = ARS
+		add_core_of = ARS
+		add_claim_by = ARB
 		add_claim_by = ART
 		victory_points = { 8927 5 }
 		buildings = {

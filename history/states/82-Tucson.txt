@@ -5,10 +5,10 @@ state={
 		2056 2187 4737 6754 6760 9469 
 	}
 	history={
-		owner = ARS
-		add_core_of = ARS
+		owner = ARB
+		add_core_of = ARB
 		add_claim_by = ART
-		add_claim_by = ARB
+		add_claim_by = ARS
 		victory_points = {9469 25}
 		buildings = {
 			infrastructure = 3

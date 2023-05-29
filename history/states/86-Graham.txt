@@ -5,10 +5,10 @@ state={
 		2248 2275 2645 3082 3412 4186 6001 9455 9482 
 	}
 	history={
-		owner = ARS
-		add_core_of = ARS
+		owner = ARB
+		add_core_of = ARB
 		add_claim_by = ART
-		add_claim_by = ARB
+		add_claim_by = ARS
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

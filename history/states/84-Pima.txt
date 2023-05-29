@@ -6,10 +6,10 @@ state={
 		1258 1280 1860 2158 2332 3106 4133 4159 4272 5371 9394 9424 9439 
 	}
 	history={
-		owner = ARS
-		add_core_of = ARS
+		owner = ARB
+		add_core_of = ARB
 		add_claim_by = ART
-		add_claim_by = ARB
+		add_claim_by = ARS
 		buildings = {
 			infrastructure = 0
 			industrial_complex = 1
