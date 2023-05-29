@@ -31,13 +31,14 @@ recruit_character = ORE_sandra_spurlock
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "2.1.1"
-	elections_allowed = no
+	last_election = "4.11.6"
+	election_frequency = 48
+	elections_allowed = yes
 }
 set_popularities = {
 	democratic = 55
-	fascism = 0
-	communism = 25
-	neutrality = 20
+	fascism = 10
+	communism = 20
+	neutrality = 15
 }
 

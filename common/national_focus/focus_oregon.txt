@@ -1,0 +1,158 @@
+focus_tree = {
+	id = ore_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ORE
+		}
+	}
+	#Focus for A Queen and her Nation
+	focus = {
+		id = ORE_a_queen_and_her_nation
+		icon = GFX_focus_hol_the_only_man_in_the_dutch_government
+		x = 9
+		y = 0
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+	#Focus for Stream to the Nation
+	focus = {
+		id = ORE_stream_to_the_nation
+		icon = GFX_goal_generic_radar
+		x = 7
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ORE_a_queen_and_her_nation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ORE_twitch_steams
+		}
+	}
+	#Focus for Ban Trolls
+	focus = {
+		id = ORE_ban_trolls
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 11
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ORE_a_queen_and_her_nation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.10  add_popularity= { 
+ideology = fascism 
+popularity = -0.05 
+}
+		}
+	}
+	#Focus for Building a Safer Community
+	focus = {
+		id = ORE_building_a_safer_community
+		icon = GFX_goal_generic_national_unity
+		x = 9
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ORE_stream_to_the_nation 
+		}
+		prerequisite = { 
+			focus = ORE_ban_trolls 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {				
+				add_extra_state_shared_building_slots = 1				
+				add_building_construction = {
+				type = arms_factory
+				level = 1					
+				instant_build = yes				 
+   }
+}
+
+			random_owned_controlled_state = {				
+				add_extra_state_shared_building_slots = 1				
+				add_building_construction = {
+				type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		}
+		}
+	}
+	#Focus for Trouble in California
+	focus = {
+		id = ORE_trouble_in_california
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 9
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ORE_building_a_safer_community }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.10
+		}
+	}
+	#Focus for The Worst . . .
+	focus = {
+		id = ORE_the_worst___
+		icon = GFX_goal_support_fascism
+		x = 7
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = ORE_trouble_in_california }
+		mutually_exclusive = { focus = ORE____is_over }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			CAL = { has_completed_focus = CAL_an_opportunity }
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = 0.1 
+}
+  load_focus_tree= ore_crisis
+		}
+	}
+	#Focus for . . . Is Over
+	focus = {
+		id = ORE____is_over
+		icon = GFX_goal_support_democracy
+		x = 11
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = ORE_trouble_in_california }
+		mutually_exclusive = { focus = ORE_the_worst___ }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			CAL = { has_completed_focus = CAL_putting_the_gamers_on_trial }
+		}
+		completion_reward = {
+			load_focus_tree= ore_psa
+		}
+	}
+#End of focuses 
+ }
