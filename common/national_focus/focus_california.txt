@@ -419,7 +419,7 @@ instant_build = yes}
 		icon = GFX_goal_generic_major_alliance
 		x = 25
 		y = 2
-		cost = 10
+		cost = 15
 		available_if_capitulated = yes
 		prerequisite = { focus = CAL_pacific_states_theory }
 		mutually_exclusive = { focus = CAL_autonomy_for_alf }
@@ -443,7 +443,7 @@ instant_build = yes}
 		icon = GFX_focus_generic_treaty
 		x = 27
 		y = 2
-		cost = 10
+		cost = 15
 		available_if_capitulated = yes
 		prerequisite = { focus = CAL_pacific_states_theory }
 		mutually_exclusive = { focus = CAL_autonomy_for_gamer_girl }
@@ -842,7 +842,7 @@ type = annex_everything
 			has_civil_war= no
 		}
 		completion_reward = {
-			WYO = { add_to_faction = CAL }
+			create_faction= "Joe Rogan Gaming"
 		}
 	}
 	#Focus for Unbanned from 501st
