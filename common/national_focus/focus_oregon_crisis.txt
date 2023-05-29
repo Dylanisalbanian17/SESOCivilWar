@@ -1846,7 +1846,7 @@ add_timed_idea = {
 			factor = 1
 		}
 		completion_reward = {
-			CAL = { add_to_faction = WAS }
+			CAL = { add_to_faction = ORE }
 
 add_ideas = militarism_focus
 			army_experience = 20
