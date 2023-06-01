@@ -1,0 +1,21 @@
+
+units= {
+fleet = {
+	name = "Atlantic Fleet"			
+	naval_base = 8084 # Philly
+	task_force = {
+		location = 8084 # Philly
+		name = "NISMF Remnant Fleet"
+		ship = { name = "USS Carr (FFG-52)" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Oliver Hazard Perry Class" } } }
+		ship = { name = "USS De Wert (FFG-45)" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Oliver Hazard Perry Class" } } }
+		ship = { name = "USS Elrod (FFG-55)" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Oliver Hazard Perry Class" } } }
+		ship = { name = "USS Halyburton (FFG-40)" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Oliver Hazard Perry Class" } } }
+		ship = { name = "USS John F. Kennedy (CV-67)" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = USA version_name = "John F. Kennedy Class" } } }
+		ship = { name = "USS Kauffman (FFG-59)" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Oliver Hazard Perry Class" } } }
+		ship = { name = "USS Klakring (FFG-42)" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Oliver Hazard Perry Class" } } }
+		ship = { name = "USS Simpson (FFG-56)" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Oliver Hazard Perry Class" } } }
+		ship = { name = "USS Ticonderoga (CG-47)" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }				
+			
+	}
+}
+}

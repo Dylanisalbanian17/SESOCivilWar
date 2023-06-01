@@ -1,0 +1,25 @@
+air_wings = {
+	#Pittsburgh Air National Guard
+	238 = {
+	transport_plane_equipment_1 = { owner = "PEN" amount = 15 }
+	small_plane_airframe_1 =  {
+		owner = "PEN" 
+		amount = 60
+		version_name = "F-15"
+	}
+	small_plane_airframe_1 =  {
+		owner = "PEN" 
+		amount = 92
+		version_name = "F-16"
+	}
+	}
+	"USS John F. Kennedy (CV-67)" = {
+		cv_small_plane_airframe_1 =  { owner = "PEN" amount = 10 version_name = "F/A-18"} # historical: 16
+		cv_small_plane_airframe_1 =  { owner = "PEN" amount = 10 version_name = "F/A-18"} # historical: 16
+		cv_small_plane_airframe_1 =  { owner = "PEN" amount = 10 version_name = "F/A-18"} # historical: 16
+		cv_small_plane_cas_airframe_0 =  { owner = "PEN" amount = 10 version_name = "SBU Corsair" } # historical: 30
+		cv_small_plane_cas_airframe_0 =  { owner = "PEN" amount = 5 version_name = "SBU Corsair" } # historical: 30
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "PEN" amount = 10 version_name = "BM-2" } # historical: 12
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "PEN" amount = 5 version_name = "BM-2" } # historical: 12
+	}
+}

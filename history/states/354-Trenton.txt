@@ -5,6 +5,7 @@ state={
 	history={
 		owner = NJE
 		add_core_of = NJE
+		victory_points = {6188 30}
 		buildings = {
 			infrastructure = 3
 		}

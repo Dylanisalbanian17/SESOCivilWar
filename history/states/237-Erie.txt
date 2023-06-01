@@ -16,6 +16,7 @@ state={
 			arms_factory = 2
 			dockyard = 1
 			7884 = { naval_base = 3 } #Erie
+			air_base = 2
 			}
 		}
 	resources = {

@@ -1,4 +1,4 @@
-capital = 253
+capital = 354
 
 oob = "NJE_2"
 

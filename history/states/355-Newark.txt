@@ -10,7 +10,12 @@ state={
 			dockyard = 2
 			5645 = { naval_base = 2 } #Newark
 		}
-
+		victory_points = {
+			5645 30 
+		}
+		victory_points = {
+			1834 25 
+		}
 	}
 
 	provinces={
