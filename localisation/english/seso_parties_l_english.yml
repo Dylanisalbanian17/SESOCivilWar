@@ -2,7 +2,7 @@
 #State Parties
 
  CAL_democratic_party:0 "UPF(L)"
- CAL_democratic_party_long:0 "The United Peoples Front(Liberal Faction)"
+ CAL_democratic_party_long:0 "The United Peoples Front (Liberal Faction)"
  CAL_neutrality_party:0 "SPD"
  CAL_neutrality_party_long:0 "Sacramento Police Department"
  CAL_fascism_party:0 "JRG"
@@ -13,14 +13,14 @@
  NEV_democratic_party:0 "Republican Party"
  NEV_democratic_party_long:0 "The Republican Party of Nevada"
  NEV_neutrality_party:0 "Libertarian Party"
- NEV_neutrality_party_long:0 "The Libertarian Party(Autocratic Faction)"
+ NEV_neutrality_party_long:0 "The Libertarian Party (Autocratic Faction)"
  NEV_fascism_party:0 "NSGPN"
  NEV_fascism_party_long:0 "The National Salvation of Gaming Party of Nevada"
  NEV_communism_party:0 "Union Party"
  NEV_communism_party_long:0 "The Union Party of Nevada"
 
  ORE_democratic_party:0 "UPFO(S)"
- ORE_democratic_party_long:0 "The United Peoples Front of Oregon("Socalist" Faction)"
+ ORE_democratic_party_long:0 "The United Peoples Front of Oregon ("Socialist" Faction)"
  ORE_neutrality_party:0 "Royalists"
  ORE_neutrality_party_long:0 "The Royalists of Oregon"
  ORE_fascism_party:0 "Oregon Esports Party"

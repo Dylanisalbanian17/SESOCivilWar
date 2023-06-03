@@ -1,0 +1,42 @@
+characters={
+
+	TEN_groove={
+		name="Groove"
+		portraits = {
+			civilian = {
+				#large="gfx/leaders/RIS/nitch.dds"
+			}
+		}
+
+		country_leader={
+			ideology=centrism
+			traits = { unemployed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { unemployed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=fascism_ideology
+			traits = { unemployed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=anarchist_communism
+			traits = { unemployed }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	# Add Gamba, Foil, Gump, and Gecko as advisors and generals
+
+}
