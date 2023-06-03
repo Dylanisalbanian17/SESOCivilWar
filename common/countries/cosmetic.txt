@@ -98,3 +98,7 @@ VIA_REI = {
 	color = rgb { 59 79 110 }
 	color_ui = rgb { 59 79 110 }
 }
+PEN_UKR = {
+	color = rgb { 0  80  230 }
+	color_ui = rgb { 0  80  230 }
+}

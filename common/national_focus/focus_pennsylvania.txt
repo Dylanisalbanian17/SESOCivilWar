@@ -549,6 +549,11 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.15
 			}
+			set_party_name= { 
+				ideology = fascism
+				long_name = "Svoboda" 
+				name = "SVB" 
+			}
 		}
 	}
 
@@ -647,6 +652,65 @@ focus_tree = {
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
+			}
+		}
+	}
+
+	focus = {
+		id = PEN_move_the_capital
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = PEN_storm_the_commonwealth_senate }
+		relative_position_id = PEN_storm_the_commonwealth_senate
+		x = 2
+		y = 1
+		cost = 3
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			238 = {
+
+				set_state_name = "Pyittsburgh"
+
+			}
+			set_capital = { state = 238 }
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = PEN_proclaim_ukrainslvania
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = PEN_move_the_capital }
+		relative_position_id = PEN_move_the_capital
+		x = 0
+		y = 1
+		cost = 3
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			set_cosmetic_tag = PEN_UKR
+			add_stability = 0.10
+			352 = {
+
+				set_state_name = "Bakhmutelphia"
+
+			}
+			239 = {
+
+				set_state_name = "Khersonburgh"
+
+			}
+			241 = {
+
+				set_state_name = "Kharkhanton"
+
+			}
+			237 = {
+
+				set_state_name = "Eriupol"
+
 			}
 		}
 	}

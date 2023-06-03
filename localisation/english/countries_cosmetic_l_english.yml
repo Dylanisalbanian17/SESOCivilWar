@@ -146,3 +146,7 @@ FZN_ADJ:0 "Nevadian"
 VIA_NAZ_communism:0 "National Union of America"
 VIA_NAZ_communism_ADJ:0 "Americans"
 VIA_NAZ_communism_DEF:0 "the National Union of America" 
+
+PEN_UKR:0 "Ukrainian Commonwealth of Pennsylvania"
+PEN_UKR_DEF:0 "The Ukrainian Commonwealth of Pennsylvania"
+PEN_UKR_ADJ:0 "Pennsylvanian"
