@@ -424,7 +424,7 @@ focus_tree = {
 
 	focus = {
 		id = PEN_focus_harvest_ips
-		#icon = GFX_focus_SOV_organize_wreckers
+		icon = GFX_focus_generic_national_security
 		relative_position_id = PEN_focus_develop_discord_bot
 		x = -2
 		y = 1
@@ -486,7 +486,7 @@ focus_tree = {
 	focus = {
 		id = PEN_focus_rewrite_constitution_of_commonwealth
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		x = 20
+		x = 25
 		y = 0
 		cost = 10
 		available = {
@@ -496,4 +496,159 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
+
+	focus = {
+		id = PEN_focus_subscribe_to_njb
+		icon = GFX_focus_njb
+		prerequisite = { focus = PEN_focus_rewrite_constitution_of_commonwealth }
+		mutually_exclusive = { focus = PEN_focus_a_little_winston OR = PEN_focus_embrace_ukrainian_nazism }
+		relative_position_id = PEN_focus_rewrite_constitution_of_commonwealth
+		x = 4
+		y = 1
+		cost = 10
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = PEN_focus_a_little_winston
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = PEN_focus_rewrite_constitution_of_commonwealth }
+		mutually_exclusive = { focus = PEN_focus_subscribe_to_njb OR = PEN_focus_embrace_ukrainian_nazism }
+		relative_position_id = PEN_focus_rewrite_constitution_of_commonwealth
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = PEN_focus_embrace_ukrainian_nazism
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = PEN_focus_rewrite_constitution_of_commonwealth }
+		mutually_exclusive = { focus = PEN_focus_a_little_winston OR = PEN_focus_subscribe_to_njb }
+		relative_position_id = PEN_focus_rewrite_constitution_of_commonwealth
+		x = -4
+		y = 1
+		cost = 10
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = PEN_focus_study_ukroid_tactics
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = PEN_focus_defend_azov }
+		relative_position_id = PEN_focus_defend_azov
+		x = -2
+		y = 1
+		cost = 5
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = lessons_of_ukraine
+				bonus = 0.75
+				uses = 2
+				technology = rocket_artillery
+				technology = motorized_rocket_unit
+			}
+		}
+	}
+
+	focus = {
+		id = PEN_focus_defend_azov
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = PEN_focus_embrace_ukrainian_nazism }
+		relative_position_id = PEN_focus_embrace_ukrainian_nazism
+		x = 0
+		y = 1
+		cost = 4
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.20
+			}
+
+		}
+	}
+
+	focus = {
+		id = PEN_focus_enforce_tartar_culture
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = PEN_focus_defend_azov }
+		relative_position_id = PEN_focus_defend_azov
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.35
+			}
+
+		}
+	}
+
+	focus = {
+		id = PEN_form_hindu_militias
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = PEN_focus_enforce_tartar_culture }
+		relative_position_id = PEN_focus_enforce_tartar_culture
+		x = -2
+		y = 1
+		cost = 5
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			add_manpower = 15000
+			add_ideas = idea_hindu_militias
+		}
+	}
+
+	focus = {
+		id = PEN_storm_the_commonwealth_senate
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = PEN_focus_enforce_tartar_culture }
+		relative_position_id = PEN_focus_enforce_tartar_culture
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			add_political_power = 75
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+
 }

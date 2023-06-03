@@ -22,4 +22,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6795;657;sea;11660;-1;-1;-1;-1;;BajaMexico4
 3834;89;sea;12535;-1;-1;-1;-1;;BajaMexico5
 3425;6192;sea;12057;-1;-1;-1;-1;;BajaMexico6
+6000;1496;sea;12661;-1;-1;-1;-1;;Canada
+3445;7803;sea;12662;-1;-1;-1;-1;;Canada1
+10983;12603;sea;5723;-1;-1;-1;-1;MEXICAN_CANAL;MexicanCanal;
 -1;-1;;-1;-1;-1;-1;-1;-1

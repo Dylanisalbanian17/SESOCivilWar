@@ -24,6 +24,27 @@ ideas = {
 			#}
 		}
 
+		idea_hindu_militias = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_eng_imperial_conscription
+
+			modifier = {
+				conscription = 0.025
+			}
+
+			#hidden_modifier = {
+			#	ai_focus_aviation_factor = 0.5
+			#}
+		}
+
 		idea_linux_moment = {
 			allowed = {
 				always = no

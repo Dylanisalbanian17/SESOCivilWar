@@ -362,3 +362,42 @@
 #	icon = 10904
 #	offset = { 2 0 12 }
 #}
+##Panama Canal
+adjacency_rule =
+{
+	name = "MEXICAN_CANAL"
+
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 3686 3683 4288 5265 10125 2639 4301 2176 10120 2231 10118 10121 5763 4558 2103 6908 1141 5541 1488 10124 3037 2916 6394 1355 5267 10128 3888 5723 }
+		
+	icon = 10152
+	offset = { 0 0 0 }
+}
