@@ -1,0 +1,48 @@
+ideas = {
+	country = {
+		communication_problems = {
+			
+			allowed = {
+				tag = NSC
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = idea_generic_army_problems
+			
+			modifier = {
+								
+				
+				army_org_factor = -0.05
+
+			}
+		}
+
+		not_training_cadets = {
+			
+			allowed = {
+				tag = NSC
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = spr_disbanded_army
+			
+			modifier = {
+								
+				training_time_factor = 0.25
+				
+				minimum_training_level = 0.25
+
+			}
+		}
+	}
+}

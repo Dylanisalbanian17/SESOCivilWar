@@ -1,0 +1,217 @@
+focus_tree = {
+	id = nova_scotia
+	country = {
+		factor = 0
+		modifier = {
+			add = 11
+			tag = nsc
+		}
+	}
+
+	### Mikmaq Political Tree?
+
+	focus = {
+		id = NSC_focus_major_mikmaq
+		icon = GFX_focus_usa_honor_the_confederacy
+		x = 8
+		y = 0
+		cost = 2
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.03
+			}
+			add_stability = 0.03
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = nsc_tk_veteran
+		icon = GFX_goal_generic_axis_build_infantry
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = nsc_tk_heavy
+		}
+		relative_position_id = NSC_focus_major_mikmaq
+		prerequisite = { focus = NSC_focus_major_mikmaq }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	}
+	}
+
+	focus = {
+		id = nsc_tk_heavy
+		icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = nsc_tk_veteran
+		}
+		relative_position_id = NSC_focus_major_mikmaq
+		prerequisite = { focus = NSC_focus_major_mikmaq }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	}
+	}
+
+	### Army Tree
+
+	focus = {
+		id = nsc_tk_complete_basic
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 5
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NSC_focus_major_mikmaq
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 25
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 3
+				category = land_doctrine
+			}
+	}
+	}
+
+	focus = {
+		id = nsc_le_IG
+		icon = GFX_goal_generic_army_artillery
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = nsc_tk_complete_basic
+		prerequisite = { focus = nsc_tk_complete_basic }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			completion_reward = {
+				add_tech_bonus = {
+					category = artillery
+					uses = 1
+					bonus = 1
+		}
+			}
+	}
+	}
+
+	focus = {
+		id = nsc_pak
+		icon = GFX_goal_generic_army_artillery2
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = nsc_tk_complete_basic
+		prerequisite = { focus = nsc_tk_complete_basic }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			completion_reward = {
+				add_tech_bonus = {
+					category = cat_anti_tank
+					uses = 1
+					bonus = 1
+		}
+			}
+	}
+	}
+
+	focus = {
+		id = nsc_milk_maq
+		icon = GFX_focus_AST_squander_bug
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = nsc_tk_complete_basic
+		prerequisite = { focus = nsc_pak OR = nsc_le_IG }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	}
+	}
+
+	### Industry Tree
+
+	focus = {
+		id = nsc_space_engineers_mining
+		icon = GFX_goal_generic_construction2
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NSC_focus_major_mikmaq
+		prerequisite = { focus = nsc_tk_heavy OR = nsc_tk_veteran }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_core_state = {
+				add_resource = {
+					type = steel
+					amount = 15
+				}
+			}
+			random_core_state = {
+				add_resource = {
+					type = tungsten
+					amount = 5
+				}
+			}
+	}
+	}
+
+	focus = {
+		id = nsc_engineer_life
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = nsc_space_engineers_mining
+		prerequisite = { focus = nsc_space_engineers_mining }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+	}
+	}
+
+
+
+}

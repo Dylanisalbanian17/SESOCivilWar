@@ -16,6 +16,11 @@ set_technology = {
 	basic_train = 1
 }
 
+add_ideas = { 
+	communication_problems
+	not_training_cadets
+}
+
 recruit_character = NSC_mikmaq
 
 set_convoys = 30
@@ -26,13 +31,12 @@ add_equipment_to_stockpile = { type = train_equipment amount = 100 }
 set_politics = {
 	ruling_party = neutrality
 	last_election = "2.1.1"
-	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
+	democratic = 1
+	fascism = 1
+	communism = 1
+	neutrality = 97
 }

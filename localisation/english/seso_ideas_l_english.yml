@@ -172,6 +172,11 @@ idea_college_education: "College Education"
 idea_college_education_desc: "The leader of this country has a college education."
 idea_airsoft_junkie: "Airsoft Junkie"
 idea_airsoft_junkie_desc: "The leader of this country is a airsoft junkie."
+# NSC Ideas
+communication_problems: "Communication Problems"
+communication_problems_desc: "Men of the Mikmaqian army find themselves lacking communication and directives from each other. The only phrases they can muster are Alright... Perhaps..."
+not_training_cadets: "Untrained Cadets"
+not_training_cadets_desc: "Much to Crimson's dismay, cadets line up in droves waiting for a trainer, but no comes to assist."
 ## Generic Manufacturers
 # Tank
 seso_warthunder_manufacturer: "Warthunder"
