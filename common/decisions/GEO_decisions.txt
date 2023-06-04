@@ -38,3 +38,98 @@ GEO_trolling_category = {
 
 	}
 }
+
+GEO_pc_investment_category = {
+	GEO_get_pc_2 = {
+
+		icon = generic_political_actions
+		cost = 50
+
+		allowed = {
+			tag = GEO
+		}
+
+		available = {
+			has_war = no
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = GEO_focus_invest_in_new_pc
+			has_idea = idea_bad_pc_3
+		}
+
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = idea_bad_pc_3
+				add_idea = idea_bad_pc_2
+			}
+		}
+
+		remove_effect = {
+		}
+	}
+
+	GEO_get_pc_1 = {
+
+		icon = generic_political_actions
+		cost = 50
+
+		allowed = {
+			tag = GEO
+		}
+
+		available = {
+			has_war = no
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = GEO_focus_invest_in_new_pc
+			has_idea = idea_bad_pc_2
+		}
+
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = idea_bad_pc_2
+				add_idea = idea_bad_pc_1
+			}
+		}
+
+		remove_effect = {
+		}
+	}
+
+	GEO_get_pc_0 = {
+
+		icon = generic_political_actions
+		cost = 50
+
+		allowed = {
+			tag = GEO
+		}
+
+		available = {
+			has_war = no
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = GEO_focus_invest_in_new_pc
+			has_idea = idea_bad_pc_1
+		}
+
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = idea_bad_pc_1
+				add_idea = idea_new_pc
+			}
+		}
+
+		remove_effect = {
+		}
+	}
+}

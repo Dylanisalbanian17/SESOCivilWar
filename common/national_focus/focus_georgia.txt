@@ -404,4 +404,19 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = GEO_focus_invest_in_new_pc
+		#icon = 
+		relative_position_id = GEO_the_gamers
+		x = 6
+		y = 1
+		cost = 7
+		prerequisite = {
+			focus = GEO_the_gamers
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = GEO_pc_investment_category
+		}
+	}
+
 }
