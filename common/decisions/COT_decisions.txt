@@ -39,8 +39,6 @@ economy_decisions = {
 			has_war = no
 		}
 
-		cost = 0
-
 		fire_only_once = no
 
 		visible = {
