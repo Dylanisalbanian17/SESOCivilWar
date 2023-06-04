@@ -524,7 +524,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available = {
-			#has_global_flag = seso_boxcraft_flag
+			352 = { is_owned_by = PEN }
+			has_completed_focus = PEN_focus_embrace_british
 		}
 		completion_reward = {
 			add_political_power = 150
@@ -613,8 +614,9 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.35
+				popularity = 0.05
 			}
+			add_ideas = idea_tartar_culture
 
 		}
 	}
