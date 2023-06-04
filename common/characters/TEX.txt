@@ -1,7 +1,7 @@
 characters={
 
 	TEX_trevor={
-		name="Trevor"
+		name="piecktrevor"
 		portraits = {
 			civilian = {
 				#large="gfx/leaders/COT/sag_0.dds"
@@ -13,6 +13,32 @@ characters={
 			traits = { unemployed smooth_talking_charmer }
 			expire = "1965.1.1.1"
 			id=-1
+		}
+	}
+
+	TEX_onion={
+		name="OnionLord777"
+		portraits = {
+			civilian = {
+				#large = "gfx/leaders/PEN/gurekie.dds"
+
+				#small = "gfx/leaders/PEN/gurekie_small.dds"
+			}
+		}
+
+		advisor={
+			slot = theorist
+			idea_token = TEX_onion
+			allowed = {
+				original_tag = TEX
+			}
+			traits = {
+				silent_workhorse
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
