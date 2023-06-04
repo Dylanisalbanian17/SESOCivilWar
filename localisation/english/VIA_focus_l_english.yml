@@ -209,6 +209,10 @@ via_pressure_dc_open:0 "Special Military Operation in DC"
 via_pressure_dc_open_desc: ""
 via_dc_clamp_down_on_dc: "I live in DC guys."
 via_dc_clamp_down_on_dc_desc: ""
+via_wagner_bros: "Wagner Bros"
+via_wagner_bros_desc: ""
+via_we_are_so_back...: "We are SO back..."
+via_we_are_so_back_desc...: ""
 
 ### Virginia Tool tips
 1_VIA_tt_seso:0 "Gives access to S.E.S.O. related effects, decisions, and focuses.\n"

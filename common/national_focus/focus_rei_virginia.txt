@@ -1284,6 +1284,57 @@ focus = {
 }
 
 focus = {
+	id = via_wagner_bros
+	icon = GFX_focus_VIA_wagner_bros
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = via_educate_those_damn_trailer_park_people
+	available_if_capitulated = yes
+	prerequisite = { focus = via_nova }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_we_are_so_back...
+	icon = GFX_focus_VIA_wagner_bros
+	x = 0
+	y = 2
+	cost = 5
+	relative_position_id = via_educate_those_damn_trailer_park_people
+	available_if_capitulated = yes
+	prerequisite = { focus = via_wagner_bros }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
+	id = via_prigozhin_fan
+	icon = GFX_focus_VIA_wagner_bros
+	x = 2
+	y = 2
+	cost = 5
+	relative_position_id = via_educate_those_damn_trailer_park_people
+	available_if_capitulated = yes
+	prerequisite = { focus = via_we_are_so_back... }
+	search_filters = { FOCUS_FILTER_POLITICAL } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+}
+
+focus = {
 	id = via_create_youtube_channel
 	icon = GFX_focus_smiling_buddha
 	x = 2
