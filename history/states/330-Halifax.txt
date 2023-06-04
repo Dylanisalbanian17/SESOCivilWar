@@ -6,14 +6,25 @@ state={
 		owner = NSC
 		add_core_of = NSC
 		victory_points = {
-			4355 10 
+			4355 30
+		}
+		victory_points = {
+			41 15
+		}
+		victory_points = {
+			7236 15
 		}
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 2
 			air_base = 1
-
+			4355 = {
+				naval_base     = 3
+			}
+			7236 = {
+				naval_base     = 1
+			}
 		}
 
 	}
@@ -21,7 +32,7 @@ state={
 	provinces={
 		41 2129 3389 3538 3908 4355 4457 4902 5224 5281 5486 6068 6200 7230 7236 7251 7274 7277 7280 7290 7292 
 	}
-	manpower=10000
+	manpower=600000
 	buildings_max_level_factor=1.000
 	state_category=town
 }
