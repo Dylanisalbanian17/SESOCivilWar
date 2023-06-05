@@ -10,7 +10,7 @@ characters={
 
 		country_leader={
 			ideology=fascism_ideology
-			traits = { unemployed economist }
+			traits = { employed economist }
 			expire = "1965.1.1.1"
 			id=-1
 		}
