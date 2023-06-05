@@ -1,9 +1,9 @@
 ideas = {
 	country = {
-		communication_problems = {
+		general_confusion = {
 			
 			allowed = {
-				tag = NSC
+				tag = MIC
 			}
 
 			allowed_civil_war = { 
@@ -22,10 +22,10 @@ ideas = {
 			}
 		}
 
-		not_training_cadets = {
+		military_grade_wifi = {
 			
 			allowed = {
-				tag = NSC
+				tag = MIC
 			}
 
 			allowed_civil_war = { 
@@ -34,13 +34,9 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = spr_disbanded_army
+			picture = generic_army_problems
 			
-			modifier = {
-								
-				training_time_factor = 0.25
-				
-				minimum_training_level = 0.25
+			modifier = {							
 
 			}
 		}
