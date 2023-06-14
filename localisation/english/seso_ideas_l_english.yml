@@ -177,6 +177,9 @@ communication_problems: "Communication Problems"
 communication_problems_desc: "Men of the Mikmaqian army find themselves lacking communication and directives from each other. The only phrases they can muster are Alright... Perhaps..."
 not_training_cadets: "Untrained Cadets"
 not_training_cadets_desc: "Much to Crimson's dismay, cadets line up in droves waiting for a trainer, but no comes to assist."
+# MIC Ideas
+general_confusion: "General Confusion"
+general_confusion_desc: ""
 ## Generic Manufacturers
 # Tank
 seso_warthunder_manufacturer: "Warthunder"

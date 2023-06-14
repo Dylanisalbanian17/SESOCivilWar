@@ -4,7 +4,7 @@ characters={
 		name="Jacks"
 		portraits = {
 			civilian = {
-				#large="gfx//leaders//ALB//Portrait_Albania_King_Zog.dds"
+				large="gfx/leaders/MIC/jacks_n.dds"
 			}
 		}
 
