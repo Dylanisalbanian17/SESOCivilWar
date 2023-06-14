@@ -659,6 +659,27 @@ focus_tree = {
 	}
 
 	focus = {
+		id = PEN_restore_the_steel_mills
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = PEN_storm_the_commonwealth_senate }
+		relative_position_id = PEN_storm_the_commonwealth_senate
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			238 = {
+				add_resource = {
+					type = steel
+					amount = 100
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = PEN_move_the_capital
 		icon = GFX_focus_POL_ukrainian_army
 		prerequisite = { focus = PEN_storm_the_commonwealth_senate }
@@ -714,6 +735,20 @@ focus_tree = {
 				set_state_name = "Eriupol"
 
 			}
+		}
+	}
+
+	focus = {
+		id = PEN_hit_up_army_surplus_store
+		icon = GFX_focus_POL_ukrainian_army
+		x = 16
+		y = 10
+		cost = 5
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			
 		}
 	}
 
