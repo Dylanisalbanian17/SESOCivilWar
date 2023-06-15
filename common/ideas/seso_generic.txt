@@ -183,6 +183,26 @@ ideas = {
 			modifier = {
 			}
 		}
+
+		idea_seso_garrys_mod_addiction = {
+			picture = GFX_idea_generic_garrysmod
+
+			allowed = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.05
+				stability_factor = -0.1
+			}
+		}
 	}
 
 	tank_manufacturer = {

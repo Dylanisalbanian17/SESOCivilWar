@@ -16,6 +16,10 @@ set_technology = {
 	basic_train = 1
 }
 
+add_ideas = {
+	idea_seso_garrys_mod_addiction
+}
+
 set_convoys = 30
 add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }
 add_equipment_to_stockpile = { type = support_equipment amount = 500 }
