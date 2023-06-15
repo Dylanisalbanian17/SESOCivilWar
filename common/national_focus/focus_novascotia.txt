@@ -105,12 +105,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			completion_reward = {
-				add_tech_bonus = {
-					category = artillery
-					uses = 1
-					bonus = 1
-		}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = artillery
+
 			}
 	}
 	}
@@ -129,12 +128,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			completion_reward = {
-				add_tech_bonus = {
-					category = cat_anti_tank
-					uses = 1
-					bonus = 1
-		}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_anti_tank
+
 			}
 	}
 	}
