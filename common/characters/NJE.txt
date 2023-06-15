@@ -43,6 +43,25 @@ characters={
 				small=GFX_portrait_ITA_benito_mussolini
 			}
 		}
+
+	NJE_blue_fumo ={
+		name = "Blue Fumo"
+		portraits={
+			army={
+				large = "gfx/leaders/NJE/bluefumo.dds"
+				# small
+			}
+		}
+		field_marshal={
+			traits={ media_personality }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=2
+		}
+	}
 		#advisor = {
 		#	slot = army_chief
 		#	idea_token = benito_mussolini
