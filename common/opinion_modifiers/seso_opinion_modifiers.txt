@@ -80,4 +80,14 @@ opinion_modifiers = {
 		years = 6
 	}
 
+	opinion_pog = {
+		value = -10
+		years = 6
+	}
+
+	opinion_shitternet = {
+		value = -25
+		years = 6
+	}
+
 }

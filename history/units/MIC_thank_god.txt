@@ -1,0 +1,95 @@
+division_template = {
+	name = "Michigan Militia"
+
+	division_names_group = USA_INF_01
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		name = "First Division"
+		location = 6913
+		division_template = "Michigan Militia"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Second Division"
+		location = 1517
+		division_template = "Michigan Militia"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Third Division"
+		location = 7618
+		division_template = "Michigan Militia"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Fourth Division"
+		location = 2333
+		division_template = "Michigan Militia"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Fifth Division"
+		location = 7781
+		division_template = "Michigan Militia"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Sixth Division"
+		location = 7748
+		division_template = "Michigan Militia"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Seventh Division"
+		location = 389
+		division_template = "Michigan Militia"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Eighth Division"
+		location = 5816
+		division_template = "Michigan Militia"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "Ninth Division"
+		location = 3178
+		division_template = "Michigan Militia"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+}
