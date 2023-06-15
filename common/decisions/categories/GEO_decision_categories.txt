@@ -15,15 +15,12 @@ GEO_trolling_category = {
 
 GEO_pc_investment_category = {
 	priority = 150
-	picture = generic_border_conflicts
-	icon = generic_propaganda
+	#picture = generic_border_conflicts
+	icon = generic_prospect_for_resources
 	allowed = {
 		has_country_leader = {
 			character = GEO_finch
 			ruling_only = yes
-		}
-		FROM = {
-			has_completed_focus = GEO_the_gamers
 		}
 	}
 }
