@@ -180,6 +180,15 @@ not_training_cadets_desc: "Much to Crimson's dismay, cadets line up in droves wa
 # MIC Ideas
 general_confusion: "General Confusion"
 general_confusion_desc: ""
+military_grade_wifi: "Military Grade WiFi"
+military_grade_wifi_desc: ""
+deliver_pizzas: "Delivered Pizzas"
+deliver_pizzas_desc: ""
+opinion_pog: "Hates POGs"
+the_spirit_of_the_cav: "Spirit of the Cav"
+logistic_minded: "Logistic Minded"
+shitter_wifi: "Shitternet"
+opinion_shitternet: "Shitternet"
 ## Generic Manufacturers
 # Tank
 seso_warthunder_manufacturer: "Warthunder"
@@ -203,3 +212,5 @@ seso_blackops1_manufacturer: "Call of Duty: Black Ops"
 seso_blackops2_manufacturer: "Call of Duty: Black Ops II"
 seso_blackops3_manufacturer: "Call of Duty: Black Ops III"
 seso_mow_manufacturer: "Men of War"
+## Generic Ideas
+idea_seso_garrys_mod_addiction: "Garry's Mod Addiction"

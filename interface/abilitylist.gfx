@@ -577,4 +577,10 @@ spriteTypes = {
 		name = "GFX_idea_via_isolationist_foreign_policy"
 		texturefile = "gfx/interface/ideas/generic_morale_bonus.dds"	
 	}
+
+	spriteType = {
+		name = "GFX_idea_generic_garrysmod"
+		### texturefile = "gfx/interface/ideas/generic_garrysmod.dds"	
+		texturefile = "gfx/interface/ideas/generic_morale_bonus.dds"
+	}
 }
