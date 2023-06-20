@@ -680,6 +680,70 @@ focus_tree = {
 	}
 
 	focus = {
+		id = PEN_invest_in_raytheon
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = PEN_storm_the_commonwealth_senate }
+		relative_position_id = PEN_storm_the_commonwealth_senate
+		x = -2
+		y = 1
+		cost = 5
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			238 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = PEN_ohio_SMO
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = PEN_invest_in_raytheon }
+		relative_position_id = PEN_invest_in_raytheon
+		x = -2
+		y = 1
+		cost = 5
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			PEN = {
+				create_wargoal = {
+					type = annex_everything
+					target = OHO
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PEN_NJ_SMO
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = PEN_invest_in_raytheon }
+		relative_position_id = PEN_invest_in_raytheon
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			#has_global_flag = seso_boxcraft_flag
+		}
+		completion_reward = {
+			PEN = {
+				create_wargoal = {
+					type = annex_everything
+					target = NJE
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = PEN_move_the_capital
 		icon = GFX_focus_POL_ukrainian_army
 		prerequisite = { focus = PEN_storm_the_commonwealth_senate }
@@ -702,7 +766,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PEN_proclaim_ukrainslvania
+		id = PEN_proclaim_ukrainsylvania
 		icon = GFX_focus_POL_ukrainian_army
 		prerequisite = { focus = PEN_move_the_capital }
 		relative_position_id = PEN_move_the_capital
