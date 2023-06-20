@@ -13,12 +13,14 @@ focus_tree = {
 	focus = {
 		id = MIC_focus_join_the_us_army
 		icon = GFX_focus_usa_recruit_the_free_corps
-		x = 8
+		x = 15
 		y = 0
 		cost = 10
 
 		completion_reward = {
 			### chance to get canceled if he breaks his foot
+			add_war_support = 0.05
+			army_experience= 25
 		}
 	}
 
@@ -32,14 +34,16 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			hours = 6 country_event = michigan.1 
 		}
 	}
 
 	focus = {
 		id = MIC_focus_eleven_bravo
 		icon = GFX_goal_generic_axis_build_infantry
-		relative_position_id = NSC_focus_major_mikmaq
+		relative_position_id = MIC_focus_join_the_us_army
 		prerequisite = { focus = MIC_focus_choosing_mos }
+		available = { FOCUS_never_available = yes }
 		mutually_exclusive = {
 			focus = MIC_focus_eighty_eight_mike OR = MIC_focus_nineteen_delta
 		}
@@ -55,8 +59,9 @@ focus_tree = {
 	focus = {
 		id = MIC_focus_eighty_eight_mike
 		icon = GFX_focus_generic_truck
-		relative_position_id = NSC_focus_major_mikmaq
+		relative_position_id = MIC_focus_join_the_us_army
 		prerequisite = { focus = MIC_focus_choosing_mos }
+		available = { FOCUS_never_available = yes }
 		mutually_exclusive = {
 			focus = MIC_focus_eleven_bravo OR = MIC_focus_nineteen_delta
 		}
@@ -72,7 +77,7 @@ focus_tree = {
 	focus = {
 		id = MIC_focus_nineteen_delta
 		icon = GFX_focus_prc_infiltration
-		relative_position_id = NSC_focus_major_mikmaq
+		relative_position_id = MIC_focus_join_the_us_army
 		prerequisite = { focus = MIC_focus_choosing_mos }
 		mutually_exclusive = {
 			focus = MIC_focus_eighty_eight_mike OR = MIC_focus_eleven_bravo
@@ -89,13 +94,14 @@ focus_tree = {
 	focus = {
 		id = MIC_focus_improve_wifi
 		icon = GFX_goal_generic_production
-		relative_position_id = NSC_focus_major_mikmaq
+		relative_position_id = MIC_focus_join_the_us_army
 		prerequisite = { focus = MIC_focus_nineteen_delta OR = MIC_focus_eighty_eight_mike OR = MIC_focus_eleven_bravo }
 		x = 0
 		y = 3
 		cost = 5
 
 		completion_reward = {
+			remove_ideas= military_grade_wifi
 		}
 	}
 
@@ -104,6 +110,20 @@ focus_tree = {
 	focus = {
 		id = MIC_focus_destroy_ohio
 		icon = GFX_goal_demand_sudetenland
+		relative_position_id = MIC_focus_insult_pogs
+		prerequisite = { focus = MIC_focus_insult_pogs }
+		x = 2
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = OHO }
+		}
+	}
+
+	focus = {
+		id = MIC_focus_insult_pogs
+		icon = GFX_focus_generic_strike_at_democracy1
 		relative_position_id = MIC_focus_improve_wifi
 		available = { has_completed_focus = MIC_focus_choosing_mos }
 		x = 0
@@ -112,87 +132,134 @@ focus_tree = {
 
 		completion_reward = {
 			### chance to get canceled if he breaks his foot
-		}
+			add_opinion_modifier = {
+				target = ARB
+				modifier = opinion_pog
+			}
+			add_opinion_modifier = {
+				target = ARS
+				modifier = opinion_pog
+			}
 	}
+}
 
 	focus = {
-		id = MIC_focus_insult_pogs
-		icon = GFX_focus_generic_strike_at_democracy1
-		relative_position_id = MIC_focus_destroy_ohio
-		prerequisite = { focus = MIC_focus_destroy_ohio }
+		id = MIC_focus_thank_god
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		relative_position_id = MIC_focus_insult_pogs
+		prerequisite = { focus = MIC_focus_insult_pogs }
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 
+		available = {
+			has_war = yes
+		}
+
 		completion_reward = {
-			### chance to get canceled if he breaks his foot
+			custom_effect_tooltip = mic_thank_god_tt
+			hidden_effect = {
+				load_oob = MIC_thank_god
+			}
+	}
+}
+
+focus = {
+	id = MIC_focus_mute_pickle
+	icon = GFX_focus_attack_britain
+	relative_position_id = MIC_focus_insult_pogs
+	prerequisite = { focus = MIC_focus_insult_pogs }
+	x = -2
+	y = 1
+	cost = 10
+
+	completion_reward = {
+		completion_reward = {
+			hours = 6 country_event = michigan.2
 		}
 	}
+}
 
 	### Cav Scout
 
 	focus = {
-		id = MIC_focus_cav_scout
+		id = MIC_focus_garryowen
 		icon = GFX_focus_usa_tank_destroyer_doctrine
-		relative_position_id = NSC_focus_major_mikmaq
+		relative_position_id = MIC_focus_join_the_us_army
 		available = { has_completed_focus = MIC_focus_nineteen_delta }
 		x = 6
 		y = 1
 		cost = 5
 
 		completion_reward = {
+			add_ideas = the_spirit_of_the_cav
 		}
 	}
 
 	focus = {
 		id = MIC_focus_bradley
 		icon = GFX_goal_generic_army_tanks
-		relative_position_id = MIC_focus_cav_scout
-		prerequisite = { focus = MIC_focus_cav_scout }
+		relative_position_id = MIC_focus_garryowen
+		prerequisite = { focus = MIC_focus_garryowen }
 		x = 0
 		y = 1
 		cost = 5
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 		}
 	}
 
 	focus = {
 		id = MIC_focus_apply_us_army_tactics
 		icon = GFX_goal_generic_army_doctrines
-		relative_position_id = MIC_focus_cav_scout
+		relative_position_id = MIC_focus_garryowen
 		prerequisite = { focus = MIC_focus_bradley }
 		x = -1
 		y = 2
 		cost = 5
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 3
+				category = cat_mobile_warfare
+			}
 		}
 	}
 
 	focus = {
 		id = MIC_focus_logistic_minded
 		icon = GFX_focus_SOV_the_road_of_life
-		relative_position_id = MIC_focus_cav_scout
+		relative_position_id = MIC_focus_garryowen
 		prerequisite = { focus = MIC_focus_bradley }
 		x = 1
 		y = 2
 		cost = 5
 
 		completion_reward = {
+			add_ideas = logistic_minded
 		}
 	}
 
 	focus = {
 		id = MIC_focus_learn_from_ukraine
 		icon = GFX_focus_POL_ukrainian_army
-		relative_position_id = MIC_focus_cav_scout
+		relative_position_id = MIC_focus_garryowen
 		prerequisite = { focus = MIC_focus_apply_us_army_tactics OR = MIC_focus_logistic_minded }
 		x = 0
 		y = 3
 		cost = 5
 
 		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -201,17 +268,19 @@ focus_tree = {
 	focus = {
 		id = MIC_focus_deliver_pizzas
 		icon = GFX_goal_generic_consumer_goods
-		x = 3
+		relative_position_id = MIC_focus_join_the_us_army
+		x = -6
 		y = 1
 		cost = 5
 
 		completion_reward = {
+			add_timed_idea = { idea = deliver_pizzas days = 365 }
 		}
 	}
 
 	focus = {
 		id = MIC_focus_design_open_house_armory
-		icon = GFX_focus_ETH_freedom_at_gunpoint
+		icon = GFX_focus_SWI_issue_war_bonds
 		relative_position_id = MIC_focus_deliver_pizzas
 		prerequisite = { focus = MIC_focus_deliver_pizzas }
 		x = 0
@@ -219,6 +288,14 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -232,6 +309,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 }

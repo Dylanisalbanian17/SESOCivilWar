@@ -188,6 +188,23 @@ wvi_virginia.2.a: "Dissapointing."
 wvi_virginia.2.t: "Our offer has been declined."
 wvi_virginia.2.d: "Sadly the National Union has denied our offer. While it may perplex us... they must have their reasoning."
 
+### Michigan
+michigan.1.t: "Choosing MOS"
+michigan.1.d: "Jacks has completed basic and must choose his MOS (army job)"
+michigan.1.a: "Nineteen Delta"
+michigan.1.b: "Eighty Eight Mike"
+michigan.1.c: "Eleven Bravo"
+michigan.2.t: "Mute Pickle?"
+michigan.2.d: "Pickle can not stop bitching about how I should fix my internet. Should I mute this mf or maybe hear him out?"
+michigan.2.a: "Mute him... permanently."
+michigan.2.b: "Hear him out."
+michigan.3.t: "NEVER TRUST PICKLE"
+michigan.3.d: "Yeah fuck this guy. My internet is worse now. I knew this would happen."
+michigan.3.a: "Dick."
+michigan.4.t: "Rare Moment"
+michigan.4.d: "That actually helped."
+michigan.4.a: "Thanks."
+
 ### News Events
 
 news.1.t: "The Gamer takeover of California"

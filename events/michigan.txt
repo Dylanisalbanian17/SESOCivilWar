@@ -1,0 +1,109 @@
+add_namespace = michigan
+
+country_event = {
+	id = michigan.1
+	title = michigan.1.t
+	desc = michigan.1.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = michigan.1.a
+		ai_chance = { factor = 1}
+		complete_national_focus = MIC_focus_nineteen_delta
+	}
+
+	option = {
+		name = michigan.1.b
+		ai_chance = { factor = 0}
+		complete_national_focus = MIC_focus_eighty_eight_mike
+	}
+
+	option = {
+		name = michigan.1.c
+		ai_chance = { factor = 0}
+		complete_national_focus = MIC_focus_eleven_bravo
+	}
+}
+
+country_event = {
+	id = michigan.2
+	title = michigan.2.t
+	desc = michigan.2.d
+	picture = GFX_report_event_hitler_china
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = michigan.2.a
+		ai_chance = { factor = 1}
+		hidden_effect = {
+			declare_war_on = {
+				target = PEN
+				type = annex_everything
+			}
+		}
+	}
+
+
+	option = {
+		name = michigan.2.b
+		ai_chance = { factor = 1}
+		hidden_effect = {
+			random_list = {
+				70 = {
+					hours = 6 country_event = michigan.3
+				}
+				30 = {
+					hours = 6 country_event = michigan.4
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = michigan.3
+	title = michigan.3.t
+	desc = michigan.3.d
+	picture = GFX_report_event_chamberlain
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = michigan.3.a
+		ai_chance = { factor = 1}
+		add_stability = -0.05
+		swap_ideas= {
+			remove_idea = military_grade_wifi 
+		   add_idea = shitter_wifi 
+		   }
+		add_opinion_modifier = {
+			target = PEN
+			modifier = opinion_shitternet
+		}
+		create_wargoal = { type = annex_everything target = PEN }
+	}
+
+}
+
+country_event = {
+	id = michigan.4
+	title = michigan.4.t
+	desc = michigan.4.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = michigan.4.a
+		ai_chance = { factor = 1}
+		remove_idea = military_grade_wifi
+	}
+
+}
