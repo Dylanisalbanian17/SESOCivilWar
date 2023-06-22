@@ -27,9 +27,9 @@ focus_tree = {
 	#Industry
 	focus = {
 		id = GEO_create_twitter
-		icon = GFX_focus_generic_africa_infrastructure
+		icon = GFX_focus_ITA_grande_rivolta_rurale
 		relative_position_id = GEO_arrival_in_georgia
-		x = -1
+		x = -2
 		y = 2
 		cost = 5
 		search_filters = {
@@ -213,7 +213,7 @@ focus_tree = {
 	#Relapse into garry mod
 	focus = {
 		id = GEO_relapse_into_garry_mod
-		icon = GFX_focus_AST_squander_bug
+		icon = GFX_focus_ITA_by_blood_alone
 		relative_position_id = GEO_ggn_gamers
 		x = 0
 		y = 1
@@ -248,7 +248,7 @@ focus_tree = {
 	#Become supreme commander of geetsly
 	focus = {
 		id = GEO_become_supreme_commander_of_geetsly
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
 		relative_position_id = GEO_relapse_into_garry_mod
 		x = 0
 		y = 1
@@ -267,7 +267,7 @@ focus_tree = {
 		id = GEO_reestablish_the_shadow_troopers
 		icon = GFX_GEO_reestablish_the_shadow_troopers-54433
 		relative_position_id = GEO_ggn_gamers
-		x = -1
+		x = -2
 		y = 2
 		cost = 5
 		search_filters = {
@@ -351,10 +351,10 @@ focus_tree = {
 	#Begin their deployment
 	focus = {
 		id = GEO_high_colonel_ggn
-		icon = GFX_focus_ger_reichskommisariats
-		relative_position_id = GEO_train_the_new_recruits
-		x = 1
-		y = 3
+		icon = GFX_focus_SOV_stalins_cult_of_personality
+		relative_position_id = GEO_become_supreme_commander_of_geetsly
+		x = 0
+		y = 4
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
@@ -368,9 +368,9 @@ focus_tree = {
 
 	focus = {
 		id = GEO_focus_invest_in_new_pc
-		#icon = 
+		icon = GFX_focus_ITA_devaluate_the_lire
 		relative_position_id = GEO_arrival_in_georgia
-		x = -4
+		x = -5
 		y = 2
 		cost = 7
 		prerequisite = {
@@ -384,7 +384,7 @@ focus_tree = {
 	# Warhammer
 	focus = {
 		id = GEO_focus_warhammer_fascination
-		#icon = 
+		icon = GFX_focus_generic_national_security
 		relative_position_id = GEO_arrival_in_georgia
 		x = 12
 		y = 1
@@ -398,7 +398,7 @@ focus_tree = {
 
 	focus = {
 		id = GEO_focus_dawn_of_war_mods
-		#icon = 
+		icon = GFX_focus_generic_tankette
 		relative_position_id = GEO_focus_warhammer_fascination
 		x = -2
 		y = 1
@@ -413,7 +413,7 @@ focus_tree = {
 
 	focus = {
 		id = GEO_focus_total_war_warhammer
-		#icon = 
+		icon = GFX_focus_GRE_following_in_the_footsteps_of_giants
 		relative_position_id = GEO_focus_warhammer_fascination
 		x = 0
 		y = 1
@@ -428,7 +428,7 @@ focus_tree = {
 
 	focus = {
 		id = GEO_focus_warhammer_40k_unit
-		#icon = 
+		icon = GFX_focus_generic_vatican_agents
 		relative_position_id = GEO_focus_warhammer_fascination
 		x = 2
 		y = 1
@@ -444,7 +444,7 @@ focus_tree = {
 
 	focus = {
 		id = GEO_focus_40k_gamers
-		#icon = 
+		icon = GFX_focus_generic_spread_fascism
 		relative_position_id = GEO_focus_warhammer_fascination
 		x = 0
 		y = 2
@@ -468,8 +468,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_troll_the_sesoers
-		#icon = 
+		id = GEO_focus_troll_sesoers
+		icon = GFX_focus_generic_strike_at_democracy3
 		relative_position_id = GEO_focus_40k_gamers
 		x = 0
 		y = 3
