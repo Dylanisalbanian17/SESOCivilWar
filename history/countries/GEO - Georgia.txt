@@ -42,6 +42,7 @@ add_equipment_to_stockpile = { type = train_equipment amount = 100 }
 
 add_ideas = { 
 	idea_bad_pc_3
+	idea_georgia_stink
 }
 
 recruit_character = GEO_finch
