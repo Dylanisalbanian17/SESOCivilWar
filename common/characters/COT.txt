@@ -217,6 +217,9 @@
 			logistics_skill= 2
 			legacy_id=0
 		}
+		available  = {
+			COT = { has_country_leader = { name = "Dildo Sagbag" ruling_only = yes} }
+		}
 	}
 
 	COT_durasteel_ape = {
@@ -234,7 +237,7 @@
 				original_tag = COT
 			}
 			available  = {
-				COT = { has_country_leader = { name = "Dildo Sagbag" ruling_only = yes} }
+				COT = { has_country_leader = { name = "Dildo Sagbag" ruling_only = no} }
 			}
 		}
 	}
