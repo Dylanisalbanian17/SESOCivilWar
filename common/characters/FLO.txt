@@ -1,19 +1,114 @@
 characters={
 
-	FLO_sharps={
-		name="Sharps"
+	FLO_cedric={
+		name="MasterChiefcw"
 		portraits = {
 			civilian = {
-				large="gfx/leaders/FLO/sharps.dds"
+				large=GFX_portrait_unknown
 			}
 		}
 
 		country_leader={
-			ideology=fascism_ideology
-			traits = { employed economist }
+			ideology=moderatism
+			traits = { unemployed }
 			expire = "1965.1.1.1"
 			id=-1
 		}
 	}
 
+	FLO_dragonslayer={
+		name="Dragonslayer's Law"
+		portraits={
+			civilian = {
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+			army={
+				#large=GFX_portrait_GER_friedrich_paulus
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2	
+			logistics_skill = 2
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = dragonslayer
+			traits = { technocrat }
+			allowed = {
+				original_tag = FLO
+			}
+			available  = {
+				FLO = { has_country_leader = { character = FLO_cedric ruling_only = no} }
+			}
+		}
+	}
+
+	FLO_yudamahn={
+		name="Yudamahn"
+		portraits={
+			civilian = {
+				large=GFX_portrait_unknown
+			}
+			army={
+				large=GFX_portrait_unknown
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3	
+			logistics_skill = 3
+		}
+	}
+
+	FLO_khai95={
+		name="khai95"
+		portraits={
+			civilian = {
+				#large=GFX_portrait_unknown
+			}
+			army={
+				#large=GFX_portrait_unknown
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1	
+			logistics_skill = 2
+		}
+	}
+
+	FLO_nickmajik={
+		name="Nickmajik"
+		portraits={
+			civilian = {
+				#large=GFX_portrait_unknown
+			}
+			army={
+				#large=GFX_portrait_unknown
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1	
+			logistics_skill = 1
+		}
+	}
 }
