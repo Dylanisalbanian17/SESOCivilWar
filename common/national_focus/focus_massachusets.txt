@@ -174,7 +174,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		prerequisite = {
-			focus = mas_focus_employment OR = mas_focus_air_force
+			focus = mas_focus_employment OR = mas_focus_air_force OR = mas_focus_navy
 		}
 		completion_reward = {
 			add_ideas = idea_airsoft_junkie
@@ -191,6 +191,70 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = mas_focus_graduation
+		}
+		mutually_exclusive = {
+			focus = mas_focus_navy
+		}
+		available = {
+			if = {
+				limit = {
+					AND = {
+						has_completed_focus = mas_focus_employment
+						has_completed_focus = mas_focus_college
+					}
+				}
+				has_political_power > 600
+				else_if = {
+					limit = {
+						OR = {
+							has_completed_focus = mas_focus_employment
+							has_completed_focus = mas_focus_college
+						}
+					}
+					has_political_power > 300
+				}
+				else = {
+					has_political_power > 150
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					AND = {
+						has_completed_focus = mas_focus_employment
+						has_completed_focus = mas_focus_college
+					}
+				}
+				add_political_power = -600
+				else_if = {
+					limit = {
+						OR = {
+							has_completed_focus = mas_focus_employment
+							has_completed_focus = mas_focus_college
+						}
+					}
+					add_political_power = -300
+				}
+				else = {
+					add_political_power = -150
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = mas_focus_navy
+		#icon = GFX_focus_generic_copy_plane_designs
+		cost = 10
+		relative_position_id = mas_focus_graduation
+		x = 7
+		y = 2
+		prerequisite = {
+			focus = mas_focus_graduation
+		}
+		mutually_exclusive = {
+			focus = mas_focus_air_force
 		}
 		available = {
 			if = {
@@ -248,7 +312,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		prerequisite = {
-			focus = mas_focus_air_force OR = mas_focus_reform_star_fighters
+			focus = mas_focus_air_force OR = mas_focus_reform_star_fighters OR focus = mas_focus_navy
 		}
 		completion_reward = {
 			air_experience = 100
