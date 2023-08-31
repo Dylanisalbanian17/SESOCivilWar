@@ -1,0 +1,304 @@
+focus_tree = {
+	id = flo_focus
+	continuous_focus_position = { x = 100 y = 550}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FLO
+		}
+	}
+
+	# Foreign Politics
+	focus = {
+		id = flo_focus_leave_spagistan
+		#icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		x = 15
+		y = 0
+		prerequisite = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = flo_focus_create_new_unit
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_leave_spagistan
+		cost = 5
+		x = -5
+		y = 1
+		prerequisite = {
+			focus = flo_focus_leave_spagistan
+		}
+		completion_reward = {
+			# Create the Crusaders unit spirit
+		}
+	}
+
+	focus = {
+		id = flo_focus_follow_trevor
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_leave_spagistan
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = flo_focus_leave_spagistan
+		}
+		completion_reward = {
+			# Get same spirit as trevor
+		}
+	}
+
+	focus = {
+		id = flo_focus_find_unit
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_leave_spagistan
+		cost = 5
+		x = 5
+		y = 1
+		prerequisite = {
+			focus = flo_focus_leave_spagistan
+		}
+		completion_reward = {
+			# Randomize spirit between existing units such as SESO, HAM, Spagistan, 501st, Finch's Warhammer 40k unit
+		}
+	}
+
+	focus = {
+		id = flo_focus_focus_on_unit
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_follow_trevor
+		cost = 5
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = flo_focus_follow_trevor
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = flo_focus_develop_sop
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_focus_on_unit
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = flo_focus_focus_on_unit
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = flo_focus_focus_on_gaming
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_follow_trevor
+		cost = 5
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = flo_focus_follow_trevor OR flo_focus_find_unit OR flo_focus_create_new_unit
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = flo_focus_hunt_showdown_irl
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_focus_on_gaming
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = flo_focus_focus_on_gaming
+		}
+		completion_reward = {
+			# Wargoal to take Louisiana
+		}
+	}
+
+	# Internal Politics Tree
+	focus = {
+		id = flo_focus_adopt_morality
+		#icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		x = 25
+		y = 0
+		prerequisite = {
+		}
+		completion_reward = {
+			# Enable Edgyness to Straight Edgedness spectrum gameplay mechanic. At worst, cedric will sip 1 glass of beer. At best, he will drive his siblings around. In the middle, he will turn off the wifi so his siblings cant use it late into the night.
+		}
+	}
+
+	focus = {
+		id = flo_focus_get_a_job
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_adopt_morality
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = flo_focus_adopt_morality
+		}
+		completion_reward = {
+			# Change unemployed to employed
+			# Wargoal on state that includes Mobile, Alabama
+		}
+	}
+
+	# Army Tree
+	focus = {
+		id = flo_focus_paint_warhammer_40k_army
+		#icon = GFX_goal_generic_soviet_construction
+		#relative_position_id = flo_focus_adopt_morality
+		cost = 5
+		x = 35
+		y = 0
+		prerequisite = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = flo_focus_play_warhammer_1
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_paint_warhammer_40k_army
+		cost = 5
+		x = -3
+		y = 3
+		prerequisite = {
+			focus = flo_focus_paint_warhammer_40k_army
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = flo_focus_play_warhammer_2
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_paint_warhammer_40k_army
+		cost = 5
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = flo_focus_paint_warhammer_40k_army
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = flo_focus_play_warhammer_3
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_paint_warhammer_40k_army
+		cost = 5
+		x = 3
+		y = 3
+		prerequisite = {
+			focus = flo_focus_paint_warhammer_40k_army
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = flo_focus_warhammer_3_torr_tier
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_play_warhammer_2
+		cost = 5
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = flo_focus_play_warhammer_1
+		}
+		prerequisite = {
+			focus = flo_focus_play_warhammer_2
+		}
+		prerequisite = {
+			focus = flo_focus_play_warhammer_3
+		}
+		completion_reward = {
+		}
+	}
+
+# Industry Tree
+	focus = {
+		id = flo_focus_connect_4
+		#icon = GFX_goal_generic_soviet_construction
+		#relative_position_id = flo_focus_play_warhammer_2
+		cost = 5
+		x = 45
+		y = 0
+		prerequisite = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = flo_focus_mega_bloks
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_connect_4
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = flo_focus_connect_4
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = flo_focus_dnd
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_mega_bloks
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = flo_focus_mega_bloks
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = flo_focus_attack_update
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_dnd
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = flo_focus_dnd
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = flo_focus_collectible_dr_who_monopoly
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = flo_focus_attack_update
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = flo_focus_attack_update
+		}
+		completion_reward = {
+		}
+	}
+}

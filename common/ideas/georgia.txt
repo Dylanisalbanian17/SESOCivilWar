@@ -148,5 +148,22 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.15
 			}
 		}
+
+		idea_georgia_stink = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
 	}
 }
