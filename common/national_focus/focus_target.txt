@@ -1,0 +1,260 @@
+focus_tree = {
+	id = art_focus
+	continuous_focus_position = { x = 100 y = 850}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ART
+		}
+	}
+
+	focus = {
+		id = art_focus_venerate_rasmussen
+		#icon = GFX_goal_generic_soviet_construction
+		#relative_position_id = art_focus_
+		cost = 5
+		x = 5
+		y = 0
+		prerequisite = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_audio_visual_power
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_venerate_rasmussen
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = art_focus_venerate_rasmussen
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_comedy_aspirations
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_audio_visual_power
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = art_focus_audio_visual_power
+		}
+		completion_reward = {
+		}
+	}
+
+	# Military focuses
+	focus = {
+		id = art_focus_idle_gaming
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_comedy_aspirations
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = art_focus_comedy_aspirations
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_fishing
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_idle_gaming
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = art_focus_idle_gaming
+		}
+		completion_reward = {
+		}
+	}
+
+	# Civilian focuses
+	focus = {
+		id = art_focus_homo_beastiality
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_comedy_aspirations
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = art_focus_comedy_aspirations
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_flintlock_weaponry
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_homo_beastiality
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = art_focus_homo_beastiality
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_501st_promotion
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_flintlock_weaponry
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = art_focus_flintlock_weaponry
+		}
+		prerequisite = {
+			focus = art_focus_fishing
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_operation_trailer
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_501st_promotion
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = art_focus_501st_promotion
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_youtube_sensation
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_operation_trailer
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = art_focus_operation_trailer
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_mission_hosting
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_501st_promotion
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = art_focus_501st_promotion
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_war_games
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_mission_hosting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = art_focus_mission_hosting
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_storyboarding
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_war_games
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = art_focus_war_games
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_seso_consultant
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_501st_promotion
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = art_focus_501st_promotion
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_bane_invitation
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_seso_consultant
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = art_focus_seso_consultant
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_501st_commitment
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_storyboarding
+		cost = 5
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = art_focus_storyboarding
+		}
+		mutually_exclusive = {
+			focus = art_focus_seso_commitment
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = art_focus_seso_commitment
+		#icon = GFX_goal_generic_soviet_construction
+		relative_position_id = art_focus_storyboarding
+		cost = 5
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = art_focus_storyboarding
+		}
+		mutually_exclusive = {
+			focus = art_focus_501st_commitment
+		}
+		completion_reward = {
+		}
+	}
+
+}
