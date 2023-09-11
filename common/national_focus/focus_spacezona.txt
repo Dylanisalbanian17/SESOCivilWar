@@ -10,21 +10,39 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ARS_a_sesonian_past
+		id = ARS_a_spaceborne_childhood
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 6
 		y = 0
 		cost = 10
 		completion_reward = {
-			army_experience = 50 
-			random_core_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
+
+		}
+	}
+
+	focus = {
+		id = ARS_arma_and_airforce
+		icon = GFX_focus_SOV_flying_clubs
+		relative_position_id = ARS_a_spaceborne_childhood
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = ARS_a_spaceborne_childhood }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ARS_a_look_to_the_future
+		icon = GFX_focus_SOV_flying_clubs
+		relative_position_id = ARS_arma_maybe
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = ARS_arma_maybe }
+		completion_reward = {
+			
 		}
 	}
 
