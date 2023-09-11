@@ -1,6 +1,6 @@
 focus_tree = {
 	id = art_focus
-	continuous_focus_position = { x = 100 y = 850}
+	continuous_focus_position = { x = 950 y = 50}
 	country = {
 		factor = 0
 		modifier = {
@@ -230,6 +230,15 @@ focus_tree = {
 		cost = 5
 		x = -2
 		y = 2
+		available = {
+			OR = {
+				country_exists = ARB
+				country_exists = ARS
+			}
+			has_war = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
 		prerequisite = {
 			focus = art_focus_storyboarding
 		}
@@ -237,6 +246,16 @@ focus_tree = {
 			focus = art_focus_seso_commitment
 		}
 		completion_reward = {
+			declare_war_on = {
+				target = ARB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ARS
+				type = annex_everything
+			}
+			add_civil_war_target = ARB
+			add_civil_war_target = ARS
 		}
 	}
 

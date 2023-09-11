@@ -33,6 +33,6 @@ set_popularities = {
 	neutrality = 75
 }
 
-create_faction = "Arizona Boys"
-add_to_faction = ARS
-add_to_faction = ARB
+#create_faction = "Arizona Boys"
+#add_to_faction = ARS
+#add_to_faction = ARB
