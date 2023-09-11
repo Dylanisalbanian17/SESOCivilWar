@@ -442,7 +442,16 @@ form_arizona_category = {
 			is_subject = no
 			# Space
 			custom_trigger_tooltip = {
-				tooltip = form_country_space_canyon_required_states_tt
+				tooltip = form_arizona_space_required_states_tt
+				controls_state = 76
+				controls_state = 77
+				controls_state = 78
+				controls_state = 79
+				controls_state = 80
+			}
+			# Box
+			custom_trigger_tooltip = {
+				tooltip = form_arizona_box_required_states_tt
 				controls_state = 69
 				controls_state = 70
 				controls_state = 71
@@ -451,18 +460,9 @@ form_arizona_category = {
 				controls_state = 74
 				controls_state = 75
 			}
-			# Box
-			custom_trigger_tooltip = {
-				tooltip = form_country_box_reservation_required_states_tt
-				controls_state = 76
-				controls_state = 77
-				controls_state = 78
-				controls_state = 79
-				controls_state = 80
-			}
 			# Target
 			custom_trigger_tooltip = {
-				tooltip = form_country_scottsdale_church_required_states_tt
+				tooltip = form_arizona_target_required_states_tt
 				controls_state = 81
 				controls_state = 82
 				controls_state = 83
