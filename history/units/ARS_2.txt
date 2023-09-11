@@ -10,7 +10,7 @@ division_template = {
 
 units = {
 	division= {	
-		location = 9249
+		location = 9224
 		division_template = "Native Americans"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3

@@ -1,0 +1,238 @@
+focus_tree = {
+	id = 12345678
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARB
+		}
+	}
+
+	### 3 Focus Start
+
+	focus = {
+		id = ARB_army_man
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 12
+		y = 0
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_checkpoint_guard
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_army_man
+		prerequisite = { focus = ARB_army_man }
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_indie_dev
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_army_man
+		prerequisite = { focus = ARB_checkpoint_guard }
+		x = 0
+		y = 2
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	### 
+
+	focus = {
+		id = ARB_Another_Contract
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_army_man
+		x = -4
+		y = 3
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_work_on_fortnite_servers
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_Another_Contract
+		prerequisite = { focus = ARB_Another_Contract }
+		x = 1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_cyber_sec
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_Another_Contract
+		prerequisite = { focus = ARB_Another_Contract }
+		x = -1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	### Political
+
+	focus = {
+		id = ARB_subsidize_indie_artists
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_army_man
+		x = 4
+		y = 3
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_space_station_13
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_subsidize_indie_artists
+		prerequisite = { focus = ARB_subsidize_indie_artists }
+		x = -1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_hotline_miami
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_subsidize_indie_artists
+		prerequisite = { focus = ARB_space_station_13 OR = ARB_subsidize_indie_artists }
+		x = 0
+		y = 2
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_purchase_indie_games
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_subsidize_indie_artists
+		prerequisite = { focus = ARB_subsidize_indie_artists }
+		x = 1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	### Sassilization Dev. 
+
+	focus = {
+		id = ARB_begin_sass
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 24
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_iron_out_bugs
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_begin_sass
+		prerequisite = { focus = ARB_begin_sass }
+		x = -1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_steal_unreal_assets
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_begin_sass
+		prerequisite = { focus = ARB_begin_sass }
+		x = 1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_find_playtesters
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_begin_sass
+		prerequisite = { focus = ARB_steal_unreal_assets OR = ARB_iron_out_bugs }
+		x = 0
+		y = 2
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_purple_gang
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_begin_sass
+		prerequisite = { focus = ARB_find_playtesters }
+		x = 0
+		y = 3
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_beta_release
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_begin_sass
+		prerequisite = { focus = ARB_purple_gang }
+		x = 0
+		y = 4
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+
+}
