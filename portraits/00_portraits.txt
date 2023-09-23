@@ -46,7 +46,7 @@ continent = {
 		male = {
 			"GFX_Portrait_South_America_Generic_navy_1"
 			"GFX_Portrait_South_America_Generic_navy_2"
-			"GFX_Portrait_South_America_Generic_navy_3
+			"GFX_Portrait_South_America_Generic_navy_3"
 		}
 	}
 	
@@ -251,7 +251,7 @@ continent = {
 		}
 		neutrality = {
 				male = { 
-					"GFX_Portrait_South_America_Generic_3." 
+					"GFX_Portrait_South_America_Generic_3" 
 			}
 		}
 	}
