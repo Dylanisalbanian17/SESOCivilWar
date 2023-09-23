@@ -12,12 +12,21 @@ default = {
 		#female = {
 		#}
 	#}
-	
+
+	operative = {
+		male = {
+			"GFX_portrait_operative_unknown"
+		}
+		female = {
+			"GFX_portrait_operative_unknown"
+		}
+	}
+
 	male = {
-		"gfx/leaders/leader_unknown.dds"
+		"GFX_portrait_unknown"
 	}
 	female = {
-		"gfx/leaders/leader_unknown.dds"
+		"GFX_portrait_unknown_female"
 	}
 }
 
@@ -25,41 +34,41 @@ continent = {
 	name = europe
 	army = {
 		male = {
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			"GFX_Portrait_South_America_Generic_land_1"
+			"GFX_Portrait_South_America_Generic_land_2"
+			"GFX_Portrait_South_America_Generic_land_3"
+			"GFX_Portrait_South_America_Generic_land_4"
+			"GFX_Portrait_South_America_Generic_land_5"
 		}
 	}
 	
 	navy = {
 		male = {
-			"gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+			"GFX_Portrait_South_America_Generic_navy_1"
+			"GFX_Portrait_South_America_Generic_navy_2"
+			"GFX_Portrait_South_America_Generic_navy_3
 		}
 	}
 	
 	political = {
 		communism = {
 				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+					"GFX_Portrait_Europe_Generic_1"
 			}
 		}
 		democratic = {
 				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+					"GFX_Portrait_Europe_Generic_2" 
 			}
 		}
 		fascism = {
 				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 		neutrality = {
 				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 	}
@@ -70,42 +79,42 @@ continent = {
 	name = north_america
 	army = {
 		male = {
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-			"gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
 		}
 	}
 	
 	navy = {
 		male = {
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
 		}
 	}
 
 	political = {
 		communism = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+					"GFX_Portrait_Europe_Generic_1"
 			}
 		}
 		democratic = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+					"GFX_Portrait_Europe_Generic_2" 
 			}
 		}
 		fascism = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 		neutrality = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 	}
@@ -116,42 +125,42 @@ continent = {
 	name = south_america
 	army = {
 		male = {
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-			"gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
 		}
 	}
 	
 	navy = {
 		male = {
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
 		}
 	}
 
 	political = {
 		communism = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+					"GFX_Portrait_Europe_Generic_1"
 			}
 		}
 		democratic = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+					"GFX_Portrait_Europe_Generic_2" 
 			}
 		}
 		fascism = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 		neutrality = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+					"GFX_ortrait_Europe_Generic_3" 
 			}
 		}
 	}
@@ -162,42 +171,42 @@ continent = {
 	name = australia
 	army = {
 		male = {
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-			"gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
 		}
 	}
 	
 	navy = {
 		male = {
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
 		}
 	}
-
+	
 	political = {
 		communism = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+					"GFX_Portrait_Europe_Generic_1"
 			}
 		}
 		democratic = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+					"GFX_Portrait_Europe_Generic_2" 
 			}
 		}
 		fascism = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 		neutrality = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 	}
@@ -208,41 +217,41 @@ continent = {
 	name = africa
 	army = {
 		male = {
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			"GFX_Portrait_South_America_Generic_land_1"
+			"GFX_Portrait_South_America_Generic_land_2"
+			"GFX_Portrait_South_America_Generic_land_3"
+			"GFX_Portrait_South_America_Generic_land_4"
+			"GFX_Portrait_South_America_Generic_land_5"
 		}
 	}
 	
 	navy = {
 		male = {
-			"gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+			"GFX_Portrait_South_America_Generic_navy_1"
+			"GFX_Portrait_South_America_Generic_navy_2"
+			"GFX_Portrait_South_America_Generic_navy_3"
 		}
 	}
 	
 	political = {
 		communism = {
 				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+					"GFX_Portrait_South_America_Generic_1"
 			}
 		}
 		democratic = {
 				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+					"GFX_South America/Portrait_South_America_Generic_2" 
 			}
 		}
 		fascism = {
 				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+					"GFX_Portrait_South_America_Generic_3" 
 			}
 		}
 		neutrality = {
 				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+					"GFX_Portrait_South_America_Generic_3." 
 			}
 		}
 	}
@@ -253,42 +262,42 @@ continent = {
 	name = asia
 	army = {
 		male = {
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-			"gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
 		}
 	}
 	
 	navy = {
 		male = {
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
 		}
 	}
 
 	political = {
 		communism = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+					"GFX_Portrait_Europe_Generic_1"
 			}
 		}
 		democratic = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+					"GFX_Portrait_Europe_Generic_2" 
 			}
 		}
 		fascism = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 		neutrality = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 	}
@@ -299,42 +308,42 @@ continent = {
 	name = middle_east
 	army = {
 		male = {
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-			"gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
 		}
 	}
 	
 	navy = {
 		male = {
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
 		}
 	}
 
 	political = {
 		communism = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+					"GFX_Portrait_Europe_Generic_1"
 			}
 		}
 		democratic = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+					"GFX_Portrait_Europe_Generic_2" 
 			}
 		}
 		fascism = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 		neutrality = {
 				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 	}

@@ -2,9 +2,12 @@ technologies = {
 
 
 	@1918 = 0
-	@1936 = 2
-	@1938 = 4
-	@1939 = 6
+	@1934 = 2
+	@1935 = 3
+	@1936 = 4
+	@1937 = 5
+	@1938 = 5
+	@1939 = 7
 	@1940 = 7
 	@1941 = 8
 	@1942 = 9
@@ -186,11 +189,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = amphibious_tank_chassis
-			research_cost_coeff = 1
-		}
-
 		research_cost = 2
 		start_year = 2
 		folder = {
@@ -242,12 +240,17 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = amphibious_tank_chassis
+			research_cost_coeff = 1
+		}
+
 		research_cost = 2
 		start_year = 2
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -4 y = 4 }
+			position = { x = -1 y = 4 }
 		}
 
 		ai_will_do = {
@@ -311,7 +314,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -1 y = 5 }
+			position = { x = -4 y = 5 }
 		}
 
 		ai_will_do = {
@@ -364,7 +367,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -1 y = 8 }
+			position = { x = -4 y = 8 }
 		}
 
 		ai_will_do = {
@@ -404,7 +407,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -4 y = 8 }
+			position = { x = -1 y = 8 }
 		}
 
 		ai_will_do = {
@@ -480,17 +483,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = amphibious_tank_chassis
-			research_cost_coeff = 1
-		}
-
 		research_cost = 2
 		start_year = 2
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1936 }
+			position = { x = 2 y = @1937 }
 		}
 
 		ai_will_do = {
@@ -899,7 +897,7 @@ technologies = {
 		start_year = 2
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1936 }
+			position = { x = 3 y = @1935 }
 		}
 
 		ai_will_do = {

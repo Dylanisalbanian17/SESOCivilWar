@@ -529,13 +529,14 @@ category_exile_forces = {
 		}
 
 		visible = {
+			has_war = yes
 			FROM = {
 				is_exiled_in = ROOT
 		    	has_legitimacy > 40
 		    }
 		}
 
-
+		fire_only_once = yes
 		target_array = exiles
 
 		target_trigger = { FROM = { is_exiled_in = ROOT } }
@@ -596,6 +597,7 @@ category_exile_forces = {
 		}
 
 		visible = {
+			has_war = yes
 			FROM = {
 				is_exiled_in = ROOT
 		    	has_legitimacy > 25
