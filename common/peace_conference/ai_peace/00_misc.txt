@@ -63,19 +63,6 @@ peace_ai_desires = {
                     }
                 }
             } #It is not claimed by us
-			#Special Japan China Handling; this has logic elsewhere which we reluctantly have to special case.
-			NOT = {
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
-			}
-            #ROOT.FROM.FROM.FROM = { NOT = { is_core_of = ROOT } } #It is not ours
-			ROOT.FROM.FROM.FROM = { 
-				NOT = { is_claimed_by = ROOT.FROM } 
-				pc_is_state_outside_influence_for = ROOT.FROM
-				#is_coastal = no
-			} #It is not claimed by us
         }
         ai_desire = -1000
     }
@@ -188,7 +175,6 @@ peace_ai_desires = {
     breakaway_country = {
         peace_action_type = { liberate puppet force_government }
         enable = {
-           #
         }
         ai_desire = -200  # just don't, please
     }
