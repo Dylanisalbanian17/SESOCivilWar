@@ -688,12 +688,13 @@ technologies = {
 	early_bombs = {
 
 		enable_equipment_modules = {
-			bomb_locks
-			small_bomb_bay
-			medium_bomb_bay
-			large_bomb_bay
+					bomb_locks
+					small_bomb_bay
+					medium_bomb_bay
+					large_bomb_bay
+					torpedo_mounting
 		}
-		
+			
 		research_cost = 1
 		start_year = 2
 
@@ -727,7 +728,6 @@ technologies = {
 	}
 
 	photo_reconnaisance = {
-
 		enable_equipment_modules = {
 			recon_camera
 		}
@@ -737,7 +737,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 2 }
+			position = { x = 0 y = 4 }
 		}
 
 		allow_branch = { has_dlc = "La Resistance" }
@@ -936,7 +936,7 @@ technologies = {
 			cannon_defense_turret_2x
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 6
 
 		folder = {
@@ -1099,7 +1099,7 @@ technologies = {
 			engine_3_6x	
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 6
 
 		folder = {
@@ -1153,7 +1153,7 @@ technologies = {
 			engine_4_6x	
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 9
 
 		folder = {
