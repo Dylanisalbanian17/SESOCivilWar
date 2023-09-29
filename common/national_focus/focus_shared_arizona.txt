@@ -17,6 +17,7 @@ shared_focus = {
 	}
 
     completion_reward = {
+		country_event = arizona.1
     }
 }
 
