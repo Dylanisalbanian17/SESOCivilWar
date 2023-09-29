@@ -1,0 +1,26 @@
+ideas = {
+	country = {
+		philosopher_gamer = {
+			
+			allowed = {
+				tag = ARB
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = idea_gre_venerate_the_ancient_hellenes
+			
+			modifier = {
+								
+				
+				stability_factor = 0.05
+				research_speed_factor = 0.25
+
+			}
+		}
+	}
+}

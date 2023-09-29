@@ -60,7 +60,7 @@ focus_tree = {
 		x = -4
 		y = 3
 		cost = 5
-
+		available = { has_completed_focus = ARB_indie_dev }
 		completion_reward = {
 		
 		}
@@ -110,6 +110,29 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ARB_SGT_Promotion
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_Another_Contract
+		prerequisite = { focus = ARB_cyber_sec }
+		prerequisite = { focus = ARB_work_on_fortnite_servers }
+		x = 0
+		y = 2
+		cost = 5
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		
+		}
+	}
+
 	### Political
 
 	focus = {
@@ -119,7 +142,7 @@ focus_tree = {
 		x = 4
 		y = 3
 		cost = 5
-
+		available = { has_completed_focus = ARB_indie_dev }
 		completion_reward = {
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 3
@@ -156,20 +179,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ARB_hotline_miami
-		icon = GFX_focus_usa_recruit_the_free_corps
-		relative_position_id = ARB_subsidize_indie_artists
-		prerequisite = { focus = ARB_space_station_13 OR = ARB_subsidize_indie_artists }
-		x = 0
-		y = 2
-		cost = 5
-
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
 		id = ARB_purchase_indie_games
 		icon = GFX_focus_usa_recruit_the_free_corps
 		relative_position_id = ARB_subsidize_indie_artists
@@ -183,15 +192,44 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ARB_hotline_miami
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_subsidize_indie_artists
+		prerequisite = { focus = ARB_space_station_13 }
+		prerequisite = { focus = ARB_purchase_indie_games }
+		x = 0
+		y = 2
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_philosopher_gamer
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_subsidize_indie_artists
+		prerequisite = { focus = ARB_hotline_miami }
+		x = 0
+		y = 3
+		cost = 5
+
+		completion_reward = {
+			add_idea = philosopher_gamer
+		}
+	}
+
 	### Sassilization Dev. 
 
 	focus = {
 		id = ARB_begin_sass
 		icon = GFX_focus_usa_recruit_the_free_corps
-		x = 24
-		y = 1
+		x = 12
+		y = 4
 		cost = 5
-
+		available = { has_completed_focus = ARB_indie_dev }
 		completion_reward = {
 		
 		}
@@ -267,5 +305,6 @@ focus_tree = {
 		}
 	}
 
+	shared_focus = arz_propose_arizona_boys
 
 }
