@@ -276,4 +276,6 @@ focus_tree = {
 		}
 	}
 
+	shared_focus = arz_propose_arizona_boys
+
 }
