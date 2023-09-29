@@ -36,8 +36,34 @@ focus_tree = {
 	focus = {
 		id = ARS_a_look_to_the_future
 		icon = GFX_focus_SOV_flying_clubs
-		relative_position_id = ARS_arma_maybe
+		relative_position_id = ARS_arma_and_airforce
 		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = ARS_arma_maybe }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ARS_arizona_dreamin
+		icon = GFX_focus_SOV_flying_clubs
+		relative_position_id = ARS_a_look_to_the_future
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = ARS_arma_maybe }
+		completion_reward = {
+			
+		}
+    }
+
+	focus = {
+		id = ARS_friendship_is_cosmic
+		icon = GFX_focus_SOV_flying_clubs
+		relative_position_id = ARS_a_look_to_the_future
+		x = -1
 		y = 1
 		cost = 10
 		prerequisite = { focus = ARS_arma_maybe }
