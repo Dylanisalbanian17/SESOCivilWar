@@ -1,0 +1,56 @@
+shared_focus = {
+    id = arz_propose_arizona_boys
+    #icon = GFX_LATIN_focus_icon
+	#relative_position_id = art_focus_venerate_rasmussen
+	cost = 5
+	x = 0
+	y = 1
+
+	available = {
+		date > 3.01.01
+		ART = { has_war = false }
+		ARS = { has_war = false }
+		ARB = { has_war = false }
+		all_neighbor_country = {
+			NOT = { has_completed_focus = arz_propose_arizona_boys }
+		}
+	}
+
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = arz_create_arizona_boys
+    #icon = GFX_LATIN_focus_icon
+	relative_position_id = arz_propose_arizona_boys
+	cost = 5
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = arz_propose_arizona_boys
+	}
+
+	available = {
+		date > 3.01.01
+		ART = { has_war = false }
+		ARS = { has_war = false }
+		ARB = { has_war = false }
+		has_global_flag = arizona_boys_accepted
+	}
+
+    completion_reward = {
+		create_faction = "Arizona Boys"
+		every_neighbor_country = {
+			limit = {
+				OR = {
+					original_tag = ART
+					original_tag = ARS
+					original_tag = ARB
+				}
+			}
+			ROOT = { add_to_faction = PREV }
+		}
+    }
+}
