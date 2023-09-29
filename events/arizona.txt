@@ -1,0 +1,37 @@
+add_namespace = arizona
+
+country_event = {
+	id = arizona.1
+	title = arizona.1.t
+	desc = arizona.1.d
+	picture = GFX_report_event_bul_prince_simeon
+	
+	is_triggered_only = yes
+
+	#Accept
+	option = {
+		name = arizona.1.a
+		ai_chance = { factor = 1 }
+
+		#Check if all Arizonas accepted it
+		set_country_flag = arizona_boys_accepted
+		if = {
+			limit = {
+				AND = {
+					ART = { has_country_flag = arizona_boys_accepted }
+					ARS = { has_country_flag = arizona_boys_accepted }
+					ARB = { has_country_flag = arizona_boys_accepted }
+				}
+			}
+			#Set arizona boys accepted
+			set_global_flag = arizona_boys_allowed
+		}
+	}
+
+	#Reject
+	option = {
+		name = arizona.1.b
+		ai_chance = { factor = 1 }
+	}
+
+}

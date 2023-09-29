@@ -17,7 +17,9 @@ shared_focus = {
 	}
 
     completion_reward = {
-		country_event = arizona.1
+		ART = { country_event = arizona.1 }
+		ARS = { country_event = arizona.1 }
+		ARB = { country_event = arizona.1 }
     }
 }
 
@@ -38,7 +40,7 @@ shared_focus = {
 		ART = { has_war = false }
 		ARS = { has_war = false }
 		ARB = { has_war = false }
-		has_global_flag = arizona_boys_accepted
+		has_global_flag = arizona_boys_allowed
 	}
 
     completion_reward = {
