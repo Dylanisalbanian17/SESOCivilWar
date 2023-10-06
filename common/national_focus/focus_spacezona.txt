@@ -66,9 +66,14 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-		prerequisite = { focus = ARS_arizona_dreamin }
+		prerequisite = { focus = ARS_a_look_to_the_future }
 		completion_reward = {
-			
+			ART = {
+				add_opinion_modifier = { target = ARS modifier = opinion_gates_hell }
+			}
+			ARB = {
+				add_opinion_modifier = { target = ARS modifier = opinion_gates_hell }
+			}
 		}
 	}
 
