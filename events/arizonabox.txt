@@ -1,0 +1,52 @@
+add_namespace = arizonabox
+
+# Army Man Focus
+country_event = {
+	id = arizonabox.1
+	title = arizonabox.1.t
+	desc = arizonabox.1.d
+	is_triggered_only = yes
+
+	option = {
+		# Give Buffs
+		name = arizonabox.1.a
+		add_stability = 0.05
+			add_ideas = { 
+				army_man
+			}
+	}
+}
+
+# Checkpoint Guard Focus
+country_event = {
+	id = arizonabox.2
+	title = arizonabox.2.t
+	desc = arizonabox.2.d
+	is_triggered_only = yes
+
+	option = {
+		# Give Buffs
+		name = arizonabox.2.a
+		add_war_support = 0.05
+			add_ideas = { 
+				navy_trooper
+			}
+	}
+}
+
+# Indie Dev
+country_event = {
+	id = arizonabox.3
+	title = arizonabox.3.t
+	desc = arizonabox.3.d
+	is_triggered_only = yes
+
+	option = {
+		# Give Buffs
+		name = arizonabox.3.a
+		add_political_power = 75
+			add_ideas = { 
+				indie_dev
+			}
+	}
+}

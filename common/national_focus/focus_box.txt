@@ -18,16 +18,13 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_stability = 0.05
-			add_ideas = { 
-				army_man
-			}
+			hours = 6 country_event = arizonabox.1
 		}
 	}
 
 	focus = {
 		id = ARB_checkpoint_guard
-		icon = GFX_focus_usa_recruit_the_free_corps
+		icon = GFX_goal_generic_defence
 		relative_position_id = ARB_army_man
 		prerequisite = { focus = ARB_army_man }
 		x = 0
@@ -35,16 +32,13 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_ideas = { 
-				navy_trooper
-			}
-		
+			hours = 6 country_event = arizonabox.2
 		}
 	}
 
 	focus = {
 		id = ARB_indie_dev
-		icon = GFX_focus_usa_recruit_the_free_corps
+		icon = GFX_focus_research2
 		relative_position_id = ARB_army_man
 		prerequisite = { focus = ARB_checkpoint_guard }
 		x = 0
@@ -52,9 +46,62 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_ideas = { 
-				indie_dev
-			}
+			hours = 6 country_event = arizonabox.3
+		}
+	}
+
+	### GGN
+
+	focus = {
+		id = ARB_deploy_naval_troopers
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id = ARB_army_man
+		x = -8
+		y = 3
+		cost = 5
+		available = { has_completed_focus = ARB_indie_dev }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_establish_checkpoints
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_deploy_naval_troopers
+		prerequisite = { focus = ARB_deploy_naval_troopers }
+		x = 1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ARB_lessons_in_checkpoint_leisure
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_deploy_naval_troopers
+		prerequisite = { focus = ARB_deploy_naval_troopers }
+		x = -1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ARB_minge_hour
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = ARB_deploy_naval_troopers
+		prerequisite = { focus = ARB_establish_checkpoints }
+		prerequisite = { focus = ARB_lessons_in_checkpoint_leisure }
+		x = 0
+		y = 2
+		cost = 5
+
+		completion_reward = {
 		
 		}
 	}
@@ -120,7 +167,7 @@ focus_tree = {
 
 	focus = {
 		id = ARB_SGT_Promotion
-		icon = GFX_focus_usa_recruit_the_free_corps
+		icon = GFX_focus_SWI_issue_war_bonds
 		relative_position_id = ARB_Another_Contract
 		prerequisite = { focus = ARB_cyber_sec }
 		prerequisite = { focus = ARB_work_on_fortnite_servers }
@@ -222,7 +269,7 @@ focus_tree = {
 
 	focus = {
 		id = ARB_philosopher_gamer
-		icon = GFX_focus_usa_recruit_the_free_corps
+		icon = GFX_focus_GRE_a_land_of_mountains
 		relative_position_id = ARB_subsidize_indie_artists
 		prerequisite = { focus = ARB_hotline_miami }
 		x = 0
@@ -321,5 +368,33 @@ focus_tree = {
 	}
 
 	shared_focus = arz_propose_arizona_boys
+
+	### Foreign Policy 
+
+	focus = {
+		id = ARB_meet_ryder
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 20
+		y = 3
+		cost = 5
+		available = { has_completed_focus = ARB_indie_dev }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ARB_arizona_meetup_2023
+		icon = GFX_focus_usa_recruit_the_free_corps
+		prerequisite = { focus = ARB_meet_ryder }
+		relative_position_id = ARB_meet_ryder
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		
+		}
+	}
 
 }
