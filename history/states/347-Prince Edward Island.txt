@@ -1,6 +1,13 @@
 state={
 	id=347
 	name="STATE_347"
+	history={
+		owner = NSC
+		add_core_of = NSC
+		buildings = {
+			infrastructure = 3
+		}
+	}
 	provinces={
 		7 142 1531 1533 
 	}
