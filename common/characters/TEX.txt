@@ -42,20 +42,4 @@ characters={
 		}
 	}
 
-	TEX_hunter={
-		name="Hunter"
-		portraits = {
-			civilian = {
-				large="gfx/leaders/TEX/hunter.dds"
-			}
-		}
-
-		country_leader={
-			ideology=gen_nazism
-			traits = { employed autocratic_imperialist }
-			expire = "1965.1.1.1"
-			id=-1
-		}
-	}
-
 }
