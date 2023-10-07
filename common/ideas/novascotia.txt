@@ -34,7 +34,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = GFX_spr_disbanded_army
+			picture = spr_disbanded_army
 			
 			modifier = {
 								

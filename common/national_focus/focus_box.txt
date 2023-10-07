@@ -19,7 +19,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
-		
+			add_ideas = { 
+				army_man
+			}
 		}
 	}
 
@@ -33,6 +35,9 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			add_ideas = { 
+				navy_trooper
+			}
 		
 		}
 	}
@@ -47,6 +52,9 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			add_ideas = { 
+				indie_dev
+			}
 		
 		}
 	}
@@ -121,6 +129,11 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			swap_ideas= {
+				remove_idea = army_salary_1
+			   add_idea = army_salary_2
+			}
+
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -217,7 +230,9 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_idea = philosopher_gamer
+			add_ideas = { 
+				philosopher_gamer
+			}
 		}
 	}
 
