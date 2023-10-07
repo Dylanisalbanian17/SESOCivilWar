@@ -7,7 +7,7 @@ shared_focus = {
 	y = 1
 
 	available = {
-		date > 3.01.01
+		#date > 3.01.01
 		ART = { has_war = false }
 		ARS = { has_war = false }
 		ARB = { has_war = false }
@@ -17,9 +17,9 @@ shared_focus = {
 	}
 
     completion_reward = {
-		ART = { country_event = arizona.1 }
-		ARS = { country_event = arizona.1 }
-		ARB = { country_event = arizona.1 }
+		ART = { country_event = { id = arizona.1 random_days = 3 } }
+		ARS = { country_event = { id = arizona.1 random_days = 3 } }
+		ARB = { country_event = { id = arizona.1 random_days = 3 } }
     }
 }
 
@@ -36,11 +36,11 @@ shared_focus = {
 	}
 
 	available = {
-		date > 3.01.01
+		#date > 3.01.01
 		ART = { has_war = false }
 		ARS = { has_war = false }
 		ARB = { has_war = false }
-		has_global_flag = arizona_boys_allowed
+		has_country_flag = arizona_boys_accepted
 	}
 
     completion_reward = {
@@ -48,12 +48,35 @@ shared_focus = {
 		every_neighbor_country = {
 			limit = {
 				OR = {
-					original_tag = ART
-					original_tag = ARS
-					original_tag = ARB
+					has_country_flag = arizona_boys_accepted
 				}
 			}
 			ROOT = { add_to_faction = PREV }
+		}
+		every_neighbor_country = {
+			limit = {
+				OR = {
+					original_tag = ARS
+					original_tag = ART
+					original_tag = ARB
+				}
+				NOT = { has_country_flag = arizona_boys_accepted }
+			}
+			every_neighbor_country = {
+				limit = {
+					OR = {
+						original_tag = ARS
+						original_tag = ART
+						original_tag = ARB
+					}
+					has_country_flag = arizona_boys_accepted
+				}
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+				add_civil_war_target = PREV
+			}
 		}
     }
 }
