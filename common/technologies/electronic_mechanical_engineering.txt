@@ -1114,8 +1114,7 @@ technologies = {
 			factor = 10
 		}
 		
-		nuclear_production = 1
-		
+		nuclear_production = 1		
 		categories = {
 			nuclear
 		}

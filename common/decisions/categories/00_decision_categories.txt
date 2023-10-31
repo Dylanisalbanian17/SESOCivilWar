@@ -118,11 +118,11 @@ communism_on_the_rise = {
 		}
 	}
 	
-	#visible = {
+	visible = {
 	#	NOT = { has_government = communism }
 	#	has_idea_with_trait = communist_revolutionary
-	#}
-#}
+	}
+}
 
 crisis = {
 	icon = generic_crisis
@@ -294,4 +294,12 @@ nato_decisions = {
 		date > 10.1.1
 	}
 	priority = 100
+}
+
+foreign_mio_decisions_category = {
+	picture = generic_economy
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+	}
+	priority = 5
 }

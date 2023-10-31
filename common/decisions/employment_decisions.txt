@@ -1,8 +1,9 @@
-@resume_chance = 0.10
-@cover_chance = 0.10
-@job_base_chance = 0.01
+#@resume_chance = 0.50
+#@cover_chance = 0.10
+#@job_base_chance = 0.01
 
 SESO_gettajob = {
+
 	SESO_design_resume = {
 		#icon = border_war
 
@@ -26,29 +27,37 @@ SESO_gettajob = {
 		days_re_enable = 30
 
 		complete_effect = {
-			hidden_effect = {
+			#hidden_effect = {
 				random_list = {
 					50 = {
-
+						set_variable = {
+							FROM.var_resume_chance = 0.10
+						}
 					}
 
 					25 = {
+						set_variable = {
+							FROM.var_resume_chance = 0.25
+						}
 
 					}
 
-					15 = {
+					13 = {
+						set_variable = {
+							FROM.var_resume_chance = 0.50
+						}
 
 					}
 
-					15 = {
+					12 = {
+						set_variable = {
+							FROM.var_resume_chance = 1.00
+						}
 
 					}
-
-
-
 
 				}
-			}
+			#}
 		}
 
 	}
@@ -76,9 +85,37 @@ SESO_gettajob = {
 		days_re_enable = 30
 
 		complete_effect = {
-			hidden_effect = {
-				
-			}
+			#hidden_effect = {
+				random_list = {
+					50 = {
+						set_variable = {
+							FROM.var_cover_chance = 0.10
+						}
+					}
+
+					25 = {
+						set_variable = {
+							FROM.var_cover_chance = 0.25
+						}
+
+					}
+
+					13 = {
+						set_variable = {
+							FROM.var_cover_chance = 0.50
+						}
+
+					}
+
+					12 = {
+						set_variable = {
+							FROM.var_cover_chance = 1.00
+						}
+
+					}
+
+				}
+			#}
 		}
 
 	}
@@ -108,7 +145,14 @@ SESO_gettajob = {
 		complete_effect = {
 			#hidden_effect = {
 				swap_ruler_traits = {remove = unemployed add = employed}
-				set_character_flag = SESO_employed
+				every_character = {
+					limit = {
+						tag = FROM
+						has_trait = unemployed
+					}
+					set_character_flag = SESO_employed
+				}
+
 			#}
 		}
 

@@ -1,18 +1,39 @@
 characters={
 
-	ALA_cedric={
-		name="Cedric"
+	ALA_sharps={
+		name="Sharps"
 		portraits = {
 			civilian = {
-				large=GFX_portrait_unknown
+				large="gfx/leaders/FLO/sharps.dds"
 			}
 		}
 
 		country_leader={
-			ideology=moderatism
-			traits = { unemployed }
+			ideology=fascism_ideology
+			traits = { employed economist }
 			expire = "1965.1.1.1"
 			id=-1
+		}
+	}
+
+	ALA_thatskinnytexan={
+		name="thatskinnytexan"
+		portraits={
+			civilian = {
+				#large=GFX_portrait_unknown
+			}
+			army={
+				#large=GFX_portrait_unknown
+				#small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1	
+			logistics_skill = 1
 		}
 	}
 

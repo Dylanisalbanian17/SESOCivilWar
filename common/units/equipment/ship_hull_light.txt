@@ -1,7 +1,15 @@
 equipments = {
 
 	ship_hull_light = {
-		year = 2
+		year = 1922
+
+		can_be_produced = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+			}
+		}
 
 		is_archetype = yes
 		is_buildable = no
@@ -94,7 +102,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 30
+		naval_speed = 32
 		reliability = 0.80
 		
 		naval_range = 1500
@@ -338,7 +346,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 5
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 30
 		reliability = 0.80
 		
 		naval_range = 1500

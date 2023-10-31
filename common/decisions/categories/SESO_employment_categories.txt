@@ -3,6 +3,7 @@ SESO_gettajob = {
 	#picture = generic_border_conflicts
 	#icon = border_conflicts
 	allowed = {
+		has_global_flag = SESO_getajob
 		FROM = {
 			OR = {
 				has_country_leader_with_trait = unemployed

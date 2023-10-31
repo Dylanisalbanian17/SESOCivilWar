@@ -11,7 +11,7 @@ peace_ai_desires = {
         }
         ai_desire = 100
     }
-
+	
     generic_influence_cutoff = { #Only do force gov and liberate outside influence range
         peace_action_type = { take_states puppet }
         enable = {
@@ -51,8 +51,8 @@ peace_ai_desires = {
             # ROOT.FROM.FROM.FROM = { NOT = { is_core_of = ROOT } } #It is not ours
             ROOT.FROM.FROM.FROM = {
                 NOT = { is_claimed_by = ROOT.FROM }
-                ROOT.FROM = { pc_is_winner = yes }
-                pc_is_state_outside_influence_for_winner = ROOT.FROM
+                ROOT = { pc_is_winner = yes }
+                pc_is_state_outside_influence_for_winner = ROOT
                 # is_coastal = no
                 NOT = {
                     OR = {
@@ -66,7 +66,7 @@ peace_ai_desires = {
         }
         ai_desire = -1000
     }
-	
+
     force_gov_puppets = {
         peace_action_type = force_government
         enable = {
@@ -187,6 +187,11 @@ peace_ai_desires = {
             ROOT = { has_government = democratic }
             ROOT.FROM.FROM = { has_government = communism }
             ROOT.FROM.FROM.FROM = { NOT = { is_claimed_by = ROOT.FROM.FROM } }
+			ROOT.FROM.FROM.FROM = {
+				any_country_with_core = {
+					NOT = { pc_is_liberated = yes }
+				}
+			}
         }
         ai_desire = 50
     }
@@ -420,6 +425,21 @@ peace_ai_desires = {
     }
 
 
+    dont_take_land_if_sov_government_is_forced = {
+        peace_action_type = { take_states puppet }
+        enable = {
+            ROOT = { has_government = democratic }
+            ROOT.FROM.FROM = {
+                original_tag = SOV
+                pc_is_forced_government = yes
+            }
+            ROOT.FROM.FROM.FROM = {
+                NOT = { is_claimed_by = ROOT.FROM }
+            }
+        }
+
+        ai_desire = -50
+    }
 
 
     liberate_if_already_exists = {
@@ -893,7 +913,6 @@ peace_ai_desires = {
                     pc_is_puppeted_by = ROOT
                 }
                 overlord = {
-                    NOT = { tag = GER }
                 }
             }
             ROOT.FROM.FROM.FROM = {
@@ -917,6 +936,33 @@ peace_ai_desires = {
             }
         }
         ai_desire = -90
+    }
+	
+	prefer_not_taking_land_from_force_governmented_minors = {
+        peace_action_type = take_states
+        enable = {
+			ROOT.FROM.FROM = { is_major = no }
+            if = {
+                limit = { has_government = democratic }
+                ROOT.FROM.FROM = { pc_is_forced_government_to = democratic }
+            }
+            else_if = {
+                limit = { has_government = fascism }
+                ROOT.FROM.FROM = { pc_is_forced_government_to = fascism }
+            }
+            else_if = {
+                limit = { has_government = communism }
+                ROOT.FROM.FROM = { pc_is_forced_government_to = communism }
+            }
+            else_if = {
+                limit = { has_government = neutrality }
+                ROOT.FROM.FROM = { pc_is_forced_government_to = neutrality }
+            }
+            else = {
+                always = no
+            }
+        }
+        ai_desire = -100 #Should still allow taking claims etc
     }
 
 }
