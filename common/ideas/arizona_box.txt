@@ -1,5 +1,128 @@
 ideas = {
 	country = {
+
+		army_salary_1 = {
+			
+			allowed = {
+				tag = ARB
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = chi_hyper_inflation
+			
+			modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = 0.025
+			}
+		}
+
+		army_salary_2 = {
+			
+			allowed = {
+				tag = ARB
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = chi_hyper_inflation2
+			
+			modifier = {
+				political_power_gain = 0.10
+				consumer_goods_factor = -0.015			
+			}
+		}
+
+		army_salary_3 = {
+			
+			allowed = {
+				tag = ARB
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = chi_hyper_inflation3
+			
+			modifier = {
+				political_power_gain = 0.25
+				consumer_goods_factor = -0.025
+			}
+		}
+
+		army_man = {
+			
+			allowed = {
+				tag = ARB
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = usa_department_of_defense
+			
+			modifier = {
+				planning_speed = 0.05				
+
+			}
+		}
+
+		navy_trooper = {
+			
+			allowed = {
+				tag = ARB
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+				dig_in_speed_factor = 0.05				
+				experience_gain_army_unit_factor = 0.05
+			}
+		}
+
+		indie_dev = {
+			
+			allowed = {
+				tag = ARB
+			}
+
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = chi_incompetent_officers
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05 
+				production_factory_efficiency_gain_factor = 0.05 				
+
+			}
+		}
+
+
 		philosopher_gamer = {
 			
 			allowed = {
@@ -12,9 +135,11 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = idea_gre_venerate_the_ancient_hellenes
+			picture = gre_venerate_the_ancient_hellenes_complete
 			
 			modifier = {
+
+				
 								
 				
 				stability_factor = 0.05
