@@ -9,7 +9,7 @@ characters={
 		}
 
 		country_leader={
-			ideology=fascism_ideology
+			ideology=gamerism
 			traits = { employed dislikes_cal dislikes_canada indomitable_perseverance}
 			expire = "1965.1.1.1"
 			id=-1

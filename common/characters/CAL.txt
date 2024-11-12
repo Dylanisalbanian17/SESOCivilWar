@@ -16,7 +16,7 @@ characters={
 		}
 
 		country_leader={
-			ideology=anti_revisionism
+			ideology=dylanism
 			traits = { unemployed union_man railroad_enthusiast }
 			expire = "1965.1.1.1"
 			id=-1
@@ -32,7 +32,7 @@ characters={
 		}
 
 		country_leader={
-			ideology=fascism_ideology
+			ideology=gamerism
 			traits = { employed dictator }
 			expire = "1965.1.1.1"
 			id=-1
@@ -79,8 +79,16 @@ characters={
 			name = "Clarence A Smith"
 			portraits = {
 				civilian = {
+					large="gfx/leaders/CAL/clarence_a_smith.dds"
 					small = "gfx/interface/advisors/advisor_clarence_a_smith.dds"
 				}
+			}
+
+			country_leader={
+				ideology=socialism
+				traits = { dealbroker the_director }
+				expire = "1965.1.1.1"
+				id=-1
 			}
 	
 			advisor = {
@@ -92,6 +100,7 @@ characters={
 				}
 				available = {
 						has_government= democratic
+						is_country_leader = no
 					}
 		
 				}
@@ -102,7 +111,7 @@ characters={
 				portraits = {
 					civilian = {
 						small = "gfx/interface/advisors/advisor_gaming_girl.dds"
-						large = "gfx/leaders/CAL/gaming_girl.dds"
+						large = "gfx/leaders/ORE/gaming_girl.dds"
 					}
 				}
 				advisor = {
@@ -161,16 +170,16 @@ characters={
 							}
 						}
 						CAL_jack_boid = {
-							name = "Jack Boid"
+							name = "Jack Boyd"
 							portraits = {
 								civilian = {
-									small = "gfx/interface/advisors/advisor_jack_boid.dds"
+									small = "gfx/interface/advisors/advisor_jack_boyd.dds"
 								}
 							}
 					
 							advisor = {
 								slot = political_advisor
-								idea_token = jack_boid
+								idea_token = jack_boyd
 								traits = { prince_of_terror }
 								allowed = {
 									original_tag = CAL

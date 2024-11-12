@@ -8,7 +8,7 @@ characters = {
 		}
 
 		country_leader={
-			ideology=socialism
+			ideology=champagne_socialism
 			traits = { popular_queen queen_of_the_people }
 			expire = "1965.1.1.1"
 			id=-1

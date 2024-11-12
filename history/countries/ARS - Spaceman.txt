@@ -1,4 +1,4 @@
-﻿capital = 81
+﻿capital = 73
 
 oob = ARS_2
 set_research_slots = 3
