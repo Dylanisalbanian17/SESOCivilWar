@@ -19,13 +19,13 @@ add_equipment_to_stockpile = { type = support_equipment amount = 500 }
 add_equipment_to_stockpile = { type = train_equipment amount = 100 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = communism
 	last_election = "2.1.1"
-	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	communism = 10
-	fascism = 0
-	democratic = 90
+	communism = 65
+	fascism = 10
+	democratic = 10
+	neutrality = 15
 }

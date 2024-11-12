@@ -1,4 +1,4 @@
-capital = 158
+capital = 151
 
 set_research_slots = 3
 set_technology = {
@@ -17,6 +17,9 @@ set_convoys = 30
 add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }
 add_equipment_to_stockpile = { type = support_equipment amount = 500 }
 add_equipment_to_stockpile = { type = train_equipment amount = 100 }
+
+# LEADERS
+recruit_character = SON_dick_hubbell
 
 set_politics = {
 	ruling_party = neutrality

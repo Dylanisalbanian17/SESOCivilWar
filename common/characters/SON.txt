@@ -1,0 +1,25 @@
+characters = {
+	SON_dick_hubbell={
+		name="Dick Hubbell"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/SON/dick_hubbell.dds"
+			}
+		}
+
+		country_leader={
+			ideology=hubologist_theocracy
+			traits = {  }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=hubologist_conservatism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+}
+
+}
