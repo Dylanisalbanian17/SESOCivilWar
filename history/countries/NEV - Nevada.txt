@@ -21,6 +21,11 @@ add_equipment_to_stockpile = { type = train_equipment amount = 100 }
 
 #LEADERS
 recruit_character = NEV_alf_landon
+recruit_character = NEV_joe_communism
+recruit_character = NEV_joe_fascism
+recruit_character = NEV_mr_house
+recruit_character = NEV_dylan
+recruit_character = NEV_mr_boxer
 #ADVISORS
 
 #GENERALS
@@ -35,36 +40,9 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 61
-	fascism = 1
+	democratic = 60
+	fascism = 2
 	communism = 15
 	neutrality = 23
 }
-create_country_leader = {
 	
-	name = "placeholder"
-	picture = ""
-	expire = "1965.1.1"
-	ideology = anti_revisionism
-	traits = { generallissimo  
-	}
-}		
-create_country_leader = {
-	
-	name = "Mr. House"
-	picture = ""
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = { humble 
-	}
-}	
-
-create_country_leader = {	
-	
-	name = "placeholder"
-	picture = ""
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = { anti_democrat 
-	}
-}	

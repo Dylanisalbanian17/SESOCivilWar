@@ -1,0 +1,25 @@
+on_actions = {
+
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = CAL
+					is_subject_of = ORE
+				}
+				set_cosmetic_tag = CAL_ORE
+			}
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = CAL
+					is_subject_of = ORE
+				}
+				set_cosmetic_tag = CAL_ORE
+			}
+		}
+	}	
+}

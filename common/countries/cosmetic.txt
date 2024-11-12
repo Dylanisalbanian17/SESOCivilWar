@@ -34,6 +34,10 @@ ORE_CAL = {
 	color = rgb { 245  205  94 }
 	color_ui = { 245  205  94 }
 }
+CAL_ORE = {
+	color = rgb { 245  205  94 }
+	color_ui = { 245  205  94 }
+}
 CAS_CAL = {
 	color = rgb { 245  205  94 }
 	color_ui = { 245  205  94 }

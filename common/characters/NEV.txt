@@ -15,11 +15,86 @@ characters = {
 		}
 }
 
+NEV_dylan={
+	name="Dylanisaboxofrocks1017"
+	portraits = {
+		civilian = {
+			large = "gfx/leaders/NEV/dylan_vacation_gaming.dds"
+		}
+	}
+	country_leader = {
+		ideology = dylanism
+		traits = { exiled  generallissimo exiled_revolutionary railroad_enthusiast}
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+
+NEV_mr_boxer={
+	name="Mr. Boxer"
+	portraits = {
+		civilian = {
+			large = "GFX_dylan_always_wins"
+		}
+	}
+	country_leader = {
+		ideology = centrism
+		traits = { humble railroad_enthusiast}
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+
+NEV_joe_communism={
+	name="Joe Communism"
+	portraits = {
+		civilian = {
+			large = ""
+		}
+	}
+	country_leader = {
+		ideology = anti_revisionism
+		traits = { generallissimo }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+
+NEV_joe_fascism={
+	name="Joe Fascism"
+	portraits = {
+		civilian = {
+			large = ""
+		}
+	}
+	country_leader = {
+		ideology = gamerism
+		traits = { anti_democrat }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+
+NEV_mr_house={
+	name="Mr. House"
+	portraits = {
+		civilian = {
+			large = ""
+		}
+	}
+	country_leader = {
+		ideology = centrism
+		traits = { humble }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+
 NEV_james_allardice ={
 	name="James Allardice"
 	portraits={
 		army={
-			large=GFX_Portrait_USA_Clarence_Huebner
+			large="gfx/leaders/NEV/Portrait_USA_Clarence_Huebner"
 		}
 		army={
 			small="GFX_idea_USA_clarence_huebner"
@@ -77,7 +152,7 @@ NEV_lionel_boone ={
 	name="Lionel Boone"
 	portraits={
 		army={
-			large=GFX_Portrait_LIB_edwin_barclay
+			large="gfx/leaders/NEV/Portrait_LIB_edwin_barclay"
 		}
 		army={
 			small="GFX_idea_LIB_edwin_barclay"

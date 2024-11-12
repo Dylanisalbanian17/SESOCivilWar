@@ -23,20 +23,12 @@ has_completed_focus = NEV_dylans_arrival }
 elections_allowed = no 
 }
 add_popularity= { ideology = communism popularity = 0.25 }
-create_country_leader = {
-	
-	name = "Dylan"
-	picture = "dylan_vacation_gaming.dds"
-	expire = "1965.1.1"
-	ideology = anti_revisionism
-	traits = { exiled  generallissimo exiled_revolutionary railroad_enthusiast
-	}
-}
 set_party_name= { 
 	ideology = communism 
 	long_name = "The Vacation Party of Nevada" 
 	name = "Vacation Party" 
 	}
+promote_character = NEV_dylan
 set_cosmetic_tag = PVU		
 load_focus_tree = nev_vacation
 	}

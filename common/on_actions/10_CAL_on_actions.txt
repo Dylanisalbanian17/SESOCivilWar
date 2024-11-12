@@ -8,19 +8,9 @@ on_actions = {
 					is_subject_of = CAL
 				}
 				set_cosmetic_tag = COL_CAL
-				set_party_name = { ideology = democratic long_name = "Social Democrat Party of the Midwest" name = "Occupation Government" }
-				create_country_leader = {
-					name = "Earl Browder"
-					picture = "portrait_USA_earl_browder.dds"
-					expire = "1965.1.1"
-					ideology = socialism
-					traits = {
-					}
-				}
 			}
 			if = {
 				limit = {
-						has_dlc = "Man the Guns"
 						OR = {
 							original_tag = NEV
 							is_subject_of = CAL
@@ -37,28 +27,25 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					AND = {
 					original_tag = WAS
 					is_subject_of = CAL
-					}
+					
 				}
 				set_cosmetic_tag = WAS_CAL
 			}
 			if = {
 				limit = {
-					AND = {
 					original_tag = IDA
 					is_subject_of = CAL
-					}
+					
 				}
 				set_cosmetic_tag = IDA_CAL
 			}
 			if = {
 				limit = {
-					AND = {
 					original_tag = UTA
 					is_subject_of = CAL
-					}
+					
 				}
 				set_cosmetic_tag = UTA_CAL
 			}
@@ -73,15 +60,6 @@ on_actions = {
 					is_subject_of = CAL
 				}
 				set_cosmetic_tag = COL_CAL
-				set_party_name = { ideology = democratic long_name = "Social Democrat Party of the Midwest" name = "Occupation Government" }
-				create_country_leader = {
-					name = "Earl Browder"
-					picture = "portrait_USA_earl_browder.dds"
-					expire = "1965.1.1"
-					ideology = socialism
-					traits = {
-					}
-				}
 			}
 			if = {
 				limit = {

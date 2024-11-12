@@ -184,7 +184,8 @@ remove_ideas = democracy_of_the_west
 		}
 		completion_reward = {
 			add_stability = -0.1  
-add_political_power = -25
+			add_political_power = -25
+			promote_character = CAL_clarence_a_smith
 		}
 	}
 	#Focus for Time for Vacation?
