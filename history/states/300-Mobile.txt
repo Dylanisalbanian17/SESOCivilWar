@@ -10,7 +10,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
-			dockyard = 3
+			dockyard = 2
 		}
 	}
 	manpower=683333

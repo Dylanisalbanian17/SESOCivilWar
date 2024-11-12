@@ -9,8 +9,8 @@ state={
 		add_core_of = ALA
 		buildings = {
 			infrastructure = 0
-			industrial_complex = 2
-			arms_factory = 2
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 	manpower=156528

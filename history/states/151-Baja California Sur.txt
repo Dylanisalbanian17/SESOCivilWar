@@ -5,6 +5,7 @@ state={
 	history={
 		owner = SON
 		add_core_of = SON
+		victory_points = {841 20}
 		buildings = {
 			infrastructure = 1
 

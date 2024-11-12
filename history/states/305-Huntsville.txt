@@ -9,7 +9,7 @@ state={
 		add_core_of = ALA
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 3
+			industrial_complex = 2
 			arms_factory = 2
 			air_base = 1
 		}
