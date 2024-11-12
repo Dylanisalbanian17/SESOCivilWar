@@ -54,10 +54,6 @@ UTA_CAL = {
 	color = rgb { 245  205  94 }
 	color_ui = { 245  205  94 }
 }
-NIL = {
-	color = rgb { 19 27 99 }
-	color_ui = { 19 27 99 }
-}
 PVU = {
 	color = rgb { 255 0 0 }
 	color_ui = { 255 0 0 }

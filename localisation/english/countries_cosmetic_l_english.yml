@@ -13,11 +13,7 @@
 
 CAL_PSC:0 "Pacific State of California"
 CAL_PSC_DEF:0 "The Pacific State of California"
- CAL_PSC_ADJ:0 "Pacific Californian"
-
-NIL:0 "New Israel"
-NIL_DEF:0 "New Israel"
-NIL_ADJ:0 "Israeli"
+CAL_PSC_ADJ:0 "Pacific Californian"
 
 PVU:0 "People's Vacation Republic of Nevada"
 PVU_DEF:0 "The People's Vacation Republic of Nevada"
