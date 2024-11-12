@@ -1,0 +1,34 @@
+characters = {
+	WAS_frasier_crane={
+		name="Frasier Crane"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/WAS/frasier_crane.dds"
+			}
+		}
+
+		country_leader={
+			ideology=liberalism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+}
+
+WAS_henry_jackson={
+	name="Henry Jackson"
+	portraits = {
+		civilian = {
+			large="gfx/leaders/WAS/the_scoop.dds"
+		}
+	}
+
+	country_leader={
+		ideology=socialism
+		traits = { hawk warmonger }
+		expire = "1965.1.1.1"
+		id=-1
+	}
+}
+
+}

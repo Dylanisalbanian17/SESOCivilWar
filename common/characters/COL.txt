@@ -1,0 +1,20 @@
+characters = {
+	COL_earl_browder={
+		name="Earl Browder"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/COL/portrait_USA_earl_browder.dds"
+			}
+		}
+
+		country_leader={
+			ideology=socialism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+
+
+}
+
+}

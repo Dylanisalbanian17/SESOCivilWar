@@ -19,6 +19,9 @@ add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }
 add_equipment_to_stockpile = { type = support_equipment amount = 500 }
 add_equipment_to_stockpile = { type = train_equipment amount = 100 }
 
+# LEADERS
+recruit_character = WAS_frasier_crane
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "2.1.1"
@@ -29,12 +32,4 @@ set_popularities = {
 	fascism = 0
 	communism = 25
 	neutrality = 25
-}
-create_country_leader = {
-	
-	name = "Henry Jackson"
-	picture = "the_scoop.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = { warmonger hawk }
 }

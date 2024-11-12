@@ -19,6 +19,8 @@ add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }
 add_equipment_to_stockpile = { type = support_equipment amount = 500 }
 add_equipment_to_stockpile = { type = train_equipment amount = 100 }
 
+recruit_character = COL_earl_browder
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "2.1.1"
