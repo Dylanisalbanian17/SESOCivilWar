@@ -670,7 +670,7 @@ technologies = {
 	
 	transport = {
 
-		transport_capacity = -0.5
+		transport_capacity = -0.33
 		naval_invasion_capacity = 10
 		
 		path = {

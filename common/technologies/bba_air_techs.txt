@@ -42,11 +42,16 @@ technologies = {
 
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
 			
 			modifier = {
 				factor = 2
 				is_major = yes
+			}
+
+			modifier = {
+				num_of_military_factories < 7
+				factor = 0.1
 			}
 		}
 	}
@@ -345,7 +350,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+
+			modifier = {
+				num_of_military_factories < 15
+				factor = 0.1
+			}
 		}
 	}
 	
@@ -579,8 +589,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+
+			modifier = {
+				num_of_military_factories < 30
+				factor = 0.1
+			}
 			
+
 		}
 	}
 	
@@ -732,7 +748,12 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = photo_reconnaisance
+			leads_to_tech = armor_piercing_bombs
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = heavy_bombs
 			research_cost_coeff = 1
 		}
 		
@@ -759,20 +780,18 @@ technologies = {
 		}
 	}
 
-	photo_reconnaisance = {
+	heavy_bombs = {
 		enable_equipment_modules = {
-			recon_camera
+					heavy_bomb_locks
 		}
-		
+			
 		research_cost = 1
-		start_year = 2
+		start_year = 6
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 6 }
 		}
-
-		allow_branch = { has_dlc = "La Resistance" }
 		
 		categories = {
 			air_equipment
@@ -787,9 +806,79 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					has_tech = basic_medium_airframe
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
 				}
 				factor = 5
+			}
+		}
+	}
+
+
+	armor_piercing_bombs = {
+		enable_equipment_modules = {
+			armor_piercing_bomb_locks
+		}
+			
+		research_cost = 1
+		start_year = 2
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+
+	photo_reconnaisance = {
+		enable_equipment_modules = {
+			recon_camera
+		}
+		
+		research_cost = 1
+		start_year = 2
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+
+		allow_branch = { has_dlc = "La Resistance" }
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			mio_cat_all_medium_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = basic_medium_airframe
+				}
+				factor = 3
 			}
 		}
 	}
@@ -979,7 +1068,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2
+		start_year = 5
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1026,11 +1115,11 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 4
+		start_year = 5
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 5 }
 		}
 
 		categories = {
@@ -1064,7 +1153,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 4
+		start_year = 5
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1156,7 +1245,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 6
+		start_year = 11
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1310,15 +1399,15 @@ technologies = {
 				factor = 0
 			}
 			modifier = {
+				date > "3.1.1"
+				factor = 1.5
+			}
+			modifier = {
 				date > "4.1.1"
 				factor = 1.5
 			}
 			modifier = {
 				date > "5.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "6.1.1"
 				factor = 3
 			}
 		}
@@ -1363,7 +1452,7 @@ technologies = {
 			factor = 5
 			modifier = {
 				is_major = yes
-				factor = 2
+				factor = 5
 			}
 			modifier = {
 				num_of_military_factories < 10
@@ -1453,7 +1542,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 4 }
+			position = { x = -2 y = 4 }
 		}
 
 		categories = {

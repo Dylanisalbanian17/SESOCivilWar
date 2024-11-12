@@ -344,7 +344,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 7
+			factor = 10
 		}
 		
 		categories = {
@@ -1046,7 +1046,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
 			
 			modifier = {
 				factor = 1.2
@@ -1060,8 +1060,15 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "9.1.1"
+				date > 9.1.1
 			}
+
+			modifier = {
+				factor = 2
+				is_major = yes
+				date > 9.1.1
+			}
+
 		}
 		
 		categories = {
@@ -1114,7 +1121,7 @@ technologies = {
 			factor = 10
 		}
 		
-		nuclear_production = 1		
+		nuclear_production = 1
 		categories = {
 			nuclear
 		}

@@ -197,7 +197,7 @@ technologies = {
 		start_year = 2
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -4 y = 2 }
+			position = { x = -1 y = 2 }
 		}
 
 		ai_will_do = {
@@ -1203,7 +1203,7 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 2
+		start_year = 4
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1938 }
@@ -1349,4 +1349,32 @@ technologies = {
 			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
+
+	NOR_rikstanken_tech = {
+
+		allow = { always = no } #Only obtained through Rikstanken Event
+
+		enable_equipment_modules = {
+			NOR_rikstanken_turret
+			NOR_tank_rikstanken_armor
+		}
+
+		path = {
+		}
+
+		on_research_complete = {
+		
+		}
+
+		show_effect_as_desc = no
+
+		research_cost = 1
+		start_year = 2
+
+
+		categories = {
+			armor
+		}
+	}
+
 }

@@ -360,7 +360,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 		}
 	}
 	
@@ -722,12 +724,9 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
-				date > "1938.1.1"
+				date > "4.1.1"
 			}
-			modifier = {
-				tag = SOV
-				factor = 1.5
-			}
+
 			modifier = {
 				factor = 1.1
 				date > "6.1.1"

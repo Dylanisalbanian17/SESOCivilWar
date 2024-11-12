@@ -99,7 +99,7 @@ technologies = {
 		research_cost = 1.5
 
 		start_year = 2
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 0 y = 2 }
@@ -112,6 +112,11 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
+
+			modifier = { #This is needed for a lot of tank designs
+				factor = 2.0
+				is_major = yes
+			}
 
 			modifier = {
 				factor = 2
@@ -149,7 +154,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 5
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 0 y = 4 }
@@ -220,7 +225,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 6
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 0 y = 6 }
@@ -289,7 +294,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 7
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 0 y = 8 }
@@ -332,7 +337,7 @@ technologies = {
 		research_cost = 2
 
 		start_year = 8
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 0 y = 10 }
@@ -398,7 +403,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 9
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 0 y = 12 }
@@ -473,7 +478,7 @@ technologies = {
 		research_cost = 2
 
 		start_year = 6
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 3 y = 6 }
@@ -513,7 +518,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 7
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 3 y = 8 }
@@ -552,7 +557,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 8
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 3 y = 10 }
@@ -560,7 +565,7 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			
+
 		}
 
 		categories = {
@@ -583,7 +588,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 9
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 3 y = 12 }
@@ -591,7 +596,7 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			
+
 		}
 
 		categories = {
@@ -626,7 +631,7 @@ technologies = {
 		research_cost = 1.5
 
 		start_year = 2
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = -3 y = 2 }
@@ -679,7 +684,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 5
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = -3 y = 4 }
@@ -718,7 +723,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 6
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = -3 y = 6 }
@@ -761,7 +766,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 7
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = -3 y = 8 }
@@ -800,7 +805,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 8
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = -3 y = 10 }
@@ -835,7 +840,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 9
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = -3 y = 12 }
@@ -870,7 +875,7 @@ technologies = {
 		research_cost = 1.5
 
 		start_year = 2
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 2 }
@@ -882,12 +887,12 @@ technologies = {
 				factor = 2
 				date > "3.1.1"
 			}
-			
+
 			modifier = {
 				factor = 5
 				date > "4.1.1"
 			}
-			
+
 			modifier = {
 				factor = 5
 				date > "5.1.1"
@@ -959,7 +964,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 5
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 4 }
@@ -1018,7 +1023,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 6
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 6 }
@@ -1104,7 +1109,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 7
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 8 }
@@ -1240,7 +1245,7 @@ technologies = {
 		research_cost = 1
 
 		start_year = 9
-		
+
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 12 }
@@ -1257,7 +1262,7 @@ technologies = {
 				factor = 2
 				date > "9.1.1"
 			}
-			
+
 			modifier = {
 				factor = 5
 				date > "9.1.6"
@@ -1278,6 +1283,55 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	SWE_bofors_antitank_gun = {
+
+		research_cost = 1
+
+		# only from focus!!! Bofors anti tank gun ##### 
+		allow = {
+			always = no
+		}
+
+		anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		light_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		medium_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		heavy_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		super_heavy_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		modern_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+
+		categories = {
+			cat_anti_tank
+			artillery
 			mio_cat_all_artillery_equipment
 		}
 	}

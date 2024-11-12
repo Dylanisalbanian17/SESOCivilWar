@@ -114,7 +114,7 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 1.2
+				factor = 2
 				date > "3.1.1"
 			}
 			
@@ -174,10 +174,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 4
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
 			
 			modifier = {
-				factor = 1.2
+				factor = 2
 				date > "6.1.1"
 			}
 			
@@ -245,10 +250,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 4
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
 			
 			modifier = {
-				factor = 1.2
+				factor = 2
 				date > "9.1.1"
 			}
 			
@@ -310,10 +320,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 4
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
 			
 			modifier = {
-				factor = 1.2
+				factor = 2
 				date > "12.1.1"
 			}
 			
@@ -584,7 +599,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 2.0
 		start_year = 8
 		folder = {
 			name = support_folder
@@ -1005,6 +1020,24 @@ technologies = {
 		}
 	}
 
+
+	SWI_saint_bernard_tech = { #Saint Bernard tech
+		allow = { always = no } #Only obtained through Focus
+		field_hospital = {
+			casualty_trickleback = 0.20 ## REMEMBER TO UPDATE THE TOOLTIP 
+			experience_loss_factor = -0.3
+		}
+	}
+
+	NORDIC_supportCollaboration_tech = { # For the Army Capston in the Nordic JFT
+		allow = { always = no } #Only obtained through Focus
+		category_support_battalions = {
+			max_organisation = 10
+			soft_attack = 0.25
+			experience_loss_factor = 0.05
+		}
+	}
+
 	tech_logistics_company = {
 
 		enable_subunits = {
@@ -1103,9 +1136,6 @@ technologies = {
 				date > "8.1.1"
 			}
 
-			modifier = {
-				factor = 2
-			}
 		}
 	}
 	
