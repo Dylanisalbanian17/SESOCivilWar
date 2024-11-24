@@ -23,6 +23,10 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 2
+				tag = PEN
+			}
 		}
 		
 		categories = {
@@ -31,6 +35,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	basic_destroyer = {
@@ -57,6 +62,10 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 2
+				tag = PEN 
+			}
 		}
 		
 		categories = {
@@ -65,6 +74,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	improved_destroyer = {
@@ -89,6 +99,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = PEN 
+			}
 		}
 		
 		categories = {
@@ -97,6 +112,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	advanced_destroyer = {
@@ -116,6 +132,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = PEN 
+			}
 		}
 		
 		categories = {
@@ -124,6 +145,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	
@@ -135,6 +157,7 @@ technologies = {
 		path = {
 			leads_to_tech = basic_light_cruiser 
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		#path = {
@@ -143,6 +166,13 @@ technologies = {
 		#}
 		
 		research_cost = 1.5
+
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_naval_torpedo_cruiser
+			}
+		}
 
 		start_year = 2
 		
@@ -154,15 +184,25 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 2
+				tag = CAL 
+			}
 			
+			modifier = {
+				factor = 2
+				tag = ILL 
+			}
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			cl_tech
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	basic_light_cruiser = {
@@ -193,14 +233,25 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 2
+				tag = CAL 
+			}
+			
+			modifier = {
+				factor = 2
+				tag = ILL 
+			}
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			cl_tech
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	improved_light_cruiser = {
@@ -230,14 +281,25 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 2
+				tag = CAL 
+			}
+			
+			modifier = {
+				factor = 2
+				tag = ILL 
+			}
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			cl_tech
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	advanced_light_cruiser = {
@@ -263,15 +325,25 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 2
+				tag = CAL 
+			}
 			
+			modifier = {
+				factor = 2
+				tag = ILL 
+			}
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			cl_tech
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	
@@ -305,11 +377,13 @@ technologies = {
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			ca_tech
 			mio_cat_tech_all_capital_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	basic_heavy_cruiser = {
@@ -342,11 +416,13 @@ technologies = {
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			ca_tech
 			mio_cat_tech_all_capital_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	improved_heavy_cruiser = {
@@ -378,11 +454,13 @@ technologies = {
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			ca_tech
 			mio_cat_tech_all_capital_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	advanced_heavy_cruiser = {
@@ -410,11 +488,13 @@ technologies = {
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			ca_tech
 			mio_cat_tech_all_capital_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	
@@ -427,6 +507,7 @@ technologies = {
 		path = {
 			leads_to_tech = basic_battlecruiser 
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		
@@ -444,10 +525,12 @@ technologies = {
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	basic_battlecruiser = {
@@ -475,10 +558,12 @@ technologies = {
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 		
 	early_battleship = {
@@ -496,6 +581,13 @@ technologies = {
 		research_cost = 1.5
 		start_year = 2
 		
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_naval_super_heavy_battleship
+			}
+		}
+
 		folder = {
 			name = naval_folder
 			position = { x = 1 y = 1 }
@@ -506,10 +598,12 @@ technologies = {
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			bb_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	basic_battleship = {
@@ -524,8 +618,8 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = heavy_battleship 
-			research_cost_coeff = 0.75
+			leads_to_tech = heavy_battleship2
+			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
@@ -541,10 +635,12 @@ technologies = {
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			bb_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	improved_battleship = {
@@ -558,7 +654,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = basic_battlecruiser 
+			leads_to_tech = basic_battlecruiser
 			research_cost_coeff = 0.75
 		}
 		
@@ -575,10 +671,12 @@ technologies = {
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			bb_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	advanced_battleship = {
@@ -587,10 +685,10 @@ technologies = {
 			battleship_4
 		}
 		
-		path = {
-			leads_to_tech = heavy_battleship2 
-			research_cost_coeff = 0.75
-		}
+		#path = {
+			#leads_to_tech = heavy_battleship2 
+			#research_cost_coeff = 0.75
+		#}
 		
 		research_cost = 2
 		start_year = 10
@@ -600,15 +698,27 @@ technologies = {
 			position = { x = 1 y = 19 }
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = { has_dlc = "Gotterdammerung"}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_naval_modern_battleship
+				}
+			}
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
 		
 		categories = {
+			naval_artillery
 			naval_equipment
 			bb_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	
@@ -618,38 +728,51 @@ technologies = {
 			SH_battleship_1
 		}
 		
-		path = {
-			leads_to_tech = heavy_battleship2 
-			research_cost_coeff = 1
-		}
+		#path = {
+			#leads_to_tech = heavy_battleship2 
+			#research_cost_coeff = 1
+		#}
 		
 		research_cost = 2
-		start_year = 2
+		start_year = 1936
 		
-		folder = {
-			name = naval_folder
-			position = { x = 3 y = 7 }
-		}
+		#folder = {
+			#name = naval_folder
+			#position = { x = 3 y = 7 }
+		#}
 		
 		ai_will_do = {
 			factor = 1
 		}
-		
+		allow = {
+			always = no
+		}
+
 		categories = {
 			naval_equipment
 			shbb_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	heavy_battleship2 = {
 
+		allow = {
+	 		ROOT = {
+				is_special_project_completed = sp:sp_naval_super_heavy_battleship
+			}
+		}
 		enable_equipments = { 
 			SH_battleship_2
 		}
 		
+		path = {
+
+		}
 		research_cost = 2
 
+		is_special_project_tech = yes
 		start_year = 10
 		
 		folder = {
@@ -660,12 +783,14 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
+
 		
 		categories = {
 			naval_equipment
 			shbb_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	transport = {
@@ -677,7 +802,11 @@ technologies = {
 			leads_to_tech = landing_craft 
 			research_cost_coeff = 1
 		}
-		
+
+		path = {
+			leads_to_tech = sp_multi_product_supply_ships
+			research_cost_coeff = 1
+		}
 		research_cost = 1.5
 		start_year = 2
 		
@@ -694,13 +823,27 @@ technologies = {
 				NOT = { has_war = yes }
 			}
 			
+			modifier = {
+				factor = 2
+				tag = CAL
+			}
 			
+			modifier = {
+				factor = 2
+				tag = ILL
+			}
+			
+			modifier = {
+				factor = 2
+				tag = PEN 
+			}
 		}
 		
 		categories = {
 			naval_equipment
 			tp_tech
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	landing_craft = {
@@ -737,13 +880,56 @@ technologies = {
 				NOT = { has_war = yes }
 			}
 			
+			modifier = {
+				factor = 2
+				tag = CAL 
+			}
+			
+			modifier = {
+				factor = 2
+				tag = ILL
+			}
 
+			modifier = {
+				factor = 50
+				tag = ILL
+				OR = {
+					has_war_with = CAL
+					COL = {  
+						OR = { 
+							has_capitulated = yes 
+							exists = no
+		                    is_subject_of = ILL
+						}
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 5
+				OR = {
+					tag = PEN 
+					tag = CAL
+				}
+				has_war_with = VIA
+			}
+
+			modifier = {
+				factor = 10
+				OR = {
+					tag = PEN 
+					tag = CAL 
+				}
+				has_war_with = VIA
+				VIA = { has_war_with = NYO }
+			}
 		}
 		
 		categories = {
 			naval_equipment
 			tp_tech
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	tank_landing_craft = {
@@ -767,13 +953,27 @@ technologies = {
 				NOT = { has_war = yes }
 			}
 			
+			modifier = {
+				factor = 2
+				tag = CAL
+			}
 			
+			modifier = {
+				factor = 2
+				tag = ILL 
+			}
+			
+			modifier = {
+				factor = 2
+				tag = PEN 
+			}
 		}
 		
 		categories = {
 			naval_equipment
 			tp_tech
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	early_carrier = {
@@ -799,6 +999,15 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 5
+				tag = CAL 
+			}
+			
+			modifier = {
+				factor = 5
+				tag = ILL 
+			}
 		}
 		
 		categories = {
@@ -806,6 +1015,7 @@ technologies = {
 			cv_tech
 			mio_cat_tech_all_carrier_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	basic_carrier = {
@@ -830,6 +1040,15 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 5
+				tag = CAL 
+			}
+			
+			modifier = {
+				factor = 5
+				tag = ILL 
+			}
 		}
 		
 		categories = {
@@ -837,6 +1056,7 @@ technologies = {
 			cv_tech
 			mio_cat_tech_all_carrier_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	improved_carrier = {
@@ -851,8 +1071,17 @@ technologies = {
 		}
 		
 		research_cost = 2
-
 		start_year = 6
+
+		on_research_complete = {
+			if = { 
+				limit = { has_dlc = "Gotterdammerung"}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_naval_ice_carrier	
+				}
+			}
+		}
 		
 		folder = {
 			name = naval_folder
@@ -862,7 +1091,15 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 5
+				tag = CAL 
+			}
 			
+			modifier = {
+				factor = 5
+				tag = ILL 
+			}
 		}
 		
 		categories = {
@@ -870,6 +1107,7 @@ technologies = {
 			cv_tech
 			mio_cat_tech_all_carrier_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	advanced_carrier = {
@@ -883,6 +1121,16 @@ technologies = {
 
 		start_year = 10
 		
+		on_research_complete = {
+			if = {
+				limit = {has_dlc = "Gotterdammerung"}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_naval_modern_carrier	
+				}
+			}
+		}
+
 		folder = {
 			name = naval_folder
 			position = { x = 0 y = 19 }
@@ -891,7 +1139,15 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 5
+				tag = CAL 
+			}
 			
+			modifier = {
+				factor = 5
+				tag = ILL 
+			}
 		}
 		
 		categories = {
@@ -899,6 +1155,7 @@ technologies = {
 			cv_tech
 			mio_cat_tech_all_carrier_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	early_submarine = {
@@ -912,6 +1169,17 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_naval_cruiser_submarine
+			}
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_naval_midget_submarine
+			}			
+		}
+
 		research_cost = 1.5
 
 		start_year = 2
@@ -924,6 +1192,10 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 5
+				tag = VIA
+			}
 		}
 		
 		categories = {
@@ -931,6 +1203,7 @@ technologies = {
 			ss_tech
 			mio_cat_tech_all_submarine_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	basic_submarine = {
@@ -943,7 +1216,20 @@ technologies = {
 			leads_to_tech = improved_submarine 
 			research_cost_coeff = 1
 		}
-		
+		on_research_complete = {
+			if = {
+				limit = { has_dlc = "Gotterdammerung"}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_naval_anechoic_tiles
+				}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_naval_aip_engine
+				}				
+			}
+		}
+				
 		research_cost = 2
 		start_year = 2
 
@@ -954,6 +1240,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = VIA
+			}
 		}
 		
 		categories = {
@@ -961,6 +1252,7 @@ technologies = {
 			ss_tech
 			mio_cat_tech_all_submarine_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	improved_submarine = {
@@ -986,6 +1278,10 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 5
+				tag = GER
+			}
 		}
 		
 		categories = {
@@ -993,6 +1289,7 @@ technologies = {
 			ss_tech
 			mio_cat_tech_all_submarine_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	advanced_submarine = {
@@ -1013,6 +1310,10 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 5
+				tag = VIA
+			}
 		}
 		
 		categories = {
@@ -1020,6 +1321,7 @@ technologies = {
 			ss_tech
 			mio_cat_tech_all_submarine_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	
@@ -1039,5 +1341,22 @@ technologies = {
 			always = no
 		}
 	}
+
+	fleet_submarines = {
+	
+	}
+
+	#cruiser_submarine = {
+		#enable_equipments = {
+			#cruiser_submarine
+		#}
+
+		#research_cost = 1
+		#start_year = 1936
+
+		#allow = {
+			#always = no
+		#}
+	#}
 	
 }

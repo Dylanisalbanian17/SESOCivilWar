@@ -439,6 +439,14 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
+			modifier = {
+				tag = PEN
+				factor = 1.5
+			}
+			modifier = {
+				tag = CAL
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -487,6 +495,14 @@ technologies = {
 			modifier = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
+			}
+			modifier = {
+				tag = PEN
+				factor = 0.5
+			}
+			modifier = {
+				tag = CAL
+				factor = 1.5
 			}
 		}
 		
@@ -756,6 +772,15 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			
+			modifier = {
+				factor = 0
+				tag = CAL
+			}
+			modifier = {
+				tag = NYO
+				factor = 4
+			}
 			modifier = {
 				ai_land_doctrine_tier_1_trigger = yes
 				factor = 2
@@ -811,6 +836,11 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
+
+			modifier = {
+				tag = VIA
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -860,6 +890,10 @@ technologies = {
 			modifier = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
+			}
+			modifier = {
+				tag = VIA
+				factor = 0.5
 			}
 		}
 		
@@ -911,6 +945,10 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
+			modifier = {
+				tag = VIA
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -960,6 +998,10 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
+			modifier = {
+				tag = VIA
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -1003,6 +1045,10 @@ technologies = {
 			modifier = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
+			}
+			modifier = {
+				tag = VIA
+				factor = 0.5
 			}
 		}
 		
@@ -1061,6 +1107,10 @@ technologies = {
 			modifier = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
+			}
+			modifier = {
+				tag = VIA
+				factor = 0.5
 			}
 		}
 		
@@ -1363,6 +1413,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
+			
+			modifier = {
+				factor = 0
+				tag = CAL
+			}
 			modifier = {
 				ai_land_doctrine_tier_1_trigger = yes
 				factor = 2

@@ -8,6 +8,14 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
+				NOT = {
+					has_idea = BUL_army_restrictions_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = BUL_army_restrictions
+				}
 			}
 		}
 
@@ -122,7 +130,7 @@ equipments = {
 
 	ship_hull_light_1 = {
 		abbreviation = "hdb"
-		year = 2
+		year = 1922
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -133,7 +141,7 @@ equipments = {
 
 	ship_hull_light_2 = {
 		abbreviation = "hdc"
-		year = 2
+		year = 1936
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -182,7 +190,7 @@ equipments = {
 
 	ship_hull_light_3 = {
 		abbreviation = "hdd"
-		year = 6
+		year = 1940
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -254,7 +262,7 @@ equipments = {
 
 	ship_hull_light_4 = {
 		abbreviation = "hde"
-		year = 10
+		year = 1944
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -317,7 +325,7 @@ equipments = {
 		manpower = 500
 	}
 	destroyer_1 = {
-		year = 2
+		year = 1922
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -365,7 +373,7 @@ equipments = {
 		manpower = 250
 	}
 	destroyer_2 = {
-		year = 2
+		year = 1936
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -417,7 +425,7 @@ equipments = {
 	}
 	
 	destroyer_3 = {
-		year = 6
+		year = 1940
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -468,7 +476,7 @@ equipments = {
 	}
 	
 	destroyer_4 = {
-		year = 10
+		year = 1944
 
 		archetype = ship_hull_light
 		priority = 2000
