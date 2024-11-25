@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = VER
+		owner = MAS
 		add_core_of = VER
 		victory_points = {
 			6166 10 

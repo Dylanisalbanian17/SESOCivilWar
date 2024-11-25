@@ -3,7 +3,7 @@ state={
 	name="STATE_277"
 
 	history={
-		owner = MAI
+		owner = MAS
 		add_core_of = MAI
 		buildings = {
 			infrastructure = 1

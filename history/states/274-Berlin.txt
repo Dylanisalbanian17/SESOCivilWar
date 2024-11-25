@@ -5,7 +5,7 @@ state={
 		1826 2851 3080 3101 4479 4554 5222 5403 6281 6362 7397 7460 7478 7479 7492 7493 
 	}
 	history={
-		owner = NHA
+		owner = MAS
 		add_core_of = NHA
 		buildings = {
 			infrastructure = 1
