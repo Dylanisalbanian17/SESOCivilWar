@@ -2328,7 +2328,7 @@ technologies = {
 		xp_boost_cost = 75
 		xp_research_bonus = 1.75
 		research_cost = 2.0
-		start_year = 1938
+		start_year = 4
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 1 y = 10 }
@@ -2364,7 +2364,7 @@ technologies = {
 		xp_boost_cost = 75
 		xp_research_bonus = 1.5
 		research_cost = 2.5
-		start_year = 1943
+		start_year = 9
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 1 y = 17 }
