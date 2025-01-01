@@ -1886,20 +1886,8 @@ add_ideas = militarism_focus
 			factor = 1
 		}
 		completion_reward = {
-			set_politics= {
- ruling_party = neutrality 
-elections_allowed = no 
-}
-  create_country_leader= {
- name = "Anys I" 
-desc = "POLITICS_Anys_I_DESC" 
-picture = "gfx/leaders/ORE/gaming_girl.dds" 
-expire = "1965.1.1" 
-ideology = despotism 
-traits = { popular_queen queen_of_the_people constitutional_monarch inexperienced_monarch
-}
-
- }
+		set_politics= { ruling_party = neutrality 
+						elections_allowed = no }
 		}
 	}
 	#Focus for Maintaining the Dream
@@ -1972,6 +1960,7 @@ add_ideas = deterrence
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ORE_maintaining_the_dream }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = {
 			factor = 1
 		}

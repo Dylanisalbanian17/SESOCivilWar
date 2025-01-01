@@ -15,6 +15,21 @@ characters = {
 		}
 }
 
+ORE_gaming_girl2={
+	name="Anys I"
+	portraits = {
+		civilian = {
+			large="gfx/leaders/ORE/gaming_girl2.dds"
+		}
+	}
+
+	country_leader={
+		ideology=despotism
+		traits = { popular_queen queen_of_the_people constitutional_monarch inexperienced_monarch }
+		expire = "1965.1.1.1"
+		id=-1
+	}
+}
 
 ORE_pierce_rosencrantz ={
 	name="Pierce Rosencrantz"

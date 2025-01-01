@@ -21,6 +21,7 @@ add_equipment_to_stockpile = { type = train_equipment amount = 100 }
 
 #LEADERS
 recruit_character = ORE_gaming_girl
+recruit_character = ORE_gaming_girl2
 #ADVISORS
 
 #GENERALS
