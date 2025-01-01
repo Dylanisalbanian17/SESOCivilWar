@@ -893,7 +893,7 @@ type = annex_everything
 			factor = 1
 		}
 		completion_reward = {
-			country_event = california.6
+			#country_event = california.6
 		}
 	}
 	#Focus for Autonomy for Alf
