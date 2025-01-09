@@ -31,6 +31,82 @@ ORE_gaming_girl2={
 	}
 }
 
+ORE_gaming_girl3={
+	name="Imane Anys"
+	portraits = {
+		civilian = {
+			large="gfx/leaders/ORE/gaming_girl3.dds"
+		}
+	}
+
+	country_leader={
+		ideology=anti_revisionism
+		traits = { }
+		expire = "1965.1.1.1"
+		id=-1
+	}
+}
+
+ORE_gaming_girl4={
+	name="Pokimanelol"
+	portraits = {
+		civilian = {
+			large="gfx/leaders/ORE/gaming_girl4.dds"
+		}
+	}
+
+	country_leader={
+		ideology=gamerism
+		traits = { }
+		expire = "1965.1.1.1"
+		id=-1
+	}
+}
+
+ORE_jonathan_communism={
+	name="Jonathan Communism"
+	portraits = {
+		civilian = {
+			large = ""
+		}
+	}
+	country_leader = {
+		ideology = anti_revisionism
+		traits = { generallissimo }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+
+ORE_jonathan_fascism={
+	name="Jonathan Fascism"
+	portraits = {
+		civilian = {
+			large = ""
+		}
+	}
+	country_leader = {
+		ideology = gamerism
+		traits = { anti_democrat }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+ORE_punished_dylan={
+	name="Punished Dylan"
+	portraits = {
+		civilian = {
+			large = "gfx/leaders/ORE/punished_gaming.dds"
+		}
+	}
+	country_leader = {
+		ideology = socialism
+		traits = { the_gentleman_president railroad_enthusiast }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+
 ORE_pierce_rosencrantz ={
 	name="Pierce Rosencrantz"
 	portraits={
