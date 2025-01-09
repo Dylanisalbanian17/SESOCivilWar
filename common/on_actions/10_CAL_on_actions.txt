@@ -4,50 +4,67 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					CAL = {
+						has_government = democratic
+					}
 					original_tag = COL
 					is_subject_of = CAL
 				}
-				set_cosmetic_tag = COL_CAL
+				set_cosmetic_tag = COL_PSA
 			}
 			if = {
 				limit = {
-						OR = {
-							original_tag = NEV
-							is_subject_of = CAL
-						}
+					CAL = {
+						has_government = democratic
+					}
+					original_tag = NEV
+					is_subject_of = CAL
+						
 				}
-				set_cosmetic_tag = NEV_CAL
+				set_cosmetic_tag = NEV_PSA
 			}
 			if = {
 				limit = {
+					CAL = {
+						has_government = democratic
+					}
 					original_tag = ORE
 					is_subject_of = CAL
 				}
-				set_cosmetic_tag = ORE_CAL
+				set_cosmetic_tag = ORE_PSA
 			}
 			if = {
 				limit = {
+					CAL = {
+						has_government = democratic
+					}
 					original_tag = WAS
 					is_subject_of = CAL
 					
 				}
-				set_cosmetic_tag = WAS_CAL
+				set_cosmetic_tag = WAS_PSA
 			}
 			if = {
 				limit = {
+					CAL = {
+						has_government = democratic
+					}
 					original_tag = IDA
 					is_subject_of = CAL
 					
 				}
-				set_cosmetic_tag = IDA_CAL
+				set_cosmetic_tag = IDA_PSA
 			}
 			if = {
 				limit = {
+					CAL = {
+						has_government = democratic
+					}
 					original_tag = UTA
 					is_subject_of = CAL
 					
 				}
-				set_cosmetic_tag = UTA_CAL
+				set_cosmetic_tag = UTA_PSA
 			}
 		}
 	}
@@ -56,45 +73,63 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					CAL = {
+						has_government = democratic
+					}
 					original_tag = COL
 					is_subject_of = CAL
 				}
-				set_cosmetic_tag = COL_CAL
+				set_cosmetic_tag = COL_PSA
 			}
 			if = {
 				limit = {
+					CAL = {
+						has_government = democratic
+					}
 					original_tag = NEV
 					is_subject_of = CAL
 				}
-				set_cosmetic_tag = NEV_CAL
+				set_cosmetic_tag = NEV_PSA
 			}
 			if = {
 				limit = {
+					CAL = {
+						has_government = democratic
+					}
 					original_tag = ORE
 					is_subject_of = CAL
 				}
-				set_cosmetic_tag = ORE_CAL
+				set_cosmetic_tag = ORE_PSA
 			}
 			if = {
 				limit = {
+					CAL = {
+						has_government = democratic
+					}
 					original_tag = WAS
 					is_subject_of = CAL
 				}
-				set_cosmetic_tag = WAS_CAL
+				set_cosmetic_tag = WAS_PSA
 			}
 			if = {
 				limit = {
+					CAL = {
+						has_government = democratic
+					}
 					original_tag = IDA
 					is_subject_of = CAL
 				}
-				set_cosmetic_tag = IDA_CAL
+				set_cosmetic_tag = IDA_PSA
 			}
 			if = {
 				limit = {
+					CAL = {
+						has_government = democratic
+					}
 					original_tag = UTA
 					is_subject_of = CAL
 				}
-				set_cosmetic_tag = UTA_CAL
+				set_cosmetic_tag = UTA_PSA
 			}
 		}
 	}

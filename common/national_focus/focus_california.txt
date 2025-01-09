@@ -315,6 +315,12 @@ id = california.1
 			has_completed_focus= CAL_ready_for_the_future
 has_government= democratic
 		}
+		completion_reward = {
+			country_event= {
+				days = 1 
+				id = california.6 
+			}	
+		}
 	}
 	#Focus for Dealing with the Economy
 	focus = {
@@ -351,7 +357,7 @@ add_idea = super_depression2
 			has_completed_focus= CAL_a_somewhat_functioning_economy  has_completed_focus= CAL_it_just_works
 		}
 		completion_reward = {
-			set_cosmetic_tag = CAL_PSC
+			set_cosmetic_tag = CAL_PSA
 					}
 	}
 	#Focus for Military Reform
@@ -434,7 +440,8 @@ instant_build = yes}
 		}
 		completion_reward = {
 			annex_country= {
- target = NEV 
+ 			target = NEV
+			transfer_troops = yes 
 }
 		}
 	}
@@ -458,7 +465,8 @@ instant_build = yes}
 		}
 		completion_reward = {
 			annex_country= {
- target = ORE 
+ 			target = ORE
+			transfer_troops = yes 
 }
 		}
 	}
@@ -880,7 +888,7 @@ type = annex_everything
 			add_war_support= 0.05
 		}
 	}
-
+	# Focus for Play de_nuke
 	focus = {
 		id = CAL_playde_nuke
 		icon = GFX_goal_molotov_ribbentrop_pact

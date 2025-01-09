@@ -11,13 +11,12 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = NEV
-		AND = { 
-has_completed_focus = NEV_dylans_arrival }
+	tag = NEV  
+	has_completed_focus = NEV_dylans_arrival 
 	}
 	option = {
 		name = vacation.1.a
-		ai_chance = { factor = 1}
+		ai_chance = { base = 1}
 		set_politics= {
  ruling_party = communism 
 elections_allowed = no 

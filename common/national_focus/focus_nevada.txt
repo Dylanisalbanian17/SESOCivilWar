@@ -76,7 +76,7 @@ id = nevada.1
 		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = NEV_implementing_the_gold_standard 
+			focus = NEV_balancing_the_budget 
 		}
 		prerequisite = { 
 			focus = NEV_closer_ties_with_california 
@@ -133,9 +133,9 @@ id = nevada.1
 			add_political_power = 50
 		}
 	}
-	#Focus for Implementing the Gold Standard
+	#Focus for Balancing The Budget
 	focus = {
-		id = NEV_implementing_the_gold_standard
+		id = NEV_balancing_the_budget
 		icon = GFX_focus_hol_abandon_the_gold_standard
 		x = 7
 		y = 1
@@ -147,7 +147,7 @@ id = nevada.1
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = gold_standard
+			add_ideas = balancing_the_budget
 		}
 	}
 #End of focuses 

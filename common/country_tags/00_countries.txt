@@ -1,4 +1,4 @@
-# United States of Goddamn 'Merica
+# United States
 ALA = "countries/Alabama.txt"
 ARB = "countries/Box.txt"
 ARK = "countries/Arkansas.txt"

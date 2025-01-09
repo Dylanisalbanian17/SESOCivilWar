@@ -76,15 +76,8 @@ form_pacific_states_category = {
 				controls_state = 44
 				controls_state = 43
 				controls_state = 42
-				controls_state = 41 }
-				hidden_effect = {
-					46 = { add_core_of = ROOT }
-					45 = { add_core_of = ROOT }
-					44 = { add_core_of = ROOT }
-					43 = { add_core_of = ROOT }
-					42 = { add_core_of = ROOT }
-					41 = { add_core_of = ROOT }
-				}
+				controls_state = 41 
+			}
 			}
 			
 			# Oregon
@@ -97,17 +90,9 @@ form_pacific_states_category = {
 				controls_state = 14
 				controls_state = 13
 				controls_state = 12
-				controls_state = 11 }
-			
-			hidden_effect = {
-			17 = { add_core_of = ROOT }
-			16 = { add_core_of = ROOT }
-			15 = { add_core_of = ROOT }
-			14 = { add_core_of = ROOT }
-			13 = { add_core_of = ROOT }
-			12 = { add_core_of = ROOT }
-			11 = { add_core_of = ROOT }
+				controls_state = 11 
 			}
+			
 		}
 			hidden_effect = {
 				set_global_flag = PSA.tga
@@ -207,7 +192,7 @@ form_pacific_cascadia = {
 	}
 
 	complete_effect = {
-		set_cosmetic_tag = CAS_CAL
+		set_cosmetic_tag = CAS_PSA
 		custom_effect_tooltip = pacific_expansion_coring_states_tt
 			hidden_effect = {
 				4 = { add_core_of = ROOT }
@@ -224,7 +209,7 @@ form_pacific_cascadia = {
 	}
 }
 
-form_pacific_rocky_mountains = {
+form_pacific_deseret = {
 
 	icon = generic_form_nation
 
@@ -233,10 +218,10 @@ form_pacific_rocky_mountains = {
 	}
 
 	available = {
-		NOT = { has_global_flag = RYM_PSA }
+		NOT = { has_global_flag = DES_PSA }
 		is_subject = yes
 		custom_trigger_tooltip = {
-			tooltip = form_pacific_rocky_mountains_required_states_tt
+			tooltip = form_pacific_deseret_required_states_tt
 			controls_state = 47
 			controls_state = 48
 			controls_state = 49
@@ -267,7 +252,7 @@ form_pacific_rocky_mountains = {
 				66 = { add_core_of = ROOT }
 				67 = { add_core_of = ROOT }
 				68 = { add_core_of = ROOT }
-				set_global_flag = RYM_PSA
+				set_global_flag = DES_PSA
 			}
 		}
 	ai_will_do = {
