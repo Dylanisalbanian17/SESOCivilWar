@@ -1,0 +1,117 @@
+add_namespace = oregon
+
+##Event: Reaching Out
+country_event = {
+	id = oregon.1
+	title = oregon.1.t
+	desc = oregon.1.d
+	picture = GFX_report_event_aid_pact
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = oregon.1.a
+		ai_chance = { base = 2}
+		ORE = {
+			country_event = oregon.2
+		}
+	}
+	option = {
+		name = oregon.1.b
+		ai_chance = { base = 1}
+		ORE = {
+			country_event = oregon.3
+		}
+	}
+}
+##Event: Dylan comes to Eugene
+country_event = {
+	id = oregon.2
+	title = oregon.2.t
+	desc = oregon.2.d
+	picture = GFX_report_event_FIN_paasikivi_president
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = oregon.2.a
+		ai_chance = { base = 1}
+		complete_national_focus = ORE_return_of_the_president
+	}
+}
+##Event: Dylan stays on Vacation 
+country_event = {
+	id = oregon.3
+	title = oregon.3.t
+	desc = oregon.3.d
+	picture = GFX_report_event_NOR_trotsky_speech
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = oregon.3.a
+		ai_chance = { base = 1}
+		complete_national_focus = ORE_no_more_vacation_days
+	}
+}
+##Event: Dylan is President again
+country_event = {
+	id = oregon.4
+	title = oregon.4.t
+	desc = oregon.4.d
+	picture = GFX_report_event_ARG_osmar_hellmuth
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = oregon.4.a
+		ai_chance = { base = 1}
+		promote_character = ORE_punished_dylan
+		set_party_name= { 
+			ideology = democratic 
+			long_name = "United Peoples Front(Social Democrats)" 
+			name = "UPF (SD)" 
+		}
+	}
+}
+##Event: Choosing a new capital
+country_event = {
+	id = oregon.5
+	title = oregon.5.t
+	desc = oregon.5.de
+	picture = GFX_report_event_NOR_storting
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = oregon.5.a
+		ai_chance = { base = 1}
+	}
+	option = {
+		name = oregon.5.b
+		ai_chance = { base = 1}
+		set_capital = {
+		state = 21
+		}
+	}
+	option = {
+		name = oregon.5.c
+		ai_chance = { base = 1}
+		set_capital = {
+		state = 44
+		}
+	}
+	option = {
+		name = oregon.5.d
+		ai_chance = { base = 1}
+		set_capital = {
+		state = 4
+		}
+	}
+}
+

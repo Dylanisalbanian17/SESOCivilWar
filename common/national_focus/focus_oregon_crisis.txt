@@ -968,21 +968,7 @@ focus_tree = {
 			factor = 3
 			modifier = {
 				factor = 0
-				date < 5.1.1
-				OR = { 
-					# we dont want chinese minors to go crazy on slots early since they get eaten
-					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = BEL
-					tag = LUX
-					tag = HOL
-					tag = DEN
-
-					# we also dont want tiny nations to go crazy with slots right away
-					num_of_controlled_states < 2
-				}				
+				date < 5.1.1				
 			}
 		}
 	}
@@ -1778,13 +1764,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_politics= {
- ruling_party = fascism 
-elections_allowed = no 
+ 			ruling_party = fascism 
+			elections_allowed = no 
 }
 
 add_timed_idea = {
 				idea = nationalism
 				days = 365
+			}
+			hidden_effect = {
+				promote_character = ORE_gaming_girl3
 			}
 		}
 	}
@@ -1811,6 +1800,9 @@ elections_allowed = no
 add_timed_idea = {
 				idea = internationalism
 				days = 365
+			}
+			hidden_effect = {
+				promote_character = ORE_gaming_girl4
 			}
 		}
 	}
@@ -1913,7 +1905,7 @@ popularity = 0.1
 set_rule = { can_send_volunteers = yes }
 			add_political_power = 150
 
-set_cosmetic_tag = ORE_CAL
+set_cosmetic_tag = ORE_PSA
 		}
 	}
 	#Focus for Child Gamers
@@ -2118,5 +2110,317 @@ target = CAL
 			add_research_slot = 1
 		}
 	}
-
+#Focus for Punch In The Lips
+focus = {
+	id = ORE_punch_in_the_lips
+	icon = GFX_focus_AUS_the_right_to_self_determination
+	x = 27
+	y = 0
+	cost = 7
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS } 
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_government = democratic
+		OR = {
+			CAL = {
+				exists = no
+			}
+			CAL = {
+				is_subject_of = ORE
+			}
+		}
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+#Focus for Reaching Out To Dylan
+focus = {
+	id = ORE_reaching_out_to_dylan
+	icon = GFX_focus_BRA_pedro_henrique
+	x = 27
+	y = 1
+	cost = 7
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = ORE_punch_in_the_lips
+	}
+	bypass = {
+		NEV = {
+			exists = no
+		}
+	}
+	search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		NEV = {
+			country_event= {
+				days = 1 
+				id = oregon.1 
+			}
+		}
+	}
+}
+#Focus for Return Of The President
+focus = {
+	id = ORE_return_of_the_president
+	icon = GFX_focus_BRA_estado_novo
+	x = 26
+	y = 2
+	cost = 7
+	available_if_capitulated = yes
+	available = {
+		always = no
+	}
+	prerequisite = {
+		focus = ORE_reaching_out_to_dylan
+	}
+	bypass = {
+		NEV = {
+			exists = no
+		}
+	}
+	search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	annex_country = {
+	target = NEV
+	transfer_troops = yes
+}
+	}
+}
+#Focus for No More Vacation Days
+focus = {
+	id = ORE_no_more_vacation_days
+	icon = GFX_focus_BRA_national_guard
+	x = 28
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	available = {
+		always = no
+	}
+	prerequisite = {
+		focus = ORE_reaching_out_to_dylan
+	}
+	search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	create_wargoal = {
+		target = NEV
+		type = annex_everything
+	}
+	}
+}
+#Focus for Getting Back To Work
+focus = {
+	id = ORE_getting_back_to_work
+	icon = GFX_focus_BRA_father_of_the_poor
+	x = 27
+	y = 3
+	cost = 7
+	available_if_capitulated = yes
+	available = {
+		owns_state = 41
+		owns_state = 42
+		owns_state = 43
+		owns_state = 44
+		owns_state = 45
+		owns_state = 46
+	}
+	prerequisite = {
+		focus = ORE_return_of_the_president
+		focus = ORE_no_more_vacation_days
+	}
+	search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event= {
+			days = 1 
+			id = oregon.4 
+		}
+	}
+}
+#Focus for Pacfic States Theory
+focus = {
+	id = ORE_pacific_states_theory
+	icon = GFX_focus_generic_democratic_europe
+	x = 27
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = ORE_getting_back_to_work
+	}
+	search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	set_cosmetic_tag = PSA
+	}
+}
+#Focus for Ending The Occupation
+focus = {
+	id = ORE_ending_the_occupation
+	icon = GFX_focus_focus_fra_fascist_threat
+	x = 25
+	y = 5
+	cost = 10
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = ORE_pacific_states_theory
+	}
+	search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	if = {
+		limit = { CAL = { is_subject_of = ORE } }
+		annex_country = {
+			target = CAL
+			transfer_troops = yes
+		}
+	}
+	18 = { add_core_of = ROOT }
+	19 = { add_core_of = ROOT }
+	20 = { add_core_of = ROOT }
+	21 = { add_core_of = ROOT }
+	22 = { add_core_of = ROOT }
+	23 = { add_core_of = ROOT }
+	24 = { add_core_of = ROOT }
+	25 = { add_core_of = ROOT }
+	26 = { add_core_of = ROOT }
+	27 = { add_core_of = ROOT }
+	28 = { add_core_of = ROOT }
+	29 = { add_core_of = ROOT }
+	30 = { add_core_of = ROOT }
+	31 = { add_core_of = ROOT }
+	32 = { add_core_of = ROOT }
+	33 = { add_core_of = ROOT }
+	34 = { add_core_of = ROOT }
+	35 = { add_core_of = ROOT }
+	36 = { add_core_of = ROOT }
+	37 = { add_core_of = ROOT }
+	38 = { add_core_of = ROOT }
+	39 = { add_core_of = ROOT }
+	40 = { add_core_of = ROOT }
+	}
+ }
+#Focus for Bringing In Nevada
+focus = {
+	id = ORE_bringing_in_nevada
+	icon = GFX_focus_generic_advanced_military_studies
+	x = 27
+	y = 5
+	cost = 10
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = ORE_pacific_states_theory
+	}
+	search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	if = {
+		limit = { NEV = { is_subject_of = ORE } }
+		annex_country = {
+			target = NEV
+			transfer_troops = yes
+		}
+	}
+	41 = { add_core_of = ROOT }
+	42 = { add_core_of = ROOT }
+	43 = { add_core_of = ROOT }
+	44 = { add_core_of = ROOT }
+	45 = { add_core_of = ROOT }
+	46 = { add_core_of = ROOT }
+	}
+ }
+ #Focus for Integrating Washington
+focus = {
+	id = ORE_integrating_washington
+	icon = GFX_focus_GRE_metaxism
+	x = 29
+	y = 5
+	cost = 10
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = ORE_pacific_states_theory
+	}
+	search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+annex_country = {
+	target = WAS
+	transfer_troops = yes
+}
+	4 = { add_core_of = ROOT }
+	5 = { add_core_of = ROOT }
+	6 = { add_core_of = ROOT }
+	7 = { add_core_of = ROOT }
+	8 = { add_core_of = ROOT }
+	9 = { add_core_of = ROOT }
+	10 = { add_core_of = ROOT }
+	}
+ }
+ #Focus for A New Capital
+focus = {
+	id = ORE_a_new_capital
+	icon = GFX_focus_generic_self_management
+	x = 27
+	y = 6
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = { focus = ORE_ending_the_occupation }
+	prerequisite = { focus = ORE_bringing_in_nevada }
+	prerequisite = { focus = ORE_integrating_washington }
+	search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event= {
+			days = 1 
+			id = oregon.5 
+		}
+	}
+ }
+#Focus for Theory No More
+focus = {
+	id = ORE_theory_no_more
+	icon = GFX_focus_usa_recruit_the_free_corps
+	x = 27
+	y = 7
+	cost = 1
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = ORE_a_new_capital
+	}
+	search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS } 
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability= 0.05  
+		add_political_power= 50
+		load_focus_tree = psa_focus
+	}
+ }
 }
