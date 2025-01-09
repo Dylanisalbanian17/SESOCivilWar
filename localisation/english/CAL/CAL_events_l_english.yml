@@ -1,0 +1,28 @@
+﻿l_english:
+#Dylan Events 
+vacation.2.t: "Time For A Vacation?"
+vacation.2.d: "After Dylan's hard work improving the nation of California, he's decided that he needs a vacation. If he goes this may cause problems for California and even result in him getting removed. Does he do it?"
+vacation.2.a: "Yes"
+vacation.2.b: "No"
+homeless.1.t: "Dealing with the Homeless"
+homeless.1.d: "There is a homeless problem and Dylan needs to make a decision to solve it. He can either make programs to assist in helping the homeless to have a better living Or he could take the Gamers suggestion and put the homeless in labor camps and possibly work them to death"
+homeless.1.a: "Go with the programs"
+homeless.1.b: "The Gamers are right on this one"
+funds.1.t: "Feminist Protest"
+funds.1.d: "Supress the protest by force?"
+funds.1.a: "No"
+funds.1.b: "Yes"
+trial.1.t: "The Trial of the Gamers"
+trial.1.d: "Thousands of Gamers have been put on trial for crimes against the state. Some have been let go, some convicted, and some the death penalty. But their is one Gamer who no one knows what to do with him. Leader of the Gamers who goes by the name Mace, has been convicted of several crimes including treason and tax evasion but no one knows the appropriate punishment."
+trial.1.a: "Exile him from the state"
+california.5.t: "The Keys Handed over"
+california.5.d: "It was a fine morning, The sun was shining, the birds were chirping, and Mace was happily gaming. About 3 seconds later the police breach his room door and tell him that he is now in control of California. Utterly confused Mace just accepts it and moves on with his day."
+california.5.a: "What a Gamer moment"
+california.6.t: "Moving the Capitol"
+california.6.de: "Since Dylan has no real ties to Sacramento, he thinks it would be better (and a little funny) to move it somewhere more cozy"
+california.6.a: "It's staying in Sacramento"
+california.6.b: "San Luis Obispo seems nice"
+california.6.c: "Bakersfield could be good"
+california.6.d: "San Bernardino lmao"
+
+#Mace Events

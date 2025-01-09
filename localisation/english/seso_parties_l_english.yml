@@ -48,15 +48,6 @@
  WAS_communism_party:0 "Freedom Socialist Party"
  WAS_communism_party_long:0 "Freedom Socialist Party"
 
- COL_democratic_party:0 "UPFC(DS)"
- COL_democratic_party_long:0 "United Peoples Front of Colorado (Democratic Socialists)"
- COL_neutrality_party:0 "National Guard"
- COL_neutrality_party_long:0 "Colorado National Guard"
- COL_fascism_party:0 "National Socialists"
- COL_fascism_party_long:0 "National Socialist Party of Colorado"
- COL_communism_party:0 "CPC"
- COL_communism_party_long:0 "Communist Party of Colorado"
-
  NYO_neutrality_party:0 "TKs"
  NYO_neutrality_party_long:0 "Trooper Korps"
  NYO_communism_party:0 "Communist Party"
