@@ -1763,17 +1763,17 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			hidden_effect = {
+				promote_character = ORE_gaming_girl4
+			}
 			set_politics= {
  			ruling_party = fascism 
 			elections_allowed = no 
 }
 
-add_timed_idea = {
+				add_timed_idea = {
 				idea = nationalism
 				days = 365
-			}
-			hidden_effect = {
-				promote_character = ORE_gaming_girl3
 			}
 		}
 	}
@@ -1792,17 +1792,17 @@ add_timed_idea = {
 			factor = 1
 		}
 		completion_reward = {
+			hidden_effect = {
+				promote_character = ORE_gaming_girl3
+			}
 			set_politics= {
- ruling_party = communism 
-elections_allowed = no 
-}
+ 			ruling_party = communism 
+			elections_allowed = no 
+			}
   
-add_timed_idea = {
+				add_timed_idea = {
 				idea = internationalism
 				days = 365
-			}
-			hidden_effect = {
-				promote_character = ORE_gaming_girl4
 			}
 		}
 	}
@@ -1840,7 +1840,7 @@ add_timed_idea = {
 		completion_reward = {
 			CAL = { add_to_faction = ORE }
 
-add_ideas = militarism_focus
+     		add_ideas = militarism_focus
 			army_experience = 20
 			set_rule = { can_send_volunteers = yes }
 		}
@@ -1958,8 +1958,8 @@ add_ideas = deterrence
 		}
 		completion_reward = {
 			create_faction= "Pacific States of America"  add_to_faction= WAS
-			WAS = { set_cosmetic_tag = WAS_CAL }
-add_ideas = volunteer_corps_focus
+			WAS = { set_cosmetic_tag = WAS_PSA }
+			add_ideas = volunteer_corps_focus
 		}
 	}
 	#Focus for Gamer Military
