@@ -5,7 +5,8 @@ state={
 		4091 4560 6700 9197 9215 9235 9250 9261 9263 9280 
 	}
 	history={
-		owner = ARK
+		owner = LOU
+		add_core_of = LOU
 		add_core_of = ARK
 		victory_points = {6700 15}
 		buildings = {

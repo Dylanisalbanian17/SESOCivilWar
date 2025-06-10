@@ -5,7 +5,7 @@ state={
 		671 813 1930 2282 2992 4089 5101 5192 5877 6183 6228 6244 6316 7176 7208 7228 7238 7241 
 	}
 	history={
-		owner = NBR
+		owner = NSC
 		add_core_of = NBR
 		victory_points = {7228 10}
 		buildings = {

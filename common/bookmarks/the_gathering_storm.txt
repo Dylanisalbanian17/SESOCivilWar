@@ -83,16 +83,62 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 
-		"ILL" = {
+		"ORE" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+
+		"NEV" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+
+		"COL" = {
 			minor = yes
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = neutrality
 		}
 		
-		"MAS" = {
+		"TEX" = {
 			minor = yes
 			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = neutrality
+		}
+
+		"ILL" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+
+		"MIC" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+
+		"KEN" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		
+		"GEO" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				idea_troller
+				idea_twitter_user
+				idea_strecruitment
+			}
+			focuses = {
+				GEO_reestablish_the_shadow_troopers
+				GEO_become_supreme_commander_of_geetsly
+				GEO_egirl_dylan
+			}
 		}
 
 		"PEN" = {
@@ -111,40 +157,6 @@ bookmarks = {
 			}
 		}
 		
-		"TEX" = {
-			minor = yes
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = neutrality
-		}
-
-		"GEO" = {
-			minor = yes
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				idea_troller
-				idea_twitter_user
-				idea_strecruitment
-			}
-			focuses = {
-				GEO_reestablish_the_shadow_troopers
-				GEO_become_supreme_commander_of_geetsly
-				GEO_egirl_dylan
-			}
-		}
-
-		"MIC" = {
-			minor = yes
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = neutrality
-		}
-
-		"KEN" = {
-			minor = yes
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = neutrality
-		}
-		
 		"NYO" = {
 			minor = yes
 			history = "OTHER_GATHERING_STORM_DESC"
@@ -160,17 +172,17 @@ bookmarks = {
 				NYO_focus_stormtrooper_rp
 			}
 		}
-		
-		"QUB" = {
-			minor = yes
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = neutrality
-		}
-		
+				
 		"ONT" = {
 			minor = yes
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = democratic
+		}
+
+		"QUB" = {
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
 		}	
 		
 		effect = {

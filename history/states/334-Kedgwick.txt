@@ -6,7 +6,7 @@ state={
 		353 1877 2089 2193 3523 3877 3976 4382 4703 6206 7207 7212 
 	}
 	history={
-		owner = NBR
+		owner = QUB
 		add_core_of = NBR
 		buildings = {
 			infrastructure = 0

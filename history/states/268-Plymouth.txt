@@ -6,7 +6,7 @@ state={
 		889 1966 2918 4863 6117 6773 7686 7724 
 	}
 	history={
-		owner = MAS
+		owner = COT
 		add_core_of = MAS
 		buildings = {
 			infrastructure = 2

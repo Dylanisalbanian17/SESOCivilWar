@@ -6,7 +6,7 @@ state={
 		1303 1539 1692 3067 4029 4315 4945 5139 5863 6008 6223 6612 6776 6867 7528 7531 7533 7537 7567 7569 7571 7578 7597 
 	}
 	history={
-		owner = MAS
+		owner = COT
 		add_core_of = NHA
 		victory_points = {7571 10}
 		buildings = {

@@ -5,7 +5,7 @@ state={
 		3655 3662 4363 5239 5512 5558 6495 8415 8453 8486 8517 
 	}
 	history={
-		owner = WVI
+		owner = VIA
 		add_core_of = WVI
 		victory_points = {8517 10}
 		buildings = {

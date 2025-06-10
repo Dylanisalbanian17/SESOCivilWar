@@ -1,7 +1,7 @@
 ﻿l_english:
- MAS:1 "New England"
- MAS_DEF:1 "New England"
- MAS_ADJ:0 "New Englander"
+ MAS:1 "Massachusetts"
+ MAS_DEF:1 "Massachusetts"
+ MAS_ADJ:0 "Massachusettsan"
  
  NMX:1 "New Mexico"
  NMX_DEF:1 "New Mexico"
@@ -11,9 +11,18 @@
  TEX_DEF:0 "Texas"
  TEX_ADJ:0 "Texan"
  
- LOU:0 "Louisiana"
- LOU_DEF:0 "Louisiana"
- LOU_ADJ:0 "Louisianan"
+ LOU_fascism:1 "Confederacy of Independent States"
+ LOU_fascism_DEF:1 "The Confederacy of Independent States"
+ LOU_democratic:1 "Confederate States of America"
+ LOU_democratic_DEF:1 "The Confederate States of America"
+ LOU_neutrality:0 "Confederate States of America"
+ LOU_neutrality_DEF:0 "The Confederate States of America"
+ LOU_communism:1 "Union of Southern Socialist States of America"
+ LOU_communism_DEF:1 "The Union of Southern Socialist States of America"
+ LOU_fascism_ADJ:0 "Separatist"
+ LOU_democratic_ADJ:0 "Confederate"
+ LOU_neutrality_ADJ:0 "Confederate"
+ LOU_communism_ADJ:0 "Southerner"
  
  ART:1 "Scottsdale Church"
  ART_DEF:1 "Scottsdale Church"
@@ -275,9 +284,9 @@
  RIS_DEF:0 "Rhode Island"
  RIS_ADJ:0 "Rhode Islander"
 
- COT:0 "Connecticut"
- COT_DEF:0 "Connecticut"
- COT_ADJ:0 "Connecticuter"
+ COT:0 "New England"
+ COT_DEF:0 "New England"
+ COT_ADJ:0 "New Englander"
 
  VER:0 "Vermont"
  VER_DEF:0 "Vermont"

@@ -6,7 +6,8 @@ state={
 	}
 	
 	history={
-		owner = ARK
+		owner = LOU
+		add_core_of = LOU
 		add_core_of = ARK
 		buildings = {
 			infrastructure = 1

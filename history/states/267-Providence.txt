@@ -3,7 +3,7 @@ state={
 	name="STATE_267"
 
 	history={
-		owner = RIS
+		owner = COT
 		add_core_of = RIS
 		victory_points = {
 			3802 10 

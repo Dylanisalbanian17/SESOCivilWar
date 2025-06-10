@@ -5,7 +5,8 @@ state={
 		3063 3272 3776 4278 4881 4987 5069 5828 6129 6355 6745 9508 9522 9545 9575 9589 9616 
 	}
 	history={
-		owner = MSS
+		owner = LOU
+		add_core_of = LOU
 		add_core_of = MSS
 		victory_points = {3776 10}
 		buildings = {

@@ -5,7 +5,7 @@ state={
 		456 2480 4236 4623 4982 5252 5328 5579 5814 8530 8534 8539 8552 8565 8580 8585 8620 8675 
 	}
 	history={
-		owner = WVI
+		owner = VIA
 		add_core_of = WVI
 		victory_points = {8565 25}
 		victory_points = {5579 5}

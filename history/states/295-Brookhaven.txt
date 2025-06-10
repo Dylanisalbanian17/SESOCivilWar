@@ -5,7 +5,8 @@ state={
 		1095 2600 3095 3183 3567 3708 4761 4850 5200 5542 6443 6860 9648 9663 9678 9699 9703 9705 9718 9719 9725 9734 
 	}
 	history={
-		owner = MSS
+		owner = LOU
+		add_core_of = LOU
 		add_core_of = MSS
 		buildings = {
 			infrastructure = 0
