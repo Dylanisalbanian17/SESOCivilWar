@@ -919,7 +919,7 @@ type = annex_everything
 		}
 		completion_reward = {
 			puppet= NEV
-			NEV = {set_cosmetic_tag = NEV_CAL }
+			NEV = {set_cosmetic_tag = NEV_PSA }
 		}
 	}
 	#Focus for Autonomy for Gamer Girl
@@ -937,7 +937,7 @@ type = annex_everything
 		}
 		completion_reward = {
 			puppet= ORE
-			ORE = {set_cosmetic_tag = ORE_CAL }
+			ORE = {set_cosmetic_tag = ORE_PSA }
 		}
 	}
 #End of focuses 

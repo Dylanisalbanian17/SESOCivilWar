@@ -180,6 +180,8 @@ form_pacific_cascadia = {
 			controls_state = 8
 			controls_state = 9
 			controls_state = 10
+			controls_state = 49
+			controls_state = 50
 			}
 		}
 	visible = {
@@ -201,6 +203,8 @@ form_pacific_cascadia = {
 				8 = { add_core_of = ROOT }
 				9 = { add_core_of = ROOT }
 				10 = { add_core_of = ROOT }
+				49 = { add_core_of = ROOT }
+				50 = { add_core_of = ROOT }
 				set_global_flag = CAS_PSA
 			}
 		}
@@ -224,8 +228,6 @@ form_pacific_deseret = {
 			tooltip = form_pacific_deseret_required_states_tt
 			controls_state = 47
 			controls_state = 48
-			controls_state = 49
-			controls_state = 50
 			controls_state = 64
 			controls_state = 65
 			controls_state = 66
@@ -240,13 +242,11 @@ form_pacific_deseret = {
 	}
 
 	complete_effect = {
-		set_cosmetic_tag = RYM_CAL
+		set_cosmetic_tag = DES_PSA
 		custom_effect_tooltip = pacific_expansion_coring_states_tt
 			hidden_effect = {
 				47 = { add_core_of = ROOT }
 				48 = { add_core_of = ROOT }
-				49 = { add_core_of = ROOT }
-				50 = { add_core_of = ROOT }
 				64 = { add_core_of = ROOT }
 				65 = { add_core_of = ROOT }
 				66 = { add_core_of = ROOT }
