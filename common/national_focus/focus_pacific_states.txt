@@ -1,0 +1,1885 @@
+focus_tree = {
+	id = psa_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CAL
+		}
+	}
+	#Focus for A Shaky Unification
+	focus = {
+		id = PSA_a_shaky_unification
+		icon = GFX_focus_hol_united_netherlands
+		x = 5
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_faction = "Western Peace Alliance"  add_political_power= 50
+		}
+	}
+	#Focus for Stabilizing The Economy
+	focus = {
+		id = PSA_stabilizing_the_economy
+		icon = GFX_focus_ARG_economic_reactivation_act
+		x = 5
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_a_shaky_unification }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	#Focus for Integrating Oregon
+	focus = {
+		id = PSA_integrating_oregon
+		icon = GFX_focus_generic_develop_norway_silhouette
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_stabilizing_the_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	#Focus for Hubologists Migration
+	focus = {
+		id = PSA_hubologists_migration
+		icon = GFX_focus_SOV_womens_fascist_movement
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_integrating_oregon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	#Focus for Integrating Nevada
+	focus = {
+		id = PSA_integrating_nevada
+		icon = GFX_focus_generic_develop_finland_silhouette
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_stabilizing_the_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	#Focus for Establish Camp Searchlight
+	focus = {
+		id = PSA_establish_camp_searchlight
+		icon = GFX_goal_generic_fortify_city
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_integrating_nevada }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for A Stable Nation Again
+	focus = {
+		id = PSA_a_stable_nation_again
+		icon = GFX_focus_generic_social_democracy
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_hubologists_migration }
+		prerequisite = { focus = PSA_establish_camp_searchlight }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Actually Pursuing a Degree
+	focus = {
+		id = PSA_actually_pursuing_a_degree
+		icon = GFX_focus_generic_university_1
+		x = 14
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for History
+	focus = {
+		id = PSA_history
+		icon = GFX_focus_SWE_education_reform
+		x = 12
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_actually_pursuing_a_degree }
+		mutually_exclusive = { focus = PSA_criminal_justice }
+		mutually_exclusive = { focus = PSA_political_science }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Criminal Justice
+	focus = {
+		id = PSA_criminal_justice
+		icon = GFX_focus_AUS_lawmaking_leniency
+		x = 14
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_actually_pursuing_a_degree }
+		mutually_exclusive = { focus = PSA_history }
+		mutually_exclusive = { focus = PSA_political_science }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Political Science
+	focus = {
+		id = PSA_political_science
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_actually_pursuing_a_degree }
+		mutually_exclusive = { focus = PSA_criminal_justice }
+		mutually_exclusive = { focus = PSA_history }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Community College
+	focus = {
+		id = PSA_community_college
+		icon = GFX_focus_generic_military_academy
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_history
+						 focus = PSA_criminal_justice
+						 focus = PSA_political_science }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for University
+	focus = {
+		id = PSA_university
+		icon = GFX_focus_NOR_moscows_education_centers
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_community_college }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Law School and Bar Exam
+	focus = {
+		id = PSA_law_school_and_bar_exam
+		icon = GFX_focus_generic_university_2
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_university }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Big Bad Prosecutor
+	focus = {
+		id = PSA_big_bad_prosecutor
+		icon = GFX_focus_CHL_policies_of_arturo_alessandri
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_law_school_and_bar_exam }
+		mutually_exclusive = { focus = PSA_better_call_dylan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Better Call Dylan
+	focus = {
+		id = PSA_better_call_dylan
+		icon = GFX_focus_por_salazar
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_law_school_and_bar_exam }
+		mutually_exclusive = { focus = PSA_big_bad_prosecutor }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Prosecuting Extremists
+	focus = {
+		id = PSA_prosecuting_extremists
+		icon = GFX_focus_BRA_end_the_state_of_emergency
+		x = 12
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_big_bad_prosecutor }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Establishing More Unions
+	focus = {
+		id = PSA_establishing_more_unions
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_big_bad_prosecutor
+						 focus = PSA_better_call_dylan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Protecting Civil Rights
+	focus = {
+		id = PSA_protecting_civil_rights
+		icon = GFX_goal_generic_improve_relations
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_better_call_dylan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Justice For All
+	focus = {
+		id = PSA_justice_for_all
+		icon = GFX_focus_generic_improve_the_administration
+		x = 14
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_prosecuting_extremists
+						 focus = PSA_protecting_civil_rights }
+		prerequisite = { focus = PSA_establishing_more_unions }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Rethinking Our Military
+	focus = {
+		id = PSA_rethinking_our_military
+		icon = GFX_focus_generic_women_in_military
+		x = 23
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for An Age Of Empires III
+	focus = {
+		id = PSA_an_age_of_empires_iii
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 21
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_rethinking_our_military }
+		mutually_exclusive = { focus = PSA_deploying_the_501st }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Fast Fortress
+	focus = {
+		id = PSA_fast_fortress
+		icon = GFX_goal_generic_fortify_city
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_an_age_of_empires_iii }
+		mutually_exclusive = { focus = PSA_central_american_rush }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Central American Rush
+	focus = {
+		id = PSA_central_american_rush
+		icon = GFX_focus_mex_caudillo_private_armies
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_an_age_of_empires_iii }
+		mutually_exclusive = { focus = PSA_fast_fortress }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Exploration Age
+	focus = {
+		id = PSA_exploration_age
+		icon = GFX_focus_SWE_beneath_sticks_and_stone
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_fast_fortress
+						 focus = PSA_central_american_rush }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Commerce Age
+	focus = {
+		id = PSA_commerce_age
+		icon = GFX_focus_BRA_banco_do_brasil
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_exploration_age }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Fortress Age
+	focus = {
+		id = PSA_fortress_age
+		icon = GFX_focus_BEL_national_redoubt_at_antwerp
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_commerce_age }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Industrial Age
+	focus = {
+		id = PSA_industrial_age
+		icon = GFX_focus_generic_modernize_industry
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_fortress_age }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Central American Revolt
+	focus = {
+		id = PSA_central_american_revolt
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_commerce_age }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Returning To Mexico
+	focus = {
+		id = PSA_returning_to_mexico
+		icon = GFX_focus_mex_exile_calles
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_central_american_revolt }
+		mutually_exclusive = { focus = PSA_rush_successful }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Rush Successful
+	focus = {
+		id = PSA_rush_successful
+		icon = GFX_focus_fra_le_deluge
+		x = 24
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_central_american_revolt }
+		mutually_exclusive = { focus = PSA_returning_to_mexico }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for California Revolt
+	focus = {
+		id = PSA_california_revolt
+		icon = GFX_focus_usa_union_representation_act
+		x = 21
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_industrial_age
+						 focus = PSA_returning_to_mexico }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Deploying The 501st
+	focus = {
+		id = PSA_deploying_the_501st
+		icon = GFX_focus_CHL_incorporate_machi_into_the_army
+		x = 24
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_rethinking_our_military }
+		mutually_exclusive = { focus = PSA_an_age_of_empires_iii }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Accepting Clone Wars Refugees
+	focus = {
+		id = PSA_accepting_clone_wars_refugees
+		icon = GFX_focus_generic_fascist_troops
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_deploying_the_501st }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Rapid Promotions
+	focus = {
+		id = PSA_rapid_promotions
+		icon = GFX_focus_AFG_contact_rural_loyalists
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_accepting_clone_wars_refugees }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for The Return Of The General
+	focus = {
+		id = PSA_the_return_of_the_general
+		icon = GFX_focus_CONGO_congolese_generals
+		x = 24
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_rapid_promotions }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Oh Yeah Air And Navy
+	focus = {
+		id = PSA_oh_yeah_air_and_navy
+		icon = GFX_focus_generic_air_carrier
+		x = 27
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_rethinking_our_military }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Air Is Much Easier
+	focus = {
+		id = PSA_air_is_much_easier
+		icon = GFX_goal_generic_air_fighter
+		x = 27
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_oh_yeah_air_and_navy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Double Down On Air
+	focus = {
+		id = PSA_double_down_on_air
+		icon = GFX_focus_NORDIC_mon_airforce
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_air_is_much_easier }
+		mutually_exclusive = { focus = PSA_look_up_a_guide_for_navy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Army And Air
+	focus = {
+		id = PSA_army_and_air
+		icon = GFX_focus_generic_tank_air_support
+		x = 26
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_double_down_on_air }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Look Up A Guide For Navy
+	focus = {
+		id = PSA_look_up_a_guide_for_navy
+		icon = GFX_focus_NORDIC_mon_navy
+		x = 28
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_air_is_much_easier }
+		mutually_exclusive = { focus = PSA_double_down_on_air }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for A Pacific Fleet I Think
+	focus = {
+		id = PSA_a_pacific_fleet_i_think
+		icon = GFX_focus_SMB_blue_water_fleet
+		x = 28
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_look_up_a_guide_for_navy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Renovating The Coast
+	focus = {
+		id = PSA_renovating_the_coast
+		icon = GFX_focus_generic_modernize_industry
+		x = 48
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Launch Dylancraft
+	focus = {
+		id = PSA_launch_dylancraft
+		icon = GFX_focus_SWE_institute_of_technology
+		x = 33
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_the_coast }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Create Slime Islands
+	focus = {
+		id = PSA_create_slime_islands
+		icon = GFX_focus_ARG_improving_the_islands
+		x = 31
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_launch_dylancraft }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Minecrafters To The Mines
+	focus = {
+		id = PSA_minecrafters_to_the_mines
+		icon = GFX_focus_generic_mining_industry
+		x = 33
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_launch_dylancraft }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Plant Rubber Trees
+	focus = {
+		id = PSA_plant_rubber_trees
+		icon = GFX_focus_CHL_expand_the_forestry
+		x = 35
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_launch_dylancraft }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Expanding California Rail
+	focus = {
+		id = PSA_expanding_california_rail
+		icon = GFX_focus_generic_railway_gun
+		x = 33
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_create_slime_islands }
+		prerequisite = { focus = PSA_minecrafters_to_the_mines }
+		prerequisite = { focus = PSA_plant_rubber_trees }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Increase Pina Colada Production
+	focus = {
+		id = PSA_increase_pina_colada_production
+		icon = GFX_focus_SWE_privately_managed_vacation
+		x = 33
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_expanding_california_rail }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Establish The Pina Colada Trade
+	focus = {
+		id = PSA_establish_the_pina_colada_trade
+		icon = GFX_focus_CHL_high_quality_nitrate
+		x = 33
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_increase_pina_colada_production }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Renovating Oregon
+	focus = {
+		id = PSA_renovating_oregon
+		icon = GFX_goal_generic_soviet_construction
+		x = 39
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_the_coast }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Improving Salem
+	focus = {
+		id = PSA_improving_salem
+		icon = GFX_focus_SOV_third_rome
+		x = 39
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_oregon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Improving Portland
+	focus = {
+		id = PSA_improving_portland
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		x = 37
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_oregon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Improving Medford
+	focus = {
+		id = PSA_improving_medford
+		icon = GFX_focus_SOV_rebuild_the_savior_cathedral
+		x = 41
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_oregon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for A Drive To Portland
+	focus = {
+		id = PSA_a_drive_to_portland
+		icon = GFX_focus_SOV_the_road_of_life
+		x = 39
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_improving_portland }
+		prerequisite = { focus = PSA_improving_salem }
+		prerequisite = { focus = PSA_improving_medford }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Expanding Chromium Mining
+	focus = {
+		id = PSA_expanding_chromium_mining
+		icon = GFX_focus_generic_chromium
+		x = 38
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_a_drive_to_portland }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Introducing Aluminum
+	focus = {
+		id = PSA_introducing_aluminum
+		icon = GFX_focus_generic_aluminum
+		x = 40
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_a_drive_to_portland }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Improving Oregon Rail
+	focus = {
+		id = PSA_improving_oregon_rail
+		icon = GFX_focus_SOV_south_manchuria_railway
+		x = 39
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_expanding_chromium_mining }
+		prerequisite = { focus = PSA_introducing_aluminum }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for The Beaver State
+	focus = {
+		id = PSA_the_beaver_state
+		icon = GFX_focus_SWE_the_beast_stirs
+		x = 39
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_improving_oregon_rail }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Renovating California
+	focus = {
+		id = PSA_renovating_california
+		icon = GFX_focus_generic_low_cost_housing
+		x = 45
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_the_coast }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Improving San Luis Obispo
+	focus = {
+		id = PSA_improving_san_luis_obispo
+		icon = GFX_focus_BEL_antwerp_maritime_academy
+		x = 43
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_california }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Improving Fresno
+	focus = {
+		id = PSA_improving_fresno
+		icon = GFX_focus_BEL_belgian_renaissance
+		x = 45
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_california }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Improving Bakersfield
+	focus = {
+		id = PSA_improving_bakersfield
+		icon = GFX_focus_CONGO_societe_generale_de_belgique
+		x = 47
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_california }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for A Drive Through The Valley
+	focus = {
+		id = PSA_a_drive_through_the_valley
+		icon = GFX_focus_generic_road_investment
+		x = 45
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_improving_san_luis_obispo }
+		prerequisite = { focus = PSA_improving_fresno }
+		prerequisite = { focus = PSA_improving_bakersfield }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Building Up Blythe
+	focus = {
+		id = PSA_building_up_blythe
+		icon = GFX_focus_COG_heart_of_africa
+		x = 44
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_a_drive_through_the_valley }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Building Up Santa Barbara
+	focus = {
+		id = PSA_building_up_santa_barbara
+		icon = GFX_focus_generic_refit_civilian_ships
+		x = 46
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_a_drive_through_the_valley }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for High Speed Rail
+	focus = {
+		id = PSA_high_speed_rail
+		icon = GFX_focus_BEL_engine_of_the_economy
+		x = 45
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_building_up_blythe }
+		prerequisite = { focus = PSA_building_up_santa_barbara }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for The Golden State
+	focus = {
+		id = PSA_the_golden_state
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 45
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_high_speed_rail }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Renovating Nevada
+	focus = {
+		id = PSA_renovating_nevada
+		icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
+		x = 51
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_the_coast }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Building More Casinos
+	focus = {
+		id = PSA_building_more_casinos
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		x = 49
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_nevada }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Creating A New Reno
+	focus = {
+		id = PSA_creating_a_new_reno
+		icon = GFX_focus_CHL_la_corporacion_araucania
+		x = 51
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_nevada }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Exploring Quarry Junction
+	focus = {
+		id = PSA_exploring_quarry_junction
+		icon = GFX_focus_IRQ_found_the_state_company_for_iron_and_steel_alt
+		x = 53
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_nevada }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for A Drive Through The Desert
+	focus = {
+		id = PSA_a_drive_through_the_desert
+		icon = GFX_focus_generic_truck
+		x = 51
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_building_more_casinos }
+		prerequisite = { focus = PSA_creating_a_new_reno }
+		prerequisite = { focus = PSA_exploring_quarry_junction }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Establish Camp McCarran
+	focus = {
+		id = PSA_establish_camp_mccarran
+		icon = GFX_focus_generic_aircraft_production
+		x = 50
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_a_drive_through_the_desert }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for The Hoover Dam
+	focus = {
+		id = PSA_the_hoover_dam
+		icon = GFX_focus_BEL_dam_the_consequences
+		x = 52
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_a_drive_through_the_desert }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Improving Nevada Rail
+	focus = {
+		id = PSA_improving_nevada_rail
+		icon = GFX_focus_CHL_contract_efe
+		x = 51
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_establish_camp_mccarran }
+		prerequisite = { focus = PSA_the_hoover_dam }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for The Silver State
+	focus = {
+		id = PSA_the_silver_state
+		icon = GFX_focus_CHL_silverworking
+		x = 51
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_improving_nevada_rail }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Renovating Washington
+	focus = {
+		id = PSA_renovating_washington
+		icon = GFX_focus_SWE_hygienic_housing
+		x = 57
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_the_coast }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Improving Olympia
+	focus = {
+		id = PSA_improving_olympia
+		icon = GFX_focus_SWE_landsverk
+		x = 55
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_washington }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Improving Seattle
+	focus = {
+		id = PSA_improving_seattle
+		icon = GFX_focus_SWE_socialist_reforms
+		x = 57
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_washington }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Improving Bellingham
+	focus = {
+		id = PSA_improving_bellingham
+		icon = GFX_focus_NOR_the_stumbling_storting
+		x = 59
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_renovating_washington }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for A Drive To Seattle
+	focus = {
+		id = PSA_a_drive_to_seattle
+		icon = GFX_focus_SWE_lynx_armored_car
+		x = 57
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_improving_olympia }
+		prerequisite = { focus = PSA_improving_seattle }
+		prerequisite = { focus = PSA_improving_bellingham }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Building Up Spokane
+	focus = {
+		id = PSA_building_up_spokane
+		icon = GFX_focus_FIN_confederated_finno_russian_republics
+		x = 56
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_a_drive_to_seattle }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Producing Steel
+	focus = {
+		id = PSA_producing_steel
+		icon = GFX_focus_generic_steel
+		x = 58
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_a_drive_to_seattle }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Improving Washington Rail
+	focus = {
+		id = PSA_improving_washington_rail
+		icon = GFX_focus_generic_railroad
+		x = 57
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_building_up_spokane }
+		prerequisite = { focus = PSA_producing_steel }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for The Evergreen State
+	focus = {
+		id = PSA_the_evergreen_state
+		icon = GFX_focus_CHL_expand_the_forestry
+		x = 57
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_improving_washington_rail }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for The Jewel Of The West
+	focus = {
+		id = PSA_the_jewel_of_the_west
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 48
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_the_beaver_state }
+		prerequisite = { focus = PSA_the_golden_state }
+		prerequisite = { focus = PSA_the_silver_state }
+		prerequisite = { focus = PSA_the_evergreen_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for CDC(IA)
+	focus = {
+		id = PSA_cdcia
+		icon = GFX_focus_BRA_north_and_south_america
+		x = 18
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for The Hubologist Fight
+	focus = {
+		id = PSA_the_hubologist_fight
+		icon = GFX_focus_mex_jefe_maximo
+		x = 11
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_cdcia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Cut Our Losses
+	focus = {
+		id = PSA_cut_our_losses
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 9
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_the_hubologist_fight }
+		mutually_exclusive = { focus = PSA_going_deep_inside }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Baja Campaign
+	focus = {
+		id = PSA_baja_campaign
+		icon = GFX_focus_attack_mexico
+		x = 8
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_cut_our_losses }
+		mutually_exclusive = { focus = PSA_fully_withdraw }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Fully Withdraw
+	focus = {
+		id = PSA_fully_withdraw
+		icon = GFX_focus_CHL_claim_the_mexican_throne
+		x = 10
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_cut_our_losses }
+		mutually_exclusive = { focus = PSA_baja_campaign }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Fortify The Border
+	focus = {
+		id = PSA_fortify_the_border
+		icon = GFX_focus_mex_arrest_general_cedillo
+		x = 9
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_baja_campaign
+						 focus = PSA_fully_withdraw }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Going Deep Inside
+	focus = {
+		id = PSA_going_deep_inside
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 13
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_the_hubologist_fight }
+		mutually_exclusive = { focus = PSA_cut_our_losses }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Escalation?
+	focus = {
+		id = PSA_escalation
+		icon = GFX_focus_mex_caudillo_private_armies
+		x = 13
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_going_deep_inside }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Our South Secure
+	focus = {
+		id = PSA_our_south_secure
+		icon = GFX_focus_mex_redeem_aztlan
+		x = 13
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_escalation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Back In Our Own Backyard
+	focus = {
+		id = PSA_back_in_our_own_backyard
+		icon = GFX_focus_SWE_coastal_support
+		x = 16
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_cdcia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for The Good Son
+	focus = {
+		id = PSA_the_good_son
+		icon = GFX_focus_BUL_power_to_the_tsar
+		x = 15
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_back_in_our_own_backyard }
+		mutually_exclusive = { focus = PSA_goodnight_seattle }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Goodnight Seattle
+	focus = {
+		id = PSA_goodnight_seattle
+		icon = GFX_focus_generic_attack_bulgaria
+		x = 17
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_back_in_our_own_backyard }
+		mutually_exclusive = { focus = PSA_the_good_son }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for A Truly Pacific States
+	focus = {
+		id = PSA_a_truly_pacific_states
+		icon = GFX_focus_SWE_the_nordic_centralized_nordic_army_command
+		x = 16
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_the_good_son
+						 focus = PSA_goodnight_seattle }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for A Trip To Arizona
+	focus = {
+		id = PSA_a_trip_to_arizona
+		icon = GFX_focus_BUL_form_a_regency_council
+		x = 20
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_cdcia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Time To Play Zombies
+	focus = {
+		id = PSA_time_to_play_zombies
+		icon = GFX_focus_ARG_balancing_act
+		x = 19
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_a_trip_to_arizona }
+		mutually_exclusive = { focus = PSA_go_home }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Zombies With Box
+	focus = {
+		id = PSA_zombies_with_box
+		icon = GFX_focus_LAT_merge_presidential_titles
+		x = 18
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_time_to_play_zombies }
+		mutually_exclusive = { focus = PSA_zombies_with_space }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Zombies With Space
+	focus = {
+		id = PSA_zombies_with_space
+		icon = GFX_focus_LAT_renew_kviesis_term
+		x = 20
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_time_to_play_zombies }
+		mutually_exclusive = { focus = PSA_zombies_with_box }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Go Home
+	focus = {
+		id = PSA_go_home
+		icon = GFX_focus_SWE_per_albin_bus
+		x = 21
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_a_trip_to_arizona }
+		mutually_exclusive = { focus = PSA_time_to_play_zombies }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for The Monster Of The East
+	focus = {
+		id = PSA_the_monster_of_the_east
+		icon = GFX_focus_POL_prepare_for_the_inevitable
+		x = 24
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_cdcia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for I Hear You Knocking
+	focus = {
+		id = PSA_i_hear_you_knocking
+		icon = GFX_focus_POL_riot_of_37
+		x = 23
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_the_monster_of_the_east }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Secure The Border
+	focus = {
+		id = PSA_secure_the_border
+		icon = GFX_focus_SWE_hedgehog_defense
+		x = 22
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_i_hear_you_knocking }
+		mutually_exclusive = { focus = PSA_moving_into_the_rockies }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for You'll Know It When It Happens
+	focus = {
+		id = PSA_youll_know_it_when_it_happens
+		icon = GFX_focus_GER_defender_of_democracy
+		x = 22
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_secure_the_border }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Moving Into The Rockies
+	focus = {
+		id = PSA_moving_into_the_rockies
+		icon = GFX_focus_AFG_mountain_training
+		x = 24
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_i_hear_you_knocking }
+		mutually_exclusive = { focus = PSA_secure_the_border }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for For The Republic
+	focus = {
+		id = PSA_for_the_republic
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		x = 24
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_moving_into_the_rockies }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for I Don't Hurt Anymore
+	focus = {
+		id = PSA_i_dont_hurt_anymore
+		icon = GFX_focus_POL_ban_nazi_party
+		x = 26
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_the_monster_of_the_east }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Expand Our Borders
+	focus = {
+		id = PSA_expand_our_borders
+		icon = GFX_focus_FIN_expansion_towards_the_atlantic
+		x = 26
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_i_dont_hurt_anymore }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	#Focus for Influence In The Great Plains
+	focus = {
+		id = PSA_influence_in_the_great_plains
+		icon = GFX_focus_FIN_finnish_influence_in_the_baltic
+		x = 26
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PSA_expand_our_borders }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+#End of focuses 
+ }

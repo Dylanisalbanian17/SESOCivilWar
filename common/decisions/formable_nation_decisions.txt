@@ -151,7 +151,7 @@ form_pacific_states_category = {
 		}
 
 		complete_effect = {
-			load_focus_tree = psc_focus
+			load_focus_tree = psa_focus
 			hidden_effect = {
 				set_global_flag = PSA.tga
 			}
