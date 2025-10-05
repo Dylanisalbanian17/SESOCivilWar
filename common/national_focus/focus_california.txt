@@ -281,7 +281,9 @@ id = california.1
 			factor = 1
 		}
 		available = {
-			has_completed_focus= CAL_ready_for_the_future  has_government= fascism
+			has_completed_focus= CAL_ready_for_the_future  
+			has_country_leader = { name= "Macehunter" 
+								   Ruling_only = yes }
 			has_war= no
 		}
 		completion_reward = {
@@ -313,7 +315,8 @@ id = california.1
 		}
 		available = {
 			has_completed_focus= CAL_ready_for_the_future
-has_government= democratic
+			has_country_leader = { name= "Dylanisaboxofrocks1017" 
+								   Ruling_only = yes }
 		}
 		completion_reward = {
 			country_event= {
