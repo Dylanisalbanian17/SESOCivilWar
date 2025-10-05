@@ -54,6 +54,14 @@ UTA_PSA = {
 	color = rgb { 245  205  94 }
 	color_ui = { 245  205  94 }
 }
+SCR = {
+	color = rgb { 39 79 122 }
+	color_ui = { 39 79 122 }
+}
+QTL = {
+	color = rgb { 255 95 85 }
+	color_ui = rgb { 255 95 85 }
+}
 PVU = {
 	color = rgb { 255 0 0 }
 	color_ui = { 255 0 0 }
@@ -61,6 +69,18 @@ PVU = {
 FZN = {
 	color = rgb { 66 113 69 }
 	color_ui = { 66 113 69 }
+}
+FZV = {
+	color = rgb { 66 113 69 }
+	color_ui = { 66 113 69 }
+}
+GPR = {
+	color = rgb { 102 163 55 }
+	color_ui = { 102 163 55 }
+}
+POL = {
+	color = rgb { 197 92 106 }
+	color_ui = rgb { 255 120 138 }
 }
 GLF = {
 	color = rgb { 26  155  230 }
