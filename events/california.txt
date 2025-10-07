@@ -191,3 +191,719 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = california.7
+	title = california.7.t
+	desc = california.7.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		# Choose Fletch
+		name = california.7.a
+		trigger = {
+			COT = { has_country_leader = { ruling_only = yes name = "Fletch" } }
+		}
+		#set_country_flag = csgo_csgoer_fletch
+		randomize_variable = {
+			var = csgo_gamesense
+			distribution = uniform
+			min = 10
+			max = 40
+		}
+		randomize_variable = {
+			var = csgo_accuracy
+			distribution = uniform
+			min = 40
+			max = 80
+		}
+		country_event = { days = 7 id = california.8 }
+	}
+
+	option = {
+		# Choose Target
+		name = california.6.b
+		trigger = {
+			ART = { has_country_leader = { ruling_only = yes name = "Target" } }
+		}
+		#set_country_flag = csgo_csgoer_target
+		randomize_variable = {
+			var = csgo_gamesense
+			distribution = uniform
+			min = 30
+			max = 70
+		}
+		randomize_variable = {
+			var = csgo_accuracy
+			distribution = uniform
+			min = 20
+			max = 60
+		}
+		country_event = { days = 7 id = california.8 }
+	}
+
+	option = {
+		# Choose Alloy
+		name = california.7.c
+		#set_country_flag = csgo_csgoer_alloy
+		set_variable = {
+			var = csgo_gamesense
+			value = 50
+		}
+		set_variable = {
+			var = csgo_accuracy
+			value = 50
+		}
+		country_event = { days = 7 id = california.8 }
+	}
+}
+
+country_event = {
+	id = california.8
+	title = california.8.t
+	desc = california.8.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		# AWP Outside
+		name = california.8.a
+		trigger = {
+			num_of_military_factories > 30
+		}
+		set_country_flag = csgo_weapon_awp
+		country_event = { days = 7 id = california.9 }
+	}
+
+	option = {
+		# M4 in Deep Garage
+		name = california.8.b
+		set_country_flag = csgo_weapon_m4
+		country_event = { days = 7 id = california.9 }
+	}
+
+	option = {
+		# MAG7 in Secret
+		name = california.8.c
+		trigger = {
+			num_of_civilian_factories > 30
+		}
+		set_country_flag = csgo_weapon_mag7
+		country_event = { days = 7 id = california.9 }
+	}
+}
+
+country_event = {
+	id = california.9
+	title = california.9.t
+	desc = california.9.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		# Go Outside
+		name = california.9.a
+		set_country_flag = csgo_location_outside
+		country_event = { days = 7 id = california.10 }
+	}
+
+	option = {
+		# Go to Deep Garage
+		name = california.9.b
+		set_country_flag = csgo_location_deepgarage
+		country_event = { days = 7 id = california.16 }
+	}
+
+	option = {
+		# Go to Mini
+		name = california.9.c
+		set_country_flag = csgo_location_mini
+		country_event = { days = 7 id = california.13 }
+	}
+
+	option = {
+		# Go to Ramp
+		name = california.9.e
+		set_country_flag = csgo_location_ramp
+		country_event = { days = 7 id = california.19 }
+	}
+}
+
+country_event = {
+	# Mace holds outside.
+	id = california.10
+	title = california.10.t
+	desc = california.10.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		# Mace watches T Outside
+		name = california.10.a
+		if = { # Mace brought AWP
+			limit = { has_country_flag = csgo_weapon_awp }
+
+			randomize_temp_variable = {
+				var = temp_success
+				distribution = uniform
+				min = 80
+				max = 100
+			}
+			set_temp_variable = {
+				temp_fail = 100
+			}
+			subtract_from_temp_variable = {
+				temp_fail = temp_success
+			}
+		}
+
+		if = { # Mace brought M4
+			limit = { has_country_flag = csgo_weapon_m4 }
+
+			set_temp_variable = {
+				temp_success = csgo_accuracy
+			}
+			set_temp_variable = {
+				temp_fail = 100
+			}
+			subtract_from_temp_variable = {
+				temp_fail = temp_success
+			}
+		}
+
+		if = { # Mace brought MAG7
+			limit = { has_country_flag = csgo_weapon_mag7 }
+
+			set_temp_variable = {
+				temp_success = 20
+			}
+			set_temp_variable = {
+				temp_fail = 100
+			}
+			subtract_from_temp_variable = {
+				temp_fail = temp_success
+			}
+		}
+
+		random_list = {
+			temp_success = {
+				country_event = { days = 7 id = california.11 }
+			}
+			temp_fail = {
+				country_event = { days = 7 id = california.12 }
+			}
+		}
+	}
+
+	option = {
+		# Mace peeks at Marshmellow
+		name = california.10.b
+
+		if = { # Mace brought AWP
+			limit = { has_country_flag = csgo_weapon_awp }
+
+			randomize_temp_variable = {
+				var = temp_success
+				distribution = uniform
+				min = 80
+				max = 100
+			}
+			set_temp_variable = {
+				temp_fail = 100
+			}
+			subtract_from_temp_variable = {
+				temp_fail = temp_success
+			}
+		}
+
+		if = { # Mace brought M4
+			limit = { has_country_flag = csgo_weapon_m4 }
+
+			set_temp_variable = {
+				temp_success = csgo_gamesense
+			}
+			set_temp_variable = {
+				temp_fail = 100
+			}
+			subtract_from_temp_variable = {
+				temp_fail = temp_success
+			}
+		}
+
+		if = { # Mace brought MAG7
+			limit = { has_country_flag = csgo_weapon_mag7 }
+
+			set_temp_variable = {
+				temp_success = 20
+			}
+			set_temp_variable = {
+				temp_fail = 100
+			}
+			subtract_from_temp_variable = {
+				temp_fail = temp_success
+			}
+		}
+
+		random_list = {
+			temp_success = {
+				country_event = { days = 7 id = california.11 }
+			}
+			temp_fail = {
+				country_event = { days = 7 id = california.12 }
+			}
+		}
+	}
+}
+
+country_event = {
+	# Mace kills T outside and wins the game
+	id = california.11
+	title = california.11.t
+	desc = california.11.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.11.a
+	}
+}
+
+country_event = {
+	# Mace misses outside and must retreat
+	id = california.12
+	title = california.12.t
+	desc = california.12.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		# Mace retreats to Mini
+		name = california.12.a
+		country_event = { days = 7 id = california.13 }
+	}
+
+	option = {
+		# Mace retreats to Deep Garage
+		name = california.12.b
+		country_event = { days = 7 id = california.16 }
+	}
+}
+
+country_event = {
+	# Mace watch outside from mini
+	id = california.13
+	title = california.13.t
+	desc = california.13.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.13.a
+
+		if = { # Mace brought AWP
+			limit = { has_country_flag = csgo_weapon_awp }
+
+			set_temp_variable = {
+				temp_success = 20
+			}
+			set_temp_variable = {
+				temp_fail = 100
+			}
+			subtract_from_temp_variable = {
+				temp_fail = temp_success
+			}
+		}
+
+		if = { # Mace brought M4
+			limit = { has_country_flag = csgo_weapon_m4 }
+
+			set_temp_variable = {
+				temp_success = csgo_gamesense
+			}
+			set_temp_variable = {
+				temp_fail = 100
+			}
+			subtract_from_temp_variable = {
+				temp_fail = temp_success
+			}
+		}
+
+		if = { # Mace brought MAG7
+			limit = { has_country_flag = csgo_weapon_mag7 }
+
+			randomize_temp_variable = {
+				var = temp_success
+				distribution = uniform
+				min = 80
+				max = 100
+			}
+			set_temp_variable = {
+				temp_fail = 100
+			}
+			subtract_from_temp_variable = {
+				temp_fail = temp_success
+			}
+		}
+
+		random_list = {
+			temp_success = {
+				country_event = { days = 7 id = california.14 }
+			}
+			temp_fail = {
+				country_event = { days = 7 id = california.15 }
+			}
+		}
+	}
+}
+
+country_event = {
+	# Mace kills T at Mini and wins
+	id = california.14
+	title = california.11.t
+	desc = california.14.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.11.a
+	}
+}
+
+country_event = {
+	# Mace loses T at mini and loses
+	id = california.15
+	title = california.15.t
+	desc = california.15.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.15.a
+	}
+}
+
+country_event = {
+	# Mace holds in deep garage
+	id = california.16
+	title = california.16.t
+	desc = california.16.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.16.a
+		if = { # Mace brought AWP
+			limit = { has_country_flag = csgo_weapon_awp }
+
+			set_temp_variable = {
+				temp_success = csgo_accuracy
+			}
+			set_temp_variable = {
+				temp_fail = 100
+			}
+			subtract_from_temp_variable = {
+				temp_fail = temp_success
+			}
+		}
+
+		if = { # Mace brought M4
+			limit = { has_country_flag = csgo_weapon_m4 }
+
+			randomize_temp_variable = {
+				var = temp_success
+				distribution = uniform
+				min = 80
+				max = 100
+			}
+			set_temp_variable = {
+				temp_fail = 100
+			}
+			subtract_from_temp_variable = {
+				temp_fail = temp_success
+			}
+		}
+
+		if = { # Mace brought MAG7
+			limit = { has_country_flag = csgo_weapon_mag7 }
+
+			set_temp_variable = {
+				temp_success = 20
+			}
+			set_temp_variable = {
+				temp_fail = 100
+			}
+			subtract_from_temp_variable = {
+				temp_fail = temp_success
+			}
+		}
+
+		random_list = {
+			temp_success = {
+				country_event = { days = 7 id = california.17 }
+			}
+			temp_fail = {
+				country_event = { days = 7 id = california.18 }
+			}
+		}
+	}
+}
+
+country_event = {
+	# Mace wins deep garage
+	id = california.17
+	title = california.11.t
+	desc = california.17.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.11.a
+	}
+}
+
+country_event = {
+	# Mace loses deep garage and the match
+	id = california.18
+	title = california.15.t
+	desc = california.18.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.15.a
+	}
+}
+
+country_event = {
+	# Mace choose sniper box or tunnels
+	id = california.19
+	title = california.19.t
+	desc = california.19.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.19.a
+		# Sniper Box
+		country_event = { days = 7 id = california.20 }
+	}
+
+	option = {
+		name = california.19.b
+		# Tunnels
+		country_event = { days = 7 id = california.23 }
+	}
+}
+
+country_event = {
+	# Mace watches trophy from sniper box
+	id = california.20
+	title = california.20.t
+	desc = california.20.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.20.a
+
+		if = { # Mace brought AWP
+		limit = { has_country_flag = csgo_weapon_awp }
+
+		randomize_temp_variable = {
+			var = temp_success
+			distribution = uniform
+			min = 80
+			max = 100
+		}
+		set_temp_variable = {
+			temp_fail = 100
+		}
+		subtract_from_temp_variable = {
+			temp_fail = temp_success
+		}
+	}
+
+	if = { # Mace brought M4
+		limit = { has_country_flag = csgo_weapon_m4 }
+
+		set_temp_variable = {
+			temp_success = csgo_accuracy
+		}
+		set_temp_variable = {
+			temp_fail = 100
+		}
+		subtract_from_temp_variable = {
+			temp_fail = temp_success
+		}
+	}
+
+	if = { # Mace brought MAG7
+		limit = { has_country_flag = csgo_weapon_mag7 }
+
+		set_temp_variable = {
+			temp_success = 20
+		}
+		set_temp_variable = {
+			temp_fail = 100
+		}
+		subtract_from_temp_variable = {
+			temp_fail = temp_success
+		}
+	}
+
+	random_list = {
+		temp_success = {
+			country_event = { days = 7 id = california.21 }
+		}
+		temp_fail = {
+			country_event = { days = 7 id = california.22 }
+		}
+	}
+	}
+}
+
+country_event = {
+	# Mace wins ramp
+	id = california.21
+	title = california.11.t
+	desc = california.21.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.11.a
+	}
+}
+
+country_event = {
+	# Mace loses ramp and retreats to...
+	id = california.22
+	title = california.22.t
+	desc = california.22.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.22.a
+		# Mini
+		country_event = { days = 7 id = california.13 }
+	}
+
+	option = {
+		name = california.22.b
+		# Tunnels
+		country_event = { days = 7 id = california.23 }
+	}
+}
+
+country_event = {
+	# Mace holds tuns
+	id = california.23
+	title = california.23.t
+	desc = california.23.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.23.a
+
+		if = { # Mace brought AWP
+		limit = { has_country_flag = csgo_weapon_awp }
+
+		set_temp_variable = {
+			temp_success = 20
+		}
+		set_temp_variable = {
+			temp_fail = 100
+		}
+		subtract_from_temp_variable = {
+			temp_fail = temp_success
+		}
+	}
+
+	if = { # Mace brought M4
+		limit = { has_country_flag = csgo_weapon_m4 }
+
+		set_temp_variable = {
+			temp_success = csgo_gamesense
+		}
+		set_temp_variable = {
+			temp_fail = 100
+		}
+		subtract_from_temp_variable = {
+			temp_fail = temp_success
+		}
+	}
+
+	if = { # Mace brought MAG7
+		limit = { has_country_flag = csgo_weapon_mag7 }
+
+		randomize_temp_variable = {
+			var = temp_success
+			distribution = uniform
+			min = 80
+			max = 100
+		}
+		set_temp_variable = {
+			temp_fail = 100
+		}
+		subtract_from_temp_variable = {
+			temp_fail = temp_success
+		}
+	}
+
+	random_list = {
+		temp_success = {
+			country_event = { days = 7 id = california.21 }
+		}
+		temp_fail = {
+			country_event = { days = 7 id = california.22 }
+		}
+	}
+	}
+}
+
+country_event = {
+	# Mace wins tuns
+	id = california.24
+	title = california.11.t
+	desc = california.24.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.11.a
+	}
+}
+
+country_event = {
+	# Mace loses tuns and match
+	id = california.25
+	title = california.15.t
+	desc = california.25.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = california.15.a
+	}
+}
